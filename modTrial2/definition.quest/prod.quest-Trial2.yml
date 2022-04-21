@@ -1,0 +1,16 @@
+#
+# production settings
+# 
+# (version: 21, saved: 2021-04-13 13:37:43)
+#
+---
+production:
+  settings:
+    id: trial2
+    caption: A lonely deed
+    menuvisibile: true
+    enabled: true
+    storesdata: true
+    strings-idspace: 9999
+    strings-idstart: 0
+    version: 21

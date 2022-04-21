@@ -1,0 +1,267 @@
+layers: 
+
+  humanlayer: 
+    world: "skellige"
+    #context: ""
+
+    actionpoints: 
+
+      desparatewoman: [ -1072.6832275391, 1971.6601562500, 1.6120834351, 67.4000167847, "work_woman/stand_mw_upset_jt" ]
+
+      puke: [ -1162.8563232422, 1976.8483886719, -0.3772506714, -162.6000213623, "rude/stand_m_puke_jt" ]
+
+      laughing: 
+        - [ -1106.1870117188, 1984.5150146484, 0.7081680298, 252.8000335693, "work_man/stand_mw_cheering_loud_jt" ]
+        - [ -1105.6793212891, 1985.8918457031, 0.6474990845, 252.8000335693, "work_man/stand_mw_cheering_loud_jt" ]
+        - [ -1107.5069580078, 1985.6243896484, 0.7121429443, -107.1999359131, "feast_man/stand_m_party_short_jt" ]
+        - [ -1107.0871582031, 1987.3348388672, 0.6016845703, -107.1999359131, "feast_man/stand_m_party_short_jt" ]
+
+      #outlook1: 
+      #  - [ -1114.4620361328, 2077.1584472656, 20.4422149658, 84.0, "guarding/stand_mw_looking_around_jt" ]
+      #  - [ -1110.7500000000, 2080.6914062500, 19.2593917847, 38.6000251770, "ep2_man/stand_m_looking_with_torch_jt" ]
+      #outlook2: 
+      #  - [ -1184.7003173828, 2031.6120605469, 9.2223892212, 47.6000289917, "quest_man/q309_wh_looking_far" ]
+      #  - [ -1190.1427001953, 2013.0107421875, 14.5340652466, 119.2000427246, "quest_man/sq301_looking_around_single" ]
+
+      outlook: 
+        - [ -1146.7604980469, 2030.1907958984, 0.4822275162, 26.0, "guarding/stand_mw_looking_around_jt" ]
+        - [ -1143.2314453125, 2026.1547851563, 0.1512069702, -12.1999769211, "guarding/stand_m_oillamp_jt" ]
+
+      party: 
+
+        - [ -1133.4605712891, 1993.7667236328, 0.5477066040, 94.1002502441, "work_man/stand_mw_drinking_jt" ]
+        - [ -1141.2834472656, 1991.4121093750, 0.5681838989, -40.0997314453, "work_man/stand_mw_drinking_jt" ]
+        - [ -1135.8487548828, 1991.6293945313, 0.5341509581, 29.4004230499, "work_man/stand_mw_drinking_jt" ]
+        - [ -1141.0743408203, 2000.0642089844, 0.4252090454, -145.8000488281, "ep2_man/stand_m_dancing_drunk_jt" ]
+        - [ -1141.5490722656, 1995.1210937500, 0.6359939575, -22.8000011444, "ep2_man/stand_m_dancing_drunk_jt" ]
+        - [ -1133.4577636719, 1994.9145507813, 0.5479049683, 74.0000228882, "ep2_man/stand_m_dancing_drunk_jt" ]
+        - [ -1132.9039306641, 1996.1711425781, 0.5367202759, 95.2000045776, "work_man/stand_mw_drinking_jt" ]
+
+      partysit: 
+
+        - pos: [ -1138.3916015625, 1995.4827880859, 0.5758590698 ]
+          rot: [ 0.0, 0.0, 138.1999511719 ]
+          #action: "dining_man/sit_table_drinking_bench_01"
+          action: "resting_man/sit_table_sleeping"
+          ignoreCollisions: true
+        - pos: [ -1139.4317626953, 1992.7980957031, 0.5239944458 ]
+          rot: [ 0.0, 0.0, -18.9998054504 ]
+          action: "resting_man/sit_table_sleeping"
+          #action: "dining_man/sit_table_drinking_bench_02"
+          ignoreCollisions: true
+        - pos: [ -1135.1469726563, 2000.1674804688, 0.6430435181 ]
+          rot: [ 0.0, 0.0, 173.8001403809 ]
+          action: "resting_man/sit_table_sleeping"
+          ignoreCollisions: true
+
+      partysleep: 
+
+        - pos: [ -1134.3037109375, 2007.0167236328, 0.6018780088 ]
+          rot: [ 0.0, 0.0, 370.6003417969 ]
+          action: "sleeping_man/lie_mwdc_sleep_ground_jt"
+          ignoreCollisions: true
+        - pos: [ -1136.8894042969, 2005.3157958984, 0.5350198364 ]
+          rot: [ 0.0, 0.0, 647.0006103516 ]
+          action: "sleeping_man/lie_mwdc_sleep_ground_jt"
+          ignoreCollisions: true
+        - pos: [ -1129.3242187500, 2007.4658203125, 0.56 ]
+          rot: [ 0.0, 0.0, 266.1999816895 ]
+          action: "sleeping_man/lie_mwdc_sleep_ground_jt"
+          ignoreCollisions: true
+
+      rain_shelter: 
+
+         - pos: [ -1141.1123046875, 2005.6817626953, 0.4766921997]
+           rot: [ 0.0, 0.0, -72.5999984741 ]
+           action: "rain_shelter_man/rain_stand_m_warming_up_jt"
+           tags:
+            - rain_shelter_man
+
+         - pos: [ -1156.9610595703, 2029.3541259766, 0.4366921997 ]
+           rot: [ 0.0, 0.0, -19.5999889374 ]
+           action: "rain_shelter_man/rain_stand_m_spit_jt"
+           tags:
+            - rain_shelter_man
+
+         - pos: [ -1134.4118652344, 2002.3729248047, 0.5529403687 ]
+           rot: [ 0.0, 0.0, -179.9999694824 ]
+           action: "rain_shelter_man/rain_stand_m_warming_up_jt"
+           tags:
+            - rain_shelter_man
+
+         - pos: [ -1131.6630859375, 2005.8629150391, 0.5524063110 ]
+           rot: [ 0.0, 0.0, -82.3999938965 ]
+           action: "rain_shelter_man/rain_stand_m_hopeless_jt"
+           tags:
+            - rain_shelter_man
+
+         - pos: [ -1139.1168212891, 2004.8801269531, 0.4698562622 ]
+           rot: [ 0.0, 0.0, -25.7999553680 ]
+           action: "rain_shelter_man/rain_kneel_m_squat_jt"
+           tags:
+            - rain_shelter_man
+
+         - pos: [ -1143.3618164063, 2000.5050048828, 0.3944320679 ]
+           rot: [ 0.0, 0.0, -87.9999618530 ]
+           action: "rain_shelter_man/rain_stand_m_spit_jt"
+           tags:
+            - rain_shelter_man
+
+         - pos: [ -1140.7169189453, 2002.7093505859, 0.4025344849 ]
+           rot: [ 0.0, 0.0, -189.5999755859 ]
+           action: "rain_shelter_man/rain_stand_m_nervous_jt"
+           tags:
+            - rain_shelter_man
+
+         - pos: [ -1143.8157958984, 1995.2763671875, 0.5973129272 ]
+           rot: [ 0.0, 0.0, -58.1999931335 ]
+           action: "rain_shelter_man/rain_kneel_m_squat_jt"
+           tags:
+            - rain_shelter_man
+
+         - pos: [ -1131.3894042969, 2003.8873291016, 0.6604685783 ]
+           rot: [ 0.0, 0.0, -82.3999938965 ]
+           action: "rain_shelter_man/rain_stand_m_warming_up_jt"
+           tags:
+            - rain_shelter_man
+
+         - pos: [ -1136.5499267578, 2002.5720214844, 0.6026992798 ]
+           rot: [ 0.0, 0.0, -179.9999694824 ]
+           action: "rain_shelter_man/rain_stand_m_scratching_jt"
+           tags:
+            - rain_shelter_man
+
+         - pos: [ -1138.5410156250, 2007.0870361328, 0.5328445435 ]
+           rot: [ 0.0, 0.0, -167.7999725342 ]
+           action: "rain_shelter_man/rain_stand_m_torch_jt"
+           tags:
+            - rain_shelter_man
+
+         - pos: [ -1142.7849121094, 2001.9299316406, 0.3714828491 ]
+           rot: [ 0.0, 0.0, -136.3999786377 ]
+           action: "rain_shelter_man/rain_stand_m_warming_up_jt"
+           tags:
+            - rain_shelter_man
+
+    areas: 
+      human_guardarea: 
+        height: 6.0
+        borderpoints: 
+          - [ -1128.8908691406, 1998.0997314453, 0.2425735474 ]
+          - [ -1137.1826171875, 2009.5123291016, 0.2425735474 ]
+          - [ -1150.5991210938, 2005.1529541016, 0.2425735474 ]
+          - [ -1150.4376220703, 1990.1065673828, 0.2425735474 ]
+          - [ -1137.1826171875, 1986.6871337891, 0.2425735474 ]
+
+    statics: 
+      fire: 
+        template: "W3Campfire:environment\\decorations\\light_sources\\campfire\\campfire_02_cave.w2ent"
+        pos: [ -1139.9727783203, 1997.2910156250, 0.7836325169 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+
+      fireflames: 
+        template: "CEntity:quests\\minor_quests\\no_mans_land\\quest_files\\mq1046_burning_down_the_house\\entities\\mq1046_house_fire_01_fx.w2ent"
+        pos: [ -1140.1499023438, 1997.3153076172, 0.4134597778 ]
+        rot: [ 0.0, 0.0, -181.0000152588 ]
+
+      hut: 
+        template: "CEntity:environment\\architecture\\human\\redania\\nomans_land\\thatched_buildings\\broken_thatched_houses\\broken_thatched_house_small.w2ent"
+        pos: [ -1137.7186279297, 2006.1530761719, 0.6019515991 ]
+        rot: [ 0.0, 0.0, -181.8000946045 ]
+
+      hut_1: 
+        template: "CEntity:environment\\decorations\\decoration_sets\\houses\\thatched_houses\\decoration_set_thatched_small_b\\decoration_set_thatched_small_b_nonstatic.w2ent"
+        pos: [ -1137.7756347656, 2006.2736816406, 0.3646523952 ]
+        rot: [ 0.0, 0.0, -182.6000061035 ]
+
+      pillar: 
+        template: "W3NewDoor:dlc\\bob\\data\\gameplay\\door\\pushable\\push_bob_elven_ruins_wood_b.w2ent"
+        pos: [ -1137.2801513672, 2008.1947021484, 0.5657272339 ]
+        rot: [ 0.0, 0.0, 268.1999206543 ]
+
+      pillar_1: 
+        template: "W3NewDoor:dlc\\bob\\data\\gameplay\\door\\pushable\\push_bob_elven_ruins_wood_b.w2ent"
+        pos: [ -1137.2266845703, 2003.5117187500, 0.4417106509 ]
+        rot: [ 0.0, 0.0, 91.3999176025 ]
+
+      pot: 
+        template: "CEntity:environment\\decorations\\housework\\hunters_items\\hanging_pot_big_dangling.w2ent"
+        pos: [ -1140.0477294922, 1997.9475097656, 1.2381656170 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+
+      ship: 
+        template: "CEntity:dlc\\bob\\data\\environment\\architecture\\shipwreck\\shipwreck_back.w2ent"
+        pos: [ -1147.5415039063, 2013.0754394531, -7.0302362442 ]
+        rot: [ 40.0, 20.0, 54.0999984741 ]
+
+      table: 
+        template: "CActionPoint:dlc\\bob\\data\\gameplay\\community\\actionpoints\\work\\stand_m_armorer_fixing_table_02_ap.w2ent"
+        pos: [ -1136.0809326172, 1992.6232910156, 0.5713653564 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+
+      table_1: 
+        template: "CActionPoint:dlc\\bob\\data\\gameplay\\community\\actionpoints\\resting\\sit_4_m_playing_knife_table_ap.w2ent"
+        pos: [ -1138.8206787109, 1994.0909423828, 0.5553207397 ]
+        rot: [ 0.0, 0.0, -33.6000022888 ]
+
+      table_2: 
+        template: "CActionPoint:dlc\\bob\\data\\gameplay\\community\\actionpoints\\resting\\sit_2_md_playing_cards_table_ap.w2ent"
+        pos: [ -1135.0812988281, 1998.8878173828, 0.6040573120 ]
+        rot: [ 0.0, 0.0, -9.6000013351 ]
+
+      table_3: 
+        template: "CActionPoint:quests\\part_1\\quest_files\\q202_giant\\entities\\q202_tavern_table.w2ent"
+        pos: [ -1137.6375732422, 1999.9793701172, 0.6089248657 ]
+        rot: [ 0.0, 0.0, 133.8000183105 ]
+
+      tent: 
+        template: "CEntity:environment\\decorations\\trade\\market_stand_poor\\stall_tent_single_a_px.w2ent"
+        pos: [ -1144.1134033203, 1996.0347900391, 0.5650405884 ]
+        rot: [ 0.0, 0.0, -80.9999465942 ]
+
+      tent_1: 
+        template: "CEntity:environment\\decorations\\trade\\market_stand_poor\\stall_tent_single_c2_px.w2ent"
+        pos: [ -1143.3480224609, 2001.2281494141, 0.3996047974 ]
+        rot: [ 0.0, 0.0, -106.3999481201 ]
+
+  newguard: 
+    world: "skellige"
+    #context: ""
+
+    areas: 
+      guard1_area: 
+        height: 3.0
+        borderpoints: 
+          - [ -1118.6622314453, 1990.8177490234, -0.0478374138 ]
+          - [ -1121.5264892578, 1994.4169921875, -0.0478374138 ]
+          - [ -1125.9227294922, 1995.5228271484, -0.0478374138 ]
+          - [ -1132.1955566406, 1988.4613037109, -0.0478374138 ]
+          - [ -1129.8911132813, 1986.3630371094, -0.0478374138 ]
+          - [ -1121.5511474609, 1987.3392333984, -0.0478374138 ]
+
+      guard2_area: 
+        height: 3.0
+        borderpoints: 
+          - [ -1133.9195556641, 2017.6109619141, -0.1772613525 ]
+          - [ -1140.7416992188, 2024.9266357422, -0.1772613525 ]
+          - [ -1148.7480468750, 2023.3277587891, -0.1772613525 ]
+          - [ -1143.8822021484, 2014.4281005859, -0.1772613525 ]
+          - [ -1137.1066894531, 2013.4940185547, -0.1772613525 ]
+
+    wanderpoints: 
+      guard1_path: 
+        - [ -1125.6975097656, 1994.2938232422, 0.4235610962, 13.8000097275 ]
+        - [ -1130.7260742188, 1987.9622802734, 0.8071823120, 63.5999946594 ]
+        - [ -1125.1265869141, 1987.7716064453, 0.5916213989, 184.5999450684 ]
+        - [ -1120.0845947266, 1990.2835693359, 0.7830886841, 275.1999816895 ]
+
+    waypoints: 
+      guard1_spawn: [ -1125.6975097656, 1994.2938232422, 0.4235610962, 13.8000097275 ]
+
+      guard2_spawn: 
+        - [ -1136.2764892578, 2015.3730468750, 0.3680801392, 235.7997589111 ]
+        - [ -1143.6176757813, 2014.9763183594, 0.5362014771, 179.3997955322 ]
+        - [ -1146.9151611328, 2022.8800048828, 0.3697586060, 16.5998039246 ]
+        - [ -1141.6749267578, 2023.0974121094, 0.2625045776, -25.6002006531 ]
+        - [ -1138.0959472656, 2019.3153076172, 0.2445068359, -42.4001998901 ]
+        - [ -1145.0970458984, 2018.4617919922, 0.5007095337, -256.6000366211 ]

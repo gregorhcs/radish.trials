@@ -1,0 +1,69 @@
+communities:
+
+  bear_community:
+
+    actors:
+
+      bear:
+        template: characters/npc_entities/monsters/bear_berserker_lvl1.w2ent
+
+    phases:
+
+      default:
+
+        bear:
+          use_last_ap: true
+          start_in_ap: false
+          wanderarea: skellige/bear_guardarea
+          guard: [ skellige/bear_guardarea, 0.0 ]
+          spawn_hidden: true
+          spawn_at: skellige/bearspawn
+          attitude: monsters
+          spawntimes:
+            "00:00": [2, true, 20]
+
+
+  nekker_community:
+
+    actors:
+
+      nekker1:
+        template: characters/npc_entities/monsters/nekker_lvl3__warrior.w2ent
+
+      nekker2:
+        template: characters/npc_entities/monsters/nekker_lvl3__warrior.w2ent
+
+      nekker3:
+        template: characters/npc_entities/monsters/nekker_lvl3__warrior.w2ent
+
+    phases:
+
+      default:
+
+        nekker1:
+          use_last_ap: false
+          start_in_ap: true
+          guard: [ skellige/nekker_guardarea, skellige/nekker_pursuitarea ]
+          actionpoints:
+            "00:00": skellige/nekker_1b
+            "06:00": skellige/nekker_1a
+            "18:00": skellige/nekker_1b
+
+        nekker2:
+          use_last_ap: false
+          start_in_ap: true
+          guard: [ skellige/nekker_guardarea, skellige/nekker_pursuitarea ]
+          actionpoints:
+            "00:00": skellige/nekker_2b
+            "06:00": skellige/nekker_2a
+            "18:00": skellige/nekker_2b
+
+        nekker3:
+          use_last_ap: false
+          start_in_ap: true
+          guard: [ skellige/nekker_guardarea, skellige/nekker_pursuitarea ]
+          actionpoints:
+            "00:00": skellige/nekker_3b
+            "06:00": skellige/nekker_3a
+            "18:00": skellige/nekker_3b
+

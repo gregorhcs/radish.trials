@@ -1,0 +1,54 @@
+{
+    "files": [
+        {
+            "path": "dlc\\dlctrial4\\data\\trial4.w2quest",
+            "level": 1,
+            "class": "CQuest",
+            "seed": 1,
+            "id": "35CA513C-F3DFAE6A-870EEEDC-0009CF82",
+            "diskSize": 2522,
+            "hardImports": 1,
+            "soft": [
+                "BC1F642E-9800A821-A02BDAD8-77ECA134"
+            ]
+        },
+        {
+            "path": "characters\\npc_entities\\main_npc\\dandelion.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "6D3B7533-FB295A8B-FE2EB2FA-2F30B222",
+            "softImports": 1
+        },
+        {
+            "path": "dlc\\dlctrial4\\data\\scenes\\1_dialog_with_dandelion.w2scene",
+            "level": 0,
+            "class": "CStoryScene",
+            "seed": 1,
+            "id": "BC1F642E-9800A821-A02BDAD8-77ECA134",
+            "diskSize": 13831,
+            "softImports": 1,
+            "soft": [
+                "6D3B7533-FB295A8B-FE2EB2FA-2F30B222",
+                "90DB9D66-1F7513D5-96AB23A4-766415AB"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial4\\dlctrial4.reddlc",
+            "level": 0,
+            "class": "CDLCDefinition",
+            "seed": 1,
+            "id": "9FC5C3D4-F1E1B754-5AD3218A-A9C89D72",
+            "diskSize": 1447,
+            "hard": [
+                "35CA513C-F3DFAE6A-870EEEDC-0009CF82"
+            ]
+        },
+        {
+            "path": "gameplay\\templates\\characters\\player\\player.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "90DB9D66-1F7513D5-96AB23A4-766415AB",
+            "softImports": 1
+        }
+    ]
+}

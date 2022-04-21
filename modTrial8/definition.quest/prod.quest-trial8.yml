@@ -1,0 +1,16 @@
+#
+# production settings
+# 
+# (version: 5, saved: 2022-04-22 00:04:08)
+#
+---
+production:
+  settings:
+    id: trial8
+    caption: "Demon's Souls"
+    menuvisibile: true
+    enabled: true
+    storesdata: true
+    strings-idspace: 1410
+    strings-idstart: 520
+    version: 5

@@ -1,0 +1,71 @@
+layers: ## List of layer's used in game. Can be defined and used multiple layers at the same time 
+  ### <--- Start of layer's definition ---> ###
+    yen_witchers_layer: ## Name of the layer. Can be any name you choose.
+        world: "kaer_morhen"
+
+        actionpoints: 
+          cat_distance: [ -37.7821159363, -26.0704841614, 145.6331787109, 163.4000549316, "ep1_cat/q604_cat_sit" ]
+          cat_happy: [ -34.5293273926, -31.4446411133, 145.6703491211, 0.0, "ep1_cat/q604_cat_sit" ]
+
+          horse_happy: [ -48.6389961243, -29.9882698059, 145.6982421875, 131.1999664307, "horse/horse_parking" ]
+          horse_unrest: [ -44.2047882080, -27.5699996948, 145.6547241211, 131.5999755859, "horse/q703_horse_rearing" ]
+
+          lambert_calm: [ -43.3825607300, -28.7320423126, 145.6503906250, 53.4000015259, "work_man/stand_mw_brushing_horse_jt" ]
+          lambert_not_calm: [ -42.2024192810, -29.9656810760, 145.7747192383, -131.8000488281, "work_man/stand_mw_negative_attitude_jt" ]
+          lambert_sleeping: 
+            pos: [ -34.5350570679, -27.5426807404, 145.5997924805 ]
+            rot: [ 0.0, 0.0, 139.0000610352 ]
+            action: "sleeping_man/lie_mwdc_sleep_ground_jt"
+            ignoreCollisions: true
+          lambert_wonder: [ -43.5445251465, -33.7336578369, 145.8171386719, 24.3999919891, "resting_man/stand_mwd_arms_crossed_jt" ]
+
+          vesemir_resting: 
+            pos: [ -37.2531890869, -25.2374916077, 145.6547241211 ]
+            rot: [ 0.0, 0.0, -151.3999633789 ]
+            action: "man_meditation/sit_m_meditate_jt"
+            ignoreCollisions: true
+          vesemir_working: [ -39.4443321228, -24.4925956726, 145.7096557617, 98.1998901367, "work_man/kneel_md_hammering_jt" ]
+
+          yen_controlling: [ -40.1025161743, -31.6269569397, 145.7681274414, 0.0, "work_woman/stand_mw_writing_jt" ]
+          yen_determined: [ -39.5952453613, -31.2402153015, 145.7645874023, 68.8000030518, "work_woman/q301_triss_pissed" ]
+          yen_sitting: 
+            pos: [ -37.4223670959, -28.5343723297, 145.5800781250 ]
+            rot: [ 0.0, 0.0, -50.9999732971 ]
+            action: "resting_woman/sit_mw_ground_hopeless_jt"
+            ignoreCollisions: true
+         
+        areas: 
+          start_area: 
+            height: 5.0
+            borderpoints: 
+              - [ -17.5138320923, -26.0908031464, 149.9868164063 ]
+              - [ -20.2777633667, -22.2865772247, 149.9868164063 ]
+              - [ -24.7499008179, -23.7396640778, 149.9868164063 ]
+              - [ -24.7499008179, -28.4419460297, 149.9868164063 ]
+              - [ -20.2777633667, -29.8950290680, 149.9868164063 ]
+          horse_area: 
+            #height: 2.0
+            borderpoints: 
+              - [ -42.7401885986, -28.1580295563, 145.5997924805 ]
+              - [ -44.1221542358, -26.2559165955, 145.5997924805 ]
+              - [ -46.3582229614, -26.9824600220, 145.5997924805 ]
+              - [ -46.3582229614, -29.3336029053, 145.5997924805 ]
+              - [ -44.1221542358, -30.0601501465, 145.5997924805 ]
+
+          working_area: 
+            #height: 2.0
+            borderpoints: 
+              - [ -34.4087677002, -31.2762298584, 145.6519165039 ]
+              - [ -30.0790672302, -20.2680130005, 145.6519165039 ]
+              - [ -52.3468322754, -14.0484743118, 145.6519165039 ]
+              - [ -47.8140716553, -31.9328517914, 145.6519165039 ]
+              - [ -38.7463226318, -34.6343269348, 145.6519165039 ]
+           
+        mappins: 
+          horse_pin: [ -44.4213943481, -27.4342498779, 145.6459350586 ]
+
+          work_pin: 
+            #radius for quest instructions: 8
+            pos: [ -40.3345985413, -24.9661674500, 145.7398071289 ]
+        
+### <--- End of layer's definition ---> ###

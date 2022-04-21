@@ -1,0 +1,187 @@
+{
+    "files": [
+        {
+            "path": "dlc\\dlctrial6\\data\\spawnsets\\community_alene_cat.w2comm",
+            "level": 2,
+            "class": "CCommunity",
+            "seed": 1,
+            "id": "11E62998-C3D46890-B444D58A-67688ADD",
+            "diskSize": 3623,
+            "hardImports": 1,
+            "softImports": 1,
+            "soft": [
+                "2007F06B-2AA73838-A2F84983-817ED8A3",
+                "FFA4D2C5-AA1A27C9-FB979991-58E5DFB5"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial6\\data\\trial6.w2quest",
+            "level": 1,
+            "class": "CQuest",
+            "seed": 1,
+            "id": "FE984592-8FC0AFC1-1DA6F810-73146A58",
+            "diskSize": 7682,
+            "hardImports": 1,
+            "hard": [
+                "11E62998-C3D46890-B444D58A-67688ADD"
+            ],
+            "soft": [
+                "EE7D1168-9659F008-6CDFFF26-691DA95F",
+                "11E62998-C3D46890-B444D58A-67688ADD"
+            ]
+        },
+        {
+            "path": "dlc\\ep1\\data\\gameplay\\community\\actionpoints\\quest\\q604_cat_sit.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "B3709861-363867F5-0EEF9C7D-966BB9DC",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\ep1\\data\\items\\quest_items\\q604\\q604_item__iris_flower.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "B3AA8D64-96ECAA2C-B30C8FE7-5633B3EE",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\ep1\\data\\items\\quest_items\\q604\\q604_item__rose.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "3B4EE1FB-9D4ADB61-81BFC027-5381888F",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\work\\stand_w_waiting_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "DF9B2048-8B4F8598-29C386A9-A9B0EDA6",
+            "hardImports": 1
+        },
+        {
+            "path": "items\\work\\basket_01\\basket_01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "1465FF9C-C00B12FB-9617FB76-D23AA7F3",
+            "hardImports": 1
+        },
+        {
+            "path": "items\\work\\basket_01\\wicker_basket.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "66CBF024-71C1C7EB-E7DAD7FB-D9AF4814",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\npc_entities\\animals\\cat.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "2007F06B-2AA73838-A2F84983-817ED8A3",
+            "softImports": 1
+        },
+        {
+            "path": "characters\\npc_entities\\main_npc\\cerys.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "FFA4D2C5-AA1A27C9-FB979991-58E5DFB5",
+            "softImports": 2
+        },
+        {
+            "path": "characters\\npc_entities\\secondary_npc\\bjorn.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "826509EE-5C1BD02F-8498204B-B1947F30",
+            "softImports": 1
+        },
+        {
+            "path": "dlc\\dlctrial6\\data\\scenes\\the_father.w2scene",
+            "level": 0,
+            "class": "CStoryScene",
+            "seed": 1,
+            "id": "EE7D1168-9659F008-6CDFFF26-691DA95F",
+            "diskSize": 76884,
+            "softImports": 1,
+            "soft": [
+                "FFA4D2C5-AA1A27C9-FB979991-58E5DFB5",
+                "826509EE-5C1BD02F-8498204B-B1947F30",
+                "90DB9D66-1F7513D5-96AB23A4-766415AB",
+                "A5B1F315-EF90DEFD-5307867E-344B510F"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial6\\dlctrial6.reddlc",
+            "level": 0,
+            "class": "CDLCDefinition",
+            "seed": 1,
+            "id": "2F4A9A7A-8D892541-909241DE-9D86F723",
+            "diskSize": 1447,
+            "hard": [
+                "FE984592-8FC0AFC1-1DA6F810-73146A58"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial6\\levels\\skellige\\trial6\\radish_dbg\\radish_dbginfo.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "0BB4E9AF-77B8E05F-F9A6E602-AACA4A26",
+            "diskSize": 2574
+        },
+        {
+            "path": "dlc\\dlctrial6\\levels\\skellige\\trial6\\scenelayer\\actionpoints.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "7F1C36A1-BDA64E48-2082524C-27FD636C",
+            "diskSize": 2413,
+            "hard": [
+                "B3709861-363867F5-0EEF9C7D-966BB9DC",
+                "DF9B2048-8B4F8598-29C386A9-A9B0EDA6"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial6\\levels\\skellige\\trial6\\scenelayer\\areas.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "8F354874-12DA7DC1-390ED1B2-A242E3E0",
+            "diskSize": 1886
+        },
+        {
+            "path": "dlc\\dlctrial6\\levels\\skellige\\trial6\\scenelayer\\scenepoints.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "B7F5AD00-58F3B37B-6ADDF187-1D7A4202",
+            "diskSize": 1048
+        },
+        {
+            "path": "dlc\\dlctrial6\\levels\\skellige\\trial6\\scenelayer\\static.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "1015239A-C1531F23-6599F5B9-FFBBC582",
+            "diskSize": 3538,
+            "hard": [
+                "B3AA8D64-96ECAA2C-B30C8FE7-5633B3EE",
+                "3B4EE1FB-9D4ADB61-81BFC027-5381888F",
+                "1465FF9C-C00B12FB-9617FB76-D23AA7F3",
+                "66CBF024-71C1C7EB-E7DAD7FB-D9AF4814"
+            ]
+        },
+        {
+            "path": "gameplay\\templates\\characters\\player\\player.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "90DB9D66-1F7513D5-96AB23A4-766415AB",
+            "softImports": 1
+        },
+        {
+            "path": "items\\cutscenes\\cs111_roots\\cs111_leaf_01.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "A5B1F315-EF90DEFD-5307867E-344B510F",
+            "softImports": 1
+        }
+    ]
+}

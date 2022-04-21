@@ -1,0 +1,39 @@
+{
+    "files": [
+        {
+            "path": "dlc\\dlctrial3\\data\\spawnsets\\working_community.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial3\\dlctrial3.reddlc",
+            "bundle": "blob",
+            "chunks": [
+                "dlc"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial3\\journal\\quests\\questgroup_trial3.journal",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial3\\journal\\quests\\working_time.journal",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial3\\levels\\kaer_morhen\\trial3\\radish_dbg\\radish_dbginfo.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial3\\levels\\kaer_morhen\\trial3\\yen_witchers_layer\\actionpoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial3\\levels\\kaer_morhen\\trial3\\yen_witchers_layer\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial3\\levels\\kaer_morhen\\trial3\\yen_witchers_layer\\mappins.w2l",
+            "bundle": "blob"
+        }
+    ]
+}

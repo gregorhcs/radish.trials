@@ -1,0 +1,48 @@
+repository:
+  actors:
+    geralt:
+      template: "gameplay\\templates\\characters\\player\\player.w2ent"
+
+    cerys:
+      template: "characters\\npc_entities\\main_npc\\cerys.w2ent"
+      appearance: [ "becca" ]
+
+production:
+    settings:
+        sceneid: 2
+        strings-idspace: 1408
+        strings-idstart: 250
+
+    assets:
+        actors:
+            geralt:
+                repo: geralt
+                by_voicetag: true
+            cerys:
+                repo: cerys
+                by_voicetag: false
+
+        cameras:
+            geralt_medium:
+                repo: 1_2_medium
+
+            cerys_medium:
+                repo: 2_1_medium
+
+storyboard:
+    defaults:
+        camera:
+            geralt: geralt_medium
+            dan: cerys_medium
+
+dialogscript:
+    player: geralt
+    actors: [ geralt, cerys ]
+
+    section_start:
+        - geralt: "Let's go."
+        - cerys: "Alright"
+        - NEXT: section_exit
+
+    section_exit:
+        - EXIT

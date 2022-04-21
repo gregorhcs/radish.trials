@@ -1,0 +1,15 @@
+{
+    "files": [
+        {
+            "path": "dlc\\dlctrial4\\data\\scenes\\1_dialog_with_dandelion.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial4\\dlctrial4.reddlc",
+            "bundle": "blob",
+            "chunks": [
+                "dlc"
+            ]
+        }
+    ]
+}

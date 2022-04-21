@@ -1,0 +1,156 @@
+communities:
+
+  working_community: 
+  
+    actors:  
+    
+     yennefer: 
+      template: characters/npc_entities/main_npc/yennefer.w2ent
+      tags: [yennefer] 
+    
+     vesemir: 
+      template: characters/npc_entities/main_npc/vesemir.w2ent
+      tags: [vesemir] 
+    
+     lambert: 
+      template: characters/npc_entities/main_npc/lambert.w2ent
+      tags: [lambert] 
+    
+     cat: 
+      template: characters/npc_entities/animals/cat.w2ent
+      appearances: [cat_01,cat_02]
+      tags: [cat] 
+    
+     horse: 
+      template: characters/npc_entities/animals/horse/horse_background_no_saddle.w2ent
+      appearances: [horse_background_01,horse_background_02,horse_background_03,horse_background_04]
+      tags: [horse] 
+        
+        
+    phases:    
+    
+    
+      geralt_not_there_phase:
+      
+        yennefer:
+         appearance: yennefer_gown
+         start_in_ap: true
+         use_last_ap: false
+         actionpoints: 
+           "05:00": kaer_morhen/yen_controlling
+           "22:00": kaer_morhen/yen_sitting
+      
+        vesemir:
+         appearance: __q401_dirty
+         start_in_ap: true
+         use_last_ap: false
+         actionpoints: 
+           "05:00": kaer_morhen/vesemir_working
+           "22:00": kaer_morhen/vesemir_resting
+   
+        lambert:
+         appearance: lambert
+         start_in_ap: true
+         use_last_ap: false
+         actionpoints: 
+           "05:00": kaer_morhen/lambert_calm
+           "22:00": kaer_morhen/lambert_sleeping
+   
+        cat:
+         start_in_ap: true
+         use_last_ap: false
+         actionpoints: 
+           "00:00": kaer_morhen/cat_happy
+   
+        horse:
+         start_in_ap: true
+         use_last_ap: false
+         actionpoints: 
+           "05:00": kaer_morhen/horse_unrest
+           "22:00": kaer_morhen/horse_happy
+    
+    
+      geralt_there_phase:
+      
+        yennefer:
+         appearance: yennefer_gown
+         start_in_ap: true
+         use_last_ap: false
+         actionpoints: 
+           "05:00": kaer_morhen/yen_determined
+           "22:00": kaer_morhen/yen_sitting
+      
+        vesemir:
+         appearance: __q401_dirty
+         start_in_ap: true
+         use_last_ap: false
+         actionpoints: 
+           "05:00": kaer_morhen/vesemir_working
+           "22:00": kaer_morhen/vesemir_resting
+   
+        lambert:
+         appearance: lambert
+         start_in_ap: true
+         use_last_ap: false
+         actionpoints: 
+           "05:00": kaer_morhen/lambert_not_calm
+           "22:00": kaer_morhen/lambert_sleeping
+   
+        cat:
+         start_in_ap: true
+         use_last_ap: false
+         actionpoints: 
+           "00:00": kaer_morhen/cat_distance
+   
+        horse:
+         start_in_ap: true
+         use_last_ap: false
+         actionpoints: 
+           "05:00": kaer_morhen/horse_unrest
+           "22:00": kaer_morhen/horse_unrest
+    
+    
+      geralt_at_horse_phase:
+      
+        yennefer:
+         appearance: yennefer_gown
+         start_in_ap: true
+         use_last_ap: false
+         actionpoints: 
+           "05:00": kaer_morhen/yen_determined
+           "22:00": kaer_morhen/yen_sitting
+      
+        vesemir:
+         appearance: __q401_dirty
+         start_in_ap: true
+         use_last_ap: false
+         actionpoints: 
+           "05:00": kaer_morhen/vesemir_working
+           "22:00": kaer_morhen/vesemir_resting
+   
+        lambert:
+         appearance: lambert
+         start_in_ap: true
+         use_last_ap: false
+         actionpoints: 
+           "05:00": kaer_morhen/lambert_wonder
+           "22:00": kaer_morhen/lambert_sleeping
+   
+        cat:
+         start_in_ap: true
+         use_last_ap: false
+         actionpoints: 
+           "00:00": kaer_morhen/cat_distance
+   
+        horse:
+         start_in_ap: true
+         use_last_ap: false
+         actionpoints: 
+           "00:00": kaer_morhen/horse_happy
+   
+ 
+         
+    
+          
+          
+          

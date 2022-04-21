@@ -1,0 +1,19 @@
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+;
+; rename this file to mod<YOUR MODNAME>.speech.csv and
+; add all strings for custom voicelines like the example line below.
+;
+; make sure the XXXX is the string id-space of the project and nnn is unique
+; for every line.
+;
+;211XXXXnnn|||example voiceline text
+;
+; 
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+2111407000|00000000||Alina
+2111407001|00000000|dlc_name_trial5|Siegfried
+2111407002|00000000|option_dlc_name_trial5|MOD: Siegfried
+2111407003|00000000|content_name_dlc_trial5|MOD: Siegfried
+; 

@@ -1,0 +1,91 @@
+#
+# quest structure root segment
+# 
+# (version: 7, saved: 2021-04-22 20:09:11)
+#
+---
+structure:
+  quest:
+    blocks:
+      start:
+        ".editor": [ 30.0, 141.0 ]
+        next:
+          - changelayers.hide_spear
+          - script.new_logmsg
+      
+      waituntil.new_wait_until_entered_area:
+        entered: [ prologue/spear_area, PLAYER ]
+        ".editor":
+          pos: [ 337.0, 328.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - changelayers.show_spear_layer
+          - script.new_logmsg_1
+      
+      script.new_logmsg:
+        ".editor":
+          pos: [ 85.0, 362.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: radLog
+        parameter:
+          - logChannel: cname_TRIAL5
+          - msg: h1
+        next: ".done"
+      
+      script.new_logmsg_1:
+        ".editor":
+          pos: [ 488.0, 375.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: radLog
+        parameter:
+          - logChannel: cname_TRIAL5
+          - msg: h2
+        next: ".done"
+      
+      changelayers.hide_spear:
+        ".editor":
+          pos: [ 208.0, 250.0 ]
+          hint: hide-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: prologue
+        hide:
+          - spear_layer
+        next:
+          - waituntil.new_wait_until_entered_area
+      
+      changelayers.show_spear_layer:
+        ".editor":
+          pos: [ 473.0, 244.0 ]
+          hint: show-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: prologue
+        show:
+          - spear_layer
+        next:
+          - end
+          - spawn.spawn_alina
+      
+      spawn.spawn_alina:
+        ".editor":
+          pos: [ 605.0, 283.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: default_phase
+        spawnsets:
+          - alina_community
+        next: ".done"
+      
+      end:
+        ".editor": [ 637.0, 138.0 ]
+        next: ".done"
+      

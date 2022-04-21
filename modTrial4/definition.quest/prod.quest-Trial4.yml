@@ -1,0 +1,16 @@
+#
+# production settings
+# 
+# (version: 3, saved: 2021-04-19 22:53:15)
+#
+---
+production:
+  settings:
+    id: trial4
+    caption: Grumpy Witcher
+    menuvisibile: true
+    enabled: true
+    storesdata: true
+    strings-idspace: 1406
+    strings-idstart: 0
+    version: 3

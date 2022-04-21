@@ -1,0 +1,51 @@
+communities:
+
+  community_alene_cat: 
+  
+    actors:  
+    
+     alene: 
+      template: characters/npc_entities/main_npc/cerys.w2ent
+      tags: [alene]
+    
+     cat: 
+      template: characters/npc_entities/animals/cat.w2ent
+      tags: [cat]
+        
+        
+    phases:
+    
+      start_phase:
+   
+        alene:
+         start_in_ap: true
+         use_last_ap: false
+         actionpoints: 
+           "00:00": skellige/ap_alene_waiting
+
+        cat:
+          start_in_ap: true
+          use_last_ap: false
+          actionpoints:
+            "00:00": skellige/ap_cat_outside
+    
+      knocked_door_phase:
+   
+        alene:
+         start_in_ap: false
+         use_last_ap: false
+         actionpoints: 
+           "00:00": skellige/ap_alene_waiting
+
+        cat:
+          start_in_ap: false
+          use_last_ap: false
+          actionpoints:
+            "00:00": skellige/ap_cat_door_open
+   
+ 
+         
+    
+          
+          
+          

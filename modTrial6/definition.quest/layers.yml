@@ -1,0 +1,67 @@
+layers: 
+  scenelayer: 
+    world: "skellige"
+    #context: ""
+
+    scenepoints: 
+      sp_alene_geralt_arrive: [ 311.9729919434, 522.7623901367, 88.0255889893, -27.1550445557 ] # [ 318.8606262207, 539.2067871094, 87.2739181519, 0.0 ]
+
+    actionpoints: 
+      ap_alene_waiting: [ 306.6034545898, 514.3480224609, 88.2115097046, 242.4000396729, "work_woman/stand_w_waiting_jt" ]
+
+      ap_cat_door_open: [ 327.7313842773, 542.3460083008, 87.2057647705, 103.0000152588, "ep1_cat/q604_cat_sit" ]
+
+      ap_cat_outside: [ 326.8404235840, 541.4868164063, 87.2340927124, 0.0, "ep1_cat/q604_cat_sit" ]
+      
+    areas: 
+      trig_area_scene: 
+        height: 3.0
+        borderpoints: 
+          - [ 317.0477905273, 524.4155883789, 87.9549636841 ]
+          - [ 314.2838745117, 528.2197875977, 87.9549636841 ]
+          - [ 309.8117370605, 526.7667846680, 87.9549636841 ]
+          - [ 309.8117370605, 522.0643920898, 87.9549636841 ]
+          - [ 314.2838745117, 520.6113891602, 87.9549636841 ]
+
+    statics: 
+#      barrel1: 
+#        template: "W3AnimatedContainer:environment\\decorations\\decoration_sets\\street\\decoration_set_street_barrel_d.w2ent"
+#        pos: [ 326.3430786133, 540.1932373047, 87.2985153198 ]
+#        rot: [ 0.0, 0.0, 0.0 ]
+
+#      barrel2: 
+#        template: "W3AnimatedContainer:environment\\decorations\\decoration_sets\\street\\decoration_set_street_barrel_d.w2ent"
+#        pos: [ 326.3486022949, 540.7703247070, 87.2880325317 ]
+#        rot: [ 0.0, 0.0, 0.0 ]
+
+#      barrel3: 
+#        template: "W3AnimatedContainer:environment\\decorations\\decoration_sets\\street\\decoration_set_street_barrel_d.w2ent"
+#        pos: [ 326.1885681152, 541.5457153320, 87.1900482178 ]
+#        rot: [ 0.0, 0.0, 0.0 ]
+
+#      barrel4: 
+#        template: "W3AnimatedContainer:environment\\decorations\\decoration_sets\\street\\decoration_set_street_barrel_d.w2ent"
+#        pos: [ 327.0963134766, 540.3798217773, 87.2454147339 ]
+#        rot: [ 0.0, 0.0, 0.0 ]
+
+      catbasket: 
+        template: "CItemEntity:items\\work\\basket_01\\basket_01.w2ent"
+        pos: [ 326.8404235840, 541.4868164063, 87.2340927124 ]
+        rot: [ 0.0, 0.0, -84.8000106812 ]
+
+      flower: 
+        template: "CEntity:dlc\\ep1\\data\\items\\quest_items\\q604\\q604_item__iris_flower.w2ent"
+        pos: [ 320.5320129395, 525.6119995117, 87.6005020142 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+
+      flower2: 
+        template: "CEntity:dlc\\ep1\\data\\items\\quest_items\\q604\\q604_item__iris_flower.w2ent"
+        pos: [ 320.2409973145, 525.6140136719, 87.6239013672 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+        scale: [ 1.1000000238, 1.1000000238, 1.1000000238 ]
+
+      flower3: 
+        template: "CItemEntity:dlc\\ep1\\data\\items\\quest_items\\q604\\q604_item__rose.w2ent"
+        pos: [ 320.7837829590, 525.7955932617, 87.6602172852 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+        scale: [ 1.5000000000, 1.5000000000, 1.5000000000 ]

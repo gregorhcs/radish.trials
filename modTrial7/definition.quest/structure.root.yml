@@ -1,0 +1,60 @@
+#
+# quest structure root segment
+# 
+# (version: 20, saved: 2022-04-08 00:30:41)
+#
+---
+structure:
+  quest:
+    blocks:
+      start:
+        ".editor": [ 27.0, 148.0 ]
+        next:
+          - changelayers.show_all_layers
+      
+      script.HelloWorld:
+        ".editor":
+          pos: [ 510.0, 155.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: radLog
+        parameter:
+          - logChannel: cname_trial7
+          - msg: Hello Trial 7!
+        next:
+          - end
+      
+      changelayers.show_all_layers:
+        ".editor":
+          pos: [ 196.0, 164.0 ]
+          hint: show-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: skellige
+        show:
+          - bearlayer
+          - humanlayer
+          - nekkerlayer
+        next:
+          - spawn.spawn_all_communities
+      
+      spawn.spawn_all_communities:
+        ".editor":
+          pos: [ 357.0, 157.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: default
+        spawnsets:
+          - bear_community
+          - human_community
+          - nekker_community
+        next:
+          - script.HelloWorld
+      
+      end:
+        ".editor": [ 695.0, 151.0 ]
+        next: ".done"
+      

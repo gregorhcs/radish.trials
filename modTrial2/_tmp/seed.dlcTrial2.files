@@ -1,0 +1,81 @@
+{
+    "files": [
+        {
+            "path": "dlc\\dlctrial2\\data\\entities\\trial2_boat.w2ent",
+            "bundle": "blob",
+            "chunks": [
+                "dlc"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial2\\data\\gameplay\\items\\def_item_quest.xml",
+            "bundle": "blob",
+            "chunks": [
+                "dlc"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial2\\data\\gameplay\\items\\def_loot_quest.xml",
+            "bundle": "blob",
+            "chunks": [
+                "dlc"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial2\\dlctrial2.reddlc",
+            "bundle": "blob",
+            "chunks": [
+                "dlc"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial2\\journal\\quests\\questgroup_trial2.journal",
+            "bundle": "blob",
+            "chunks": [
+                "dlc"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial2\\journal\\quests\\trial2.journal",
+            "bundle": "blob",
+            "chunks": [
+                "dlc"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial2\\levels\\prolog_village\\trial2\\layerboat\\areas.w2l",
+            "bundle": "blob",
+            "chunks": [
+                "dlc"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial2\\levels\\prolog_village\\trial2\\layerboat\\interactive_entities.w2l",
+            "bundle": "blob",
+            "chunks": [
+                "dlc"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial2\\levels\\prolog_village\\trial2\\layerboat\\mappins.w2l",
+            "bundle": "blob",
+            "chunks": [
+                "dlc"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial2\\levels\\prolog_village\\trial2\\layertrig\\areas.w2l",
+            "bundle": "blob",
+            "chunks": [
+                "dlc"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial2\\levels\\prolog_village\\trial2\\radish_dbg\\radish_dbginfo.w2l",
+            "bundle": "blob",
+            "chunks": [
+                "dlc"
+            ]
+        }
+    ]
+}

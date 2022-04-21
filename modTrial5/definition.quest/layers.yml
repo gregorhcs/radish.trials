@@ -1,0 +1,36 @@
+layers: 
+      
+  trigger_layer: 
+    world: "prologue"
+    #context: ""
+
+    areas: 
+      spear_area: 
+        height: 4.0
+        borderpoints: 
+          - [ 307.0085449219, -20.1837368011, 0.9761497974 ]
+          - [ 302.8626708984, -14.4774017334, 0.9761497974 ]
+          - [ 296.1544189453, -16.6570358276, 0.9761497974 ]
+          - [ 296.1544189453, -23.7104034424, 0.9761497974 ]
+          - [ 302.8626708984, -25.8900489807, 0.9761497974 ]
+
+    statics: 
+      new_static: 
+        template: "W3Container:quests\\sidequests\\no_mans_land\\quest_files\\sq102_letho\\entities\\sq102_humberts_desk.w2ent"
+        pos: [ 301.5143737793, -22.4789581299, 1.2096195221 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+
+
+  spear_layer: 
+    world: "prologue"
+    #context: ""
+
+    actionpoints: 
+      alina_ap: [ 304.5143737793, -22.4789581299, 1.2096195221, 0.0, "work_woman/q301_triss_pissed" ]
+
+    interactiveentities: 
+      spear: 
+        template: "CEntity:dlc\\dlctrial5\\data\\entities\\strange_book.w2ent"
+        pos: [ 301.5143737793, -18.4789581299, 1.6801848412 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+        valid_interactions: [examine]

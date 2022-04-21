@@ -1,0 +1,630 @@
+#
+# Extended flyby, actor sounds and item equip example - playback in skellige only!
+#
+# Note: since flying is not a witcher ability the games occlusion culling is optimized/precalculated
+# for "slow" ground level movement. the flyby has many visual pop-ins and lod changes - search the web
+# for better gfx settings if you want to mitigate this. but this example is not about that...
+#
+repository:
+  actors:
+    geralt:
+      template: "gameplay\\templates\\characters\\player\\player.w2ent"
+
+    snow_rabbit:
+      template: "characters\\npc_entities\\animals\\snow_rabbit.w2ent"
+      appearance: [ "snow_rabbit" ]
+
+  props:
+    noonwraith_split_entity:
+      template: "fx\\monsters\\noonwraith\\noonwraith_split_entity.w2ent"
+
+  animations:
+    anim_6984_high_standing_determined_enter_rightside:
+      animation: "high_standing_determined_enter_rightside"
+      frames: 161
+
+    anim_3361_idle03:
+      animation: "idle03"
+      frames: 210
+
+    anim_6774_high_standing_determined_to_low_kneeling_determined:
+      animation: "high_standing_determined_to_low_kneeling_determined"
+      frames: 125
+
+    anim_118_eating_stop:
+      animation: "eating_stop"
+      frames: 28
+
+    anim_7101_high_standing_determined_silver_to_gameplay_combat:
+      animation: "high_standing_determined_silver_to_gameplay_combat"
+      frames: 132
+
+    anim_7421_low_kneeling_determined_to_high_standing_determined:
+      animation: "low_kneeling_determined_to_high_standing_determined"
+      frames: 140
+
+  animations.mimic:
+    mimicsanim_119_geralt_neutral_gesture_brows_up_face_nrml:
+      animation: "geralt_neutral_gesture_brows_up_face_nrml"
+      frames: 90
+
+  actor.poses:
+    pose_0_high_standing_determined_idle:
+      idle_anim: "high_standing_determined_idle"
+
+    pose_0_idle01:
+      idle_anim: "idle01"
+
+    pose_979_eating_loop:
+      idle_anim: "eating_loop"
+
+    pose_2155_Low_Kneeling_Determined:
+      name: "Kneeling"
+      emotional_state: "Determined"
+      status: "Low"
+      idle_anim: "low_kneeling_determined_idle"
+
+    pose_765_man_geralt_sword_alert_idle_right:
+      idle_anim: "man_geralt_sword_alert_idle_right"
+
+  cameras:
+    cam_1_start:
+      fov: 40.0
+      transform:
+        pos: [ -2251.7451171875, 226.3758544922, -60.6199645996 ]
+        rot: [ 0.0, 5.1769633293, 245.4674224854 ]
+      #zoom: 1.0
+      dof:
+        #aperture: [ 28.2500000000, 1.2699999809 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.1
+      event_generator:
+        plane: "medium"
+        tags: [ "ext" ]
+
+    cam_2_flyby1:
+      fov: 40.0
+      transform:
+        pos: [ -1806.6405029297, 41.8745117188, -60.6505699158 ]
+        rot: [ 0.0, 3.2787652016, 247.5436706543 ]
+      #zoom: 1.0
+      dof:
+        #aperture: [ 28.2500000000, 1.2699999809 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.1
+      event_generator:
+        plane: "medium"
+        tags: [ "ext" ]
+
+    cam_3_flyby2:
+      fov: 40.0
+      transform:
+        pos: [ -1701.0468750000, 3.7883911133, -0.5627555847 ]
+        rot: [ 0.0, 2.7090287209, 245.9970092773 ]
+      #zoom: 1.0
+      dof:
+        #aperture: [ 28.2500000000, 1.2699999809 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.1
+      event_generator:
+        plane: "medium"
+        tags: [ "ext" ]
+
+    cam_4_flyby3:
+      fov: 40.0
+      transform:
+        pos: [ -1448.5598144531, -122.8826293945, 67.9379577637 ]
+        rot: [ 0.0, 338.5958557129, 239.7313079834 ]
+      #zoom: 1.0
+      dof:
+        #aperture: [ 28.2500000000, 1.2699999809 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.1
+      event_generator:
+        plane: "medium"
+        tags: [ "ext" ]
+
+    cam_5_flyby4:
+      fov: 40.0
+      transform:
+        pos: [ -1039.0347900391, -324.0783081055, -12.5346641541 ]
+        rot: [ 0.0, 345.4480285645, 257.5959472656 ]
+      #zoom: 1.0
+      dof:
+        #aperture: [ 28.2500000000, 1.2699999809 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.1
+      event_generator:
+        plane: "medium"
+        tags: [ "ext" ]
+
+    cam_6_flyby5:
+      fov: 40.0
+      transform:
+        pos: [ -667.6799926758, -388.1643066406, -1.1348381042 ]
+        rot: [ 0.0, 355.5047912598, 286.7203979492 ]
+      #zoom: 1.0
+      dof:
+        #aperture: [ 28.2500000000, 1.2699999809 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.1
+      event_generator:
+        plane: "medium"
+        tags: [ "ext" ]
+
+    cam_7_flyby6:
+      fov: 40.0
+      transform:
+        pos: [ -296.0915527344, -264.7567138672, 26.8795051575 ]
+        rot: [ 0.0, 352.0814819336, 293.7520751953 ]
+      #zoom: 1.0
+      dof:
+        #aperture: [ 28.2500000000, 1.2699999809 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.1
+      event_generator:
+        plane: "medium"
+        tags: [ "ext" ]
+
+    cam_8_flyby7:
+      fov: 40.0
+      transform:
+        pos: [ -132.2107391357, -188.8432922363, -16.6447792053 ]
+        rot: [ 0.0, 344.3858337402, 310.4725952148 ]
+      #zoom: 1.0
+      dof:
+        #aperture: [ 28.2500000000, 1.2699999809 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.1
+      event_generator:
+        plane: "medium"
+        tags: [ "ext" ]
+
+    cam_9_flyby8:
+      fov: 40.0
+      transform:
+        pos: [ -32.2242279053, -54.0069084167, -9.0119018555 ]
+        rot: [ 0.0, 359.0627746582, 330.1884765625 ]
+      #zoom: 1.0
+      dof:
+        #aperture: [ 28.2500000000, 1.2699999809 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.1
+      event_generator:
+        plane: "medium"
+        tags: [ "ext" ]
+
+    cam_10_flyby9:
+      fov: 40.0
+      transform:
+        pos: [ -14.1456174850, -20.9253578186, -4.1119766235 ]
+        rot: [ 0.0, 357.3027648926, 330.6285095215 ]
+      #zoom: 1.0
+      dof:
+        #aperture: [ 28.2500000000, 1.2699999809 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.1
+      event_generator:
+        plane: "medium"
+        tags: [ "ext" ]
+
+    cam_11_rabbit:
+      fov: 30.0
+      transform:
+        pos: [ -14.0369939804, -20.0934314728, -4.0619773865 ]
+        rot: [ 0.0, 352.1427917480, 317.1484985352 ]
+      #zoom: 1.0
+      dof:
+        #aperture: [ 28.2500000000, 1.2699999809 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "medium"
+        tags: [ "ext" ]
+
+    cam_12_geralt_enter:
+      fov: 30.0
+      transform:
+        pos: [ -12.1310319901, -18.9378814697, -3.3986663818 ]
+        rot: [ 0.0, 352.9827880859, 50.1082992554 ]
+      #zoom: 1.0
+      dof:
+        #aperture: [ 28.2500000000, 1.2699999809 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "medium"
+        tags: [ "ext" ]
+
+    cam_13_geralt_sit_down:
+      fov: 30.0
+      transform:
+        pos: [ -12.1524791718, -18.9199466705, -4.0619773865 ]
+        rot: [ 0.0, 352.9827880859, 50.1082992554 ]
+      #zoom: 1.0
+      dof:
+        #aperture: [ 28.2500000000, 1.2699999809 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "medium"
+        tags: [ "ext" ]
+
+    cam_19_geralt_sword:
+      fov: 30.0
+      transform:
+        pos: [ -11.8305673599, -19.3424892426, -3.4619865417 ]
+        rot: [ 0.0, 353.3827819824, 48.2285842896 ]
+      #zoom: 1.0
+      dof:
+        #aperture: [ 28.2500000000, 1.2699999809 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "medium"
+        tags: [ "ext" ]
+
+production:
+  settings:
+    sceneid: 1
+    strings-idspace: 9999
+    strings-idstart: 0
+
+  placement: "snowrabbit"
+    # INFO: world coordinates of used origin:
+      #pos: [ -204.9835357666, 413.7834167480, 61.3719291687 ]
+      #rot: [ 0.0, 127.0858535767, 0.0 ]
+
+  assets:
+    actors:
+      geralt:
+        repo: "geralt"
+        by_voicetag: true
+        tags: [ "PLAYER" ]
+
+      snow_rabbit:
+        repo: "snow_rabbit"
+        #by_voicetag: true
+        appearance: "snow_rabbit"
+        tags: [ "snow_rabbit" ]
+
+    props:
+      fogling_fog:
+        repo: "fogling_fog"
+
+      noonwraith_split_entity:
+        repo: "noonwraith_split_entity"
+
+      q704_fairlytale_portal:
+        repo: "q704_fairlytale_portal"
+
+    cameras:
+      cam_1_start:
+        repo: "cam_1_start"
+
+      cam_2_flyby1:
+        repo: "cam_2_flyby1"
+
+      cam_3_flyby2:
+        repo: "cam_3_flyby2"
+
+      cam_4_flyby3:
+        repo: "cam_4_flyby3"
+
+      cam_5_flyby4:
+        repo: "cam_5_flyby4"
+
+      cam_6_flyby5:
+        repo: "cam_6_flyby5"
+
+      cam_7_flyby6:
+        repo: "cam_7_flyby6"
+
+      cam_8_flyby7:
+        repo: "cam_8_flyby7"
+
+      cam_9_flyby8:
+        repo: "cam_9_flyby8"
+
+      cam_10_flyby9:
+        repo: "cam_10_flyby9"
+
+      cam_11_rabbit:
+        repo: "cam_11_rabbit"
+
+      cam_12_geralt_enter:
+        repo: "cam_12_geralt_enter"
+
+      cam_13_geralt_sit_down:
+        repo: "cam_13_geralt_sit_down"
+
+      cam_19_geralt_sword:
+        repo: "cam_19_geralt_sword"
+
+    animations:
+      geralt_high_standing_determined_enter_rightside:
+        actor: "geralt"
+        repo: "anim_6984_high_standing_determined_enter_rightside"
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.5
+
+      snow_rabbit_idle03:
+        actor: "snow_rabbit"
+        repo: "anim_3361_idle03"
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.2
+        blendout: 0.2
+
+      geralt_high_standing_determined_to_low_kneeling_determined:
+        actor: "geralt"
+        repo: "anim_6774_high_standing_determined_to_low_kneeling_determined"
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      snow_rabbit_eating_stop:
+        actor: "snow_rabbit"
+        repo: "anim_118_eating_stop"
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.2
+        blendout: 0.5
+
+      geralt_high_standing_determined_silver_to_gameplay_combat:
+        actor: "geralt"
+        repo: "anim_7101_high_standing_determined_silver_to_gameplay_combat"
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+      geralt_low_kneeling_determined_to_high_standing_determined:
+        actor: "geralt"
+        repo: "anim_7421_low_kneeling_determined_to_high_standing_determined"
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5
+        blendout: 0.5
+
+    animations.mimic:
+      geralt_geralt_neutral_gesture_brows_up_face_nrml:
+        actor: "geralt"
+        repo: "mimicsanim_119_geralt_neutral_gesture_brows_up_face_nrml"
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+    actor.poses:
+      geralt_high_standing_determined_idle:
+        actor: "geralt"
+        repo: "pose_0_high_standing_determined_idle"
+
+      snow_rabbit_idle01:
+        actor: "snow_rabbit"
+        repo: "pose_0_idle01"
+
+      snow_rabbit_eating_loop:
+        actor: "snow_rabbit"
+        repo: "pose_979_eating_loop"
+
+      geralt_Low_Kneeling_Determined:
+        actor: "geralt"
+        repo: "pose_2155_Low_Kneeling_Determined"
+
+      geralt_man_geralt_sword_alert_idle_right:
+        actor: "geralt"
+        repo: "pose_765_man_geralt_sword_alert_idle_right"
+
+    soundbanks:
+      - monster_bies
+      - magic_ghost
+
+storyboard:
+  #defaults:
+  section_storyboard_ui:
+    # shot start
+    shot_1:
+      # fx cannot be hidden -> replacement
+      - prop.placement: [0.0, noonwraith_split_entity, [ 0.0, 0.0, -1000.0 ], [ 0.0, 0.0, 0.0 ]]
+
+      - fade.in: [0.0, 2.0]
+      - actor.hide: [0.0, geralt]
+      - actor.pose: [0.0, snow_rabbit_eating_loop]
+      - actor.placement: [0.0, geralt, [ 0.0, 1.5999929905, -0.0015296936 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.placement: [0.0, snow_rabbit, [ -12.0368375778, -17.9903221130, -4.6780624390 ], [ 0.0, 0.0, 110.9599380493 ]]
+
+      - cam.blend.start: [0.0, cam_1_start]
+      - cam.blend.key: [0.2, cam_3_flyby2]
+      - cam.blend.key: [0.3, cam_4_flyby3]
+      - cam.blend.key: [0.45, cam_5_flyby4]
+      - cam.blend.key: [0.6, cam_6_flyby5]
+      - cam.blend.key: [0.70, cam_7_flyby6]
+      - cam.blend.key: [0.80, cam_8_flyby7]
+      - cam.blend.key: [0.90, cam_9_flyby8]
+
+    # shot rabbit
+    shot_11:
+      - cam.blend.end: [0.5, cam_11_rabbit]
+
+    # shot geralt enter
+    shot_12:
+      - actor.show: [0.0, geralt]
+      - cam: [0.0, cam_12_geralt_enter]
+      - actor.placement: [0.0, geralt, [ -13.7801437378, -17.7754497528, -5.1059684753 ], [ 0.0, 0.0, 261.0109558105 ]]
+      - cam.blend.start: [0.9, cam_12_geralt_enter]
+      - actor.anim:
+          .@pos: [0.0, geralt_high_standing_determined_enter_rightside]
+          clipfront: 2.0
+          stretch: 1.5
+
+      - actor.lookat: [0.0, geralt, snow_rabbit]
+
+    # shot geralt sit down
+    shot_13:
+      - actor.pose: [0.3, geralt_Low_Kneeling_Determined]
+      - cam.blend.end: [0.99, cam_13_geralt_sit_down]
+      - actor.anim:
+          .@pos: [0.0, geralt_high_standing_determined_to_low_kneeling_determined]
+          blendin: 0.5
+          clipfront: 1.0
+          clipend: 3.0
+
+    # shot rabbit stop eating
+    shot_14:
+      - cam: [0.0, cam_11_rabbit]
+      - actor.anim:
+          .@pos: [0.0, snow_rabbit_eating_stop]
+          stretch: 1.5
+
+      - actor.pose: [0.3, snow_rabbit_idle01]
+
+    # shot geralt calm down
+    shot_15:
+      - cam: [0.0, cam_13_geralt_sit_down]
+
+    # shot rabbit standup
+    shot_16:
+      - cam: [0.0, cam_11_rabbit]
+      - actor.anim:
+          .@pos: [0.0, snow_rabbit_idle03]
+          blendout: 0.0
+          clipfront: 0.0
+          clipend: 4.0
+      - actor.sound: [0.6, snow_rabbit, monster_bies_taunt_scream_long_custom]
+
+    shot_16b:
+      - cam: [0.0, cam_13_geralt_sit_down]
+      - actor.anim.mimic:
+          .@pos: [0.0, geralt_geralt_neutral_gesture_brows_up_face_nrml]
+          stretch: 3.0
+
+    # shot geralt dont fight
+    shot_17:
+      - actor.sound: [0.2, snow_rabbit, monster_bies_idle_grunt_out_custom]
+
+    # shot rabbit standup 2
+    shot_18:
+      - actor.pose: [0.0, geralt_high_standing_determined_idle]
+      - cam: [0.0, cam_11_rabbit]
+      - actor.anim:
+          .@pos: [0.0, snow_rabbit_idle03]
+          blendin: 0.0
+          blendout: 0.0
+          clipfront: 3.0
+          clipend: 5.0
+      - actor.sound: [0.5, snow_rabbit, monster_bies_attack_2_pre_custom]
+
+    # shot geralt sword
+    shot_19:
+      - cam: [0.0, cam_19_geralt_sword]
+      - actor.anim:
+          .@pos: [0.0, geralt_high_standing_determined_silver_to_gameplay_combat]
+          stretch: 1.5
+      - actor.equip.right: [0.31, geralt, silversword]
+      - actor.pose: [0.5, geralt_man_geralt_sword_alert_idle_right]
+
+    shot_19b:
+      - cam: [0.0, cam_11_rabbit]
+      # fx cannot be hidden -> replacement
+      - prop.placement: [0.4, noonwraith_split_entity, [ -12.1279964447, -18.0232124329, -4.7135505676 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.sound: [0.5, snow_rabbit, magic_ghost_disappear]
+      - actor.hide: [0.5, snow_rabbit]
+
+    shot_20:
+      - cam: [0.0, cam_19_geralt_sword]
+
+    shot_21:
+      # fx cannot be hidden -> replacement
+      - prop.placement: [0.0, noonwraith_split_entity, [ 0.0, 0.0, -1000.0 ], [ 0.0, 0.0, 0.0 ]]
+
+dialogscript:
+  player: "geralt"
+  actors: [ "geralt", "snow_rabbit" ]
+  props: [ "noonwraith_split_entity" ]
+
+  section_start:
+    - PAUSE: 0.0
+    - NEXT: section_storyboard_ui
+
+  section_storyboard_ui:
+    # shot start
+    - CUE: shot_1
+    - PAUSE: 70.0
+    # shot rabbit
+    - CUE: shot_11
+    - PAUSE: 3.0
+    # shot geralt enter
+    - CUE: shot_12
+    # (longest) anim: idle03
+    - PAUSE: 4.0
+    # shot geralt sit down
+    - CUE: shot_13
+    # (longest) anim: idle03
+    - PAUSE: 2.0
+    # shot rabbit stop eating
+    - CUE: shot_14
+    - PAUSE: 2.0
+    # shot geralt calm down
+    - CUE: shot_15
+    - geralt: "0001111631|Calm down. Just here to talk."
+    # shot rabbit standup
+    - CUE: shot_16
+    # (longest) anim: idle03
+    - PAUSE: 4.0
+    - CUE: shot_16b
+    - PAUSE: 1.5
+    # shot geralt dont fight
+    - CUE: shot_17
+    - geralt: "0001172302|We don't have to fight."
+    # shot rabbit standup 2
+    - CUE: shot_18
+    # (longest) anim: idle03
+    - PAUSE: 2.0
+    # shot geralt sword
+    - CUE: shot_19
+    - geralt: "0000569544|C'mon, cut the shit."
+    - CUE: shot_19b
+    - PAUSE: 2.5
+    - geralt: "0001097158|What the fuck was that?"
+    - CUE: shot_20
+    - PAUSE: 1.0
+    - CUE: shot_21
+    - geralt: "0001200888|Dammit. Back where I started."
+    - NEXT: section_exit
+
+  section_exit:
+    - CAMERA_BLEND: 2.0
+    - EXIT

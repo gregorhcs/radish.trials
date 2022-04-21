@@ -1,0 +1,21 @@
+journals:
+  quests:
+    trial2:
+      title: "Strange Weathers"
+      type: Side
+      # world: multiple                       # optional, if empty every objective requires world
+      description:
+        - strange_weather: Something strange happened while Geralt walked around in White Orchard. Upon entering a certain area, suddenly, the weather dramatically changed.<br/>
+        - boat: Geralt didn't need much investigation to find an even stranger surprise - A boat had manifested in front of his eyes, in the middle of nowhere.<br/>
+        - looted: The strange boat contained interesting informations on a magician who apparently did some miscalculations while casting a teleport spell.
+      instructions:
+        investigation:
+          - investigate_area:
+              world: prologue
+              caption: Investigate the area.
+              mappins:
+                - [weather_area_pin, 24]
+          - investigate_boat:
+              world: prologue
+              caption: Maybe the boat contains something of interest.
+              mappins: skelligeboat_pin

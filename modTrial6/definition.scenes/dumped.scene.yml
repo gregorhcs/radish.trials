@@ -1,0 +1,3414 @@
+#-- STORYBOARD UI - SCENE DUMP -------------------------------------------------
+repository:
+  actors:
+    geralt:
+      template: "gameplay\\templates\\characters\\player\\player.w2ent"
+
+    cerys:
+      template: "characters\\npc_entities\\main_npc\\cerys.w2ent"
+      appearance: [ "becca" ]
+
+    bjorn:
+      template: "characters\\npc_entities\\secondary_npc\\bjorn.w2ent"
+      appearance: [ "bjorn" ]
+
+  animations:
+    anim_8086_locomotion_walk_cycle_slow_forward:
+      animation: "locomotion_walk_cycle_slow_forward"
+      frames: 152
+
+    anim_13354_locomotion_walk_cycle_slow_forward:
+      animation: "locomotion_walk_cycle_slow_forward"
+      frames: 30
+
+    anim_7311_high_standing_sad_gesture_sigh:
+      animation: "high_standing_sad_gesture_sigh"
+      frames: 95
+
+    anim_592_locomotion_walk_cycle_slow_forward:
+      animation: "locomotion_walk_cycle_slow_forward"
+      frames: 160
+
+    anim_12476_add_reaction_sigh_01:
+      animation: "add_reaction_sigh_01"
+      frames: 137
+
+    anim_12458_add_idle_weight_shift_01:
+      animation: "add_idle_weight_shift_01"
+      frames: 543
+
+    anim_6723_add_idle_weight_shift_01:
+      animation: "add_idle_weight_shift_01"
+      frames: 240
+
+    anim_320_high_standing_determined_gesture_door_knock:
+      animation: "high_standing_determined_gesture_door_knock"
+      frames: 110
+
+    anim_7024_high_standing_determined_gesture_greeting_geralt_01:
+      animation: "high_standing_determined_gesture_greeting_geralt_01"
+      frames: 78
+
+    anim_12882_low_standing_sad_idle:
+      animation: "low_standing_sad_idle"
+      frames: 730
+
+    anim_6915_high_standing_aggressive_enter_frontal:
+      animation: "high_standing_aggressive_enter_frontal"
+      frames: 177
+
+    anim_332_high_standing_determined_step_back_casual:
+      animation: "high_standing_determined_step_back_casual"
+      frames: 134
+
+    anim_6930_high_standing_aggressive_idle:
+      animation: "high_standing_aggressive_idle"
+      frames: 347
+
+    anim_6726_add_idle_weight_shift_04:
+      animation: "add_idle_weight_shift_04"
+      frames: 341
+
+    anim_12464_add_reaction_afraid_01:
+      animation: "add_reaction_afraid_01"
+      frames: 152
+
+    anim_6986_high_standing_determined_exclamation_gesture_02_both_hands:
+      animation: "high_standing_determined_exclamation_gesture_02_both_hands"
+      frames: 86
+
+    anim_12468_add_reaction_agreeing_nod_01:
+      animation: "add_reaction_agreeing_nod_01"
+      frames: 90
+
+    anim_6924_high_standing_aggressive_gesture_left_hand_point_down:
+      animation: "high_standing_aggressive_gesture_left_hand_point_down"
+      frames: 105
+
+    anim_12953_high_standing_devastated_exit_frontal:
+      animation: "high_standing_devastated_exit_frontal"
+      frames: 176
+
+    anim_12710_high_standing_devastated_idle:
+      animation: "high_standing_devastated_idle"
+      frames: 666
+
+    anim_6918_high_standing_aggressive_exit_back:
+      animation: "high_standing_aggressive_exit_back"
+      frames: 147
+
+    anim_6982_high_standing_determined_enter_frontal:
+      animation: "high_standing_determined_enter_frontal"
+      frames: 239
+
+    anim_6737_add_reaction_sigh_01:
+      animation: "add_reaction_sigh_01"
+      frames: 83
+
+    anim_7096_high_standing_determined_idle:
+      animation: "high_standing_determined_idle"
+      frames: 288
+
+    anim_6987_high_standing_determined_exit_back:
+      animation: "high_standing_determined_exit_back"
+      frames: 126
+
+    anim_6722_add_idle_arm_relax:
+      animation: "add_idle_arm_relax"
+      frames: 198
+
+    anim_6936_high_standing_aggressive_turn90_left:
+      animation: "high_standing_aggressive_turn90_left"
+      frames: 100
+
+    anim_6922_high_standing_aggressive_gesture_both_hands_1:
+      animation: "high_standing_aggressive_gesture_both_hands_1"
+      frames: 142
+
+    anim_4946_man_fistfight_hit_knockdown_f_getup_exploration_1:
+      animation: "man_fistfight_hit_knockdown_f_getup_exploration_1"
+      frames: 457
+
+    anim_12888_dialog_animation_exit_forward:
+      animation: "dialog_animation_exit_forward"
+      frames: 195
+
+    anim_6923_high_standing_aggressive_gesture_left_hand_flick_1:
+      animation: "high_standing_aggressive_gesture_left_hand_flick_1"
+      frames: 78
+
+    anim_7297_high_standing_sad_exit_frontal:
+      animation: "high_standing_sad_exit_frontal"
+      frames: 273
+
+  animations.mimic:
+    mimicsanim_493_geralt_reaction_eye_smile_face:
+      animation: "geralt_reaction_eye_smile_face"
+      frames: 240
+
+    mimicsanim_470_geralt_neutral_question_why_face:
+      animation: "geralt_neutral_question_why_face"
+      frames: 51
+
+    mimicsanim_426_geralt_neutral_gesture_sceptical_remark_face:
+      animation: "geralt_neutral_gesture_sceptical_remark_face"
+      frames: 101
+
+    mimicsanim_487_geralt_reaction_annoyed_face:
+      animation: "geralt_reaction_annoyed_face"
+      frames: 100
+
+    mimicsanim_485_geralt_reaction_anger_restrain_face:
+      animation: "geralt_reaction_anger_restrain_face"
+      frames: 220
+
+    mimicsanim_308_focused_anim_combined_face:
+      animation: "focused_anim_combined_face"
+      frames: 889
+
+  actor.poses:
+    pose_0_high_standing_determined_idle:
+      idle_anim: "high_standing_determined_idle"
+
+    pose_0_man_big_ex_idle:
+      idle_anim: "man_big_ex_idle"
+
+  cameras:
+    cam_1_shotintrovillage:
+      fov: 40.0
+      transform:
+        pos: [ -5.7992329597, -10.9851779938, 4.4944152832 ]
+        rot: [ 0.0, 353.8000183105, 344.7998657227 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_2_shotcloseupalenelookingatgeralt:
+      fov: 40.0
+      transform:
+        pos: [ -1.2830346823, 2.4743268490, 1.5944976807 ]
+        rot: [ 0.0, 359.5500183105, 273.6252746582 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_3_shot3flowers:
+      fov: 40.0
+      transform:
+        pos: [ 2.4676060677, 1.1828665733, 1.5944976807 ]
+        rot: [ 0.0, 356.0500183105, 15.5259399414 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_4_shot4geraltsighing:
+      fov: 40.0
+      transform:
+        pos: [ 0.6978788376, 7.2818632126, 1.5944976807 ]
+        rot: [ 0.0, 356.3500061035, 172.6257324219 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_5_shot5towntoduo:
+      fov: 40.0
+      transform:
+        pos: [ -9.1491680145, 26.1362228394, 1.5944976807 ]
+        rot: [ 0.0, 356.0500183105, 240.5258178711 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_6_shot6werethere:
+      fov: 40.0
+      transform:
+        pos: [ -1.4797625542, 12.8757686615, 1.1944732666 ]
+        rot: [ 0.0, 346.7250671387, 320.5753173828 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_7_shot7getthisoverwith:
+      fov: 40.0
+      transform:
+        pos: [ -0.2284851074, 14.6490230560, 0.8944854736 ]
+        rot: [ 0.0, 358.5000610352, 203.0254364014 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_8_shot8knocking:
+      fov: 40.0
+      transform:
+        pos: [ 1.6194963455, 20.9908485413, 1.4944763184 ]
+        rot: [ 0.0, 345.1000366211, 331.5501098633 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_10_shot10aiskerangry:
+      fov: 40.0
+      transform:
+        pos: [ 3.4448976517, 23.7785110474, 1.2944641113 ]
+        rot: [ 0.0, 348.9000854492, 317.9509277344 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_11_shot11aleneclenching:
+      fov: 40.0
+      transform:
+        pos: [ 6.1556806564, 24.9388370514, 1.2944641113 ]
+        rot: [ 0.0, 344.8001098633, 97.2756958008 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_12_shot12aiskerdirecting:
+      fov: 40.0
+      transform:
+        pos: [ 0.5063085556, 26.3011512756, 1.2944641113 ]
+        rot: [ 0.0, 350.5001220703, 244.9752807617 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_14_shot14geraltaback:
+      fov: 40.0
+      transform:
+        pos: [ 4.2100305557, 25.0595703125, 0.9944458008 ]
+        rot: [ 0.0, 346.5001220703, 109.0238037109 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_15_shot15doorclose:
+      fov: 40.0
+      transform:
+        pos: [ 1.3725032806, 22.9612102509, 0.9944458008 ]
+        rot: [ 0.0, 351.8001098633, 306.2239990234 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_16_shot16walkaway:
+      fov: 40.0
+      transform:
+        pos: [ 1.8232116699, 21.1873970032, 0.9944458008 ]
+        rot: [ 0.0, 350.4750976563, 136.9746093750 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_19_shot19choice2:
+      fov: 40.0
+      transform:
+        pos: [ -2.5601348877, 26.7637081146, 0.9944458008 ]
+        rot: [ 0.0, 352.0000915527, 227.7736816406 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_20_shot20geraltenters:
+      fov: 40.0
+      transform:
+        pos: [ 0.1672844887, 18.5654830933, 0.8944396973 ]
+        rot: [ 0.0, 351.5000915527, 335.8746337891 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_21_shot21geraltovershoulder:
+      fov: 40.0
+      transform:
+        pos: [ 5.4222078323, 24.2042636871, 0.9443817139 ]
+        rot: [ 0.0, 352.0000610352, 337.0732421875 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_22_shot22aiskerovershoulder:
+      fov: 40.0
+      transform:
+        pos: [ 7.6109333038, 28.6912460327, 1.0943908691 ]
+        rot: [ 0.0, 349.0500793457, 160.3727416992 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_23_shot23geraltdefeated:
+      fov: 40.0
+      transform:
+        pos: [ 9.9244842529, 28.6219596863, 0.9944000244 ]
+        rot: [ 0.0, 351.7750854492, 98.6734619141 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_24_shot24geraltcloseupsigh:
+      fov: 40.0
+      transform:
+        pos: [ 0.0864677429, 18.6360473633, 0.9444427490 ]
+        rot: [ 0.0, 346.3750915527, 337.4016113281 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_25_shot25geraltleaving:
+      fov: 40.0
+      transform:
+        pos: [ -12.1840686798, 36.2674713135, 3.2443847656 ]
+        rot: [ 0.0, 345.9751281738, 223.7529296875 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_26_shot26geraltleaving2:
+      fov: 40.0
+      transform:
+        pos: [ -8.8176746368, 31.5892620087, 11.7943725586 ]
+        rot: [ 0.0, 9.0500965118, 178.3240966797 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_28_000alenecloseup:
+      fov: 40.0
+      transform:
+        pos: [ 3.3561267853, 24.1389961243, 0.7944335938 ]
+        rot: [ 0.0, 349.4000854492, 115.5508422852 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_29_000geraltcloseup:
+      fov: 40.0
+      transform:
+        pos: [ 4.1404132843, 25.0897140503, 0.8444366455 ]
+        rot: [ 0.0, 355.3500976563, 115.1763305664 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_30_000bjorncloseup:
+      fov: 40.0
+      transform:
+        pos: [ 4.7566413879, 24.6052150726, 1.1944580078 ]
+        rot: [ 0.0, 348.3501281738, 318.7773437500 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_31_000geraltinclose:
+      fov: 40.0
+      transform:
+        pos: [ 6.4761295319, 26.0435237885, 0.9443817139 ]
+        rot: [ 0.0, 349.9750671387, 116.4731445313 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_32_000bjorninclose:
+      fov: 40.0
+      transform:
+        pos: [ 6.3318910599, 26.2821998596, 0.8943786621 ]
+        rot: [ 0.0, 354.2500915527, 307.7225341797 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_33_000aleneinclose:
+      fov: 40.0
+      transform:
+        pos: [ 6.4521160126, 25.8837242126, 0.8943786621 ]
+        rot: [ 0.0, 348.3500976563, 278.2722167969 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+production:
+  settings:
+    sceneid: 1
+    #strings-idspace: 9999
+    #strings-idstart: 0
+
+  placement: "cerys"
+    # INFO: world coordinates of used origin:
+      #pos: [ 311.9729919434, 522.7623901367, 88.0255889893 ]
+      #rot: [ 0.0, -27.1550445557, 0.0 ]
+
+  assets:
+    actors:
+      geralt:
+        repo: "geralt"
+        by_voicetag: true
+        tags: [ "PLAYER" ]
+
+      cerys:
+        repo: "cerys"
+        #by_voicetag: true
+        appearance: "becca"
+        tags: [ "cerys" ]
+
+      bjorn:
+        repo: "bjorn"
+        #by_voicetag: true
+        appearance: "bjorn"
+        tags: [ "bjorn" ]
+
+    cameras:
+      cam_1_shotintrovillage:
+        repo: "cam_1_shotintrovillage"
+
+      cam_2_shotcloseupalenelookingatgeralt:
+        repo: "cam_2_shotcloseupalenelookingatgeralt"
+
+      cam_3_shot3flowers:
+        repo: "cam_3_shot3flowers"
+
+      cam_4_shot4geraltsighing:
+        repo: "cam_4_shot4geraltsighing"
+
+      cam_5_shot5towntoduo:
+        repo: "cam_5_shot5towntoduo"
+
+      cam_6_shot6werethere:
+        repo: "cam_6_shot6werethere"
+
+      cam_7_shot7getthisoverwith:
+        repo: "cam_7_shot7getthisoverwith"
+
+      cam_8_shot8knocking:
+        repo: "cam_8_shot8knocking"
+
+      cam_10_shot10aiskerangry:
+        repo: "cam_10_shot10aiskerangry"
+
+      cam_11_shot11aleneclenching:
+        repo: "cam_11_shot11aleneclenching"
+
+      cam_12_shot12aiskerdirecting:
+        repo: "cam_12_shot12aiskerdirecting"
+
+      cam_14_shot14geraltaback:
+        repo: "cam_14_shot14geraltaback"
+
+      cam_15_shot15doorclose:
+        repo: "cam_15_shot15doorclose"
+
+      cam_16_shot16walkaway:
+        repo: "cam_16_shot16walkaway"
+
+      cam_19_shot19choice2:
+        repo: "cam_19_shot19choice2"
+
+      cam_20_shot20geraltenters:
+        repo: "cam_20_shot20geraltenters"
+
+      cam_21_shot21geraltovershoulder:
+        repo: "cam_21_shot21geraltovershoulder"
+
+      cam_22_shot22aiskerovershoulder:
+        repo: "cam_22_shot22aiskerovershoulder"
+
+      cam_23_shot23geraltdefeated:
+        repo: "cam_23_shot23geraltdefeated"
+
+      cam_24_shot24geraltcloseupsigh:
+        repo: "cam_24_shot24geraltcloseupsigh"
+
+      cam_25_shot25geraltleaving:
+        repo: "cam_25_shot25geraltleaving"
+
+      cam_26_shot26geraltleaving2:
+        repo: "cam_26_shot26geraltleaving2"
+
+      cam_28_000alenecloseup:
+        repo: "cam_28_000alenecloseup"
+
+      cam_29_000geraltcloseup:
+        repo: "cam_29_000geraltcloseup"
+
+      cam_30_000bjorncloseup:
+        repo: "cam_30_000bjorncloseup"
+
+      cam_31_000geraltinclose:
+        repo: "cam_31_000geraltinclose"
+
+      cam_32_000bjorninclose:
+        repo: "cam_32_000bjorninclose"
+
+      cam_33_000aleneinclose:
+        repo: "cam_33_000aleneinclose"
+
+    animations:
+      geralt_locomotion_walk_cycle_slow_forward:
+        actor: "geralt"
+        repo: "anim_8086_locomotion_walk_cycle_slow_forward"
+        #duration: 5.0666666031
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      cerys_locomotion_walk_cycle_slow_forward:
+        actor: "cerys"
+        repo: "anim_13354_locomotion_walk_cycle_slow_forward"
+        #duration: 1.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_sad_gesture_sigh:
+        actor: "geralt"
+        repo: "anim_7311_high_standing_sad_gesture_sigh"
+        #duration: 3.1666667461
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      cerys_add_reaction_sigh_01:
+        actor: "cerys"
+        repo: "anim_12476_add_reaction_sigh_01"
+        #duration: 5.3333334923
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      cerys_add_idle_weight_shift_01:
+        actor: "cerys"
+        repo: "anim_12458_add_idle_weight_shift_01"
+        #duration: 4.5666666031
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_add_idle_weight_shift_01:
+        actor: "geralt"
+        repo: "anim_6723_add_idle_weight_shift_01"
+        #duration: 18.1000003815
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined_gesture_door_knock:
+        actor: "geralt"
+        repo: "anim_320_high_standing_determined_gesture_door_knock"
+        #duration: 8.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined_gesture_greeting_geralt_01:
+        actor: "geralt"
+        repo: "anim_7024_high_standing_determined_gesture_greeting_geralt_01"
+        #duration: 3.6666667461
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      cerys_low_standing_sad_idle:
+        actor: "cerys"
+        repo: "anim_12882_low_standing_sad_idle"
+        #duration: 2.5999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      bjorn_high_standing_aggressive_enter_frontal:
+        actor: "bjorn"
+        repo: "anim_6915_high_standing_aggressive_enter_frontal"
+        #duration: 24.3333339691
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined_step_back_casual:
+        actor: "geralt"
+        repo: "anim_332_high_standing_determined_step_back_casual"
+        #duration: 5.9000000954
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      bjorn_high_standing_aggressive_idle:
+        actor: "bjorn"
+        repo: "anim_6930_high_standing_aggressive_idle"
+        #duration: 4.4666666985
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_add_idle_weight_shift_04:
+        actor: "geralt"
+        repo: "anim_6726_add_idle_weight_shift_04"
+        #duration: 11.5666666031
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      cerys_add_reaction_afraid_01:
+        actor: "cerys"
+        repo: "anim_12464_add_reaction_afraid_01"
+        #duration: 11.3666667938
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      bjorn_high_standing_determined_exclamation_gesture_02_both_hands:
+        actor: "bjorn"
+        repo: "anim_6986_high_standing_determined_exclamation_gesture_02_both_hands"
+        #duration: 5.0666666031
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_aggressive_idle:
+        actor: "geralt"
+        repo: "anim_6930_high_standing_aggressive_idle"
+        #duration: 2.8666665554
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      cerys_add_reaction_agreeing_nod_01:
+        actor: "cerys"
+        repo: "anim_12468_add_reaction_agreeing_nod_01"
+        #duration: 3.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      bjorn_high_standing_aggressive_gesture_left_hand_point_down:
+        actor: "bjorn"
+        repo: "anim_6924_high_standing_aggressive_gesture_left_hand_point_down"
+        #duration: 3.5000000000
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      cerys_high_standing_devastated_exit_frontal:
+        actor: "cerys"
+        repo: "anim_12953_high_standing_devastated_exit_frontal"
+        #duration: 5.8666667938
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      cerys_high_standing_devastated_idle:
+        actor: "cerys"
+        repo: "anim_12710_high_standing_devastated_idle"
+        #duration: 22.2000007629
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      bjorn_high_standing_aggressive_exit_back:
+        actor: "bjorn"
+        repo: "anim_6918_high_standing_aggressive_exit_back"
+        #duration: 4.9000000954
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined_enter_frontal:
+        actor: "geralt"
+        repo: "anim_6982_high_standing_determined_enter_frontal"
+        #duration: 7.9666666985
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_add_reaction_sigh_01:
+        actor: "geralt"
+        repo: "anim_6737_add_reaction_sigh_01"
+        #duration: 2.7666666508
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined_idle:
+        actor: "geralt"
+        repo: "anim_7096_high_standing_determined_idle"
+        #duration: 9.6000003815
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined_exit_back:
+        actor: "geralt"
+        repo: "anim_6987_high_standing_determined_exit_back"
+        #duration: 4.1999998093
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_add_idle_arm_relax:
+        actor: "geralt"
+        repo: "anim_6722_add_idle_arm_relax"
+        #duration: 6.5999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      bjorn_high_standing_aggressive_turn90_left:
+        actor: "bjorn"
+        repo: "anim_6936_high_standing_aggressive_turn90_left"
+        #duration: 3.3333332539
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      bjorn_high_standing_aggressive_gesture_both_hands_1:
+        actor: "bjorn"
+        repo: "anim_6922_high_standing_aggressive_gesture_both_hands_1"
+        #duration: 4.7333331108
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_man_fistfight_hit_knockdown_f_getup_exploration_1:
+        actor: "geralt"
+        repo: "anim_4946_man_fistfight_hit_knockdown_f_getup_exploration_1"
+        #duration: 15.2333335876
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      cerys_dialog_animation_exit_forward:
+        actor: "cerys"
+        repo: "anim_12888_dialog_animation_exit_forward"
+        #duration: 6.5000000000
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      bjorn_high_standing_aggressive_gesture_left_hand_flick_1:
+        actor: "bjorn"
+        repo: "anim_6923_high_standing_aggressive_gesture_left_hand_flick_1"
+        #duration: 2.5999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_sad_exit_frontal:
+        actor: "geralt"
+        repo: "anim_7297_high_standing_sad_exit_frontal"
+        #duration: 9.1000003815
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+    animations.mimic:
+      geralt_geralt_reaction_eye_smile_face:
+        actor: "geralt"
+        repo: "mimicsanim_493_geralt_reaction_eye_smile_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      cerys_geralt_neutral_question_why_face:
+        actor: "cerys"
+        repo: "mimicsanim_470_geralt_neutral_question_why_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_gesture_sceptical_remark_face:
+        actor: "geralt"
+        repo: "mimicsanim_426_geralt_neutral_gesture_sceptical_remark_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_reaction_annoyed_face:
+        actor: "geralt"
+        repo: "mimicsanim_487_geralt_reaction_annoyed_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      bjorn_geralt_reaction_anger_restrain_face:
+        actor: "bjorn"
+        repo: "mimicsanim_485_geralt_reaction_anger_restrain_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_focused_anim_combined_face:
+        actor: "geralt"
+        repo: "mimicsanim_308_focused_anim_combined_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+    actor.poses:
+      geralt_high_standing_determined_idle:
+        actor: "geralt"
+        repo: "pose_0_high_standing_determined_idle"
+
+      cerys_high_standing_determined_idle:
+        actor: "cerys"
+        repo: "pose_0_high_standing_determined_idle"
+
+      bjorn_man_big_ex_idle:
+        actor: "bjorn"
+        repo: "pose_0_man_big_ex_idle"
+
+storyboard:
+  #defaults:
+    #placement:
+      #geralt: [[ 1.1000919342, 0.1310949326, -0.0444259644 ], [ 0.0, 0.0, 4.7996826172 ]]
+      #cerys: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+
+    #actor.pose:
+      #geralt: geralt_high_standing_determined_idle
+      #cerys: cerys_high_standing_determined_idle
+
+  section_storyboard_ui:
+    # shot shotintrovillage
+    shot_1:
+      - actor.placement: [0.0, geralt, [ 1.1000919342, 0.1310949326, -0.0444259644 ], [ 0.0, 0.0, 4.7996826172 ]]
+      - actor.placement: [0.0, cerys, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.pose: [0.0, geralt_high_standing_determined_idle]
+      - actor.pose: [0.0, cerys_high_standing_determined_idle]
+      - cam: [0.0, cam_1_shotintrovillage]
+      - actor.anim: [0.0, geralt_locomotion_walk_cycle_slow_forward]
+      - actor.anim: [0.0, cerys_locomotion_walk_cycle_slow_forward]
+
+    # shot shotcloseupalenelookingatgeralt
+    shot_2:
+      - actor.placement: [0.0, geralt, [ 1.0811238289, 2.7789189816, -0.0444259644 ], [ 0.0, 0.0, 4.7996826172 ]]
+      - actor.placement: [0.0, cerys, [ 0.3497222662, 1.7955124378, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.placement: [0.0, bjorn, [ 5.9434299469, 13.8759069443, -0.6170425415 ], [ 0.0, 0.0, 0.0 ]]
+      - cam: [0.0, cam_2_shotcloseupalenelookingatgeralt]
+      - actor.anim: [0.0, geralt_locomotion_walk_cycle_slow_forward]
+      - actor.anim: [0.0, cerys_locomotion_walk_cycle_slow_forward]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_eye_smile_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ -0.4522700608, 0.8685232401, 1.8468170166 ]]
+      - actor.lookat: [0.0, cerys, geralt]
+
+    # shot shot3flowers
+    shot_3:
+      - actor.placement: [0.0, geralt, [ 1.0871039629, 3.7489180565, -0.0444259644 ], [ 0.0, 0.0, 4.7996826172 ]]
+      - actor.placement: [0.0, cerys, [ 0.6052793264, 3.0969858170, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - cam: [0.0, cam_3_shot3flowers]
+      - actor.anim: [0.0, geralt_locomotion_walk_cycle_slow_forward]
+      - actor.anim: [0.0, cerys_locomotion_walk_cycle_slow_forward]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_eye_smile_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 3.0738196373, 9.3933267593, 0.1377334595 ]]
+      - actor.lookat: [0.0, cerys, [ -0.8351152539, 1.8939130306, 0.1732788086 ]]
+
+    # shot shot4geraltsighing
+    shot_4:
+      - actor.placement: [0.0, geralt, [ 0.9413232803, 4.6435432434, -0.1210479736 ], [ 0.0, 0.0, 4.7996826172 ]]
+      - actor.placement: [0.0, cerys, [ -0.0872381926, 5.0043430328, -0.2131729126 ], [ 0.0, 0.0, 0.0 ]]
+      - cam: [0.0, cam_4_shot4geraltsighing]
+      - actor.anim: [0.0, geralt_high_standing_sad_gesture_sigh]
+      - actor.anim: [0.0, cerys_locomotion_walk_cycle_slow_forward]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_sceptical_remark_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ -0.9970268011, 0.9573556185, 1.1792755127 ]]
+      - actor.lookat: [0.0, cerys, [ -0.8351152539, 1.8939130306, 0.1732788086 ]]
+
+    # shot shot5towntoduo
+    shot_5:
+      - actor.placement: [0.0, geralt, [ 0.1948299408, 13.6135225296, -0.7757339478 ], [ 0.0, 0.0, 4.7996826172 ]]
+      - actor.placement: [0.0, cerys, [ -0.7509779930, 13.4426879883, -0.6010360718 ], [ 0.0, 0.0, 0.0 ]]
+      - cam: [0.0, cam_5_shot5towntoduo]
+      - actor.anim: [0.0, geralt_locomotion_walk_cycle_slow_forward]
+      - actor.anim: [0.0, cerys_add_reaction_sigh_01]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_sceptical_remark_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ -0.6745739579, 1.1190583706, 1.0027084351 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+
+    # shot shot6werethere
+    shot_6:
+      - cam: [0.0, cam_6_shot6werethere]
+      - actor.anim: [0.0, geralt_locomotion_walk_cycle_slow_forward]
+      - actor.anim: [0.0, cerys_add_idle_weight_shift_01]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_sceptical_remark_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ -0.6745739579, 1.1190583706, 1.0027084351 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+
+    # shot shot7getthisoverwith
+    shot_7:
+      - cam: [0.0, cam_7_shot7getthisoverwith]
+      - actor.anim: [0.0, geralt_add_idle_weight_shift_01]
+      - actor.anim: [0.0, cerys_add_idle_weight_shift_01]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1427353621, 1.4951062202, 1.6639556885 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+
+    # shot shot8knocking
+    shot_8:
+      - actor.placement: [0.0, geralt, [ 4.0227384567, 24.7579879761, -0.8889923096 ], [ 0.0, 0.0, 286.5997924805 ]]
+      - actor.placement: [0.0, cerys, [ 2.3822565079, 23.6130523682, -0.9294586182 ], [ 0.0, 0.0, 314.0999450684 ]]
+      - cam: [0.0, cam_8_shot8knocking]
+      - actor.anim: [0.0, geralt_high_standing_determined_gesture_door_knock]
+      - actor.anim: [0.0, cerys_add_idle_weight_shift_01]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1427353621, 1.4951062202, 1.6639556885 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+
+    # shot shot9aiskerintro
+    shot_9:
+      - actor.placement: [0.0, bjorn, [ 5.2879467010, 25.2420578003, -0.6170425415 ], [ 0.0, 0.0, 123.9000625610 ]]
+      - actor.anim: [0.0, geralt_high_standing_determined_gesture_greeting_geralt_01]
+      - actor.anim: [0.0, cerys_low_standing_sad_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_enter_frontal]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1427353621, 1.4951062202, 1.6639556885 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+
+    # shot shot10aiskerangry
+    shot_10:
+      - actor.placement: [0.0, bjorn, [ 5.2740859985, 25.2307624817, -0.6170425415 ], [ 0.0, 0.0, 119.8999481201 ]]
+      - cam: [0.0, cam_10_shot10aiskerangry]
+      - actor.anim: [0.0, geralt_high_standing_determined_step_back_casual]
+      - actor.anim: [0.0, cerys_add_idle_weight_shift_01]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_idle]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.anim.mimic: [0.0, bjorn_geralt_reaction_anger_restrain_face]
+      - actor.lookat: [0.0, geralt, [ 0.1427353621, 1.4951062202, 1.6639556885 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+
+    # shot shot11aleneclenching
+    shot_11:
+      - actor.placement: [0.0, geralt, [ 3.1396102905, 24.8648796082, -0.8889923096 ], [ 0.0, 0.0, 286.5997924805 ]]
+      - cam: [0.0, cam_11_shot11aleneclenching]
+      - actor.anim: [0.0, geralt_add_idle_weight_shift_04]
+      - actor.anim: [0.0, cerys_add_reaction_afraid_01]
+      - actor.anim: [0.0, bjorn_high_standing_determined_exclamation_gesture_02_both_hands]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1427353621, 1.4951062202, 1.6639556885 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+
+    # shot shot12aiskerdirecting
+    shot_12:
+      - cam: [0.0, cam_12_shot12aiskerdirecting]
+      - actor.anim: [0.0, geralt_high_standing_aggressive_idle]
+      - actor.anim: [0.0, cerys_add_reaction_agreeing_nod_01]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_gesture_left_hand_point_down]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1427353621, 1.4951062202, 1.6639556885 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+
+    # shot shot13aiskeratgalenein
+    shot_13:
+      - actor.placement: [0.0, cerys, [ 2.4942016602, 23.3214569092, -0.9294586182 ], [ 0.0, 0.0, 297.7999877930 ]]
+      - actor.anim: [0.0, geralt_high_standing_aggressive_idle]
+      - actor.anim: [0.0, cerys_high_standing_devastated_exit_frontal]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_idle]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1427353621, 1.4951062202, 1.6639556885 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot14geraltaback
+    shot_14:
+      - actor.placement: [0.0, cerys, [ 7.5277252197, 26.3670558929, -0.7994766235 ], [ 0.0, 0.0, 297.7999877930 ]]
+      - cam: [0.0, cam_14_shot14geraltaback]
+      - actor.anim: [0.0, geralt_high_standing_aggressive_idle]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_idle]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1427353621, 1.4951062202, 1.6639556885 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot15doorclose
+    shot_15:
+      - actor.placement: [0.0, cerys, [ 7.7006092072, 25.9075813293, -0.7994766235 ], [ 0.0, 0.0, 297.7999877930 ]]
+      - cam: [0.0, cam_15_shot15doorclose]
+      - actor.anim: [0.0, geralt_high_standing_aggressive_idle]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_exit_back]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1427353621, 1.4951062202, 1.6639556885 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot16walkaway
+    shot_16:
+      - actor.placement: [0.0, geralt, [ 0.2978134155, 19.4753475189, -0.9026489258 ], [ 0.0, 0.0, 145.8000488281 ]]
+      - cam: [0.0, cam_16_shot16walkaway]
+      - actor.anim: [0.0, geralt_high_standing_determined_enter_frontal]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_exit_back]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1427353621, 1.4951062202, 1.6639556885 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot17lookback
+    shot_17:
+      - actor.anim: [0.0, geralt_add_reaction_sigh_01]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_exit_back]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ -1.2713083029, 0.4227458239, 1.0923614502 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot18choice1
+    shot_18:
+      - actor.anim: [0.0, geralt_high_standing_determined_idle]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_exit_back]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ -1.2713083029, 0.4227458239, 1.0923614502 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot19choice2
+    shot_19:
+      - cam: [0.0, cam_19_shot19choice2]
+      - actor.anim: [0.0, geralt_high_standing_determined_idle]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_exit_back]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ -1.2713083029, 0.4227458239, 1.0923614502 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot20geraltenters
+    shot_20:
+      - cam: [0.0, cam_20_shot20geraltenters]
+      - actor.anim: [0.0, geralt_high_standing_determined_exit_back]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_exit_back]
+      - actor.anim.mimic: [0.0, geralt_focused_anim_combined_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0409761406, 0.4979883432, 1.7627029419 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot21geraltovershoulder
+    shot_21:
+      - actor.placement: [0.0, geralt, [ 5.6476259232, 25.5802745819, -0.8812484741 ], [ 0.0, 0.0, 292.7998657227 ]]
+      - actor.placement: [0.0, cerys, [ 7.7575511932, 26.0665054321, -0.7994766235 ], [ 0.0, 0.0, 55.8998794556 ]]
+      - actor.placement: [0.0, bjorn, [ 7.3199882507, 27.0117645264, -0.8463287354 ], [ 0.0, 0.0, 214.0998229980 ]]
+      - cam: [0.0, cam_21_shot21geraltovershoulder]
+      - actor.anim: [0.0, geralt_add_idle_arm_relax]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_turn90_left]
+      - actor.anim.mimic: [0.0, geralt_focused_anim_combined_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0409761406, 0.4979883432, 1.7627029419 ]]
+      - actor.lookat: [0.0, cerys, [ -0.7366034985, 0.3175680041, 1.0803756714 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot22aiskerovershoulder
+    shot_22:
+      - actor.placement: [0.0, bjorn, [ 7.3199882507, 27.0117645264, -0.8463287354 ], [ 0.0, 0.0, 116.5998992920 ]]
+      - cam: [0.0, cam_22_shot22aiskerovershoulder]
+      - actor.anim: [0.0, geralt_add_idle_arm_relax]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_gesture_both_hands_1]
+      - actor.anim.mimic: [0.0, geralt_focused_anim_combined_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0409761406, 0.4979883432, 1.7627029419 ]]
+      - actor.lookat: [0.0, cerys, [ -0.7366034985, 0.3175680041, 1.0803756714 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot23geraltdefeated
+    shot_23:
+      - actor.placement: [0.0, geralt, [ 7.7507543564, 29.0858459473, -0.8812484741 ], [ 0.0, 0.0, 160.8994750977 ]]
+      - actor.placement: [0.0, cerys, [ 5.5662631989, 25.4361934662, -0.7994766235 ], [ 0.0, 0.0, 93.3998718262 ]]
+      - actor.placement: [0.0, bjorn, [ 7.4216384888, 27.6564388275, -0.8463287354 ], [ 0.0, 0.0, 351.9999084473 ]]
+      - cam: [0.0, cam_23_shot23geraltdefeated]
+      - actor.anim: [0.0, geralt_man_fistfight_hit_knockdown_f_getup_exploration_1]
+      - actor.anim: [0.0, cerys_dialog_animation_exit_forward]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_gesture_left_hand_flick_1]
+      - actor.anim.mimic: [0.0, geralt_focused_anim_combined_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0409761406, 0.4979883432, 1.7627029419 ]]
+      - actor.lookat: [0.0, cerys, [ -0.7366034985, 0.3175680041, 1.0803756714 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot24geraltcloseupsigh
+    shot_24:
+      - actor.placement: [0.0, geralt, [ 0.2978134155, 19.4753475189, -0.9026489258 ], [ 0.0, 0.0, 142.7000122070 ]]
+      - actor.placement: [0.0, cerys, [ 7.7006092072, 25.9075813293, -0.7994766235 ], [ 0.0, 0.0, 297.7999877930 ]]
+      - actor.placement: [0.0, bjorn, [ 7.1661233902, 25.5370445251, -0.6170425415 ], [ 0.0, 0.0, 119.8999481201 ]]
+      - cam: [0.0, cam_24_shot24geraltcloseupsigh]
+      - actor.anim: [0.0, geralt_add_reaction_sigh_01]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_exit_back]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0407748185, 0.4917905927, 1.6232376099 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot25geraltleaving
+    shot_25:
+      - actor.placement: [0.0, geralt, [ -0.9289484024, 18.1709690094, -0.9795837402 ], [ 0.0, 0.0, 35.5000610352 ]]
+      - cam: [0.0, cam_25_shot25geraltleaving]
+      - actor.anim: [0.0, geralt_high_standing_sad_exit_frontal]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_exit_back]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0407748185, 0.4917905927, 1.6232376099 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot26geraltleaving2
+    shot_26:
+      - actor.placement: [0.0, geralt, [ -1.5860071182, 17.7509365082, -0.7609786987 ], [ 0.0, 0.0, 35.5000610352 ]]
+      - cam: [0.0, cam_26_shot26geraltleaving2]
+      - actor.anim: [0.0, geralt_high_standing_sad_exit_frontal]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_exit_back]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0407748185, 0.4917905927, 1.6232376099 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot11aleneclenching (cloned)
+    shot_27:
+      - actor.placement: [0.0, geralt, [ 3.1396102905, 24.8648796082, -0.8889923096 ], [ 0.0, 0.0, 286.5997924805 ]]
+      - actor.placement: [0.0, cerys, [ 2.3822565079, 23.6130523682, -0.9294586182 ], [ 0.0, 0.0, 314.0999450684 ]]
+      - actor.placement: [0.0, bjorn, [ 5.2740859985, 25.2307624817, -0.6170425415 ], [ 0.0, 0.0, 119.8999481201 ]]
+      - cam: [0.0, cam_11_shot11aleneclenching]
+      - actor.anim: [0.0, geralt_add_idle_weight_shift_04]
+      - actor.anim: [0.0, cerys_add_reaction_afraid_01]
+      - actor.anim: [0.0, bjorn_high_standing_determined_exclamation_gesture_02_both_hands]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1427353621, 1.4951062202, 1.6639556885 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+
+    # shot 000alenecloseup
+    shot_28:
+      - cam: [0.0, cam_28_000alenecloseup]
+      - actor.anim: [0.0, geralt_add_idle_weight_shift_04]
+      - actor.anim: [0.0, cerys_add_reaction_afraid_01]
+      - actor.anim: [0.0, bjorn_high_standing_determined_exclamation_gesture_02_both_hands]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1427353621, 1.4951062202, 1.6639556885 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+
+    # shot 000geraltcloseup
+    shot_29:
+      - cam: [0.0, cam_29_000geraltcloseup]
+      - actor.anim: [0.0, geralt_add_idle_weight_shift_04]
+      - actor.anim: [0.0, cerys_add_reaction_afraid_01]
+      - actor.anim: [0.0, bjorn_high_standing_determined_exclamation_gesture_02_both_hands]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1427353621, 1.4951062202, 1.6639556885 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+
+    # shot 000bjorncloseup
+    shot_30:
+      - cam: [0.0, cam_30_000bjorncloseup]
+      - actor.anim: [0.0, geralt_add_idle_weight_shift_04]
+      - actor.anim: [0.0, cerys_add_reaction_afraid_01]
+      - actor.anim: [0.0, bjorn_high_standing_determined_exclamation_gesture_02_both_hands]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1427353621, 1.4951062202, 1.6639556885 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0623247027, 2.2818605900, 0.4647521973 ]]
+
+    # shot 000geraltinclose
+    shot_31:
+      - actor.placement: [0.0, geralt, [ 5.6476259232, 25.5802745819, -0.8812484741 ], [ 0.0, 0.0, 292.7998657227 ]]
+      - actor.placement: [0.0, cerys, [ 7.7575511932, 26.0665054321, -0.7994766235 ], [ 0.0, 0.0, 55.8998794556 ]]
+      - actor.placement: [0.0, bjorn, [ 7.3199882507, 27.0117645264, -0.8463287354 ], [ 0.0, 0.0, 214.0998229980 ]]
+      - cam: [0.0, cam_31_000geraltinclose]
+      - actor.anim: [0.0, geralt_add_idle_arm_relax]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_turn90_left]
+      - actor.anim.mimic: [0.0, geralt_focused_anim_combined_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0409761406, 0.4979883432, 1.7627029419 ]]
+      - actor.lookat: [0.0, cerys, [ -0.7366034985, 0.3175680041, 1.0803756714 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot 000bjorninclose
+    shot_32:
+      - cam: [0.0, cam_32_000bjorninclose]
+      - actor.anim: [0.0, geralt_add_idle_arm_relax]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_turn90_left]
+      - actor.anim.mimic: [0.0, geralt_focused_anim_combined_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0409761406, 0.4979883432, 1.7627029419 ]]
+      - actor.lookat: [0.0, cerys, [ -0.7366034985, 0.3175680041, 1.0803756714 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot 000aleneinclose
+    shot_33:
+      - cam: [0.0, cam_33_000aleneinclose]
+      - actor.anim: [0.0, geralt_add_idle_arm_relax]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_turn90_left]
+      - actor.anim.mimic: [0.0, geralt_focused_anim_combined_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0409761406, 0.4979883432, 1.7627029419 ]]
+      - actor.lookat: [0.0, cerys, [ -0.7366034985, 0.3175680041, 1.0803756714 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+dialogscript:
+  player: "geralt"
+  actors: [ "geralt", "cerys", "bjorn" ]
+
+  section_start:
+    - PAUSE: 0.0
+    - NEXT: section_storyboard_ui
+
+  section_storyboard_ui:
+    # shot shotintrovillage
+    - CUE: shot_1
+    # (longest) anim: locomotion_walk_cycle_slow_forward
+    - PAUSE: 5.0666666031
+    # shot shotcloseupalenelookingatgeralt
+    - CUE: shot_2
+    # (longest) anim: geralt_reaction_eye_smile_face
+    - PAUSE: 8.0
+    # shot shot3flowers
+    - CUE: shot_3
+    # (longest) anim: geralt_reaction_eye_smile_face
+    - PAUSE: 8.0
+    # shot shot4geraltsighing
+    - CUE: shot_4
+    # (longest) anim: geralt_neutral_gesture_sceptical_remark_face
+    - PAUSE: 3.3666665554
+    # shot shot5towntoduo
+    - CUE: shot_5
+    # (longest) anim: locomotion_walk_cycle_slow_forward
+    - PAUSE: 5.3333334923
+    # shot shot6werethere
+    - CUE: shot_6
+    # (longest) anim: add_idle_weight_shift_01
+    - PAUSE: 18.1000003815
+    # shot shot7getthisoverwith
+    - CUE: shot_7
+    # (longest) anim: add_idle_weight_shift_01
+    - PAUSE: 18.1000003815
+    # shot shot8knocking
+    - CUE: shot_8
+    # (longest) anim: add_idle_weight_shift_01
+    - PAUSE: 18.1000003815
+    # shot shot9aiskerintro
+    - CUE: shot_9
+    # (longest) anim: low_standing_sad_idle
+    - PAUSE: 24.3333339691
+    # shot shot10aiskerangry
+    - CUE: shot_10
+    # (longest) anim: add_idle_weight_shift_01
+    - PAUSE: 18.1000003815
+    # shot shot11aleneclenching
+    - CUE: shot_11
+    # (longest) anim: add_idle_weight_shift_04
+    - PAUSE: 11.3666667938
+    # shot shot12aiskerdirecting
+    - CUE: shot_12
+    # (longest) anim: high_standing_aggressive_idle
+    - PAUSE: 11.5666666031
+    # shot shot13aiskeratgalenein
+    - CUE: shot_13
+    # (longest) anim: high_standing_aggressive_idle
+    - PAUSE: 11.5666666031
+    # shot shot14geraltaback
+    - CUE: shot_14
+    # (longest) anim: high_standing_devastated_idle
+    - PAUSE: 22.2000007629
+    # shot shot15doorclose
+    - CUE: shot_15
+    # (longest) anim: high_standing_devastated_idle
+    - PAUSE: 22.2000007629
+    # shot shot16walkaway
+    - CUE: shot_16
+    # (longest) anim: high_standing_devastated_idle
+    - PAUSE: 22.2000007629
+    # shot shot17lookback
+    - CUE: shot_17
+    # (longest) anim: high_standing_devastated_idle
+    - PAUSE: 22.2000007629
+    # shot shot18choice1
+    - CUE: shot_18
+    # (longest) anim: high_standing_devastated_idle
+    - PAUSE: 22.2000007629
+    # shot shot19choice2
+    - CUE: shot_19
+    # (longest) anim: high_standing_devastated_idle
+    - PAUSE: 22.2000007629
+    # shot shot20geraltenters
+    - CUE: shot_20
+    # (longest) anim: focused_anim_combined_face
+    - PAUSE: 29.6333332062
+    # shot shot21geraltovershoulder
+    - CUE: shot_21
+    # (longest) anim: focused_anim_combined_face
+    - PAUSE: 29.6333332062
+    # shot shot22aiskerovershoulder
+    - CUE: shot_22
+    # (longest) anim: focused_anim_combined_face
+    - PAUSE: 29.6333332062
+    # shot shot23geraltdefeated
+    - CUE: shot_23
+    # (longest) anim: focused_anim_combined_face
+    - PAUSE: 29.6333332062
+    # shot shot24geraltcloseupsigh
+    - CUE: shot_24
+    # (longest) anim: high_standing_devastated_idle
+    - PAUSE: 22.2000007629
+    # shot shot25geraltleaving
+    - CUE: shot_25
+    # (longest) anim: high_standing_devastated_idle
+    - PAUSE: 22.2000007629
+    # shot shot26geraltleaving2
+    - CUE: shot_26
+    # (longest) anim: high_standing_devastated_idle
+    - PAUSE: 22.2000007629
+    # shot shot11aleneclenching (cloned)
+    - CUE: shot_27
+    # (longest) anim: add_idle_weight_shift_04
+    - PAUSE: 11.3666667938
+    # shot 000alenecloseup
+    - CUE: shot_28
+    # (longest) anim: add_idle_weight_shift_04
+    - PAUSE: 11.3666667938
+    # shot 000geraltcloseup
+    - CUE: shot_29
+    # (longest) anim: add_idle_weight_shift_04
+    - PAUSE: 11.3666667938
+    # shot 000bjorncloseup
+    - CUE: shot_30
+    # (longest) anim: add_idle_weight_shift_04
+    - PAUSE: 11.3666667938
+    # shot 000geraltinclose
+    - CUE: shot_31
+    # (longest) anim: focused_anim_combined_face
+    - PAUSE: 29.6333332062
+    # shot 000bjorninclose
+    - CUE: shot_32
+    # (longest) anim: focused_anim_combined_face
+    - PAUSE: 29.6333332062
+    # shot 000aleneinclose
+    - CUE: shot_33
+    # (longest) anim: focused_anim_combined_face
+    - PAUSE: 29.6333332062
+    - NEXT: section_exit
+
+  section_exit:
+    - CAMERA_BLEND: 2.0
+    - EXIT
+
+#-- STORYBOARD UI - SCENE DUMP -------------------------------------------------
+repository:
+  actors:
+    geralt:
+      template: "gameplay\\templates\\characters\\player\\player.w2ent"
+
+    cerys:
+      template: "characters\\npc_entities\\main_npc\\cerys.w2ent"
+      appearance: [ "becca" ]
+
+    bjorn:
+      template: "characters\\npc_entities\\secondary_npc\\bjorn.w2ent"
+      appearance: [ "bjorn" ]
+
+  animations:
+    anim_8086_locomotion_walk_cycle_slow_forward:
+      animation: "locomotion_walk_cycle_slow_forward"
+      frames: 152
+
+    anim_13354_locomotion_walk_cycle_slow_forward:
+      animation: "locomotion_walk_cycle_slow_forward"
+      frames: 30
+
+    anim_7311_high_standing_sad_gesture_sigh:
+      animation: "high_standing_sad_gesture_sigh"
+      frames: 95
+
+    anim_592_locomotion_walk_cycle_slow_forward:
+      animation: "locomotion_walk_cycle_slow_forward"
+      frames: 160
+
+    anim_12476_add_reaction_sigh_01:
+      animation: "add_reaction_sigh_01"
+      frames: 137
+
+    anim_12458_add_idle_weight_shift_01:
+      animation: "add_idle_weight_shift_01"
+      frames: 543
+
+    anim_6723_add_idle_weight_shift_01:
+      animation: "add_idle_weight_shift_01"
+      frames: 240
+
+    anim_320_high_standing_determined_gesture_door_knock:
+      animation: "high_standing_determined_gesture_door_knock"
+      frames: 110
+
+    anim_7024_high_standing_determined_gesture_greeting_geralt_01:
+      animation: "high_standing_determined_gesture_greeting_geralt_01"
+      frames: 78
+
+    anim_12882_low_standing_sad_idle:
+      animation: "low_standing_sad_idle"
+      frames: 730
+
+    anim_6915_high_standing_aggressive_enter_frontal:
+      animation: "high_standing_aggressive_enter_frontal"
+      frames: 177
+
+    anim_332_high_standing_determined_step_back_casual:
+      animation: "high_standing_determined_step_back_casual"
+      frames: 134
+
+    anim_6930_high_standing_aggressive_idle:
+      animation: "high_standing_aggressive_idle"
+      frames: 347
+
+    anim_6726_add_idle_weight_shift_04:
+      animation: "add_idle_weight_shift_04"
+      frames: 341
+
+    anim_12464_add_reaction_afraid_01:
+      animation: "add_reaction_afraid_01"
+      frames: 152
+
+    anim_6986_high_standing_determined_exclamation_gesture_02_both_hands:
+      animation: "high_standing_determined_exclamation_gesture_02_both_hands"
+      frames: 86
+
+    anim_12468_add_reaction_agreeing_nod_01:
+      animation: "add_reaction_agreeing_nod_01"
+      frames: 90
+
+    anim_6924_high_standing_aggressive_gesture_left_hand_point_down:
+      animation: "high_standing_aggressive_gesture_left_hand_point_down"
+      frames: 105
+
+    anim_12953_high_standing_devastated_exit_frontal:
+      animation: "high_standing_devastated_exit_frontal"
+      frames: 176
+
+    anim_12710_high_standing_devastated_idle:
+      animation: "high_standing_devastated_idle"
+      frames: 666
+
+    anim_6918_high_standing_aggressive_exit_back:
+      animation: "high_standing_aggressive_exit_back"
+      frames: 147
+
+    anim_6982_high_standing_determined_enter_frontal:
+      animation: "high_standing_determined_enter_frontal"
+      frames: 239
+
+    anim_6737_add_reaction_sigh_01:
+      animation: "add_reaction_sigh_01"
+      frames: 83
+
+    anim_7096_high_standing_determined_idle:
+      animation: "high_standing_determined_idle"
+      frames: 288
+
+    anim_6987_high_standing_determined_exit_back:
+      animation: "high_standing_determined_exit_back"
+      frames: 126
+
+    anim_6722_add_idle_arm_relax:
+      animation: "add_idle_arm_relax"
+      frames: 198
+
+    anim_6936_high_standing_aggressive_turn90_left:
+      animation: "high_standing_aggressive_turn90_left"
+      frames: 100
+
+    anim_6922_high_standing_aggressive_gesture_both_hands_1:
+      animation: "high_standing_aggressive_gesture_both_hands_1"
+      frames: 142
+
+    anim_4946_man_fistfight_hit_knockdown_f_getup_exploration_1:
+      animation: "man_fistfight_hit_knockdown_f_getup_exploration_1"
+      frames: 457
+
+    anim_12888_dialog_animation_exit_forward:
+      animation: "dialog_animation_exit_forward"
+      frames: 195
+
+    anim_6923_high_standing_aggressive_gesture_left_hand_flick_1:
+      animation: "high_standing_aggressive_gesture_left_hand_flick_1"
+      frames: 78
+
+    anim_7297_high_standing_sad_exit_frontal:
+      animation: "high_standing_sad_exit_frontal"
+      frames: 273
+
+  animations.mimic:
+    mimicsanim_493_geralt_reaction_eye_smile_face:
+      animation: "geralt_reaction_eye_smile_face"
+      frames: 240
+
+    mimicsanim_470_geralt_neutral_question_why_face:
+      animation: "geralt_neutral_question_why_face"
+      frames: 51
+
+    mimicsanim_426_geralt_neutral_gesture_sceptical_remark_face:
+      animation: "geralt_neutral_gesture_sceptical_remark_face"
+      frames: 101
+
+    mimicsanim_487_geralt_reaction_annoyed_face:
+      animation: "geralt_reaction_annoyed_face"
+      frames: 100
+
+    mimicsanim_485_geralt_reaction_anger_restrain_face:
+      animation: "geralt_reaction_anger_restrain_face"
+      frames: 220
+
+    mimicsanim_308_focused_anim_combined_face:
+      animation: "focused_anim_combined_face"
+      frames: 889
+
+  actor.poses:
+    pose_0_high_standing_determined_idle:
+      idle_anim: "high_standing_determined_idle"
+
+    pose_0_man_big_ex_idle:
+      idle_anim: "man_big_ex_idle"
+
+  cameras:
+    cam_1_shotintrovillage:
+      fov: 40.0
+      transform:
+        pos: [ -5.7992329597, -10.9851779938, 4.4944152832 ]
+        rot: [ 0.0, 353.8000183105, 344.7998657227 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_2_shotcloseupalenelookingatgeralt:
+      fov: 40.0
+      transform:
+        pos: [ -1.2830346823, 2.4743268490, 1.5944976807 ]
+        rot: [ 0.0, 359.5500183105, 273.6252746582 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_3_shot3flowers:
+      fov: 40.0
+      transform:
+        pos: [ 2.4676060677, 1.1828665733, 1.5944976807 ]
+        rot: [ 0.0, 356.0500183105, 15.5259399414 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_4_shot4geraltsighing:
+      fov: 40.0
+      transform:
+        pos: [ 0.6978788376, 7.2818632126, 1.5944976807 ]
+        rot: [ 0.0, 356.3500061035, 172.6257324219 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_5_shot5towntoduo:
+      fov: 40.0
+      transform:
+        pos: [ -9.1491680145, 26.1362228394, 1.5944976807 ]
+        rot: [ 0.0, 356.0500183105, 240.5258178711 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_6_shot6werethere:
+      fov: 40.0
+      transform:
+        pos: [ -1.4797625542, 12.8757686615, 1.1944732666 ]
+        rot: [ 0.0, 346.7250671387, 320.5753173828 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_7_shot7getthisoverwith:
+      fov: 40.0
+      transform:
+        pos: [ -0.2284851074, 14.6490230560, 0.8944854736 ]
+        rot: [ 0.0, 358.5000610352, 203.0254364014 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_8_shot8knocking:
+      fov: 40.0
+      transform:
+        pos: [ 1.6194963455, 20.9908485413, 1.4944763184 ]
+        rot: [ 0.0, 345.1000366211, 331.5501098633 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_10_shot10aiskerangry:
+      fov: 40.0
+      transform:
+        pos: [ 3.4448976517, 23.7785110474, 1.2944641113 ]
+        rot: [ 0.0, 348.9000854492, 317.9509277344 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_11_shot11aleneclenching:
+      fov: 40.0
+      transform:
+        pos: [ 6.1556806564, 24.9388370514, 1.2944641113 ]
+        rot: [ 0.0, 344.8001098633, 97.2756958008 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_12_shot12aiskerdirecting:
+      fov: 40.0
+      transform:
+        pos: [ 0.5063085556, 26.3011512756, 1.2944641113 ]
+        rot: [ 0.0, 350.5001220703, 244.9752807617 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_14_shot14geraltaback:
+      fov: 40.0
+      transform:
+        pos: [ 4.2100305557, 25.0595703125, 0.9944458008 ]
+        rot: [ 0.0, 346.5001220703, 109.0238037109 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_15_shot15doorclose:
+      fov: 40.0
+      transform:
+        pos: [ 1.3725032806, 22.9612102509, 0.9944458008 ]
+        rot: [ 0.0, 351.8001098633, 306.2239990234 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_16_shot16walkaway:
+      fov: 40.0
+      transform:
+        pos: [ 1.8232116699, 21.1873970032, 0.9944458008 ]
+        rot: [ 0.0, 350.4750976563, 136.9746093750 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_19_shot19choice2:
+      fov: 40.0
+      transform:
+        pos: [ -2.5601348877, 26.7637081146, 0.9944458008 ]
+        rot: [ 0.0, 352.0000915527, 227.7736816406 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_20_shot20geraltenters:
+      fov: 40.0
+      transform:
+        pos: [ 0.1672844887, 18.5654830933, 0.8944396973 ]
+        rot: [ 0.0, 351.5000915527, 335.8746337891 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_21_shot21geraltovershoulder:
+      fov: 40.0
+      transform:
+        pos: [ 5.4222078323, 24.2042636871, 0.9443817139 ]
+        rot: [ 0.0, 352.0000610352, 337.0732421875 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_22_shot22aiskerovershoulder:
+      fov: 40.0
+      transform:
+        pos: [ 7.6109333038, 28.6912460327, 1.0943908691 ]
+        rot: [ 0.0, 349.0500793457, 160.3727416992 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_23_shot23geraltdefeated:
+      fov: 40.0
+      transform:
+        pos: [ 9.9244842529, 28.6219596863, 0.9944000244 ]
+        rot: [ 0.0, 351.7750854492, 98.6734619141 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_24_shot24geraltcloseupsigh:
+      fov: 40.0
+      transform:
+        pos: [ 0.0864677429, 18.6360473633, 0.9444427490 ]
+        rot: [ 0.0, 346.3750915527, 337.4016113281 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_25_shot25geraltleaving:
+      fov: 40.0
+      transform:
+        pos: [ -12.1840686798, 36.2674713135, 3.2443847656 ]
+        rot: [ 0.0, 345.9751281738, 223.7529296875 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_26_shot26geraltleaving2:
+      fov: 40.0
+      transform:
+        pos: [ -8.8176746368, 31.5892620087, 11.7943725586 ]
+        rot: [ 0.0, 9.0500965118, 178.3240966797 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_28_000alenecloseup:
+      fov: 40.0
+      transform:
+        pos: [ 3.3561267853, 24.1389961243, 0.7944335938 ]
+        rot: [ 0.0, 349.4000854492, 115.5508422852 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_29_000geraltcloseup:
+      fov: 40.0
+      transform:
+        pos: [ 4.1404132843, 25.0897140503, 0.8444366455 ]
+        rot: [ 0.0, 355.3500976563, 115.1763305664 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_30_000bjorncloseup:
+      fov: 40.0
+      transform:
+        pos: [ 4.7566413879, 24.6052150726, 1.1944580078 ]
+        rot: [ 0.0, 348.3501281738, 318.7773437500 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_31_000geraltinclose:
+      fov: 40.0
+      transform:
+        pos: [ 6.4761295319, 26.0435237885, 0.9443817139 ]
+        rot: [ 0.0, 349.9750671387, 116.4731445313 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_32_000bjorninclose:
+      fov: 40.0
+      transform:
+        pos: [ 6.3318910599, 26.2821998596, 0.8943786621 ]
+        rot: [ 0.0, 354.2500915527, 307.7225341797 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_33_000aleneinclose:
+      fov: 40.0
+      transform:
+        pos: [ 6.4521160126, 25.8837242126, 0.8943786621 ]
+        rot: [ 0.0, 348.3500976563, 278.2722167969 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+production:
+  settings:
+    sceneid: 1
+    #strings-idspace: 9999
+    #strings-idstart: 0
+
+  placement: "cerys"
+    # INFO: world coordinates of used origin:
+      #pos: [ 311.9729919434, 522.7623901367, 88.0255889893 ]
+      #rot: [ 0.0, -27.1550445557, 0.0 ]
+
+  assets:
+    actors:
+      geralt:
+        repo: "geralt"
+        by_voicetag: true
+        tags: [ "PLAYER" ]
+
+      cerys:
+        repo: "cerys"
+        #by_voicetag: true
+        appearance: "becca"
+        tags: [ "cerys" ]
+
+      bjorn:
+        repo: "bjorn"
+        #by_voicetag: true
+        appearance: "bjorn"
+        tags: [ "bjorn" ]
+
+    cameras:
+      cam_1_shotintrovillage:
+        repo: "cam_1_shotintrovillage"
+
+      cam_2_shotcloseupalenelookingatgeralt:
+        repo: "cam_2_shotcloseupalenelookingatgeralt"
+
+      cam_3_shot3flowers:
+        repo: "cam_3_shot3flowers"
+
+      cam_4_shot4geraltsighing:
+        repo: "cam_4_shot4geraltsighing"
+
+      cam_5_shot5towntoduo:
+        repo: "cam_5_shot5towntoduo"
+
+      cam_6_shot6werethere:
+        repo: "cam_6_shot6werethere"
+
+      cam_7_shot7getthisoverwith:
+        repo: "cam_7_shot7getthisoverwith"
+
+      cam_8_shot8knocking:
+        repo: "cam_8_shot8knocking"
+
+      cam_10_shot10aiskerangry:
+        repo: "cam_10_shot10aiskerangry"
+
+      cam_11_shot11aleneclenching:
+        repo: "cam_11_shot11aleneclenching"
+
+      cam_12_shot12aiskerdirecting:
+        repo: "cam_12_shot12aiskerdirecting"
+
+      cam_14_shot14geraltaback:
+        repo: "cam_14_shot14geraltaback"
+
+      cam_15_shot15doorclose:
+        repo: "cam_15_shot15doorclose"
+
+      cam_16_shot16walkaway:
+        repo: "cam_16_shot16walkaway"
+
+      cam_19_shot19choice2:
+        repo: "cam_19_shot19choice2"
+
+      cam_20_shot20geraltenters:
+        repo: "cam_20_shot20geraltenters"
+
+      cam_21_shot21geraltovershoulder:
+        repo: "cam_21_shot21geraltovershoulder"
+
+      cam_22_shot22aiskerovershoulder:
+        repo: "cam_22_shot22aiskerovershoulder"
+
+      cam_23_shot23geraltdefeated:
+        repo: "cam_23_shot23geraltdefeated"
+
+      cam_24_shot24geraltcloseupsigh:
+        repo: "cam_24_shot24geraltcloseupsigh"
+
+      cam_25_shot25geraltleaving:
+        repo: "cam_25_shot25geraltleaving"
+
+      cam_26_shot26geraltleaving2:
+        repo: "cam_26_shot26geraltleaving2"
+
+      cam_28_000alenecloseup:
+        repo: "cam_28_000alenecloseup"
+
+      cam_29_000geraltcloseup:
+        repo: "cam_29_000geraltcloseup"
+
+      cam_30_000bjorncloseup:
+        repo: "cam_30_000bjorncloseup"
+
+      cam_31_000geraltinclose:
+        repo: "cam_31_000geraltinclose"
+
+      cam_32_000bjorninclose:
+        repo: "cam_32_000bjorninclose"
+
+      cam_33_000aleneinclose:
+        repo: "cam_33_000aleneinclose"
+
+    animations:
+      geralt_locomotion_walk_cycle_slow_forward:
+        actor: "geralt"
+        repo: "anim_8086_locomotion_walk_cycle_slow_forward"
+        #duration: 5.0666666031
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      cerys_locomotion_walk_cycle_slow_forward:
+        actor: "cerys"
+        repo: "anim_13354_locomotion_walk_cycle_slow_forward"
+        #duration: 1.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_sad_gesture_sigh:
+        actor: "geralt"
+        repo: "anim_7311_high_standing_sad_gesture_sigh"
+        #duration: 3.1666667461
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      cerys_add_reaction_sigh_01:
+        actor: "cerys"
+        repo: "anim_12476_add_reaction_sigh_01"
+        #duration: 5.3333334923
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      cerys_add_idle_weight_shift_01:
+        actor: "cerys"
+        repo: "anim_12458_add_idle_weight_shift_01"
+        #duration: 4.5666666031
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_add_idle_weight_shift_01:
+        actor: "geralt"
+        repo: "anim_6723_add_idle_weight_shift_01"
+        #duration: 18.1000003815
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined_gesture_door_knock:
+        actor: "geralt"
+        repo: "anim_320_high_standing_determined_gesture_door_knock"
+        #duration: 8.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined_gesture_greeting_geralt_01:
+        actor: "geralt"
+        repo: "anim_7024_high_standing_determined_gesture_greeting_geralt_01"
+        #duration: 3.6666667461
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      cerys_low_standing_sad_idle:
+        actor: "cerys"
+        repo: "anim_12882_low_standing_sad_idle"
+        #duration: 2.5999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      bjorn_high_standing_aggressive_enter_frontal:
+        actor: "bjorn"
+        repo: "anim_6915_high_standing_aggressive_enter_frontal"
+        #duration: 24.3333339691
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined_step_back_casual:
+        actor: "geralt"
+        repo: "anim_332_high_standing_determined_step_back_casual"
+        #duration: 5.9000000954
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      bjorn_high_standing_aggressive_idle:
+        actor: "bjorn"
+        repo: "anim_6930_high_standing_aggressive_idle"
+        #duration: 4.4666666985
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_add_idle_weight_shift_04:
+        actor: "geralt"
+        repo: "anim_6726_add_idle_weight_shift_04"
+        #duration: 11.5666666031
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      cerys_add_reaction_afraid_01:
+        actor: "cerys"
+        repo: "anim_12464_add_reaction_afraid_01"
+        #duration: 11.3666667938
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      bjorn_high_standing_determined_exclamation_gesture_02_both_hands:
+        actor: "bjorn"
+        repo: "anim_6986_high_standing_determined_exclamation_gesture_02_both_hands"
+        #duration: 5.0666666031
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_aggressive_idle:
+        actor: "geralt"
+        repo: "anim_6930_high_standing_aggressive_idle"
+        #duration: 2.8666665554
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      cerys_add_reaction_agreeing_nod_01:
+        actor: "cerys"
+        repo: "anim_12468_add_reaction_agreeing_nod_01"
+        #duration: 3.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      bjorn_high_standing_aggressive_gesture_left_hand_point_down:
+        actor: "bjorn"
+        repo: "anim_6924_high_standing_aggressive_gesture_left_hand_point_down"
+        #duration: 3.5000000000
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      cerys_high_standing_devastated_exit_frontal:
+        actor: "cerys"
+        repo: "anim_12953_high_standing_devastated_exit_frontal"
+        #duration: 5.8666667938
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      cerys_high_standing_devastated_idle:
+        actor: "cerys"
+        repo: "anim_12710_high_standing_devastated_idle"
+        #duration: 22.2000007629
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      bjorn_high_standing_aggressive_exit_back:
+        actor: "bjorn"
+        repo: "anim_6918_high_standing_aggressive_exit_back"
+        #duration: 4.9000000954
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined_enter_frontal:
+        actor: "geralt"
+        repo: "anim_6982_high_standing_determined_enter_frontal"
+        #duration: 7.9666666985
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_add_reaction_sigh_01:
+        actor: "geralt"
+        repo: "anim_6737_add_reaction_sigh_01"
+        #duration: 2.7666666508
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined_idle:
+        actor: "geralt"
+        repo: "anim_7096_high_standing_determined_idle"
+        #duration: 9.6000003815
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined_exit_back:
+        actor: "geralt"
+        repo: "anim_6987_high_standing_determined_exit_back"
+        #duration: 4.1999998093
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_add_idle_arm_relax:
+        actor: "geralt"
+        repo: "anim_6722_add_idle_arm_relax"
+        #duration: 6.5999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      bjorn_high_standing_aggressive_turn90_left:
+        actor: "bjorn"
+        repo: "anim_6936_high_standing_aggressive_turn90_left"
+        #duration: 3.3333332539
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      bjorn_high_standing_aggressive_gesture_both_hands_1:
+        actor: "bjorn"
+        repo: "anim_6922_high_standing_aggressive_gesture_both_hands_1"
+        #duration: 4.7333331108
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_man_fistfight_hit_knockdown_f_getup_exploration_1:
+        actor: "geralt"
+        repo: "anim_4946_man_fistfight_hit_knockdown_f_getup_exploration_1"
+        #duration: 15.2333335876
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      cerys_dialog_animation_exit_forward:
+        actor: "cerys"
+        repo: "anim_12888_dialog_animation_exit_forward"
+        #duration: 6.5000000000
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      bjorn_high_standing_aggressive_gesture_left_hand_flick_1:
+        actor: "bjorn"
+        repo: "anim_6923_high_standing_aggressive_gesture_left_hand_flick_1"
+        #duration: 2.5999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_sad_exit_frontal:
+        actor: "geralt"
+        repo: "anim_7297_high_standing_sad_exit_frontal"
+        #duration: 9.1000003815
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+    animations.mimic:
+      geralt_geralt_reaction_eye_smile_face:
+        actor: "geralt"
+        repo: "mimicsanim_493_geralt_reaction_eye_smile_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      cerys_geralt_neutral_question_why_face:
+        actor: "cerys"
+        repo: "mimicsanim_470_geralt_neutral_question_why_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_gesture_sceptical_remark_face:
+        actor: "geralt"
+        repo: "mimicsanim_426_geralt_neutral_gesture_sceptical_remark_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_reaction_annoyed_face:
+        actor: "geralt"
+        repo: "mimicsanim_487_geralt_reaction_annoyed_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      bjorn_geralt_reaction_anger_restrain_face:
+        actor: "bjorn"
+        repo: "mimicsanim_485_geralt_reaction_anger_restrain_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_focused_anim_combined_face:
+        actor: "geralt"
+        repo: "mimicsanim_308_focused_anim_combined_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+    actor.poses:
+      geralt_high_standing_determined_idle:
+        actor: "geralt"
+        repo: "pose_0_high_standing_determined_idle"
+
+      cerys_high_standing_determined_idle:
+        actor: "cerys"
+        repo: "pose_0_high_standing_determined_idle"
+
+      bjorn_man_big_ex_idle:
+        actor: "bjorn"
+        repo: "pose_0_man_big_ex_idle"
+
+storyboard:
+  #defaults:
+    #placement:
+      #geralt: [[ 1.1000919342, 0.1310949326, -0.0444259644 ], [ 0.0, 0.0, 4.7996826172 ]]
+      #cerys: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+
+    #actor.pose:
+      #geralt: geralt_high_standing_determined_idle
+      #cerys: cerys_high_standing_determined_idle
+
+  section_storyboard_ui:
+    # shot shotintrovillage
+    shot_1:
+      - actor.placement: [0.0, geralt, [ 1.1000919342, 0.1310949326, -0.0444259644 ], [ 0.0, 0.0, 4.7996826172 ]]
+      - actor.placement: [0.0, cerys, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.pose: [0.0, geralt_high_standing_determined_idle]
+      - actor.pose: [0.0, cerys_high_standing_determined_idle]
+      - cam: [0.0, cam_1_shotintrovillage]
+      - actor.anim: [0.0, geralt_locomotion_walk_cycle_slow_forward]
+      - actor.anim: [0.0, cerys_locomotion_walk_cycle_slow_forward]
+
+    # shot shotcloseupalenelookingatgeralt
+    shot_2:
+      - actor.placement: [0.0, geralt, [ 1.0811238289, 2.7789189816, -0.0444259644 ], [ 0.0, 0.0, 4.7996826172 ]]
+      - actor.placement: [0.0, cerys, [ 0.3497222662, 1.7955124378, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.placement: [0.0, bjorn, [ 5.9434299469, 13.8759069443, -0.6170425415 ], [ 0.0, 0.0, 0.0 ]]
+      - cam: [0.0, cam_2_shotcloseupalenelookingatgeralt]
+      - actor.anim: [0.0, geralt_locomotion_walk_cycle_slow_forward]
+      - actor.anim: [0.0, cerys_locomotion_walk_cycle_slow_forward]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_eye_smile_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ -0.4872324169, 0.8734814525, 1.8327255249 ]]
+      - actor.lookat: [0.0, cerys, geralt]
+
+    # shot shot3flowers
+    shot_3:
+      - actor.placement: [0.0, geralt, [ 1.0871039629, 3.7489180565, -0.0444259644 ], [ 0.0, 0.0, 4.7996826172 ]]
+      - actor.placement: [0.0, cerys, [ 0.6052793264, 3.0969858170, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - cam: [0.0, cam_3_shot3flowers]
+      - actor.anim: [0.0, geralt_locomotion_walk_cycle_slow_forward]
+      - actor.anim: [0.0, cerys_locomotion_walk_cycle_slow_forward]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_eye_smile_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 3.0388572216, 9.3982849121, 0.1236419678 ]]
+      - actor.lookat: [0.0, cerys, [ -0.8424788117, 1.8863263130, 0.1747970581 ]]
+
+    # shot shot4geraltsighing
+    shot_4:
+      - actor.placement: [0.0, geralt, [ 0.9413232803, 4.6435432434, -0.1210479736 ], [ 0.0, 0.0, 4.7996826172 ]]
+      - actor.placement: [0.0, cerys, [ -0.0872381926, 5.0043430328, -0.2131729126 ], [ 0.0, 0.0, 0.0 ]]
+      - cam: [0.0, cam_4_shot4geraltsighing]
+      - actor.anim: [0.0, geralt_high_standing_sad_gesture_sigh]
+      - actor.anim: [0.0, cerys_locomotion_walk_cycle_slow_forward]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_sceptical_remark_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ -1.0319892168, 0.9623137712, 1.1651840210 ]]
+      - actor.lookat: [0.0, cerys, [ -0.8424788117, 1.8863263130, 0.1747970581 ]]
+
+    # shot shot5towntoduo
+    shot_5:
+      - actor.placement: [0.0, geralt, [ 0.1948299408, 13.6135225296, -0.7757339478 ], [ 0.0, 0.0, 4.7996826172 ]]
+      - actor.placement: [0.0, cerys, [ -0.7509779930, 13.4426879883, -0.6010360718 ], [ 0.0, 0.0, 0.0 ]]
+      - cam: [0.0, cam_5_shot5towntoduo]
+      - actor.anim: [0.0, geralt_locomotion_walk_cycle_slow_forward]
+      - actor.anim: [0.0, cerys_add_reaction_sigh_01]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_sceptical_remark_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ -0.7095362544, 1.1240166426, 0.9886169434 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+
+    # shot shot6werethere
+    shot_6:
+      - cam: [0.0, cam_6_shot6werethere]
+      - actor.anim: [0.0, geralt_locomotion_walk_cycle_slow_forward]
+      - actor.anim: [0.0, cerys_add_idle_weight_shift_01]
+      - actor.anim.mimic: [0.0, geralt_geralt_neutral_gesture_sceptical_remark_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ -0.7095362544, 1.1240166426, 0.9886169434 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+
+    # shot shot7getthisoverwith
+    shot_7:
+      - cam: [0.0, cam_7_shot7getthisoverwith]
+      - actor.anim: [0.0, geralt_add_idle_weight_shift_01]
+      - actor.anim: [0.0, cerys_add_idle_weight_shift_01]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1077730358, 1.5000644922, 1.6498641968 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+
+    # shot shot8knocking
+    shot_8:
+      - actor.placement: [0.0, geralt, [ 4.0227384567, 24.7579879761, -0.8889923096 ], [ 0.0, 0.0, 286.5997924805 ]]
+      - actor.placement: [0.0, cerys, [ 2.3822565079, 23.6130523682, -0.9294586182 ], [ 0.0, 0.0, 314.0999450684 ]]
+      - cam: [0.0, cam_8_shot8knocking]
+      - actor.anim: [0.0, geralt_high_standing_determined_gesture_door_knock]
+      - actor.anim: [0.0, cerys_add_idle_weight_shift_01]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1077730358, 1.5000644922, 1.6498641968 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+
+    # shot shot9aiskerintro
+    shot_9:
+      - actor.placement: [0.0, bjorn, [ 5.2879467010, 25.2420578003, -0.6170425415 ], [ 0.0, 0.0, 123.9000625610 ]]
+      - actor.anim: [0.0, geralt_high_standing_determined_gesture_greeting_geralt_01]
+      - actor.anim: [0.0, cerys_low_standing_sad_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_enter_frontal]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1077730358, 1.5000644922, 1.6498641968 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+
+    # shot shot10aiskerangry
+    shot_10:
+      - actor.placement: [0.0, bjorn, [ 5.2740859985, 25.2307624817, -0.6170425415 ], [ 0.0, 0.0, 119.8999481201 ]]
+      - cam: [0.0, cam_10_shot10aiskerangry]
+      - actor.anim: [0.0, geralt_high_standing_determined_step_back_casual]
+      - actor.anim: [0.0, cerys_add_idle_weight_shift_01]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_idle]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.anim.mimic: [0.0, bjorn_geralt_reaction_anger_restrain_face]
+      - actor.lookat: [0.0, geralt, [ 0.1077730358, 1.5000644922, 1.6498641968 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+
+    # shot shot11aleneclenching
+    shot_11:
+      - actor.placement: [0.0, geralt, [ 3.1396102905, 24.8648796082, -0.8889923096 ], [ 0.0, 0.0, 286.5997924805 ]]
+      - cam: [0.0, cam_11_shot11aleneclenching]
+      - actor.anim: [0.0, geralt_add_idle_weight_shift_04]
+      - actor.anim: [0.0, cerys_add_reaction_afraid_01]
+      - actor.anim: [0.0, bjorn_high_standing_determined_exclamation_gesture_02_both_hands]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1077730358, 1.5000644922, 1.6498641968 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+
+    # shot shot12aiskerdirecting
+    shot_12:
+      - cam: [0.0, cam_12_shot12aiskerdirecting]
+      - actor.anim: [0.0, geralt_high_standing_aggressive_idle]
+      - actor.anim: [0.0, cerys_add_reaction_agreeing_nod_01]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_gesture_left_hand_point_down]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1077730358, 1.5000644922, 1.6498641968 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+
+    # shot shot13aiskeratgalenein
+    shot_13:
+      - actor.placement: [0.0, cerys, [ 2.4942016602, 23.3214569092, -0.9294586182 ], [ 0.0, 0.0, 297.7999877930 ]]
+      - actor.anim: [0.0, geralt_high_standing_aggressive_idle]
+      - actor.anim: [0.0, cerys_high_standing_devastated_exit_frontal]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_idle]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1077730358, 1.5000644922, 1.6498641968 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot14geraltaback
+    shot_14:
+      - actor.placement: [0.0, cerys, [ 7.5277252197, 26.3670558929, -0.7994766235 ], [ 0.0, 0.0, 297.7999877930 ]]
+      - cam: [0.0, cam_14_shot14geraltaback]
+      - actor.anim: [0.0, geralt_high_standing_aggressive_idle]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_idle]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1077730358, 1.5000644922, 1.6498641968 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot15doorclose
+    shot_15:
+      - actor.placement: [0.0, cerys, [ 7.7006092072, 25.9075813293, -0.7994766235 ], [ 0.0, 0.0, 297.7999877930 ]]
+      - cam: [0.0, cam_15_shot15doorclose]
+      - actor.anim: [0.0, geralt_high_standing_aggressive_idle]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_exit_back]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1077730358, 1.5000644922, 1.6498641968 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot16walkaway
+    shot_16:
+      - actor.placement: [0.0, geralt, [ 0.2978134155, 19.4753475189, -0.9026489258 ], [ 0.0, 0.0, 145.8000488281 ]]
+      - cam: [0.0, cam_16_shot16walkaway]
+      - actor.anim: [0.0, geralt_high_standing_determined_enter_frontal]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_exit_back]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1077730358, 1.5000644922, 1.6498641968 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot17lookback
+    shot_17:
+      - actor.anim: [0.0, geralt_add_reaction_sigh_01]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_exit_back]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ -1.3062705994, 0.4277040362, 1.0782699585 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot18choice1
+    shot_18:
+      - actor.anim: [0.0, geralt_high_standing_determined_idle]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_exit_back]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ -1.3062705994, 0.4277040362, 1.0782699585 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot19choice2
+    shot_19:
+      - cam: [0.0, cam_19_shot19choice2]
+      - actor.anim: [0.0, geralt_high_standing_determined_idle]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_exit_back]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ -1.3062705994, 0.4277040362, 1.0782699585 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot20geraltenters
+    shot_20:
+      - cam: [0.0, cam_20_shot20geraltenters]
+      - actor.anim: [0.0, geralt_high_standing_determined_exit_back]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_exit_back]
+      - actor.anim.mimic: [0.0, geralt_focused_anim_combined_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0060138032, 0.5029464960, 1.7486114502 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot21geraltovershoulder
+    shot_21:
+      - actor.placement: [0.0, geralt, [ 5.6476259232, 25.5802745819, -0.8812484741 ], [ 0.0, 0.0, 292.7998657227 ]]
+      - actor.placement: [0.0, cerys, [ 7.7575511932, 26.0665054321, -0.7994766235 ], [ 0.0, 0.0, 55.8998794556 ]]
+      - actor.placement: [0.0, bjorn, [ 7.3199882507, 27.0117645264, -0.8463287354 ], [ 0.0, 0.0, 214.0998229980 ]]
+      - cam: [0.0, cam_21_shot21geraltovershoulder]
+      - actor.anim: [0.0, geralt_add_idle_arm_relax]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_turn90_left]
+      - actor.anim.mimic: [0.0, geralt_focused_anim_combined_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0060138032, 0.5029464960, 1.7486114502 ]]
+      - actor.lookat: [0.0, cerys, [ -0.7439669371, 0.3099814355, 1.0818939209 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot22aiskerovershoulder
+    shot_22:
+      - actor.placement: [0.0, bjorn, [ 7.3199882507, 27.0117645264, -0.8463287354 ], [ 0.0, 0.0, 116.5998992920 ]]
+      - cam: [0.0, cam_22_shot22aiskerovershoulder]
+      - actor.anim: [0.0, geralt_add_idle_arm_relax]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_gesture_both_hands_1]
+      - actor.anim.mimic: [0.0, geralt_focused_anim_combined_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0060138032, 0.5029464960, 1.7486114502 ]]
+      - actor.lookat: [0.0, cerys, [ -0.7439669371, 0.3099814355, 1.0818939209 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot23geraltdefeated
+    shot_23:
+      - actor.placement: [0.0, geralt, [ 7.7507543564, 29.0858459473, -0.8812484741 ], [ 0.0, 0.0, 160.8994750977 ]]
+      - actor.placement: [0.0, cerys, [ 5.5662631989, 25.4361934662, -0.7994766235 ], [ 0.0, 0.0, 93.3998718262 ]]
+      - actor.placement: [0.0, bjorn, [ 7.4216384888, 27.6564388275, -0.8463287354 ], [ 0.0, 0.0, 351.9999084473 ]]
+      - cam: [0.0, cam_23_shot23geraltdefeated]
+      - actor.anim: [0.0, geralt_man_fistfight_hit_knockdown_f_getup_exploration_1]
+      - actor.anim: [0.0, cerys_dialog_animation_exit_forward]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_gesture_left_hand_flick_1]
+      - actor.anim.mimic: [0.0, geralt_focused_anim_combined_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0060138032, 0.5029464960, 1.7486114502 ]]
+      - actor.lookat: [0.0, cerys, [ -0.7439669371, 0.3099814355, 1.0818939209 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot24geraltcloseupsigh
+    shot_24:
+      - actor.placement: [0.0, geralt, [ 0.2978134155, 19.4753475189, -0.9026489258 ], [ 0.0, 0.0, 142.7000122070 ]]
+      - actor.placement: [0.0, cerys, [ 7.7006092072, 25.9075813293, -0.7994766235 ], [ 0.0, 0.0, 297.7999877930 ]]
+      - actor.placement: [0.0, bjorn, [ 7.1661233902, 25.5370445251, -0.6170425415 ], [ 0.0, 0.0, 119.8999481201 ]]
+      - cam: [0.0, cam_24_shot24geraltcloseupsigh]
+      - actor.anim: [0.0, geralt_add_reaction_sigh_01]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_exit_back]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0058124810, 0.4967488050, 1.6091461182 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot25geraltleaving
+    shot_25:
+      - actor.placement: [0.0, geralt, [ -0.9289484024, 18.1709690094, -0.9795837402 ], [ 0.0, 0.0, 35.5000610352 ]]
+      - cam: [0.0, cam_25_shot25geraltleaving]
+      - actor.anim: [0.0, geralt_high_standing_sad_exit_frontal]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_exit_back]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0058124810, 0.4967488050, 1.6091461182 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot26geraltleaving2
+    shot_26:
+      - actor.placement: [0.0, geralt, [ -1.5860071182, 17.7509365082, -0.7609786987 ], [ 0.0, 0.0, 35.5000610352 ]]
+      - cam: [0.0, cam_26_shot26geraltleaving2]
+      - actor.anim: [0.0, geralt_high_standing_sad_exit_frontal]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_exit_back]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0058124810, 0.4967488050, 1.6091461182 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot shot11aleneclenching (cloned)
+    shot_27:
+      - actor.placement: [0.0, geralt, [ 3.1396102905, 24.8648796082, -0.8889923096 ], [ 0.0, 0.0, 286.5997924805 ]]
+      - actor.placement: [0.0, cerys, [ 2.3822565079, 23.6130523682, -0.9294586182 ], [ 0.0, 0.0, 314.0999450684 ]]
+      - actor.placement: [0.0, bjorn, [ 5.2740859985, 25.2307624817, -0.6170425415 ], [ 0.0, 0.0, 119.8999481201 ]]
+      - cam: [0.0, cam_11_shot11aleneclenching]
+      - actor.anim: [0.0, geralt_add_idle_weight_shift_04]
+      - actor.anim: [0.0, cerys_add_reaction_afraid_01]
+      - actor.anim: [0.0, bjorn_high_standing_determined_exclamation_gesture_02_both_hands]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1077730358, 1.5000644922, 1.6498641968 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+
+    # shot 000alenecloseup
+    shot_28:
+      - cam: [0.0, cam_28_000alenecloseup]
+      - actor.anim: [0.0, geralt_add_idle_weight_shift_04]
+      - actor.anim: [0.0, cerys_add_reaction_afraid_01]
+      - actor.anim: [0.0, bjorn_high_standing_determined_exclamation_gesture_02_both_hands]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1077730358, 1.5000644922, 1.6498641968 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+
+    # shot 000geraltcloseup
+    shot_29:
+      - cam: [0.0, cam_29_000geraltcloseup]
+      - actor.anim: [0.0, geralt_add_idle_weight_shift_04]
+      - actor.anim: [0.0, cerys_add_reaction_afraid_01]
+      - actor.anim: [0.0, bjorn_high_standing_determined_exclamation_gesture_02_both_hands]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1077730358, 1.5000644922, 1.6498641968 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+
+    # shot 000bjorncloseup
+    shot_30:
+      - cam: [0.0, cam_30_000bjorncloseup]
+      - actor.anim: [0.0, geralt_add_idle_weight_shift_04]
+      - actor.anim: [0.0, cerys_add_reaction_afraid_01]
+      - actor.anim: [0.0, bjorn_high_standing_determined_exclamation_gesture_02_both_hands]
+      - actor.anim.mimic: [0.0, geralt_geralt_reaction_annoyed_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.1077730358, 1.5000644922, 1.6498641968 ]]
+      - actor.lookat: [0.0, cerys, [ 0.0549612045, 2.2742738724, 0.4662704468 ]]
+
+    # shot 000geraltinclose
+    shot_31:
+      - actor.placement: [0.0, geralt, [ 5.6476259232, 25.5802745819, -0.8812484741 ], [ 0.0, 0.0, 292.7998657227 ]]
+      - actor.placement: [0.0, cerys, [ 7.7575511932, 26.0665054321, -0.7994766235 ], [ 0.0, 0.0, 55.8998794556 ]]
+      - actor.placement: [0.0, bjorn, [ 7.3199882507, 27.0117645264, -0.8463287354 ], [ 0.0, 0.0, 214.0998229980 ]]
+      - cam: [0.0, cam_31_000geraltinclose]
+      - actor.anim: [0.0, geralt_add_idle_arm_relax]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_turn90_left]
+      - actor.anim.mimic: [0.0, geralt_focused_anim_combined_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0060138032, 0.5029464960, 1.7486114502 ]]
+      - actor.lookat: [0.0, cerys, [ -0.7439669371, 0.3099814355, 1.0818939209 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot 000bjorninclose
+    shot_32:
+      - cam: [0.0, cam_32_000bjorninclose]
+      - actor.anim: [0.0, geralt_add_idle_arm_relax]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_turn90_left]
+      - actor.anim.mimic: [0.0, geralt_focused_anim_combined_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0060138032, 0.5029464960, 1.7486114502 ]]
+      - actor.lookat: [0.0, cerys, [ -0.7439669371, 0.3099814355, 1.0818939209 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+    # shot 000aleneinclose
+    shot_33:
+      - cam: [0.0, cam_33_000aleneinclose]
+      - actor.anim: [0.0, geralt_add_idle_arm_relax]
+      - actor.anim: [0.0, cerys_high_standing_devastated_idle]
+      - actor.anim: [0.0, bjorn_high_standing_aggressive_turn90_left]
+      - actor.anim.mimic: [0.0, geralt_focused_anim_combined_face]
+      - actor.anim.mimic: [0.0, cerys_geralt_neutral_question_why_face]
+      - actor.lookat: [0.0, geralt, [ 0.0060138032, 0.5029464960, 1.7486114502 ]]
+      - actor.lookat: [0.0, cerys, [ -0.7439669371, 0.3099814355, 1.0818939209 ]]
+      - actor.lookat: [0.0, bjorn, geralt]
+
+dialogscript:
+  player: "geralt"
+  actors: [ "geralt", "cerys", "bjorn" ]
+
+  section_start:
+    - PAUSE: 0.0
+    - NEXT: section_storyboard_ui
+
+  section_storyboard_ui:
+    # shot shotintrovillage
+    - CUE: shot_1
+    # (longest) anim: locomotion_walk_cycle_slow_forward
+    - PAUSE: 5.0666666031
+    # shot shotcloseupalenelookingatgeralt
+    - CUE: shot_2
+    # (longest) anim: geralt_reaction_eye_smile_face
+    - PAUSE: 8.0
+    # shot shot3flowers
+    - CUE: shot_3
+    # (longest) anim: geralt_reaction_eye_smile_face
+    - PAUSE: 8.0
+    # shot shot4geraltsighing
+    - CUE: shot_4
+    # (longest) anim: geralt_neutral_gesture_sceptical_remark_face
+    - PAUSE: 3.3666665554
+    # shot shot5towntoduo
+    - CUE: shot_5
+    # (longest) anim: locomotion_walk_cycle_slow_forward
+    - PAUSE: 5.3333334923
+    # shot shot6werethere
+    - CUE: shot_6
+    # (longest) anim: add_idle_weight_shift_01
+    - PAUSE: 18.1000003815
+    # shot shot7getthisoverwith
+    - CUE: shot_7
+    # (longest) anim: add_idle_weight_shift_01
+    - PAUSE: 18.1000003815
+    # shot shot8knocking
+    - CUE: shot_8
+    # (longest) anim: add_idle_weight_shift_01
+    - PAUSE: 18.1000003815
+    # shot shot9aiskerintro
+    - CUE: shot_9
+    # (longest) anim: low_standing_sad_idle
+    - PAUSE: 24.3333339691
+    # shot shot10aiskerangry
+    - CUE: shot_10
+    # (longest) anim: add_idle_weight_shift_01
+    - PAUSE: 18.1000003815
+    # shot shot11aleneclenching
+    - CUE: shot_11
+    # (longest) anim: add_idle_weight_shift_04
+    - PAUSE: 11.3666667938
+    # shot shot12aiskerdirecting
+    - CUE: shot_12
+    # (longest) anim: high_standing_aggressive_idle
+    - PAUSE: 11.5666666031
+    # shot shot13aiskeratgalenein
+    - CUE: shot_13
+    # (longest) anim: high_standing_aggressive_idle
+    - PAUSE: 11.5666666031
+    # shot shot14geraltaback
+    - CUE: shot_14
+    # (longest) anim: high_standing_devastated_idle
+    - PAUSE: 22.2000007629
+    # shot shot15doorclose
+    - CUE: shot_15
+    # (longest) anim: high_standing_devastated_idle
+    - PAUSE: 22.2000007629
+    # shot shot16walkaway
+    - CUE: shot_16
+    # (longest) anim: high_standing_devastated_idle
+    - PAUSE: 22.2000007629
+    # shot shot17lookback
+    - CUE: shot_17
+    # (longest) anim: high_standing_devastated_idle
+    - PAUSE: 22.2000007629
+    # shot shot18choice1
+    - CUE: shot_18
+    # (longest) anim: high_standing_devastated_idle
+    - PAUSE: 22.2000007629
+    # shot shot19choice2
+    - CUE: shot_19
+    # (longest) anim: high_standing_devastated_idle
+    - PAUSE: 22.2000007629
+    # shot shot20geraltenters
+    - CUE: shot_20
+    # (longest) anim: focused_anim_combined_face
+    - PAUSE: 29.6333332062
+    # shot shot21geraltovershoulder
+    - CUE: shot_21
+    # (longest) anim: focused_anim_combined_face
+    - PAUSE: 29.6333332062
+    # shot shot22aiskerovershoulder
+    - CUE: shot_22
+    # (longest) anim: focused_anim_combined_face
+    - PAUSE: 29.6333332062
+    # shot shot23geraltdefeated
+    - CUE: shot_23
+    # (longest) anim: focused_anim_combined_face
+    - PAUSE: 29.6333332062
+    # shot shot24geraltcloseupsigh
+    - CUE: shot_24
+    # (longest) anim: high_standing_devastated_idle
+    - PAUSE: 22.2000007629
+    # shot shot25geraltleaving
+    - CUE: shot_25
+    # (longest) anim: high_standing_devastated_idle
+    - PAUSE: 22.2000007629
+    # shot shot26geraltleaving2
+    - CUE: shot_26
+    # (longest) anim: high_standing_devastated_idle
+    - PAUSE: 22.2000007629
+    # shot shot11aleneclenching (cloned)
+    - CUE: shot_27
+    # (longest) anim: add_idle_weight_shift_04
+    - PAUSE: 11.3666667938
+    # shot 000alenecloseup
+    - CUE: shot_28
+    # (longest) anim: add_idle_weight_shift_04
+    - PAUSE: 11.3666667938
+    # shot 000geraltcloseup
+    - CUE: shot_29
+    # (longest) anim: add_idle_weight_shift_04
+    - PAUSE: 11.3666667938
+    # shot 000bjorncloseup
+    - CUE: shot_30
+    # (longest) anim: add_idle_weight_shift_04
+    - PAUSE: 11.3666667938
+    # shot 000geraltinclose
+    - CUE: shot_31
+    # (longest) anim: focused_anim_combined_face
+    - PAUSE: 29.6333332062
+    # shot 000bjorninclose
+    - CUE: shot_32
+    # (longest) anim: focused_anim_combined_face
+    - PAUSE: 29.6333332062
+    # shot 000aleneinclose
+    - CUE: shot_33
+    # (longest) anim: focused_anim_combined_face
+    - PAUSE: 29.6333332062
+    - NEXT: section_exit
+
+  section_exit:
+    - CAMERA_BLEND: 2.0
+    - EXIT
+

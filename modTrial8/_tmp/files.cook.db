@@ -1,0 +1,270 @@
+{
+    "files": [
+        {
+            "path": "dlc\\dlctrial8\\data\\spawnsets\\demon_community.w2comm",
+            "level": 2,
+            "class": "CCommunity",
+            "seed": 1,
+            "id": "18B19BE4-39E0D41C-76EB9081-607ED3C1",
+            "diskSize": 3085,
+            "hardImports": 1,
+            "softImports": 1,
+            "soft": [
+                "8D0FD08D-D9817F92-DAC2A737-AFEE3614",
+                "0BDA045A-17168143-CC2EDD0F-30926394"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\spawnsets\\merchant_community.w2comm",
+            "level": 2,
+            "class": "CCommunity",
+            "seed": 1,
+            "id": "91176833-6CF76717-423D2601-751D88E7",
+            "diskSize": 3260,
+            "hardImports": 1,
+            "softImports": 1,
+            "soft": [
+                "A478D60A-0BB71B86-CDF31877-1752C35E",
+                "D08434E4-977A2FAB-6B2D0F90-FA0DD91A"
+            ]
+        },
+        {
+            "path": "dlc\\bob\\data\\quests\\minor_quests\\quest_files\\mq7004_bleeding_tree\\entities\\mq7004_jt_kneeling_concerned.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "9A1412B4-21852AD4-9486CB69-10B2304D",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\trial8.w2quest",
+            "level": 1,
+            "class": "CQuest",
+            "seed": 1,
+            "id": "7A67E6B7-F3E52C95-7F500C7C-43CDE036",
+            "diskSize": 12432,
+            "hardImports": 1,
+            "hard": [
+                "18B19BE4-39E0D41C-76EB9081-607ED3C1",
+                "91176833-6CF76717-423D2601-751D88E7"
+            ],
+            "soft": [
+                "A781616E-E9DE252E-5E5C7197-2BA22211",
+                "18B19BE4-39E0D41C-76EB9081-607ED3C1",
+                "91176833-6CF76717-423D2601-751D88E7"
+            ]
+        },
+        {
+            "path": "dlc\\ep1\\data\\gameplay\\community\\actionpoints\\quest\\q604_cat_sit.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "B3709861-363867F5-0EEF9C7D-966BB9DC",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\ep1\\data\\gameplay\\community\\actionpoints\\quest\\q604_dog_sit.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "82DBC743-0A14CD12-535B2666-7D86A1FA",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\trade\\goods_carriage\\goods_carriage_appearance_closed.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D8A703CA-CE4CCAA3-A12342A7-B49D69B7",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\animals\\horse_parking.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "BD50B936-27079185-7E5012A4-567A25DD",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\npc_entities\\animals\\horse\\horse_background_no_saddle.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "A478D60A-0BB71B86-CDF31877-1752C35E",
+            "softImports": 1
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\scenes\\test_demons.w2scene",
+            "level": 0,
+            "class": "CStoryScene",
+            "seed": 1,
+            "id": "A781616E-E9DE252E-5E5C7197-2BA22211",
+            "diskSize": 9259,
+            "softImports": 1,
+            "soft": [
+                "8D0FD08D-D9817F92-DAC2A737-AFEE3614",
+                "0BDA045A-17168143-CC2EDD0F-30926394",
+                "90DB9D66-1F7513D5-96AB23A4-766415AB"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\dlctrial8.reddlc",
+            "level": 0,
+            "class": "CDLCDefinition",
+            "seed": 1,
+            "id": "AA467A61-1AC2688C-D61C1847-4A7F322D",
+            "diskSize": 1447,
+            "hard": [
+                "7A67E6B7-F3E52C95-7F500C7C-43CDE036"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\journal\\quests\\questgroup_trial8.journal",
+            "level": 0,
+            "class": "CJournalResource",
+            "seed": 1,
+            "id": "189AE4D1-69D5D297-539FD2B3-AF80534E",
+            "diskSize": 619
+        },
+        {
+            "path": "dlc\\dlctrial8\\journal\\quests\\working_time.journal",
+            "level": 0,
+            "class": "CJournalResource",
+            "seed": 1,
+            "id": "FA3E64E9-B4039FB3-D998293A-4A626827",
+            "diskSize": 2137
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\demonlayer\\actionpoints.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "28126CD1-0C67A7F4-DDBA77DA-361817B4",
+            "diskSize": 1893,
+            "hard": [
+                "B3709861-363867F5-0EEF9C7D-966BB9DC",
+                "82DBC743-0A14CD12-535B2666-7D86A1FA"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\demonlayer\\areas.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "2F6B37BC-46849F0B-B7CA9001-51B73259",
+            "diskSize": 1880
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\demonlayer\\mappins.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "C18A5DBA-9961DEE2-381679E7-D59835A2",
+            "diskSize": 1837
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\fightlayer\\areas.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "35A094CB-C864A25C-71FFC027-D289502D",
+            "diskSize": 1883
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\generallayer\\areas.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "29AF7555-D2DFB6BE-4DFF2A26-FC5EC27A",
+            "diskSize": 3551
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\merchantlayer\\actionpoints.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "66C95381-65FE63E7-0608EF53-1A59DC93",
+            "diskSize": 1990,
+            "hard": [
+                "9A1412B4-21852AD4-9486CB69-10B2304D",
+                "BD50B936-27079185-7E5012A4-567A25DD"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\merchantlayer\\areas.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "E94BE63E-A5F37602-73413238-0D15EAB4",
+            "diskSize": 2102
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\merchantlayer\\mappins.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "8F02E009-9CDE303E-7C34EFAF-B2FC167E",
+            "diskSize": 1056
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\merchantlayer\\static.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "8B47F795-C19D009E-EA0C60B3-EAEF2C46",
+            "diskSize": 1938,
+            "hard": [
+                "D8A703CA-CE4CCAA3-A12342A7-B49D69B7"
+            ],
+            "soft": [
+                "30A8838D-9FEDAA63-E5364C83-57AD84BE"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\radish_dbg\\radish_dbginfo.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "0C202CFE-F7586583-6EDEA2AD-8B59DB9F",
+            "diskSize": 4901
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\scenelayer\\scenepoints.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "A9862F64-FA487745-7692D8B3-5A1D8176",
+            "diskSize": 1012
+        },
+        {
+            "path": "dlc\\ep1\\data\\characters\\npc_entities\\animals\\demonic_cat.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "8D0FD08D-D9817F92-DAC2A737-AFEE3614",
+            "softImports": 2
+        },
+        {
+            "path": "dlc\\ep1\\data\\characters\\npc_entities\\animals\\demonic_dog.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "0BDA045A-17168143-CC2EDD0F-30926394",
+            "softImports": 2
+        },
+        {
+            "path": "dlc\\ep1\\data\\characters\\npc_entities\\secondary_npc\\ofir_merchant_mq6001.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "D08434E4-977A2FAB-6B2D0F90-FA0DD91A",
+            "softImports": 1
+        },
+        {
+            "path": "environment\\decorations\\trade\\goods_carriage\\goods_carriage_closed.w2mesh",
+            "level": 0,
+            "additional": 1,
+            "id": "30A8838D-9FEDAA63-E5364C83-57AD84BE",
+            "softImports": 1
+        },
+        {
+            "path": "gameplay\\templates\\characters\\player\\player.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "90DB9D66-1F7513D5-96AB23A4-766415AB",
+            "softImports": 1
+        }
+    ]
+}

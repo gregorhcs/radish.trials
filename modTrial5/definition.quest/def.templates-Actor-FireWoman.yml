@@ -1,0 +1,149 @@
+templates:
+
+    alina:
+        
+        includes:
+            - characters\npc_entities\crowd_npc\scoiatael_soldier\scoiatael_elf_woman.w2ent
+        
+        entityObject:
+            .type: "CNewNPC"
+            displayName: "Alina"
+            tags: [custom_actor]
+            autoPlayEffectName: spell_fx
+            components:
+                appearance:
+                    .type: CAppearanceComponent
+            
+        usedAppearances:
+            - alina
+        
+        appearances:
+            alina:
+                includedTemplates:
+                    - characters\models\main_npc\triss\h_03_wa__triss_blood.w2ent
+                    - characters\models\secondary_npc\ida_emean_aep_sivney\c_13_wa__ida_emean.w2ent
+                    - dlc\bob\data\characters\models\secondary_npc\hananna_von_kagen\g_01_wa__hanna_von_kagen.w2ent
+                    - characters\models\main_npc\keira\body_06_wa__body_keira_wet.w2ent
+                    - characters\models\crowd_npc\novigrad_citizen_woman\torso\t2_01_wa__old_novigrad_citizen01.w2ent
+                    #- characters\models\secondary_npc\corine_dreamer\d_01_wa__corine.w2ent
+                    - characters\models\crowd_npc\novigrad_citizen_woman\dress\d_05_wa__old_novigrad_citizen.w2ent
+                    
+        coloringEntries:
+          - appearance: alina
+            componentName: g_01_wa__hanna_von_kagen
+            colorShift1: [50, 50, 50]
+          
+        slots:
+            fx_point:
+                transform:
+                    pos: [0.0, 0.0, 0.1]
+    
+    
+        effects:
+
+
+          spell_fx:
+            ".type": CFXDefinition
+            trackGroups:
+              audio:
+                ".type": CFXTrackGroup
+                tracks:
+                  sfx:
+                    ".type": CFXTrack
+                    trackItems:
+                      - ".type": CFXTrackItemSoundEvent
+                        timeBegin: 0.0121238083
+                        soundEventName: magic_yennefer_hand_loop
+                      - ".type": CFXTrackItemSoundEvent
+                        timeBegin: 0.4485809505
+                        soundEventName: magic_yennefer_hand_loop_end
+                isExpanded: true
+                trackGroupColor: [ 171, 197, 207, 100 ]
+              light:
+                ".type": CFXTrackGroup
+                tracks:
+                  asd:
+                    ".type": CFXTrack
+                    trackItems:
+                      - ".type": CFXTrackItemDynamicLight
+                        timeBegin: 0.0027865693
+                        timeDuration: 2.440911293
+                        color: [ 124, 170, 255, 255 ]
+                        radius: 1.2000000477
+                        lightFlickering:
+                          ".type": SLightFlickering
+                          flickerStrength: 0.8000000119
+                          flickerPeriod: 0.150000006
+                        autoHideDistance: 35.0
+                        spawner:
+                          ".type": CFXSpawnerComponent
+                          componentName: woman_base
+                          attach: true
+                          relativePosition: [ 0.0500000007, 0.0500000007, 0.0, 0.0 ]
+                          parentSlotName: r_hand
+                        interpolation:
+                          - [ 0.0, 1.0 ]
+                          - [ 166.0, 1.0 ]
+                          - [ 166.0, 1.0 ]
+                          - [ 100.648765564, 1.0 ]
+                          - [ 0.0, 1.0 ]
+                          - [ 0.0, 1.0 ]
+                          - [ 0.0, 1.0 ]
+                          - [ 0.0, 1.0 ]
+                          - [ 0.0, 1.0 ]
+                          - [ 0.0, 1.0 ]
+                          - [ 0.0, 1.0 ]
+                          - [ 0.0, 1.0 ]
+                          - [ 0.0, 1.0 ]
+                          - [ 0.0, 1.0 ]
+                          - [ 0.0, 1.0 ]
+                          - [ 0.0, 1.0 ]
+                isExpanded: true
+                trackGroupColor: [ 242, 159, 211, 100 ]
+              particle:
+                ".type": CFXTrackGroup
+                tracks:
+                  asd:
+                    ".type": CFXTrack
+                    trackItems:
+                      - ".type": CFXTrackItemParticles
+                        timeBegin: 0.0023625195
+                        particleSystem: "fx\\characters\\yennefer\\attack_01\\yennefer_hand_fx.w2p"
+                        spawner:
+                          ".type": CFXSpawnerComponent
+                          componentName: woman_base
+                          attach: true
+                          parentSlotName: r_hand
+                        interpolation:
+                          - [ 1.0, 1.0, 1.0 ]
+                          - [ 1.0, 1.0, 1.0 ]
+                          - [ 1.0, 1.0, 1.0 ]
+                          - [ 1.0, 1.0, 1.0 ]
+                          - [ 1.0, 1.0, 1.0 ]
+                          - [ 1.0, 1.0, 1.0 ]
+                          - [ 1.0, 1.0, 1.0 ]
+                          - [ 1.0, 1.0, 1.0 ]
+                          - [ 1.0, 1.0, 1.0 ]
+                          - [ 1.0, 1.0, 1.0 ]
+                          - [ 1.0, 1.0, 1.0 ]
+                          - [ 1.0, 1.0, 1.0 ]
+                          - [ 1.0, 1.0, 1.0 ]
+                          - [ 1.0, 1.0, 1.0 ]
+                          - [ 1.0, 1.0, 1.0 ]
+                          - [ 1.0, 1.0, 1.0 ]
+                isExpanded: true
+                trackGroupColor: [ 181, 246, 210, 100 ]
+            length: 2.1243739128
+            loopStart: 0.1444201618
+            loopEnd: 0.4146256149
+            showDistance: 66.0
+            isLooped: true
+          
+    strange_book:
+    
+        includes:
+          - items\weapons\polearms\spear_01.w2ent
+          - dlc\bob\data\environment\decorations\gameplay\generic\decoration_set\books\deco_gen_books_pile_a.w2ent
+        
+        entityObject:
+            .type: "CEntity"

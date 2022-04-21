@@ -1,0 +1,127 @@
+layers: 
+
+  nekkerlayer: 
+    world: "skellige"
+    #context: ""
+
+    actionpoints: 
+      nekker_1a: 
+        - [ -1013.7379150391, 1997.2506103516, 0.4297670126, 0.0, "nekker/nekker_eating_jt" ]
+        - [ -1013.7379150391, 1997.2506103516, 0.4297670126, 0.0, "nekker/nekker_angry_jt" ]
+      nekker_1b: 
+        - [ -1013.7379150391, 1997.2506103516, 0.4297670126, 0.0, "nekker/mq7009_nekker_watching" ]
+
+      nekker_2a: 
+        - [ -1009.7352294922, 1999.5560302734, 0.7333908081, 0.0, "nekker/nekker_eating_jt" ]
+        - [ -1009.7352294922, 1999.5560302734, 0.7333908081, 0.0, "nekker/nekker_angry_jt" ]
+      nekker_2b: 
+        - [ -1009.7352294922, 1999.5560302734, 0.7333908081, 0.0, "nekker/mq7009_nekker_watching" ]
+
+      nekker_3a: 
+        - [ -1009.2620239258, 1994.9282226563, 0.5845718384, 0.0, "nekker/nekker_eating_jt" ]
+        - [ -1009.2620239258, 1994.9282226563, 0.5845718384, 0.0, "nekker/nekker_angry_jt" ]
+      nekker_3b: 
+        - [ -1009.2620239258, 1994.9282226563, 0.5845718384, 0.0, "nekker/mq7009_nekker_watching" ]
+
+    areas: 
+      nekker_guardarea: 
+        height: 6.0
+        borderpoints: 
+          - [ -1005.3349609375, 1997.4650878906, 0.1856252849 ]
+          - [ -1009.4808349609, 2003.1713867188, 0.1856252849 ]
+          - [ -1016.1888427734, 2000.9919433594, 0.1856252849 ]
+          - [ -1016.1888427734, 1993.9382324219, 0.1856252849 ]
+          - [ -1009.4808349609, 1991.7587890625, 0.1856252849 ]
+
+      nekker_pursuitarea: 
+        height: 10.0
+        borderpoints: 
+          - [ -987.7468872070, 1999.7021484375, -0.6531332135 ]
+          - [ -1001.3519287109, 2019.5655517578, -0.6531332135 ]
+          - [ -1026.0319824219, 2016.8934326172, -0.6531332135 ]
+          - [ -1028.0574951172, 1982.2033691406, -0.6531332135 ]
+          - [ -992.1617431641, 1977.0463867188, -0.6531332135 ]
+
+    statics: 
+      blood: 
+        template: "CNewNPC:fx\\blood\\blood_decal\\blood_decal_1.w2ent"
+        pos: [ -1007.8208007813, 1998.2891845703, 0.6849441528 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+
+      blood2: 
+        template: "CNewNPC:fx\\blood\\blood_decal\\blood_decal_4.w2ent"
+        pos: [ -1003.5433959961, 2000.7087402344, 0.7709426880 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+
+      blood3: 
+        template: "CNewNPC:fx\\blood\\blood_decal\\blood_decal_1.w2ent"
+        pos: [ -1006.8111572266, 1995.6101074219, 0.7591323853 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+
+      blood4: 
+        template: "CNewNPC:fx\\blood\\blood_decal\\blood_decal_1.w2ent"
+        pos: [ -1005.5067138672, 2000.7891845703, 0.8329544067 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+
+      blood5: 
+        template: "CNewNPC:fx\\blood\\blood_decal\\blood_decal_4.w2ent"
+        pos: [ -1006.2864379883, 1996.2519531250, 0.8350906372 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+
+      corpse: 
+        template: "CEntity:environment\\decorations\\corpses\\animal_corpses\\dog_corpse\\corps_01_dog.w2ent"
+        pos: [ -1007.5206298828, 1998.2583007813, 0.6869583130 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+
+      corpse2: 
+        template: "CEntity:environment\\decorations\\corpses\\animal_corpses\\bear_berserker_corpse\\corps_01_bear_berserker.w2ent"
+        pos: [ -1005.1831665039, 1996.7465820313, 0.9920730591 ]
+        rot: [ 0.0, 0.0, 0.0 ]
+
+      corpseskelliger: 
+        template: "CEntity:environment\\decorations\\corpses\\human_corpses\\skellige_pirate_corpses\\corpse_01_skellige_pirate.w2ent"
+        pos: [ -1005.5062255859, 2000.9840087891, 0.8430252075 ]
+        rot: [ 0.0, 0.0, -211.0000152588 ]
+
+      corpseskelliger_1: 
+        template: "CEntity:environment\\decorations\\corpses\\human_corpses\\skellige_pirate_corpses\\corpse_06_skellige_pirate.w2ent"
+        pos: [ -1006.2259521484, 1998.5587158203, 0.6964797974 ]
+        rot: [ 0.0, 0.0, 64.9999847412 ]
+
+      corpseskelliger_2: 
+        template: "CEntity:environment\\decorations\\corpses\\human_corpses\\skellige_pirate_corpses\\corpse_04_skellige_pirate.w2ent"
+        pos: [ -1006.9200439453, 1994.6467285156, 0.6664047241 ]
+        rot: [ 0.0, 0.0, -13.8000392914 ]
+
+      spear: 
+        template: "CItemEntity:items\\weapons\\polearms\\model\\spear_01_intact.w2ent"
+        pos: [ -1006.6561279297, 1996.8708496094, 2.4168906212 ]
+        rot: [ 220.0, 50.0, -1158.3999023438 ]
+
+      sword1: 
+        template: "CWitcherSword:items\\weapons\\swords\\skellige_swords\\skellige_sword_rusty.w2ent"
+        pos: [ -1005.0833740234, 1998.9428710938, 2.1768906116 ]
+        rot: [ 220.0, 0.0, -1062.4000244141 ]
+          
+      sword1_1: 
+        template: "CWitcherSword:items\\weapons\\swords\\skellige_swords\\skellige_sword_rusty.w2ent"
+        pos: [ -1006.3713378906, 1998.4378662109, 2.1768906116 ]
+        rot: [ 220.0, 0.0, -1281.9993896484 ]
+        
+  bearlayer: 
+    world: "skellige"
+    #context: ""
+
+    areas: 
+      bear_guardarea: 
+        height: 10.0
+        borderpoints: 
+          - [ -1038.3189697266, 1977.3937988281, 0.1209915280 ]
+          - [ -1053.8604736328, 1997.5334472656, 0.1209915280 ]
+          - [ -1066.2597656250, 1988.1967773438, 0.1209915280 ]
+          - [ -1056.3819580078, 1958.0891113281, 0.1209915280 ]
+          - [ -1035.0428466797, 1957.2896728516, 0.1209915280 ]
+          
+    waypoints: 
+      bearspawn: [ -1063.5067138672, 1977.9431152344, 0.8690261841, -212.4000091553 ]
+      

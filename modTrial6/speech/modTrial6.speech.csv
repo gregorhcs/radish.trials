@@ -1,0 +1,27 @@
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+;
+; rename this file to mod<YOUR MODNAME>.speech.csv and
+; add all strings for custom voicelines like the example line below.
+;
+; make sure the XXXX is the string id-space of the project and nnn is unique
+; for every line.
+;
+;211XXXXnnn|||example voiceline text
+;
+2111408020|||Well, beautiful village.
+2111408021|||Wonder who planted those flowers
+2111408022|||They usually grow in mossy tree shades only, will diminish here soon.
+2111408023|||We- we're there.
+2111408025|||Alene! There you are. Haven't I warned you to not go into the forest alone? You know of the dangers lurking there!
+2111408026|||No need for explanation! You did something bad and we both know this. Now come in and get your lesson
+2111408027|||I assume you, good master witcher, have brought my daughter home. We're thankful for that.
+2111408028|||Wait for me in the tavern, I've got something to talk to you about.
+2111408010|||I-
+2111408011|||Witcher! Leave! This is not your matter
+2111408012|||Leave her in peace.
+2111408013|||You stress my nerves!
+2111408014|||Out with you! Leave!
+2111408015|||Shouldn't mingle in a family's personal affairs..
+2111408205|||You will leave her alone.
+2111408206|||I- I will leave her alone

@@ -1,0 +1,28 @@
+journals:
+
+  quests: 
+
+    working_time: ## Quest definition name. Can be any you choose
+
+      title: "Demon's Souls" ## Quest name that will be used in game
+      type: sidequest ## Type of quest. Can be main quest, side quest, treasure hunt or contract
+      world: novigrad   # optional, if empty every objective requires world
+
+      description:  ## List of descriptions about the quest that appear progressing it. To be visible they have to activated in the Questgraph
+        - 1_intro: Lorem Ipsum.<\br>
+        - success: Lorem Ipsum
+
+      instructions: 
+         quest:
+          - investigate_courtyard:
+             # world: novigrad
+              caption: Investigate what happens at the villa.
+              mappins:
+                - [demonpin, 0] 
+                
+          - calm_horse:
+             # world: kaer_morhen
+              caption: Calm the horse by your presence.
+              mappins:
+                - ~horse
+

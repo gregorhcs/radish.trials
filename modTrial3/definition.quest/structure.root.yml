@@ -1,0 +1,163 @@
+#
+# quest structure root segment
+# 
+# (version: 12, saved: 2021-04-16 17:59:46)
+#
+---
+structure:
+  quest:
+    blocks:
+      start:
+        ".editor": [ 100.0, 150.0 ]
+        next:
+          - waituntil.entered_start_area
+      
+      waituntil.entered_horse_area:
+        entered: [ kaer_morhen/horse_area, PLAYER ]
+        ".editor":
+          pos: [ 700.0, 300.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - phaseobjectives.success: Success
+          - journal.journal_success: Activate
+          - script.yen_comment
+          - spawn.geralt_at_horse
+          - objective.objective_horse: Success
+      
+      waituntil.entered_start_area:
+        entered: [ kaer_morhen/start_area, PLAYER ]
+        ".editor":
+          pos: [ 300.0, 150.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - script.geralt_comment
+          - journal.journal_intro: Activate
+          - waituntil.entered_work_area
+          - spawn.geralt_not_there
+          - objective.objective_courtyard: Activate
+      
+      waituntil.entered_work_area:
+        entered: [ kaer_morhen/working_area, PLAYER ]
+        ".editor":
+          pos: [ 500.0, 200.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - waituntil.entered_horse_area
+          - journal.journal_at_scene: Activate
+          - script.geralt_comment_2
+          - spawn.geralt_there
+          - objective.objective_courtyard: Success
+          - objective.objective_horse: Activate
+      
+      script.geralt_comment:
+        ".editor":
+          pos: [ 500.0, 100.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: radLog
+        parameter:
+          - logChannel: cname_Geralt
+          - msg: "Geralt: Hmm, I should check what's going on.."
+        next: ".done"
+      
+      script.geralt_comment_2:
+        ".editor":
+          pos: [ 700.0, 200.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: radLog
+        parameter:
+          - logChannel: cname_Geralt
+          - msg: "Geralt: Typical"
+        next: ".done"
+      
+      script.yen_comment:
+        ".editor":
+          pos: [ 900.0, 300.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: radLog
+        parameter:
+          - logChannel: cname_Yennefer
+          - msg: "Yennefer: See, Geralt could do it, why couldn't you?"
+        next: ".done"
+      
+      spawn.geralt_at_horse:
+        ".editor":
+          pos: [ 900.0, 500.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: geralt_at_horse_phase
+        spawnsets:
+          - working_community
+        next: ".done"
+      
+      spawn.geralt_not_there:
+        ".editor":
+          pos: [ 500.0, 300.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: geralt_not_there_phase
+        spawnsets:
+          - working_community
+        next: ".done"
+      
+      spawn.geralt_there:
+        ".editor":
+          pos: [ 700.0, 400.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: geralt_there_phase
+        spawnsets:
+          - working_community
+        next: ".done"
+      
+      journal.journal_at_scene:
+        ".editor": [ 700.0, 100.0 ]
+        entry: quests/working_time/2_at_scene
+        notify: true
+        next: ".done"
+      
+      journal.journal_intro:
+        ".editor": [ 500.0, 0.0 ]
+        entry: quests/working_time/1_intro
+        notify: true
+        next: ".done"
+      
+      journal.journal_success:
+        ".editor": [ 900.0, 200.0 ]
+        entry: quests/working_time/success
+        notify: true
+        next: ".done"
+      
+      objective.objective_courtyard:
+        ".editor": [ 700.0, 0.0 ]
+        objective: working_time/quest/investigate_courtyard
+        notify: true
+        track: false
+        next: ".done"
+      
+      objective.objective_horse:
+        ".editor": [ 900.0, 100.0 ]
+        objective: working_time/quest/calm_horse
+        notify: true
+        track: false
+        next: ".done"
+      
+      phaseobjectives.success:
+        ".editor": [ 900.0, 400.0 ]
+        phase: working_time/quest
+        notify: true
+        next:
+          - end
+      
+      end:
+        ".editor": [ 1100.0, 400.0 ]
+        next: ".done"
+      

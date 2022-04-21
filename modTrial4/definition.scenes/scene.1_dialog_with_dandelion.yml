@@ -1,0 +1,287 @@
+#--- 2021-04-17 18:44:30 -------------------------------------------------------
+#-- STORYBOARD UI - SCENE DUMP -------------------------------------------------
+
+repository:
+
+  actors:
+
+    geralt:
+        template: "gameplay\\templates\\characters\\player\\player.w2ent"
+
+    dandelion:
+        template: "characters\\npc_entities\\main_npc\\dandelion.w2ent"
+        appearance: [ "dandelion" ]
+
+#  animations.mimic:
+  
+#    mimicsanim_66_geralt_reaction_scepticism_face:
+#        animation: "geralt_reaction_scepticism_face"
+#        frames: 200
+
+#    mimicsanim_433_geralt_neutral_gesture_smile_face:
+#        animation: "geralt_neutral_gesture_smile_face"
+#        frames: 67
+
+  cameras:
+  
+    cam_picturesque:
+        fov: 40.0
+        transform:
+            pos: [ -0.9999864101, -1.1999728680, 1.8000030518 ]
+            rot: [ 0.0, 350.0, 340.0 ]
+        zoom: 0.0
+        dof:
+            aperture: [ 28.2500000000, 1.2699999809 ]
+            blur: [ 1.0, 5.0 ]
+            focus: [ 1.0, 5.0 ]
+            intensity: 0.2500000000
+        event_generator:
+            plane: "Medium"
+            tags: [ "ext" ]
+        
+
+
+production:
+
+      settings:
+      
+            sceneid: 1
+            strings-idspace: 1406
+            strings-idstart: 200
+
+      placement: PLAYER
+
+      assets:
+      
+            actors:
+                geralt:
+                    repo: "geralt"
+                    by_voicetag: true
+                dandelion:
+                    repo: "dandelion"
+                    by_voicetag: true
+            
+            #mimics:
+                
+                #mimic_happy:
+                    #actor: "dandelion"
+                    #repo: "mimicsanim_433_geralt_neutral_gesture_smile_face"
+                    #duration: 0.0
+                    #weight: 0.6000000238
+                    #clipfront: 0.0
+                    #clipend: 99.0
+                    #stretch: 1.0
+                    #blendin: 0.5000000000
+                    #blendout: 0.5000000000
+                
+                #mimic_geralt_sigh:
+                    #actor: "geralt"
+                    #repo: "mimicsanim_66_geralt_reaction_scepticism_face"
+                    #duration: 0.0
+                    #weight: 0.6000000238
+                    #clipfront: 0.0
+                    #clipend: 99.0
+                    #stretch: 1.0
+                    #blendin: 0.5000000000
+                    #blendout: 0.5000000000
+
+            cameras:
+                
+                cam_geralt_medium:
+                    repo: 1_2_medium
+
+                cam_dandelion_medium:
+                    repo: 2_1_medium
+                
+                cam_picturesque:
+                    repo: cam_picturesque
+                
+                cam_side:
+                    repo: side_tilt_right_slight_from_above
+
+            animations:
+            
+                anim_dandelion_walking_in:
+                    actor: "dandelion"
+                    repo: "anim_6970_high_standing_determined_calm_enter_frontal"
+                    #duration: 8.4333333969
+                    #weight: 0.6000000238
+                    #clipfront: 0.0
+                    #clipend: 99.0
+                    #stretch: 1.0
+                    blendin: 0.0
+                    blendout: 0.0
+            
+                anim_geralt_pragmatic:
+                    actor: "geralt"
+                    repo: "anim_7148_high_standing_determined2_idle"
+                    #duration: 23.0666675568
+                    #weight: 0.6000000238
+                    #clipfront: 0.0
+                    #clipend: 99.0
+                    #stretch: 1.0
+                    blendin: 0.0
+                    blendout: 0.0
+            
+                anim_geralt_sigh:
+                    actor: "geralt"
+                    repo: "anim_6737_add_reaction_sigh_01"
+                    #duration: 2.7666666508
+                    #weight: 0.6000000238
+                    #clipfront: 0.0
+                    #clipend: 99.0
+                    #stretch: 1.0
+                    blendin: 0.0
+                    blendout: 0.0
+                
+                anim_dandelion_determined:
+                    actor: "dandelion"
+                    repo: "anim_6986_high_standing_determined_exclamation_gesture_02_both_hands"
+                    #duration: 2.8666665554
+                    #weight: 0.6000000238
+                    #clipfront: 0.0
+                    #clipend: 99.0
+                    #stretch: 1.0
+                    blendin: 0.0
+                    blendout: 0.0
+                
+                anim_dandelion_winking:
+                    actor: "dandelion"
+                    repo: "anim_7308_high_standing_sad_gesture_headscratch"
+                    #duration: 7.0333333015
+                    #weight: 0.6000000238
+                    #clipfront: 0.0
+                    #clipend: 99.0
+                    #stretch: 1.0
+                    blendin: 0.0
+                    blendout: 0.0
+                
+                anim_dandelion_happy:
+                    actor: "dandelion"
+                    repo: "anim_7022_high_standing_determined_gesture_greeting_01"
+                    #duration: 7.0333333015
+                    #weight: 0.6000000238
+                    #clipfront: 0.0
+                    #clipend: 99.0
+                    #stretch: 1.0
+                    blendin: 0.0
+                    blendout: 0.0
+                
+                anim_dandelion_unhappy:
+                    actor: "dandelion"
+                    repo: "anim_6691_add_gesture_explain_02"
+                    #duration: 7.0333333015
+                    #weight: 0.6000000238
+                    #clipfront: 0.0
+                    #clipend: 99.0
+                    #stretch: 1.0
+                    blendin: 0.0
+                    blendout: 0.0
+
+
+storyboard:
+
+    defaults:
+        camera:
+            geralt: cam_geralt_medium
+            dandelion: cam_dandelion_medium
+
+
+    section_start:
+
+        shot_picturesque:
+            - cam: [0.0, cam_picturesque]
+            - anim: [0.0, anim_dandelion_walking_in]
+        
+        shot_geralt_pragmatic:
+            - anim: [0.2, anim_geralt_pragmatic]
+        
+        shot_dandelion_unhappy:
+            - anim: [0.2, anim_dandelion_unhappy]
+            
+    section_choice_help_or_not:
+    
+        shot_side:
+            - cam: [0.0, cam_side]
+
+    section_do_i_have_to:
+    
+        shot_geralt_sigh:
+            #- mimic: [0.0, mimic_geralt_sigh]
+            - anim: [0.0, anim_geralt_sigh]
+        
+        shot_dandelion_determined:
+            - anim: [0.0, anim_dandelion_determined]
+
+    section_own_business:
+    
+        shot_dandelion_winking:
+            - anim: [0.1, anim_dandelion_winking]
+
+    section_help:
+        
+        shot_dandelion_happy:
+            - anim: [0.0, anim_dandelion_happy]
+
+
+
+dialogscript:
+
+      player: "geralt"
+      actors: [ "geralt", "dandelion" ]
+
+      section_start:
+      
+            - CUE: shot_picturesque
+            - dandelion: "What a wonderful place, don't you think? Calm, picturesque, lovely maidens - a small isle in this cruel land"
+            
+            - CUE: shot_geralt_pragmatic
+            - geralt: "Mmhh. Aside from the wild bears and white wolfs hunting the villagers, the hard winters and poor medical care... it surely is."
+            - CUE: shot_dandelion_unhappy
+            - dandelion: "Ahhh. Do you always have to-"
+            - geralt: "Yes. You're idealistic dreamings will ruin you're life one day. Mind my words."
+            - dandelion: "Well, I can't be bothered for sure. Now, will you help me?"
+            
+            - NEXT: section_choice_help_or_not
+
+      section_choice_help_or_not:
+            
+            - CHOICE:
+                - choice: ["Do I really have to decide this right now?", section_do_i_have_to]
+                  single_use: true
+                  emphasize: false
+                - choice: ["Well, since we are both here anyway..", section_help]
+                  emphasize: true
+                - choice: ["You know I'm not here for this.", section_own_business]
+                  emphasize: true
+
+      section_do_i_have_to:
+      
+            - CUE: shot_geralt_sigh
+            - geralt: "Do I really have to decide this right now?"
+            - CUE: shot_dandelion_determined
+            - dandelion: "Yes, of course old man!"
+            
+            - NEXT: section_choice_help_or_not
+
+      section_own_business:
+      
+            - geralt: "You know I'm not here for this. I will not get involved in your doings this time."
+            - CUE: shot_dandelion_winking
+            - dandelion: "Alright. The grumpy witcher is in a bad mood. You know this doesn't fare well with the ladies, don't you?"
+            
+            - NEXT: section_exit
+
+      section_help:
+      
+            - geralt: "Well, since we are both here anyway.. Surely a short detour won't cost me much time."
+            - CUE: shot_dandelion_happy
+            - dandelion: "Ha! Knew I could count on you. You'll get a hefty reward, I promise!"
+            - geralt: "Don't make any fast promises, Dandelion..."
+            - NEXT: section_exit
+
+      section_exit:
+      
+            - CAMERA_BLEND: 2.0
+            - EXIT
+

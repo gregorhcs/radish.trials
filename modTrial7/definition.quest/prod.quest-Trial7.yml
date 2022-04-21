@@ -1,0 +1,16 @@
+#
+# production settings
+# 
+# (version: 20, saved: 2022-04-08 00:30:41)
+#
+---
+production:
+  settings:
+    id: trial7
+    caption: Langeness
+    menuvisibile: true
+    enabled: true
+    storesdata: true
+    strings-idspace: 1409
+    strings-idstart: 420
+    version: 20

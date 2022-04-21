@@ -1,0 +1,24 @@
+communities:
+
+  alina_community: 
+  
+    actors:  
+    
+     succubus_alina: 
+      template: CEntity:alina
+      tags: [alina]
+        
+        
+    phases:    
+    
+    
+      default_phase:
+      
+        succubus_alina:
+         appearance: alina
+         start_in_ap: true
+         use_last_ap: false
+         actionpoints: 
+           "00:00": prologue/alina_ap
+   
+ 

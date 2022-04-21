@@ -1,0 +1,24 @@
+journals: ## Journal definitions
+  quests: 
+    working_time: ## Quest definition name. Can be any you choose
+      title: "Workers Unite!" ## Quest name that will be used in game
+      type: sidequest ## Type of quest. Can be main quest, side quest, treasure hunt or contract
+      world: kaer_morhen   # optional, if empty every objective requires world
+      description:  ## List of descriptions about the quest that appear progressing it. To be visible they have to activated in the Questgraph
+        - 1_intro: Geralt heard some strange noises in the courtyard.<\br>
+        - 2_at_scene: He discovered some happy workers.<br/>
+        - success: At last, he managed to calm everyone down.
+      instructions: 
+         quest:
+          - investigate_courtyard:
+             # world: kaer_morhen
+              caption: See what's happening in Kaer Morhen's courtyard.
+              mappins:
+                - [work_pin, 0] 
+                
+          - calm_horse:
+             # world: kaer_morhen
+              caption: Calm the horse by your presence.
+              mappins:
+                - ~horse
+

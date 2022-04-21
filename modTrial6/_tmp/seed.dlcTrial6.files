@@ -1,0 +1,39 @@
+{
+    "files": [
+        {
+            "path": "dlc\\dlctrial6\\data\\scenes\\the_father.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial6\\data\\spawnsets\\community_alene_cat.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial6\\dlctrial6.reddlc",
+            "bundle": "blob",
+            "chunks": [
+                "dlc"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial6\\levels\\skellige\\trial6\\radish_dbg\\radish_dbginfo.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial6\\levels\\skellige\\trial6\\scenelayer\\actionpoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial6\\levels\\skellige\\trial6\\scenelayer\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial6\\levels\\skellige\\trial6\\scenelayer\\scenepoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial6\\levels\\skellige\\trial6\\scenelayer\\static.w2l",
+            "bundle": "blob"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+;meta[language=en]
+;meta[version=1]
+;meta[text=I-]
+;meta[translation=aɪ]
+;meta[audio-hypothesis=SIL OW AY IY DH SIL]
+;
+;auto-matched phoneme translation (eSpeak) with timings (pocketsphinx):
+;
+;phoneme|start|  end|weight| score| status     | match + pocketsphinx timing
+------------------------------------------------------------------------
+aɪ      |  440|  665|  1.00|  1.12| ok         | aɪ ~> OW [  440 -  555] + AY [  555 -  665]
+;_       |  665|  755|  1.00| -1.00| <- VERIFY! | _  d  IY [  665 -  755]
+;_       |  755|  780|  1.00| -1.00| <- VERIFY! | _  d  DH [  755 -  780]

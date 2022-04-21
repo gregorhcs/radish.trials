@@ -1,0 +1,226 @@
+
+  working_community: 
+  
+    actors:  
+    
+     vesemir: 
+      template: characters/npc_entities/main_npc/vesemir.w2ent
+    
+     lambert: 
+      template: characters/npc_entities/main_npc/lambert.w2ent
+    
+    phases:    
+    
+    
+      default:
+      
+        vesemir:
+         start_in_ap: true
+         use_last_ap: false
+         actionpoints: 
+           "00:00": skellige/vesemir_calm
+      
+        lambert:
+         start_in_ap: true
+         use_last_ap: false
+         actionpoints: 
+           "00:00": skellige/lambert_not_calm 
+
+ nekker_community:
+
+    actors:
+
+      nekker1:
+        template: characters/npc_entities/monsters/nekker_lvl3__warrior.w2ent
+
+      nekker2:
+        template: characters/npc_entities/monsters/nekker_lvl3__warrior.w2ent
+
+    phases:
+
+      default:
+
+        nekker1:
+          use_last_ap: false
+          start_in_ap: false
+          guard: [ skellige/nekker_guardarea, skellige/nekker_pursuitarea ]
+          actionpoints:
+            "06:00": skellige/nekker_watch
+            "11:00": skellige/nekker_angry
+            "13:00": skellige/nekker_eat
+            "18:00": skellige/nekker_watch
+            "22:00": skellige/nekker_eat
+
+        nekker2:
+          use_last_ap: false
+          start_in_ap: false
+          guard: [ skellige/nekker_guardarea, skellige/nekker_pursuitarea ]
+          actionpoints:
+            "06:00": skellige/nekker_watch
+            "11:00": skellige/nekker_angry
+            "13:00": skellige/nekker_eat
+            "18:00": skellige/nekker_watch
+            "22:00": skellige/nekker_eat
+
+  bear_community:
+
+    actors:
+
+      bear:
+        template: characters/npc_entities/monsters/bear_berserker_lvl1.w2ent
+
+    phases:
+
+      default:
+
+        bear:
+          use_last_ap: false
+          start_in_ap: false
+          guard: [ skellige/bear_guardarea, 0.0 ]
+          spawntimes:
+            "00:00": [4, true, 20]
+
+  human_community:
+
+    actors:
+
+      drunk_pirate:
+        template: characters/npc_entities/crowd_npc/skellige_pirate/skellige_pirate_lvl3.w2ent
+
+      outlook_warrior1:
+        template: characters/npc_entities/crowd_npc/skellige_pirate/skellige_drummond.w2ent
+      outlook_warrior2:
+        template: characters/npc_entities/crowd_npc/skellige_pirate/skellige_drummond.w2ent
+
+      desparate_warrioress:
+        template: characters/npc_entities/crowd_npc/skellige_clans/skellige_drummond_woman.w2ent
+
+      mocking_pirate:
+        template: characters/npc_entities/crowd_npc/skellige_pirate/skellige_pirate_lvl3.w2ent
+      mocking_warrioress:
+        template: characters/npc_entities/crowd_npc/skellige_clans/skellige_drummond_woman.w2ent
+
+      party_pirate1:
+        template: characters/npc_entities/crowd_npc/skellige_pirate/skellige_pirate_lvl3.w2ent
+      party_pirate2:
+        template: characters/npc_entities/crowd_npc/skellige_pirate/skellige_pirate_lvl3.w2ent
+      party_pirate3:
+        template: characters/npc_entities/crowd_npc/skellige_pirate/skellige_pirate_lvl3.w2ent
+
+      sitparty_pirate1:
+        template: characters/npc_entities/crowd_npc/skellige_pirate/skellige_pirate_lvl3.w2ent
+      sitparty_pirate2:
+        template: characters/npc_entities/crowd_npc/skellige_pirate/skellige_pirate_lvl3.w2ent
+      sitparty_pirate3:
+        template: characters/npc_entities/crowd_npc/skellige_pirate/skellige_pirate_lvl3.w2ent
+
+    phases:
+
+      default:
+
+        drunk_pirate:
+          use_last_ap: false
+          start_in_ap: true
+          guard: [ skellige/human_guardarea, 3.0 ]
+          actionpoints:
+            "00:00":
+              - [ skellige/puke, 0.3 ]
+              - [ skellige/party, 0.7 ]
+
+        # ----------------
+
+        outlook_warrior1:
+          use_last_ap: false
+          start_in_ap: true
+          guard: [ skellige/human_guardarea, 20.0 ]
+          actionpoints:
+            "00:00": skellige/outlook
+
+        outlook_warrior2:
+          use_last_ap: false
+          start_in_ap: true
+          guard: [ skellige/human_guardarea, 20.0 ]
+          actionpoints:
+            "00:00": skellige/outlook
+
+        # ----------------
+
+        desparate_warrioress:
+          use_last_ap: false
+          start_in_ap: true
+          actionpoints:
+            "00:00": skellige/desparatewoman
+
+        # ----------------
+
+        mocking_pirate:
+          use_last_ap: false
+          start_in_ap: true
+          guard: [ skellige/human_guardarea, 10.0 ]
+          actionpoints:
+            "05:00": skellige/aroundfire
+            "00:00":
+              - [ skellige/laughing, 0.2 ]
+              - [ skellige/party, 0.8 ]
+            "02:00": 
+              - [ skellige/laughing, 0.9 ]
+              - [ skellige/party, 0.1 ]
+
+        mocking_warrioress:
+          use_last_ap: false
+          start_in_ap: true
+          guard: [ skellige/human_guardarea, 10.0 ]
+          actionpoints:
+            "05:00": skellige/aroundfire
+            "00:00":
+              - [ skellige/laughing, 0.2 ]
+              - [ skellige/party, 0.8 ]
+            "02:00": 
+              - [ skellige/laughing, 0.9 ]
+              - [ skellige/party, 0.1 ]
+
+        # ----------------
+
+        party_pirate1:
+          use_last_ap: false
+          start_in_ap: true
+          guard: [ skellige/human_guardarea, 10.0 ]
+          actionpoints:
+            "00:00": skellige/party
+
+        party_pirate2:
+          use_last_ap: false
+          start_in_ap: true
+          guard: [ skellige/human_guardarea, 10.0 ]
+          actionpoints:
+            "00:00": skellige/party
+
+        party_pirate3:
+          use_last_ap: false
+          start_in_ap: true
+          guard: [ skellige/human_guardarea, 10.0 ]
+          actionpoints:
+            "00:00": skellige/party
+
+        # ----------------
+
+        sitparty_pirate1:
+          use_last_ap: false
+          start_in_ap: true
+          guard: [ skellige/human_guardarea, 10.0 ]
+          actionpoints:
+            "00:00": skellige/partysit
+
+        sitparty_pirate2:
+          use_last_ap: false
+          start_in_ap: true
+          guard: [ skellige/human_guardarea, 10.0 ]
+          actionpoints:
+            "00:00": skellige/partysit
+
+        sitparty_pirate3:
+          use_last_ap: false
+          start_in_ap: true
+          guard: [ skellige/human_guardarea, 10.0 ]
+          actionpoints:
+            "00:00": skellige/partysit

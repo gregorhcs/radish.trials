@@ -1,0 +1,118 @@
+#
+# quest structure root segment
+# 
+# (version: 20, saved: 2021-06-09 22:27:24)
+#
+---
+structure:
+  quest:
+    blocks:
+      start:
+        ".editor": [ -224.0, 166.0 ]
+        next:
+          - script.HelloWorld
+          - spawn.new_community_spawn
+      
+      interaction.new_interaction:
+        ".editor":
+          pos: [ 35.0, 227.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: the_father.yml
+        placement: skellige/sp_alene_geralt_arrive
+        interruptable: true
+        actor: [ alene ]
+        next.Output:
+          - end
+          - spawn.new_community_spawn
+      
+      waituntil.wait_door_close:
+        factdb: [ mod1408_q00_door_close, ">=", 1 ]
+        ".editor":
+          pos: [ 222.0, 510.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - spawn.door_close
+      
+      waituntil.wait_door_open:
+        factdb: [ mod1408_q00_knocked, ">=", 1 ]
+        ".editor":
+          pos: [ 158.0, 438.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - spawn.door_open
+      
+      waituntil.wait_door_open2:
+        factdb: [ mod1408_q00_alene_out, ">=", 1 ]
+        ".editor":
+          pos: [ 308.0, 581.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - spawn.door_open2
+      
+      script.HelloWorld:
+        ".editor":
+          pos: [ 42.0, 99.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: radLog
+        parameter:
+          - logChannel: cname_new_quest
+          - msg: Hello World!
+        next: ".done"
+      
+      spawn.door_close:
+        ".editor":
+          pos: [ 356.0, 509.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: start_phase
+        spawnsets:
+          - community_alene_cat
+        next:
+          - waituntil.wait_door_open2
+      
+      spawn.door_open:
+        ".editor":
+          pos: [ 276.0, 440.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: knocked_door_phase
+        spawnsets:
+          - community_alene_cat
+        next:
+          - waituntil.wait_door_close
+      
+      spawn.door_open2:
+        ".editor":
+          pos: [ 438.0, 582.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: knocked_door_phase
+        spawnsets:
+          - community_alene_cat
+        next: ".done"
+      
+      spawn.new_community_spawn:
+        ".editor":
+          pos: [ 26.0, 359.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: start_phase
+        spawnsets:
+          - community_alene_cat
+        next:
+          - waituntil.wait_door_open
+          - interaction.new_interaction: Input
+      
+      end:
+        ".editor": [ 186.0, 221.0 ]
+        next: ".done"
+      

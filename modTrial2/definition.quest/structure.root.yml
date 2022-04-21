@@ -1,0 +1,183 @@
+#
+# quest structure root segment
+# 
+# (version: 21, saved: 2021-04-13 13:37:43)
+#
+---
+structure:
+  quest:
+    blocks:
+      start:
+        ".editor": [ 100.0, 150.0 ]
+        next:
+          - waituntil.entered_trigarea
+          - script.weather_clear
+          - script.log_start
+          - changelayers.hide_boat
+      
+      waituntil.boat_looted:
+        looted: prologue/skelligeboat
+        ".editor":
+          pos: [ 841.0, 376.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - objective.goal_investigate_boat: Success
+          - questoutcome.quest_finished: Success
+          - journal.journal_looted: Activate
+      
+      waituntil.entered_boatarea:
+        entered: [ prologue/boatarea, PLAYER ]
+        ".editor":
+          pos: [ 619.0, 365.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - script.log_skellige
+          - journal.journal_skellige_boat: Activate
+          - objective.goal_investigate_area: Success
+          - objective.goal_investigate_boat: Activate
+          - waituntil.boat_looted
+      
+      waituntil.entered_trigarea:
+        entered: [ prologue/trigarea, PLAYER ]
+        ".editor":
+          pos: [ 398.0, 310.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - script.weather_change
+          - journal.journal_strange_weather: Activate
+          - changelayers.show_boat
+          - script.log_irritation
+          - waituntil.entered_boatarea
+          - objective.goal_investigate_area: Activate
+      
+      script.log_irritation:
+        ".editor":
+          pos: [ 511.0, 562.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: radLog
+        parameter:
+          - logChannel: cname_TRIAL2
+          - msg: "What's going on here?!"
+        next: ".done"
+      
+      script.log_skellige:
+        ".editor":
+          pos: [ 782.0, 474.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: radLog
+        parameter:
+          - logChannel: cname_TRIAL2
+          - msg: "If I don't come to Skellige, Skellige comes to me.."
+        next: ".done"
+      
+      script.log_start:
+        ".editor":
+          pos: [ 276.0, 137.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: radLog
+        parameter:
+          - logChannel: cname_TRIAL2
+          - msg: quest start
+        next: ".done"
+      
+      script.weather_change:
+        ".editor":
+          pos: [ 528.0, 450.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: ChangeWeatherQuest
+        parameter:
+          - weatherName: cname_WT_Rain_Storm
+          - blendTime: 0.0
+          - randomGen: false
+          - questPause: false
+        next: ".done"
+      
+      script.weather_clear:
+        ".editor":
+          pos: [ 123.0, 341.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: ChangeWeatherQuest
+        parameter:
+          - weatherName: cname_WT_Clear
+          - blendTime: 0.0
+          - randomGen: false
+          - questPause: false
+        next: ".done"
+      
+      changelayers.hide_boat:
+        ".editor":
+          pos: [ 117.0, 410.0 ]
+          hint: hide-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: prologue
+        hide:
+          - layerboat
+        next: ".done"
+      
+      changelayers.show_boat:
+        ".editor":
+          pos: [ 522.0, 508.0 ]
+          hint: show-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: prologue
+        show:
+          - layerboat
+        next: ".done"
+      
+      journal.journal_looted:
+        ".editor": [ 1092.0, 321.0 ]
+        entry: quests/trial2/looted
+        notify: true
+        next: ".done"
+      
+      journal.journal_skellige_boat:
+        ".editor": [ 956.0, 195.0 ]
+        entry: quests/trial2/boat
+        notify: true
+        next: ".done"
+      
+      journal.journal_strange_weather:
+        ".editor": [ 731.0, 140.0 ]
+        entry: quests/trial2/strange_weather
+        notify: true
+        next: ".done"
+      
+      objective.goal_investigate_area:
+        ".editor": [ 728.0, 194.0 ]
+        objective: trial2/investigation/investigate_area
+        notify: true
+        track: false
+        next: ".done"
+      
+      objective.goal_investigate_boat:
+        ".editor": [ 962.0, 250.0 ]
+        objective: trial2/investigation/investigate_boat
+        notify: true
+        track: false
+        next: ".done"
+      
+      questoutcome.quest_finished:
+        ".editor": [ 1093.0, 381.0 ]
+        quest: trial2
+        notify: true
+        next:
+          - end
+      
+      end:
+        ".editor": [ 1260.0, 382.0 ]
+        next: ".done"
+      

@@ -1,0 +1,93 @@
+#
+# quest structure root segment
+# 
+# (version: 5, saved: 2022-04-22 00:04:08)
+#
+---
+structure:
+  quest:
+    blocks:
+      start:
+        ".editor": [ -198.0, 145.0 ]
+        next:
+          - waituntil.entered_outer_villa_area
+          - spawn.demon_community_spawn
+      
+      scene.scene_test_demons:
+        ".editor":
+          pos: [ 332.0, -2.0 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: test_demons.yml
+        placement: novigrad/sp_test_demons
+        interruptable: true
+        _fadein: true
+        next: ".done"
+      
+      waituntil.entered_inner_villa_area:
+        entered: [ novigrad/startinner, PLAYER ]
+        ".editor":
+          pos: [ 48.0, 86.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - waituntil.wait_until_realtime_elapsed
+      
+      waituntil.entered_outer_villa_area:
+        entered: [ novigrad/startouter, PLAYER ]
+        ".editor":
+          pos: [ -83.0, 84.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - waituntil.entered_inner_villa_area
+      
+      waituntil.wait_until_realtime_elapsed:
+        elapsed: "01:00:00"
+        ".editor":
+          pos: [ 183.0, 89.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - spawn.demon_community_spawn
+      
+      script.HelloWorld:
+        ".editor":
+          pos: [ 576.0, 147.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: radLog
+        parameter:
+          - logChannel: cname_Trial8
+          - msg: Hello World T8!
+        next:
+          - end
+      
+      spawn.demon_community_spawn:
+        ".editor":
+          pos: [ 309.0, 146.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: sitting_at_roadside_phase
+        spawnsets:
+          - demon_community
+        next:
+          - spawn.merchant_community_spawn
+      
+      spawn.merchant_community_spawn:
+        ".editor":
+          pos: [ 438.0, 147.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: devastated_at_roadside_phase
+        spawnsets:
+          - merchant_community
+        next:
+          - script.HelloWorld
+      
+      end:
+        ".editor": [ 706.0, 146.0 ]
+        next: ".done"
+      

@@ -1,0 +1,42 @@
+#
+# quest structure root segment
+# 
+# (version: 3, saved: 2021-04-19 22:53:15)
+#
+---
+structure:
+  quest:
+    blocks:
+      start:
+        ".editor": [ 100.0, 150.0 ]
+        next:
+          - script.HelloWorld
+          - interaction.new_interaction: Input
+      
+      interaction.new_interaction:
+        ".editor":
+          pos: [ 275.2738342285, 241.3928527832 ]
+          in: [ Input ]
+          out: [ Output ]
+        scene: 1_dialog_with_dandelion.yml
+        interruptable: true
+        actor: [ dandelion ]
+        next.Output:
+          - end
+      
+      script.HelloWorld:
+        ".editor":
+          pos: [ 300.0, 150.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: radLog
+        parameter:
+          - logChannel: cname_new_quest
+          - msg: Hello World!
+        next:
+          - end
+      
+      end:
+        ".editor": [ 500.0, 150.0 ]
+        next: ".done"
+      

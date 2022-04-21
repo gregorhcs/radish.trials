@@ -1,0 +1,17 @@
+#
+# definition of valid items references and descriptions
+#
+
+items:
+  notices:                    # e.g. contract notices
+    mage_letter:
+      # item_name_<id>|Teleport 1532a licence
+      name: "Instructions"
+      # item_desc_<id>|Some new contract for ya.
+      description: "Testimony of a failed mentorship."
+      # item_name_<id>_text|Some contract text.
+      text: "One last time Moritz, you have to the set up the loc. reconfigurational device BEFORE casting the spell. You don't simply walk into the wild without a plan for navigation either, don't you?"
+
+loot:
+  trial2_boat_loot:
+    - notices/mage_letter

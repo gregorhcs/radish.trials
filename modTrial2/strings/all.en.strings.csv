@@ -1,0 +1,16 @@
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+2119999000|00000000||MOD questgroup_trial2 Quests
+2119999001|00000000||Investigate the area.
+2119999002|00000000||Maybe the boat contains something of interest.
+2119999003|00000000||Geralt didn't need much investigation to find an even stranger surprise - A boat had manifested in front of his eyes, in the middle of nowhere.<br/>
+2119999004|00000000||The strange boat contained interesting informations on a magician who apparently did some miscalculations while casting a teleport spell.
+2119999005|00000000||Something strange happened while Geralt walked around in White Orchard. Upon entering a certain area, suddenly, the weather dramatically changed.<br/>
+2119999006|00000000||Strange Weathers
+2119999007|00000000|item_name_trial2_notices_mage_letter|Instructions
+2119999008|00000000|item_desc_trial2_notices_mage_letter|Testimony of a failed mentorship.
+2119999009|00000000|item_name_trial2_notices_mage_letter_text|One last time Moritz, you have to the set up the loc. reconfigurational device BEFORE casting the spell. You don't simply walk into the wild without a plan for navigation either, don't you?
+2119999010|00000000|dlc_name_trial2|A lonely deed
+2119999011|00000000|option_dlc_name_trial2|MOD: A lonely deed
+2119999012|00000000|content_name_dlc_trial2|MOD: A lonely deed
+; 

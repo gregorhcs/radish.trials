@@ -1,0 +1,66 @@
+communities:
+
+  merchant_community:
+
+    actors:
+
+      merchant:
+        template: dlc/ep1/data/characters/npc_entities/secondary_npc/ofir_merchant_mq6001.w2ent
+        tags: [dmnq_merchant]
+
+      horse:
+        template: characters/npc_entities/animals/horse/horse_background_no_saddle.w2ent
+        appearances: [horse_background_01,horse_background_02,horse_background_03,horse_background_04]
+        tags: [dmnq_horse]
+
+    phases:
+
+      devastated_at_roadside_phase:
+
+        merchant:
+          appearance: ofir_merchant_mq6001
+          start_in_ap: true
+          use_last_ap: false
+          actionpoints:
+            "00:00": novigrad/merchant_concerned_kneeling
+
+        horse:
+          start_in_ap: true
+          use_last_ap: false
+          actionpoints:
+            "00:00": novigrad/horse_eating_grass
+
+
+
+  demon_community:
+
+    actors:
+
+      black_cat:
+        template: dlc/ep1/data/characters/npc_entities/animals/demonic_cat.w2ent
+        tags: [dmnq_black_cat]
+
+      black_dog:
+        template: dlc/ep1/data/characters/npc_entities/animals/demonic_dog.w2ent
+        tags: [dmnq_black_dog]
+
+    phases:
+
+      sitting_at_roadside_phase:
+
+        black_cat:
+          appearance: cat_01
+          start_in_ap: true
+          use_last_ap: false
+          actionpoints:
+            "00:00": novigrad/black_cat_sits
+
+        black_dog:
+          appearance: dog_04
+          start_in_ap: true
+          use_last_ap: false
+          actionpoints:
+            "00:00": novigrad/black_dog_sits
+
+        
+

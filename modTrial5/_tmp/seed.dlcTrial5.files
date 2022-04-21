@@ -1,0 +1,43 @@
+{
+    "files": [
+        {
+            "path": "dlc\\dlctrial5\\data\\entities\\alina.w2ent",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial5\\data\\entities\\strange_book.w2ent",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial5\\data\\spawnsets\\alina_community.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial5\\dlctrial5.reddlc",
+            "bundle": "blob",
+            "chunks": [
+                "dlc"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial5\\levels\\prolog_village\\trial5\\radish_dbg\\radish_dbginfo.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial5\\levels\\prolog_village\\trial5\\spear_layer\\actionpoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial5\\levels\\prolog_village\\trial5\\spear_layer\\interactive_entities.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial5\\levels\\prolog_village\\trial5\\trigger_layer\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial5\\levels\\prolog_village\\trial5\\trigger_layer\\static.w2l",
+            "bundle": "blob"
+        }
+    ]
+}

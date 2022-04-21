@@ -1,0 +1,16 @@
+#
+# production settings
+# 
+# (version: 20, saved: 2021-06-09 22:27:24)
+#
+---
+production:
+  settings:
+    id: trial6
+    caption: The Village
+    menuvisibile: true
+    enabled: true
+    storesdata: true
+    strings-idspace: 1408
+    strings-idstart: 0
+    version: 20

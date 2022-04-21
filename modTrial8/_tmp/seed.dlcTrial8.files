@@ -1,0 +1,75 @@
+{
+    "files": [
+        {
+            "path": "dlc\\dlctrial8\\data\\scenes\\test_demons.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\spawnsets\\demon_community.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\spawnsets\\merchant_community.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\dlctrial8.reddlc",
+            "bundle": "blob",
+            "chunks": [
+                "dlc"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\journal\\quests\\questgroup_trial8.journal",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\journal\\quests\\working_time.journal",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\demonlayer\\actionpoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\demonlayer\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\demonlayer\\mappins.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\fightlayer\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\generallayer\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\merchantlayer\\actionpoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\merchantlayer\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\merchantlayer\\mappins.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\merchantlayer\\static.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\radish_dbg\\radish_dbginfo.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\scenelayer\\scenepoints.w2l",
+            "bundle": "blob"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+#
+# production settings
+# 
+# (version: 12, saved: 2021-04-16 17:59:46)
+#
+---
+production:
+  settings:
+    id: trial3
+    caption: Workers Unite
+    menuvisibile: true
+    enabled: true
+    storesdata: true
+    strings-idspace: 9999
+    strings-idstart: 0
+    version: 12

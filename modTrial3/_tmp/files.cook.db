@@ -1,0 +1,230 @@
+{
+    "files": [
+        {
+            "path": "dlc\\dlctrial3\\data\\spawnsets\\working_community.w2comm",
+            "level": 2,
+            "class": "CCommunity",
+            "seed": 1,
+            "id": "A51CE02C-95502169-8360118E-063E6F90",
+            "diskSize": 11174,
+            "hardImports": 1,
+            "softImports": 1,
+            "soft": [
+                "2007F06B-2AA73838-A2F84983-817ED8A3",
+                "A478D60A-0BB71B86-CDF31877-1752C35E",
+                "F599D110-302918F6-438E6040-F56439ED",
+                "999D60E4-658F85C2-4428542F-E6FE3267",
+                "45083EE4-2ACE8E90-D6225F1E-DF59D5C7"
+            ]
+        },
+        {
+            "path": "dlc\\bob\\data\\gameplay\\community\\actionpoints\\emotional\\sit_mw_ground_hopeless_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "B0E85B38-9C954B63-2B5137B6-B97968FE",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\gameplay\\community\\actionpoints\\quest\\q703_horse_rearing.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "F4BC8D0C-C50D809D-C70BC075-23FB2F6E",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\dlctrial3\\data\\trial3.w2quest",
+            "level": 1,
+            "class": "CQuest",
+            "seed": 1,
+            "id": "DFD827F9-540439C6-018FAEDA-1B08EF3B",
+            "diskSize": 10498,
+            "hardImports": 1,
+            "hard": [
+                "A51CE02C-95502169-8360118E-063E6F90"
+            ],
+            "soft": [
+                "A51CE02C-95502169-8360118E-063E6F90",
+                "94F6FF33-B708D229-316AD468-5A1636AF"
+            ]
+        },
+        {
+            "path": "dlc\\ep1\\data\\gameplay\\community\\actionpoints\\quest\\q604_cat_sit.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "B3709861-363867F5-0EEF9C7D-966BB9DC",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\animals\\horse_parking.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "BD50B936-27079185-7E5012A4-567A25DD",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\emotional\\stand_mw_negative_attitude_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "AC84CB3A-35284BEF-3918D582-3F33BDFD",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\quest\\q301_triss_pissed.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "7C625ACD-5B9609A0-3F0E2AD4-242E9D69",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\resting\\sit_m_meditate_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "F2C0809C-5810CAB6-CEAA97D5-68890B19",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\resting\\stand_mwd_arms_crossed_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "E31A3CA2-D6D2250D-20C17D0F-FDC06631",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\sleeping\\lie_mwdc_sleep_ground_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "946AB0D3-C8F2420F-95797302-16AC242A",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\work\\kneel_md_hammering_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "8E0548F2-49235E11-D5AAAF99-4018047E",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\work\\stand_mw_brushing_horse_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "D64B231D-31C93480-337E886A-A5FB89D2",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\work\\stand_mw_writing_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "A07D8E88-EC02CEBC-2F6AD403-1BE0C511",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\npc_entities\\animals\\cat.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "2007F06B-2AA73838-A2F84983-817ED8A3",
+            "softImports": 1
+        },
+        {
+            "path": "characters\\npc_entities\\animals\\horse\\horse_background_no_saddle.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "A478D60A-0BB71B86-CDF31877-1752C35E",
+            "softImports": 1
+        },
+        {
+            "path": "characters\\npc_entities\\main_npc\\lambert.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "F599D110-302918F6-438E6040-F56439ED",
+            "softImports": 1
+        },
+        {
+            "path": "characters\\npc_entities\\main_npc\\vesemir.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "999D60E4-658F85C2-4428542F-E6FE3267",
+            "softImports": 1
+        },
+        {
+            "path": "characters\\npc_entities\\main_npc\\yennefer.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "45083EE4-2ACE8E90-D6225F1E-DF59D5C7",
+            "softImports": 1
+        },
+        {
+            "path": "dlc\\dlctrial3\\dlctrial3.reddlc",
+            "level": 0,
+            "class": "CDLCDefinition",
+            "seed": 1,
+            "id": "F8411DF6-4F9AAC4F-A9A04396-EC817B11",
+            "diskSize": 1447,
+            "hard": [
+                "DFD827F9-540439C6-018FAEDA-1B08EF3B"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial3\\journal\\quests\\questgroup_trial3.journal",
+            "level": 0,
+            "class": "CJournalResource",
+            "seed": 1,
+            "id": "750BBBE7-A889D479-45E3DABE-5A48DDC9",
+            "diskSize": 619
+        },
+        {
+            "path": "dlc\\dlctrial3\\journal\\quests\\working_time.journal",
+            "level": 0,
+            "class": "CJournalResource",
+            "seed": 1,
+            "id": "94F6FF33-B708D229-316AD468-5A1636AF",
+            "diskSize": 2274,
+            "softImports": 1
+        },
+        {
+            "path": "dlc\\dlctrial3\\levels\\kaer_morhen\\trial3\\radish_dbg\\radish_dbginfo.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "C9251341-AE5398DB-51F26BF3-E8C6EC89",
+            "diskSize": 7694
+        },
+        {
+            "path": "dlc\\dlctrial3\\levels\\kaer_morhen\\trial3\\yen_witchers_layer\\actionpoints.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "ABC519F0-75367CAF-63DD9510-C165C36E",
+            "diskSize": 8759,
+            "hard": [
+                "B0E85B38-9C954B63-2B5137B6-B97968FE",
+                "F4BC8D0C-C50D809D-C70BC075-23FB2F6E",
+                "B3709861-363867F5-0EEF9C7D-966BB9DC",
+                "BD50B936-27079185-7E5012A4-567A25DD",
+                "AC84CB3A-35284BEF-3918D582-3F33BDFD",
+                "7C625ACD-5B9609A0-3F0E2AD4-242E9D69",
+                "F2C0809C-5810CAB6-CEAA97D5-68890B19",
+                "E31A3CA2-D6D2250D-20C17D0F-FDC06631",
+                "946AB0D3-C8F2420F-95797302-16AC242A",
+                "8E0548F2-49235E11-D5AAAF99-4018047E",
+                "D64B231D-31C93480-337E886A-A5FB89D2",
+                "A07D8E88-EC02CEBC-2F6AD403-1BE0C511"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial3\\levels\\kaer_morhen\\trial3\\yen_witchers_layer\\areas.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "2539586F-1E7503FD-FF74094C-F6B9F455",
+            "diskSize": 4018
+        },
+        {
+            "path": "dlc\\dlctrial3\\levels\\kaer_morhen\\trial3\\yen_witchers_layer\\mappins.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "40373383-4E5E83F3-6A47FB85-8E8EE9C4",
+            "diskSize": 1478
+        }
+    ]
+}

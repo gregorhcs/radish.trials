@@ -1,0 +1,16 @@
+#
+# production settings
+# 
+# (version: 7, saved: 2021-04-22 20:09:11)
+#
+---
+production:
+  settings:
+    id: trial5
+    caption: Siegfried
+    menuvisibile: true
+    enabled: true
+    storesdata: true
+    strings-idspace: 1407
+    strings-idstart: 0
+    version: 7

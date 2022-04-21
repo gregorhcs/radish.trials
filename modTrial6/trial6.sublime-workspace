@@ -1,0 +1,736 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"act",
+				"actor_G_look"
+			],
+			[
+				"cam_2",
+				"cam_22_shot22aiskerovershoulder"
+			],
+			[
+				"cli",
+				"clipfront"
+			],
+			[
+				"clip",
+				"clipfront"
+			],
+			[
+				"bl",
+				"blendout"
+			],
+			[
+				"section",
+				"section_axii"
+			],
+			[
+				"po",
+				"pose"
+			],
+			[
+				"ble",
+				"blend"
+			],
+			[
+				"re",
+				"repo"
+			],
+			[
+				"blend",
+				"blendout"
+			],
+			[
+				"se",
+				"section_fight_lost"
+			],
+			[
+				"sec",
+				"section_fight_won"
+			],
+			[
+				"cam",
+				"cam_closeup_alene_looking_at_geralt"
+			],
+			[
+				"ale",
+				"alene_walking"
+			],
+			[
+				"gera",
+				"geralt_walking"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "definition.scenes/scene.the_father.yml",
+			"settings":
+			{
+				"buffer_size": 68100,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAAPCzAAAAAAAA8bMAAAAAAAAAAAAA8bMAAAAAAADyswAAAAAAAAAAAAA",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPCzAAAAAAAA8LMAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					7,
+					1,
+					"reindent",
+					null,
+					"AQAAAPGzAAAAAAAA97MAAAAAAAAAAAAA",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPGzAAAAAAAA8bMAAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": "-"
+					},
+					"AQAAAPezAAAAAAAA+LMAAAAAAAAAAAAA",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPezAAAAAAAA97MAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAPizAAAAAAAA+bMAAAAAAAAAAAAA",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPizAAAAAAAA+LMAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					10,
+					1,
+					"insert",
+					{
+						"characters": "ca"
+					},
+					"AgAAAPmzAAAAAAAA+rMAAAAAAAAAAAAA+rMAAAAAAAD7swAAAAAAAAAAAAA",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPmzAAAAAAAA+bMAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": "m"
+					},
+					"AQAAAPuzAAAAAAAA/LMAAAAAAAAAAAAA",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPuzAAAAAAAA+7MAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					12,
+					1,
+					"insert_completion",
+					{
+						"completion": "- cam: [0.0, $1]",
+						"format": "snippet",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "cam"
+					},
+					"AgAAAPmzAAAAAAAA+bMAAAAAAAADAAAAY2Ft+bMAAAAAAAAHtAAAAAAAAAAAAAA",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPyzAAAAAAAA/LMAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					15,
+					1,
+					"left_delete",
+					null,
+					"AQAAAPezAAAAAAAA97MAAAAAAAAQAAAALSAtIGNhbTogWzAuMCwgXQ",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAe0AAAAAAAA97MAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": "act"
+					},
+					"AwAAAPezAAAAAAAA+LMAAAAAAAAAAAAA+LMAAAAAAAD5swAAAAAAAAAAAAD5swAAAAAAAPqzAAAAAAAAAAAAAA",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPezAAAAAAAA97MAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					23,
+					1,
+					"insert_completion",
+					{
+						"completion": "- actor.lookat.gameplay: [0.0, $1, $2]",
+						"format": "snippet",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "actor_G_look"
+					},
+					"AgAAAPezAAAAAAAA97MAAAAAAAADAAAAYWN097MAAAAAAAAZtAAAAAAAAAAAAAA",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPqzAAAAAAAA+rMAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					26,
+					1,
+					"left_delete",
+					null,
+					"AQAAAPezAAAAAAAA97MAAAAAAAAiAAAALSBhY3Rvci5sb29rYXQuZ2FtZXBsYXk6IFswLjAsICwgXQ",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAABm0AAAAAAAA97MAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					29,
+					1,
+					"insert",
+					{
+						"characters": "ac"
+					},
+					"AgAAAPezAAAAAAAA+LMAAAAAAAAAAAAA+LMAAAAAAAD5swAAAAAAAAAAAAA",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPezAAAAAAAA97MAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					30,
+					1,
+					"insert_completion",
+					{
+						"completion": "- actor.placement.start: [0.0, $1, [ , , ], [ 0.0, 0.0, 0.0 ], $2smooth|rapid]\n- actor.placement.key: [0.5, $1, [ , , ], [ 0.0, 0.0, 0.0 ]]\n- actor.placement.end: [1.0, $1, [ , , ], [ 0.0, 0.0, 0.0 ], $3smooth|rapid]",
+						"format": "snippet",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "actor_pos_blend"
+					},
+					"AgAAAPezAAAAAAAA97MAAAAAAAACAAAAYWP3swAAAAAAANG0AAAAAAAAAAAAAA",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPmzAAAAAAAA+bMAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					33,
+					1,
+					"left_delete",
+					null,
+					"AQAAAO+zAAAAAAAA77MAAAAAAADiAAAACgogICAgICAtIGFjdG9yLnBsYWNlbWVudC5zdGFydDogWzAuMCwgLCBbICwgLCBdLCBbIDAuMCwgMC4wLCAwLjAgXSwgc21vb3RofHJhcGlkXQogICAgICAtIGFjdG9yLnBsYWNlbWVudC5rZXk6IFswLjUsICwgWyAsICwgXSwgWyAwLjAsIDAuMCwgMC4wIF1dCiAgICAgIC0gYWN0b3IucGxhY2VtZW50LmVuZDogWzEuMCwgLCBbICwgLCBdLCBbIDAuMCwgMC4wLCAwLjAgXSwgc21vb3RofHJhcGlkXQ",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAANG0AAAAAAAA77MAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					37,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAAN74AAAAAAAA3/gAAAAAAAAAAAAA3/gAAAAAAADg+AAAAAAAAAAAAAA",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAN74AAAAAAAA3vgAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					39,
+					1,
+					"reindent",
+					null,
+					"AQAAAN/4AAAAAAAA4/gAAAAAAAAAAAAA",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAN/4AAAAAAAA3/gAAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					44,
+					1,
+					"insert",
+					{
+						"characters": "-"
+					},
+					"AQAAAOP4AAAAAAAA5PgAAAAAAAAAAAAA",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOP4AAAAAAAA4/gAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					45,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAOT4AAAAAAAA5fgAAAAAAAAAAAAA",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOT4AAAAAAAA5PgAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					54,
+					1,
+					"left_delete",
+					null,
+					"AQAAAN34AAAAAAAA3fgAAAAAAAAIAAAACgogICAgLSA",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOX4AAAAAAAA3fgAAAAAAAAAAAAAAADwvw"
+				]
+			]
+		},
+		{
+			"file": "definition.quest/structure.root.yml",
+			"settings":
+			{
+				"buffer_size": 2762,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					""
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"TEXTURES: generate texture cache"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"ENV: patch-reencode single env + restart"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"ENV: reencode all envs"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"FUR: patch-reencode single hairworks + restart"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"FUR: reencode all hairworks"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"MESH: patch-import single model + restart"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"MESH: reimport all models"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"QUEST: patch-reencode quest + restart"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"QUEST: reencode quest"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"SCENE: generate debug timeline"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"SCENE: path-reencode single scene + restart"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"SCENE: reencode all scenes"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"WORLD: patch-reencode world + restart"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"WORLD: patch-reencode foliage-only + restart"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"WORLD: patch-reencode terrain-only + restart"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"WORLD: reencode world"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"STRINGS: reencode"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"SPEECH: interactive phoneme extraction"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"SPEECH: phoneme generation from STRINGS"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"SPEECH: reencode + restart"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"TEXTURES: patch-import single texture + restart"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"TEXTURES: reimport all textures"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"DEPLOY: scripts + restart"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"DEPLOY: tmp-scripts only"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"DEPLOY: (pack + deploy) mod + restart"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"DEPLOY: (pack + deploy) dlc + restart"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"DEPLOY: (pack + deploy) mod + dlc + restart"
+				],
+				[
+					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+					"FULL REBUILD + restart"
+				]
+			],
+			[
+				"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+				"FULL REBUILD + restart"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"debug",
+				"Build With: W3 radish modding tools - SCENE: generate debug timeline"
+			],
+			[
+				"Sce",
+				"Build With: W3 radish modding tools - SCENE: generate debug timeline"
+			],
+			[
+				"deb",
+				"Build With: W3 radish modding tools - SCENE: generate debug timeline"
+			],
+			[
+				"timel",
+				"Build With: W3 radish modding tools - SCENE: generate debug timeline"
+			],
+			[
+				"timeline",
+				"Build With: W3 radish modding tools - SCENE: generate debug timeline"
+			],
+			[
+				"time",
+				"Build With: W3 radish modding tools - SCENE: generate debug timeline"
+			],
+			[
+				"scene",
+				"Build With: W3 radish modding tools - SCENE: generate debug timeline"
+			],
+			[
+				"deploy",
+				"Build With: W3 radish modding tools - DEPLOY: tmp-scripts only"
+			],
+			[
+				"radish",
+				"Build With: W3 radish modding tools - SCENE: reencode all scenes"
+			],
+			[
+				"",
+				"Build With: W3 radish modding tools"
+			],
+			[
+				"timelin",
+				"Build With: W3 radish modding tools - SCENE: generate debug timeline"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 181.0,
+		"history":
+		[
+			"dir()",
+			"dir",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/W3Modding/_projects/modTrial6",
+		"/E/W3Modding/_projects/modTrial6/definition.quest"
+	],
+	"file_history":
+	[
+		"/F/W3Modding/_projects/modTrial6/definition.scenes/scene.the_father.scene-timeline",
+		"/F/W3Modding/_projects/modTrial6/definition.scenes/scene.the_father.yml",
+		"/F/W3Modding/_projects/modTrial7/w3.project-template.sublime-project-template",
+		"/F/W3Modding/_projects/modTrial6/definition.scenes/_patch-reencode-scene+restart.bat",
+		"/F/W3Modding/_projects/modTrial6/definition.scenes/_generate-timelines.bat",
+		"/F/W3Modding/_projects/modTrial6/definition.scenes/scene.bigbunny.yml",
+		"/F/W3Modding/_projects/modTrial6/_tmp/dumped.scene.yml",
+		"/F/W3Modding/old/Material/Commented Scripts/game/scenes/scene_functions.ws",
+		"/F/W3Modding/_projects/modTrial6/definition.scenes/scene.bigbunny.scene-timeline",
+		"/F/W3Modding/_projects/modTrial6/_tmp/dumped.layerdef.yml",
+		"/F/W3Modding/_modTools/Witcher 3 Mod Tools/radish-tools/docs.scenes/test.examples/test_dialogscript_script_func.ws",
+		"/F/W3Modding/_projects/modTrial6/definition.quest/layers.yml",
+		"/F/W3Modding/_projects/modTrial6/definition.quest/def.communities.yml",
+		"/F/W3Modding/_projects/dlcRestlessGhostContract/w3.project-template.sublime-project-template",
+		"/F/W3Modding/_projects/modTrial6/full.rebuild.bat",
+		"/F/W3Modding/_projects/modTrial6/definition.scenes/scene.intro.yml",
+		"/F/W3Modding/_projects/modTrial6/_settings_.bat",
+		"/F/W3Modding/_projects/dumped.scene.yml",
+		"/F/W3Modding/_projects/modTrial6/mod.scripts-tmp/local/modSceneStarter-tmp.ws",
+		"/F/W3Modding/_projects/modTrial4/w3.project-template.sublime-project-template",
+		"/F/W3Modding/_projects/modTrial6/w3.project-template.sublime-project-template",
+		"/F/W3Modding/_projects/modTrial4 - Kopie/w3.project-template.sublime-project-template",
+		"/F/W3Modding/_projects/modTrial2/w3.project-template.sublime-project-template"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"lopp",
+			"clipend",
+			"to_",
+			"high_standing_sad_gesture_headscratch",
+			"knock",
+			"soundb",
+			"high_standing_aggressive_exclamation_gesture_02_both_hands",
+			"anim_6986_high_standing_aggressive_exclamation_gesture_02_both_hands",
+			"bjorn_high_standing_aggressive_exclamation_gesture_02_both_hands",
+			"anim_6986_high_standing_aggressive_exclamation_gesture_02_both_hands",
+			"exclamation_gesture",
+			"flick",
+			"shot_41c_over_aisker_shoulder",
+			"flick",
+			"knockdown",
+			"turn",
+			"anim_8086_locomotion_walk_cycle_slow_forward",
+			"mimicsanim_426_geralt_neutral_gesture_sceptical_remark_face",
+			"geralt_geralt_neutral_gesture_sceptical_remark_face",
+			"geralt_add_reaction_sigh_01",
+			"high_standing_sad_gesture_sigh",
+			"geraltaba",
+			"aback",
+			"shot_closeup_alene_looking_at_geralt",
+			"geralt_locomotion_walk_cycle_slow_forward",
+			"geralt_high_standing_determined_calm_enter_frontal",
+			"cam_3_shotcloseupalenelookingatgeralt",
+			"shot_geralt_sighing_shortly_looking_at_tense_alene",
+			"shot_closeup_alene_looking_at_geralt",
+			"        \n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "definition.scenes/scene.the_father.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 68100,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65888,
+								65691
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/W3 radish modding tools/w3.radish.sceneDef.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 37889.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "definition.quest/structure.root.yml",
+					"selected": true,
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2762,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 153.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+	"project": "trial6.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 239.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

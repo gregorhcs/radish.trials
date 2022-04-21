@@ -1,0 +1,176 @@
+{
+    "files": [
+        {
+            "path": "environment\\decorations\\ships\\basic\\geralt_boat\\apperances\\boat_dest_squared_sail.w2ent",
+            "level": 2,
+            "additional": 1,
+            "id": "D9690225-4BCFA876-A25A5F66-31E3713D",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\ships\\basic\\geralt_boat\\base_entities\\animation_logic\\boat_animset.w2anims",
+            "level": 2,
+            "additional": 1,
+            "id": "D05363EC-A6DECEDB-8A506433-B1E1943A",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\ships\\basic\\geralt_boat\\base_entities\\animation_logic\\boat_exploration.w2beh",
+            "level": 2,
+            "additional": 1,
+            "id": "D2AD2459-6FA4C0D7-A8529ABB-22FEE2C8",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\ships\\basic\\geralt_boat\\decoration_boat\\decoration_boat_base.w2ent",
+            "level": 2,
+            "additional": 1,
+            "id": "18F8BEAC-4BE74F29-295CBA49-DF6DEAA3",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\ships\\basic\\geralt_boat\\meshes\\skellige_boat_mast_square.w2ragdoll",
+            "level": 2,
+            "additional": 1,
+            "id": "E33B0A23-3A336AFF-A3135260-E0035BAC",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\ships\\basic\\geralt_boat\\meshes\\skellige_boat_skel.w2rig",
+            "level": 2,
+            "additional": 1,
+            "id": "47273A6B-A9FA6A12-31B41E86-FFB4A400",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\behaviors\\cutscene_graph.w2beh",
+            "level": 2,
+            "additional": 1,
+            "id": "90C2E23C-720E1B50-9CBE98FE-968C64BB",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\containers\\container_template.w2ent",
+            "level": 2,
+            "additional": 1,
+            "id": "67CDBA09-C59CF118-A1ADB8EC-A9B52461",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\dlctrial2\\data\\entities\\trial2_boat.w2ent",
+            "level": 1,
+            "class": "CEntityTemplate",
+            "seed": 1,
+            "id": "DAAE139E-C3EA2B36-B8F7DF1F-5F33F9B5",
+            "diskSize": 7944,
+            "hardImports": 1,
+            "hard": [
+                "D9690225-4BCFA876-A25A5F66-31E3713D",
+                "D05363EC-A6DECEDB-8A506433-B1E1943A",
+                "D2AD2459-6FA4C0D7-A8529ABB-22FEE2C8",
+                "18F8BEAC-4BE74F29-295CBA49-DF6DEAA3",
+                "E33B0A23-3A336AFF-A3135260-E0035BAC",
+                "47273A6B-A9FA6A12-31B41E86-FFB4A400",
+                "90C2E23C-720E1B50-9CBE98FE-968C64BB",
+                "67CDBA09-C59CF118-A1ADB8EC-A9B52461"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial2\\data\\trial2.w2quest",
+            "level": 1,
+            "class": "CQuest",
+            "seed": 1,
+            "id": "66F2FAA1-51F6B0F8-F945C3F0-CC1F2151",
+            "diskSize": 9163,
+            "hardImports": 1,
+            "soft": [
+                "18DC96EC-E2483E76-42A341D9-23262394"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial2\\data\\gameplay\\items\\def_item_quest.xml",
+            "level": 0,
+            "seed": 1,
+            "id": "3FB55892-428A0BAC-F00DD77F-B9111557",
+            "diskSize": 1046
+        },
+        {
+            "path": "dlc\\dlctrial2\\data\\gameplay\\items\\def_loot_quest.xml",
+            "level": 0,
+            "seed": 1,
+            "id": "EBC854BA-39DD314A-10E8E16B-FDF7F572",
+            "diskSize": 848
+        },
+        {
+            "path": "dlc\\dlctrial2\\dlctrial2.reddlc",
+            "level": 0,
+            "class": "CDLCDefinition",
+            "seed": 1,
+            "id": "A981D140-4A92F0EE-67978969-59E523B1",
+            "diskSize": 1447,
+            "hard": [
+                "66F2FAA1-51F6B0F8-F945C3F0-CC1F2151"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial2\\journal\\quests\\questgroup_trial2.journal",
+            "level": 0,
+            "class": "CJournalResource",
+            "seed": 1,
+            "id": "38AC90FD-68CA3790-70AE1058-294B9BA5",
+            "diskSize": 619
+        },
+        {
+            "path": "dlc\\dlctrial2\\journal\\quests\\trial2.journal",
+            "level": 0,
+            "class": "CJournalResource",
+            "seed": 1,
+            "id": "18DC96EC-E2483E76-42A341D9-23262394",
+            "diskSize": 2371,
+            "softImports": 1
+        },
+        {
+            "path": "dlc\\dlctrial2\\levels\\prolog_village\\trial2\\layerboat\\areas.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "6B4BC180-044B1C56-B41B83D8-0CC4A167",
+            "diskSize": 1836
+        },
+        {
+            "path": "dlc\\dlctrial2\\levels\\prolog_village\\trial2\\layerboat\\interactive_entities.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "DF140F52-43EB6A82-4373C2A6-21185F26",
+            "diskSize": 1158,
+            "hard": [
+                "DAAE139E-C3EA2B36-B8F7DF1F-5F33F9B5"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial2\\levels\\prolog_village\\trial2\\layerboat\\mappins.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "3F290916-2F1E4BC1-6F20698B-DDE1DC49",
+            "diskSize": 1490
+        },
+        {
+            "path": "dlc\\dlctrial2\\levels\\prolog_village\\trial2\\layertrig\\areas.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "8C2D6646-0F53FF7B-0D48F5E7-50D9C548",
+            "diskSize": 1836
+        },
+        {
+            "path": "dlc\\dlctrial2\\levels\\prolog_village\\trial2\\radish_dbg\\radish_dbginfo.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "C9FF16A6-BF17E006-43ABE5DD-5F457BE7",
+            "diskSize": 1119
+        }
+    ]
+}
