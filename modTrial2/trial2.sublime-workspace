@@ -112,20 +112,15 @@
 	"buffers":
 	[
 		{
-			"file": "definition.quest/def.journal.yml",
+			"file": "definition.quest/def.items.yml",
 			"settings":
 			{
-				"buffer_size": 1111,
+				"buffer_size": 621,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "definition.quest/layers.yml",
-			"settings":
-			{
-				"buffer_size": 3748,
-				"line_ending": "Windows"
-			}
+			},
+			"undo_stack":
+			[
+			]
 		}
 	],
 	"build_system": "",
@@ -215,8 +210,8 @@
 	},
 	"expanded_folders":
 	[
-		"/E/W3Modding/_projects/modTrial3",
-		"/E/W3Modding/_projects/modTrial3/definition.quest"
+		"/E/W3Modding/_projects/modTrial2",
+		"/E/W3Modding/_projects/modTrial2/definition.quest"
 	],
 	"file_history":
 	[
@@ -304,51 +299,20 @@
 			[
 				{
 					"buffer": 0,
-					"file": "definition.quest/def.journal.yml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1111,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1111,
-								1111
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "definition.quest/layers.yml",
+					"file": "definition.quest/def.items.yml",
 					"selected": true,
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 3748,
+						"buffer_size": 621,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								620,
+								61
 							]
 						],
 						"settings":
@@ -404,7 +368,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-	"project": "trial3.sublime-project",
+	"project": "trial2.sublime-project",
 	"replace":
 	{
 		"height": 50.0

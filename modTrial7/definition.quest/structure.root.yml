@@ -1,7 +1,7 @@
 #
 # quest structure root segment
 # 
-# (version: 20, saved: 2022-04-08 00:30:41)
+# (version: 21, saved: 2022-04-22 17:23:19)
 #
 ---
 structure:
@@ -14,7 +14,7 @@ structure:
       
       script.HelloWorld:
         ".editor":
-          pos: [ 510.0, 155.0 ]
+          pos: [ 502.0, 231.0 ]
           in: [ In ]
           out: [ Out ]
         function: radLog
@@ -52,7 +52,7 @@ structure:
           - human_community
           - nekker_community
         next:
-          - script.HelloWorld
+          - end
       
       end:
         ".editor": [ 695.0, 151.0 ]

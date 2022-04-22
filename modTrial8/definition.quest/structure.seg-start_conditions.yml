@@ -1,0 +1,146 @@
+#
+# quest structure subsegment: start_conditions
+# 
+# (version: 14, saved: 2022-04-22 18:06:26)
+#
+---
+structure:
+  segments:
+    start_conditions:
+      blocks:
+        in:
+          ".editor": [ 100.0, 250.0 ]
+          next:
+            - waituntil.is_soam_done
+        
+        waituntil.delay_for_logging_1:
+          elapsed: "00:00:15"
+          ".editor":
+            pos: [ 802.0, 252.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - waituntil.took_the_rose
+        
+        waituntil.delay_for_logging_2:
+          elapsed: "00:00:15"
+          ".editor":
+            pos: [ 1216.0, 245.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - out
+        
+        waituntil.delay_until_demons_appear:
+          elapsed: "00:30:00"
+          ".editor":
+            pos: [ 801.0, 156.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - waituntil.took_the_rose
+        
+        waituntil.is_soam_done:
+          ".editor":
+            pos: [ 250.0, 250.0 ]
+            hint: named
+            in: [ In ]
+            out: [ "false", "true" ]
+          conditions:
+            "false":
+              factdb: [ q604_fdb_quest_completed, "=", 0 ]
+            "true":
+              factdb: [ q604_fdb_quest_completed, ">=", 1 ]
+          next.false:
+            - script.soam_not_done
+          next.true:
+            - script.soam_fin_already
+        
+        waituntil.took_the_rose:
+          ".editor":
+            pos: [ 948.0, 252.0 ]
+            hint: named
+            in: [ In ]
+            out: [ "false", "true" ]
+          conditions:
+            "false":
+              factdb: [ q604_fdb_rose_taken, "=", 0 ]
+            "true":
+              factdb: [ q604_fdb_rose_taken, ">=", 1 ]
+          next.false:
+            - script.rose_not_taken
+          next.true:
+            - script.rose_taken
+        
+        waituntil.wait_until_soam_done:
+          factdb: [ q604_fdb_quest_completed, ">=", 1 ]
+          ".editor":
+            pos: [ 533.0, 156.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - script.soam_fin_by_playthrough
+        
+        script.rose_not_taken:
+          ".editor":
+            pos: [ 1082.0, 246.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: radLog
+          parameter:
+            - logChannel: cname_TRIAL8
+            - msg: Rose was not taken
+          next:
+            - waituntil.delay_for_logging_2
+        
+        script.rose_taken:
+          ".editor":
+            pos: [ 1078.0, 332.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: radLog
+          parameter:
+            - logChannel: cname_TRIAL8
+            - msg: Rose was taken
+          next: ".done"
+        
+        script.soam_fin_already:
+          ".editor":
+            pos: [ 668.0, 253.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: radLog
+          parameter:
+            - logChannel: cname_TRIAL8
+            - msg: "P2: Scenes of a Marriage Done!"
+          next:
+            - waituntil.delay_for_logging_1
+        
+        script.soam_fin_by_playthrough:
+          ".editor":
+            pos: [ 665.0, 156.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: radLog
+          parameter:
+            - logChannel: cname_TRIAL8
+            - msg: "P1: Scenes of a Marriage Done!"
+          next:
+            - waituntil.delay_until_demons_appear
+        
+        script.soam_not_done:
+          ".editor":
+            pos: [ 402.0, 158.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: radLog
+          parameter:
+            - logChannel: cname_TRIAL8
+            - msg: Scenes of a Marriage not finished yet
+          next:
+            - waituntil.wait_until_soam_done
+        
+        out:
+          ".editor": [ 1347.0, 244.0 ]
+          next: ".done"
+        

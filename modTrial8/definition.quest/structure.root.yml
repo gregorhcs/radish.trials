@@ -1,16 +1,24 @@
 #
 # quest structure root segment
 # 
-# (version: 5, saved: 2022-04-22 00:04:08)
+# (version: 14, saved: 2022-04-22 18:06:26)
 #
 ---
 structure:
   quest:
     blocks:
       start:
-        ".editor": [ -198.0, 145.0 ]
+        ".editor": [ -274.0, 152.0 ]
         next:
-          - waituntil.entered_outer_villa_area
+          - subsegment.wait_start_conditions
+      
+      subsegment.wait_start_conditions:
+        ".editor":
+          pos: [ -140.0, 151.0 ]
+          in: [ In ]
+          out: [ Out ]
+        segment: start_conditions
+        next:
           - spawn.demon_community_spawn
       
       scene.scene_test_demons:
@@ -24,48 +32,21 @@ structure:
         _fadein: true
         next: ".done"
       
-      waituntil.entered_inner_villa_area:
-        entered: [ novigrad/startinner, PLAYER ]
-        ".editor":
-          pos: [ 48.0, 86.0 ]
-          in: [ In ]
-          out: [ Out ]
-        next:
-          - waituntil.wait_until_realtime_elapsed
-      
-      waituntil.entered_outer_villa_area:
-        entered: [ novigrad/startouter, PLAYER ]
-        ".editor":
-          pos: [ -83.0, 84.0 ]
-          in: [ In ]
-          out: [ Out ]
-        next:
-          - waituntil.entered_inner_villa_area
-      
-      waituntil.wait_until_realtime_elapsed:
-        elapsed: "01:00:00"
-        ".editor":
-          pos: [ 183.0, 89.0 ]
-          in: [ In ]
-          out: [ Out ]
-        next:
-          - spawn.demon_community_spawn
-      
       script.HelloWorld:
         ".editor":
-          pos: [ 576.0, 147.0 ]
+          pos: [ 274.0, 152.0 ]
           in: [ In ]
           out: [ Out ]
         function: radLog
         parameter:
-          - logChannel: cname_Trial8
-          - msg: Hello World T8!
+          - logChannel: cname_TRIAL8
+          - msg: "Demon's Souls Start"
         next:
           - end
       
       spawn.demon_community_spawn:
         ".editor":
-          pos: [ 309.0, 146.0 ]
+          pos: [ -5.0, 153.0 ]
           hint: spawn-only
           in: []
           out: []
@@ -77,7 +58,7 @@ structure:
       
       spawn.merchant_community_spawn:
         ".editor":
-          pos: [ 438.0, 147.0 ]
+          pos: [ 129.0, 152.0 ]
           hint: spawn-only
           in: []
           out: []
@@ -88,6 +69,6 @@ structure:
           - script.HelloWorld
       
       end:
-        ".editor": [ 706.0, 146.0 ]
+        ".editor": [ 404.0, 158.0 ]
         next: ".done"
       

@@ -41,7 +41,7 @@
             "class": "CQuest",
             "seed": 1,
             "id": "7A67E6B7-F3E52C95-7F500C7C-43CDE036",
-            "diskSize": 12432,
+            "diskSize": 15132,
             "hardImports": 1,
             "hard": [
                 "18B19BE4-39E0D41C-76EB9081-607ED3C1",
@@ -68,10 +68,59 @@
             "hardImports": 1
         },
         {
+            "path": "environment\\decorations\\ships\\basic\\geralt_boat\\apperances\\boat_dest_squared_sail.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D9690225-4BCFA876-A25A5F66-31E3713D",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\ships\\basic\\geralt_boat\\base_entities\\animation_logic\\boat_animset.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "D05363EC-A6DECEDB-8A506433-B1E1943A",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\ships\\basic\\geralt_boat\\base_entities\\animation_logic\\boat_exploration.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "D2AD2459-6FA4C0D7-A8529ABB-22FEE2C8",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\ships\\basic\\geralt_boat\\decoration_boat\\decoration_boat_base.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "18F8BEAC-4BE74F29-295CBA49-DF6DEAA3",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\ships\\basic\\geralt_boat\\meshes\\skellige_boat_mast_square.w2ragdoll",
+            "level": 1,
+            "additional": 1,
+            "id": "E33B0A23-3A336AFF-A3135260-E0035BAC",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\ships\\basic\\geralt_boat\\meshes\\skellige_boat_skel.w2rig",
+            "level": 1,
+            "additional": 1,
+            "id": "47273A6B-A9FA6A12-31B41E86-FFB4A400",
+            "hardImports": 1
+        },
+        {
             "path": "environment\\decorations\\trade\\goods_carriage\\goods_carriage_appearance_closed.w2ent",
             "level": 1,
             "additional": 1,
             "id": "D8A703CA-CE4CCAA3-A12342A7-B49D69B7",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\behaviors\\cutscene_graph.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "90C2E23C-720E1B50-9CBE98FE-968C64BB",
             "hardImports": 1
         },
         {
@@ -82,11 +131,50 @@
             "hardImports": 1
         },
         {
+            "path": "gameplay\\containers\\container_template.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "67CDBA09-C59CF118-A1ADB8EC-A9B52461",
+            "hardImports": 1
+        },
+        {
             "path": "characters\\npc_entities\\animals\\horse\\horse_background_no_saddle.w2ent",
             "level": 0,
             "additional": 1,
             "id": "A478D60A-0BB71B86-CDF31877-1752C35E",
             "softImports": 1
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\entities\\the_blackness.w2ent",
+            "level": 0,
+            "class": "CEntityTemplate",
+            "seed": 1,
+            "id": "C3D0A8CD-C60408D8-1BC1DD66-6A0D7CCF",
+            "diskSize": 7944,
+            "hard": [
+                "D9690225-4BCFA876-A25A5F66-31E3713D",
+                "D05363EC-A6DECEDB-8A506433-B1E1943A",
+                "D2AD2459-6FA4C0D7-A8529ABB-22FEE2C8",
+                "18F8BEAC-4BE74F29-295CBA49-DF6DEAA3",
+                "E33B0A23-3A336AFF-A3135260-E0035BAC",
+                "47273A6B-A9FA6A12-31B41E86-FFB4A400",
+                "90C2E23C-720E1B50-9CBE98FE-968C64BB",
+                "67CDBA09-C59CF118-A1ADB8EC-A9B52461"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\gameplay\\items\\def_item_quest.xml",
+            "level": 0,
+            "seed": 1,
+            "id": "E2F3A6B2-D5B2D065-26C2803C-1BE22063",
+            "diskSize": 1046
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\gameplay\\items\\def_loot_quest.xml",
+            "level": 0,
+            "seed": 1,
+            "id": "61608878-8F1FBEC9-22C6F645-B4641535",
+            "diskSize": 848
         },
         {
             "path": "dlc\\dlctrial8\\data\\scenes\\test_demons.w2scene",
