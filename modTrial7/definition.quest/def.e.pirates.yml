@@ -1,0 +1,45 @@
+templates:
+
+  trial7_pirate1:
+    includes:
+      - quests/minor_quests/skellige/quest_files/mq2002_pirate_scavengers/characters/mq2002_pirate_scavenger_01.w2ent
+
+    entityObject:
+      .type: "CNewNPC"
+      displayName: "Pirate"
+      tags: [trial_seven_pirate]
+
+    usedAppearances: [ pirate_lvl1_03 ]
+
+  trial7_pirate2:
+    includes:
+      - quests/minor_quests/skellige/quest_files/mq2002_pirate_scavengers/characters/mq2002_pirate_scavenger_02.w2ent
+
+    entityObject:
+      .type: "CNewNPC"
+      displayName: "Pirate"
+      tags: [trial_seven_pirate]
+
+    usedAppearances: [ pirate_lvl2_03 ]
+
+  trial7_pirate3:
+    includes:
+      - quests/minor_quests/skellige/quest_files/mq2002_pirate_scavengers/characters/mq2002_pirate_scavenger_03.w2ent
+
+    entityObject:
+      .type: "CNewNPC"
+      displayName: "Pirate"
+      tags: [trial_seven_pirate]
+
+    usedAppearances: [ pirate_lvl2_01 ]
+
+  trial7_pirate4:
+    includes:
+      - quests/minor_quests/skellige/quest_files/mq2002_pirate_scavengers/characters/mq2002_pirate_scavenger_04.w2ent
+
+    entityObject:
+      .type: "CNewNPC"
+      displayName: "Karstark"
+      tags: [trial_seven_pirate, trial_seven_pirate_leader]
+
+    usedAppearances: [ pirate_lvl3_01 ]

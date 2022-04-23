@@ -1,0 +1,4641 @@
+{
+    "files": [
+        {
+            "path": "gameplay\\trees\\idle\\dynamic_wander.w2behtree",
+            "level": 3,
+            "additional": 1,
+            "id": "8C1DC7C5-80F9CE0B-B91903B4-9DB95596",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\idle\\npc_wander_history.w2behtree",
+            "level": 3,
+            "additional": 1,
+            "id": "CA2ED2C5-A83E5C0E-D532D031-9C5AA6F5",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\dlctrial7\\data\\spawnsets\\bear_community.w2comm",
+            "level": 2,
+            "class": "CCommunity",
+            "seed": 1,
+            "id": "E877FC69-5A14D765-19DF9190-D3F9B4FE",
+            "diskSize": 2879,
+            "hardImports": 1,
+            "softImports": 1,
+            "hard": [
+                "8C1DC7C5-80F9CE0B-B91903B4-9DB95596"
+            ],
+            "soft": [
+                "7AC603DF-744F551B-2F246316-60BA4BCE"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial7\\data\\spawnsets\\human_community.w2comm",
+            "level": 2,
+            "class": "CCommunity",
+            "seed": 1,
+            "id": "F3B95E0C-35B5DB1A-AF1D9858-1B8B5573",
+            "diskSize": 16003,
+            "hardImports": 1,
+            "softImports": 1,
+            "hard": [
+                "CA2ED2C5-A83E5C0E-D532D031-9C5AA6F5"
+            ],
+            "soft": [
+                "0D3AD140-C9C753BB-76DB9734-77D628BA",
+                "ECA05984-A30C0BD1-D7F7EE27-6ACF6A32",
+                "91EB92E7-1F6BCA42-81DF64D9-50A13C79",
+                "B433F184-C20887D0-FD191BD2-C9761847",
+                "45CC5879-66750679-F72B19FD-F9E9F3CC",
+                "68E843BA-5CF9F5F6-910AAAD2-C114E9E2",
+                "126556C6-42EC7420-01D50FE8-9B92DE81",
+                "A72DC51F-82AB9F76-370D2858-A2069E59"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial7\\data\\spawnsets\\nekker_community.w2comm",
+            "level": 2,
+            "class": "CCommunity",
+            "seed": 1,
+            "id": "0002CAD9-B0E107F3-0371B9E9-392E13D9",
+            "diskSize": 4297,
+            "hardImports": 1,
+            "softImports": 1,
+            "soft": [
+                "98DF7B71-80A2E707-EEBCEB58-301F349D"
+            ]
+        },
+        {
+            "path": "animations\\constraints\\constraints.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "F48764A3-D860DC48-53175D59-4919F8DA",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\interaction\\boat\\boat_geralt_sailor.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "763DFB56-46E2B80A-2D943A97-E9A81345",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\interaction\\environment\\man_geralt_carry_item.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "BEE9E2F1-AC1D0E88-BBD70E9D-F8333648",
+            "hardImports": 3
+        },
+        {
+            "path": "animations\\interaction\\environment\\man_geralt_focus.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "6BFFD817-C93724A4-56E5C594-7DE77B37",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\interaction\\environment\\man_meditation.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "7BE1D5DF-9B1BC8C2-63215BDF-B9DD625A",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\interaction\\finishers\\man_finishers.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "FA1B585F-699D620E-9DA6AE8D-BDFA470B",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\interaction\\mini_games\\drinking_game\\drinking_game.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "14C75C53-4C59721D-C024011F-5A6687D6",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\combat\\man_axe_1handed.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "C19341B7-C3C59623-A6A53C34-9FA0037E",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\combat\\man_axe_2handed.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "A7D13317-35B9C9C9-B8CB532A-1B937EA1",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\combat\\man_death.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "98AD5ED8-C62C5B1D-76459646-EC6B07DB",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\combat\\man_dismemberment.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "C4E99789-29487165-BBDBDED8-B0FDE292",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\combat\\man_fistfight.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "9350D543-A1606A76-FB358802-8C6EF85F",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\combat\\man_geralt_petard.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "5800D642-E85F53E4-AB36B42F-16448968",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\combat\\man_geralt_sword.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "D86936C0-9959E9AF-395843CA-98DD0911",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\combat\\man_geralt_sword_locomotion.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "1DDCF83C-D80851D2-7AC06BA5-397646D9",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\combat\\man_halberd_2handed.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "A449F4DA-F1A71046-C2B47DEB-DE890603",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\combat\\man_hammer_2handed.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "8329A1A2-F00BDE1D-12257CD5-659ACB5D",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\combat\\man_longsword.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "FABCD3CB-3AAD1374-ADD686C2-7EC8C226",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\combat\\man_mace_1handed.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "B2760CAC-EBAC9096-D619C3B5-689FF187",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\combat\\man_mage.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "31B89D17-6FA37E22-9498ACFF-AE4827B1",
+            "hardImports": 3
+        },
+        {
+            "path": "animations\\man\\combat\\man_shield.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "EA322A46-7E5DC028-6078B0CC-579CD14C",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\combat\\man_spear_2handed.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "29529901-8DB67944-92ACA73C-E70C6117",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\combat\\man_sword_1handed.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "00C056C9-F3FE4C39-0E67B446-1EE30939",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\combat\\man_sword_2handed.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "6944C326-D49959B2-FED2482C-5D9C00B1",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\community\\man_big_work.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "42DA506F-7D9B0442-AF2F3060-6E38095C",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\community\\man_carry_items.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "B5A0FE22-428C1BAD-438EC9A0-5A2914A5",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\community\\man_exploration_critical_states.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "9AE20C59-C9573D32-D23712F1-B7F748AB",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\community\\man_reactions.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "4951FF29-64DAFF4F-3CF31A60-6A82ED0D",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\community\\man_work.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "64898EF6-7A77CA6F-CC85FD96-003A84A4",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\dialogs\\ep1_man_dialog_animation.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "636B438F-59E609EE-4F7BA237-1461740E",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_additives.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "5488311A-98774D8A-99ECDBC7-E4052B9B",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_gameplay_recompress.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "C92F3597-989AAB54-2310873D-4845A7EC",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_item_interaction.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "B8EEB126-167EAFB7-48683BEA-D7C4F49D",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_kneeling.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "D55F12E1-86E5A487-D1D2E996-B30A00B0",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_locomotion.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "DF05D550-3D3CFBEC-CCC44CDE-271F705F",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_lookats.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "D7421C17-C9BF9285-652DFD40-07523B0D",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_lying.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "24493A5E-A0DCC8CF-948B4F88-C08B4F24",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_sitting.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "726A3185-E9E9AC5B-C7BD1D17-D12639D5",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_sitting_ground.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "BCEA0B38-EEAB9477-6D4BA129-7637C185",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_sitting_table.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "06677E63-0B7E3649-5DBBBA7C-F8E08D27",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_standing.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "3494303D-539E13BB-D20C1703-3F7FEFE5",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_standing_leaning.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "6AF83085-C14467FE-1D699DB3-0F467CA6",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_standing_leaning_back.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "D7FD67C7-12E2E407-6FA94695-B7AAF261",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_standing_to_standing.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "7A97D61E-41B5B388-1CE15E57-5D29A932",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\movement\\man_big_movement.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "6A23CF6A-02ECCFFD-B482A960-5724E497",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\movement\\man_geralt_movement.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "6E332C48-BD35841E-08AD401A-C958DF31",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\movement\\man_movement.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "35EC2306-4C7720C2-271586FD-4E0C62C0",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\movement\\man_movement_prototype.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "D36397B2-AFA57E74-A0EC7607-1A6C90BA",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\quest\\man_quest.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "56C6732F-F2DA5A5A-180F70D9-F100504A",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\man\\quest\\q602_geralt_drunk_run.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "BFC9AA53-F15A5C6A-3A1A4341-FEB2C548",
+            "hardImports": 3
+        },
+        {
+            "path": "animations\\man\\quest\\q602_geralt_folk_dancing.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "05872C61-EA63022D-C70F4390-44FE7DAB",
+            "hardImports": 3
+        },
+        {
+            "path": "animations\\mimics\\gameplay_man_mimic_animation.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "DD3240AF-9119BCEC-71E5D915-B428E1B8",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\mimics\\man_mimic_animation.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "1F58C530-10F7199A-A3B3F3D2-C6981FE7",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\mimics\\man_mimic_layers.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "C42395B9-1038CD3C-A6862FBE-37966B8E",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\mimics\\mimics_behavior.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "54796663-CA4E92EF-6E51E5A9-AF143DEA",
+            "hardImports": 4
+        },
+        {
+            "path": "animations\\monsters\\monster_nekker.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "7A13DCDB-7CE8F889-55DAFDA5-0F78A353",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\base_entities\\man_base\\man_base.w2rig",
+            "level": 1,
+            "additional": 1,
+            "id": "11A9D291-60CD1CD1-BA356DFF-5730C142",
+            "hardImports": 4
+        },
+        {
+            "path": "characters\\base_entities\\man_base\\man_base_ragdoll.w2ragdoll",
+            "level": 1,
+            "additional": 1,
+            "id": "619AC824-3C66BB72-61BA8F1E-0FAE1173",
+            "hardImports": 4
+        },
+        {
+            "path": "characters\\base_entities\\nekker_base\\nekker_base.w2rig",
+            "level": 1,
+            "additional": 1,
+            "id": "FA9F2D7A-77B710DA-82CD90F8-4B0E3266",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\base_entities\\nekker_base\\nekker_ragdoll.w2ragdoll",
+            "level": 1,
+            "additional": 1,
+            "id": "90B7A9A9-AB6F4597-24C2FF76-4B31433C",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\animals\\bear_berserker\\model\\growthmesh_altbear_dead.redfur",
+            "level": 1,
+            "additional": 1,
+            "id": "430051E7-A81BD91C-0C287FA3-95B2DF25",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\a0_02_ma__body.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "5D732E9D-86EF55FD-01E7F83A-C8A59956",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\ag_01_ma__body_dirty_d02.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "671419FF-C9F58697-788D43CE-A6014AD0",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\ag_01_ma__body_tattoo_t01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D81811F8-6F291100-0752D85B-0C243631",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\ag_01_ma__body_tattoo_t02.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "2FA4E2DA-52FC1505-3793BD7C-8DA00008",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\ag_01_ma__body_tattoo_t03.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "F2C6ED4A-F76CF4BF-5D73C004-B8E5A19C",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\ag_01_ma__body_tattoo_t04.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "76D4BF77-F6766734-5E51432A-2D277220",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\ag_01_ma__body_tattoo_t05.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "64F39FA9-78B1C28C-0E4CDC73-BA30F6BB",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\g_01_ma__body_tattoo_t07.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "B51F0976-ACC23E60-37BE612F-8A0B3DA7",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\l_01_ma__body_tattoo_t04.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "20B91FA6-F95BAA23-1CA1964B-794662BC",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\l_03_ma__body.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "0A54BD1E-A225B635-4B9889FC-F70C4B85",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\ls_01_ma__body_d02.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "608E4A85-3F020031-B8342A49-7E864F0C",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\ls_04_ma__body.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "62907ECC-2AFA14AA-9B717965-3FC9D7BB",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\ls_04_ma__body_d02.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "331578EE-DAB6E6D3-ACA1ECBA-7DFBFD88",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\model\\h_ma__neck_transition.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "6B12FE78-82C40EB8-4A707405-5C22C431",
+            "hardImports": 4
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\s_01_ma__body.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "265DB80B-4E5C0A2F-A73CD214-74A2AB4E",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\s_01_ma__body_d02.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "9BCA3801-C5460078-AA506E55-1C3C7BD9",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\tag_01_ma_body_tattoo_t01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "E25459D6-00715012-E73438BA-660A672F",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\tag_01_ma_body_tattoo_t03.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "F62C99CF-622D6947-DD86522F-ABFA25FF",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\tag_01_ma_body_tattoo_t06.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "E37071D2-DF3DDDDE-339EB398-EB7CA071",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\hair\\c_09_ma__hair.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "EC16E7C5-80F10D92-303DD7DB-D771B105",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\hair\\c_19_ma__hair_02.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "37FF45F3-D2EEE49D-F3ACA357-DDB299E1",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\hair\\c_20_ma__hair.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "AACD2A62-92A4BA85-506F09A8-BAD315C6",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\heads\\h_10_ma__nml_villager_12_01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "E0AC081D-F5158459-64541A61-A7C9CEE2",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\heads\\h_10_ma__nml_villager_beggar.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "380FF769-436AEFAF-229AC96A-BABCC5AA",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\heads\\h_11_ma__nml_villager_04_02.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "107F56DA-94038013-1D155B7B-F4B88FA8",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\heads\\h_11_ma__nml_villager_beggar.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "B4DE163D-8668826D-5C059AF7-5807EF93",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\heads\\h_13_ma__novigrad_citizen_05_01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "0141F883-F15C29E4-9E2E338E-6178DDF7",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\heads\\h_13_ma__novigrad_citizen_beggar.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D58BDF40-50B955B7-6E6F88E7-13EB2E6A",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\heads\\h_14_ma__novigrad_citizen_05_01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "AE104525-1E719B8D-A05527DC-2387D52D",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\heads\\h_14_ma__novigrad_citizen_11_01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "BC798874-D4CDE301-DFB3CCAD-991D305B",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\heads\\h_15_ma__novigrad_citizen_05_01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "CEB8523E-10161DE3-1CAA2DD4-E93DF6C2",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\heads\\h_16_ma__novigrad_citizen_05_01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D458314D-8BC9F01C-3C9194C7-3E800F87",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\heads\\h_16_ma__novigrad_citizen_11_01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "EC84543E-DAEB6EF6-163B3632-08179C43",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\heads\\h_17_ma__nml_villager_soda_05_01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "7F95A2BC-6772234A-138AACBE-E967078F",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\heads\\h_18_ma__skellige_villager_05_01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "658CA4B6-A43AFFC0-48881529-51F20C12",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\heads\\h_19_ma__skellige_villager_09_01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "A32E6486-06966ED6-80F313C6-EBD3E2FB",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\heads\\h_21_ma__skellige_villager_05_01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "2EDAC3F5-7E8028A3-9D005AC4-44E39934",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\heads\\h_38_ma__novigrad_citizen_03.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "19E98D4F-E5839F97-CC7A90EB-CDC889E2",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_big\\body\\ag_01_mb__body_tattoo_t05.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D4CEC952-400584A5-A5E861CC-9E9817E5",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_big\\body\\ag_01_mb__body_tattoo_t06.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "577EAB6A-25C3C2F5-7895B174-37D5F4FE",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_big\\body\\ag_01_mb__body_tattoo_t07.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "20CBBDF0-9300C24E-E30B3A64-B5324350",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_big\\body\\g_01_mb__body_tattoo_t07.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "21D12BAE-331FA8FE-D2C38EAC-9C007460",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_big\\body\\ls_01_mb__body_tattoo_t08.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "F9CAC385-399DED2D-E72DC332-D93DB5FE",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_big\\body\\ls_03_mb__body.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "5EFBC449-3B5D6CC0-54477816-06A2E73D",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_big\\body\\n_01_mb__body.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "070D2CC5-B9B4342B-65AC881F-A49C552E",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_big\\body\\tag_01_mb__body_dirty_d01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "258A335A-80373545-676FFF26-EC2A254C",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_big\\heads\\h_10_mb_skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D8818FFA-407ABD71-92A2E66A-5DC30365",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_big\\heads\\h_10_mb_skellige_villager_fistfight.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "95EAC110-B5957078-CE6DE15A-4EEA7E49",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_big\\heads\\h_24_mb__skellige_warrior.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "7DEA5413-7E3CB500-3D7534CE-E104A0AB",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_big\\heads\\h_25_mb__skellige_warrior_11_01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "C19BB00F-0173101C-5A239018-4B380A70",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_big\\heads\\h_26_mb__skellige_warrior_03_01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "ACCE68CF-CAAE94E5-DE10BF55-37D78E63",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_big\\heads\\h_26_mb__skellige_warrior_11_01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D6386464-8FB7B252-EDC7F2FB-27F9DE29",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_big\\heads\\h_33_mb__skellige_warrior.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "2C2C8925-67E3F5C3-AF42F911-5BAB5574",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_strong\\body\\ag_01_ms__body_tattoo_t01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D86398C7-4F408B97-E9C22F1F-701A8999",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_strong\\body\\ag_01_ms__body_tattoo_t02.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "891A080B-C9CC2866-EF898C56-9510CD69",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_strong\\body\\ag_01_ms__body_tattoo_t06.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "F7BA9C8F-43FB6E83-4EE65D05-52845558",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_strong\\body\\l_01_ms__body.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "FC0B7135-FE01E531-EE23F813-8EFED558",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_strong\\body\\tag_01_ms__body_tattoo_t02.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "3D244633-8ED4B958-2D11896A-787CC52F",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_strong\\body\\tag_01_ms__body_tattoo_t06.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "CAB28F52-BE51A284-0BC44DFF-5B873CA2",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_strong\\heads\\h_03_ms__berserker.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "5D879FA7-FC262FA3-50D72CF8-C0617D1C",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_strong\\heads\\h_04_ms__berserker.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "4BD40488-280D1D4D-B86F5591-1D6E6626",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\shadowmesh\\man_average_shadowmesh.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "6A03FC8B-69EC245C-18B0830F-5B45C695",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\common\\shadowmesh\\man_big_shadowmesh.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "8F387991-2E8B4E72-A7EF3EB0-C7AF17EF",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\special\\force.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D0CD1DE4-4678F83C-D71184EA-B01044AA",
+            "hardImports": 5
+        },
+        {
+            "path": "characters\\models\\common\\textures\\decals\\wounds\\wnd__decal_d01.xbm",
+            "level": 1,
+            "additional": 1,
+            "id": "31AF0E27-938D50B5-3B85438F-F804108B",
+            "hardImports": 5
+        },
+        {
+            "path": "characters\\models\\common\\textures\\decals\\wounds\\wnd__decal_n01.xbm",
+            "level": 1,
+            "additional": 1,
+            "id": "3E3917D8-640E6A84-A1485408-63B9B0C6",
+            "hardImports": 5
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__cut_arm02_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "AA135326-E47BCFB4-75709025-717B4B01",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__cut_arm03_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "8AB9240A-8A0B35CA-70540D76-95E52289",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__cut_head_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "00386D4E-CE9C4EA2-213F1432-4C4E1484",
+            "hardImports": 4
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__cut_torso02_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "4EF10548-995FB136-53614D7E-70651777",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__cut_torso03_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "2AABA613-8857C29C-FF64CDC2-9D9878D1",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__cut_torso_02_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "A2436D28-F01238BD-8AC3705E-AB7C067C",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__explode01_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "D9F45E90-7C420DF0-18B9F558-454C0B09",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__explode02_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "E1ED4343-25C1E269-A1536B42-2DEC2578",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__gash01_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "0A6FC488-39276989-E907ABFB-24F5CA2C",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__gash02_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "1BA4D3F5-4BC44CD1-1B3CC0DC-036BC2D8",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__gash03_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "66445F26-E1BC405A-1A4521ED-FD892D17",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_mb__cut_arm02_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "2899D98F-B1E57C1A-1A2FEF40-A690BB1E",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_mb__cut_arm03_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "DE417D8D-DD8F6517-975AAFF0-85D49511",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_mb__cut_torso02_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "D4C3B8CB-495B5C78-81C5001E-FD1A210A",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_mb__cut_torso03_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "03CAF91A-C62E00E4-B411BE0C-7D6DDBED",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_mb__cut_torso_02_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "5E655F1B-1A1A0805-2CA40766-AAC02DAE",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_mb__explode01_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "835920B9-FD472184-A2995719-67D2EE36",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_mb__explode02_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "EB25435D-FCCB35A8-FB83B997-4E5C1DEE",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_mb__gash01_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "9CCEDD45-C5D07437-ACD9FF22-CFAC21AE",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_mb__gash02_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "9DC3C0FF-7416B41A-26F91224-588DE699",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_mb__gash03_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "430BBC19-48FD232D-EAAE199C-0B1C6B73",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__cut_arm02.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "5DD01750-A5E98347-61258135-871DB963",
+            "hardImports": 4
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__cut_hand01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D60AAC75-F4584A8F-45FB0959-617685C0",
+            "hardImports": 4
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__cut_head01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "C015CBEE-EF7AABFA-8D295B70-83EB31CC",
+            "hardImports": 4
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__cut_torso02.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "BC8B95F9-BEB307E2-2EB029C6-6750E90B",
+            "hardImports": 4
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__gore01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "CB136F17-324A3E5C-B5EAA8F6-FB39B36E",
+            "hardImports": 5
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__gore02.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "33AB3BE1-2B90DEFF-C8331571-39BAEB37",
+            "hardImports": 5
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__gore03.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "0D943A8F-B2243974-203DF45B-429B9688",
+            "hardImports": 5
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__gore04.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "9391F474-F623F71C-72F28234-12C08EFE",
+            "hardImports": 5
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__gore_arm_l.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "1CC7CD95-A6C07002-7CED79BC-BA8C9D5D",
+            "hardImports": 4
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__gore_foot_l.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "8DF19053-8FE92533-A26046F0-F90AF90A",
+            "hardImports": 4
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__gore_head.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "CF28CDAE-3A35688C-1DFB8E53-8945B466",
+            "hardImports": 4
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__gore_leg_l.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "9FA9FEF7-68444530-0CCDDF6F-DD8898F3",
+            "hardImports": 4
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__gore_leg_r.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "B4ED40BF-B3F540FC-DC4BF746-D0E9720F",
+            "hardImports": 4
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\inquisitor_soldier_lvl2\\legs\\l2_01_mb__inquisition_soldier_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "104869AE-01E5420A-6ED0CF3A-DFF7F088",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\medic\\items\\i_01_ma__medic.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "AD698B21-3490522B-7198E7A7-7DA86B1E",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\medic\\items\\i_10_ma__medic.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "525B2D65-4135006C-B3009301-2FC17D4B",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\nilfgaard_squire\\caps\\c_06_ma__nilfgaard_squire.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "97289859-43D28D6C-3977D3B2-50B78040",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\nilfgaard_squire\\legs\\l2_01_ma__nilfgaard_squire.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "608D4790-3B16A254-7A4D7775-E7D254A7",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\nml_ baron_thug_lvl2\\gloves\\g_01_mb__nml_baron_thug_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "3B13A2F0-5F2BCFD4-53CCC3B1-6D6ACDA5",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\nml_villager\\arms\\a_01_ma__nml_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "4E44F557-2951640C-8FADF162-C86CF110",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\nml_villager\\legs\\l0_02_ma__nml_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "53E76720-139D490B-64CE403F-8A8961B9",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\nml_villager\\legs\\l0_03_mb__nml_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "B34887BE-113BE545-F664B482-01D4F972",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_bandits\\caps\\c_01_ma__novigrad_bandit.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "B94CF378-B14F1F5B-9A0D23EC-74B49883",
+            "hardImports": 4
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_bandits\\caps\\c_02_ma__novigrad_bandit.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "34047DA2-CC324956-EF8BDB8D-2DEC35A1",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_bandits\\dress\\d_01_mb__novigrad_bandit.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "F85D8479-6A1184B8-CBF20868-1A0E448E",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_bandits\\torso\\t1_03_mb__novigrad_bandit.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "B643F8D2-9C743519-5200D24C-C7B3AECD",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_beggar\\legs\\l0_01_ma__novigrad_beggar.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D164F99A-0F27B706-8E244A0C-722EC9A6",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_citizen\\caps\\c_03_ma__novigrad_citizen.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "BE84E148-5C2E360B-E5A89853-D266474C",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_citizen\\items\\i_02_ma__novigrad_citizen.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "F7CFB85B-1555BBA1-C8A0AF5D-845BE8F2",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_citizen\\items\\i_10_ma__novigrad_citizen.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "9246ED05-E3DB35F5-D4364CE2-C2B83D48",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_citizen\\items\\i_13_mb__novigrad_citizen.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "32E7866E-8AE0BB3E-224306DB-3F734500",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_citizen\\items\\i_13a_mb__novigrad_citizen.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "390D128F-96B7E38B-745524B4-2DD83C73",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_citizen\\items\\i_14_mb__novigrad_citizen.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "B69A17EC-5046298B-B45B2954-08E39773",
+            "hardImports": 4
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_citizen\\shoes\\s_01_ma__novigrad_citizen.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "17E4896F-C70B19D2-2045B724-C67D07A3",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_citizen\\torso\\t1_15_mb__novigrad_citizen.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "583E737A-D3E51962-100A013D-53B69649",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_citizen\\torso\\t1_16a_ma__novigrad_citizen.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "AB97CEE4-DED63415-C3A62127-664B3004",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_elf\\arms\\a_03_ma__novigrad_elf.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "81DFBD7E-6F5F3F37-44764148-022B48F6",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_rowdy\\arms\\a_01_ma__novigrad_rowdy.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "45CC561B-B3EDEA08-61032D7A-780E7853",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_rowdy\\caps\\c_06_ma__novigrad_rowdy.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "3DBBD4CE-484E2BBC-981AB57D-DF598E47",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_rowdy\\items\\i_02_mb__novigrad_rowdy.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "E290BE5A-C8B8D686-B2E3D3D4-36A7B682",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_rowdy\\items\\i_02_ms__novigrad_rowdy.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "B9549562-88F3BB6A-17161CC4-43C08E3D",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_berserker\\arms\\a_01_ms__skellige_berserker.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "0E9A16A6-C55E4B4A-0443ED1C-792E9FF9",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_berserker\\dress\\d_01_ms__skellige_berserker.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "B2BCD375-576B96F5-F02F3C02-118EF5CF",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_berserker\\items\\i_03_ms__skellige_berserker.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "5FBBA252-A12528FA-A206F19E-783D6824",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_berserker\\items\\i_04_ms__skellige_berserker.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "C0BCEA95-18B567E5-B6683824-1E5CD4E2",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_berserker\\items\\i_05_ms__skellige_berserker.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "A65BED02-F64EE9CF-2E8F0376-5971889C",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_berserker\\items\\i_07_ms__skellige_berserker.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "90C92CCD-C01BBDA1-AB610B94-576330E8",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_fisherman\\arms\\a_03_ma__skellige_fisherman.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "7005D8C2-CAA3F5F2-23721813-72E3E91E",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_fisherman\\arms\\a_03_mb__skellige_fisherman.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "C0411735-D8B32357-E013DB52-5D08D147",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_fisherman\\caps\\c_01_ma__skellige_fisherman.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "CFF9FDC9-4BE9C6EC-C5B1F3B9-00431B66",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_fisherman\\items\\i_02_ma__skellige_fisherman.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "3FF43F6E-40948BC9-D935F5FF-B9AE2F83",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_fisherman\\items\\i_03_ma__skellige_fisherman.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "B6F64155-51EAFE8B-D909DA4C-5ADD4496",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_fisherman\\items\\i_04_ma__skellige_fisherman.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "464B68C5-6FAFDCBC-E02A4DD9-5D7E8F2F",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_fisherman\\items\\i_04_mb__skellige_fisherman.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "659EDED5-251AD899-47427314-6A521D35",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_fisherman\\items\\i_04_ms__skellige_fisherman.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "2EEE3602-8AE540F3-9480F8BE-FB749B75",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_fisherman\\legs\\l0_02_ma__skellige_fisherman.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "416A530F-18C6EDCA-3EB6C864-D6809569",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_fisherman\\legs\\l0_02_mb__skellige_fisherman.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "E990A8DB-CE7A7522-F7378A1A-2BFD89C9",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_fisherman\\legs\\l0_05_ma__skellige_fisherman.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "9DCCF175-8135CF8C-B8AE6E84-5E59E426",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_fisherman\\shoes\\s_01_ma__skellige_fisherman.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "1E2513F3-A294B7EA-6F7CC532-2EF6B4DC",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_fisherman\\shoes\\s_02_mb__skellige_fisherman.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "138DEF69-6DD0F68A-A3324944-A9026CBC",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_fisherman\\torso\\t2_04_ma__skellige_fisherman.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "0FE10740-2C7D7DDB-50CD93E1-85167382",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\arms\\a_07_ma__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "48BE0F88-31947ACC-4339AA9B-C686B131",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\caps\\c_04_ma__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "3B45C6EB-3542552C-C945AF62-FB896C5E",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\caps\\c_05_ma__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D7C922FF-A2300AA3-66F1FF66-3E8BEFC4",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\caps\\c_09_mb__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D589EC2A-80318D00-FCC8B387-8203DA61",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\gloves\\g_03_ma__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "87D8F81B-560C85D9-A5B1C371-27D32547",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\gloves\\g_03_mb__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "40E5659C-656AE92C-DB9DDF6C-73264A6E",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\items\\i_05_ma__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "357B1B05-1A630739-8FFDE045-11663A4C",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\items\\i_11_ma__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "96E88983-ACA29BB5-7DFD06BF-C6105290",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\items\\i_11_mb__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "B7CB8575-22ECA965-35697C15-72D9D45C",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\items\\i_13_ma__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "6EA36E27-BA0A0C36-2640EAF2-56344194",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\items\\i_13_mb__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "83BFAC19-1081C4A5-6C2AE994-0C4B4912",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\items\\i_14_mb__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "DED45948-755CAAEA-05A81560-02C56C35",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\items\\i_17a_mb__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "60008A52-76BD3ED7-FE300263-FC51F129",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\legs\\l0_02_ma__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "B4308F31-4128EEE6-24236ACC-09E776CE",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\legs\\l0_02_mb__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "2DD3D156-49A21026-30574DD2-07F1EE36",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\shoes\\s_02_mb__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D6D7DBB7-71138F1D-F7818DDD-C6B69D2A",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\shoes\\s_03_ma__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D57C7519-FC2D19AF-F5E61965-69F013A1",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\shoes\\s_03_mb__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "4DC2DD97-B7CE205D-6542C73D-3C855197",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\torso\\t2_01_ma__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "64743D40-9E4C3691-0426664D-4D917A1B",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\torso\\t2_02_ma__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "402403E2-12E04E23-65D0F9DF-A0FC2821",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\torso\\t3_04_mb__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "8B4D83DD-87358075-25F52CA7-DD7C26CE",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl1\\arms\\a_01_mb__skellige_warrior_lvl1.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "E5AC701B-7029252B-70C684E6-835E8227",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl1\\caps\\c_02a_ma__skellige_warrior_lvl1.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "4B865A06-A6C33C9E-2FDEE5F3-2E1C4319",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl1\\caps\\c_03_ma__skellige_warrior_lvl1.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "82BBF80F-6ECA5AB2-3BE2128E-6CEB6894",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl1\\caps\\c_03_mb__skellige_warrior_lvl1.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "A9E60CE8-CC9624CD-704E0975-9C077659",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl1\\caps\\c_05_ma__skellige_warrior_lvl1.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "8122EFB1-7BBE7AD0-C635644C-C912FC77",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl1\\torso\\t2_01_ma__skellige_warrior_lvl1.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "6717C3EC-54ED0DDB-CE4257A5-A0FBD0B3",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl1\\torso\\t2_03_ma__skellige_warrior_lvl1.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "73D5D31F-1D5BBA5E-60C321CB-45A06AE0",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\arms\\a_03_ma__skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "DBE169C3-ED878605-0E4FD180-6927CA46",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\arms\\a_03_mb__skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "4C116C14-9C57CF55-A4BCE057-284FFEEC",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\caps\\c_03_mb__skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "CBC79804-CDA0B35B-F37307F1-2E271384",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\caps\\c_07_mb__skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "965B4429-17C24A35-63F15B25-35A66037",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\caps\\c_11_ma_skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "1EC3BB7D-6EE8BD1A-523129AE-60BE742F",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\caps\\c_11_mb_skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "A0DD1336-32EB9C62-7C7A8F58-38A69509",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\caps\\c_13_mb__skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "AE0ADAF9-8FB921E6-B45C643F-97B7C233",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\items\\i_01_ma__skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "9E6BDAFB-C874D8F1-E6772B16-EC77A84B",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\items\\i_01a_mb__skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "00CB8E47-C12BBF0E-6FA1B29B-CCB1BB56",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\items\\i_02_ma__skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "77CCADF2-36F0684F-07385F93-497F3DA6",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\items\\i_04_ma_skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "C656DD60-39E51467-20B9985A-D6C3E12E",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\items\\i_05_ma_skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "E70AD076-4AF7EC88-15CEF916-5611AB47",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\items\\i_05_mb_skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "7EAD1963-3A87FEBA-017819DA-B4491A74",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\legs\\l0_01_ma__skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "2DB83F44-70956264-FCCC59A7-99AAD9E6",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\legs\\l0_02_ma__skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "25AD8E86-9F670159-779C586C-DE6E0259",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\legs\\l0_03_mb__skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "B7C17D5A-8D4FED48-20D7C67B-17FF31F7",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\legs\\l0_04_ms__skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "BC338C8D-CF0F8CD0-0BE1B01C-A203D556",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\legs\\l0_05_mb__skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "81F41666-658CBECF-42FDAC48-E257C9A7",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\shoes\\s_01_ma__skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "3AD1006C-6575D1CE-6D8BB40E-CC9296EE",
+            "hardImports": 3
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\torso\\t2_02_ma__skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "28C575A0-91E86EC3-CAAD6123-925D6DB8",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\torso\\t2_02_mb__skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "C2C81684-59A9EB6A-55173F74-63B6D924",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\torso\\t2_03_mb__skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "56BF81CD-05691DFA-A5601FEC-D33F9FBB",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl2\\torso\\t2_04_ma__skellige_warrior_lvl2.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "99AA205E-941B05AC-AE7B7356-133A5D37",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl3\\dress\\d_08_mb__skellige_warrior_lvl3.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "FCC4CA13-C880BFC2-E6B894C9-CE45E171",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl3\\items\\i_02_mb__skellige_craite.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "AA7B46D0-2899B59D-201C8EE3-003CC567",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl3\\items\\i_02_mb__skellige_tuirseach.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "4C3C3A9E-9DA37448-65D94871-CEE7B66F",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl3\\items\\i_06_mb__skellige_warrior_lvl3.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "E5B5C7EA-42F73FA6-E77F127F-A340B9C3",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl3\\items\\i_10_mb__skellige_warrior_lvl3.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "9F5F0F62-7159833C-907994F7-DF070230",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_warrior_lvl3\\torso\\t3_07_mb__skellige_warrior_lvl3.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "10A6283D-E3759321-1B06EB14-BC7FD447",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\temeria_guard\\legs\\l0_01_ma__temeria_guard.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "3EBFBA1F-743EAF19-42BDB681-D6CC0261",
+            "hardImports": 2
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\temeria_guard\\legs\\l0_01_mb__temeria_guard.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "F369B7B5-F8BBEA0D-0F51396A-C4527870",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\model\\w_01__nekker_cut_arm.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "90CBBE0B-8A22B91A-CED49276-A3F5C04D",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\model\\w_01__nekkersmall_cut_arm.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "38F6C700-82A3E69F-02039B60-07614086",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\model\\w_02__nekker_cut_torso.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "7C1C0F3B-0801C407-0FCA0288-F79ECABD",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\model\\w_02__nekkersmall_cut_torso.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "47EE6C52-B370B477-6B7F13E6-B4B46629",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\model\\w_03__nekker_cut_head.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "8370D787-2969FC26-C5DFD4D7-DD79EC4B",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\model\\w_03__nekkersmall_cut_head.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "BC778CF1-41DDCEF3-45B92CC0-0BD3326B",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\model\\w_04__nekker_explode_top.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "7FE5EAB5-890EE1B3-5C693A22-BAA31504",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\model\\w_04__nekkersmall_explode_top.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "28A4B7AF-D042D36C-65E1DCD2-FF522A24",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\model\\w_05__nekker_explode_bottom.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "988521AC-1F19E4DF-F08725C2-E3CFBB28",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\model\\w_05__nekkersmall_explode_bottom.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "977213A0-7C3E4D91-62DC3A8F-14C2539D",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\model\\w_06__nekker_gash_head.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "53242374-7B104668-0DD35ECD-22B9376D",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\model\\w_07__nekker_gash_front.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "74F2D8D5-74A4F32D-F734D55D-7201E620",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\model\\w_07__nekkersmall_gash_front.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "FC0AB5CD-B4CF00E9-84137672-050BC359",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\model\\w_08__nekker_gash_back.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "3241F084-4FAED81D-7F25D1D5-D06B432F",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\model\\w_08__nekkersmall_gash_back.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "4A7996E4-C38A9A64-9848C430-7793DC73",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\t_02__nekker.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "F7A70317-6C3563AC-299C197F-E9CD3FED",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\w_01__nekker_cut_arm_part.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "1F92762D-EE1872DB-4C0DC832-F62E494A",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\w_01__nekkersmall_cut_arm_part.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "85CF72D5-1D91A761-B4CF2989-E10E5004",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\w_02__nekker_cut_torso_part.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "5532F00E-82D03A73-31FC2378-931F87B3",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\w_03__nekker_cut_head_part.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "5449E072-E2DE47B2-E6346C09-FAB67EE7",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\monsters\\nekker\\w_05__nekker_explode_foot_part.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "1359D249-8F717677-AD635828-55E75BFD",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\npc_entities\\monsters\\nekker_lvl3__warrior.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "F77C3AED-598E9D48-5D5022EF-2C59632B",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\architecture\\shipwreck\\shipwreck_back.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "982AD5B4-7C935CAC-51195E1B-FFE2DA26",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\architecture\\shipwreck\\shipwreck_broken_back.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "5E450E57-BD23D2E6-100D3553-32861574",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\architecture\\shipwreck\\shipwreck_interior_broken_back.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "3789BF79-E6FC44DC-A6CECB26-966AC482",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\architecture\\shipwreck\\shipwreck_interior_grill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "C91B674C-34316AF3-B16DFBB0-228B03CE",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\decorations\\gameplay\\generic\\cards\\gwent_card_monsters_pile.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "867D9243-8613AF67-3E7FBD73-E9CAAAF3",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\decorations\\gameplay\\generic\\cards\\gwent_card_nilfgard_pile.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "265FA439-0A88B030-62B814AD-466040C1",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\decorations\\gameplay\\generic\\food\\meat\\gen_cheesehalf_b.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "55E8245B-D5FFCDE6-AEF49957-160E953F",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\decorations\\gameplay\\generic\\food\\meat\\gen_cheesequarter_b.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "2F68DC05-23B0765D-0C64A946-6C806021",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\decorations\\gameplay\\generic\\food\\meat\\gen_sausage.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "D7D853AF-7C5034D7-3991B704-4FA48362",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\decorations\\gameplay\\merchant\\blacksmith\\armor\\mer_helmet_a.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "D135B4ED-1346AE84-20A4A5FD-46AEE815",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\decorations\\gameplay\\merchant\\blacksmith\\armor\\mer_helmet_c.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "E8B3EC0E-46C1C053-AAECCABE-5FF63820",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\decorations\\gameplay\\merchant\\blacksmith\\armor\\mer_neckpiece_c.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "C8C3DCB1-7864FBFA-3FD85871-E611F174",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\decorations\\gameplay\\merchant\\blacksmith\\armor\\mer_shoulderpad_a_l.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "32A0360B-E9445F2F-9E15F23A-C4885F06",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\decorations\\gameplay\\poor_district\\cups\\poor_wooden_cup.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "79EAD31A-F6655D83-4CC2B6BB-9188F867",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\decorations\\gameplay\\poor_district\\furniture\\benches\\poor_bench_d.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "FAE48F8C-096E8C80-4215D62C-D91975E3",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\decorations\\gameplay\\poor_district\\furniture\\stools\\poor_stool_a.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "95DD828D-66394D19-70B79005-F9DCB74C",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\decorations\\gameplay\\poor_district\\furniture\\tables\\poor_table_a.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "C9E68BEE-4B3FCD11-413B16F6-4699CAE8",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\decorations\\gameplay\\poor_district\\furniture\\tables\\poor_table_b.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "7E3593E7-CDF79D71-A73A9342-E5064A0B",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\decorations\\gameplay\\poor_district\\jugs\\poor_metal_jug_b.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "AB8EE6C2-56FDDA32-A6ED2918-964609F4",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\decorations\\gameplay\\poor_district\\misc\\poor_chopping_board_round.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "0C701E8B-5C47FE8E-71802445-3E41198B",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\environment\\decorations\\gameplay\\poor_district\\tools\\poor_spoon_a.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "E0CFEABE-8914BF99-BBF2488B-ED1149CC",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\gameplay\\community\\actionpoints\\infested_vineyard\\stand_mw_upset_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "D47CFC91-3415F3FF-2A05209C-75419C59",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\gameplay\\community\\actionpoints\\quest\\mq7009_nekker_watching.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "17EE5981-045BD656-DD5AE06D-51DFA341",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\gameplay\\community\\actionpoints\\resting\\sit_2_md_playing_cards_table_ap.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "3B32EF99-D77796E7-FE451ACD-72D45811",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\gameplay\\community\\actionpoints\\resting\\sit_4_m_playing_knife_table_ap.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "3D647A94-9797F062-652A830C-5E1F2FB8",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\gameplay\\community\\actionpoints\\work\\stand_m_armorer_fixing_table_02_ap.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "CE47E106-FCAEA2E4-FC3D4EB8-F2FAF91C",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\gameplay\\community\\actionpoints\\work\\stand_m_dancing_drunk_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "0A290FD7-0A108EE6-13A181D9-E750C951",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\bob\\data\\gameplay\\door\\pushable\\push_bob_elven_ruins_wood_b.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "8230F4E0-6CD3E50D-22BA688F-6E702DAD",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\dlctrial7\\data\\trial7.w2quest",
+            "level": 1,
+            "class": "CQuest",
+            "seed": 1,
+            "id": "D49BAAA8-CD3D3C18-DF98DC61-64346605",
+            "diskSize": 12246,
+            "hardImports": 1,
+            "hard": [
+                "E877FC69-5A14D765-19DF9190-D3F9B4FE",
+                "F3B95E0C-35B5DB1A-AF1D9858-1B8B5573",
+                "0002CAD9-B0E107F3-0371B9E9-392E13D9"
+            ],
+            "soft": [
+                "E877FC69-5A14D765-19DF9190-D3F9B4FE",
+                "F3B95E0C-35B5DB1A-AF1D9858-1B8B5573",
+                "0002CAD9-B0E107F3-0371B9E9-392E13D9"
+            ]
+        },
+        {
+            "path": "environment\\architecture\\elven\\common\\elven_ruin_set\\elven_ruins_wood_door_b.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "C6ABFBE1-AC8348CC-E033E1D9-5067051E",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\architecture\\human\\redania\\nomans_land\\thatched_buildings\\broken_thatched_house_window.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "6EA9478B-F2099125-CA42689E-3AF194B3",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\architecture\\human\\redania\\nomans_land\\thatched_buildings\\broken_thatched_houses\\broken_thatched_house_small.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "506440A9-3416CD92-AB1BE76E-4D7DC286",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\architecture\\human\\redania\\nomans_land\\thatched_buildings\\broken_thatched_houses\\broken_thatched_house_small_exterior_decoration.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "D8E79FA3-86031042-19463945-1A0F266A",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\architecture\\human\\redania\\nomans_land\\thatched_buildings\\broken_thatched_houses\\broken_thatched_house_small_exterior_roof_frame.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "DC601862-22BCCD59-01AC5874-A5C5E1FA",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\architecture\\human\\redania\\nomans_land\\thatched_buildings\\broken_thatched_houses\\broken_thatched_house_small_exterior_roof_straw.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "B9657F9C-C5D84C1D-C7E86716-8CEC888E",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\architecture\\human\\redania\\nomans_land\\thatched_buildings\\broken_thatched_houses\\broken_thatched_house_small_exterior_walls.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "6BC49E3A-69C42240-FFB5CD9D-77214D34",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\architecture\\human\\redania\\nomans_land\\thatched_buildings\\broken_thatched_houses\\broken_thatched_house_small_interior_roof_frame.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "A28FCDF0-59EB96C5-769FF721-2F92589A",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\architecture\\human\\redania\\nomans_land\\thatched_buildings\\broken_thatched_houses\\broken_thatched_house_small_interior_roof_straw.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "FF26AC11-A6B0A50F-CD8D1E07-9EE7A5C0",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\architecture\\human\\redania\\nomans_land\\thatched_buildings\\broken_thatched_houses\\broken_thatched_house_small_interior_walls.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "5534628F-7A7C1E3B-E6B14FFA-4010DC64",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\architecture\\human\\redania\\nomans_land\\thatched_buildings\\thatched_house_corner_detail.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "44AAFDCE-5667B5A3-1269A344-1029E2D3",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\architecture\\human\\redania\\nomans_land\\thatched_buildings\\thatched_house_door_frame.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "EC4170E8-57855F20-2A28B8AC-92C0C3B3",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\blockout_base\\box_wood.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "03A046B4-6F1AA101-CC9746B7-6F5FA56F",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\blockout_base\\capsule_wood.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "F5CE598E-A1FA60B0-5FC47FF0-3978003D",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\bathhouse_assets\\small_oil_bottle.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "E5B80BA6-696098BD-B0F83486-DBB68C41",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\books\\book_c.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "04475875-EE52CFEA-14CB0F40-B1B77078",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\books\\book_e.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "D5AEBAD5-714175C1-EACF5D21-3508F04D",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\containers\\bags\\bundle.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "742AA728-E00EEBFB-1E86D925-5BC4AD23",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\containers\\barrel\\barrel_closed_metal_dirty.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "CDCB9780-8F7B7060-5F266BD6-F3C004D6",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\containers\\chests\\small_round_chest\\small_round_chest.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "375CD40C-30721062-CBBFA631-3E26CF38",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\corpses\\animal_corpses\\bear_berserker_corpse\\corps_01_bear_berserker.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "64822126-43A2254D-2997DF72-84B7B4FE",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\corpses\\animal_corpses\\bear_berserker_corpse\\model\\bear_berserker_corps_fur.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "7BA53B32-0A66FDB8-50E5A581-682B6532",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\corpses\\animal_corpses\\bear_berserker_corpse\\model\\bear_berserker_corpse.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "5A6E72E5-AC4FD7DD-9D73611C-B2EAD427",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\corpses\\animal_corpses\\dog_corpse\\corps_01_dog.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "1F21250A-C66CD71C-F893CFE3-243C28BD",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\corpses\\animal_corpses\\dog_corpse\\model\\t_01__dog_corps.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "91A0267E-7DF9B28C-F14F1D9C-9DFDE9AE",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\corpses\\human_corpses\\skellige_pirate_corpses\\corpse_01_skellige_pirate.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "713E20DB-F249F12C-B2486702-AE4A314B",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\corpses\\human_corpses\\skellige_pirate_corpses\\corpse_04_skellige_pirate.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "825663C5-4E6D220B-B7C8CE68-D327DE3B",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\corpses\\human_corpses\\skellige_pirate_corpses\\corpse_06_skellige_pirate.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "DE9046CB-B468B7ED-FF3D616D-79AABE6D",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\decoration_sets\\houses\\thatched_houses\\decoration_set_thatched_small_b\\decoration_set_thatched_small_b_nonstatic.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "376D226C-E46151F3-8865AB3F-38B82B48",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\decoration_sets\\houses\\thatched_houses\\decoration_set_thatched_small_b\\meshes\\thatched_small_b_ns_room_a.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "B4C90376-1615257D-4B964120-7D349898",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\decoration_sets\\houses\\thatched_houses\\decoration_set_thatched_small_b\\meshes\\thatched_small_b_ns_room_b.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "40C45AF0-D2C84216-A7F97BF1-D48F33FA",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\decoration_sets\\houses\\thatched_houses\\decoration_set_thatched_small_b\\meshes\\thatched_small_b_ns_room_b_bed.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "76B801DB-168ABAD1-E3277A40-95CED914",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\food\\herbs\\herb_bag_a.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "BFD81AF4-6C64BAE3-B88BC714-6BD4A40D",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\food\\herbs\\herb_bag_b.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "CBCE71B7-1A201A76-7FEB08BA-BA5767B5",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\food\\herbs\\herb_bag_d.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "A1354049-7983EE67-5A4D7FD6-9E5AB759",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\food\\herbs\\herb_bag_f.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "E395CBC9-06ECA903-D43D61DA-1DED1616",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\food\\herbs\\herb_bundle_a.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "7AA2E823-08970FA8-5FEBBD06-4712E4A0",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\food\\herbs\\jug_herbs_closed.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "383BAACE-2E475D26-D5DC6820-EFD491E0",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\food\\herbs\\jug_herbs_closed_px.redapex",
+            "level": 1,
+            "additional": 1,
+            "id": "A21404B1-A37FB839-69406E65-E2E7D0E3",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\furniture\\barons_manor\\big_bottle.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "3C1417E7-A9554475-1F90990F-ED3EB3D7",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\housework\\bowl\\bowl.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "8852D5ED-810CD8CB-011528AD-C43793BB",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\housework\\dishes\\dishes_small\\dish_small_pot.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "BA780EC7-91C8EC2A-8F562162-C13AD796",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\housework\\dishes\\jugs\\jug_blue.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "F29318E0-C54A3195-D3A11475-17015E11",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\housework\\dishes\\jugs\\jug_green_b.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "30DDCCA6-DD643924-46730EFE-B4EB145F",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\housework\\dishes\\jugs\\jug_red_a.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "7351C6C9-8A4A0E53-6C6888BF-08B52AD0",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\housework\\dishes\\jugs\\jug_wicker_a.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "F9BB1C7F-F06A6A8C-092B45FC-0D9A7671",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\housework\\hunters_items\\hanging_pot_big_dangling.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "C59C82C0-F2777293-D25B9494-F9B2655E",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\light_sources\\campfire\\campfire_02_cave.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "390F8AF0-7C35DB66-15140122-4168EF87",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\light_sources\\campfire\\troll_campfire.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "94CB8072-0A60DC8C-5D90B8B0-5FB4BBA8",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\trade\\market_stand_poor\\stall_tent_single_a_frame.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "E71A113E-5105BDF5-A417D934-C3CA8A8C",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\trade\\market_stand_poor\\stall_tent_single_a_px.redcloth",
+            "level": 1,
+            "additional": 1,
+            "id": "F943C616-A6F68222-C6ADAFA5-343E14AC",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\trade\\market_stand_poor\\stall_tent_single_a_px.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "DD2DA0B4-450D6854-1BBC9454-9BD64C78",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\trade\\market_stand_poor\\stall_tent_single_a_volume.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "9D514242-3CFE00E6-9DAC51D7-C12F0558",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\trade\\market_stand_poor\\stall_tent_single_c2_px.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "F51BCEFE-92E6DE55-3FC8F1D2-280E5369",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\trade\\market_stand_poor\\stall_tent_single_c_frame_no_volume.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "5BDC184E-881E28DE-F229986A-73945ED3",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\trade\\market_stand_poor\\stall_tent_single_c_px.redcloth",
+            "level": 1,
+            "additional": 1,
+            "id": "A4418FDD-4CACA93A-4373C154-A84CD6B7",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\trade\\market_stand_poor\\stall_tent_single_c_volume.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "D5932F1A-1B393283-63E72C6E-0A81D8AB",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\textures_tileable\\decals\\blood_splash_spray_medium.xbm",
+            "level": 1,
+            "additional": 1,
+            "id": "9ED490CB-1C7D9D9E-E2B939A6-1B49ACA4",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\textures_tileable\\decals\\blood_splash_spray_small.xbm",
+            "level": 1,
+            "additional": 1,
+            "id": "79F0FC0D-C0ECE6F7-2F05DD01-129FAAE6",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\textures_tileable\\decals\\dirt\\dark_rotten_stains.xbm",
+            "level": 1,
+            "additional": 1,
+            "id": "160DCF66-600ED743-B862C8C5-A33F83B4",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\weather_volume\\volume_house.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "01FBE1C5-E768615A-5874BE5F-C0727763",
+            "hardImports": 1
+        },
+        {
+            "path": "fx\\blood\\blood_decal\\blood_decal_1.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "B90F798C-17C32B09-708276A6-8EA8356F",
+            "hardImports": 1
+        },
+        {
+            "path": "fx\\blood\\blood_decal\\blood_decal_4.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "A2029C79-C21AC6A7-4C3F6325-CB4CA620",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\behaviors\\cutscene_graph.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "90C2E23C-720E1B50-9CBE98FE-968C64BB",
+            "hardImports": 5
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\minigames\\drinking_contestant.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "D572C9A5-D2F67989-6C75AEB1-2770D896",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\minigames\\npc_drinking_minigame_bartender.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "D5E7D65E-4B8A6BC9-C2A3FFAD-CDFFF16C",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\monster_nekker_combat.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "87B6008C-310B13E4-DCA8522B-30A1A24B",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\npc_2handed_combat.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "AC275ECF-A29B9F30-8C49EAAB-550D4F8C",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\npc_bow_combat.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "F9BF45C5-28E7D2BD-5689C6F5-4103C9E0",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\npc_exploration.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "D51C05CD-E0BB26B6-7740A9A9-D69FC207",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\npc_fists_combat.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "1A24ABAF-61029117-B994CBDB-E4977E39",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\npc_overlay.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "17F6966B-6C0CCEA3-16CBABC0-77510DF6",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\npc_shield_combat.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "FA4D12E7-ED1F9EA4-47306323-6A877B84",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\npc_sword_1handed_combat.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "B49861FD-8E0765D1-BE156FDC-29D832F5",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\npc_sword_2handed_combat.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "20245EC3-BD8E07DE-654C7AB0-9F1399A3",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\npc_witcher_combat.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "5241974D-F83A86FB-1AAE64CE-052962C6",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\behaviors\\pc\\behaviorgraph\\pc_dialog.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "4DBB6B3A-B78A7170-3A8B107D-031789FD",
+            "hardImports": 5
+        },
+        {
+            "path": "gameplay\\behaviors\\pc\\behaviorgraph\\pc_sailing.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "D359A57E-5B69FFA1-BC4F124B-20456A29",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\behaviors\\pc\\steering\\pc_steering.w2steer",
+            "level": 1,
+            "additional": 1,
+            "id": "6B968F3C-6DA186D6-89EC3929-05FC9E23",
+            "hardImports": 5
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\dining\\sit_table_sleeping.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "01E28930-2BF54F96-982B48D8-0DAB3BE7",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\dining\\stand_mw_drinking_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "9434A3C0-34A2054D-7578D878-2F61E991",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\emotional\\stand_mw_cheering_loud_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "34122385-7813A7BD-D00880C4-6362B2B3",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\feast\\stand_m_party_short_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "609576C9-F13F8834-BF5B1507-5663FB17",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\guarding\\stand_m_oillamp_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "E0496EB3-A102934B-2806DFC5-FE0C5A49",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\guarding\\stand_mw_looking_around_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "C1EF1922-40952DB6-9FA32625-07A6D17F",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\monsters\\nekker_angry_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "2E988E18-87599404-3A23494E-0D28D2BD",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\monsters\\nekker_eating_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "E31077B1-8754C8E4-282340BB-27EC32F5",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\rain\\rain_kneel_m_squat_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "6459055E-48A82DB5-84BF189F-604271B7",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\rain\\rain_stand_m_hopeless_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "CF173D9B-39885CD7-53605CBF-106E8128",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\rain\\rain_stand_m_nervous_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "7A1D71FF-B9289549-66D8C8F6-86314AF3",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\rain\\rain_stand_m_scratching_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "AEF64F6B-57CB5A0C-396B821B-91022430",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\rain\\rain_stand_m_spit_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "E9B53C6F-04B7F7CE-25AB332E-D79E6DFA",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\rain\\rain_stand_m_torch_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "40483D32-4D2548AE-6BCBDC87-C7642FD1",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\rain\\rain_stand_m_warming_up_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "48CB1A04-2A5D5F02-6FCA633B-8869E624",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\rude\\stand_m_puke_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "6AD2717A-FCBA580E-942F6252-D873703E",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\sleeping\\lie_mwdc_sleep_ground_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "946AB0D3-C8F2420F-95797302-16AC242A",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\combat\\npc_attackaction_basic.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "19A4E76D-E0112B06-30A9B247-CE5105D7",
+            "hardImports": 3
+        },
+        {
+            "path": "gameplay\\trees\\combat\\npc_attackaction_fists.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "A134838D-638D86CA-54E01E7B-430C2205",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\combat\\npc_attackaction_simple.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "B9878BF9-542749E7-C3EF2C38-E028D084",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\combat\\npc_attackaction_twohanded.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "826ECD42-9173FF4E-9FB8ACF2-3924CA61",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\combat\\npc_attackbehavior.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "7E46BC24-3CF791FF-F3B4890B-F09AE0DE",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\combat\\npc_combatstyle.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "909239E1-C828F998-0B3071B3-3BAB9044",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\combat\\npc_def_counter.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "A8E4456C-22F9B27B-EA346054-3393AEDA",
+            "hardImports": 3
+        },
+        {
+            "path": "gameplay\\trees\\combat\\npc_def_counterhit.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "CC343E91-5843E44B-637FFC79-64F2180D",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\combat\\npc_def_dodge.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "4562B796-AC563743-9D5F4C4F-C25EC353",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\combat\\npc_def_parry.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "216350F9-7F0C7644-00EC62B6-48F2F5D0",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\combat\\npc_tactic_surround.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "DDD6C502-54A01AEE-9771F831-72660597",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\combat\\npc_tactic_surround_close.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "325808EF-139B86EE-E55EABB4-4744BF3C",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\death\\death.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "BD1B0FDF-84F92715-A4716BFE-F61FC58B",
+            "hardImports": 5
+        },
+        {
+            "path": "gameplay\\trees\\death\\defeated.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "7555FCF5-0C3CCAC7-0F7258E7-CCBC4578",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\death\\unconscious.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "F263D393-0B499198-A126E433-DA3F769D",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\idle\\monster_idle_action_slot.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "848F06B8-BC10B02E-877F1EE0-BB5E35B5",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\idle\\monster_idle_decorator.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "2D69D265-3ABCAE02-51CB90B2-3EFFEFF3",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\idle\\npc_idle.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "02DC631C-3326C317-F2C2632A-7F870667",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\monster_base.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "8DE77910-6B825723-599DB292-0A821312",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\monster_baseaxii.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "A1A3F5DD-4E275BFF-1425A983-894F4C64",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\monster_basecombat.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "3CB5C3A1-1C7D5CF0-C037289A-F0AABE49",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\monster_basetaunt.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "10B26B0D-C0A35B76-B2EEAF92-B4BBDFE8",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\monster_damage_reaction.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "68812903-3607CA35-941AEB18-8C447FD6",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\monster_spawn_default.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "FEF331DE-BBA63D28-A294356E-72C8B765",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\monsters\\monster_nekker_logic.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "A81DA50B-CB0A9165-58737FEA-D61A5467",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\npc_base.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "6CF7BDFB-E1C781F8-D08F4B1F-122D1E89",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\npc_basecombat.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "1D7A2FF3-4EB83E7E-EF994AA8-2F29483C",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\npc_critical_state.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "3EB066A5-BA08D873-5E820EB2-0E92FF6E",
+            "hardImports": 5
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\monster_base_reactions.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "DF7D1E78-7FC9118B-9E411B04-A49220C3",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\npc_base_reactions.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "8921AE58-82B033B7-E961138E-6C4C1982",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\npc_reaction.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "07459360-596F39FD-F888EDA0-3A5434FB",
+            "hardImports": 5
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_bump.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "414DBED6-FE80D2B4-8F94DD6F-275EB3A4",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_get_scared.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "A2BB1290-6AABF180-00F03EC1-F727C4B7",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_join_fight.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "90CAFFCD-E2D97861-827DA971-B574132B",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_join_search_for_target.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "88C6A52A-D1A9A8E2-E3555186-02D93F48",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_monster_escape_in_pack.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "FA77FCFF-B87F3C6C-30AD1DA8-2F31AE6B",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_monster_lead_escape.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "52753636-5EED3CD5-B391DF6B-14DD22D3",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_move_in_pack.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "820640CF-5FBBE14C-3A3A4F9E-8846D800",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_play_around.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "3B4F4D92-B7C85BC3-F4E20536-989C0286",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_run_wild_in_pack.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "E8C634D3-A372296A-67B97363-55FD5A95",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_search_target.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "7B5700F5-BAFF1135-C0A3CCB0-FF99AAFC",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_stop_and_comment.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "A5D84A2E-3D25936E-A5FD143E-C7C9912A",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_surpirse.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "E80AD8BB-183C5BFF-E70AFEA5-78CA9C15",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_turn_hostile.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "11CDD18B-4A739B45-3AA5F007-5100D64A",
+            "hardImports": 4
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\soft_reactions_combat.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "2BFEFA72-B9322002-F7643DCF-41DC1A5F",
+            "hardImports": 4
+        },
+        {
+            "path": "items\\remains\\remains__human_01\\remains_human_inv.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "9D89F23D-55C09B3E-7780FB43-B6DCD25E",
+            "hardImports": 4
+        },
+        {
+            "path": "items\\remains\\remains__monster_01\\remains__monster_01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "21945182-BE3ECA4F-8C32E8ED-C137AE69",
+            "hardImports": 1
+        },
+        {
+            "path": "items\\weapons\\polearms\\model\\spear_01.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "D88495C5-CA85BDBC-0A11F631-30D8F618",
+            "hardImports": 1
+        },
+        {
+            "path": "items\\weapons\\polearms\\model\\spear_01_intact.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "03F265F7-9DA18057-20BEF977-441DF603",
+            "hardImports": 1
+        },
+        {
+            "path": "items\\weapons\\swords\\skellige_swords\\model\\skellige_sword_rusty.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "627799B6-5087540A-B227290D-98C9D886",
+            "hardImports": 1
+        },
+        {
+            "path": "items\\weapons\\swords\\skellige_swords\\skellige_sword_rusty.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "0371A321-2ACB2017-2F7B37DA-B25D2916",
+            "hardImports": 1
+        },
+        {
+            "path": "items\\work\\bag_human\\bag_human.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "7ADB043E-C45DD44F-5A0C404A-62069140",
+            "hardImports": 1
+        },
+        {
+            "path": "items\\work\\bottle_01\\bottle_02_dark.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "6AF667BD-9B8BA097-10898BCB-541D78A0",
+            "hardImports": 1
+        },
+        {
+            "path": "items\\work\\bottle_01\\bottle_open.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "9D8AF620-D34AD33C-EB44C4F0-061E618F",
+            "hardImports": 1
+        },
+        {
+            "path": "qa\\javier\\meshes\\proxy_blocker_box.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "AF48E6C4-4A91AE9E-5F36366B-0FA00277",
+            "hardImports": 1
+        },
+        {
+            "path": "qa\\javier\\meshes\\proxy_blocker_pyramid.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "DCA1268A-ECEF6161-546EAAF6-A3F83FEE",
+            "hardImports": 1
+        },
+        {
+            "path": "quests\\minor_quests\\no_mans_land\\quest_files\\mq1046_burning_down_the_house\\entities\\mq1046_house_fire_01_fx.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "A1640648-5B873D78-13960E36-DDE33A67",
+            "hardImports": 1
+        },
+        {
+            "path": "quests\\minor_quests\\skellige\\quest_files\\mq2002_pirate_scavengers\\characters\\mq2002_pirate_scavenger_01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "81D04BCD-79A85680-624BD0E5-0194EE2A",
+            "hardImports": 1
+        },
+        {
+            "path": "quests\\minor_quests\\skellige\\quest_files\\mq2002_pirate_scavengers\\characters\\mq2002_pirate_scavenger_02.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "445CAE43-18EE0A69-12255683-6A6AE955",
+            "hardImports": 1
+        },
+        {
+            "path": "quests\\minor_quests\\skellige\\quest_files\\mq2002_pirate_scavengers\\characters\\mq2002_pirate_scavenger_03.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "BECBD30A-03F83C88-130F20B4-110298FA",
+            "hardImports": 1
+        },
+        {
+            "path": "quests\\minor_quests\\skellige\\quest_files\\mq2002_pirate_scavengers\\characters\\mq2002_pirate_scavenger_04.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "A8E7E72D-89798EE1-6F98F0C0-26E9C02C",
+            "hardImports": 1
+        },
+        {
+            "path": "quests\\part_1\\quest_files\\q202_giant\\entities\\q202_tavern_table.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "57D756E3-02242561-2FEA3BA5-FEAFEA58",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\npc_entities\\crowd_npc\\skellige_clans\\skellige_drummond_woman.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "0D3AD140-C9C753BB-76DB9734-77D628BA",
+            "softImports": 1
+        },
+        {
+            "path": "characters\\npc_entities\\crowd_npc\\skellige_pirate\\skellige_pirate_lvl1.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "ECA05984-A30C0BD1-D7F7EE27-6ACF6A32",
+            "softImports": 1
+        },
+        {
+            "path": "characters\\npc_entities\\crowd_npc\\skellige_pirate\\skellige_pirate_lvl2.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "91EB92E7-1F6BCA42-81DF64D9-50A13C79",
+            "softImports": 1
+        },
+        {
+            "path": "characters\\npc_entities\\crowd_npc\\skellige_pirate\\skellige_pirate_lvl3.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "B433F184-C20887D0-FD191BD2-C9761847",
+            "softImports": 1
+        },
+        {
+            "path": "characters\\npc_entities\\monsters\\bear_berserker_lvl1.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "7AC603DF-744F551B-2F246316-60BA4BCE",
+            "softImports": 1
+        },
+        {
+            "path": "dlc\\dlctrial7\\data\\entities\\trial7_pirate1.w2ent",
+            "level": 0,
+            "class": "CEntityTemplate",
+            "seed": 1,
+            "id": "45CC5879-66750679-F72B19FD-F9E9F3CC",
+            "diskSize": 131233,
+            "softImports": 1,
+            "hard": [
+                "F48764A3-D860DC48-53175D59-4919F8DA",
+                "763DFB56-46E2B80A-2D943A97-E9A81345",
+                "BEE9E2F1-AC1D0E88-BBD70E9D-F8333648",
+                "6BFFD817-C93724A4-56E5C594-7DE77B37",
+                "7BE1D5DF-9B1BC8C2-63215BDF-B9DD625A",
+                "FA1B585F-699D620E-9DA6AE8D-BDFA470B",
+                "14C75C53-4C59721D-C024011F-5A6687D6",
+                "C19341B7-C3C59623-A6A53C34-9FA0037E",
+                "A7D13317-35B9C9C9-B8CB532A-1B937EA1",
+                "98AD5ED8-C62C5B1D-76459646-EC6B07DB",
+                "C4E99789-29487165-BBDBDED8-B0FDE292",
+                "9350D543-A1606A76-FB358802-8C6EF85F",
+                "5800D642-E85F53E4-AB36B42F-16448968",
+                "D86936C0-9959E9AF-395843CA-98DD0911",
+                "1DDCF83C-D80851D2-7AC06BA5-397646D9",
+                "A449F4DA-F1A71046-C2B47DEB-DE890603",
+                "8329A1A2-F00BDE1D-12257CD5-659ACB5D",
+                "FABCD3CB-3AAD1374-ADD686C2-7EC8C226",
+                "B2760CAC-EBAC9096-D619C3B5-689FF187",
+                "31B89D17-6FA37E22-9498ACFF-AE4827B1",
+                "EA322A46-7E5DC028-6078B0CC-579CD14C",
+                "29529901-8DB67944-92ACA73C-E70C6117",
+                "00C056C9-F3FE4C39-0E67B446-1EE30939",
+                "6944C326-D49959B2-FED2482C-5D9C00B1",
+                "B5A0FE22-428C1BAD-438EC9A0-5A2914A5",
+                "9AE20C59-C9573D32-D23712F1-B7F748AB",
+                "4951FF29-64DAFF4F-3CF31A60-6A82ED0D",
+                "64898EF6-7A77CA6F-CC85FD96-003A84A4",
+                "636B438F-59E609EE-4F7BA237-1461740E",
+                "5488311A-98774D8A-99ECDBC7-E4052B9B",
+                "C92F3597-989AAB54-2310873D-4845A7EC",
+                "B8EEB126-167EAFB7-48683BEA-D7C4F49D",
+                "D55F12E1-86E5A487-D1D2E996-B30A00B0",
+                "DF05D550-3D3CFBEC-CCC44CDE-271F705F",
+                "D7421C17-C9BF9285-652DFD40-07523B0D",
+                "24493A5E-A0DCC8CF-948B4F88-C08B4F24",
+                "726A3185-E9E9AC5B-C7BD1D17-D12639D5",
+                "BCEA0B38-EEAB9477-6D4BA129-7637C185",
+                "06677E63-0B7E3649-5DBBBA7C-F8E08D27",
+                "3494303D-539E13BB-D20C1703-3F7FEFE5",
+                "6AF83085-C14467FE-1D699DB3-0F467CA6",
+                "D7FD67C7-12E2E407-6FA94695-B7AAF261",
+                "7A97D61E-41B5B388-1CE15E57-5D29A932",
+                "6E332C48-BD35841E-08AD401A-C958DF31",
+                "35EC2306-4C7720C2-271586FD-4E0C62C0",
+                "D36397B2-AFA57E74-A0EC7607-1A6C90BA",
+                "56C6732F-F2DA5A5A-180F70D9-F100504A",
+                "BFC9AA53-F15A5C6A-3A1A4341-FEB2C548",
+                "05872C61-EA63022D-C70F4390-44FE7DAB",
+                "DD3240AF-9119BCEC-71E5D915-B428E1B8",
+                "1F58C530-10F7199A-A3B3F3D2-C6981FE7",
+                "C42395B9-1038CD3C-A6862FBE-37966B8E",
+                "54796663-CA4E92EF-6E51E5A9-AF143DEA",
+                "11A9D291-60CD1CD1-BA356DFF-5730C142",
+                "619AC824-3C66BB72-61BA8F1E-0FAE1173",
+                "5D732E9D-86EF55FD-01E7F83A-C8A59956",
+                "B51F0976-ACC23E60-37BE612F-8A0B3DA7",
+                "0A54BD1E-A225B635-4B9889FC-F70C4B85",
+                "608E4A85-3F020031-B8342A49-7E864F0C",
+                "331578EE-DAB6E6D3-ACA1ECBA-7DFBFD88",
+                "6B12FE78-82C40EB8-4A707405-5C22C431",
+                "E25459D6-00715012-E73438BA-660A672F",
+                "F62C99CF-622D6947-DD86522F-ABFA25FF",
+                "E37071D2-DF3DDDDE-339EB398-EB7CA071",
+                "AACD2A62-92A4BA85-506F09A8-BAD315C6",
+                "E0AC081D-F5158459-64541A61-A7C9CEE2",
+                "0141F883-F15C29E4-9E2E338E-6178DDF7",
+                "D458314D-8BC9F01C-3C9194C7-3E800F87",
+                "A32E6486-06966ED6-80F313C6-EBD3E2FB",
+                "2EDAC3F5-7E8028A3-9D005AC4-44E39934",
+                "20CBBDF0-9300C24E-E30B3A64-B5324350",
+                "2C2C8925-67E3F5C3-AF42F911-5BAB5574",
+                "6A03FC8B-69EC245C-18B0830F-5B45C695",
+                "D0CD1DE4-4678F83C-D71184EA-B01044AA",
+                "31AF0E27-938D50B5-3B85438F-F804108B",
+                "3E3917D8-640E6A84-A1485408-63B9B0C6",
+                "AA135326-E47BCFB4-75709025-717B4B01",
+                "8AB9240A-8A0B35CA-70540D76-95E52289",
+                "00386D4E-CE9C4EA2-213F1432-4C4E1484",
+                "4EF10548-995FB136-53614D7E-70651777",
+                "2AABA613-8857C29C-FF64CDC2-9D9878D1",
+                "A2436D28-F01238BD-8AC3705E-AB7C067C",
+                "D9F45E90-7C420DF0-18B9F558-454C0B09",
+                "E1ED4343-25C1E269-A1536B42-2DEC2578",
+                "0A6FC488-39276989-E907ABFB-24F5CA2C",
+                "1BA4D3F5-4BC44CD1-1B3CC0DC-036BC2D8",
+                "66445F26-E1BC405A-1A4521ED-FD892D17",
+                "5DD01750-A5E98347-61258135-871DB963",
+                "D60AAC75-F4584A8F-45FB0959-617685C0",
+                "C015CBEE-EF7AABFA-8D295B70-83EB31CC",
+                "BC8B95F9-BEB307E2-2EB029C6-6750E90B",
+                "CB136F17-324A3E5C-B5EAA8F6-FB39B36E",
+                "33AB3BE1-2B90DEFF-C8331571-39BAEB37",
+                "0D943A8F-B2243974-203DF45B-429B9688",
+                "9391F474-F623F71C-72F28234-12C08EFE",
+                "1CC7CD95-A6C07002-7CED79BC-BA8C9D5D",
+                "8DF19053-8FE92533-A26046F0-F90AF90A",
+                "CF28CDAE-3A35688C-1DFB8E53-8945B466",
+                "9FA9FEF7-68444530-0CCDDF6F-DD8898F3",
+                "B4ED40BF-B3F540FC-DC4BF746-D0E9720F",
+                "525B2D65-4135006C-B3009301-2FC17D4B",
+                "53E76720-139D490B-64CE403F-8A8961B9",
+                "B94CF378-B14F1F5B-9A0D23EC-74B49883",
+                "32E7866E-8AE0BB3E-224306DB-3F734500",
+                "390D128F-96B7E38B-745524B4-2DD83C73",
+                "B69A17EC-5046298B-B45B2954-08E39773",
+                "17E4896F-C70B19D2-2045B724-C67D07A3",
+                "AB97CEE4-DED63415-C3A62127-664B3004",
+                "45CC561B-B3EDEA08-61032D7A-780E7853",
+                "7005D8C2-CAA3F5F2-23721813-72E3E91E",
+                "C0411735-D8B32357-E013DB52-5D08D147",
+                "CFF9FDC9-4BE9C6EC-C5B1F3B9-00431B66",
+                "3FF43F6E-40948BC9-D935F5FF-B9AE2F83",
+                "B6F64155-51EAFE8B-D909DA4C-5ADD4496",
+                "659EDED5-251AD899-47427314-6A521D35",
+                "416A530F-18C6EDCA-3EB6C864-D6809569",
+                "9DCCF175-8135CF8C-B8AE6E84-5E59E426",
+                "0FE10740-2C7D7DDB-50CD93E1-85167382",
+                "3B45C6EB-3542552C-C945AF62-FB896C5E",
+                "87D8F81B-560C85D9-A5B1C371-27D32547",
+                "357B1B05-1A630739-8FFDE045-11663A4C",
+                "B7CB8575-22ECA965-35697C15-72D9D45C",
+                "83BFAC19-1081C4A5-6C2AE994-0C4B4912",
+                "DED45948-755CAAEA-05A81560-02C56C35",
+                "B4308F31-4128EEE6-24236ACC-09E776CE",
+                "2DD3D156-49A21026-30574DD2-07F1EE36",
+                "402403E2-12E04E23-65D0F9DF-A0FC2821",
+                "8B4D83DD-87358075-25F52CA7-DD7C26CE",
+                "82BBF80F-6ECA5AB2-3BE2128E-6CEB6894",
+                "DBE169C3-ED878605-0E4FD180-6927CA46",
+                "3AD1006C-6575D1CE-6D8BB40E-CC9296EE",
+                "90C2E23C-720E1B50-9CBE98FE-968C64BB",
+                "D572C9A5-D2F67989-6C75AEB1-2770D896",
+                "D5E7D65E-4B8A6BC9-C2A3FFAD-CDFFF16C",
+                "AC275ECF-A29B9F30-8C49EAAB-550D4F8C",
+                "F9BF45C5-28E7D2BD-5689C6F5-4103C9E0",
+                "D51C05CD-E0BB26B6-7740A9A9-D69FC207",
+                "1A24ABAF-61029117-B994CBDB-E4977E39",
+                "17F6966B-6C0CCEA3-16CBABC0-77510DF6",
+                "FA4D12E7-ED1F9EA4-47306323-6A877B84",
+                "B49861FD-8E0765D1-BE156FDC-29D832F5",
+                "20245EC3-BD8E07DE-654C7AB0-9F1399A3",
+                "5241974D-F83A86FB-1AAE64CE-052962C6",
+                "4DBB6B3A-B78A7170-3A8B107D-031789FD",
+                "D359A57E-5B69FFA1-BC4F124B-20456A29",
+                "6B968F3C-6DA186D6-89EC3929-05FC9E23",
+                "19A4E76D-E0112B06-30A9B247-CE5105D7",
+                "A134838D-638D86CA-54E01E7B-430C2205",
+                "B9878BF9-542749E7-C3EF2C38-E028D084",
+                "7E46BC24-3CF791FF-F3B4890B-F09AE0DE",
+                "909239E1-C828F998-0B3071B3-3BAB9044",
+                "A8E4456C-22F9B27B-EA346054-3393AEDA",
+                "4562B796-AC563743-9D5F4C4F-C25EC353",
+                "216350F9-7F0C7644-00EC62B6-48F2F5D0",
+                "DDD6C502-54A01AEE-9771F831-72660597",
+                "325808EF-139B86EE-E55EABB4-4744BF3C",
+                "BD1B0FDF-84F92715-A4716BFE-F61FC58B",
+                "7555FCF5-0C3CCAC7-0F7258E7-CCBC4578",
+                "F263D393-0B499198-A126E433-DA3F769D",
+                "02DC631C-3326C317-F2C2632A-7F870667",
+                "6CF7BDFB-E1C781F8-D08F4B1F-122D1E89",
+                "1D7A2FF3-4EB83E7E-EF994AA8-2F29483C",
+                "3EB066A5-BA08D873-5E820EB2-0E92FF6E",
+                "8921AE58-82B033B7-E961138E-6C4C1982",
+                "07459360-596F39FD-F888EDA0-3A5434FB",
+                "414DBED6-FE80D2B4-8F94DD6F-275EB3A4",
+                "A2BB1290-6AABF180-00F03EC1-F727C4B7",
+                "90CAFFCD-E2D97861-827DA971-B574132B",
+                "A5D84A2E-3D25936E-A5FD143E-C7C9912A",
+                "E80AD8BB-183C5BFF-E70AFEA5-78CA9C15",
+                "11CDD18B-4A739B45-3AA5F007-5100D64A",
+                "2BFEFA72-B9322002-F7643DCF-41DC1A5F",
+                "9D89F23D-55C09B3E-7780FB43-B6DCD25E",
+                "81D04BCD-79A85680-624BD0E5-0194EE2A"
+            ],
+            "soft": [
+                "6C6A321E-9527FDBF-12521936-E628C979",
+                "4CAA7816-1B771FDB-69D11628-8D51DA43",
+                "73EA500C-8936C5BC-FC55C627-78FB5742",
+                "26F6FABA-FF8697EC-EC88DF5E-78FD9795"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial7\\data\\entities\\trial7_pirate2.w2ent",
+            "level": 0,
+            "class": "CEntityTemplate",
+            "seed": 1,
+            "id": "68E843BA-5CF9F5F6-910AAAD2-C114E9E2",
+            "diskSize": 132607,
+            "softImports": 1,
+            "hard": [
+                "F48764A3-D860DC48-53175D59-4919F8DA",
+                "763DFB56-46E2B80A-2D943A97-E9A81345",
+                "BEE9E2F1-AC1D0E88-BBD70E9D-F8333648",
+                "6BFFD817-C93724A4-56E5C594-7DE77B37",
+                "7BE1D5DF-9B1BC8C2-63215BDF-B9DD625A",
+                "FA1B585F-699D620E-9DA6AE8D-BDFA470B",
+                "14C75C53-4C59721D-C024011F-5A6687D6",
+                "C19341B7-C3C59623-A6A53C34-9FA0037E",
+                "A7D13317-35B9C9C9-B8CB532A-1B937EA1",
+                "98AD5ED8-C62C5B1D-76459646-EC6B07DB",
+                "C4E99789-29487165-BBDBDED8-B0FDE292",
+                "9350D543-A1606A76-FB358802-8C6EF85F",
+                "5800D642-E85F53E4-AB36B42F-16448968",
+                "D86936C0-9959E9AF-395843CA-98DD0911",
+                "1DDCF83C-D80851D2-7AC06BA5-397646D9",
+                "A449F4DA-F1A71046-C2B47DEB-DE890603",
+                "8329A1A2-F00BDE1D-12257CD5-659ACB5D",
+                "FABCD3CB-3AAD1374-ADD686C2-7EC8C226",
+                "B2760CAC-EBAC9096-D619C3B5-689FF187",
+                "31B89D17-6FA37E22-9498ACFF-AE4827B1",
+                "EA322A46-7E5DC028-6078B0CC-579CD14C",
+                "29529901-8DB67944-92ACA73C-E70C6117",
+                "00C056C9-F3FE4C39-0E67B446-1EE30939",
+                "6944C326-D49959B2-FED2482C-5D9C00B1",
+                "B5A0FE22-428C1BAD-438EC9A0-5A2914A5",
+                "9AE20C59-C9573D32-D23712F1-B7F748AB",
+                "4951FF29-64DAFF4F-3CF31A60-6A82ED0D",
+                "64898EF6-7A77CA6F-CC85FD96-003A84A4",
+                "636B438F-59E609EE-4F7BA237-1461740E",
+                "5488311A-98774D8A-99ECDBC7-E4052B9B",
+                "C92F3597-989AAB54-2310873D-4845A7EC",
+                "B8EEB126-167EAFB7-48683BEA-D7C4F49D",
+                "D55F12E1-86E5A487-D1D2E996-B30A00B0",
+                "DF05D550-3D3CFBEC-CCC44CDE-271F705F",
+                "D7421C17-C9BF9285-652DFD40-07523B0D",
+                "24493A5E-A0DCC8CF-948B4F88-C08B4F24",
+                "726A3185-E9E9AC5B-C7BD1D17-D12639D5",
+                "BCEA0B38-EEAB9477-6D4BA129-7637C185",
+                "06677E63-0B7E3649-5DBBBA7C-F8E08D27",
+                "3494303D-539E13BB-D20C1703-3F7FEFE5",
+                "6AF83085-C14467FE-1D699DB3-0F467CA6",
+                "D7FD67C7-12E2E407-6FA94695-B7AAF261",
+                "7A97D61E-41B5B388-1CE15E57-5D29A932",
+                "6E332C48-BD35841E-08AD401A-C958DF31",
+                "35EC2306-4C7720C2-271586FD-4E0C62C0",
+                "D36397B2-AFA57E74-A0EC7607-1A6C90BA",
+                "56C6732F-F2DA5A5A-180F70D9-F100504A",
+                "BFC9AA53-F15A5C6A-3A1A4341-FEB2C548",
+                "05872C61-EA63022D-C70F4390-44FE7DAB",
+                "DD3240AF-9119BCEC-71E5D915-B428E1B8",
+                "1F58C530-10F7199A-A3B3F3D2-C6981FE7",
+                "C42395B9-1038CD3C-A6862FBE-37966B8E",
+                "54796663-CA4E92EF-6E51E5A9-AF143DEA",
+                "11A9D291-60CD1CD1-BA356DFF-5730C142",
+                "619AC824-3C66BB72-61BA8F1E-0FAE1173",
+                "671419FF-C9F58697-788D43CE-A6014AD0",
+                "D81811F8-6F291100-0752D85B-0C243631",
+                "2FA4E2DA-52FC1505-3793BD7C-8DA00008",
+                "F2C6ED4A-F76CF4BF-5D73C004-B8E5A19C",
+                "76D4BF77-F6766734-5E51432A-2D277220",
+                "64F39FA9-78B1C28C-0E4CDC73-BA30F6BB",
+                "20B91FA6-F95BAA23-1CA1964B-794662BC",
+                "62907ECC-2AFA14AA-9B717965-3FC9D7BB",
+                "331578EE-DAB6E6D3-ACA1ECBA-7DFBFD88",
+                "6B12FE78-82C40EB8-4A707405-5C22C431",
+                "265DB80B-4E5C0A2F-A73CD214-74A2AB4E",
+                "9BCA3801-C5460078-AA506E55-1C3C7BD9",
+                "380FF769-436AEFAF-229AC96A-BABCC5AA",
+                "107F56DA-94038013-1D155B7B-F4B88FA8",
+                "B4DE163D-8668826D-5C059AF7-5807EF93",
+                "D58BDF40-50B955B7-6E6F88E7-13EB2E6A",
+                "AE104525-1E719B8D-A05527DC-2387D52D",
+                "BC798874-D4CDE301-DFB3CCAD-991D305B",
+                "CEB8523E-10161DE3-1CAA2DD4-E93DF6C2",
+                "EC84543E-DAEB6EF6-163B3632-08179C43",
+                "7F95A2BC-6772234A-138AACBE-E967078F",
+                "658CA4B6-A43AFFC0-48881529-51F20C12",
+                "6A03FC8B-69EC245C-18B0830F-5B45C695",
+                "D0CD1DE4-4678F83C-D71184EA-B01044AA",
+                "31AF0E27-938D50B5-3B85438F-F804108B",
+                "3E3917D8-640E6A84-A1485408-63B9B0C6",
+                "AA135326-E47BCFB4-75709025-717B4B01",
+                "8AB9240A-8A0B35CA-70540D76-95E52289",
+                "00386D4E-CE9C4EA2-213F1432-4C4E1484",
+                "4EF10548-995FB136-53614D7E-70651777",
+                "2AABA613-8857C29C-FF64CDC2-9D9878D1",
+                "A2436D28-F01238BD-8AC3705E-AB7C067C",
+                "D9F45E90-7C420DF0-18B9F558-454C0B09",
+                "E1ED4343-25C1E269-A1536B42-2DEC2578",
+                "0A6FC488-39276989-E907ABFB-24F5CA2C",
+                "1BA4D3F5-4BC44CD1-1B3CC0DC-036BC2D8",
+                "66445F26-E1BC405A-1A4521ED-FD892D17",
+                "5DD01750-A5E98347-61258135-871DB963",
+                "D60AAC75-F4584A8F-45FB0959-617685C0",
+                "C015CBEE-EF7AABFA-8D295B70-83EB31CC",
+                "BC8B95F9-BEB307E2-2EB029C6-6750E90B",
+                "CB136F17-324A3E5C-B5EAA8F6-FB39B36E",
+                "33AB3BE1-2B90DEFF-C8331571-39BAEB37",
+                "0D943A8F-B2243974-203DF45B-429B9688",
+                "9391F474-F623F71C-72F28234-12C08EFE",
+                "1CC7CD95-A6C07002-7CED79BC-BA8C9D5D",
+                "8DF19053-8FE92533-A26046F0-F90AF90A",
+                "CF28CDAE-3A35688C-1DFB8E53-8945B466",
+                "9FA9FEF7-68444530-0CCDDF6F-DD8898F3",
+                "B4ED40BF-B3F540FC-DC4BF746-D0E9720F",
+                "525B2D65-4135006C-B3009301-2FC17D4B",
+                "97289859-43D28D6C-3977D3B2-50B78040",
+                "608D4790-3B16A254-7A4D7775-E7D254A7",
+                "3B13A2F0-5F2BCFD4-53CCC3B1-6D6ACDA5",
+                "4E44F557-2951640C-8FADF162-C86CF110",
+                "53E76720-139D490B-64CE403F-8A8961B9",
+                "B94CF378-B14F1F5B-9A0D23EC-74B49883",
+                "34047DA2-CC324956-EF8BDB8D-2DEC35A1",
+                "D164F99A-0F27B706-8E244A0C-722EC9A6",
+                "BE84E148-5C2E360B-E5A89853-D266474C",
+                "F7CFB85B-1555BBA1-C8A0AF5D-845BE8F2",
+                "9246ED05-E3DB35F5-D4364CE2-C2B83D48",
+                "390D128F-96B7E38B-745524B4-2DD83C73",
+                "B69A17EC-5046298B-B45B2954-08E39773",
+                "81DFBD7E-6F5F3F37-44764148-022B48F6",
+                "3DBBD4CE-484E2BBC-981AB57D-DF598E47",
+                "5FBBA252-A12528FA-A206F19E-783D6824",
+                "7005D8C2-CAA3F5F2-23721813-72E3E91E",
+                "CFF9FDC9-4BE9C6EC-C5B1F3B9-00431B66",
+                "3FF43F6E-40948BC9-D935F5FF-B9AE2F83",
+                "B6F64155-51EAFE8B-D909DA4C-5ADD4496",
+                "464B68C5-6FAFDCBC-E02A4DD9-5D7E8F2F",
+                "416A530F-18C6EDCA-3EB6C864-D6809569",
+                "9DCCF175-8135CF8C-B8AE6E84-5E59E426",
+                "1E2513F3-A294B7EA-6F7CC532-2EF6B4DC",
+                "48BE0F88-31947ACC-4339AA9B-C686B131",
+                "D7C922FF-A2300AA3-66F1FF66-3E8BEFC4",
+                "357B1B05-1A630739-8FFDE045-11663A4C",
+                "96E88983-ACA29BB5-7DFD06BF-C6105290",
+                "6EA36E27-BA0A0C36-2640EAF2-56344194",
+                "D57C7519-FC2D19AF-F5E61965-69F013A1",
+                "64743D40-9E4C3691-0426664D-4D917A1B",
+                "4B865A06-A6C33C9E-2FDEE5F3-2E1C4319",
+                "8122EFB1-7BBE7AD0-C635644C-C912FC77",
+                "6717C3EC-54ED0DDB-CE4257A5-A0FBD0B3",
+                "73D5D31F-1D5BBA5E-60C321CB-45A06AE0",
+                "1EC3BB7D-6EE8BD1A-523129AE-60BE742F",
+                "9E6BDAFB-C874D8F1-E6772B16-EC77A84B",
+                "77CCADF2-36F0684F-07385F93-497F3DA6",
+                "C656DD60-39E51467-20B9985A-D6C3E12E",
+                "E70AD076-4AF7EC88-15CEF916-5611AB47",
+                "2DB83F44-70956264-FCCC59A7-99AAD9E6",
+                "25AD8E86-9F670159-779C586C-DE6E0259",
+                "3AD1006C-6575D1CE-6D8BB40E-CC9296EE",
+                "28C575A0-91E86EC3-CAAD6123-925D6DB8",
+                "99AA205E-941B05AC-AE7B7356-133A5D37",
+                "3EBFBA1F-743EAF19-42BDB681-D6CC0261",
+                "90C2E23C-720E1B50-9CBE98FE-968C64BB",
+                "D572C9A5-D2F67989-6C75AEB1-2770D896",
+                "D5E7D65E-4B8A6BC9-C2A3FFAD-CDFFF16C",
+                "AC275ECF-A29B9F30-8C49EAAB-550D4F8C",
+                "F9BF45C5-28E7D2BD-5689C6F5-4103C9E0",
+                "D51C05CD-E0BB26B6-7740A9A9-D69FC207",
+                "1A24ABAF-61029117-B994CBDB-E4977E39",
+                "17F6966B-6C0CCEA3-16CBABC0-77510DF6",
+                "FA4D12E7-ED1F9EA4-47306323-6A877B84",
+                "B49861FD-8E0765D1-BE156FDC-29D832F5",
+                "20245EC3-BD8E07DE-654C7AB0-9F1399A3",
+                "5241974D-F83A86FB-1AAE64CE-052962C6",
+                "4DBB6B3A-B78A7170-3A8B107D-031789FD",
+                "D359A57E-5B69FFA1-BC4F124B-20456A29",
+                "6B968F3C-6DA186D6-89EC3929-05FC9E23",
+                "19A4E76D-E0112B06-30A9B247-CE5105D7",
+                "A134838D-638D86CA-54E01E7B-430C2205",
+                "B9878BF9-542749E7-C3EF2C38-E028D084",
+                "7E46BC24-3CF791FF-F3B4890B-F09AE0DE",
+                "909239E1-C828F998-0B3071B3-3BAB9044",
+                "A8E4456C-22F9B27B-EA346054-3393AEDA",
+                "4562B796-AC563743-9D5F4C4F-C25EC353",
+                "216350F9-7F0C7644-00EC62B6-48F2F5D0",
+                "DDD6C502-54A01AEE-9771F831-72660597",
+                "325808EF-139B86EE-E55EABB4-4744BF3C",
+                "BD1B0FDF-84F92715-A4716BFE-F61FC58B",
+                "7555FCF5-0C3CCAC7-0F7258E7-CCBC4578",
+                "F263D393-0B499198-A126E433-DA3F769D",
+                "02DC631C-3326C317-F2C2632A-7F870667",
+                "6CF7BDFB-E1C781F8-D08F4B1F-122D1E89",
+                "1D7A2FF3-4EB83E7E-EF994AA8-2F29483C",
+                "3EB066A5-BA08D873-5E820EB2-0E92FF6E",
+                "8921AE58-82B033B7-E961138E-6C4C1982",
+                "07459360-596F39FD-F888EDA0-3A5434FB",
+                "414DBED6-FE80D2B4-8F94DD6F-275EB3A4",
+                "A2BB1290-6AABF180-00F03EC1-F727C4B7",
+                "90CAFFCD-E2D97861-827DA971-B574132B",
+                "A5D84A2E-3D25936E-A5FD143E-C7C9912A",
+                "E80AD8BB-183C5BFF-E70AFEA5-78CA9C15",
+                "11CDD18B-4A739B45-3AA5F007-5100D64A",
+                "2BFEFA72-B9322002-F7643DCF-41DC1A5F",
+                "9D89F23D-55C09B3E-7780FB43-B6DCD25E",
+                "445CAE43-18EE0A69-12255683-6A6AE955"
+            ],
+            "soft": [
+                "6C6A321E-9527FDBF-12521936-E628C979",
+                "4CAA7816-1B771FDB-69D11628-8D51DA43",
+                "73EA500C-8936C5BC-FC55C627-78FB5742",
+                "26F6FABA-FF8697EC-EC88DF5E-78FD9795"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial7\\data\\entities\\trial7_pirate3.w2ent",
+            "level": 0,
+            "class": "CEntityTemplate",
+            "seed": 1,
+            "id": "126556C6-42EC7420-01D50FE8-9B92DE81",
+            "diskSize": 132871,
+            "softImports": 1,
+            "hard": [
+                "F48764A3-D860DC48-53175D59-4919F8DA",
+                "763DFB56-46E2B80A-2D943A97-E9A81345",
+                "BEE9E2F1-AC1D0E88-BBD70E9D-F8333648",
+                "6BFFD817-C93724A4-56E5C594-7DE77B37",
+                "7BE1D5DF-9B1BC8C2-63215BDF-B9DD625A",
+                "FA1B585F-699D620E-9DA6AE8D-BDFA470B",
+                "14C75C53-4C59721D-C024011F-5A6687D6",
+                "C19341B7-C3C59623-A6A53C34-9FA0037E",
+                "A7D13317-35B9C9C9-B8CB532A-1B937EA1",
+                "98AD5ED8-C62C5B1D-76459646-EC6B07DB",
+                "C4E99789-29487165-BBDBDED8-B0FDE292",
+                "9350D543-A1606A76-FB358802-8C6EF85F",
+                "5800D642-E85F53E4-AB36B42F-16448968",
+                "D86936C0-9959E9AF-395843CA-98DD0911",
+                "1DDCF83C-D80851D2-7AC06BA5-397646D9",
+                "A449F4DA-F1A71046-C2B47DEB-DE890603",
+                "8329A1A2-F00BDE1D-12257CD5-659ACB5D",
+                "FABCD3CB-3AAD1374-ADD686C2-7EC8C226",
+                "B2760CAC-EBAC9096-D619C3B5-689FF187",
+                "31B89D17-6FA37E22-9498ACFF-AE4827B1",
+                "EA322A46-7E5DC028-6078B0CC-579CD14C",
+                "29529901-8DB67944-92ACA73C-E70C6117",
+                "00C056C9-F3FE4C39-0E67B446-1EE30939",
+                "6944C326-D49959B2-FED2482C-5D9C00B1",
+                "B5A0FE22-428C1BAD-438EC9A0-5A2914A5",
+                "9AE20C59-C9573D32-D23712F1-B7F748AB",
+                "4951FF29-64DAFF4F-3CF31A60-6A82ED0D",
+                "64898EF6-7A77CA6F-CC85FD96-003A84A4",
+                "636B438F-59E609EE-4F7BA237-1461740E",
+                "5488311A-98774D8A-99ECDBC7-E4052B9B",
+                "C92F3597-989AAB54-2310873D-4845A7EC",
+                "B8EEB126-167EAFB7-48683BEA-D7C4F49D",
+                "D55F12E1-86E5A487-D1D2E996-B30A00B0",
+                "DF05D550-3D3CFBEC-CCC44CDE-271F705F",
+                "D7421C17-C9BF9285-652DFD40-07523B0D",
+                "24493A5E-A0DCC8CF-948B4F88-C08B4F24",
+                "726A3185-E9E9AC5B-C7BD1D17-D12639D5",
+                "BCEA0B38-EEAB9477-6D4BA129-7637C185",
+                "06677E63-0B7E3649-5DBBBA7C-F8E08D27",
+                "3494303D-539E13BB-D20C1703-3F7FEFE5",
+                "6AF83085-C14467FE-1D699DB3-0F467CA6",
+                "D7FD67C7-12E2E407-6FA94695-B7AAF261",
+                "7A97D61E-41B5B388-1CE15E57-5D29A932",
+                "6E332C48-BD35841E-08AD401A-C958DF31",
+                "35EC2306-4C7720C2-271586FD-4E0C62C0",
+                "D36397B2-AFA57E74-A0EC7607-1A6C90BA",
+                "56C6732F-F2DA5A5A-180F70D9-F100504A",
+                "BFC9AA53-F15A5C6A-3A1A4341-FEB2C548",
+                "05872C61-EA63022D-C70F4390-44FE7DAB",
+                "DD3240AF-9119BCEC-71E5D915-B428E1B8",
+                "1F58C530-10F7199A-A3B3F3D2-C6981FE7",
+                "C42395B9-1038CD3C-A6862FBE-37966B8E",
+                "54796663-CA4E92EF-6E51E5A9-AF143DEA",
+                "11A9D291-60CD1CD1-BA356DFF-5730C142",
+                "619AC824-3C66BB72-61BA8F1E-0FAE1173",
+                "671419FF-C9F58697-788D43CE-A6014AD0",
+                "D81811F8-6F291100-0752D85B-0C243631",
+                "2FA4E2DA-52FC1505-3793BD7C-8DA00008",
+                "F2C6ED4A-F76CF4BF-5D73C004-B8E5A19C",
+                "76D4BF77-F6766734-5E51432A-2D277220",
+                "64F39FA9-78B1C28C-0E4CDC73-BA30F6BB",
+                "20B91FA6-F95BAA23-1CA1964B-794662BC",
+                "62907ECC-2AFA14AA-9B717965-3FC9D7BB",
+                "331578EE-DAB6E6D3-ACA1ECBA-7DFBFD88",
+                "6B12FE78-82C40EB8-4A707405-5C22C431",
+                "265DB80B-4E5C0A2F-A73CD214-74A2AB4E",
+                "9BCA3801-C5460078-AA506E55-1C3C7BD9",
+                "380FF769-436AEFAF-229AC96A-BABCC5AA",
+                "107F56DA-94038013-1D155B7B-F4B88FA8",
+                "B4DE163D-8668826D-5C059AF7-5807EF93",
+                "D58BDF40-50B955B7-6E6F88E7-13EB2E6A",
+                "AE104525-1E719B8D-A05527DC-2387D52D",
+                "BC798874-D4CDE301-DFB3CCAD-991D305B",
+                "CEB8523E-10161DE3-1CAA2DD4-E93DF6C2",
+                "EC84543E-DAEB6EF6-163B3632-08179C43",
+                "7F95A2BC-6772234A-138AACBE-E967078F",
+                "658CA4B6-A43AFFC0-48881529-51F20C12",
+                "6A03FC8B-69EC245C-18B0830F-5B45C695",
+                "D0CD1DE4-4678F83C-D71184EA-B01044AA",
+                "31AF0E27-938D50B5-3B85438F-F804108B",
+                "3E3917D8-640E6A84-A1485408-63B9B0C6",
+                "AA135326-E47BCFB4-75709025-717B4B01",
+                "8AB9240A-8A0B35CA-70540D76-95E52289",
+                "00386D4E-CE9C4EA2-213F1432-4C4E1484",
+                "4EF10548-995FB136-53614D7E-70651777",
+                "2AABA613-8857C29C-FF64CDC2-9D9878D1",
+                "A2436D28-F01238BD-8AC3705E-AB7C067C",
+                "D9F45E90-7C420DF0-18B9F558-454C0B09",
+                "E1ED4343-25C1E269-A1536B42-2DEC2578",
+                "0A6FC488-39276989-E907ABFB-24F5CA2C",
+                "1BA4D3F5-4BC44CD1-1B3CC0DC-036BC2D8",
+                "66445F26-E1BC405A-1A4521ED-FD892D17",
+                "5DD01750-A5E98347-61258135-871DB963",
+                "D60AAC75-F4584A8F-45FB0959-617685C0",
+                "C015CBEE-EF7AABFA-8D295B70-83EB31CC",
+                "BC8B95F9-BEB307E2-2EB029C6-6750E90B",
+                "CB136F17-324A3E5C-B5EAA8F6-FB39B36E",
+                "33AB3BE1-2B90DEFF-C8331571-39BAEB37",
+                "0D943A8F-B2243974-203DF45B-429B9688",
+                "9391F474-F623F71C-72F28234-12C08EFE",
+                "1CC7CD95-A6C07002-7CED79BC-BA8C9D5D",
+                "8DF19053-8FE92533-A26046F0-F90AF90A",
+                "CF28CDAE-3A35688C-1DFB8E53-8945B466",
+                "9FA9FEF7-68444530-0CCDDF6F-DD8898F3",
+                "B4ED40BF-B3F540FC-DC4BF746-D0E9720F",
+                "525B2D65-4135006C-B3009301-2FC17D4B",
+                "97289859-43D28D6C-3977D3B2-50B78040",
+                "608D4790-3B16A254-7A4D7775-E7D254A7",
+                "3B13A2F0-5F2BCFD4-53CCC3B1-6D6ACDA5",
+                "4E44F557-2951640C-8FADF162-C86CF110",
+                "53E76720-139D490B-64CE403F-8A8961B9",
+                "B94CF378-B14F1F5B-9A0D23EC-74B49883",
+                "34047DA2-CC324956-EF8BDB8D-2DEC35A1",
+                "D164F99A-0F27B706-8E244A0C-722EC9A6",
+                "BE84E148-5C2E360B-E5A89853-D266474C",
+                "F7CFB85B-1555BBA1-C8A0AF5D-845BE8F2",
+                "9246ED05-E3DB35F5-D4364CE2-C2B83D48",
+                "390D128F-96B7E38B-745524B4-2DD83C73",
+                "B69A17EC-5046298B-B45B2954-08E39773",
+                "81DFBD7E-6F5F3F37-44764148-022B48F6",
+                "3DBBD4CE-484E2BBC-981AB57D-DF598E47",
+                "5FBBA252-A12528FA-A206F19E-783D6824",
+                "7005D8C2-CAA3F5F2-23721813-72E3E91E",
+                "CFF9FDC9-4BE9C6EC-C5B1F3B9-00431B66",
+                "3FF43F6E-40948BC9-D935F5FF-B9AE2F83",
+                "B6F64155-51EAFE8B-D909DA4C-5ADD4496",
+                "464B68C5-6FAFDCBC-E02A4DD9-5D7E8F2F",
+                "416A530F-18C6EDCA-3EB6C864-D6809569",
+                "9DCCF175-8135CF8C-B8AE6E84-5E59E426",
+                "1E2513F3-A294B7EA-6F7CC532-2EF6B4DC",
+                "48BE0F88-31947ACC-4339AA9B-C686B131",
+                "D7C922FF-A2300AA3-66F1FF66-3E8BEFC4",
+                "357B1B05-1A630739-8FFDE045-11663A4C",
+                "96E88983-ACA29BB5-7DFD06BF-C6105290",
+                "6EA36E27-BA0A0C36-2640EAF2-56344194",
+                "D57C7519-FC2D19AF-F5E61965-69F013A1",
+                "64743D40-9E4C3691-0426664D-4D917A1B",
+                "4B865A06-A6C33C9E-2FDEE5F3-2E1C4319",
+                "8122EFB1-7BBE7AD0-C635644C-C912FC77",
+                "6717C3EC-54ED0DDB-CE4257A5-A0FBD0B3",
+                "73D5D31F-1D5BBA5E-60C321CB-45A06AE0",
+                "1EC3BB7D-6EE8BD1A-523129AE-60BE742F",
+                "9E6BDAFB-C874D8F1-E6772B16-EC77A84B",
+                "77CCADF2-36F0684F-07385F93-497F3DA6",
+                "C656DD60-39E51467-20B9985A-D6C3E12E",
+                "E70AD076-4AF7EC88-15CEF916-5611AB47",
+                "2DB83F44-70956264-FCCC59A7-99AAD9E6",
+                "25AD8E86-9F670159-779C586C-DE6E0259",
+                "3AD1006C-6575D1CE-6D8BB40E-CC9296EE",
+                "28C575A0-91E86EC3-CAAD6123-925D6DB8",
+                "99AA205E-941B05AC-AE7B7356-133A5D37",
+                "3EBFBA1F-743EAF19-42BDB681-D6CC0261",
+                "90C2E23C-720E1B50-9CBE98FE-968C64BB",
+                "D572C9A5-D2F67989-6C75AEB1-2770D896",
+                "D5E7D65E-4B8A6BC9-C2A3FFAD-CDFFF16C",
+                "AC275ECF-A29B9F30-8C49EAAB-550D4F8C",
+                "F9BF45C5-28E7D2BD-5689C6F5-4103C9E0",
+                "D51C05CD-E0BB26B6-7740A9A9-D69FC207",
+                "1A24ABAF-61029117-B994CBDB-E4977E39",
+                "17F6966B-6C0CCEA3-16CBABC0-77510DF6",
+                "FA4D12E7-ED1F9EA4-47306323-6A877B84",
+                "B49861FD-8E0765D1-BE156FDC-29D832F5",
+                "20245EC3-BD8E07DE-654C7AB0-9F1399A3",
+                "5241974D-F83A86FB-1AAE64CE-052962C6",
+                "4DBB6B3A-B78A7170-3A8B107D-031789FD",
+                "D359A57E-5B69FFA1-BC4F124B-20456A29",
+                "6B968F3C-6DA186D6-89EC3929-05FC9E23",
+                "19A4E76D-E0112B06-30A9B247-CE5105D7",
+                "A134838D-638D86CA-54E01E7B-430C2205",
+                "B9878BF9-542749E7-C3EF2C38-E028D084",
+                "7E46BC24-3CF791FF-F3B4890B-F09AE0DE",
+                "909239E1-C828F998-0B3071B3-3BAB9044",
+                "A8E4456C-22F9B27B-EA346054-3393AEDA",
+                "4562B796-AC563743-9D5F4C4F-C25EC353",
+                "216350F9-7F0C7644-00EC62B6-48F2F5D0",
+                "DDD6C502-54A01AEE-9771F831-72660597",
+                "325808EF-139B86EE-E55EABB4-4744BF3C",
+                "BD1B0FDF-84F92715-A4716BFE-F61FC58B",
+                "7555FCF5-0C3CCAC7-0F7258E7-CCBC4578",
+                "F263D393-0B499198-A126E433-DA3F769D",
+                "02DC631C-3326C317-F2C2632A-7F870667",
+                "6CF7BDFB-E1C781F8-D08F4B1F-122D1E89",
+                "1D7A2FF3-4EB83E7E-EF994AA8-2F29483C",
+                "3EB066A5-BA08D873-5E820EB2-0E92FF6E",
+                "8921AE58-82B033B7-E961138E-6C4C1982",
+                "07459360-596F39FD-F888EDA0-3A5434FB",
+                "414DBED6-FE80D2B4-8F94DD6F-275EB3A4",
+                "A2BB1290-6AABF180-00F03EC1-F727C4B7",
+                "90CAFFCD-E2D97861-827DA971-B574132B",
+                "A5D84A2E-3D25936E-A5FD143E-C7C9912A",
+                "E80AD8BB-183C5BFF-E70AFEA5-78CA9C15",
+                "11CDD18B-4A739B45-3AA5F007-5100D64A",
+                "2BFEFA72-B9322002-F7643DCF-41DC1A5F",
+                "9D89F23D-55C09B3E-7780FB43-B6DCD25E",
+                "BECBD30A-03F83C88-130F20B4-110298FA"
+            ],
+            "soft": [
+                "6C6A321E-9527FDBF-12521936-E628C979",
+                "4CAA7816-1B771FDB-69D11628-8D51DA43",
+                "73EA500C-8936C5BC-FC55C627-78FB5742",
+                "26F6FABA-FF8697EC-EC88DF5E-78FD9795"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial7\\data\\entities\\trial7_pirate4.w2ent",
+            "level": 0,
+            "class": "CEntityTemplate",
+            "seed": 1,
+            "id": "A72DC51F-82AB9F76-370D2858-A2069E59",
+            "diskSize": 129856,
+            "softImports": 1,
+            "hard": [
+                "F48764A3-D860DC48-53175D59-4919F8DA",
+                "763DFB56-46E2B80A-2D943A97-E9A81345",
+                "6BFFD817-C93724A4-56E5C594-7DE77B37",
+                "7BE1D5DF-9B1BC8C2-63215BDF-B9DD625A",
+                "FA1B585F-699D620E-9DA6AE8D-BDFA470B",
+                "14C75C53-4C59721D-C024011F-5A6687D6",
+                "C19341B7-C3C59623-A6A53C34-9FA0037E",
+                "A7D13317-35B9C9C9-B8CB532A-1B937EA1",
+                "98AD5ED8-C62C5B1D-76459646-EC6B07DB",
+                "C4E99789-29487165-BBDBDED8-B0FDE292",
+                "9350D543-A1606A76-FB358802-8C6EF85F",
+                "5800D642-E85F53E4-AB36B42F-16448968",
+                "D86936C0-9959E9AF-395843CA-98DD0911",
+                "1DDCF83C-D80851D2-7AC06BA5-397646D9",
+                "A449F4DA-F1A71046-C2B47DEB-DE890603",
+                "8329A1A2-F00BDE1D-12257CD5-659ACB5D",
+                "FABCD3CB-3AAD1374-ADD686C2-7EC8C226",
+                "B2760CAC-EBAC9096-D619C3B5-689FF187",
+                "EA322A46-7E5DC028-6078B0CC-579CD14C",
+                "29529901-8DB67944-92ACA73C-E70C6117",
+                "00C056C9-F3FE4C39-0E67B446-1EE30939",
+                "6944C326-D49959B2-FED2482C-5D9C00B1",
+                "42DA506F-7D9B0442-AF2F3060-6E38095C",
+                "B5A0FE22-428C1BAD-438EC9A0-5A2914A5",
+                "9AE20C59-C9573D32-D23712F1-B7F748AB",
+                "4951FF29-64DAFF4F-3CF31A60-6A82ED0D",
+                "64898EF6-7A77CA6F-CC85FD96-003A84A4",
+                "636B438F-59E609EE-4F7BA237-1461740E",
+                "5488311A-98774D8A-99ECDBC7-E4052B9B",
+                "C92F3597-989AAB54-2310873D-4845A7EC",
+                "B8EEB126-167EAFB7-48683BEA-D7C4F49D",
+                "D55F12E1-86E5A487-D1D2E996-B30A00B0",
+                "DF05D550-3D3CFBEC-CCC44CDE-271F705F",
+                "D7421C17-C9BF9285-652DFD40-07523B0D",
+                "24493A5E-A0DCC8CF-948B4F88-C08B4F24",
+                "726A3185-E9E9AC5B-C7BD1D17-D12639D5",
+                "BCEA0B38-EEAB9477-6D4BA129-7637C185",
+                "06677E63-0B7E3649-5DBBBA7C-F8E08D27",
+                "3494303D-539E13BB-D20C1703-3F7FEFE5",
+                "6AF83085-C14467FE-1D699DB3-0F467CA6",
+                "D7FD67C7-12E2E407-6FA94695-B7AAF261",
+                "7A97D61E-41B5B388-1CE15E57-5D29A932",
+                "6A23CF6A-02ECCFFD-B482A960-5724E497",
+                "6E332C48-BD35841E-08AD401A-C958DF31",
+                "35EC2306-4C7720C2-271586FD-4E0C62C0",
+                "D36397B2-AFA57E74-A0EC7607-1A6C90BA",
+                "56C6732F-F2DA5A5A-180F70D9-F100504A",
+                "DD3240AF-9119BCEC-71E5D915-B428E1B8",
+                "1F58C530-10F7199A-A3B3F3D2-C6981FE7",
+                "C42395B9-1038CD3C-A6862FBE-37966B8E",
+                "54796663-CA4E92EF-6E51E5A9-AF143DEA",
+                "11A9D291-60CD1CD1-BA356DFF-5730C142",
+                "619AC824-3C66BB72-61BA8F1E-0FAE1173",
+                "6B12FE78-82C40EB8-4A707405-5C22C431",
+                "EC16E7C5-80F10D92-303DD7DB-D771B105",
+                "37FF45F3-D2EEE49D-F3ACA357-DDB299E1",
+                "19E98D4F-E5839F97-CC7A90EB-CDC889E2",
+                "D4CEC952-400584A5-A5E861CC-9E9817E5",
+                "577EAB6A-25C3C2F5-7895B174-37D5F4FE",
+                "21D12BAE-331FA8FE-D2C38EAC-9C007460",
+                "F9CAC385-399DED2D-E72DC332-D93DB5FE",
+                "5EFBC449-3B5D6CC0-54477816-06A2E73D",
+                "070D2CC5-B9B4342B-65AC881F-A49C552E",
+                "258A335A-80373545-676FFF26-EC2A254C",
+                "D8818FFA-407ABD71-92A2E66A-5DC30365",
+                "95EAC110-B5957078-CE6DE15A-4EEA7E49",
+                "7DEA5413-7E3CB500-3D7534CE-E104A0AB",
+                "C19BB00F-0173101C-5A239018-4B380A70",
+                "ACCE68CF-CAAE94E5-DE10BF55-37D78E63",
+                "D6386464-8FB7B252-EDC7F2FB-27F9DE29",
+                "D86398C7-4F408B97-E9C22F1F-701A8999",
+                "891A080B-C9CC2866-EF898C56-9510CD69",
+                "F7BA9C8F-43FB6E83-4EE65D05-52845558",
+                "FC0B7135-FE01E531-EE23F813-8EFED558",
+                "3D244633-8ED4B958-2D11896A-787CC52F",
+                "CAB28F52-BE51A284-0BC44DFF-5B873CA2",
+                "5D879FA7-FC262FA3-50D72CF8-C0617D1C",
+                "4BD40488-280D1D4D-B86F5591-1D6E6626",
+                "8F387991-2E8B4E72-A7EF3EB0-C7AF17EF",
+                "D0CD1DE4-4678F83C-D71184EA-B01044AA",
+                "31AF0E27-938D50B5-3B85438F-F804108B",
+                "3E3917D8-640E6A84-A1485408-63B9B0C6",
+                "00386D4E-CE9C4EA2-213F1432-4C4E1484",
+                "2899D98F-B1E57C1A-1A2FEF40-A690BB1E",
+                "DE417D8D-DD8F6517-975AAFF0-85D49511",
+                "D4C3B8CB-495B5C78-81C5001E-FD1A210A",
+                "03CAF91A-C62E00E4-B411BE0C-7D6DDBED",
+                "5E655F1B-1A1A0805-2CA40766-AAC02DAE",
+                "835920B9-FD472184-A2995719-67D2EE36",
+                "EB25435D-FCCB35A8-FB83B997-4E5C1DEE",
+                "9CCEDD45-C5D07437-ACD9FF22-CFAC21AE",
+                "9DC3C0FF-7416B41A-26F91224-588DE699",
+                "430BBC19-48FD232D-EAAE199C-0B1C6B73",
+                "5DD01750-A5E98347-61258135-871DB963",
+                "D60AAC75-F4584A8F-45FB0959-617685C0",
+                "C015CBEE-EF7AABFA-8D295B70-83EB31CC",
+                "BC8B95F9-BEB307E2-2EB029C6-6750E90B",
+                "CB136F17-324A3E5C-B5EAA8F6-FB39B36E",
+                "33AB3BE1-2B90DEFF-C8331571-39BAEB37",
+                "0D943A8F-B2243974-203DF45B-429B9688",
+                "9391F474-F623F71C-72F28234-12C08EFE",
+                "1CC7CD95-A6C07002-7CED79BC-BA8C9D5D",
+                "8DF19053-8FE92533-A26046F0-F90AF90A",
+                "CF28CDAE-3A35688C-1DFB8E53-8945B466",
+                "9FA9FEF7-68444530-0CCDDF6F-DD8898F3",
+                "B4ED40BF-B3F540FC-DC4BF746-D0E9720F",
+                "104869AE-01E5420A-6ED0CF3A-DFF7F088",
+                "AD698B21-3490522B-7198E7A7-7DA86B1E",
+                "3B13A2F0-5F2BCFD4-53CCC3B1-6D6ACDA5",
+                "B34887BE-113BE545-F664B482-01D4F972",
+                "B94CF378-B14F1F5B-9A0D23EC-74B49883",
+                "34047DA2-CC324956-EF8BDB8D-2DEC35A1",
+                "F85D8479-6A1184B8-CBF20868-1A0E448E",
+                "B643F8D2-9C743519-5200D24C-C7B3AECD",
+                "B69A17EC-5046298B-B45B2954-08E39773",
+                "583E737A-D3E51962-100A013D-53B69649",
+                "E290BE5A-C8B8D686-B2E3D3D4-36A7B682",
+                "B9549562-88F3BB6A-17161CC4-43C08E3D",
+                "0E9A16A6-C55E4B4A-0443ED1C-792E9FF9",
+                "B2BCD375-576B96F5-F02F3C02-118EF5CF",
+                "5FBBA252-A12528FA-A206F19E-783D6824",
+                "C0BCEA95-18B567E5-B6683824-1E5CD4E2",
+                "A65BED02-F64EE9CF-2E8F0376-5971889C",
+                "90C92CCD-C01BBDA1-AB610B94-576330E8",
+                "659EDED5-251AD899-47427314-6A521D35",
+                "2EEE3602-8AE540F3-9480F8BE-FB749B75",
+                "E990A8DB-CE7A7522-F7378A1A-2BFD89C9",
+                "138DEF69-6DD0F68A-A3324944-A9026CBC",
+                "D589EC2A-80318D00-FCC8B387-8203DA61",
+                "40E5659C-656AE92C-DB9DDF6C-73264A6E",
+                "B7CB8575-22ECA965-35697C15-72D9D45C",
+                "DED45948-755CAAEA-05A81560-02C56C35",
+                "60008A52-76BD3ED7-FE300263-FC51F129",
+                "2DD3D156-49A21026-30574DD2-07F1EE36",
+                "D6D7DBB7-71138F1D-F7818DDD-C6B69D2A",
+                "4DC2DD97-B7CE205D-6542C73D-3C855197",
+                "E5AC701B-7029252B-70C684E6-835E8227",
+                "A9E60CE8-CC9624CD-704E0975-9C077659",
+                "4C116C14-9C57CF55-A4BCE057-284FFEEC",
+                "CBC79804-CDA0B35B-F37307F1-2E271384",
+                "965B4429-17C24A35-63F15B25-35A66037",
+                "A0DD1336-32EB9C62-7C7A8F58-38A69509",
+                "AE0ADAF9-8FB921E6-B45C643F-97B7C233",
+                "00CB8E47-C12BBF0E-6FA1B29B-CCB1BB56",
+                "7EAD1963-3A87FEBA-017819DA-B4491A74",
+                "B7C17D5A-8D4FED48-20D7C67B-17FF31F7",
+                "BC338C8D-CF0F8CD0-0BE1B01C-A203D556",
+                "81F41666-658CBECF-42FDAC48-E257C9A7",
+                "C2C81684-59A9EB6A-55173F74-63B6D924",
+                "56BF81CD-05691DFA-A5601FEC-D33F9FBB",
+                "FCC4CA13-C880BFC2-E6B894C9-CE45E171",
+                "AA7B46D0-2899B59D-201C8EE3-003CC567",
+                "4C3C3A9E-9DA37448-65D94871-CEE7B66F",
+                "E5B5C7EA-42F73FA6-E77F127F-A340B9C3",
+                "9F5F0F62-7159833C-907994F7-DF070230",
+                "10A6283D-E3759321-1B06EB14-BC7FD447",
+                "F369B7B5-F8BBEA0D-0F51396A-C4527870",
+                "90C2E23C-720E1B50-9CBE98FE-968C64BB",
+                "D572C9A5-D2F67989-6C75AEB1-2770D896",
+                "D5E7D65E-4B8A6BC9-C2A3FFAD-CDFFF16C",
+                "AC275ECF-A29B9F30-8C49EAAB-550D4F8C",
+                "F9BF45C5-28E7D2BD-5689C6F5-4103C9E0",
+                "D51C05CD-E0BB26B6-7740A9A9-D69FC207",
+                "1A24ABAF-61029117-B994CBDB-E4977E39",
+                "17F6966B-6C0CCEA3-16CBABC0-77510DF6",
+                "FA4D12E7-ED1F9EA4-47306323-6A877B84",
+                "B49861FD-8E0765D1-BE156FDC-29D832F5",
+                "20245EC3-BD8E07DE-654C7AB0-9F1399A3",
+                "5241974D-F83A86FB-1AAE64CE-052962C6",
+                "4DBB6B3A-B78A7170-3A8B107D-031789FD",
+                "D359A57E-5B69FFA1-BC4F124B-20456A29",
+                "6B968F3C-6DA186D6-89EC3929-05FC9E23",
+                "A134838D-638D86CA-54E01E7B-430C2205",
+                "B9878BF9-542749E7-C3EF2C38-E028D084",
+                "826ECD42-9173FF4E-9FB8ACF2-3924CA61",
+                "7E46BC24-3CF791FF-F3B4890B-F09AE0DE",
+                "909239E1-C828F998-0B3071B3-3BAB9044",
+                "CC343E91-5843E44B-637FFC79-64F2180D",
+                "4562B796-AC563743-9D5F4C4F-C25EC353",
+                "216350F9-7F0C7644-00EC62B6-48F2F5D0",
+                "DDD6C502-54A01AEE-9771F831-72660597",
+                "325808EF-139B86EE-E55EABB4-4744BF3C",
+                "BD1B0FDF-84F92715-A4716BFE-F61FC58B",
+                "7555FCF5-0C3CCAC7-0F7258E7-CCBC4578",
+                "F263D393-0B499198-A126E433-DA3F769D",
+                "02DC631C-3326C317-F2C2632A-7F870667",
+                "6CF7BDFB-E1C781F8-D08F4B1F-122D1E89",
+                "1D7A2FF3-4EB83E7E-EF994AA8-2F29483C",
+                "3EB066A5-BA08D873-5E820EB2-0E92FF6E",
+                "8921AE58-82B033B7-E961138E-6C4C1982",
+                "07459360-596F39FD-F888EDA0-3A5434FB",
+                "414DBED6-FE80D2B4-8F94DD6F-275EB3A4",
+                "A2BB1290-6AABF180-00F03EC1-F727C4B7",
+                "90CAFFCD-E2D97861-827DA971-B574132B",
+                "A5D84A2E-3D25936E-A5FD143E-C7C9912A",
+                "E80AD8BB-183C5BFF-E70AFEA5-78CA9C15",
+                "11CDD18B-4A739B45-3AA5F007-5100D64A",
+                "2BFEFA72-B9322002-F7643DCF-41DC1A5F",
+                "9D89F23D-55C09B3E-7780FB43-B6DCD25E",
+                "A8E7E72D-89798EE1-6F98F0C0-26E9C02C"
+            ],
+            "soft": [
+                "6C6A321E-9527FDBF-12521936-E628C979",
+                "4CAA7816-1B771FDB-69D11628-8D51DA43",
+                "A9F7E768-EBD83F36-B2036B7E-779F5E56",
+                "73EA500C-8936C5BC-FC55C627-78FB5742",
+                "26F6FABA-FF8697EC-EC88DF5E-78FD9795"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial7\\data\\entities\\trial_seven_nekker.w2ent",
+            "level": 0,
+            "class": "CEntityTemplate",
+            "seed": 1,
+            "id": "98DF7B71-80A2E707-EEBCEB58-301F349D",
+            "diskSize": 100692,
+            "softImports": 1,
+            "hard": [
+                "7A13DCDB-7CE8F889-55DAFDA5-0F78A353",
+                "FA9F2D7A-77B710DA-82CD90F8-4B0E3266",
+                "90B7A9A9-AB6F4597-24C2FF76-4B31433C",
+                "D0CD1DE4-4678F83C-D71184EA-B01044AA",
+                "31AF0E27-938D50B5-3B85438F-F804108B",
+                "3E3917D8-640E6A84-A1485408-63B9B0C6",
+                "CB136F17-324A3E5C-B5EAA8F6-FB39B36E",
+                "33AB3BE1-2B90DEFF-C8331571-39BAEB37",
+                "0D943A8F-B2243974-203DF45B-429B9688",
+                "9391F474-F623F71C-72F28234-12C08EFE",
+                "90CBBE0B-8A22B91A-CED49276-A3F5C04D",
+                "38F6C700-82A3E69F-02039B60-07614086",
+                "7C1C0F3B-0801C407-0FCA0288-F79ECABD",
+                "47EE6C52-B370B477-6B7F13E6-B4B46629",
+                "8370D787-2969FC26-C5DFD4D7-DD79EC4B",
+                "BC778CF1-41DDCEF3-45B92CC0-0BD3326B",
+                "7FE5EAB5-890EE1B3-5C693A22-BAA31504",
+                "28A4B7AF-D042D36C-65E1DCD2-FF522A24",
+                "988521AC-1F19E4DF-F08725C2-E3CFBB28",
+                "977213A0-7C3E4D91-62DC3A8F-14C2539D",
+                "53242374-7B104668-0DD35ECD-22B9376D",
+                "74F2D8D5-74A4F32D-F734D55D-7201E620",
+                "FC0AB5CD-B4CF00E9-84137672-050BC359",
+                "3241F084-4FAED81D-7F25D1D5-D06B432F",
+                "4A7996E4-C38A9A64-9848C430-7793DC73",
+                "F7A70317-6C3563AC-299C197F-E9CD3FED",
+                "1F92762D-EE1872DB-4C0DC832-F62E494A",
+                "85CF72D5-1D91A761-B4CF2989-E10E5004",
+                "5532F00E-82D03A73-31FC2378-931F87B3",
+                "5449E072-E2DE47B2-E6346C09-FAB67EE7",
+                "1359D249-8F717677-AD635828-55E75BFD",
+                "F77C3AED-598E9D48-5D5022EF-2C59632B",
+                "90C2E23C-720E1B50-9CBE98FE-968C64BB",
+                "87B6008C-310B13E4-DCA8522B-30A1A24B",
+                "4DBB6B3A-B78A7170-3A8B107D-031789FD",
+                "6B968F3C-6DA186D6-89EC3929-05FC9E23",
+                "BD1B0FDF-84F92715-A4716BFE-F61FC58B",
+                "848F06B8-BC10B02E-877F1EE0-BB5E35B5",
+                "2D69D265-3ABCAE02-51CB90B2-3EFFEFF3",
+                "8DE77910-6B825723-599DB292-0A821312",
+                "A1A3F5DD-4E275BFF-1425A983-894F4C64",
+                "3CB5C3A1-1C7D5CF0-C037289A-F0AABE49",
+                "10B26B0D-C0A35B76-B2EEAF92-B4BBDFE8",
+                "68812903-3607CA35-941AEB18-8C447FD6",
+                "FEF331DE-BBA63D28-A294356E-72C8B765",
+                "A81DA50B-CB0A9165-58737FEA-D61A5467",
+                "3EB066A5-BA08D873-5E820EB2-0E92FF6E",
+                "DF7D1E78-7FC9118B-9E411B04-A49220C3",
+                "07459360-596F39FD-F888EDA0-3A5434FB",
+                "88C6A52A-D1A9A8E2-E3555186-02D93F48",
+                "FA77FCFF-B87F3C6C-30AD1DA8-2F31AE6B",
+                "52753636-5EED3CD5-B391DF6B-14DD22D3",
+                "820640CF-5FBBE14C-3A3A4F9E-8846D800",
+                "3B4F4D92-B7C85BC3-F4E20536-989C0286",
+                "E8C634D3-A372296A-67B97363-55FD5A95",
+                "7B5700F5-BAFF1135-C0A3CCB0-FF99AAFC",
+                "21945182-BE3ECA4F-8C32E8ED-C137AE69"
+            ],
+            "soft": [
+                "4CAA7816-1B771FDB-69D11628-8D51DA43",
+                "73EA500C-8936C5BC-FC55C627-78FB5742"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial7\\dlctrial7.reddlc",
+            "level": 0,
+            "class": "CDLCDefinition",
+            "seed": 1,
+            "id": "5F9E10D2-873B690D-5F7825F4-2D103003",
+            "diskSize": 1447,
+            "hard": [
+                "D49BAAA8-CD3D3C18-DF98DC61-64346605"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial7\\levels\\skellige\\trial7\\bearlayer\\areas.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "7DE2113F-ED8D30B0-36BB8B69-B4114472",
+            "diskSize": 1881
+        },
+        {
+            "path": "dlc\\dlctrial7\\levels\\skellige\\trial7\\bearlayer\\waypoints.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "76116AAA-8B02F4F5-3E5FFCB1-7C1130F2",
+            "diskSize": 995
+        },
+        {
+            "path": "dlc\\dlctrial7\\levels\\skellige\\trial7\\humanlayer\\actionpoints.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "3DAD9009-95DB4083-588E35A8-A169899E",
+            "diskSize": 18669,
+            "hard": [
+                "D47CFC91-3415F3FF-2A05209C-75419C59",
+                "0A290FD7-0A108EE6-13A181D9-E750C951",
+                "01E28930-2BF54F96-982B48D8-0DAB3BE7",
+                "9434A3C0-34A2054D-7578D878-2F61E991",
+                "34122385-7813A7BD-D00880C4-6362B2B3",
+                "609576C9-F13F8834-BF5B1507-5663FB17",
+                "E0496EB3-A102934B-2806DFC5-FE0C5A49",
+                "C1EF1922-40952DB6-9FA32625-07A6D17F",
+                "6459055E-48A82DB5-84BF189F-604271B7",
+                "CF173D9B-39885CD7-53605CBF-106E8128",
+                "7A1D71FF-B9289549-66D8C8F6-86314AF3",
+                "AEF64F6B-57CB5A0C-396B821B-91022430",
+                "E9B53C6F-04B7F7CE-25AB332E-D79E6DFA",
+                "40483D32-4D2548AE-6BCBDC87-C7642FD1",
+                "48CB1A04-2A5D5F02-6FCA633B-8869E624",
+                "6AD2717A-FCBA580E-942F6252-D873703E",
+                "946AB0D3-C8F2420F-95797302-16AC242A"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial7\\levels\\skellige\\trial7\\humanlayer\\areas.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "CB2EFAC5-89B960B8-F74568CF-58EB0370",
+            "diskSize": 1886
+        },
+        {
+            "path": "dlc\\dlctrial7\\levels\\skellige\\trial7\\humanlayer\\static.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "DC792DFC-B8308135-896D8632-1932385B",
+            "diskSize": 84662,
+            "hard": [
+                "982AD5B4-7C935CAC-51195E1B-FFE2DA26",
+                "5E450E57-BD23D2E6-100D3553-32861574",
+                "3789BF79-E6FC44DC-A6CECB26-966AC482",
+                "C91B674C-34316AF3-B16DFBB0-228B03CE",
+                "867D9243-8613AF67-3E7FBD73-E9CAAAF3",
+                "265FA439-0A88B030-62B814AD-466040C1",
+                "55E8245B-D5FFCDE6-AEF49957-160E953F",
+                "2F68DC05-23B0765D-0C64A946-6C806021",
+                "D7D853AF-7C5034D7-3991B704-4FA48362",
+                "D135B4ED-1346AE84-20A4A5FD-46AEE815",
+                "E8B3EC0E-46C1C053-AAECCABE-5FF63820",
+                "C8C3DCB1-7864FBFA-3FD85871-E611F174",
+                "32A0360B-E9445F2F-9E15F23A-C4885F06",
+                "79EAD31A-F6655D83-4CC2B6BB-9188F867",
+                "FAE48F8C-096E8C80-4215D62C-D91975E3",
+                "95DD828D-66394D19-70B79005-F9DCB74C",
+                "C9E68BEE-4B3FCD11-413B16F6-4699CAE8",
+                "7E3593E7-CDF79D71-A73A9342-E5064A0B",
+                "AB8EE6C2-56FDDA32-A6ED2918-964609F4",
+                "0C701E8B-5C47FE8E-71802445-3E41198B",
+                "E0CFEABE-8914BF99-BBF2488B-ED1149CC",
+                "3B32EF99-D77796E7-FE451ACD-72D45811",
+                "3D647A94-9797F062-652A830C-5E1F2FB8",
+                "CE47E106-FCAEA2E4-FC3D4EB8-F2FAF91C",
+                "8230F4E0-6CD3E50D-22BA688F-6E702DAD",
+                "C6ABFBE1-AC8348CC-E033E1D9-5067051E",
+                "6EA9478B-F2099125-CA42689E-3AF194B3",
+                "506440A9-3416CD92-AB1BE76E-4D7DC286",
+                "D8E79FA3-86031042-19463945-1A0F266A",
+                "DC601862-22BCCD59-01AC5874-A5C5E1FA",
+                "B9657F9C-C5D84C1D-C7E86716-8CEC888E",
+                "6BC49E3A-69C42240-FFB5CD9D-77214D34",
+                "A28FCDF0-59EB96C5-769FF721-2F92589A",
+                "FF26AC11-A6B0A50F-CD8D1E07-9EE7A5C0",
+                "5534628F-7A7C1E3B-E6B14FFA-4010DC64",
+                "44AAFDCE-5667B5A3-1269A344-1029E2D3",
+                "EC4170E8-57855F20-2A28B8AC-92C0C3B3",
+                "03A046B4-6F1AA101-CC9746B7-6F5FA56F",
+                "F5CE598E-A1FA60B0-5FC47FF0-3978003D",
+                "E5B80BA6-696098BD-B0F83486-DBB68C41",
+                "04475875-EE52CFEA-14CB0F40-B1B77078",
+                "D5AEBAD5-714175C1-EACF5D21-3508F04D",
+                "742AA728-E00EEBFB-1E86D925-5BC4AD23",
+                "CDCB9780-8F7B7060-5F266BD6-F3C004D6",
+                "375CD40C-30721062-CBBFA631-3E26CF38",
+                "376D226C-E46151F3-8865AB3F-38B82B48",
+                "B4C90376-1615257D-4B964120-7D349898",
+                "40C45AF0-D2C84216-A7F97BF1-D48F33FA",
+                "76B801DB-168ABAD1-E3277A40-95CED914",
+                "BFD81AF4-6C64BAE3-B88BC714-6BD4A40D",
+                "CBCE71B7-1A201A76-7FEB08BA-BA5767B5",
+                "A1354049-7983EE67-5A4D7FD6-9E5AB759",
+                "E395CBC9-06ECA903-D43D61DA-1DED1616",
+                "7AA2E823-08970FA8-5FEBBD06-4712E4A0",
+                "383BAACE-2E475D26-D5DC6820-EFD491E0",
+                "A21404B1-A37FB839-69406E65-E2E7D0E3",
+                "3C1417E7-A9554475-1F90990F-ED3EB3D7",
+                "8852D5ED-810CD8CB-011528AD-C43793BB",
+                "BA780EC7-91C8EC2A-8F562162-C13AD796",
+                "F29318E0-C54A3195-D3A11475-17015E11",
+                "30DDCCA6-DD643924-46730EFE-B4EB145F",
+                "7351C6C9-8A4A0E53-6C6888BF-08B52AD0",
+                "F9BB1C7F-F06A6A8C-092B45FC-0D9A7671",
+                "C59C82C0-F2777293-D25B9494-F9B2655E",
+                "390F8AF0-7C35DB66-15140122-4168EF87",
+                "94CB8072-0A60DC8C-5D90B8B0-5FB4BBA8",
+                "E71A113E-5105BDF5-A417D934-C3CA8A8C",
+                "F943C616-A6F68222-C6ADAFA5-343E14AC",
+                "DD2DA0B4-450D6854-1BBC9454-9BD64C78",
+                "9D514242-3CFE00E6-9DAC51D7-C12F0558",
+                "F51BCEFE-92E6DE55-3FC8F1D2-280E5369",
+                "5BDC184E-881E28DE-F229986A-73945ED3",
+                "A4418FDD-4CACA93A-4373C154-A84CD6B7",
+                "D5932F1A-1B393283-63E72C6E-0A81D8AB",
+                "160DCF66-600ED743-B862C8C5-A33F83B4",
+                "01FBE1C5-E768615A-5874BE5F-C0727763",
+                "7ADB043E-C45DD44F-5A0C404A-62069140",
+                "6AF667BD-9B8BA097-10898BCB-541D78A0",
+                "9D8AF620-D34AD33C-EB44C4F0-061E618F",
+                "AF48E6C4-4A91AE9E-5F36366B-0FA00277",
+                "DCA1268A-ECEF6161-546EAAF6-A3F83FEE",
+                "A1640648-5B873D78-13960E36-DDE33A67",
+                "57D756E3-02242561-2FEA3BA5-FEAFEA58"
+            ],
+            "soft": [
+                "903E3DEC-4B15868D-816E24FC-4E2D1C7A"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial7\\levels\\skellige\\trial7\\nekkerlayer\\actionpoints.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "702C2EC8-7E1709C7-FF97C9B4-74BBF984",
+            "diskSize": 5426,
+            "hard": [
+                "17EE5981-045BD656-DD5AE06D-51DFA341",
+                "2E988E18-87599404-3A23494E-0D28D2BD",
+                "E31077B1-8754C8E4-282340BB-27EC32F5"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial7\\levels\\skellige\\trial7\\nekkerlayer\\areas.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "BC400246-D71748FA-C3535847-C6A30AE5",
+            "diskSize": 2978
+        },
+        {
+            "path": "dlc\\dlctrial7\\levels\\skellige\\trial7\\nekkerlayer\\static.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "231C0400-EF81F157-E9A13A3E-21DEE8C6",
+            "diskSize": 21243,
+            "hard": [
+                "430051E7-A81BD91C-0C287FA3-95B2DF25",
+                "64822126-43A2254D-2997DF72-84B7B4FE",
+                "7BA53B32-0A66FDB8-50E5A581-682B6532",
+                "5A6E72E5-AC4FD7DD-9D73611C-B2EAD427",
+                "1F21250A-C66CD71C-F893CFE3-243C28BD",
+                "91A0267E-7DF9B28C-F14F1D9C-9DFDE9AE",
+                "713E20DB-F249F12C-B2486702-AE4A314B",
+                "825663C5-4E6D220B-B7C8CE68-D327DE3B",
+                "DE9046CB-B468B7ED-FF3D616D-79AABE6D",
+                "9ED490CB-1C7D9D9E-E2B939A6-1B49ACA4",
+                "79F0FC0D-C0ECE6F7-2F05DD01-129FAAE6",
+                "B90F798C-17C32B09-708276A6-8EA8356F",
+                "A2029C79-C21AC6A7-4C3F6325-CB4CA620",
+                "D88495C5-CA85BDBC-0A11F631-30D8F618",
+                "03F265F7-9DA18057-20BEF977-441DF603",
+                "627799B6-5087540A-B227290D-98C9D886",
+                "0371A321-2ACB2017-2F7B37DA-B25D2916"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial7\\levels\\skellige\\trial7\\newguard\\areas.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "63FD649F-FB0B8306-E27E0654-25765A7F",
+            "diskSize": 3035
+        },
+        {
+            "path": "dlc\\dlctrial7\\levels\\skellige\\trial7\\newguard\\wanderpoints.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "D86578BF-65662F39-4E687365-3AE9B09D",
+            "diskSize": 2806
+        },
+        {
+            "path": "dlc\\dlctrial7\\levels\\skellige\\trial7\\newguard\\waypoints.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "305BDEF7-ED74AE76-77A677C4-EEEB862D",
+            "diskSize": 3315
+        },
+        {
+            "path": "dlc\\dlctrial7\\levels\\skellige\\trial7\\radish_dbg\\radish_dbginfo.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "23261F13-5A0AE046-93753EFF-5B370F74",
+            "diskSize": 16205
+        },
+        {
+            "path": "environment\\decorations\\housework\\hunters_items\\hanging_pot_big.w2mesh",
+            "level": 0,
+            "additional": 1,
+            "id": "903E3DEC-4B15868D-816E24FC-4E2D1C7A",
+            "softImports": 1
+        },
+        {
+            "path": "fx\\blood\\dismemberment\\blood_explosion.w2p",
+            "level": 0,
+            "additional": 1,
+            "id": "6C6A321E-9527FDBF-12521936-E628C979",
+            "softImports": 4
+        },
+        {
+            "path": "fx\\blood\\dismemberment\\blood_squirt.w2p",
+            "level": 0,
+            "additional": 1,
+            "id": "4CAA7816-1B771FDB-69D11628-8D51DA43",
+            "softImports": 5
+        },
+        {
+            "path": "fx\\blood\\dismemberment\\blood_squirt_area.w2p",
+            "level": 0,
+            "additional": 1,
+            "id": "A9F7E768-EBD83F36-B2036B7E-779F5E56",
+            "softImports": 1
+        },
+        {
+            "path": "fx\\blood\\dismemberment\\dismembement_fx2.w2p",
+            "level": 0,
+            "additional": 1,
+            "id": "73EA500C-8936C5BC-FC55C627-78FB5742",
+            "softImports": 5
+        },
+        {
+            "path": "gameplay\\journal\\bestiary\\humans.journal",
+            "level": 0,
+            "additional": 1,
+            "id": "26F6FABA-FF8697EC-EC88DF5E-78FD9795",
+            "softImports": 4
+        }
+    ]
+}

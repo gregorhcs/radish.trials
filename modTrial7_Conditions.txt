@@ -1,7 +1,7 @@
 bears:
 
 + with animals or monsters
-- that respawn in waves after some time and
++ that respawn in waves after some time and
 + guard their area but do not pursue player
 
 
@@ -10,18 +10,16 @@ nekkers:
 + guarded by one or more monsters
 + which pursue the player only within a specified area,
 + they should have some schedule in the area (e.g. eating, sleeping, etc)
-
++ pick one type of monster/animal from the defined community and display a small HUD notice with a "killed"-counter on every kill of that monster/animal
 
 humans:
 
 + of humanoid actors 
-- should guard an area and 
-- pursue the player only to a certain range
++ should guard an area and 
++ pursue the player only to a certain range
++ spawn at defined spawnpoints (one or multiple)
++ setup a spawntime table for a community
++ use different of the available initializers for specific phases/actors of a community
++ use custom scripted initializer for at least one community to init some attributes of the spawned actors that cannot be defined in the community definition (e.g. random level?)
 
-
-- setup a spawntime table for a community
-- spawn at defined spawnpoints (one or multiple)
-- use different of the available initializers for specific phases/actors of a community
-- use custom scripted initializer for at least one community to init some attributes of the spawned actors that cannot be defined in the community definition (e.g. random level?)
-- pick one type of monster/animal from the defined community and display a small HUD notice with a "killed"-counter on every kill of that monster/animal
 

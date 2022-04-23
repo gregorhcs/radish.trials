@@ -9,15 +9,24 @@ communities:
 
       # -----------------
       outlook_warrior1:
-        template: characters/npc_entities/crowd_npc/wild_hunt_lvl3/wild_hunt_lvl3.w2ent
-        #template: dlc/bob/data/quests/main_quests/quest_files/q703_all_for_one/characters/dun_tynne_bandits/q703_dt_bandit_axe_1h.w2ent
-      outlook_warrior2:
-        template: characters/npc_entities/crowd_npc/wild_hunt_lvl3/wild_hunt_lvl3.w2ent
-        #template: dlc/bob/data/quests/main_quests/quest_files/q703_all_for_one/characters/dun_tynne_bandits/q703_dt_bandit_axe_1h.w2ent
+        template: CNewNPC:trial7_pirate1
+        tags: [trial_seven_pirate]
+
+      outlook_warrior21:
+        template: CNewNPC:trial7_pirate2
+        tags: [trial_seven_pirate]
+
+      outlook_warrior22:
+        template: CNewNPC:trial7_pirate3
+        tags: [trial_seven_pirate]
+
+      outlook_warrior23:
+        template: CNewNPC:trial7_pirate4
+        tags: [trial_seven_pirate, trial_seven_pirate_leader]
+      # -----------------
 
       desparate_warrioress:
         template: characters/npc_entities/crowd_npc/skellige_clans/skellige_drummond_woman.w2ent
-      # -----------------
 
       outlook_occasional1:
         template: characters/npc_entities/crowd_npc/skellige_pirate/skellige_pirate_lvl1.w2ent
@@ -64,12 +73,11 @@ communities:
         drunk_pirate:
           use_last_ap: false
           start_in_ap: true
-          #scripted: CPirateInitializer
           attitude: friendly_to_player
           immortality: invulnerable
           actionpoints:
             "00:00": skellige/puke
-            #"10:00": skellige/party
+            "10:00": skellige/party
 
         desparate_warrioress:
           use_last_ap: false
@@ -87,14 +95,13 @@ communities:
           attitude: friendly_to_player
           immortality: invulnerable
           actionpoints:
-            "00:00": skellige/laughing
-            #"00:00":
-            #  - [ skellige/laughing, 0.2 ]
-            #  - [ skellige/party, 0.8 ]
-            #"02:00":
-            #  - [ skellige/laughing, 0.9 ]
-            #  - [ skellige/party, 0.1 ]
-            #"05:00": skellige/party
+            "00:00":
+              - [ skellige/laughing, 0.2 ]
+              - [ skellige/party, 0.8 ]
+            "02:00":
+              - [ skellige/laughing, 0.9 ]
+              - [ skellige/party, 0.1 ]
+            "05:00": skellige/party
 
         mocking_pirate2:
           use_last_ap: false
@@ -103,13 +110,13 @@ communities:
           immortality: invulnerable
           actionpoints:
             "00:00": skellige/laughing
-            #"00:00":
-            #  - [ skellige/laughing, 0.2 ]
-            #  - [ skellige/party, 0.8 ]
-            #"02:00":
-            #  - [ skellige/laughing, 0.9 ]
-            #  - [ skellige/party, 0.1 ]
-            #"05:00": skellige/party
+            "00:00":
+              - [ skellige/laughing, 0.2 ]
+              - [ skellige/party, 0.8 ]
+            "02:00":
+              - [ skellige/laughing, 0.9 ]
+              - [ skellige/party, 0.1 ]
+            "05:00": skellige/party
 
 
 
@@ -118,15 +125,34 @@ communities:
         outlook_warrior1:
           use_last_ap: false
           start_in_ap: false
+          scripted: CPirateInitializer
           attitude:  hostile_to_player
           spawn_at: skellige/guard1_spawn
           wanderpath: skellige/guard1_path
 
-        outlook_warrior2:
+
+        outlook_warrior21:
           use_last_ap: false
           start_in_ap: false
+          scripted: CPirateInitializer
           attitude: hostile_to_player
-          spawn_at: skellige/guard2_spawn
+          spawn_at: skellige/guard21_spawn
+          guard: [ skellige/guard2_area, 6.0 ]
+
+        outlook_warrior22:
+          use_last_ap: false
+          start_in_ap: false
+          scripted: CPirateInitializer
+          attitude: hostile_to_player
+          spawn_at: skellige/guard22_spawn
+          guard: [ skellige/guard2_area, 6.0 ]
+
+        outlook_warrior23:
+          use_last_ap: false
+          start_in_ap: false
+          scripted: CPirateInitializer
+          attitude: hostile_to_player
+          spawn_at: skellige/guard23_spawn
           guard: [ skellige/guard2_area, 6.0 ]
 
 
@@ -165,6 +191,7 @@ communities:
           immortality: invulnerable
           actionpoints:
             "00:00": skellige/party
+            "12:00": skellige/party
 
         party_pirate2:
           use_last_ap: false
@@ -173,6 +200,7 @@ communities:
           immortality: invulnerable
           actionpoints:
             "00:00": skellige/party
+            "12:00": skellige/party
 
         party_pirate3:
           use_last_ap: false
@@ -199,6 +227,9 @@ communities:
           immortality: invulnerable
           actionpoints:
             "00:00": skellige/partysit
+            "05:00":
+              - [ skellige/laughing, 0.9 ]
+              - [ skellige/party, 0.1 ]
 
         sitparty_pirate3:
           use_last_ap: false
@@ -207,3 +238,6 @@ communities:
           immortality: invulnerable
           actionpoints:
             "00:00": skellige/partysit
+            "05:00":
+              - [ skellige/laughing, 0.9 ]
+              - [ skellige/party, 0.1 ]

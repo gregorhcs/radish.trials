@@ -1,0 +1,9 @@
+templates:
+
+  trial_seven_nekker:
+    includes:
+      - characters/npc_entities/monsters/nekker_lvl3__warrior.w2ent
+
+    entityObject:
+      .type: "CLogNekker:CNewNPC"
+      level: 1

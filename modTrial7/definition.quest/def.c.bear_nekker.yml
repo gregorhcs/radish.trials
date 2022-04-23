@@ -20,7 +20,7 @@ communities:
           spawn_at: skellige/bearspawn
           attitude: monsters
           spawntimes:
-            "00:00": [2, true, 20]
+            "00:00": [3, true, 20]
 
 
   nekker_community:
@@ -28,13 +28,13 @@ communities:
     actors:
 
       nekker1:
-        template: characters/npc_entities/monsters/nekker_lvl3__warrior.w2ent
+        template: CLogNekker:trial_seven_nekker
 
       nekker2:
-        template: characters/npc_entities/monsters/nekker_lvl3__warrior.w2ent
+        template: CLogNekker:trial_seven_nekker
 
       nekker3:
-        template: characters/npc_entities/monsters/nekker_lvl3__warrior.w2ent
+        template: CLogNekker:trial_seven_nekker
 
     phases:
 

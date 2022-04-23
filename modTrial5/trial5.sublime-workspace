@@ -1,0 +1,484 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"imm",
+				"immortality: invulnerable"
+			],
+			[
+				"att",
+				"attitude: wild_hunt"
+			],
+			[
+				"attt",
+				"attitude"
+			],
+			[
+				"at",
+				"attitude"
+			],
+			[
+				"im",
+				"immortality: immortal"
+			],
+			[
+				"in",
+				"immortality: invulnerable"
+			],
+			[
+				"i",
+				"immortality"
+			],
+			[
+				"immo",
+				"immortality: immortal"
+			],
+			[
+				"guar",
+				"guard"
+			],
+			[
+				"wander",
+				"wanderpath"
+			],
+			[
+				"out",
+				"outlook_warrior1"
+			],
+			[
+				"skell",
+				"skellige_pirate_lvl3"
+			],
+			[
+				"cam_2",
+				"cam_22_shot22aiskerovershoulder"
+			],
+			[
+				"cli",
+				"clipfront"
+			],
+			[
+				"clip",
+				"clipfront"
+			],
+			[
+				"bl",
+				"blendout"
+			],
+			[
+				"section",
+				"section_axii"
+			],
+			[
+				"po",
+				"pose"
+			],
+			[
+				"ble",
+				"blend"
+			],
+			[
+				"re",
+				"repo"
+			],
+			[
+				"blend",
+				"blendout"
+			],
+			[
+				"se",
+				"section_fight_lost"
+			],
+			[
+				"sec",
+				"section_fight_won"
+			],
+			[
+				"cam",
+				"cam_closeup_alene_looking_at_geralt"
+			],
+			[
+				"ale",
+				"alene_walking"
+			],
+			[
+				"gera",
+				"geralt_walking"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "definition.quest/def.communities.yml",
+			"settings":
+			{
+				"buffer_size": 373,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "templates:\n\n    alina:\n        \n        includes:\n            - characters\\npc_entities\\crowd_npc\\scoiatael_soldier\\scoiatael_elf_woman.w2ent\n        \n        entityObject:\n            .type: \"CNewNPC\"\n            displayName: \"Alina\"\n            tags: [custom_actor]\n            autoPlayEffectName: spell_fx\n            components:\n                appearance:\n                    .type: CAppearanceComponent\n            \n        usedAppearances:\n            - alina\n        \n        appearances:\n            alina:\n                includedTemplates:\n                    - characters\\models\\main_npc\\triss\\h_03_wa__triss_blood.w2ent\n                    - characters\\models\\secondary_npc\\ida_emean_aep_sivney\\c_13_wa__ida_emean.w2ent\n                    - dlc\\bob\\data\\characters\\models\\secondary_npc\\hananna_von_kagen\\g_01_wa__hanna_von_kagen.w2ent\n                    - characters\\models\\main_npc\\keira\\body_06_wa__body_keira_wet.w2ent\n                    - characters\\models\\crowd_npc\\novigrad_citizen_woman\\torso\\t2_01_wa__old_novigrad_citizen01.w2ent\n                    #- characters\\models\\secondary_npc\\corine_dreamer\\d_01_wa__corine.w2ent\n                    - characters\\models\\crowd_npc\\novigrad_citizen_woman\\dress\\d_05_wa__old_novigrad_citizen.w2ent\n                    \n        coloringEntries:\n          - appearance: alina\n            componentName: g_01_wa__hanna_von_kagen\n            colorShift1: [50, 50, 50]\n          \n        slots:\n            fx_point:\n                transform:\n                    pos: [0.0, 0.0, 0.1]\n    \n    \n        effects:\n          spell_fx:\n            \".type\": CFXDefinition\n            trackGroups:\n              audio:\n                \".type\": CFXTrackGroup\n                tracks:\n                  sfx:\n                    \".type\": CFXTrack\n                    trackItems:\n                      - \".type\": CFXTrackItemSoundEvent\n                        timeBegin: 0.0121238083\n                        soundEventName: magic_yennefer_hand_loop\n                      - \".type\": CFXTrackItemSoundEvent\n                        timeBegin: 0.4485809505\n                        soundEventName: magic_yennefer_hand_loop_end\n                isExpanded: true\n                trackGroupColor: [ 171, 197, 207, 100 ]\n              light:\n                \".type\": CFXTrackGroup\n                tracks:\n                  asd:\n                    \".type\": CFXTrack\n                    trackItems:\n                      - \".type\": CFXTrackItemDynamicLight\n                        timeBegin: 0.0027865693\n                        timeDuration: 2.440911293\n                        color: [ 124, 170, 255, 255 ]\n                        radius: 1.2000000477\n                        lightFlickering:\n                          \".type\": SLightFlickering\n                          flickerStrength: 0.8000000119\n                          flickerPeriod: 0.150000006\n                        autoHideDistance: 35.0\n                        spawner:\n                          \".type\": CFXSpawnerComponent\n                          componentName: woman_base\n                          attach: true\n                          relativePosition: [ 0.0500000007, 0.0500000007, 0.0, 0.0 ]\n                          parentSlotName: r_hand\n                        interpolation:\n                          - [ 0.0, 1.0 ]\n                          - [ 166.0, 1.0 ]\n                          - [ 166.0, 1.0 ]\n                          - [ 100.648765564, 1.0 ]\n                          - [ 0.0, 1.0 ]\n                          - [ 0.0, 1.0 ]\n                          - [ 0.0, 1.0 ]\n                          - [ 0.0, 1.0 ]\n                          - [ 0.0, 1.0 ]\n                          - [ 0.0, 1.0 ]\n                          - [ 0.0, 1.0 ]\n                          - [ 0.0, 1.0 ]\n                          - [ 0.0, 1.0 ]\n                          - [ 0.0, 1.0 ]\n                          - [ 0.0, 1.0 ]\n                          - [ 0.0, 1.0 ]\n                isExpanded: true\n                trackGroupColor: [ 242, 159, 211, 100 ]\n              particle:\n                \".type\": CFXTrackGroup\n                tracks:\n                  asd:\n                    \".type\": CFXTrack\n                    trackItems:\n                      - \".type\": CFXTrackItemParticles\n                        timeBegin: 0.0023625195\n                        particleSystem: \"fx\\\\characters\\\\yennefer\\\\attack_01\\\\yennefer_hand_fx.w2p\"\n                        spawner:\n                          \".type\": CFXSpawnerComponent\n                          componentName: woman_base\n                          attach: true\n                          parentSlotName: r_hand\n                        interpolation:\n                          - [ 1.0, 1.0, 1.0 ]\n                          - [ 1.0, 1.0, 1.0 ]\n                          - [ 1.0, 1.0, 1.0 ]\n                          - [ 1.0, 1.0, 1.0 ]\n                          - [ 1.0, 1.0, 1.0 ]\n                          - [ 1.0, 1.0, 1.0 ]\n                          - [ 1.0, 1.0, 1.0 ]\n                          - [ 1.0, 1.0, 1.0 ]\n                          - [ 1.0, 1.0, 1.0 ]\n                          - [ 1.0, 1.0, 1.0 ]\n                          - [ 1.0, 1.0, 1.0 ]\n                          - [ 1.0, 1.0, 1.0 ]\n                          - [ 1.0, 1.0, 1.0 ]\n                          - [ 1.0, 1.0, 1.0 ]\n                          - [ 1.0, 1.0, 1.0 ]\n                          - [ 1.0, 1.0, 1.0 ]\n                isExpanded: true\n                trackGroupColor: [ 181, 246, 210, 100 ]\n            length: 2.1243739128\n            loopStart: 0.1444201618\n            loopEnd: 0.4146256149\n            showDistance: 66.0\n            isLooped: true\n          \n    strange_book:\n    \n        includes:\n          - items\\weapons\\polearms\\spear_01.w2ent\n          - dlc\\bob\\data\\environment\\decorations\\gameplay\\generic\\decoration_set\\books\\deco_gen_books_pile_a.w2ent\n        \n        entityObject:\n            .type: \"CEntity\"",
+			"file": "definition.quest/def.templates-Actor-FireWoman.yml",
+			"file_size": 5965,
+			"file_write_time": 132641179696968712,
+			"settings":
+			{
+				"buffer_size": 5963,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"left_delete",
+					null,
+					"AQAAACIGAAAAAAAAIgYAAAAAAAACAAAACgo",
+					"AQAAAAAAAAABAAAAJAYAAAAAAAAiBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": "pi"
+					},
+					"AgAAABEGAAAAAAAAEgYAAAAAAAAAAAAAEgYAAAAAAAATBgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAEQYAAAAAAAARBgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					2,
+					"left_delete",
+					null,
+					"AgAAABIGAAAAAAAAEgYAAAAAAAABAAAAaREGAAAAAAAAEQYAAAAAAAABAAAAcA",
+					"AQAAAAAAAAABAAAAEwYAAAAAAAATBgAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"debug",
+				"Build With: W3 radish modding tools - SCENE: generate debug timeline"
+			],
+			[
+				"Sce",
+				"Build With: W3 radish modding tools - SCENE: generate debug timeline"
+			],
+			[
+				"deb",
+				"Build With: W3 radish modding tools - SCENE: generate debug timeline"
+			],
+			[
+				"timel",
+				"Build With: W3 radish modding tools - SCENE: generate debug timeline"
+			],
+			[
+				"timeline",
+				"Build With: W3 radish modding tools - SCENE: generate debug timeline"
+			],
+			[
+				"time",
+				"Build With: W3 radish modding tools - SCENE: generate debug timeline"
+			],
+			[
+				"scene",
+				"Build With: W3 radish modding tools - SCENE: generate debug timeline"
+			],
+			[
+				"deploy",
+				"Build With: W3 radish modding tools - DEPLOY: tmp-scripts only"
+			],
+			[
+				"radish",
+				"Build With: W3 radish modding tools - SCENE: reencode all scenes"
+			],
+			[
+				"",
+				"Build With: W3 radish modding tools"
+			],
+			[
+				"timelin",
+				"Build With: W3 radish modding tools - SCENE: generate debug timeline"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 181.0,
+		"history":
+		[
+			"dir()",
+			"dir",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/W3Modding/_projects/modTrial5",
+		"/E/W3Modding/_projects/modTrial5/definition.quest"
+	],
+	"file_history":
+	[
+		"/F/scripts/engine/entity.ws",
+		"/F/scripts/game/gameplayEntity.ws",
+		"/F/scripts/game/actor.ws",
+		"/F/W3Modding/_projects/modTrial7/definition.quest/def.c.humans.yml",
+		"/F/W3Modding/_projects/modTrial7/definition.quest/def.c.bear_nekker.yml",
+		"/F/W3Modding/_projects/modTrial7/definition.quest/def.l.bear_nekker.yml",
+		"/F/W3Modding/_projects/modTrial7/_tmp/dumped.layerdef.yml",
+		"/F/W3Modding/_projects/modTrial7/definition.quest/def.layers.yml",
+		"/F/W3Modding/_projects/modTrial7/_tmp/dumped.community.yml",
+		"/F/scripts/engine/persistentEntity.ws",
+		"/F/scripts/core/math.ws",
+		"/F/W3Modding/_projects/modTrial7/mod.scripts/local/modTrial7/pirate_init.ws",
+		"/F/W3Modding/_projects/modTrial7/definition.quest/prod.quest-Trial7.yml",
+		"/F/W3Modding/_projects/modTrial7/mod.scripts/local/pirate_init",
+		"/F/scripts/core/array.ws",
+		"/F/scripts/core/misc.ws",
+		"/F/W3Modding/_modTools/Witcher 3 Mod Tools/radish-tools/repo.quests/rtti-custom.repo.yml-template",
+		"/F/W3Modding/_projects/modTrial7/definition.quest/def.communities.yml",
+		"/F/W3Modding/_projects/modTrial7/wcc.log",
+		"/F/W3Modding/_projects/modTrial7/definition.quest/def.journal.yml",
+		"/F/W3Modding/_projects/modTrial6/definition.scenes/scene.the_father.scene-timeline",
+		"/F/W3Modding/_projects/modTrial6/definition.scenes/scene.the_father.yml",
+		"/F/W3Modding/_projects/modTrial7/w3.project-template.sublime-project-template",
+		"/F/W3Modding/_projects/modTrial6/definition.scenes/_patch-reencode-scene+restart.bat",
+		"/F/W3Modding/_projects/modTrial6/definition.scenes/_generate-timelines.bat",
+		"/F/W3Modding/_projects/modTrial6/definition.scenes/scene.bigbunny.yml",
+		"/F/W3Modding/_projects/modTrial6/_tmp/dumped.scene.yml",
+		"/F/W3Modding/old/Material/Commented Scripts/game/scenes/scene_functions.ws",
+		"/F/W3Modding/_projects/modTrial6/definition.scenes/scene.bigbunny.scene-timeline",
+		"/F/W3Modding/_projects/modTrial6/_tmp/dumped.layerdef.yml",
+		"/F/W3Modding/_modTools/Witcher 3 Mod Tools/radish-tools/docs.scenes/test.examples/test_dialogscript_script_func.ws",
+		"/F/W3Modding/_projects/modTrial6/definition.quest/layers.yml",
+		"/F/W3Modding/_projects/modTrial6/definition.quest/def.communities.yml",
+		"/F/W3Modding/_projects/dlcRestlessGhostContract/w3.project-template.sublime-project-template",
+		"/F/W3Modding/_projects/modTrial6/full.rebuild.bat",
+		"/F/W3Modding/_projects/modTrial6/definition.scenes/scene.intro.yml",
+		"/F/W3Modding/_projects/modTrial6/_settings_.bat",
+		"/F/W3Modding/_projects/dumped.scene.yml",
+		"/F/W3Modding/_projects/modTrial6/mod.scripts-tmp/local/modSceneStarter-tmp.ws",
+		"/F/W3Modding/_projects/modTrial4/w3.project-template.sublime-project-template",
+		"/F/W3Modding/_projects/modTrial6/w3.project-template.sublime-project-template",
+		"/F/W3Modding/_projects/modTrial4 - Kopie/w3.project-template.sublime-project-template",
+		"/F/W3Modding/_projects/modTrial2/w3.project-template.sublime-project-template"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "definition.quest/def.communities.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 373,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "definition.quest/def.templates-Actor-FireWoman.yml",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5963,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1553,
+								1553
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+	"project": "trial5.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 239.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

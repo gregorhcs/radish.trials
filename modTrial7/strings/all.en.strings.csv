@@ -12,7 +12,11 @@
 ; 
 ;meta[language=en]
 ; id      |key(hex)|key(str)| text
-2111409420|00000000|dlc_name_trial7|Langeness
-2111409421|00000000|option_dlc_name_trial7|MOD: Langeness
-2111409422|00000000|content_name_dlc_trial7|MOD: Langeness
+2111409420|00000000||Pirate
+2111409421|00000000||Pirate
+2111409422|00000000||Pirate
+2111409423|00000000||Karstark
+2111409424|00000000|dlc_name_trial7|Langeness
+2111409425|00000000|option_dlc_name_trial7|MOD: Langeness
+2111409426|00000000|content_name_dlc_trial7|MOD: Langeness
 ; 

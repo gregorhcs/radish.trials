@@ -1,7 +1,7 @@
 #
 # quest structure root segment
 # 
-# (version: 21, saved: 2022-04-22 17:23:19)
+# (version: 30, saved: 2022-04-23 22:14:51)
 #
 ---
 structure:
@@ -12,21 +12,42 @@ structure:
         next:
           - changelayers.show_all_layers
       
+      waituntil.new_wait_until_realtime_elapsed:
+        elapsed: "00:00:10"
+        ".editor":
+          pos: [ 518.0, 227.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - script.Change_Threat_Level
+      
+      script.Change_Threat_Level:
+        ".editor":
+          pos: [ 520.0, 158.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: SetThreatLevel
+        parameter:
+          - npcTag: cname_trial_seven_pirate
+          - newThreatLevel: 5
+        next:
+          - end
+          - waituntil.new_wait_until_realtime_elapsed
+      
       script.HelloWorld:
         ".editor":
-          pos: [ 502.0, 231.0 ]
+          pos: [ 401.0, 364.0 ]
           in: [ In ]
           out: [ Out ]
         function: radLog
         parameter:
           - logChannel: cname_trial7
           - msg: Hello Trial 7!
-        next:
-          - end
+        next: ".done"
       
       changelayers.show_all_layers:
         ".editor":
-          pos: [ 196.0, 164.0 ]
+          pos: [ 176.0, 151.0 ]
           hint: show-only
           in: []
           out: []
@@ -37,12 +58,13 @@ structure:
           - bearlayer
           - humanlayer
           - nekkerlayer
+          - newguard
         next:
           - spawn.spawn_all_communities
       
       spawn.spawn_all_communities:
         ".editor":
-          pos: [ 357.0, 157.0 ]
+          pos: [ 315.0, 174.0 ]
           hint: spawn-only
           in: []
           out: []
@@ -52,9 +74,9 @@ structure:
           - human_community
           - nekker_community
         next:
-          - end
+          - script.Change_Threat_Level
       
       end:
-        ".editor": [ 695.0, 151.0 ]
+        ".editor": [ 821.0, 190.0 ]
         next: ".done"
       
