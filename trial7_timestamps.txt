@@ -1,0 +1,11 @@
+0:08 monster timetable: nekkers eat on the ground
+0:25 monster timetable: nekker stand
+0:32 - 1:14 nekker guard inner area, pursue until outer
+1:54 - 2:10 nekker kill counter
+2:38 bears don't pursue when player leaves guarded area
+3:50 bears spawn in waves (upper right corner bear is newly spawned at red flag)
+4:05 pirate in (left) guard area has a wanderpath
+4:50 - 5:10 pirate stops pursuing after range
+5:12 - 5:32 custom community initalizer: some (random) pirates are knocked out, not killed
+5:32 - 6:53 weighted actionpoints (at 2am party pirates like to mock the warrioress caught with the bears), actionpoint sets (e.g. one set is "party sit") 
+6:53 some pirates seek shelter in rain
