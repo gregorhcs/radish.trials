@@ -1,5 +1,6 @@
-DMNS_started_with
+DMNQ_started_with
 	<= 0 -> not started
 	   1 -> merchant
 	   2 -> demons
 
+DMNQ_violence_chosen

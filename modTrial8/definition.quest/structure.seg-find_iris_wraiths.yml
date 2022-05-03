@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: find_iris_wraiths
 # 
-# (version: 22, saved: 2022-05-02 22:39:14)
+# (version: 30, saved: 2022-05-03 19:45:16)
 #
 ---
 structure:
@@ -11,9 +11,16 @@ structure:
         in:
           ".editor": [ 100.0, 250.0 ]
           next:
+            - journal.iris_shadow_bestiary: Activate
+        
+        journal.iris_shadow_bestiary:
+          ".editor": [ 268.0, 247.0 ]
+          entry: creatures/iris_shadow_wraith/shadow_found
+          notify: true
+          next:
             - out
         
         out:
-          ".editor": [ 265.0, 251.0 ]
+          ".editor": [ 425.0, 249.0 ]
           next: ".done"
         

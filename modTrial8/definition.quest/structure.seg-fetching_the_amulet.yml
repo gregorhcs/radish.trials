@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: fetching_the_amulet
 # 
-# (version: 22, saved: 2022-05-02 22:39:14)
+# (version: 30, saved: 2022-05-03 19:45:16)
 #
 ---
 structure:
@@ -11,9 +11,52 @@ structure:
         in:
           ".editor": [ 100.0, 250.0 ]
           next:
+            - waituntil.approached_merchant
+        
+        scene.merchant_talk_amulet:
+          ".editor":
+            pos: [ 351.0, 250.0 ]
+            in: [ Input ]
+            out: [ Output ]
+          scene: test_demons.yml
+          placement: novigrad/sp_test_demons
+          interruptable: true
+          _fadein: false
+          next.Output:
             - out
         
+        waituntil.approached_merchant:
+          entered: [ novigrad/entermerchantarea, PLAYER ]
+          ".editor":
+            pos: [ 229.0, 248.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - scene.merchant_talk_amulet: Input
+        
+        script.fist_fight:
+          ".editor":
+            pos: [ 493.0, 103.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: radLog
+          parameter:
+            - logChannel: cname_TRIAL8
+            - msg: fist fight
+          next: ".done"
+        
+        script.sword_fight:
+          ".editor":
+            pos: [ 496.0, 173.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: radLog
+          parameter:
+            - logChannel: cname_TRIAL8
+            - msg: sword fight
+          next: ".done"
+        
         out:
-          ".editor": [ 287.0, 250.0 ]
+          ".editor": [ 791.0, 246.0 ]
           next: ".done"
         

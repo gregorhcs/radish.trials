@@ -1,0 +1,26 @@
+#
+# quest structure subsegment: demons_glossary1
+# 
+# (version: 30, saved: 2022-05-03 19:45:16)
+#
+---
+structure:
+  segments:
+    demons_glossary1:
+      blocks:
+        in:
+          ".editor": [ 100.0, 250.0 ]
+          next:
+            - journal.demons_glossary_no1: Activate
+        
+        journal.demons_glossary_no1:
+          ".editor": [ 256.0, 251.0 ]
+          entry: characters/demons/meet_again_task_freedom
+          notify: true
+          next:
+            - out
+        
+        out:
+          ".editor": [ 399.0, 260.0 ]
+          next: ".done"
+        

@@ -1,4 +1,5 @@
 journals:
+
   quests:
 
     trial8:
@@ -22,17 +23,88 @@ journals:
 
 
       instructions:
-        investigation:
-          - investigate_area:
-              caption: Find the merchant.
+
+        task_merchant:
+
+          - investigate_mansion_front:
+              caption: "Find out what's going on at the von Everec mansion."
               mappins:
-                - [merchantpin, 24]
+                - [demonpin, 24]
+
+        get_amulet:
+
+          - get_amulet_merchant_unknown:
+              caption: "Get the demonic amulet from the merchant."
+              mappins:
+                - [dmnq_merchant, 24] # tag of merchant
+
+          - get_amulet_merchant_known:
+              caption: "Get the demonic amulet from the merchant."
+              mappins: dmnq_merchant # tag of merchant
+
+          - use_force_merchant_unknown:
+              caption: "(Optional) Use force."
+              mappins:
+                - [dmnq_merchant, 24] # tag of merchant
+
+          - use_force_merchant_known:
+              caption: "(Optional) Use force."
+              mappins: dmnq_merchant # tag of merchant
+
+          - fight_merchant:
+              caption: "Kill the merchant and take the amulet."
+              mappins: dmnq_merchant # tag of merchant
+
+          - bringback_amulet:
+              caption: "Get back to the Black Cat and Dog to deliver the amulet."
+              mappins: demonpin
+
+        find_iris_wraiths:
+
+          - go_to_ritual_place:
+              caption: "Go to the place near the mansion to perform the ritual."
+              mappins:
+                - [fightareapin, 24]
+
+          - prepare_ritual_stones:
+              caption: "Collect five ... ."
+              mappins: 
+                - fightareapin # pins to 5 ...
+
+          - prepare_ritual_amulet:
+              caption: "(Optional) Place the amulet on the altar."
+              mappins: fightareapin # pin to altar
+
+          - wait_till_midnight:
+              caption: "Wait until midnight."
+
+          - kill_wraiths:
+              caption: "(Optional) Kill the Iris von Everec-Wraiths."
+              mappins: 
+                - fightareapin # tags of 3 wraiths
+
+        epilogue:
+
+          - confront_demons:
+              caption: "Go back to the Black Cat and Dog to confront them."
+              mappins: demonpin
 
   characters:
+
     demons:
       name: "PLACEHOLDER_NAME"
-      image: image.png
+      image: jinx-colored.png
       group: secondary
       description:
         - meet_again_task_freedom: "</br></br>Geralt and demons met again, they gave him strange task, promising this would free them."
         - all_a_hoax: "Geralt, after some strange mongering returned and learned it was all a hoax to do him evil for not freeing them before."
+
+  creatures:
+
+    iris_shadow_wraith:
+      name: "Iris's Shadow"
+      image: jinx-colored.png
+      group: spectres
+      description:
+        - shadow_found: "Strange shadows of Iris's soul."
+        - got_information_about_olgierd: "Apparenly Olgierd used this place of power."

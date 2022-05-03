@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: quest_hook
 # 
-# (version: 22, saved: 2022-05-02 22:39:14)
+# (version: 30, saved: 2022-05-03 19:45:16)
 #
 ---
 structure:
@@ -14,6 +14,15 @@ structure:
             - waituntil.approached_merchant
             - waituntil.approached_demons
         
+        subsegment.demons_glossary_no1:
+          ".editor":
+            pos: [ 1332.0, 232.0 ]
+            in: [ In ]
+            out: [ Out ]
+          segment: demons_glossary1
+          next:
+            - waituntil.met_merchant
+        
         scene.s1_queststart_merchant:
           ".editor":
             pos: [ 351.0, 143.0 ]
@@ -24,11 +33,11 @@ structure:
           interruptable: true
           _fadein: false
           next.Output:
-            - journal.journal_found_merchant: Activate
+            - journal.qjournal_found_merchant: Activate
         
         scene.s2_demons:
           ".editor":
-            pos: [ 1142.0, 237.0 ]
+            pos: [ 1199.0, 233.0 ]
             in: [ Input ]
             out: [ Output ]
           scene: test_demons.yml
@@ -36,7 +45,7 @@ structure:
           interruptable: true
           _fadein: false
           next.Output:
-            - waituntil.chosen_violence
+            - subsegment.demons_glossary_no1
         
         waituntil.approached_demons:
           entered: [ novigrad/aproachdemons, PLAYER ]
@@ -45,8 +54,9 @@ structure:
             in: [ In ]
             out: [ Out ]
           next:
-            - scene.s2_demons: Input
             - waituntil.not_started_with_merchant
+            - objective.investigate_mansion: Success
+            - scene.s2_demons: Input
         
         waituntil.approached_merchant:
           entered: [ novigrad/entermerchantarea, PLAYER ]
@@ -57,18 +67,21 @@ structure:
           next:
             - waituntil.not_started_with_demons
         
-        waituntil.chosen_violence:
+        waituntil.met_merchant:
           ".editor":
-            pos: [ 1273.0, 236.0 ]
+            pos: [ 1465.0, 231.0 ]
             hint: named
             in: [ In ]
             out: [ "false", "true" ]
           conditions:
             "true":
-              factdb: [ DMNS_violence_chosen, ">", 0 ]
+              factdb: [ DMNQ_started_with, "=", 1 ]
             "false":
-              factdb: [ DMNS_violence_chosen, "=", 0 ]
-          next: ".done"
+              factdb: [ DMNQ_started_with, "=", 2 ]
+          next.false:
+            - objective.getamulat_merchant_unknown: Activate
+          next.true:
+            - objective.getamulat_merchant_known: Activate
         
         waituntil.not_started_with_demons:
           ".editor":
@@ -76,50 +89,88 @@ structure:
             hint: named
             in: [ In ]
             out: [ "true" ]
-          conditions:
-            "true":
-              factdb: [ DMNS_started_with, "=", 0 ]
+          "true":
+            factdb: [ DMNQ_started_with, "=", 0 ]
           next.true:
             - addfact.fact_started_with_merchant
         
         waituntil.not_started_with_merchant:
           ".editor":
-            pos: [ 769.0, 302.0 ]
+            pos: [ 765.0, 341.0 ]
             hint: named
             in: [ In ]
             out: [ "true" ]
-          conditions:
-            "true":
-              factdb: [ DMNS_started_with, "=", 0 ]
+          "true":
+            factdb: [ DMNQ_started_with, "=", 0 ]
           next.true:
             - addfact.fact_started_with_demons
         
-        journal.journal_found_demons:
-          ".editor": [ 1017.0, 301.0 ]
+        journal.qjournal_found_demons:
+          ".editor": [ 1032.0, 349.0 ]
           entry: quests/trial8/0_start_demons
           notify: true
           next: ".done"
         
-        journal.journal_found_merchant:
+        journal.qjournal_found_merchant:
           ".editor": [ 483.0, 144.0 ]
           entry: quests/trial8/0_start_merchant
           notify: true
           next:
             - waituntil.approached_demons
+            - objective.investigate_mansion: Activate
+        
+        objective.bepeaceful_merchant_known:
+          ".editor": [ 1719.0, 286.0 ]
+          objective: trial8/get_amulet/use_force_merchant_known
+          notify: true
+          track: false
+          next:
+            - out
+        
+        objective.bepeaceful_merchant_unknown:
+          ".editor": [ 1719.0, 185.0 ]
+          objective: trial8/get_amulet/use_force_merchant_unknown
+          notify: true
+          track: false
+          next:
+            - out
+        
+        objective.getamulat_merchant_known:
+          ".editor": [ 1601.0, 283.0 ]
+          objective: trial8/get_amulet/get_amulet_merchant_known
+          notify: true
+          track: false
+          next:
+            - objective.bepeaceful_merchant_known: Activate
+        
+        objective.getamulat_merchant_unknown:
+          ".editor": [ 1605.0, 186.0 ]
+          objective: trial8/get_amulet/get_amulet_merchant_unknown
+          notify: true
+          track: false
+          next:
+            - objective.bepeaceful_merchant_unknown: Activate
+        
+        objective.investigate_mansion:
+          ".editor": [ 746.0, 154.0 ]
+          objective: trial8/task_merchant/investigate_mansion_front
+          notify: true
+          track: true
+          next: ".done"
         
         addfact.fact_started_with_demons:
-          ".editor": [ 894.0, 303.0 ]
-          value: [ DMNS_started_with, 2 ]
+          ".editor": [ 896.0, 348.0 ]
+          value: [ DMNQ_started_with, 2 ]
           next:
-            - journal.journal_found_demons: Activate
+            - journal.qjournal_found_demons: Activate
         
         addfact.fact_started_with_merchant:
           ".editor": [ 202.0, 144.0 ]
-          value: [ DMNS_started_with, 1 ]
+          value: [ DMNQ_started_with, 1 ]
           next:
             - scene.s1_queststart_merchant: Input
         
         out:
-          ".editor": [ 1539.0, 236.0 ]
+          ".editor": [ 1854.0, 230.0 ]
           next: ".done"
         
