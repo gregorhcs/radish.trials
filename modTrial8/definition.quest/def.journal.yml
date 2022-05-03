@@ -1,28 +1,38 @@
 journals:
+  quests:
 
-  quests: 
+    trial8:
 
-    working_time: ## Quest definition name. Can be any you choose
+      title: "Trial 8"
+      type: Side
+      world: novigrad
+      #contentType: EJCT_EP1
+      description:
+        - 0_start_merchant: Quest started by merchant.<br/>
+        - 0_start_demons: Quest started by demons.<br/>
+        - 1_demons_task1: Geralt talked to demons for first time.</br>
+        - 2a_merchant_dead: Geralt killed the merchant.</br>
+        - 2b_merchant_alive: Geralt convinced the merchant by other means.</br>
+        - 3_demons_task2_with_amulet: Geralt talked to demons for second time.</br>
+        - 3_demons_task2_without_amulet: Geralt talked to demons for second time and lied to them about having the amulet.</br>
+        - 4_solved_magic_place: Geralt solved the riddle at the magic place and saw Iris' ghosts.</br>
+        - 5_demons_finale_with_amulet: Geralt talked to demons for third and final time.</br>
+        - 5_demons_finale_without_amulet: Geralt talked to demons for third and final time.</br>
+        - 6_merchant_alive_and_found: Geralt found the merchant where his colleagues are.</br>
 
-      title: "Demon's Souls" ## Quest name that will be used in game
-      type: sidequest ## Type of quest. Can be main quest, side quest, treasure hunt or contract
-      world: novigrad   # optional, if empty every objective requires world
 
-      description:  ## List of descriptions about the quest that appear progressing it. To be visible they have to activated in the Questgraph
-        - 1_intro: Lorem Ipsum.<\br>
-        - success: Lorem Ipsum
-
-      instructions: 
-         quest:
-          - investigate_courtyard:
-             # world: novigrad
-              caption: Investigate what happens at the villa.
+      instructions:
+        investigation:
+          - investigate_area:
+              caption: Find the merchant.
               mappins:
-                - [demonpin, 0] 
-                
-          - calm_horse:
-             # world: kaer_morhen
-              caption: Calm the horse by your presence.
-              mappins:
-                - ~horse
+                - [merchantpin, 24]
 
+  characters:
+    demons:
+      name: "PLACEHOLDER_NAME"
+      image: image.png
+      group: secondary
+      description:
+        - meet_again_task_freedom: "</br></br>Geralt and demons met again, they gave him strange task, promising this would free them."
+        - all_a_hoax: "Geralt, after some strange mongering returned and learned it was all a hoax to do him evil for not freeing them before."

@@ -1,7 +1,7 @@
 #
 # production settings
 # 
-# (version: 14, saved: 2022-04-22 18:06:26)
+# (version: 22, saved: 2022-05-02 22:39:14)
 #
 ---
 production:
@@ -13,4 +13,4 @@ production:
     storesdata: true
     strings-idspace: 1410
     strings-idstart: 520
-    version: 14
+    version: 22

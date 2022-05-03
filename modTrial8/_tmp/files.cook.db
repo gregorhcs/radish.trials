@@ -41,7 +41,7 @@
             "class": "CQuest",
             "seed": 1,
             "id": "7A67E6B7-F3E52C95-7F500C7C-43CDE036",
-            "diskSize": 15132,
+            "diskSize": 19600,
             "hardImports": 1,
             "hard": [
                 "18B19BE4-39E0D41C-76EB9081-607ED3C1",
@@ -50,7 +50,8 @@
             "soft": [
                 "A781616E-E9DE252E-5E5C7197-2BA22211",
                 "18B19BE4-39E0D41C-76EB9081-607ED3C1",
-                "91176833-6CF76717-423D2601-751D88E7"
+                "91176833-6CF76717-423D2601-751D88E7",
+                "440DC069-8119341F-7AFF4C71-C3E82C59"
             ]
         },
         {
@@ -202,6 +203,14 @@
             ]
         },
         {
+            "path": "dlc\\dlctrial8\\journal\\characters\\demons.journal",
+            "level": 0,
+            "class": "CJournalResource",
+            "seed": 1,
+            "id": "91D24564-DB7B4303-DFB47966-17C2AE53",
+            "diskSize": 1075
+        },
+        {
             "path": "dlc\\dlctrial8\\journal\\quests\\questgroup_trial8.journal",
             "level": 0,
             "class": "CJournalResource",
@@ -210,12 +219,13 @@
             "diskSize": 619
         },
         {
-            "path": "dlc\\dlctrial8\\journal\\quests\\working_time.journal",
+            "path": "dlc\\dlctrial8\\journal\\quests\\trial8.journal",
             "level": 0,
             "class": "CJournalResource",
             "seed": 1,
-            "id": "FA3E64E9-B4039FB3-D998293A-4A626827",
-            "diskSize": 2137
+            "id": "440DC069-8119341F-7AFF4C71-C3E82C59",
+            "diskSize": 3213,
+            "softImports": 1
         },
         {
             "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\demonlayer\\actionpoints.w2l",

@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: start_conditions
 # 
-# (version: 14, saved: 2022-04-22 18:06:26)
+# (version: 22, saved: 2022-05-02 22:39:14)
 #
 ---
 structure:
@@ -29,7 +29,7 @@ structure:
             in: [ In ]
             out: [ Out ]
           next:
-            - out
+            - spawn.demon_community_spawn
         
         waituntil.delay_until_demons_appear:
           elapsed: "00:30:00"
@@ -140,7 +140,31 @@ structure:
           next:
             - waituntil.wait_until_soam_done
         
+        spawn.demon_community_spawn:
+          ".editor":
+            pos: [ 1352.0, 247.0 ]
+            hint: spawn-only
+            in: []
+            out: []
+          phase: sitting_at_roadside_phase
+          spawnsets:
+            - demon_community
+          next:
+            - spawn.merchant_community_spawn
+        
+        spawn.merchant_community_spawn:
+          ".editor":
+            pos: [ 1482.0, 247.0 ]
+            hint: spawn-only
+            in: []
+            out: []
+          phase: devastated_at_roadside_phase
+          spawnsets:
+            - merchant_community
+          next:
+            - out
+        
         out:
-          ".editor": [ 1347.0, 244.0 ]
+          ".editor": [ 1625.0, 248.0 ]
           next: ".done"
         

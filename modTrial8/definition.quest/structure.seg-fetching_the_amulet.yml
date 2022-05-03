@@ -1,0 +1,19 @@
+#
+# quest structure subsegment: fetching_the_amulet
+# 
+# (version: 22, saved: 2022-05-02 22:39:14)
+#
+---
+structure:
+  segments:
+    fetching_the_amulet:
+      blocks:
+        in:
+          ".editor": [ 100.0, 250.0 ]
+          next:
+            - out
+        
+        out:
+          ".editor": [ 287.0, 250.0 ]
+          next: ".done"
+        

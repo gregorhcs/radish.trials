@@ -1,0 +1,19 @@
+#
+# quest structure subsegment: ending_and_epilogue
+# 
+# (version: 22, saved: 2022-05-02 22:39:14)
+#
+---
+structure:
+  segments:
+    ending_and_epilogue:
+      blocks:
+        in:
+          ".editor": [ 100.0, 250.0 ]
+          next:
+            - out
+        
+        out:
+          ".editor": [ 589.0, 249.0 ]
+          next: ".done"
+        

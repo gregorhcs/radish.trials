@@ -32,11 +32,15 @@
             ]
         },
         {
+            "path": "dlc\\dlctrial8\\journal\\characters\\demons.journal",
+            "bundle": "blob"
+        },
+        {
             "path": "dlc\\dlctrial8\\journal\\quests\\questgroup_trial8.journal",
             "bundle": "blob"
         },
         {
-            "path": "dlc\\dlctrial8\\journal\\quests\\working_time.journal",
+            "path": "dlc\\dlctrial8\\journal\\quests\\trial8.journal",
             "bundle": "blob"
         },
         {

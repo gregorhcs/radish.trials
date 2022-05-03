@@ -1,0 +1,19 @@
+#
+# quest structure subsegment: find_iris_wraiths
+# 
+# (version: 22, saved: 2022-05-02 22:39:14)
+#
+---
+structure:
+  segments:
+    find_iris_wraiths:
+      blocks:
+        in:
+          ".editor": [ 100.0, 250.0 ]
+          next:
+            - out
+        
+        out:
+          ".editor": [ 265.0, 251.0 ]
+          next: ".done"
+        
