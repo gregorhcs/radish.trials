@@ -9,6 +9,10 @@
             "bundle": "blob"
         },
         {
+            "path": "dlc\\dlctrial8\\data\\entities\\dmnq_useless_sword.w2ent",
+            "bundle": "blob"
+        },
+        {
             "path": "dlc\\dlctrial8\\data\\entities\\the_blackness.w2ent",
             "bundle": "blob"
         },

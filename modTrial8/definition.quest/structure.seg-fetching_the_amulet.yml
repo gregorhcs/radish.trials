@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: fetching_the_amulet
 # 
-# (version: 44, saved: 2022-05-14 10:31:54)
+# (version: 51, saved: 2022-05-14 22:45:27)
 #
 ---
 structure:
@@ -17,17 +17,19 @@ structure:
           ".editor":
             pos: [ 500.0, 300.0 ]
             in: [ Input ]
-            out: [ Output ]
+            out: [ Output, fight ]
           scene: s3_amulet_from_merchant.yml
           placement: novigrad/sp_merchant1
           interruptable: true
           _fadein: false
           next.Output:
             - interaction.s4_demons_2nd_task: Input
+          next.fight:
+            - script.sword_fight
         
         interaction.s4_demons_2nd_task:
           ".editor":
-            pos: [ 700.0, 300.0 ]
+            pos: [ 954.0, 245.0 ]
             in: [ Input ]
             out: [ Output ]
           scene: s4_demons_2nd_task.yml
@@ -37,6 +39,24 @@ structure:
           next.Output:
             - out
         
+        waituntil.2XP_requested:
+          factdb: [ dmnq_2xp, ">=", 1 ]
+          ".editor":
+            pos: [ 519.0, -33.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - script.reward_2XP_
+        
+        waituntil.5XP_requested:
+          factdb: [ dmnq_5xp, ">=", 1 ]
+          ".editor":
+            pos: [ 510.0, 33.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - script.reward_5XP
+        
         waituntil.approached_merchant:
           entered: [ novigrad/entermerchantarea, PLAYER ]
           ".editor":
@@ -45,30 +65,64 @@ structure:
             out: [ Out ]
           next:
             - scene.s3_amulet_from_merchant: Input
+            - waituntil.5XP_requested
+            - waituntil.2XP_requested
         
-        script.fist_fight:
+        script.2XP_fact_reset:
           ".editor":
-            pos: [ 500.0, 100.0 ]
+            pos: [ 802.0, -38.0 ]
             in: [ In ]
             out: [ Out ]
-          function: radLog
+          function: ResetFactQuest
           parameter:
-            - logChannel: cname_TRIAL8
-            - msg: fist fight
+            - factId: cname_dmnq_2xp
           next: ".done"
+        
+        script.5XP_fact_reset:
+          ".editor":
+            pos: [ 802.0, 33.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: ResetFactQuest
+          parameter:
+            - factID: cname_dmnq_5xp
+          next: ".done"
+        
+        script.reward_2XP_:
+          ".editor":
+            pos: [ 649.0, -35.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: DMNQ_GiveRewardToPlayer
+          parameter:
+            - rewardName: cname_def_reward_2xp
+          next:
+            - script.2XP_fact_reset
+        
+        script.reward_5XP:
+          ".editor":
+            pos: [ 651.74609375, 34.8889083862 ]
+            in: [ In ]
+            out: [ Out ]
+          function: DMNQ_GiveRewardToPlayer
+          parameter:
+            - rewardName: cname_def_reward_5xp
+          next:
+            - script.5XP_fact_reset
         
         script.sword_fight:
           ".editor":
-            pos: [ 500.0, 200.0 ]
+            pos: [ 627.0, 428.0 ]
             in: [ In ]
             out: [ Out ]
           function: radLog
           parameter:
             - logChannel: cname_TRIAL8
             - msg: sword fight
-          next: ".done"
+          next:
+            - interaction.s4_demons_2nd_task: Input
         
         out:
-          ".editor": [ 900.0, 300.0 ]
+          ".editor": [ 1116.0, 248.0 ]
           next: ".done"
         

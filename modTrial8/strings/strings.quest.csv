@@ -33,12 +33,14 @@
 2111410030|00000000||Geralt talked to demons for third and final time.</br>
 2111410031|00000000||Geralt found the merchant where his colleagues are.</br>
 2111410032|00000000||Trial 8
-2111410033|00000000|item_name_trial8_notices_dmnq_contract|Our Friend is missing
-2111410034|00000000|item_desc_trial8_notices_dmnq_contract|Our Friend is missing
-2111410035|00000000|item_name_trial8_notices_dmnq_contract_text|Our Ophiri Friend is missing, would you search him for us?
-2111410036|00000000|item_name_trial8_notices_mage_letter|Instructions
-2111410037|00000000|item_desc_trial8_notices_mage_letter|Testimony of a failed mentorship.
-2111410038|00000000|item_name_trial8_notices_mage_letter_text|One last time Moritz, you have to the set up the loc. reconfigurational device BEFORE casting the spell. You don't simply walk into the wild without a plan for navigation either, don't you?
-2111410039|00000000|dlc_name_trial8|Demon's Souls
-2111410040|00000000|option_dlc_name_trial8|MOD: Demon's Souls
-2111410041|00000000|content_name_dlc_trial8|MOD: Demon's Souls
+2111410033|00000000|item_name_trial8_misc_dmnq_amulet|Mysterious Amulet
+2111410034|00000000|item_desc_trial8_misc_dmnq_amulet|Retrieved from an Ophiri Merchant per motivation by two demons...
+2111410035|00000000|item_name_trial8_notices_dmnq_amulet_descr|Instructions
+2111410036|00000000|item_desc_trial8_notices_dmnq_amulet_descr|Testimony of a failed mentorship.
+2111410037|00000000|item_name_trial8_notices_dmnq_amulet_descr_text|One last time Moritz, you have to the set up the loc. reconfigurational device BEFORE casting the spell. You don't simply walk into the wild without a plan for navigation either, don't you?
+2111410038|00000000|item_name_trial8_notices_dmnq_contract|Our Friend is missing
+2111410039|00000000|item_desc_trial8_notices_dmnq_contract|Our Friend is missing
+2111410040|00000000|item_name_trial8_notices_dmnq_contract_text|Our Ophiri Friend is missing, would you search him for us?
+2111410041|00000000|dlc_name_trial8|Demon's Souls
+2111410042|00000000|option_dlc_name_trial8|MOD: Demon's Souls
+2111410043|00000000|content_name_dlc_trial8|MOD: Demon's Souls

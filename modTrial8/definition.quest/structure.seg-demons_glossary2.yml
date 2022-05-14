@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: demons_glossary2
 # 
-# (version: 44, saved: 2022-05-14 10:31:54)
+# (version: 51, saved: 2022-05-14 22:45:27)
 #
 ---
 structure:
@@ -9,18 +9,18 @@ structure:
     demons_glossary2:
       blocks:
         in:
-          ".editor": [ 100.0, 250.0 ]
+          ".editor": [ 100.0, 150.0 ]
           next:
             - journal.demons_glossary_no2: Activate
         
         journal.demons_glossary_no2:
-          ".editor": [ 244.0, 257.0 ]
+          ".editor": [ 300.0, 150.0 ]
           entry: characters/demons/all_a_hoax
-          notify: true
+          notify: false
           next:
             - out
         
         out:
-          ".editor": [ 402.0, 259.0 ]
+          ".editor": [ 500.0, 150.0 ]
           next: ".done"
         

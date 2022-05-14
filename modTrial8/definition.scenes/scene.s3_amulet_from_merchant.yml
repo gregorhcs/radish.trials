@@ -130,8 +130,67 @@ dialogscript:
     - CUE: shot_1
     # (longest) anim: low_kneeling_determined_idle
     - PAUSE: 18.0666675568
-    - NEXT: section_exit
+    - NEXT: section_choice_howto
+    
+  section_choice_howto:
+        
+    - CHOICE:
 
-  section_exit:
+        - choice: ["No easy way out here.", section_fight]
+          emphasize: true
+
+        - choice: ["[Use Axii]", section_axii]
+          emphasize: true
+
+        - choice: ["Can I interest you in some money?", section_buy]
+          emphasize: true
+
+        - choice: ["How did you come by it, anyway?", section_convince]
+          emphasize: false
+
+  section_fight:
+    - geralt: "This ends in a fight, I know it."
+    - NEXT: section_exit_fight
+
+  section_axii:
+    - geralt: "Axii used right here."
+    - NEXT: script_2xp
+
+  section_buy:
+    - geralt: "Can I interest you in some money?"
+    - NEXT: script_2xp
+
+  section_convince:
+    - geralt: "Intricate to convince you I guess"
+    - NEXT: script_5xp
+
+  script_2xp:
+
+    - SCRIPT:
+        function: AddFact_S
+        parameter: 
+            - factName: "dmnq_2xp"
+            - value: 1
+            - validFor: 0
+
+    - NEXT: section_exit_normal
+
+  script_5xp:
+
+    - SCRIPT:
+        function: AddFact_S
+        parameter: 
+            - factName: "dmnq_5xp"
+            - value: 1
+            - validFor: 0
+
+    - NEXT: section_exit_normal
+
+  section_exit_fight:
+    - CAMERA_BLEND: 2.0
+    - OUTPUT: fight
+    - EXIT
+
+  section_exit_normal:
     - CAMERA_BLEND: 2.0
     - EXIT

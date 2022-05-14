@@ -677,7 +677,7 @@
             "class": "CQuest",
             "seed": 1,
             "id": "7A67E6B7-F3E52C95-7F500C7C-43CDE036",
-            "diskSize": 27514,
+            "diskSize": 28390,
             "hardImports": 1,
             "hard": [
                 "18B19BE4-39E0D41C-76EB9081-607ED3C1",
@@ -1219,6 +1219,13 @@
             "hardImports": 1
         },
         {
+            "path": "items\\weapons\\swords\\nomansland_swords\\nomansland_sword_rusty.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "7F1FFF39-AF25353F-E641ABF8-988D8F9B",
+            "hardImports": 1
+        },
+        {
             "path": "characters\\npc_entities\\animals\\horse\\horse_background_no_saddle.w2ent",
             "level": 0,
             "additional": 1,
@@ -1269,7 +1276,7 @@
             "class": "CEntityTemplate",
             "seed": 1,
             "id": "EC4A34E1-CF818A4C-C7A857D7-266D3C42",
-            "diskSize": 118660,
+            "diskSize": 119009,
             "softImports": 1,
             "hard": [
                 "F48764A3-D860DC48-53175D59-4919F8DA",
@@ -1409,12 +1416,23 @@
             ]
         },
         {
+            "path": "dlc\\dlctrial8\\data\\entities\\dmnq_useless_sword.w2ent",
+            "level": 0,
+            "class": "CEntityTemplate",
+            "seed": 1,
+            "id": "10B8A9C4-431D7890-A89DBB3A-07CDEE2E",
+            "diskSize": 1478,
+            "hard": [
+                "7F1FFF39-AF25353F-E641ABF8-988D8F9B"
+            ]
+        },
+        {
             "path": "dlc\\dlctrial8\\data\\entities\\the_blackness.w2ent",
             "level": 0,
             "class": "CEntityTemplate",
             "seed": 1,
             "id": "C3D0A8CD-C60408D8-1BC1DD66-6A0D7CCF",
-            "diskSize": 7944,
+            "diskSize": 7945,
             "hard": [
                 "D9690225-4BCFA876-A25A5F66-31E3713D",
                 "D05363EC-A6DECEDB-8A506433-B1E1943A",
@@ -1431,14 +1449,14 @@
             "level": 0,
             "seed": 1,
             "id": "E2F3A6B2-D5B2D065-26C2803C-1BE22063",
-            "diskSize": 1892
+            "diskSize": 2734
         },
         {
             "path": "dlc\\dlctrial8\\data\\gameplay\\items\\def_loot_quest.xml",
             "level": 0,
             "seed": 1,
             "id": "61608878-8F1FBEC9-22C6F645-B4641535",
-            "diskSize": 848
+            "diskSize": 1162
         },
         {
             "path": "dlc\\dlctrial8\\data\\scenes\\s1_start_merchant.w2scene",
@@ -1473,7 +1491,7 @@
             "class": "CStoryScene",
             "seed": 1,
             "id": "F57725A4-A574DA82-DE22BE5C-5E0C65E5",
-            "diskSize": 7262,
+            "diskSize": 11750,
             "softImports": 1,
             "soft": [
                 "8DF8C190-D644D1A3-7EA50454-DD2E8EB3",

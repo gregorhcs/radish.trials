@@ -1,4 +1,11 @@
 items:
+
+  misc:
+
+    dmnq_amulet:
+      name: "Mysterious Amulet"
+      description: "Retrieved from an Ophiri Merchant per motivation by two demons..."
+
   notices:                    # e.g. contract notices
 
     dmnq_contract:
@@ -6,7 +13,7 @@ items:
       description: "Our Friend is missing"
       text: "Our Ophiri Friend is missing, would you search him for us?"
 
-    mage_letter:
+    dmnq_amulet_descr:
       # item_name_<id>|Teleport 1532a licence
       name: "Instructions"
       # item_desc_<id>|Some new contract for ya.
@@ -15,5 +22,6 @@ items:
       text: "One last time Moritz, you have to the set up the loc. reconfigurational device BEFORE casting the spell. You don't simply walk into the wild without a plan for navigation either, don't you?"
 
 loot:
-  trial2_boat_loot:
-    - notices/mage_letter
+  dmnq_merchant_inv:
+    - notices/dmnq_amulet_descr
+    - misc/dmnq_amulet

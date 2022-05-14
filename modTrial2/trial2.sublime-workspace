@@ -112,12 +112,58 @@
 	"buffers":
 	[
 		{
-			"file": "definition.quest/def.journal.yml",
+			"file": "definition.quest/def.entities.yml",
 			"settings":
 			{
-				"buffer_size": 1079,
+				"buffer_size": 537,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"contents": "layers: \n  layertrig: \n    world: \"prologue\"\n    #context: \"\"\n\n    areas: \n      trigarea: \n        #height: 2.0\n        borderpoints: \n          - [ 341.2445373535, -62.8860359192, 2.1593785286 ]\n          - [ 338.4806213379, -59.0818099976, 2.1593785286 ]\n          - [ 334.0084533691, -60.5348930359, 2.1593785286 ]\n          - [ 334.0084533691, -65.2371749878, 2.1593785286 ]\n          - [ 338.4806213379, -66.6902542114, 2.1593785286 ]\n\n  layerboat: \n    world: \"prologue\"\n    #context: \"\"\n\n    areas: \n      boatarea: \n        #height: 2.0\n        borderpoints: \n          - [ 347.1289978027, -47.0545768738, 3.0153927803 ]\n          - [ 342.9831237793, -41.3482398987, 3.0153927803 ]\n          - [ 336.2748718262, -43.5278701782, 3.0153927803 ]\n          - [ 336.2748718262, -50.5812835693, 3.0153927803 ]\n          - [ 342.9831237793, -52.7609100342, 3.0153927803 ]\n\n    interactiveEntities: \n      skelligeboat: \n        pos: [ 341.2789001465, -46.8529167175, 3.0153927803 ]\n        rot: [ 0.0, 0.0, 0.0 ]\n        valid_interactions: [Loot]\n        template: CEntity:trial2_boat\n\n    mappins:\n      weather_area_pin: [ 338.2445373535, -55.3860359192, 2.1593785286 ]\n      skelligeboat_pin: [ 341.2789001465, -46.8529167175, 4.5161523819 ]",
+			"file": "definition.quest/layers.prologue.yml",
+			"file_size": 1247,
+			"file_write_time": 132627874642461287,
+			"settings":
+			{
+				"buffer_size": 1247,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					13,
+					1,
+					"cut",
+					null,
+					"AQAAABwEAAAAAAAAHAQAAAAAAAAjAAAACiAgICAgICAgdmFsaWRfaW50ZXJhY3Rpb25zOiBbTG9vdF0",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA/BAAAAAAAABwEAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					16,
+					1,
+					"paste",
+					null,
+					"AQAAAJkDAAAAAAAAvAMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACZAwAAAAAAAJkDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					19,
+					1,
+					"cut",
+					null,
+					"AQAAAOIDAAAAAAAA4gMAAAAAAABdAAAACiAgICAgICAgcG9zOiBbIDM0MS4yNzg5MDAxNDY1LCAtNDYuODUyOTE2NzE3NSwgMy4wMTUzOTI3ODAzIF0KICAgICAgICByb3Q6IFsgMC4wLCAwLjAsIDAuMCBd",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA/BAAAAAAAAOIDAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					24,
+					1,
+					"paste",
+					null,
+					"AQAAAJkDAAAAAAAA9gMAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACZAwAAAAAAAJkDAAAAAAAAAAAAAAAA8L8"
+				]
+			]
 		}
 	],
 	"build_system": "",
@@ -296,12 +342,11 @@
 			[
 				{
 					"buffer": 0,
-					"file": "definition.quest/def.journal.yml",
-					"selected": true,
-					"semi_transient": true,
+					"file": "definition.quest/def.entities.yml",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1079,
+						"buffer_size": 537,
 						"regions":
 						{
 						},
@@ -310,6 +355,38 @@
 							[
 								0,
 								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "definition.quest/layers.prologue.yml",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1247,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1088,
+								1088
 							]
 						],
 						"settings":

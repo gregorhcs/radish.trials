@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: start_conditions
 # 
-# (version: 44, saved: 2022-05-14 10:31:54)
+# (version: 51, saved: 2022-05-14 22:45:27)
 #
 ---
 structure:
@@ -114,7 +114,7 @@ structure:
             out: [ Out ]
           function: EnableDynamicMappin
           parameter:
-            - name: cname_dmnq_merchant
+            - tag: cname_dmnq_merchant
             - enable: true
           next:
             - out

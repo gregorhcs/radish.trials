@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: quest_hook
 # 
-# (version: 44, saved: 2022-05-14 10:31:54)
+# (version: 51, saved: 2022-05-14 22:45:27)
 #
 ---
 structure:
@@ -108,7 +108,7 @@ structure:
             out: [ Out ]
           function: EnableDynamicMappin
           parameter:
-            - name: cname_dmnq_black_cat
+            - tag: cname_dmnq_black_cat
             - enable: false
           next:
             - script.disable_exclamation_mappin_merchant
@@ -120,7 +120,7 @@ structure:
             out: [ Out ]
           function: EnableDynamicMappin
           parameter:
-            - name: cname_dmnq_merchant
+            - tag: cname_dmnq_merchant
             - enable: false
           next: ".done"
         

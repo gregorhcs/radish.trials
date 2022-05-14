@@ -11,7 +11,7 @@ entities:
     templateParams:
       - .type: CR4LootParam
         containers:
-          trial2_boat_loot:
+          dmnq_merchant_inv:
             chance: 100.0
             respawnTime: 0
 
@@ -25,12 +25,34 @@ entities:
       tags: [dmnq_merchant]
       level: 1
 
+    templateParams:  
+      - ".type": CInventoryDefinition
+        entries:
+          - ".type": CInventoryDefinitionEntry
+            category: "steelsword"
+            isMount: true
+            isLootable: true
+            initializer:
+              .type: CInventoryInitializerUniform
+              itemName: "trial8_misc_dmnq_amulet"
+          - ".type": CInventoryDefinitionEntry
+            category: "steelsword"
+            isMount: true
+            isLootable: true
+            initializer:
+              .type: CInventoryInitializerUniform
+              itemName: "trial8_notices_dmnq_amulet_descr"
+
+  DMNQ_useless_sword:
+    includes:
+      - "items/weapons/swords/nomansland_swords/nomansland_sword_rusty.w2ent"
+    entityObject:
+      ".type": CWitcherSword
+      tags: [dmnq_useless_sword]
+
   DMNQ_iris_shadow_wraith:
     includes:
-      #- characters/npc_entities/monsters/nekker_lvl3__warrior.w2ent
-      #- dlc/ep1/data/characters/base_entities/nightwraith_iris_base/nightwraith_iris_base.w2ent
       - dlc/ep1/data/characters/npc_entities/monsters/nightwraith_iris.w2ent
-
     entityObject:
       .type: "CNewNPC"
       level: 1
