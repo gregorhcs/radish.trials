@@ -1,29 +1,29 @@
 #
 # quest structure root segment
 # 
-# (version: 30, saved: 2022-05-03 19:45:16)
+# (version: 44, saved: 2022-05-14 10:31:54)
 #
 ---
 structure:
   quest:
     blocks:
       start:
-        ".editor": [ -274.0, 152.0 ]
+        ".editor": [ 100.0, 250.0 ]
         next:
           - subsegment.wait_start_conditions
       
       subsegment.ending_and_epilogue:
         ".editor":
-          pos: [ 412.0, 148.0 ]
+          pos: [ 1100.0, 250.0 ]
           in: [ In ]
           out: [ Out ]
         segment: ending_and_epilogue
         next:
-          - script.HelloWorld
+          - end
       
       subsegment.fetching_the_amulet:
         ".editor":
-          pos: [ 138.0, 152.0 ]
+          pos: [ 700.0, 250.0 ]
           in: [ In ]
           out: [ Out ]
         segment: fetching_the_amulet
@@ -32,7 +32,7 @@ structure:
       
       subsegment.find_iris_wraiths:
         ".editor":
-          pos: [ 276.0, 149.0 ]
+          pos: [ 900.0, 250.0 ]
           in: [ In ]
           out: [ Out ]
         segment: find_iris_wraiths
@@ -41,7 +41,7 @@ structure:
       
       subsegment.hook_and_task1:
         ".editor":
-          pos: [ -2.0, 151.0 ]
+          pos: [ 500.0, 250.0 ]
           in: [ In ]
           out: [ Out ]
         segment: quest_hook
@@ -50,37 +50,14 @@ structure:
       
       subsegment.wait_start_conditions:
         ".editor":
-          pos: [ -140.0, 151.0 ]
+          pos: [ 300.0, 250.0 ]
           in: [ In ]
           out: [ Out ]
         segment: start_conditions
         next:
           - subsegment.hook_and_task1
       
-      scene.scene_test_demons:
-        ".editor":
-          pos: [ 332.0, -2.0 ]
-          in: [ Input ]
-          out: [ Output ]
-        scene: test_demons.yml
-        placement: novigrad/sp_test_demons
-        interruptable: true
-        _fadein: true
-        next: ".done"
-      
-      script.HelloWorld:
-        ".editor":
-          pos: [ 542.0, 146.0 ]
-          in: [ In ]
-          out: [ Out ]
-        function: radLog
-        parameter:
-          - logChannel: cname_TRIAL8
-          - msg: "Demon's Souls Start"
-        next:
-          - end
-      
       end:
-        ".editor": [ 678.0, 146.0 ]
+        ".editor": [ 1300.0, 250.0 ]
         next: ".done"
       

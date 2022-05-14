@@ -112,15 +112,12 @@
 	"buffers":
 	[
 		{
-			"file": "definition.quest/def.items.yml",
+			"file": "definition.quest/def.journal.yml",
 			"settings":
 			{
-				"buffer_size": 621,
+				"buffer_size": 1079,
 				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-			]
+			}
 		}
 	],
 	"build_system": "",
@@ -262,11 +259,11 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
-		"height": 102.0,
+		"height": 103.0,
 		"where_history":
 		[
 		]
@@ -299,20 +296,20 @@
 			[
 				{
 					"buffer": 0,
-					"file": "definition.quest/def.items.yml",
+					"file": "definition.quest/def.journal.yml",
 					"selected": true,
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 621,
+						"buffer_size": 1079,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								620,
-								61
+								0,
+								0
 							]
 						],
 						"settings":
@@ -334,7 +331,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 37.0
 	},
 	"input":
 	{
@@ -371,7 +368,7 @@
 	"project": "trial2.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":

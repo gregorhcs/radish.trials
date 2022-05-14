@@ -6,7 +6,7 @@
             "class": "CCommunity",
             "seed": 1,
             "id": "18B19BE4-39E0D41C-76EB9081-607ED3C1",
-            "diskSize": 3085,
+            "diskSize": 3254,
             "hardImports": 1,
             "softImports": 1,
             "soft": [
@@ -20,13 +20,649 @@
             "class": "CCommunity",
             "seed": 1,
             "id": "91176833-6CF76717-423D2601-751D88E7",
-            "diskSize": 3260,
+            "diskSize": 3404,
             "hardImports": 1,
             "softImports": 1,
             "soft": [
                 "A478D60A-0BB71B86-CDF31877-1752C35E",
-                "D08434E4-977A2FAB-6B2D0F90-FA0DD91A"
+                "EC4A34E1-CF818A4C-C7A857D7-266D3C42"
             ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\spawnsets\\wraith_community.w2comm",
+            "level": 2,
+            "class": "CCommunity",
+            "seed": 1,
+            "id": "885CEBFE-1BBCE2D0-851F4D40-2B16E093",
+            "diskSize": 2779,
+            "hardImports": 1,
+            "softImports": 1,
+            "soft": [
+                "30EDA1E5-28B066DF-90B5C7A9-B96749F9"
+            ]
+        },
+        {
+            "path": "animations\\constraints\\constraints.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "F48764A3-D860DC48-53175D59-4919F8DA",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\interaction\\boat\\boat_geralt_sailor.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "763DFB56-46E2B80A-2D943A97-E9A81345",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\interaction\\environment\\man_geralt_carry_item.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "BEE9E2F1-AC1D0E88-BBD70E9D-F8333648",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\interaction\\environment\\man_geralt_focus.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "6BFFD817-C93724A4-56E5C594-7DE77B37",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\interaction\\environment\\man_meditation.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "7BE1D5DF-9B1BC8C2-63215BDF-B9DD625A",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\interaction\\finishers\\man_finishers.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "FA1B585F-699D620E-9DA6AE8D-BDFA470B",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\interaction\\mini_games\\drinking_game\\drinking_game.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "14C75C53-4C59721D-C024011F-5A6687D6",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\combat\\man_axe_1handed.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "C19341B7-C3C59623-A6A53C34-9FA0037E",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\combat\\man_axe_2handed.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "A7D13317-35B9C9C9-B8CB532A-1B937EA1",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\combat\\man_death.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "98AD5ED8-C62C5B1D-76459646-EC6B07DB",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\combat\\man_dismemberment.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "C4E99789-29487165-BBDBDED8-B0FDE292",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\combat\\man_fistfight.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "9350D543-A1606A76-FB358802-8C6EF85F",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\combat\\man_geralt_petard.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "5800D642-E85F53E4-AB36B42F-16448968",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\combat\\man_geralt_sword.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "D86936C0-9959E9AF-395843CA-98DD0911",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\combat\\man_geralt_sword_locomotion.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "1DDCF83C-D80851D2-7AC06BA5-397646D9",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\combat\\man_halberd_2handed.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "A449F4DA-F1A71046-C2B47DEB-DE890603",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\combat\\man_hammer_2handed.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "8329A1A2-F00BDE1D-12257CD5-659ACB5D",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\combat\\man_longsword.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "FABCD3CB-3AAD1374-ADD686C2-7EC8C226",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\combat\\man_mace_1handed.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "B2760CAC-EBAC9096-D619C3B5-689FF187",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\combat\\man_mage.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "31B89D17-6FA37E22-9498ACFF-AE4827B1",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\combat\\man_shield.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "EA322A46-7E5DC028-6078B0CC-579CD14C",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\combat\\man_spear_2handed.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "29529901-8DB67944-92ACA73C-E70C6117",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\combat\\man_sword_1handed.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "00C056C9-F3FE4C39-0E67B446-1EE30939",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\combat\\man_sword_2handed.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "6944C326-D49959B2-FED2482C-5D9C00B1",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\community\\man_carry_items.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "B5A0FE22-428C1BAD-438EC9A0-5A2914A5",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\community\\man_exploration_critical_states.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "9AE20C59-C9573D32-D23712F1-B7F748AB",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\community\\man_reactions.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "4951FF29-64DAFF4F-3CF31A60-6A82ED0D",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\community\\man_work.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "64898EF6-7A77CA6F-CC85FD96-003A84A4",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\dialogs\\ep1_man_dialog_animation.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "636B438F-59E609EE-4F7BA237-1461740E",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_additives.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "5488311A-98774D8A-99ECDBC7-E4052B9B",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_gameplay_recompress.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "C92F3597-989AAB54-2310873D-4845A7EC",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_item_interaction.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "B8EEB126-167EAFB7-48683BEA-D7C4F49D",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_kneeling.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "D55F12E1-86E5A487-D1D2E996-B30A00B0",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_locomotion.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "DF05D550-3D3CFBEC-CCC44CDE-271F705F",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_lookats.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "D7421C17-C9BF9285-652DFD40-07523B0D",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_lying.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "24493A5E-A0DCC8CF-948B4F88-C08B4F24",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_sitting.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "726A3185-E9E9AC5B-C7BD1D17-D12639D5",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_sitting_ground.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "BCEA0B38-EEAB9477-6D4BA129-7637C185",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_sitting_table.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "06677E63-0B7E3649-5DBBBA7C-F8E08D27",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_standing.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "3494303D-539E13BB-D20C1703-3F7FEFE5",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_standing_leaning.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "6AF83085-C14467FE-1D699DB3-0F467CA6",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_standing_leaning_back.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "D7FD67C7-12E2E407-6FA94695-B7AAF261",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\dialogs\\man_dialog_standing_to_standing.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "7A97D61E-41B5B388-1CE15E57-5D29A932",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\movement\\man_geralt_movement.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "6E332C48-BD35841E-08AD401A-C958DF31",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\movement\\man_movement.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "35EC2306-4C7720C2-271586FD-4E0C62C0",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\movement\\man_movement_prototype.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "D36397B2-AFA57E74-A0EC7607-1A6C90BA",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\quest\\man_quest.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "56C6732F-F2DA5A5A-180F70D9-F100504A",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\quest\\q602_geralt_drunk_run.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "BFC9AA53-F15A5C6A-3A1A4341-FEB2C548",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\man\\quest\\q602_geralt_folk_dancing.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "05872C61-EA63022D-C70F4390-44FE7DAB",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\mimics\\gameplay_man_mimic_animation.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "DD3240AF-9119BCEC-71E5D915-B428E1B8",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\mimics\\man_mimic_animation.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "1F58C530-10F7199A-A3B3F3D2-C6981FE7",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\mimics\\man_mimic_layers.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "C42395B9-1038CD3C-A6862FBE-37966B8E",
+            "hardImports": 1
+        },
+        {
+            "path": "animations\\mimics\\mimics_behavior.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "54796663-CA4E92EF-6E51E5A9-AF143DEA",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\base_entities\\man_base\\man_base.w2rig",
+            "level": 1,
+            "additional": 1,
+            "id": "11A9D291-60CD1CD1-BA356DFF-5730C142",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\base_entities\\man_base\\man_base_ragdoll.w2ragdoll",
+            "level": 1,
+            "additional": 1,
+            "id": "619AC824-3C66BB72-61BA8F1E-0FAE1173",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\base_entities\\noonwraith_base\\noonwraith_ragdoll.w2ragdoll",
+            "level": 1,
+            "additional": 1,
+            "id": "FCB7C4D6-14B5AE22-932765E1-203EFD69",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\man_average\\body\\model\\h_ma__neck_transition.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "6B12FE78-82C40EB8-4A707405-5C22C431",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\shadowmesh\\man_average_shadowmesh.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "6A03FC8B-69EC245C-18B0830F-5B45C695",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\special\\force.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D0CD1DE4-4678F83C-D71184EA-B01044AA",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\textures\\decals\\wounds\\wnd__decal_d01.xbm",
+            "level": 1,
+            "additional": 1,
+            "id": "31AF0E27-938D50B5-3B85438F-F804108B",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\textures\\decals\\wounds\\wnd__decal_n01.xbm",
+            "level": 1,
+            "additional": 1,
+            "id": "3E3917D8-640E6A84-A1485408-63B9B0C6",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__cut_arm02_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "AA135326-E47BCFB4-75709025-717B4B01",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__cut_arm03_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "8AB9240A-8A0B35CA-70540D76-95E52289",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__cut_head_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "00386D4E-CE9C4EA2-213F1432-4C4E1484",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__cut_torso02_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "4EF10548-995FB136-53614D7E-70651777",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__cut_torso03_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "2AABA613-8857C29C-FF64CDC2-9D9878D1",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__cut_torso_02_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "A2436D28-F01238BD-8AC3705E-AB7C067C",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__explode01_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "D9F45E90-7C420DF0-18B9F558-454C0B09",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__explode02_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "E1ED4343-25C1E269-A1536B42-2DEC2578",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__gash01_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "0A6FC488-39276989-E907ABFB-24F5CA2C",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__gash02_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "1BA4D3F5-4BC44CD1-1B3CC0DC-036BC2D8",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\models\\w_ma__gash03_fill.w2mesh",
+            "level": 1,
+            "additional": 1,
+            "id": "66445F26-E1BC405A-1A4521ED-FD892D17",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__cut_arm02.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "5DD01750-A5E98347-61258135-871DB963",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__cut_hand01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D60AAC75-F4584A8F-45FB0959-617685C0",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__cut_head01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "C015CBEE-EF7AABFA-8D295B70-83EB31CC",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__cut_torso02.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "BC8B95F9-BEB307E2-2EB029C6-6750E90B",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__gore01.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "CB136F17-324A3E5C-B5EAA8F6-FB39B36E",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__gore02.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "33AB3BE1-2B90DEFF-C8331571-39BAEB37",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__gore03.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "0D943A8F-B2243974-203DF45B-429B9688",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__gore04.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "9391F474-F623F71C-72F28234-12C08EFE",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__gore_arm_l.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "1CC7CD95-A6C07002-7CED79BC-BA8C9D5D",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__gore_foot_l.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "8DF19053-8FE92533-A26046F0-F90AF90A",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__gore_head.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "CF28CDAE-3A35688C-1DFB8E53-8945B466",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__gore_leg_l.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "9FA9FEF7-68444530-0CCDDF6F-DD8898F3",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\common\\wounds\\w_ma__gore_leg_r.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "B4ED40BF-B3F540FC-DC4BF746-D0E9720F",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_citizen\\arms\\a_11_ma__novigrad_citizen_p08.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "CE95C9A6-36AD9078-CFB742E7-DEAFFFFC",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_citizen\\caps\\c_09_ma__novigrad_merchant.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D1A8ECD6-A22CCA53-E8A3C5D4-4973542B",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\novigrad_citizen\\legs\\l1s_04_ma__novigrad_citizen_under.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "A14BEE44-C3DD04C9-30EAB60B-E93000EA",
+            "hardImports": 1
+        },
+        {
+            "path": "characters\\models\\crowd_npc\\skellige_villager\\items\\i_13_ma__skellige_villager.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "6EA36E27-BA0A0C36-2640EAF2-56344194",
+            "hardImports": 1
         },
         {
             "path": "dlc\\bob\\data\\quests\\minor_quests\\quest_files\\mq7004_bleeding_tree\\entities\\mq7004_jt_kneeling_concerned.w2job",
@@ -41,18 +677,91 @@
             "class": "CQuest",
             "seed": 1,
             "id": "7A67E6B7-F3E52C95-7F500C7C-43CDE036",
-            "diskSize": 19600,
+            "diskSize": 27514,
             "hardImports": 1,
             "hard": [
                 "18B19BE4-39E0D41C-76EB9081-607ED3C1",
-                "91176833-6CF76717-423D2601-751D88E7"
+                "91176833-6CF76717-423D2601-751D88E7",
+                "885CEBFE-1BBCE2D0-851F4D40-2B16E093"
             ],
             "soft": [
-                "A781616E-E9DE252E-5E5C7197-2BA22211",
+                "1F4F4861-08ED1754-E84569FC-E0D64D42",
+                "B79962A2-87176FEA-47E188A1-85DA5143",
+                "F57725A4-A574DA82-DE22BE5C-5E0C65E5",
+                "9C476B58-0C738C57-3D3D9D27-9F065559",
+                "5D8AF7FC-4D206E1C-7F6CFCF8-6BD3A4CD",
+                "6D966CF4-0253ED9F-D3C1C3BA-8B327A9B",
+                "A5CE06A1-BB613701-58DD9BF3-EE9C155B",
                 "18B19BE4-39E0D41C-76EB9081-607ED3C1",
                 "91176833-6CF76717-423D2601-751D88E7",
+                "885CEBFE-1BBCE2D0-851F4D40-2B16E093",
+                "FA044B86-A027D292-68BEA2A3-1213711C",
+                "91D24564-DB7B4303-DFB47966-17C2AE53",
                 "440DC069-8119341F-7AFF4C71-C3E82C59"
             ]
+        },
+        {
+            "path": "dlc\\ep1\\data\\animations\\monsters\\monster_iris.w2anims",
+            "level": 1,
+            "additional": 1,
+            "id": "E4CC4DB9-3661C894-A92D6DEE-BB9464CF",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\ep1\\data\\characters\\base_entities\\nightwraith_iris_base\\nightwraith_iris_base.w2rig",
+            "level": 1,
+            "additional": 1,
+            "id": "84DD4833-C39F2FA0-1A111165-7C340716",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\ep1\\data\\characters\\models\\crowd_npc\\hakland_warrior\\torso\\t2_01_ma__hakland_warrior.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "C18A920F-985EAE48-9C58804F-288419A7",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\ep1\\data\\characters\\models\\monsters\\nightwraith_iris\\body_01__nightwraith_iris.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "876995DB-F0EE7523-5CB734EC-FB3DF1F7",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\ep1\\data\\characters\\models\\secondary_npc\\hakland_mage\\g_01_ma__hakland_warrior.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "F414B0C7-3896064A-F580F4B3-E43F2166",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\ep1\\data\\characters\\models\\secondary_npc\\ofir_merchant\\h_01_ma__ofir_merchant.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "7A9C39BE-09010D8A-6D14895E-06AE5F16",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\ep1\\data\\characters\\npc_entities\\monsters\\nightwraith_iris.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "7C71114A-46A43869-8848E62E-DB5F0961",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\ep1\\data\\characters\\npc_entities\\secondary_npc\\ofir_merchant_mq6001.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "D08434E4-977A2FAB-6B2D0F90-FA0DD91A",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\ep1\\data\\gameplay\\behaviors\\npc\\behaviorgraph\\monster_iris_combat.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "8FBE75EB-0F47A0D5-8B2F0B95-B4FD8E16",
+            "hardImports": 1
         },
         {
             "path": "dlc\\ep1\\data\\gameplay\\community\\actionpoints\\quest\\q604_cat_sit.w2job",
@@ -66,6 +775,27 @@
             "level": 1,
             "additional": 1,
             "id": "82DBC743-0A14CD12-535B2666-7D86A1FA",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\ep1\\data\\gameplay\\trees\\monsters\\monster_iris_death.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "AD5CED4C-8D6AB1BC-4F5E200E-0568B644",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\ep1\\data\\gameplay\\trees\\monsters\\monster_iris_logic.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "8FB08627-FFA27EE6-94F50E74-2A7414CE",
+            "hardImports": 1
+        },
+        {
+            "path": "dlc\\ep1\\data\\gameplay\\trees\\monsters\\monster_iris_spawn.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "F8CD09F8-13DFB2AC-740BCB8E-CA877748",
             "hardImports": 1
         },
         {
@@ -122,13 +852,118 @@
             "level": 1,
             "additional": 1,
             "id": "90C2E23C-720E1B50-9CBE98FE-968C64BB",
+            "hardImports": 3
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\minigames\\drinking_contestant.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "D572C9A5-D2F67989-6C75AEB1-2770D896",
             "hardImports": 1
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\minigames\\npc_drinking_minigame_bartender.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "D5E7D65E-4B8A6BC9-C2A3FFAD-CDFFF16C",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\npc_2handed_combat.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "AC275ECF-A29B9F30-8C49EAAB-550D4F8C",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\npc_bow_combat.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "F9BF45C5-28E7D2BD-5689C6F5-4103C9E0",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\npc_exploration.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "D51C05CD-E0BB26B6-7740A9A9-D69FC207",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\npc_fists_combat.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "1A24ABAF-61029117-B994CBDB-E4977E39",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\npc_overlay.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "17F6966B-6C0CCEA3-16CBABC0-77510DF6",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\npc_shield_combat.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "FA4D12E7-ED1F9EA4-47306323-6A877B84",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\npc_sword_1handed_combat.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "B49861FD-8E0765D1-BE156FDC-29D832F5",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\npc_sword_2handed_combat.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "20245EC3-BD8E07DE-654C7AB0-9F1399A3",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\behaviors\\npc\\behaviorgraph\\npc_witcher_combat.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "5241974D-F83A86FB-1AAE64CE-052962C6",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\behaviors\\pc\\behaviorgraph\\pc_dialog.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "4DBB6B3A-B78A7170-3A8B107D-031789FD",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\behaviors\\pc\\behaviorgraph\\pc_sailing.w2beh",
+            "level": 1,
+            "additional": 1,
+            "id": "D359A57E-5B69FFA1-BC4F124B-20456A29",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\behaviors\\pc\\steering\\pc_steering.w2steer",
+            "level": 1,
+            "additional": 1,
+            "id": "6B968F3C-6DA186D6-89EC3929-05FC9E23",
+            "hardImports": 2
         },
         {
             "path": "gameplay\\community\\actionpoints\\animals\\horse_parking.w2job",
             "level": 1,
             "additional": 1,
             "id": "BD50B936-27079185-7E5012A4-567A25DD",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\monsters\\noonwraith_spin_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "5088897F-39E5E86A-E1787716-8697682D",
             "hardImports": 1
         },
         {
@@ -139,11 +974,439 @@
             "hardImports": 1
         },
         {
+            "path": "gameplay\\trees\\death\\death.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "BD1B0FDF-84F92715-A4716BFE-F61FC58B",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\death\\defeated.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "7555FCF5-0C3CCAC7-0F7258E7-CCBC4578",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\death\\unconscious.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "F263D393-0B499198-A126E433-DA3F769D",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\idle\\monster_idle_decorator.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "2D69D265-3ABCAE02-51CB90B2-3EFFEFF3",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\idle\\npc_idle.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "02DC631C-3326C317-F2C2632A-7F870667",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\monster_base.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "8DE77910-6B825723-599DB292-0A821312",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\monster_baseaxii.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "A1A3F5DD-4E275BFF-1425A983-894F4C64",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\monster_basecombat.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "3CB5C3A1-1C7D5CF0-C037289A-F0AABE49",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\monster_basetaunt.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "10B26B0D-C0A35B76-B2EEAF92-B4BBDFE8",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\monster_damage_reaction.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "68812903-3607CA35-941AEB18-8C447FD6",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\npc_base.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "6CF7BDFB-E1C781F8-D08F4B1F-122D1E89",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\npc_basecombat.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "1D7A2FF3-4EB83E7E-EF994AA8-2F29483C",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\npc_critical_state.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "3EB066A5-BA08D873-5E820EB2-0E92FF6E",
+            "hardImports": 2
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\monster_base_reactions.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "DF7D1E78-7FC9118B-9E411B04-A49220C3",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\npc_base_reactions.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "8921AE58-82B033B7-E961138E-6C4C1982",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\npc_reaction.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "07459360-596F39FD-F888EDA0-3A5434FB",
+            "hardImports": 2
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_bump.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "414DBED6-FE80D2B4-8F94DD6F-275EB3A4",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_get_scared.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "A2BB1290-6AABF180-00F03EC1-F727C4B7",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_join_search_for_target.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "88C6A52A-D1A9A8E2-E3555186-02D93F48",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_monster_escape_in_pack.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "FA77FCFF-B87F3C6C-30AD1DA8-2F31AE6B",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_monster_lead_escape.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "52753636-5EED3CD5-B391DF6B-14DD22D3",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_move_in_pack.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "820640CF-5FBBE14C-3A3A4F9E-8846D800",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_observe_fight.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "6A139C9C-3F082035-985D81C0-DCD6E83B",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_play_around.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "3B4F4D92-B7C85BC3-F4E20536-989C0286",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_rain.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "74A58115-927F1E5A-E041A1CD-41551E2C",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_run_wild_in_pack.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "E8C634D3-A372296A-67B97363-55FD5A95",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_scene_barter.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "DEEB442C-9CD64AF2-A3466A3A-9B4BE382",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_scene_gossip.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "9A884F84-EE1CE479-C0BCD9A0-6F6078C1",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_scene_question.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "776308C3-8147FE80-6634EC4A-FFBCE427",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_search_target.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "7B5700F5-BAFF1135-C0A3CCB0-FF99AAFC",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_stop_and_comment.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "A5D84A2E-3D25936E-A5FD143E-C7C9912A",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_surpirse.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "E80AD8BB-183C5BFF-E70AFEA5-78CA9C15",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\reaction_taunt.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "743E0050-52B11C4E-74E97940-69DC4432",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\reactions\\soft_reactions_commoner.w2behtree",
+            "level": 1,
+            "additional": 1,
+            "id": "1C4522BD-0286B5DF-63082EFF-782D8F6A",
+            "hardImports": 1
+        },
+        {
+            "path": "items\\remains\\remains__human_01\\remains_human_inv.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "9D89F23D-55C09B3E-7780FB43-B6DCD25E",
+            "hardImports": 1
+        },
+        {
             "path": "characters\\npc_entities\\animals\\horse\\horse_background_no_saddle.w2ent",
             "level": 0,
             "additional": 1,
             "id": "A478D60A-0BB71B86-CDF31877-1752C35E",
             "softImports": 1
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\entities\\dmnq_iris_shadow_wraith.w2ent",
+            "level": 0,
+            "class": "CEntityTemplate",
+            "seed": 1,
+            "id": "30EDA1E5-28B066DF-90B5C7A9-B96749F9",
+            "diskSize": 86785,
+            "softImports": 1,
+            "hard": [
+                "FCB7C4D6-14B5AE22-932765E1-203EFD69",
+                "E4CC4DB9-3661C894-A92D6DEE-BB9464CF",
+                "84DD4833-C39F2FA0-1A111165-7C340716",
+                "876995DB-F0EE7523-5CB734EC-FB3DF1F7",
+                "7C71114A-46A43869-8848E62E-DB5F0961",
+                "8FBE75EB-0F47A0D5-8B2F0B95-B4FD8E16",
+                "AD5CED4C-8D6AB1BC-4F5E200E-0568B644",
+                "8FB08627-FFA27EE6-94F50E74-2A7414CE",
+                "F8CD09F8-13DFB2AC-740BCB8E-CA877748",
+                "90C2E23C-720E1B50-9CBE98FE-968C64BB",
+                "6B968F3C-6DA186D6-89EC3929-05FC9E23",
+                "2D69D265-3ABCAE02-51CB90B2-3EFFEFF3",
+                "8DE77910-6B825723-599DB292-0A821312",
+                "A1A3F5DD-4E275BFF-1425A983-894F4C64",
+                "3CB5C3A1-1C7D5CF0-C037289A-F0AABE49",
+                "10B26B0D-C0A35B76-B2EEAF92-B4BBDFE8",
+                "68812903-3607CA35-941AEB18-8C447FD6",
+                "3EB066A5-BA08D873-5E820EB2-0E92FF6E",
+                "DF7D1E78-7FC9118B-9E411B04-A49220C3",
+                "07459360-596F39FD-F888EDA0-3A5434FB",
+                "88C6A52A-D1A9A8E2-E3555186-02D93F48",
+                "FA77FCFF-B87F3C6C-30AD1DA8-2F31AE6B",
+                "52753636-5EED3CD5-B391DF6B-14DD22D3",
+                "820640CF-5FBBE14C-3A3A4F9E-8846D800",
+                "3B4F4D92-B7C85BC3-F4E20536-989C0286",
+                "E8C634D3-A372296A-67B97363-55FD5A95",
+                "7B5700F5-BAFF1135-C0A3CCB0-FF99AAFC"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\entities\\dmnq_merchant_ofir.w2ent",
+            "level": 0,
+            "class": "CEntityTemplate",
+            "seed": 1,
+            "id": "EC4A34E1-CF818A4C-C7A857D7-266D3C42",
+            "diskSize": 118660,
+            "softImports": 1,
+            "hard": [
+                "F48764A3-D860DC48-53175D59-4919F8DA",
+                "763DFB56-46E2B80A-2D943A97-E9A81345",
+                "BEE9E2F1-AC1D0E88-BBD70E9D-F8333648",
+                "6BFFD817-C93724A4-56E5C594-7DE77B37",
+                "7BE1D5DF-9B1BC8C2-63215BDF-B9DD625A",
+                "FA1B585F-699D620E-9DA6AE8D-BDFA470B",
+                "14C75C53-4C59721D-C024011F-5A6687D6",
+                "C19341B7-C3C59623-A6A53C34-9FA0037E",
+                "A7D13317-35B9C9C9-B8CB532A-1B937EA1",
+                "98AD5ED8-C62C5B1D-76459646-EC6B07DB",
+                "C4E99789-29487165-BBDBDED8-B0FDE292",
+                "9350D543-A1606A76-FB358802-8C6EF85F",
+                "5800D642-E85F53E4-AB36B42F-16448968",
+                "D86936C0-9959E9AF-395843CA-98DD0911",
+                "1DDCF83C-D80851D2-7AC06BA5-397646D9",
+                "A449F4DA-F1A71046-C2B47DEB-DE890603",
+                "8329A1A2-F00BDE1D-12257CD5-659ACB5D",
+                "FABCD3CB-3AAD1374-ADD686C2-7EC8C226",
+                "B2760CAC-EBAC9096-D619C3B5-689FF187",
+                "31B89D17-6FA37E22-9498ACFF-AE4827B1",
+                "EA322A46-7E5DC028-6078B0CC-579CD14C",
+                "29529901-8DB67944-92ACA73C-E70C6117",
+                "00C056C9-F3FE4C39-0E67B446-1EE30939",
+                "6944C326-D49959B2-FED2482C-5D9C00B1",
+                "B5A0FE22-428C1BAD-438EC9A0-5A2914A5",
+                "9AE20C59-C9573D32-D23712F1-B7F748AB",
+                "4951FF29-64DAFF4F-3CF31A60-6A82ED0D",
+                "64898EF6-7A77CA6F-CC85FD96-003A84A4",
+                "636B438F-59E609EE-4F7BA237-1461740E",
+                "5488311A-98774D8A-99ECDBC7-E4052B9B",
+                "C92F3597-989AAB54-2310873D-4845A7EC",
+                "B8EEB126-167EAFB7-48683BEA-D7C4F49D",
+                "D55F12E1-86E5A487-D1D2E996-B30A00B0",
+                "DF05D550-3D3CFBEC-CCC44CDE-271F705F",
+                "D7421C17-C9BF9285-652DFD40-07523B0D",
+                "24493A5E-A0DCC8CF-948B4F88-C08B4F24",
+                "726A3185-E9E9AC5B-C7BD1D17-D12639D5",
+                "BCEA0B38-EEAB9477-6D4BA129-7637C185",
+                "06677E63-0B7E3649-5DBBBA7C-F8E08D27",
+                "3494303D-539E13BB-D20C1703-3F7FEFE5",
+                "6AF83085-C14467FE-1D699DB3-0F467CA6",
+                "D7FD67C7-12E2E407-6FA94695-B7AAF261",
+                "7A97D61E-41B5B388-1CE15E57-5D29A932",
+                "6E332C48-BD35841E-08AD401A-C958DF31",
+                "35EC2306-4C7720C2-271586FD-4E0C62C0",
+                "D36397B2-AFA57E74-A0EC7607-1A6C90BA",
+                "56C6732F-F2DA5A5A-180F70D9-F100504A",
+                "BFC9AA53-F15A5C6A-3A1A4341-FEB2C548",
+                "05872C61-EA63022D-C70F4390-44FE7DAB",
+                "DD3240AF-9119BCEC-71E5D915-B428E1B8",
+                "1F58C530-10F7199A-A3B3F3D2-C6981FE7",
+                "C42395B9-1038CD3C-A6862FBE-37966B8E",
+                "54796663-CA4E92EF-6E51E5A9-AF143DEA",
+                "11A9D291-60CD1CD1-BA356DFF-5730C142",
+                "619AC824-3C66BB72-61BA8F1E-0FAE1173",
+                "6B12FE78-82C40EB8-4A707405-5C22C431",
+                "6A03FC8B-69EC245C-18B0830F-5B45C695",
+                "D0CD1DE4-4678F83C-D71184EA-B01044AA",
+                "31AF0E27-938D50B5-3B85438F-F804108B",
+                "3E3917D8-640E6A84-A1485408-63B9B0C6",
+                "AA135326-E47BCFB4-75709025-717B4B01",
+                "8AB9240A-8A0B35CA-70540D76-95E52289",
+                "00386D4E-CE9C4EA2-213F1432-4C4E1484",
+                "4EF10548-995FB136-53614D7E-70651777",
+                "2AABA613-8857C29C-FF64CDC2-9D9878D1",
+                "A2436D28-F01238BD-8AC3705E-AB7C067C",
+                "D9F45E90-7C420DF0-18B9F558-454C0B09",
+                "E1ED4343-25C1E269-A1536B42-2DEC2578",
+                "0A6FC488-39276989-E907ABFB-24F5CA2C",
+                "1BA4D3F5-4BC44CD1-1B3CC0DC-036BC2D8",
+                "66445F26-E1BC405A-1A4521ED-FD892D17",
+                "5DD01750-A5E98347-61258135-871DB963",
+                "D60AAC75-F4584A8F-45FB0959-617685C0",
+                "C015CBEE-EF7AABFA-8D295B70-83EB31CC",
+                "BC8B95F9-BEB307E2-2EB029C6-6750E90B",
+                "CB136F17-324A3E5C-B5EAA8F6-FB39B36E",
+                "33AB3BE1-2B90DEFF-C8331571-39BAEB37",
+                "0D943A8F-B2243974-203DF45B-429B9688",
+                "9391F474-F623F71C-72F28234-12C08EFE",
+                "1CC7CD95-A6C07002-7CED79BC-BA8C9D5D",
+                "8DF19053-8FE92533-A26046F0-F90AF90A",
+                "CF28CDAE-3A35688C-1DFB8E53-8945B466",
+                "9FA9FEF7-68444530-0CCDDF6F-DD8898F3",
+                "B4ED40BF-B3F540FC-DC4BF746-D0E9720F",
+                "CE95C9A6-36AD9078-CFB742E7-DEAFFFFC",
+                "D1A8ECD6-A22CCA53-E8A3C5D4-4973542B",
+                "A14BEE44-C3DD04C9-30EAB60B-E93000EA",
+                "6EA36E27-BA0A0C36-2640EAF2-56344194",
+                "C18A920F-985EAE48-9C58804F-288419A7",
+                "F414B0C7-3896064A-F580F4B3-E43F2166",
+                "7A9C39BE-09010D8A-6D14895E-06AE5F16",
+                "D08434E4-977A2FAB-6B2D0F90-FA0DD91A",
+                "90C2E23C-720E1B50-9CBE98FE-968C64BB",
+                "D572C9A5-D2F67989-6C75AEB1-2770D896",
+                "D5E7D65E-4B8A6BC9-C2A3FFAD-CDFFF16C",
+                "AC275ECF-A29B9F30-8C49EAAB-550D4F8C",
+                "F9BF45C5-28E7D2BD-5689C6F5-4103C9E0",
+                "D51C05CD-E0BB26B6-7740A9A9-D69FC207",
+                "1A24ABAF-61029117-B994CBDB-E4977E39",
+                "17F6966B-6C0CCEA3-16CBABC0-77510DF6",
+                "FA4D12E7-ED1F9EA4-47306323-6A877B84",
+                "B49861FD-8E0765D1-BE156FDC-29D832F5",
+                "20245EC3-BD8E07DE-654C7AB0-9F1399A3",
+                "5241974D-F83A86FB-1AAE64CE-052962C6",
+                "4DBB6B3A-B78A7170-3A8B107D-031789FD",
+                "D359A57E-5B69FFA1-BC4F124B-20456A29",
+                "6B968F3C-6DA186D6-89EC3929-05FC9E23",
+                "BD1B0FDF-84F92715-A4716BFE-F61FC58B",
+                "7555FCF5-0C3CCAC7-0F7258E7-CCBC4578",
+                "F263D393-0B499198-A126E433-DA3F769D",
+                "02DC631C-3326C317-F2C2632A-7F870667",
+                "6CF7BDFB-E1C781F8-D08F4B1F-122D1E89",
+                "1D7A2FF3-4EB83E7E-EF994AA8-2F29483C",
+                "3EB066A5-BA08D873-5E820EB2-0E92FF6E",
+                "8921AE58-82B033B7-E961138E-6C4C1982",
+                "07459360-596F39FD-F888EDA0-3A5434FB",
+                "414DBED6-FE80D2B4-8F94DD6F-275EB3A4",
+                "A2BB1290-6AABF180-00F03EC1-F727C4B7",
+                "6A139C9C-3F082035-985D81C0-DCD6E83B",
+                "74A58115-927F1E5A-E041A1CD-41551E2C",
+                "DEEB442C-9CD64AF2-A3466A3A-9B4BE382",
+                "9A884F84-EE1CE479-C0BCD9A0-6F6078C1",
+                "776308C3-8147FE80-6634EC4A-FFBCE427",
+                "A5D84A2E-3D25936E-A5FD143E-C7C9912A",
+                "E80AD8BB-183C5BFF-E70AFEA5-78CA9C15",
+                "743E0050-52B11C4E-74E97940-69DC4432",
+                "1C4522BD-0286B5DF-63082EFF-782D8F6A",
+                "9D89F23D-55C09B3E-7780FB43-B6DCD25E"
+            ],
+            "soft": [
+                "6C6A321E-9527FDBF-12521936-E628C979",
+                "4CAA7816-1B771FDB-69D11628-8D51DA43",
+                "73EA500C-8936C5BC-FC55C627-78FB5742",
+                "26F6FABA-FF8697EC-EC88DF5E-78FD9795"
+            ]
         },
         {
             "path": "dlc\\dlctrial8\\data\\entities\\the_blackness.w2ent",
@@ -168,7 +1431,7 @@
             "level": 0,
             "seed": 1,
             "id": "E2F3A6B2-D5B2D065-26C2803C-1BE22063",
-            "diskSize": 1046
+            "diskSize": 1892
         },
         {
             "path": "dlc\\dlctrial8\\data\\gameplay\\items\\def_loot_quest.xml",
@@ -178,11 +1441,89 @@
             "diskSize": 848
         },
         {
-            "path": "dlc\\dlctrial8\\data\\scenes\\test_demons.w2scene",
+            "path": "dlc\\dlctrial8\\data\\scenes\\s1_start_merchant.w2scene",
             "level": 0,
             "class": "CStoryScene",
             "seed": 1,
-            "id": "A781616E-E9DE252E-5E5C7197-2BA22211",
+            "id": "1F4F4861-08ED1754-E84569FC-E0D64D42",
+            "diskSize": 7262,
+            "softImports": 1,
+            "soft": [
+                "8DF8C190-D644D1A3-7EA50454-DD2E8EB3",
+                "90DB9D66-1F7513D5-96AB23A4-766415AB"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s2_demons.w2scene",
+            "level": 0,
+            "class": "CStoryScene",
+            "seed": 1,
+            "id": "B79962A2-87176FEA-47E188A1-85DA5143",
+            "diskSize": 9259,
+            "softImports": 1,
+            "soft": [
+                "8D0FD08D-D9817F92-DAC2A737-AFEE3614",
+                "0BDA045A-17168143-CC2EDD0F-30926394",
+                "90DB9D66-1F7513D5-96AB23A4-766415AB"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s3_amulet_from_merchant.w2scene",
+            "level": 0,
+            "class": "CStoryScene",
+            "seed": 1,
+            "id": "F57725A4-A574DA82-DE22BE5C-5E0C65E5",
+            "diskSize": 7262,
+            "softImports": 1,
+            "soft": [
+                "8DF8C190-D644D1A3-7EA50454-DD2E8EB3",
+                "90DB9D66-1F7513D5-96AB23A4-766415AB"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s4_demons_2nd_task.w2scene",
+            "level": 0,
+            "class": "CStoryScene",
+            "seed": 1,
+            "id": "9C476B58-0C738C57-3D3D9D27-9F065559",
+            "diskSize": 9259,
+            "softImports": 1,
+            "soft": [
+                "8D0FD08D-D9817F92-DAC2A737-AFEE3614",
+                "0BDA045A-17168143-CC2EDD0F-30926394",
+                "90DB9D66-1F7513D5-96AB23A4-766415AB"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s5_ritual.w2scene",
+            "level": 0,
+            "class": "CStoryScene",
+            "seed": 1,
+            "id": "5D8AF7FC-4D206E1C-7F6CFCF8-6BD3A4CD",
+            "diskSize": 6247,
+            "softImports": 1,
+            "soft": [
+                "90DB9D66-1F7513D5-96AB23A4-766415AB"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s6_unhappy_awakening.w2scene",
+            "level": 0,
+            "class": "CStoryScene",
+            "seed": 1,
+            "id": "6D966CF4-0253ED9F-D3C1C3BA-8B327A9B",
+            "diskSize": 6247,
+            "softImports": 1,
+            "soft": [
+                "90DB9D66-1F7513D5-96AB23A4-766415AB"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s7_geralt_confronts.w2scene",
+            "level": 0,
+            "class": "CStoryScene",
+            "seed": 1,
+            "id": "A5CE06A1-BB613701-58DD9BF3-EE9C155B",
             "diskSize": 9259,
             "softImports": 1,
             "soft": [
@@ -203,12 +1544,22 @@
             ]
         },
         {
+            "path": "dlc\\dlctrial8\\journal\\bestiary\\iris_shadow_wraith.journal",
+            "level": 0,
+            "class": "CJournalResource",
+            "seed": 1,
+            "id": "FA044B86-A027D292-68BEA2A3-1213711C",
+            "diskSize": 1326,
+            "softImports": 1
+        },
+        {
             "path": "dlc\\dlctrial8\\journal\\characters\\demons.journal",
             "level": 0,
             "class": "CJournalResource",
             "seed": 1,
             "id": "91D24564-DB7B4303-DFB47966-17C2AE53",
-            "diskSize": 1075
+            "diskSize": 1082,
+            "softImports": 1
         },
         {
             "path": "dlc\\dlctrial8\\journal\\quests\\questgroup_trial8.journal",
@@ -224,7 +1575,7 @@
             "class": "CJournalResource",
             "seed": 1,
             "id": "440DC069-8119341F-7AFF4C71-C3E82C59",
-            "diskSize": 3213,
+            "diskSize": 6945,
             "softImports": 1
         },
         {
@@ -256,12 +1607,31 @@
             "diskSize": 1837
         },
         {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\fightlayer\\actionpoints.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "247687CF-31891E6A-AAF42BAE-3390E4E5",
+            "diskSize": 2295,
+            "hard": [
+                "5088897F-39E5E86A-E1787716-8697682D"
+            ]
+        },
+        {
             "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\fightlayer\\areas.w2l",
             "level": 0,
             "class": "CLayer",
             "seed": 1,
             "id": "35A094CB-C864A25C-71FFC027-D289502D",
             "diskSize": 1883
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\fightlayer\\mappins.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "32D3D6E3-FDAD1F65-5EBD1F21-ACC68ACA",
+            "diskSize": 1053
         },
         {
             "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\generallayer\\areas.w2l",
@@ -319,7 +1689,7 @@
             "class": "CLayer",
             "seed": 1,
             "id": "0C202CFE-F7586583-6EDEA2AD-8B59DB9F",
-            "diskSize": 4901
+            "diskSize": 6194
         },
         {
             "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\scenelayer\\scenepoints.w2l",
@@ -327,28 +1697,28 @@
             "class": "CLayer",
             "seed": 1,
             "id": "A9862F64-FA487745-7692D8B3-5A1D8176",
-            "diskSize": 1012
+            "diskSize": 1778
         },
         {
             "path": "dlc\\ep1\\data\\characters\\npc_entities\\animals\\demonic_cat.w2ent",
             "level": 0,
             "additional": 1,
             "id": "8D0FD08D-D9817F92-DAC2A737-AFEE3614",
-            "softImports": 2
+            "softImports": 4
         },
         {
             "path": "dlc\\ep1\\data\\characters\\npc_entities\\animals\\demonic_dog.w2ent",
             "level": 0,
             "additional": 1,
             "id": "0BDA045A-17168143-CC2EDD0F-30926394",
-            "softImports": 2
+            "softImports": 4
         },
         {
-            "path": "dlc\\ep1\\data\\characters\\npc_entities\\secondary_npc\\ofir_merchant_mq6001.w2ent",
+            "path": "dlc\\ep1\\data\\characters\\npc_entities\\crowd_npc\\ofir_enchanter\\ofir_enchanter.w2ent",
             "level": 0,
             "additional": 1,
-            "id": "D08434E4-977A2FAB-6B2D0F90-FA0DD91A",
-            "softImports": 1
+            "id": "8DF8C190-D644D1A3-7EA50454-DD2E8EB3",
+            "softImports": 2
         },
         {
             "path": "environment\\decorations\\trade\\goods_carriage\\goods_carriage_closed.w2mesh",
@@ -358,11 +1728,39 @@
             "softImports": 1
         },
         {
+            "path": "fx\\blood\\dismemberment\\blood_explosion.w2p",
+            "level": 0,
+            "additional": 1,
+            "id": "6C6A321E-9527FDBF-12521936-E628C979",
+            "softImports": 1
+        },
+        {
+            "path": "fx\\blood\\dismemberment\\blood_squirt.w2p",
+            "level": 0,
+            "additional": 1,
+            "id": "4CAA7816-1B771FDB-69D11628-8D51DA43",
+            "softImports": 1
+        },
+        {
+            "path": "fx\\blood\\dismemberment\\dismembement_fx2.w2p",
+            "level": 0,
+            "additional": 1,
+            "id": "73EA500C-8936C5BC-FC55C627-78FB5742",
+            "softImports": 1
+        },
+        {
+            "path": "gameplay\\journal\\bestiary\\humans.journal",
+            "level": 0,
+            "additional": 1,
+            "id": "26F6FABA-FF8697EC-EC88DF5E-78FD9795",
+            "softImports": 1
+        },
+        {
             "path": "gameplay\\templates\\characters\\player\\player.w2ent",
             "level": 0,
             "additional": 1,
             "id": "90DB9D66-1F7513D5-96AB23A4-766415AB",
-            "softImports": 1
+            "softImports": 7
         }
     ]
 }

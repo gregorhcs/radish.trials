@@ -12,29 +12,74 @@
 ; 
 ;meta[language=en]
 ; id      |key(hex)|key(str)| text
-2111410520|00000000||Geralt, after some strange mongering returned and learned it was all a hoax to do him evil for not freeing them before.
-2111410521|00000000||</br></br>Geralt and demons met again, they gave him strange task, promising this would free them.
-2111410522|00000000||PLACEHOLDER_NAME
-2111410523|00000000||MOD questgroup_trial8 Quests
-2111410524|00000000||Find the merchant.
-2111410525|00000000||Quest started by demons.<br/>
-2111410526|00000000||Quest started by merchant.<br/>
-2111410527|00000000||Geralt talked to demons for first time.</br>
-2111410528|00000000||Geralt killed the merchant.</br>
-2111410529|00000000||Geralt convinced the merchant by other means.</br>
-2111410530|00000000||Geralt talked to demons for second time.</br>
-2111410531|00000000||Geralt talked to demons for second time and lied to them about having the amulet.</br>
-2111410532|00000000||Geralt solved the riddle at the magic place and saw Iris' ghosts.</br>
-2111410533|00000000||Geralt talked to demons for third and final time.</br>
-2111410534|00000000||Geralt talked to demons for third and final time.</br>
-2111410535|00000000||Geralt found the merchant where his colleagues are.</br>
-2111410536|00000000||Trial 8
-2111410537|00000000|item_name_trial8_notices_mage_letter|Instructions
-2111410538|00000000|item_desc_trial8_notices_mage_letter|Testimony of a failed mentorship.
-2111410539|00000000|item_name_trial8_notices_mage_letter_text|One last time Moritz, you have to the set up the loc. reconfigurational device BEFORE casting the spell. You don't simply walk into the wild without a plan for navigation either, don't you?
-2111410540|00000000|dlc_name_trial8|Demon's Souls
-2111410541|00000000|option_dlc_name_trial8|MOD: Demon's Souls
-2111410542|00000000|content_name_dlc_trial8|MOD: Demon's Souls
+2111410000|00000000||Ofieri Merchant
+2111410001|00000000||Geralt, after some strange mongering returned and learned it was all a hoax to do him evil for not freeing them before.
+2111410002|00000000||</br></br>Geralt and demons met again, they gave him strange task, promising this would free them.
+2111410003|00000000||PLACEHOLDER_NAME
+2111410004|00000000||Apparenly Olgierd used this place of power.
+2111410005|00000000||Strange shadows of Iris's soul.
+2111410006|00000000||Iris's Shadow
+2111410007|00000000||MOD questgroup_trial8 Quests
+2111410008|00000000||Go back to the Black Cat and Dog to confront them.
+2111410009|00000000||Go to the place near the mansion to perform the ritual.
+2111410010|00000000||(Optional) Kill the Iris von Everec-Wraiths.
+2111410011|00000000||(Optional) Place the amulet on the altar.
+2111410012|00000000||Collect five ... .
+2111410013|00000000||Wait until midnight.
+2111410014|00000000||Get back to the Black Cat and Dog to deliver the amulet.
+2111410015|00000000||Kill the merchant and take the amulet.
+2111410016|00000000||Get the demonic amulet from the merchant.
+2111410017|00000000||Get the demonic amulet from the merchant.
+2111410018|00000000||(Optional) Use force.
+2111410019|00000000||(Optional) Use force.
+2111410020|00000000||Find out what's going on at the von Everec mansion.
+2111410021|00000000||Quest started by demons.<br/>
+2111410022|00000000||Quest started by merchant.<br/>
+2111410023|00000000||Geralt talked to demons for first time.</br>
+2111410024|00000000||Geralt killed the merchant.</br>
+2111410025|00000000||Geralt convinced the merchant by other means.</br>
+2111410026|00000000||Geralt talked to demons for second time.</br>
+2111410027|00000000||Geralt talked to demons for second time and lied to them about having the amulet.</br>
+2111410028|00000000||Geralt solved the riddle at the magic place and saw Iris' ghosts.</br>
+2111410029|00000000||Geralt talked to demons for third and final time.</br>
+2111410030|00000000||Geralt talked to demons for third and final time.</br>
+2111410031|00000000||Geralt found the merchant where his colleagues are.</br>
+2111410032|00000000||Trial 8
+2111410033|00000000|item_name_trial8_notices_dmnq_contract|Our Friend is missing
+2111410034|00000000|item_desc_trial8_notices_dmnq_contract|Our Friend is missing
+2111410035|00000000|item_name_trial8_notices_dmnq_contract_text|Our Ophiri Friend is missing, would you search him for us?
+2111410036|00000000|item_name_trial8_notices_mage_letter|Instructions
+2111410037|00000000|item_desc_trial8_notices_mage_letter|Testimony of a failed mentorship.
+2111410038|00000000|item_name_trial8_notices_mage_letter_text|One last time Moritz, you have to the set up the loc. reconfigurational device BEFORE casting the spell. You don't simply walk into the wild without a plan for navigation either, don't you?
+2111410039|00000000|dlc_name_trial8|Demon's Souls
+2111410040|00000000|option_dlc_name_trial8|MOD: Demon's Souls
+2111410041|00000000|content_name_dlc_trial8|MOD: Demon's Souls
+; 
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+; 
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+2111410200|00000000||Hello there, Witcher. Again.
+; 
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+; 
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+2111410400|00000000||Hello there, Witcher. Again.
+; 
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+;    158023|00000000||Getting colder
+; 
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+2111410600|00000000||Getting colder
+; 
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+2111410700|00000000||Hello there, Witcher. Again.
 ; 
 ;meta[language=en]
 ; id      |key(hex)|key(str)| text

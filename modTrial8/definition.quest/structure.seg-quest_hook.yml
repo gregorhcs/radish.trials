@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: quest_hook
 # 
-# (version: 30, saved: 2022-05-03 19:45:16)
+# (version: 44, saved: 2022-05-14 10:31:54)
 #
 ---
 structure:
@@ -9,27 +9,27 @@ structure:
     quest_hook:
       blocks:
         in:
-          ".editor": [ -218.0, 242.0 ]
+          ".editor": [ 76.0, 206.0 ]
           next:
             - waituntil.approached_merchant
             - waituntil.approached_demons
         
         subsegment.demons_glossary_no1:
           ".editor":
-            pos: [ 1332.0, 232.0 ]
+            pos: [ 1700.0, 175.0 ]
             in: [ In ]
             out: [ Out ]
           segment: demons_glossary1
           next:
             - waituntil.met_merchant
         
-        scene.s1_queststart_merchant:
+        scene.s1_start_merchant:
           ".editor":
-            pos: [ 351.0, 143.0 ]
+            pos: [ 900.0, 100.0 ]
             in: [ Input ]
             out: [ Output ]
-          scene: test_demons.yml
-          placement: novigrad/sp_test_demons
+          scene: s1_start_merchant.yml
+          placement: novigrad/sp_merchant1
           interruptable: true
           _fadein: false
           next.Output:
@@ -37,11 +37,11 @@ structure:
         
         scene.s2_demons:
           ".editor":
-            pos: [ 1199.0, 233.0 ]
+            pos: [ 1500.0, 175.0 ]
             in: [ Input ]
             out: [ Output ]
-          scene: test_demons.yml
-          placement: novigrad/sp_test_demons
+          scene: s2_demons.yml
+          placement: novigrad/sp_demons
           interruptable: true
           _fadein: false
           next.Output:
@@ -50,26 +50,26 @@ structure:
         waituntil.approached_demons:
           entered: [ novigrad/aproachdemons, PLAYER ]
           ".editor":
-            pos: [ 628.0, 238.0 ]
+            pos: [ 1300.0, 200.0 ]
             in: [ In ]
             out: [ Out ]
           next:
-            - waituntil.not_started_with_merchant
             - objective.investigate_mansion: Success
             - scene.s2_demons: Input
+            - waituntil.not_started_with_demons
         
         waituntil.approached_merchant:
           entered: [ novigrad/entermerchantarea, PLAYER ]
           ".editor":
-            pos: [ -80.0, 146.0 ]
+            pos: [ 300.0, 100.0 ]
             in: [ In ]
             out: [ Out ]
           next:
-            - waituntil.not_started_with_demons
+            - waituntil.not_started_with_merchant
         
         waituntil.met_merchant:
           ".editor":
-            pos: [ 1465.0, 231.0 ]
+            pos: [ 1900.0, 175.0 ]
             hint: named
             in: [ In ]
             out: [ "false", "true" ]
@@ -84,35 +84,54 @@ structure:
             - objective.getamulat_merchant_known: Activate
         
         waituntil.not_started_with_demons:
+          factdb: [ DMNQ_started_with, "=", 0 ]
           ".editor":
-            pos: [ 87.0, 145.0 ]
-            hint: named
+            pos: [ 1502.0, 325.0 ]
             in: [ In ]
-            out: [ "true" ]
-          "true":
-            factdb: [ DMNQ_started_with, "=", 0 ]
-          next.true:
-            - addfact.fact_started_with_merchant
-        
-        waituntil.not_started_with_merchant:
-          ".editor":
-            pos: [ 765.0, 341.0 ]
-            hint: named
-            in: [ In ]
-            out: [ "true" ]
-          "true":
-            factdb: [ DMNQ_started_with, "=", 0 ]
-          next.true:
+            out: [ Out ]
+          next:
             - addfact.fact_started_with_demons
         
+        waituntil.not_started_with_merchant:
+          factdb: [ DMNQ_started_with, "=", 0 ]
+          ".editor":
+            pos: [ 500.0, 100.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - addfact.fact_started_with_merchant
+        
+        script.disable_exclamation_mappin_blackcat:
+          ".editor":
+            pos: [ 1292.0, 550.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: EnableDynamicMappin
+          parameter:
+            - name: cname_dmnq_black_cat
+            - enable: false
+          next:
+            - script.disable_exclamation_mappin_merchant
+        
+        script.disable_exclamation_mappin_merchant:
+          ".editor":
+            pos: [ 1426.0, 551.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: EnableDynamicMappin
+          parameter:
+            - name: cname_dmnq_merchant
+            - enable: false
+          next: ".done"
+        
         journal.qjournal_found_demons:
-          ".editor": [ 1032.0, 349.0 ]
+          ".editor": [ 1902.0, 327.0 ]
           entry: quests/trial8/0_start_demons
-          notify: true
+          notify: false
           next: ".done"
         
         journal.qjournal_found_merchant:
-          ".editor": [ 483.0, 144.0 ]
+          ".editor": [ 1100.0, 100.0 ]
           entry: quests/trial8/0_start_merchant
           notify: true
           next:
@@ -120,23 +139,23 @@ structure:
             - objective.investigate_mansion: Activate
         
         objective.bepeaceful_merchant_known:
-          ".editor": [ 1719.0, 286.0 ]
+          ".editor": [ 2300.0, 225.0 ]
           objective: trial8/get_amulet/use_force_merchant_known
-          notify: true
+          notify: false
           track: false
           next:
             - out
         
         objective.bepeaceful_merchant_unknown:
-          ".editor": [ 1719.0, 185.0 ]
+          ".editor": [ 2300.0, 125.0 ]
           objective: trial8/get_amulet/use_force_merchant_unknown
-          notify: true
+          notify: false
           track: false
           next:
             - out
         
         objective.getamulat_merchant_known:
-          ".editor": [ 1601.0, 283.0 ]
+          ".editor": [ 2100.0, 225.0 ]
           objective: trial8/get_amulet/get_amulet_merchant_known
           notify: true
           track: false
@@ -144,7 +163,7 @@ structure:
             - objective.bepeaceful_merchant_known: Activate
         
         objective.getamulat_merchant_unknown:
-          ".editor": [ 1605.0, 186.0 ]
+          ".editor": [ 2100.0, 125.0 ]
           objective: trial8/get_amulet/get_amulet_merchant_unknown
           notify: true
           track: false
@@ -152,25 +171,27 @@ structure:
             - objective.bepeaceful_merchant_unknown: Activate
         
         objective.investigate_mansion:
-          ".editor": [ 746.0, 154.0 ]
+          ".editor": [ 1500.0, 75.0 ]
           objective: trial8/task_merchant/investigate_mansion_front
           notify: true
           track: true
           next: ".done"
         
         addfact.fact_started_with_demons:
-          ".editor": [ 896.0, 348.0 ]
+          ".editor": [ 1700.0, 325.0 ]
           value: [ DMNQ_started_with, 2 ]
           next:
             - journal.qjournal_found_demons: Activate
+            - script.disable_exclamation_mappin_blackcat
         
         addfact.fact_started_with_merchant:
-          ".editor": [ 202.0, 144.0 ]
+          ".editor": [ 700.0, 100.0 ]
           value: [ DMNQ_started_with, 1 ]
           next:
-            - scene.s1_queststart_merchant: Input
+            - scene.s1_start_merchant: Input
+            - script.disable_exclamation_mappin_blackcat
         
         out:
-          ".editor": [ 1854.0, 230.0 ]
+          ".editor": [ 2500.0, 225.0 ]
           next: ".done"
         

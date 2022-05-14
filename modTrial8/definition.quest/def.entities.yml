@@ -2,7 +2,7 @@ entities:
 
   the_blackness:
     includes:
-      - gameplay/containers/ontainer_template.w2ent  # required instead of interaction component, so "loot" action is removed after looting
+      - gameplay/containers/container_template.w2ent  # required instead of interaction component, so "loot" action is removed after looting
       - environment/decorations/ships/basic/geralt_boat/decoration_boat/decoration_boat_base.w2ent
     entityObject:
       .type: W3AnimatedContainer
@@ -21,12 +21,24 @@ entities:
 
     entityObject:
       .type: "CNewNPC"
+      displayName: "Ofieri Merchant"
+      tags: [dmnq_merchant]
       level: 1
 
   DMNQ_iris_shadow_wraith:
     includes:
+      #- characters/npc_entities/monsters/nekker_lvl3__warrior.w2ent
+      #- dlc/ep1/data/characters/base_entities/nightwraith_iris_base/nightwraith_iris_base.w2ent
       - dlc/ep1/data/characters/npc_entities/monsters/nightwraith_iris.w2ent
 
     entityObject:
       .type: "CNewNPC"
       level: 1
+
+
+
+
+
+
+
+

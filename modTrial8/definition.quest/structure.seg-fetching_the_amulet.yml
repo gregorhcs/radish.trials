@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: fetching_the_amulet
 # 
-# (version: 30, saved: 2022-05-03 19:45:16)
+# (version: 44, saved: 2022-05-14 10:31:54)
 #
 ---
 structure:
@@ -9,34 +9,46 @@ structure:
     fetching_the_amulet:
       blocks:
         in:
-          ".editor": [ 100.0, 250.0 ]
+          ".editor": [ 100.0, 300.0 ]
           next:
             - waituntil.approached_merchant
         
-        scene.merchant_talk_amulet:
+        scene.s3_amulet_from_merchant:
           ".editor":
-            pos: [ 351.0, 250.0 ]
+            pos: [ 500.0, 300.0 ]
             in: [ Input ]
             out: [ Output ]
-          scene: test_demons.yml
-          placement: novigrad/sp_test_demons
+          scene: s3_amulet_from_merchant.yml
+          placement: novigrad/sp_merchant1
           interruptable: true
           _fadein: false
+          next.Output:
+            - interaction.s4_demons_2nd_task: Input
+        
+        interaction.s4_demons_2nd_task:
+          ".editor":
+            pos: [ 700.0, 300.0 ]
+            in: [ Input ]
+            out: [ Output ]
+          scene: s4_demons_2nd_task.yml
+          placement: novigrad/sp_demons
+          interruptable: true
+          actor: [ dmnq_black_cat, dmnq_black_dog ]
           next.Output:
             - out
         
         waituntil.approached_merchant:
           entered: [ novigrad/entermerchantarea, PLAYER ]
           ".editor":
-            pos: [ 229.0, 248.0 ]
+            pos: [ 300.0, 300.0 ]
             in: [ In ]
             out: [ Out ]
           next:
-            - scene.merchant_talk_amulet: Input
+            - scene.s3_amulet_from_merchant: Input
         
         script.fist_fight:
           ".editor":
-            pos: [ 493.0, 103.0 ]
+            pos: [ 500.0, 100.0 ]
             in: [ In ]
             out: [ Out ]
           function: radLog
@@ -47,7 +59,7 @@ structure:
         
         script.sword_fight:
           ".editor":
-            pos: [ 496.0, 173.0 ]
+            pos: [ 500.0, 200.0 ]
             in: [ In ]
             out: [ Out ]
           function: radLog
@@ -57,6 +69,6 @@ structure:
           next: ".done"
         
         out:
-          ".editor": [ 791.0, 246.0 ]
+          ".editor": [ 900.0, 300.0 ]
           next: ".done"
         

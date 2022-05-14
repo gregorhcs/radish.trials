@@ -1,0 +1,124 @@
+repository:
+  actors:
+    geralt:
+      template: "gameplay\\templates\\characters\\player\\player.w2ent"
+
+  animations:
+    anim_701_geralt_reading_book_loop_01:
+      animation: "geralt_reading_book_loop_01"
+      frames: 300
+
+  animations.mimic:
+    mimicsanim_156_geralt_pose_neutral_listening_face:
+      animation: "geralt_pose_neutral_listening_face"
+      frames: 600
+
+  actor.poses:
+    pose_0_high_standing_determined_idle:
+      idle_anim: "high_standing_determined_idle"
+
+  cameras:
+    cam_1_ritual:
+      fov: 40.0
+      transform:
+        pos: [ -3.6974482536, 1.9851100445, 1.0000114441 ]
+        rot: [ 0.0, 3.3000187874, 256.0999755859 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+production:
+  settings:
+    sceneid: 1
+    strings-idspace: 1410
+    strings-idstart: 600
+
+  placement: "NonPlayerActorNotFound"
+    # INFO: world coordinates of used origin:
+      #pos: [ 2146.6936035156, 2146.4365234375, 41.7903671265 ]
+      #rot: [ 0.0, 157.6667327881, 0.0 ]
+
+  assets:
+    actors:
+      geralt:
+        repo: "geralt"
+        by_voicetag: true
+        tags: [ "PLAYER" ]
+
+    cameras:
+      cam_1_ritual:
+        repo: "cam_1_ritual"
+
+    animations:
+      geralt_geralt_reading_book_loop_01:
+        actor: "geralt"
+        repo: "anim_701_geralt_reading_book_loop_01"
+        #duration: 10.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+    animations.mimic:
+      geralt_geralt_pose_neutral_listening_face:
+        actor: "geralt"
+        repo: "mimicsanim_156_geralt_pose_neutral_listening_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+    actor.poses:
+      geralt_high_standing_determined_idle:
+        actor: "geralt"
+        repo: "pose_0_high_standing_determined_idle"
+
+storyboard:
+  #defaults:
+    #placement:
+      #geralt: [[ 0.0, 0.0, -0.0070266724 ], [ 0.0, 0.0, 0.0 ]]
+
+    #actor.pose:
+      #geralt: geralt_high_standing_determined_idle
+
+  section_storyboard_ui:
+    # shot ritual
+    shot_1:
+      - actor.placement: [0.0, geralt, [ 0.0, 0.0, -0.0070266724 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.pose: [0.0, geralt_high_standing_determined_idle]
+      - actor.effect.start: [0.0, geralt, quen_lasting_shield]
+      - actor.effect.stop: [1.0, geralt, quen_lasting_shield]
+      - cam: [0.0, cam_1_ritual]
+      - actor.anim: [0.0, geralt_geralt_reading_book_loop_01]
+      - actor.anim.mimic: [0.0, geralt_geralt_pose_neutral_listening_face]
+
+dialogscript:
+  player: "geralt"
+  actors: [ "geralt" ]
+
+  section_start:
+    - PAUSE: 0.0
+    - NEXT: section_storyboard_ui
+
+  section_storyboard_ui:
+    # shot ritual
+    - CUE: shot_1
+    - geralt: "Getting colder" # 2.6753091812
+    # (longest) anim: geralt_pose_neutral_listening_face: 20.000000
+    - NEXT: section_exit
+
+  section_exit:
+    - CAMERA_BLEND: 2.0
+    - EXIT
+

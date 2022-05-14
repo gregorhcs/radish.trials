@@ -1,0 +1,200 @@
+repository:
+  actors:
+    geralt:
+      template: "gameplay\\templates\\characters\\player\\player.w2ent"
+
+    demonic_cat:
+      template: "dlc\\ep1\\data\\characters\\npc_entities\\animals\\demonic_cat.w2ent"
+      appearance: [ "cat_01" ]
+
+    demonic_dog:
+      template: "dlc\\ep1\\data\\characters\\npc_entities\\animals\\demonic_dog.w2ent"
+      appearance: [ "dog_04" ]
+
+  animations:
+    anim_2317_ep1_demon_cat_enter_front:
+      animation: "ep1_demon_cat_enter_front"
+      frames: 145
+
+    anim_2320_ep1_demon_cat_sitting_idle:
+      animation: "ep1_demon_cat_sitting_idle"
+      frames: 400
+
+    anim_2325_ep1_demon_dog_sitting_idle:
+      animation: "ep1_demon_dog_sitting_idle"
+      frames: 278
+
+  actor.poses:
+    pose_0_high_standing_determined_idle:
+      idle_anim: "high_standing_determined_idle"
+
+    pose_0_idle01:
+      idle_anim: "idle01"
+
+  cameras:
+    cam_1_shot_onto_animals:
+      fov: 40.0
+      transform:
+        pos: [ 0.1009235382, 6.2918524742, 2.3105239868 ]
+        rot: [ 0.0, 334.7999877930, 173.4998474121 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_2_shot_onto_geralt:
+      fov: 40.0
+      transform:
+        pos: [ 1.6498546600, -1.8085981607, 0.8105468750 ]
+        rot: [ 0.0, 2.7000303268, 19.7993774414 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+production:
+  settings:
+    sceneid: 1
+    strings-idspace: 1410
+    strings-idstart: 200
+
+  placement: "demonic cat"
+    # INFO: world coordinates of used origin:
+      #pos: [ 2251.8034667969, 1866.6925048828, 37.6211853027 ]
+      #rot: [ 0.0, -382.8609008789, 0.0 ]
+
+  assets:
+    actors:
+      geralt:
+        repo: "geralt"
+        by_voicetag: true
+        tags: [ "PLAYER" ]
+
+      demonic_cat:
+        repo: "demonic_cat"
+        #by_voicetag: true
+        appearance: "cat_01"
+        tags: [ "demonic_cat" ]
+
+      demonic_dog:
+        repo: "demonic_dog"
+        #by_voicetag: true
+        appearance: "dog_04"
+        tags: [ "demonic_dog" ]
+
+    cameras:
+      cam_1_shot_onto_animals:
+        repo: "cam_1_shot_onto_animals"
+      cam_2_shot_onto_geralt:
+        repo: "cam_2_shot_onto_geralt"
+
+    animations:
+      demonic_cat_ep1_demon_cat_enter_front:
+        actor: "demonic_cat"
+        repo: "anim_2317_ep1_demon_cat_enter_front"
+        #duration: 4.8333334923
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      demonic_cat_ep1_demon_cat_sitting_idle:
+        actor: "demonic_cat"
+        repo: "anim_2320_ep1_demon_cat_sitting_idle"
+        #duration: 13.3333330154
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      demonic_dog_ep1_demon_dog_sitting_idle:
+        actor: "demonic_dog"
+        repo: "anim_2325_ep1_demon_dog_sitting_idle"
+        #duration: 9.2666664124
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+    actor.poses:
+      geralt_high_standing_determined_idle:
+        actor: "geralt"
+        repo: "pose_0_high_standing_determined_idle"
+
+      demonic_cat_idle01:
+        actor: "demonic_cat"
+        repo: "pose_0_idle01"
+
+      demonic_dog_idle01:
+        actor: "demonic_dog"
+        repo: "pose_0_idle01"
+
+storyboard:
+  #defaults:
+    #placement:
+      #geralt: [[ -0.2874438763, 5.6004590988, 0.3016967773 ], [ 0.0, 0.0, 205.6997985840 ]]
+      #demonic_cat: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      #demonic_dog: [[ 0.3944978118, 0.0779637992, -0.0194587708 ], [ 0.0, 0.0, 0.0 ]]
+
+    #actor.pose:
+      #geralt: geralt_high_standing_determined_idle
+      #demonic_cat: demonic_cat_idle01
+      #demonic_dog: demonic_dog_idle01
+
+  section_storyboard_ui:
+    # shot Shot (empty)
+    shot_1:
+      - actor.placement: [0.0, geralt, [ -0.2874438763, 5.6004590988, 0.3016967773 ], [ 0.0, 0.0, 205.6997985840 ]]
+      - actor.placement: [0.0, demonic_cat, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.placement: [0.0, demonic_dog, [ 0.3944978118, 0.0779637992, -0.0194587708 ], [ 0.0, 0.0, 0.0 ]]
+      - actor.pose: [0.0, geralt_high_standing_determined_idle]
+      - actor.pose: [0.0, demonic_cat_idle01]
+      - actor.pose: [0.0, demonic_dog_idle01]
+      - cam: [0.0, cam_2_shot_onto_geralt]
+      - actor.anim: [0.0, demonic_cat_ep1_demon_cat_enter_front]
+      - actor.anim: [0.0, demonic_dog_ep1_demon_dog_sitting_idle]
+
+    shot_2:
+      - cam: [0.0, cam_1_shot_onto_animals]
+      - actor.anim: [0.0, demonic_cat_ep1_demon_cat_sitting_idle]
+
+dialogscript:
+  player: "geralt"
+  actors: [ "geralt", "demonic_cat", "demonic_dog" ]
+
+  section_start:
+    - PAUSE: 0.0
+    - NEXT: section_storyboard_ui
+
+  section_storyboard_ui:
+
+    - CUE: shot_1
+    # (longest) anim: ep1_demon_dog_sitting_idle
+    - PAUSE: 9.2666664124
+
+    - CUE: shot_2
+    - demonic_cat: "Hello there, Witcher. Again."
+    # (longest) anim: ep1_demon_cat_sitting_idle
+    - PAUSE: 13.3333330154
+    - NEXT: section_exit
+
+  section_exit:
+    - CAMERA_BLEND: 2.0
+    - EXIT
+

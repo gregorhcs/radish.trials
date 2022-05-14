@@ -36,28 +36,31 @@ journals:
           - get_amulet_merchant_unknown:
               caption: "Get the demonic amulet from the merchant."
               mappins:
-                - [dmnq_merchant, 24] # tag of merchant
+                - [merchantpin, 24]
 
           - get_amulet_merchant_known:
               caption: "Get the demonic amulet from the merchant."
-              mappins: dmnq_merchant # tag of merchant
+              mappins: ~dmnq_merchant
 
           - use_force_merchant_unknown:
               caption: "(Optional) Use force."
               mappins:
-                - [dmnq_merchant, 24] # tag of merchant
+                - [merchantpin, 24] 
 
           - use_force_merchant_known:
               caption: "(Optional) Use force."
-              mappins: dmnq_merchant # tag of merchant
+              mappins:
+                - ~dmnq_merchant
 
           - fight_merchant:
               caption: "Kill the merchant and take the amulet."
-              mappins: dmnq_merchant # tag of merchant
+              mappins: 
+                - ~dmnq_merchant
 
           - bringback_amulet:
               caption: "Get back to the Black Cat and Dog to deliver the amulet."
-              mappins: demonpin
+              mappins: 
+                - demonpin
 
         find_iris_wraiths:
 
@@ -87,7 +90,8 @@ journals:
 
           - confront_demons:
               caption: "Go back to the Black Cat and Dog to confront them."
-              mappins: demonpin
+              mappins: 
+                - demonpin
 
   characters:
 

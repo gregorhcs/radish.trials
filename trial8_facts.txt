@@ -4,3 +4,17 @@ DMNQ_started_with
 	   2 -> demons
 
 DMNQ_violence_chosen
+
+
+
+----------
+
+dmnq_merchant
+dmnq_horse
+
+dmnq_black_cat
+dmnq_black_dog
+
+dmnq_wraith1
+dmnq_wraith2
+dmnq_wraith3

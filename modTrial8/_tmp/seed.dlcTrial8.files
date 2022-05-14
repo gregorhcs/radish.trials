@@ -1,6 +1,14 @@
 {
     "files": [
         {
+            "path": "dlc\\dlctrial8\\data\\entities\\dmnq_iris_shadow_wraith.w2ent",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\entities\\dmnq_merchant_ofir.w2ent",
+            "bundle": "blob"
+        },
+        {
             "path": "dlc\\dlctrial8\\data\\entities\\the_blackness.w2ent",
             "bundle": "blob"
         },
@@ -13,7 +21,31 @@
             "bundle": "blob"
         },
         {
-            "path": "dlc\\dlctrial8\\data\\scenes\\test_demons.w2scene",
+            "path": "dlc\\dlctrial8\\data\\scenes\\s1_start_merchant.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s2_demons.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s3_amulet_from_merchant.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s4_demons_2nd_task.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s5_ritual.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s6_unhappy_awakening.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s7_geralt_confronts.w2scene",
             "bundle": "blob"
         },
         {
@@ -25,11 +57,19 @@
             "bundle": "blob"
         },
         {
+            "path": "dlc\\dlctrial8\\data\\spawnsets\\wraith_community.w2comm",
+            "bundle": "blob"
+        },
+        {
             "path": "dlc\\dlctrial8\\dlctrial8.reddlc",
             "bundle": "blob",
             "chunks": [
                 "dlc"
             ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\journal\\bestiary\\iris_shadow_wraith.journal",
+            "bundle": "blob"
         },
         {
             "path": "dlc\\dlctrial8\\journal\\characters\\demons.journal",
@@ -56,7 +96,15 @@
             "bundle": "blob"
         },
         {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\fightlayer\\actionpoints.w2l",
+            "bundle": "blob"
+        },
+        {
             "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\fightlayer\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\fightlayer\\mappins.w2l",
             "bundle": "blob"
         },
         {

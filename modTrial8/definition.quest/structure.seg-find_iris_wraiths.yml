@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: find_iris_wraiths
 # 
-# (version: 30, saved: 2022-05-03 19:45:16)
+# (version: 44, saved: 2022-05-14 10:31:54)
 #
 ---
 structure:
@@ -9,18 +9,54 @@ structure:
     find_iris_wraiths:
       blocks:
         in:
-          ".editor": [ 100.0, 250.0 ]
+          ".editor": [ 100.0, 150.0 ]
           next:
+            - scene.s5_ritual: Input
+        
+        scene.s5_ritual:
+          ".editor":
+            pos: [ 300.0, 150.0 ]
+            in: [ Input ]
+            out: [ Output ]
+          scene: s5_ritual.yml
+          placement: novigrad/sp_ritual
+          interruptable: true
+          _fadein: false
+          next.Output:
+            - scene.s6_unhappy: Input
+        
+        scene.s6_unhappy:
+          ".editor":
+            pos: [ 500.0, 150.0 ]
+            in: [ Input ]
+            out: [ Output ]
+          scene: s6_unhappy_awakening.yml
+          placement: novigrad/sp_ritual
+          interruptable: true
+          _fadein: false
+          next.Output:
             - journal.iris_shadow_bestiary: Activate
         
+        interaction.s7_geralt_confronts:
+          ".editor":
+            pos: [ 900.0, 150.0 ]
+            in: [ Input ]
+            out: [ Output ]
+          scene: s7_geralt_confronts.yml
+          placement: novigrad/sp_demons
+          interruptable: true
+          actor: [ dmnq_black_cat, dmnq_black_dog ]
+          next.Output:
+            - out
+        
         journal.iris_shadow_bestiary:
-          ".editor": [ 268.0, 247.0 ]
+          ".editor": [ 700.0, 150.0 ]
           entry: creatures/iris_shadow_wraith/shadow_found
           notify: true
           next:
-            - out
+            - interaction.s7_geralt_confronts: Input
         
         out:
-          ".editor": [ 425.0, 249.0 ]
+          ".editor": [ 1100.0, 150.0 ]
           next: ".done"
         

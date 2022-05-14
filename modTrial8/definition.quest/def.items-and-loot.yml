@@ -1,5 +1,11 @@
 items:
   notices:                    # e.g. contract notices
+
+    dmnq_contract:
+      name: "Our Friend is missing"
+      description: "Our Friend is missing"
+      text: "Our Ophiri Friend is missing, would you search him for us?"
+
     mage_letter:
       # item_name_<id>|Teleport 1532a licence
       name: "Instructions"

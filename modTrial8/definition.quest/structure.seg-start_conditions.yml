@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: start_conditions
 # 
-# (version: 30, saved: 2022-05-03 19:45:16)
+# (version: 44, saved: 2022-05-14 10:31:54)
 #
 ---
 structure:
@@ -9,14 +9,14 @@ structure:
     start_conditions:
       blocks:
         in:
-          ".editor": [ 100.0, 250.0 ]
+          ".editor": [ 100.0, 150.0 ]
           next:
             - waituntil.is_soam_done
         
         waituntil.delay_for_logging_1:
           elapsed: "00:00:15"
           ".editor":
-            pos: [ 802.0, 252.0 ]
+            pos: [ 700.0, 200.0 ]
             in: [ In ]
             out: [ Out ]
           next:
@@ -25,7 +25,7 @@ structure:
         waituntil.delay_for_logging_2:
           elapsed: "00:00:15"
           ".editor":
-            pos: [ 1216.0, 245.0 ]
+            pos: [ 1700.0, 150.0 ]
             in: [ In ]
             out: [ Out ]
           next:
@@ -34,7 +34,7 @@ structure:
         waituntil.delay_until_demons_appear:
           elapsed: "00:30:00"
           ".editor":
-            pos: [ 801.0, 156.0 ]
+            pos: [ 1100.0, 100.0 ]
             in: [ In ]
             out: [ Out ]
           next:
@@ -42,7 +42,7 @@ structure:
         
         waituntil.is_soam_done:
           ".editor":
-            pos: [ 250.0, 250.0 ]
+            pos: [ 300.0, 150.0 ]
             hint: named
             in: [ In ]
             out: [ "false", "true" ]
@@ -58,7 +58,7 @@ structure:
         
         waituntil.took_the_rose:
           ".editor":
-            pos: [ 948.0, 252.0 ]
+            pos: [ 1300.0, 200.0 ]
             hint: named
             in: [ In ]
             out: [ "false", "true" ]
@@ -75,15 +75,53 @@ structure:
         waituntil.wait_until_soam_done:
           factdb: [ q604_fdb_quest_completed, ">=", 1 ]
           ".editor":
-            pos: [ 533.0, 156.0 ]
+            pos: [ 700.0, 100.0 ]
             in: [ In ]
             out: [ Out ]
           next:
             - script.soam_fin_by_playthrough
         
+        script.add_contract_noticeboard:
+          ".editor":
+            pos: [ 2300.0, 150.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: Trial8_AddContractToNoticeBoard
+          parameter:
+            - boardTag: cname_x
+            - errandStringKey: x
+            - newQuestFact: dmnsq_contract_taken
+            - addedItemName: cname_x
+          next:
+            - script.enable_exclamation_mappin_blackcat
+        
+        script.enable_exclamation_mappin_blackcat:
+          ".editor":
+            pos: [ 2500.0, 150.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: EnableDynamicMappin
+          parameter:
+            - tag: cname_dmnq_black_cat
+            - enable: true
+          next:
+            - script.enable_exclamation_mappin_merchant
+        
+        script.enable_exclamation_mappin_merchant:
+          ".editor":
+            pos: [ 2700.0, 150.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: EnableDynamicMappin
+          parameter:
+            - name: cname_dmnq_merchant
+            - enable: true
+          next:
+            - out
+        
         script.rose_not_taken:
           ".editor":
-            pos: [ 1082.0, 246.0 ]
+            pos: [ 1500.0, 150.0 ]
             in: [ In ]
             out: [ Out ]
           function: radLog
@@ -95,7 +133,7 @@ structure:
         
         script.rose_taken:
           ".editor":
-            pos: [ 1078.0, 332.0 ]
+            pos: [ 1500.0, 250.0 ]
             in: [ In ]
             out: [ Out ]
           function: radLog
@@ -106,7 +144,7 @@ structure:
         
         script.soam_fin_already:
           ".editor":
-            pos: [ 668.0, 253.0 ]
+            pos: [ 500.0, 200.0 ]
             in: [ In ]
             out: [ Out ]
           function: radLog
@@ -118,7 +156,7 @@ structure:
         
         script.soam_fin_by_playthrough:
           ".editor":
-            pos: [ 665.0, 156.0 ]
+            pos: [ 900.0, 100.0 ]
             in: [ In ]
             out: [ Out ]
           function: radLog
@@ -130,7 +168,7 @@ structure:
         
         script.soam_not_done:
           ".editor":
-            pos: [ 402.0, 158.0 ]
+            pos: [ 500.0, 100.0 ]
             in: [ In ]
             out: [ Out ]
           function: radLog
@@ -142,7 +180,7 @@ structure:
         
         spawn.demon_community_spawn:
           ".editor":
-            pos: [ 1352.0, 247.0 ]
+            pos: [ 1900.0, 150.0 ]
             hint: spawn-only
             in: []
             out: []
@@ -154,7 +192,7 @@ structure:
         
         spawn.merchant_community_spawn:
           ".editor":
-            pos: [ 1482.0, 247.0 ]
+            pos: [ 2100.0, 150.0 ]
             hint: spawn-only
             in: []
             out: []
@@ -162,9 +200,9 @@ structure:
           spawnsets:
             - merchant_community
           next:
-            - out
+            - script.add_contract_noticeboard
         
         out:
-          ".editor": [ 1625.0, 248.0 ]
+          ".editor": [ 2900.0, 150.0 ]
           next: ".done"
         
