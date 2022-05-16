@@ -1,0 +1,3 @@
+1. add "contentType = EJCT_EP1" with type EJournalContentType to trial8.journal
+
+2. 

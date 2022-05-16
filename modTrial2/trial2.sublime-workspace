@@ -137,7 +137,7 @@
 					"cut",
 					null,
 					"AQAAABwEAAAAAAAAHAQAAAAAAAAjAAAACiAgICAgICAgdmFsaWRfaW50ZXJhY3Rpb25zOiBbTG9vdF0",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA/BAAAAAAAABwEAAAAAAAAAAAAAAAA8L8"
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAD8EAAAAAAAAHAQAAAAAAAAAAAAAAADwvw"
 				],
 				[
 					16,
@@ -145,7 +145,7 @@
 					"paste",
 					null,
 					"AQAAAJkDAAAAAAAAvAMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACZAwAAAAAAAJkDAAAAAAAAAAAAAAAA8L8"
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAJkDAAAAAAAAmQMAAAAAAAAAAAAAAADwvw"
 				],
 				[
 					19,
@@ -153,7 +153,7 @@
 					"cut",
 					null,
 					"AQAAAOIDAAAAAAAA4gMAAAAAAABdAAAACiAgICAgICAgcG9zOiBbIDM0MS4yNzg5MDAxNDY1LCAtNDYuODUyOTE2NzE3NSwgMy4wMTUzOTI3ODAzIF0KICAgICAgICByb3Q6IFsgMC4wLCAwLjAsIDAuMCBd",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA/BAAAAAAAAOIDAAAAAAAAAAAAAAAA8L8"
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAD8EAAAAAAAA4gMAAAAAAAAAAAAAAADwvw"
 				],
 				[
 					24,
@@ -161,8 +161,19 @@
 					"paste",
 					null,
 					"AQAAAJkDAAAAAAAA9gMAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACZAwAAAAAAAJkDAAAAAAAAAAAAAAAA8L8"
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAJkDAAAAAAAAmQMAAAAAAAAAAAAAAADwvw"
 				]
+			]
+		},
+		{
+			"file": "definition.quest/def.journal.yml",
+			"settings":
+			{
+				"buffer_size": 1079,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
 			]
 		}
 	],
@@ -367,14 +378,13 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
 					"file": "definition.quest/layers.prologue.yml",
-					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
@@ -387,6 +397,38 @@
 							[
 								1088,
 								1088
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "definition.quest/def.journal.yml",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1079,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								716,
+								716
 							]
 						],
 						"settings":

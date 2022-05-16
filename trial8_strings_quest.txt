@@ -1,0 +1,57 @@
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+2111410000|00000000||Ofieri Merchant
+2111410001|00000000||Geralt, after some strange mongering returned and learned it was all a hoax to do him evil for not freeing them before.
+2111410002|00000000||</br></br>Geralt and demons met again, they gave him strange task, promising this would free them.
+2111410003|00000000||PLACEHOLDER_NAME
+2111410004|00000000||Apparenly Olgierd used this place of power.
+2111410005|00000000||Strange shadows of Iris's soul.
+2111410006|00000000||Iris's Shadow
+2111410007|00000000||MOD questgroup_trial8 Quests
+2111410008|00000000||Go back to the Black Cat and Dog to confront them.
+2111410009|00000000||Go to the place near the mansion to perform the ritual.
+2111410010|00000000||(Optional) Kill the Iris von Everec-Wraiths.
+2111410011|00000000||(Optional) Place the amulet on the altar.
+2111410012|00000000||Collect five ... .
+2111410013|00000000||Wait until midnight.
+2111410014|00000000||Get back to the Black Cat and Dog to deliver the amulet.
+2111410015|00000000||Kill the merchant and take the amulet.
+2111410016|00000000||Get the demonic amulet from the merchant.
+2111410017|00000000||Get the demonic amulet from the merchant.
+2111410018|00000000||(Optional) Use force.
+2111410019|00000000||(Optional) Use force.
+2111410020|00000000||Find out what's going on at the von Everec mansion.
+2111410021|00000000||Quest started by demons.<br/>
+2111410022|00000000||Quest started by merchant.<br/>
+2111410023|00000000||Geralt talked to demons for first time.</br>
+2111410024|00000000||Geralt killed the merchant.</br>
+2111410025|00000000||Geralt convinced the merchant by other means.</br>
+2111410026|00000000||Geralt talked to demons for second time.</br>
+2111410027|00000000||Geralt talked to demons for second time and lied to them about having the amulet.</br>
+2111410028|00000000||Geralt solved the riddle at the magic place and saw Iris' ghosts.</br>
+2111410029|00000000||Geralt talked to demons for third and final time.</br>
+2111410030|00000000||Geralt talked to demons for third and final time.</br>
+2111410031|00000000||Geralt found the merchant where his colleagues are.</br>
+2111410032|00000000||Demon's Souls
+
+2111410033|00000000|item_name_dmnq_useless_sword|Helper
+2111410034|00000000|item_desc_dmnq_useless_sword|Mysterious sword, gifted by demons.
+
+2111410035|00000000|item_name_dmnq_misc_amulet|Mysterious Amulet
+2111410036|00000000|item_desc_dmnq_misc_amulet|Retrieved from an Ophiri Merchant per motivation by two demons...
+
+2111410037|00000000|item_name_dmnq_notices_book_on_amulets|On Amulets
+2111410038|00000000|item_desc_dmnq_notices_book_on_amulets|Foreign work on the nature of magic amulets. Translated by Florian of Oxenfurt.
+2111410037|00000000|item_name_dmnq_notices_book_on_amulets_text|The catalysing operator is the most easiest to apply...
+
+2111410037|00000000|item_name_dmnq_notices_ritual_spell|Notice by Black Dog and Cat
+2111410038|00000000|item_desc_dmnq_notices_ritual_spell|A seemingly magic notice given to Geralt by Black Dog and Black Cat. A strange spell is written on it, its language unknown to Geralt.
+2111410037|00000000|item_name_dmnq_notices_ritual_spell_text|Segoríi dol, zolob fel ainóm</br></br>Shren Wamoló fra coqihlan, telesh miró.</br></br>Munó Sznué lé Grierezeh, wú Ara carépt.</br></br>Wúrh ywo Rr Ouwh, Viló ráz yw perúe.</br></br>Munó glamóh shrén Munó lelahr, skeksi déf amóss.</br></br>Wúrh spebéhl rwlé dorshlégrie, yw Shengonia ril táet.</br></br>Cariei fra lé summrle, Cariei fra yw igre.</br></br>Dárh muoímmué ghy demmoi-ré, bell shrén coléc.</br></br>Kílmu twrý dol asglu, dóshrén yv Thet,</br>hme-ril shré Tórmlor, fel sme-ril shró Káéhl.
+
+2111410039|00000000|item_name_dmnq_notices_ophiri_contract|Our Friend is missing
+2111410040|00000000|item_desc_dmnq_notices_ophiri_contract|Contract written by a seemingly foreign hand.
+2111410040|00000000|item_name_dmnq_notices_ophiri_contract_text|Our Ophiri Friend is missing, would you search him for us?
+
+2111410041|00000000|dlc_name_trial8|Demon's Souls
+2111410042|00000000|option_dlc_name_trial8|MOD: Demon's Souls
+2111410043|00000000|content_name_dlc_trial8|MOD: Demon's Souls

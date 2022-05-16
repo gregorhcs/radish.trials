@@ -1,12 +1,13 @@
 #
 # quest structure subsegment: demons_glossary1
 # 
-# (version: 51, saved: 2022-05-14 22:45:27)
+# (version: 92, saved: 2022-05-16 23:03:34)
 #
 ---
 structure:
   segments:
     demons_glossary1:
+      external: true
       blocks:
         in:
           ".editor": [ 100.0, 150.0 ]

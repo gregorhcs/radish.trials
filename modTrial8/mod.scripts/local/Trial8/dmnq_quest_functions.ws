@@ -22,6 +22,7 @@ quest function DMNQ_AddContractToNoticeBoard(
 quest function DMNQ_GiveRewardToPlayer( rewardName : CName )
 {
     theGame.GiveReward( rewardName, thePlayer );
+    theGame.GetGuiManager().ShowNotification("Rewarded " + rewardName);
 }
 
 

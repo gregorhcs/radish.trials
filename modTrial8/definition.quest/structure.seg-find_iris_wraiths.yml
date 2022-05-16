@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: find_iris_wraiths
 # 
-# (version: 51, saved: 2022-05-14 22:45:27)
+# (version: 92, saved: 2022-05-16 23:03:34)
 #
 ---
 structure:
@@ -37,26 +37,14 @@ structure:
           next.Output:
             - journal.iris_shadow_bestiary: Activate
         
-        interaction.s7_geralt_confronts:
-          ".editor":
-            pos: [ 900.0, 150.0 ]
-            in: [ Input ]
-            out: [ Output ]
-          scene: s7_geralt_confronts.yml
-          placement: novigrad/sp_demons
-          interruptable: true
-          actor: [ dmnq_black_cat, dmnq_black_dog ]
-          next.Output:
-            - out
-        
         journal.iris_shadow_bestiary:
           ".editor": [ 700.0, 150.0 ]
           entry: creatures/iris_shadow_wraith/shadow_found
           notify: true
           next:
-            - interaction.s7_geralt_confronts: Input
+            - out
         
         out:
-          ".editor": [ 1100.0, 150.0 ]
+          ".editor": [ 900.0, 150.0 ]
           next: ".done"
         

@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: ending_and_epilogue
 # 
-# (version: 51, saved: 2022-05-14 22:45:27)
+# (version: 92, saved: 2022-05-16 23:03:34)
 #
 ---
 structure:
@@ -9,11 +9,23 @@ structure:
     ending_and_epilogue:
       blocks:
         in:
-          ".editor": [ 100.0, 250.0 ]
+          ".editor": [ 100.0, 150.0 ]
           next:
+            - interaction.s7_geralt_confronts: Input
+        
+        interaction.s7_geralt_confronts:
+          ".editor":
+            pos: [ 300.0, 150.0 ]
+            in: [ Input ]
+            out: [ Output ]
+          scene: s7_geralt_confronts.yml
+          placement: novigrad/sp_demons
+          interruptable: true
+          actor: [ dmnq_black_cat, dmnq_black_dog ]
+          next.Output:
             - out
         
         out:
-          ".editor": [ 589.0, 249.0 ]
+          ".editor": [ 500.0, 150.0 ]
           next: ".done"
         

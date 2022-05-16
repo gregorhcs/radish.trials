@@ -13,16 +13,23 @@
             "bundle": "blob"
         },
         {
-            "path": "dlc\\dlctrial8\\data\\entities\\the_blackness.w2ent",
-            "bundle": "blob"
-        },
-        {
             "path": "dlc\\dlctrial8\\data\\gameplay\\items\\def_item_quest.xml",
             "bundle": "blob"
         },
         {
             "path": "dlc\\dlctrial8\\data\\gameplay\\items\\def_loot_quest.xml",
             "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\gameplay\\rewards\\def_reward_quest.xml",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\quest_levels.csv",
+            "bundle": "blob",
+            "chunks": [
+                "dlc"
+            ]
         },
         {
             "path": "dlc\\dlctrial8\\data\\scenes\\s1_start_merchant.w2scene",

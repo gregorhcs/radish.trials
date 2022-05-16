@@ -2,24 +2,25 @@ journals:
 
   quests:
 
-    trial8:
+    Trial8:
 
-      title: "Trial 8"
+      title: "Demon's Souls"
       type: Side
       world: novigrad
+      level: 37
       #contentType: EJCT_EP1
       description:
-        - 0_start_merchant: Quest started by merchant.<br/>
-        - 0_start_demons: Quest started by demons.<br/>
-        - 1_demons_task1: Geralt talked to demons for first time.</br>
-        - 2a_merchant_dead: Geralt killed the merchant.</br>
-        - 2b_merchant_alive: Geralt convinced the merchant by other means.</br>
-        - 3_demons_task2_with_amulet: Geralt talked to demons for second time.</br>
-        - 3_demons_task2_without_amulet: Geralt talked to demons for second time and lied to them about having the amulet.</br>
-        - 4_solved_magic_place: Geralt solved the riddle at the magic place and saw Iris' ghosts.</br>
-        - 5_demons_finale_with_amulet: Geralt talked to demons for third and final time.</br>
-        - 5_demons_finale_without_amulet: Geralt talked to demons for third and final time.</br>
-        - 6_merchant_alive_and_found: Geralt found the merchant where his colleagues are.</br>
+        - 0_start_merchant: "Quest started by merchant.<br/>"
+        - 0_start_demons: "Quest started by demons.<br/>"
+        - 1_demons_task1: "Geralt talked to demons for first time.</br>"
+        - 2a_merchant_dead: "Geralt killed the merchant.</br>"
+        - 2b_merchant_alive: "Geralt convinced the merchant by other means.</br>"
+        - 3_demons_task2_with_amulet: "Geralt talked to demons for second time.</br>"
+        - 3_demons_task2_without_amulet: "Geralt talked to demons for second time and lied to them about having the amulet.</br>"
+        - 4_solved_magic_place: "Geralt solved the riddle at the magic place and saw Iris' ghosts.</br>"
+        - 5_demons_finale_with_amulet: "Geralt talked to demons for third and final time.</br>"
+        - 5_demons_finale_without_amulet: "Geralt talked to demons for third and final time.</br>"
+        - 6_merchant_alive_and_found: "Geralt found the merchant where his colleagues are.</br>"
 
 
       instructions:
@@ -53,12 +54,22 @@ journals:
                 - ~dmnq_merchant
 
           - fight_merchant:
-              caption: "Kill the merchant and take the amulet."
+              caption: "Kill the merchant."
+              mappins: 
+                - ~dmnq_merchant
+
+          - loot_amulet:
+              caption: "Take the amulet."
               mappins: 
                 - ~dmnq_merchant
 
           - bringback_amulet:
               caption: "Get back to the Black Cat and Dog to deliver the amulet."
+              mappins: 
+                - demonpin
+
+          - bringback_lies:
+              caption: "(Optional) Lie about the amulet."
               mappins: 
                 - demonpin
 
@@ -112,3 +123,6 @@ journals:
       description:
         - shadow_found: "Strange shadows of Iris's soul."
         - got_information_about_olgierd: "Apparenly Olgierd used this place of power."
+      # items:
+      #  - water
+      #  - earth

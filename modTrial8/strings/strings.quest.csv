@@ -15,26 +15,26 @@
 2111410012|00000000||Collect five ... .
 2111410013|00000000||Wait until midnight.
 2111410014|00000000||Get back to the Black Cat and Dog to deliver the amulet.
-2111410015|00000000||Kill the merchant and take the amulet.
-2111410016|00000000||Get the demonic amulet from the merchant.
+2111410015|00000000||(Optional) Lie about the amulet.
+2111410016|00000000||Kill the merchant.
 2111410017|00000000||Get the demonic amulet from the merchant.
-2111410018|00000000||(Optional) Use force.
-2111410019|00000000||(Optional) Use force.
-2111410020|00000000||Find out what's going on at the von Everec mansion.
-2111410021|00000000||Quest started by demons.<br/>
-2111410022|00000000||Quest started by merchant.<br/>
-2111410023|00000000||Geralt talked to demons for first time.</br>
-2111410024|00000000||Geralt killed the merchant.</br>
-2111410025|00000000||Geralt convinced the merchant by other means.</br>
-2111410026|00000000||Geralt talked to demons for second time.</br>
-2111410027|00000000||Geralt talked to demons for second time and lied to them about having the amulet.</br>
-2111410028|00000000||Geralt solved the riddle at the magic place and saw Iris' ghosts.</br>
-2111410029|00000000||Geralt talked to demons for third and final time.</br>
-2111410030|00000000||Geralt talked to demons for third and final time.</br>
-2111410031|00000000||Geralt found the merchant where his colleagues are.</br>
-2111410032|00000000||Trial 8
-2111410033|00000000|item_name_trial8_misc_dmnq_amulet|Mysterious Amulet
-2111410034|00000000|item_desc_trial8_misc_dmnq_amulet|Retrieved from an Ophiri Merchant per motivation by two demons...
+2111410018|00000000||Get the demonic amulet from the merchant.
+2111410019|00000000||Take the amulet.
+2111410020|00000000||(Optional) Use force.
+2111410021|00000000||(Optional) Use force.
+2111410022|00000000||Find out what's going on at the von Everec mansion.
+2111410023|00000000||Quest started by demons.<br/>
+2111410024|00000000||Quest started by merchant.<br/>
+2111410025|00000000||Geralt talked to demons for first time.</br>
+2111410026|00000000||Geralt killed the merchant.</br>
+2111410027|00000000||Geralt convinced the merchant by other means.</br>
+2111410028|00000000||Geralt talked to demons for second time.</br>
+2111410029|00000000||Geralt talked to demons for second time and lied to them about having the amulet.</br>
+2111410030|00000000||Geralt solved the riddle at the magic place and saw Iris' ghosts.</br>
+2111410031|00000000||Geralt talked to demons for third and final time.</br>
+2111410032|00000000||Geralt talked to demons for third and final time.</br>
+2111410033|00000000||Geralt found the merchant where his colleagues are.</br>
+2111410034|00000000||Demon's Souls
 2111410035|00000000|item_name_trial8_notices_dmnq_amulet_descr|Instructions
 2111410036|00000000|item_desc_trial8_notices_dmnq_amulet_descr|Testimony of a failed mentorship.
 2111410037|00000000|item_name_trial8_notices_dmnq_amulet_descr_text|One last time Moritz, you have to the set up the loc. reconfigurational device BEFORE casting the spell. You don't simply walk into the wild without a plan for navigation either, don't you?

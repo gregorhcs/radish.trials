@@ -114,7 +114,7 @@ dialogscript:
   section_storyboard_ui:
     # shot ritual
     - CUE: shot_1
-    - geralt: "Getting colder" # 2.6753091812
+    - geralt: "Hmmm... didn't expect this Iris inquisition." # 2.6753091812
     # (longest) anim: geralt_pose_neutral_listening_face: 20.000000
     - NEXT: section_exit
 

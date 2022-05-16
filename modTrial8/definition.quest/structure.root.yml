@@ -1,7 +1,7 @@
 #
 # quest structure root segment
 # 
-# (version: 51, saved: 2022-05-14 22:45:27)
+# (version: 92, saved: 2022-05-16 23:03:34)
 #
 ---
 structure:
@@ -10,7 +10,7 @@ structure:
       start:
         ".editor": [ 100.0, 250.0 ]
         next:
-          - subsegment.wait_start_conditions
+          - script.new_logmsg
       
       subsegment.ending_and_epilogue:
         ".editor":
@@ -56,6 +56,119 @@ structure:
         segment: start_conditions
         next:
           - subsegment.hook_and_task1
+      
+      waituntil.10sec_1:
+        elapsed: "00:00:10"
+        ".editor":
+          pos: [ 370.0, 97.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - reward.spell
+      
+      waituntil.10sec_2:
+        elapsed: "00:00:10"
+        ".editor":
+          pos: [ 380.0, 23.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - reward.amulet
+      
+      waituntil.10sec_3:
+        elapsed: "00:00:10"
+        ".editor":
+          pos: [ 376.0, -64.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next: ".done"
+      
+      script.new_logmsg:
+        ".editor":
+          pos: [ 168.0, 97.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: radLog
+        parameter:
+          - logChannel: cname_TRIAL8
+          - msg: t1
+        next:
+          - reward.sword
+      
+      script.new_logmsg_1:
+        ".editor":
+          pos: [ 156.0, -35.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: radLog
+        parameter:
+          - logChannel: cname_TRIAL8
+          - msg: t2
+        next:
+          - waituntil.10sec_1
+      
+      script.reward_amulet:
+        ".editor":
+          pos: [ 666.0, 403.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: DMNQ_GiveRewardToPlayer
+        parameter:
+          - rewardName: cname_dmnq_reward_2xp_amulet
+        next: ".done"
+      
+      script.reward_coins:
+        ".editor":
+          pos: [ 464.0, 501.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: DMNQ_GiveRewardToPlayer
+        parameter:
+          - rewardName: cname_dmnq_reward_merchant_alive
+        next: ".done"
+      
+      script.reward_spellnotice:
+        ".editor":
+          pos: [ 687.0, 579.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: DMNQ_GiveRewardToPlayer
+        parameter:
+          - rewardName: cname_dmnq_reward_ritual_spell
+        next: ".done"
+      
+      script.reward_sword:
+        ".editor":
+          pos: [ 455.0, 369.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: DMNQ_GiveRewardToPlayer
+        parameter:
+          - rewardName: cname_dmnq_reward_66xp_useless_sword
+        next: ".done"
+      
+      reward.amulet:
+        ".editor": [ 500.0, 13.0 ]
+        reward: dmnq_reward_stub_2xp
+        next:
+          - waituntil.10sec_3
+      
+      reward.coins:
+        ".editor": [ 316.0, -200.0 ]
+        reward: dmnq_reward_stub_merchant_alive
+        next: ".done"
+      
+      reward.spell:
+        ".editor": [ 508.0, 96.0 ]
+        reward: dmnq_reward_stub_spell
+        next:
+          - waituntil.10sec_2
+      
+      reward.sword:
+        ".editor": [ 160.0, 31.0 ]
+        reward: dmnq_reward_stub_66xp_sword
+        next:
+          - script.new_logmsg_1
       
       end:
         ".editor": [ 1300.0, 250.0 ]

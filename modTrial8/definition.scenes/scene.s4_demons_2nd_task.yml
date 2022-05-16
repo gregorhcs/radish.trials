@@ -189,7 +189,8 @@ dialogscript:
     - PAUSE: 9.2666664124
 
     - CUE: shot_2
-    - demonic_cat: "Hello there, Witcher. Again."
+    - demonic_cat: "Hello there, Witcher. Again. ONE MORE TASK FOR YOU"
+    - geralt: "*heavy sigh*"
     # (longest) anim: ep1_demon_cat_sitting_idle
     - PAUSE: 13.3333330154
     - NEXT: section_exit

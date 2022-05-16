@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-16"?>
+<redxml>
+  <definitions>
+  <abilities>
+  
+
+  <!-- ////////////////////// Useless Sword Stats ////////////////////// -->
+	
+	<ability name="dmnq_useless_sword_stats">
+
+		<SlashingDamage min="0" max="0"/>
+		<SilverDamage min="0" max="0"/>				
+		<quality type="add" min="0" max="0"/>
+		<weight type="base" min="0" />
+		
+	</ability>
+	  
+   </abilities>
+  </definitions>
+</redxml>

@@ -1,10 +1,19 @@
 DMNQ_started_with
-	<= 0 -> not started
+	=> 0 -> not started
 	   1 -> merchant
 	   2 -> demons
 
 DMNQ_violence_chosen
 
+DMNQ_merchant_dead
+
+DMNQ_took_amulet
+
+DMNQ_fight_progress
+	=> 0 -> not started
+	   1 -> fight
+	   2 -> loot
+	   3 -> finished
 
 
 ----------

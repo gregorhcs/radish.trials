@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: quest_hook
 # 
-# (version: 51, saved: 2022-05-14 22:45:27)
+# (version: 92, saved: 2022-05-16 23:03:34)
 #
 ---
 structure:
@@ -138,29 +138,13 @@ structure:
             - waituntil.approached_demons
             - objective.investigate_mansion: Activate
         
-        objective.bepeaceful_merchant_known:
-          ".editor": [ 2300.0, 225.0 ]
-          objective: trial8/get_amulet/use_force_merchant_known
-          notify: false
-          track: false
-          next:
-            - out
-        
-        objective.bepeaceful_merchant_unknown:
-          ".editor": [ 2300.0, 125.0 ]
-          objective: trial8/get_amulet/use_force_merchant_unknown
-          notify: false
-          track: false
-          next:
-            - out
-        
         objective.getamulat_merchant_known:
-          ".editor": [ 2100.0, 225.0 ]
+          ".editor": [ 2101.0, 195.0 ]
           objective: trial8/get_amulet/get_amulet_merchant_known
           notify: true
           track: false
           next:
-            - objective.bepeaceful_merchant_known: Activate
+            - objective.useforce_merchant_known: Activate
         
         objective.getamulat_merchant_unknown:
           ".editor": [ 2100.0, 125.0 ]
@@ -168,7 +152,7 @@ structure:
           notify: true
           track: false
           next:
-            - objective.bepeaceful_merchant_unknown: Activate
+            - objective.useforce_merchant_unknown: Activate
         
         objective.investigate_mansion:
           ".editor": [ 1500.0, 75.0 ]
@@ -176,6 +160,22 @@ structure:
           notify: true
           track: true
           next: ".done"
+        
+        objective.useforce_merchant_known:
+          ".editor": [ 2302.0, 210.0 ]
+          objective: trial8/get_amulet/use_force_merchant_known
+          notify: false
+          track: false
+          next:
+            - out
+        
+        objective.useforce_merchant_unknown:
+          ".editor": [ 2300.0, 141.0 ]
+          objective: trial8/get_amulet/use_force_merchant_unknown
+          notify: false
+          track: false
+          next:
+            - out
         
         addfact.fact_started_with_demons:
           ".editor": [ 1700.0, 325.0 ]
@@ -192,6 +192,6 @@ structure:
             - script.disable_exclamation_mappin_blackcat
         
         out:
-          ".editor": [ 2500.0, 225.0 ]
+          ".editor": [ 2477.0, 177.0 ]
           next: ".done"
         

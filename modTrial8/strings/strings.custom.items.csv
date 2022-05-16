@@ -1,0 +1,15 @@
+;meta[language=en]
+; id      |key(hex)|key(str)| text
+2111410900|00000000|item_name_dmnq_useless_sword|Helper
+2111410901|00000000|item_desc_dmnq_useless_sword|Mysterious sword, gifted by demons.
+2111410902|00000000|item_name_dmnq_misc_amulet|Mysterious Amulet
+2111410903|00000000|item_desc_dmnq_misc_amulet|Retrieved from an Ophiri Merchant per motivation by two demons...
+2111410904|00000000|item_name_dmnq_notices_book_on_amulets|On Amulets
+2111410905|00000000|item_desc_dmnq_notices_book_on_amulets|Foreign work on the nature of magic amulets. Translated by Florian of Oxenfurt.
+2111410906|00000000|item_name_dmnq_notices_book_on_amulets_text|The catalysing operator is the most easiest to apply...
+2111410907|00000000|item_name_dmnq_notices_ritual_spell|Notice by Black Dog and Cat
+2111410908|00000000|item_desc_dmnq_notices_ritual_spell|A seemingly magic notice given to Geralt by Black Dog and Black Cat. A strange spell is written on it, its language unknown to Geralt.
+2111410009|00000000|item_name_dmnq_notices_ritual_spell_text|Segoríi dol, zolob fel ainóm</br></br>Shren Wamoló fra coqihlan, telesh miró.</br></br>Munó Sznué lé Grierezeh, wú Ara carépt.</br></br>Wúrh ywo Rr Ouwh, Viló ráz yw perúe.</br></br>Munó glamóh shrén Munó lelahr, skeksi déf amóss.</br></br>Wúrh spebéhl rwlé dorshlégrie, yw Shengonia ril táet.</br></br>Cariei fra lé summrle, Cariei fra yw igre.</br></br>Dárh muoímmué ghy demmoi-ré, bell shrén coléc.</br></br>Kílmu twrý dol asglu, dóshrén yv Thet,</br>hme-ril shré Tórmlor, fel sme-ril shró Káéhl.
+2111410910|00000000|item_name_dmnq_notices_ophiri_contract|Our Friend is missing
+2111410911|00000000|item_desc_dmnq_notices_ophiri_contract|Contract written by a seemingly foreign hand.
+2111410912|00000000|item_name_dmnq_notices_ophiri_contract_text|Our Ophiri Friend is missing, would you search him for us?

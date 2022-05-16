@@ -148,6 +148,9 @@ dialogscript:
         - choice: ["How did you come by it, anyway?", section_convince]
           emphasize: false
 
+        - choice: ["I don't want to do this...", section_backoff]
+          emphasize: false
+
   section_fight:
     - geralt: "This ends in a fight, I know it."
     - NEXT: section_exit_fight
@@ -163,6 +166,10 @@ dialogscript:
   section_convince:
     - geralt: "Intricate to convince you I guess"
     - NEXT: script_5xp
+
+  section_backoff:
+    - geralt: "I don't want to do this."
+    - NEXT: section_exit_backoff
 
   script_2xp:
 
@@ -186,9 +193,23 @@ dialogscript:
 
     - NEXT: section_exit_normal
 
+  #script_amulet:
+
+  #  - SCRIPT:
+  #      function: GiveRewardToPlayer
+  #      parameter: 
+  #          - rewardName: "dmnq_reward_amulet"
+
+  #  - NEXT: section_exit_normal
+
   section_exit_fight:
     - CAMERA_BLEND: 2.0
     - OUTPUT: fight
+    - EXIT
+
+  section_exit_backoff:
+    - CAMERA_BLEND: 2.0
+    - OUTPUT: backoff
     - EXIT
 
   section_exit_normal:
