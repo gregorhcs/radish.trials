@@ -689,7 +689,7 @@
             "class": "CQuest",
             "seed": 1,
             "id": "7A67E6B7-F3E52C95-7F500C7C-43CDE036",
-            "diskSize": 39852,
+            "diskSize": 41139,
             "hardImports": 1,
             "hard": [
                 "BD86773F-84CE8999-6359AD7C-066A5F8B",
@@ -1408,7 +1408,7 @@
             "level": 0,
             "seed": 1,
             "id": "AF6E58CA-8AF2E40A-01DC4B1D-041170EA",
-            "diskSize": 2490
+            "diskSize": 2894
         },
         {
             "path": "dlc\\dlctrial8\\data\\quest_levels.csv",

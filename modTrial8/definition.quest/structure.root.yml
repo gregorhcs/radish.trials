@@ -1,7 +1,7 @@
 #
 # quest structure root segment
 # 
-# (version: 92, saved: 2022-05-16 23:03:34)
+# (version: 97, saved: 2022-05-18 00:15:07)
 #
 ---
 structure:
@@ -10,7 +10,7 @@ structure:
       start:
         ".editor": [ 100.0, 250.0 ]
         next:
-          - script.new_logmsg
+          - subsegment.wait_start_conditions
       
       subsegment.ending_and_epilogue:
         ".editor":
@@ -57,118 +57,130 @@ structure:
         next:
           - subsegment.hook_and_task1
       
-      waituntil.10sec_1:
-        elapsed: "00:00:10"
+      waituntil.15sec_1:
+        elapsed: "00:00:15"
         ".editor":
-          pos: [ 370.0, 97.0 ]
+          pos: [ 500.0, 150.0 ]
           in: [ In ]
           out: [ Out ]
         next:
-          - reward.spell
+          - script.new_logmsg_1
       
-      waituntil.10sec_2:
-        elapsed: "00:00:10"
+      waituntil.15sec_2:
+        elapsed: "00:00:15"
         ".editor":
-          pos: [ 380.0, 23.0 ]
+          pos: [ 498.0, 80.0 ]
           in: [ In ]
           out: [ Out ]
         next:
-          - reward.amulet
+          - script.new_logmsg_2
       
-      waituntil.10sec_3:
-        elapsed: "00:00:10"
+      waituntil.15sec_3:
+        elapsed: "00:00:15"
         ".editor":
-          pos: [ 376.0, -64.0 ]
+          pos: [ 494.0, 6.0 ]
           in: [ In ]
           out: [ Out ]
-        next: ".done"
+        next:
+          - script.new_logmsg_3
+      
+      waituntil.15sec_4:
+        elapsed: "00:00:15"
+        ".editor":
+          pos: [ 497.0, -54.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - script.new_logmsg_4
       
       script.new_logmsg:
         ".editor":
-          pos: [ 168.0, 97.0 ]
+          pos: [ 100.0, 150.0 ]
           in: [ In ]
           out: [ Out ]
         function: radLog
         parameter:
           - logChannel: cname_TRIAL8
-          - msg: t1
+          - msg: 100xcoins and 3xp
         next:
-          - reward.sword
+          - reward.coins
       
       script.new_logmsg_1:
         ".editor":
-          pos: [ 156.0, -35.0 ]
+          pos: [ 100.0, 77.0 ]
           in: [ In ]
           out: [ Out ]
         function: radLog
         parameter:
           - logChannel: cname_TRIAL8
-          - msg: t2
+          - msg: sword and 66xp
         next:
-          - waituntil.10sec_1
+          - reward.sword
       
-      script.reward_amulet:
+      script.new_logmsg_2:
         ".editor":
-          pos: [ 666.0, 403.0 ]
+          pos: [ 98.0, 6.0 ]
           in: [ In ]
           out: [ Out ]
-        function: DMNQ_GiveRewardToPlayer
+        function: radLog
         parameter:
-          - rewardName: cname_dmnq_reward_2xp_amulet
-        next: ".done"
+          - logChannel: cname_TRIAL8
+          - msg: spell notice
+        next:
+          - reward.spell
       
-      script.reward_coins:
+      script.new_logmsg_3:
         ".editor":
-          pos: [ 464.0, 501.0 ]
+          pos: [ 98.0, -58.0 ]
           in: [ In ]
           out: [ Out ]
-        function: DMNQ_GiveRewardToPlayer
+        function: radLog
         parameter:
-          - rewardName: cname_dmnq_reward_merchant_alive
-        next: ".done"
+          - logChannel: cname_TRIAL8
+          - msg: amulet and 2xp
+        next:
+          - reward.amulet
       
-      script.reward_spellnotice:
+      script.new_logmsg_4:
         ".editor":
-          pos: [ 687.0, 579.0 ]
+          pos: [ 96.0, -122.0 ]
           in: [ In ]
           out: [ Out ]
-        function: DMNQ_GiveRewardToPlayer
+        function: radLog
         parameter:
-          - rewardName: cname_dmnq_reward_ritual_spell
-        next: ".done"
-      
-      script.reward_sword:
-        ".editor":
-          pos: [ 455.0, 369.0 ]
-          in: [ In ]
-          out: [ Out ]
-        function: DMNQ_GiveRewardToPlayer
-        parameter:
-          - rewardName: cname_dmnq_reward_66xp_useless_sword
-        next: ".done"
+          - logChannel: cname_TRIAL8
+          - msg: translation
+        next:
+          - reward.translation
       
       reward.amulet:
-        ".editor": [ 500.0, 13.0 ]
+        ".editor": [ 296.0, -59.0 ]
         reward: dmnq_reward_stub_2xp
         next:
-          - waituntil.10sec_3
+          - waituntil.15sec_4
       
       reward.coins:
-        ".editor": [ 316.0, -200.0 ]
+        ".editor": [ 300.0, 150.0 ]
         reward: dmnq_reward_stub_merchant_alive
-        next: ".done"
+        next:
+          - waituntil.15sec_1
       
       reward.spell:
-        ".editor": [ 508.0, 96.0 ]
+        ".editor": [ 296.0, 6.0 ]
         reward: dmnq_reward_stub_spell
         next:
-          - waituntil.10sec_2
+          - waituntil.15sec_3
       
       reward.sword:
-        ".editor": [ 160.0, 31.0 ]
+        ".editor": [ 299.0, 80.0 ]
         reward: dmnq_reward_stub_66xp_sword
         next:
-          - script.new_logmsg_1
+          - waituntil.15sec_2
+      
+      reward.translation:
+        ".editor": [ 294.0, -122.0 ]
+        reward: dmnq_reward_stub_translation
+        next: ".done"
       
       end:
         ".editor": [ 1300.0, 250.0 ]

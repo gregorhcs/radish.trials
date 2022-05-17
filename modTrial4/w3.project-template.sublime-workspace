@@ -71,138 +71,14 @@
 			"file": "mod.scripts-tmp/local/modSceneStarter-tmp.ws",
 			"settings":
 			{
-				"buffer_size": 1906,
+				"buffer_size": 1919,
 				"line_ending": "Unix"
 			}
 		}
 	],
-	"build_system": "Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
+	"build_system": "",
 	"build_system_choices":
 	[
-		[
-			[
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					""
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"TEXTURES: generate texture cache"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"ENV: patch-reencode single env + restart"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"ENV: reencode all envs"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"FUR: patch-reencode single hairworks + restart"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"FUR: reencode all hairworks"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"MESH: patch-import single model + restart"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"MESH: reimport all models"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"QUEST: patch-reencode quest + restart"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"QUEST: reencode quest"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"SCENE: generate debug timeline"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"SCENE: path-reencode single scene + restart"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"SCENE: reencode all scenes"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"WORLD: patch-reencode world + restart"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"WORLD: patch-reencode foliage-only + restart"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"WORLD: patch-reencode terrain-only + restart"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"WORLD: reencode world"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"STRINGS: reencode"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"SPEECH: interactive phoneme extraction"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"SPEECH: phoneme generation from STRINGS"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"SPEECH: reencode + restart"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"TEXTURES: patch-import single texture + restart"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"TEXTURES: reimport all textures"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"DEPLOY: scripts + restart"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"DEPLOY: tmp-scripts only"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"DEPLOY: (pack + deploy) mod + restart"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"DEPLOY: (pack + deploy) dlc + restart"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"DEPLOY: (pack + deploy) mod + dlc + restart"
-				],
-				[
-					"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-					"FULL REBUILD + restart"
-				]
-			],
-			[
-				"Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-				"FULL REBUILD + restart"
-			]
-		]
 	],
 	"build_varint": "",
 	"command_palette":
@@ -283,11 +159,9 @@
 	},
 	"expanded_folders":
 	[
-		"/E/W3Modding/_projects/modTrial6",
-		"/E/W3Modding/_projects/modTrial6/definition.quest",
-		"/E/W3Modding/_projects/modTrial6/definition.scenes",
-		"/E/W3Modding/_projects/modTrial6/mod.scripts-tmp",
-		"/E/W3Modding/_projects/modTrial6/mod.scripts-tmp/local"
+		"/E/W3Modding/_projects/modTrial4",
+		"/E/W3Modding/_projects/modTrial4/mod.scripts-tmp",
+		"/E/W3Modding/_projects/modTrial4/mod.scripts-tmp/local"
 	],
 	"file_history":
 	[
@@ -332,36 +206,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"lopp",
-			"clipend",
-			"to_",
-			"high_standing_sad_gesture_headscratch",
-			"knock",
-			"soundb",
-			"high_standing_aggressive_exclamation_gesture_02_both_hands",
-			"anim_6986_high_standing_aggressive_exclamation_gesture_02_both_hands",
-			"bjorn_high_standing_aggressive_exclamation_gesture_02_both_hands",
-			"anim_6986_high_standing_aggressive_exclamation_gesture_02_both_hands",
-			"exclamation_gesture",
-			"flick",
-			"shot_41c_over_aisker_shoulder",
-			"flick",
-			"knockdown",
-			"turn",
-			"anim_8086_locomotion_walk_cycle_slow_forward",
-			"mimicsanim_426_geralt_neutral_gesture_sceptical_remark_face",
-			"geralt_geralt_neutral_gesture_sceptical_remark_face",
-			"geralt_add_reaction_sigh_01",
-			"high_standing_sad_gesture_sigh",
-			"geraltaba",
-			"aback",
-			"shot_closeup_alene_looking_at_geralt",
-			"geralt_locomotion_walk_cycle_slow_forward",
-			"geralt_high_standing_determined_calm_enter_frontal",
-			"cam_3_shotcloseupalenelookingatgeralt",
-			"shot_geralt_sighing_shortly_looking_at_tense_alene",
-			"shot_closeup_alene_looking_at_geralt",
-			"        \n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -390,15 +234,15 @@
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1906,
+						"buffer_size": 1919,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								497,
-								497
+								0,
+								0
 							]
 						],
 						"settings":
@@ -449,16 +293,12 @@
 		]
 	},
 	"menu_visible": true,
-	"output.exec":
-	{
-		"height": 153.0
-	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
 	"pinned_build_system": "Packages/W3 radish modding tools/W3 radish modding tools.sublime-build",
-	"project": "trial6.sublime-project",
+	"project": "w3.project-template.sublime-project",
 	"replace":
 	{
 		"height": 54.0

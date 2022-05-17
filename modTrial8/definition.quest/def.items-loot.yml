@@ -1,23 +1,23 @@
-items:
+# -------------------- ITEMS -------------------
 
-#  misc:
-#
-#    dmnq_amulet:
-#      name: "Mysterious Amulet"
-#      description: "Retrieved from an Ophiri Merchant per motivation by two demons..."
+items:
 
   notices:
 
-    dmnq_contract:
-      name: "Our Friend is missing"
-      description: "Our Friend is missing"
-      text: "Our Ophiri Friend is missing, would you search him for us?"
+      dmnq_contract:
+        name: "Our Friend is missing"
+        description: "Our Friend is missing"
+        text: "Our Ophiri Friend is missing, would you search him for us?"
 
-    dmnq_amulet_descr:
-      name: "Instructions"
-      description: "Testimony of a failed mentorship."
-      text: "One last time Moritz, you have to the set up the loc. reconfigurational device BEFORE casting the spell. You don't simply walk into the wild without a plan for navigation either, don't you?"
+      dmnq_amulet_descr:
+        name: "Instructions"
+        description: "Testimony of a failed mentorship."
+        text: "One last time Moritz, you have to the set up the loc. reconfigurational device BEFORE casting the spell. You don't simply walk into the wild without a plan for navigation either, don't you?"
 
+# -------------------- REWARDS -------------------
+
+# these are replaced during the build process by 
+# additional.dlc.post-cook/data/gameplay/rewards/def_rewards_quest.xml
 rewards:
   dmnq_reward_stub_2xp:
     - notices/dmnq_amulet_descr
@@ -36,6 +36,11 @@ rewards:
 
   dmnq_reward_stub_merchant_alive:
     - notices/dmnq_amulet_descr
+
+  dmnq_reward_stub_translation:
+    - notices/dmnq_amulet_descr
+
+# -------------------- LOOT -------------------
 
 loot:
   dmnq_merchant_inv:
