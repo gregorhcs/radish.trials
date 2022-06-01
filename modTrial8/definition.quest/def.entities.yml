@@ -14,20 +14,22 @@ entities:
       - ".type": CInventoryDefinition
         entries:
           - ".type": CInventoryDefinitionEntry
-            category: "steelsword"
+            category: "misc"
             isMount: true
             isLootable: true
             initializer:
               .type: CInventoryInitializerUniform
-              itemName: "trial8_misc_dmnq_amulet"
+              itemName: "dmnq_amulet"
+        entries:
           - ".type": CInventoryDefinitionEntry
-            category: "steelsword"
+            category: "book"
             isMount: true
             isLootable: true
             initializer:
               .type: CInventoryInitializerUniform
-              itemName: "trial8_notices_dmnq_amulet_descr"
+              itemName: "dmnq_notices_book_on_amulets"
 
+  # do we need this?
   DMNQ_useless_sword:
     includes:
       - "items/weapons/swords/nomansland_swords/nomansland_sword_rusty.w2ent"
@@ -42,7 +44,75 @@ entities:
       .type: "CNewNPC"
       level: 1
 
+  DMNQ_grieving_stone:
 
+    includes:
+      - gameplay/containers/container_template.w2ent  # required instead of interaction component, so "loot" action is removed after looting
+      - environment/decorations/ships/basic/geralt_boat/decoration_boat/decoration_boat_base.w2ent
+    
+    entityObject:
+
+      .type: W3AnimatedContainer
+      streamingDistance: 2
+
+      components:
+
+        CAppearanceComponent0:
+          ".type": CAppearanceComponent
+          forcedAppearance: 1_full
+
+        container:
+          ".type": CInventoryComponent
+          
+        examine:
+          .type: CInteractionComponent
+          actionName: Examine
+          rangeMin: 0.0
+          rangeMax: 3.0
+          isEnabled: true
+          reportToScript: true
+
+    appearances:
+      1_full:
+        ".type": CEntityAppearance
+        includedTemplates:
+          - "gameplay/abilities/sorceresses/sorceress_stone_proj.w2ent"
+      2_empty:
+        ".type": CEntityAppearance
+
+    templateParams:
+      - ".type": CR4LootParam
+        name: "loot"
+        containers:
+          dmnq_loot_pebble:
+            chance: 100.0
+            respawnTime: 0
+
+
+  clue_on_road:
+    
+    includes:
+      - W3MonsterClue:quests/prologue/quest_files/living_world/entities/clues/blood/lw_clue_blood_splat_big.w2ent
+
+    entityObject:
+      .type: W3MonsterClue
+      testLineOfSight: true
+      components:
+        examine:
+          .type: CInteractionComponent
+          actionName: Examine
+          rangeMin: 0.0
+          rangeMax: 3.0
+          isEnabled: true
+          reportToScript: true
+
+    templateParams:
+      - ".type": CR4LootParam
+        name: "loot"
+        containers:
+          dmnq_loot_pebble:
+            chance: 100.0
+            respawnTime: 0
 
 
 

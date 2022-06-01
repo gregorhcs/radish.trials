@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: fetching_the_amulet
 # 
-# (version: 97, saved: 2022-05-18 00:15:07)
+# (version: 113, saved: 2022-06-02 01:03:21)
 #
 ---
 structure:
@@ -9,16 +9,16 @@ structure:
     fetching_the_amulet:
       blocks:
         in:
-          ".editor": [ -209.0, 769.0 ]
+          ".editor": [ -885.0, 777.0 ]
           next:
-            - waituntil.branchknown1
+            - waituntil.known_merchant1
             - interaction.s4_demons_2nd_task: Input
             - waituntil.2XP_requested
             - waituntil.5XP_requested
         
         scene.s3_amulet_from_merchant:
           ".editor":
-            pos: [ 398.0, 491.0 ]
+            pos: [ -241.0, 566.0 ]
             in: [ Input ]
             out: [ Output, backoff, fight ]
           scene: s3_amulet_from_merchant.yml
@@ -34,7 +34,7 @@ structure:
         
         interaction.s3_amulet_from_merchant:
           ".editor":
-            pos: [ 394.0, 397.0 ]
+            pos: [ -238.0, 366.0 ]
             in: [ Input ]
             out: [ Output, backoff, fight ]
           scene: s3_amulet_from_merchant.yml
@@ -64,35 +64,90 @@ structure:
         waituntil.2XP_requested:
           factdb: [ dmnq_2xp, ">=", 1 ]
           ".editor":
-            pos: [ -32.0, 661.0 ]
+            pos: [ -700.0, 681.0 ]
             in: [ In ]
             out: [ Out ]
           next:
-            - reward.reward_2XP
+            - reward.reward_2XP_amulet
         
         waituntil.5XP_requested:
           factdb: [ dmnq_5xp, ">=", 1 ]
           ".editor":
-            pos: [ -34.0, 723.0 ]
+            pos: [ -702.0, 737.0 ]
             in: [ In ]
             out: [ Out ]
           next:
-            - reward.reward_5xp
+            - reward.reward_5xp_amulet
         
         waituntil.approached_merchant:
           all:
             - entered: [ novigrad/entermerchantarea, PLAYER ]
             - factdb: [ dmnq_s4_done, "!=", 1 ]
           ".editor":
-            pos: [ 270.0, 495.0 ]
+            pos: [ -361.0, 567.0 ]
             in: [ In ]
             out: [ Out ]
           next:
             - scene.s3_amulet_from_merchant: Input
         
-        waituntil.branchknown1:
+        waituntil.chatty_merchant_conditions:
+          all:
+            - factdb: [ DMNQ_s4_done, "!=", 1 ]
+            - factdb: [ DMNQ_fistfight_result, "<", 2 ]
           ".editor":
-            pos: [ -65.0, 389.0 ]
+            pos: [ -238.0, 274.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - interaction.s3_amulet_from_merchant: Input
+        
+        waituntil.fight_progress:
+          ".editor":
+            pos: [ 2107.0, 541.0 ]
+            hint: named
+            in: [ In ]
+            out: [ loot, start ]
+          conditions:
+            start:
+              factdb: [ DMNQ_fight_progress, "=", 1 ]
+            loot:
+              factdb: [ DMNQ_fight_progress, "=", 2 ]
+          next.loot:
+            - objective.loot_amulet_deact: Deactivate
+          next.start:
+            - objective.fight_merchant_deact: Deactivate
+        
+        waituntil.fistfight_fin:
+          factdb: [ DMNQ_fistfight_result, ">", 0 ]
+          ".editor":
+            pos: [ 424.0, 572.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - script.stop_fistfight_player
+            - waituntil.fistfight_result
+        
+        waituntil.fistfight_result:
+          ".editor":
+            pos: [ 554.0, 573.0 ]
+            hint: named
+            in: [ In ]
+            out: [ lose, won ]
+          conditions:
+            won:
+              factdb: [ DMNQ_fistfight_result, "=", 2 ]
+            lose:
+              factdb: [ DMNQ_fistfight_result, "=", 1 ]
+          next.lose:
+            - objective.fight_merchant: Failure
+            - addfact.fact_fight_fin2
+          next.won:
+            - objective.fight_merchant: Success
+            - addfact.fact_fight_loot
+        
+        waituntil.known_merchant1:
+          ".editor":
+            pos: [ -699.0, 360.0 ]
             hint: named
             in: [ In ]
             out: [ "false", "true" ]
@@ -106,7 +161,39 @@ structure:
           next.true:
             - interaction.s3_amulet_from_merchant: Input
         
-        waituntil.branchknown2:
+        waituntil.known_merchant2_peace:
+          ".editor":
+            pos: [ 182.0, 396.0 ]
+            hint: named
+            in: [ In ]
+            out: [ "false", "true" ]
+          conditions:
+            "true":
+              factdb: [ DMNQ_started_with, "=", 1 ]
+            "false":
+              factdb: [ DMNQ_started_with, "=", 2 ]
+          next.false:
+            - objective.useforce_merchant_unknown: Deactivate
+          next.true:
+            - objective.useforce_merchant_known: Deactivate
+        
+        waituntil.known_merchant3_fight:
+          ".editor":
+            pos: [ 182.0, 455.0 ]
+            hint: named
+            in: [ In ]
+            out: [ "false", "true" ]
+          conditions:
+            "true":
+              factdb: [ DMNQ_started_with, "=", 1 ]
+            "false":
+              factdb: [ DMNQ_started_with, "=", 2 ]
+          next.false:
+            - objective.useforce_merchant_unknown: Success
+          next.true:
+            - objective.useforce_merchant_known: Success
+        
+        waituntil.known_merchant4:
           ".editor":
             pos: [ 1709.0, 117.0 ]
             hint: named
@@ -122,103 +209,50 @@ structure:
           next.true:
             - objective.getamulet_success_known: Success
         
-        waituntil.branchknown_for_fight:
-          ".editor":
-            pos: [ 777.0, 471.0 ]
-            hint: named
-            in: [ In ]
-            out: [ "false", "true" ]
-          conditions:
-            "true":
-              factdb: [ DMNQ_started_with, "=", 1 ]
-            "false":
-              factdb: [ DMNQ_started_with, "=", 2 ]
-          next.false:
-            - objective.useforce_merchant_unknown: Success
-          next.true:
-            - objective.useforce_merchant_known: Success
-        
-        waituntil.branchknown_for_normal:
-          ".editor":
-            pos: [ 778.0, 410.0 ]
-            hint: named
-            in: [ In ]
-            out: [ "false", "true" ]
-          conditions:
-            "true":
-              factdb: [ DMNQ_started_with, "=", 1 ]
-            "false":
-              factdb: [ DMNQ_started_with, "=", 2 ]
-          next.false:
-            - objective.useforce_merchant_unknown: Failure
-          next.true:
-            - objective.useforce_merchant_known: Failure
-        
-        waituntil.fight_progress:
-          ".editor":
-            pos: [ 2106.0, 612.0 ]
-            hint: named
-            in: [ In ]
-            out: [ fin, loot, nofight, start ]
-          conditions:
-            nofight:
-              factdb: [ DMNQ_fight_progress, "=", 0 ]
-            start:
-              factdb: [ DMNQ_fight_progress, "=", 1 ]
-            loot:
-              factdb: [ DMNQ_fight_progress, "=", 2 ]
-            fin:
-              factdb: [ DMNQ_fight_progress, "=", 3 ]
-          next.loot:
-            - objective.loot_amulet_fail: Failure
-          next.start:
-            - objective.fight_merchant_fail: Failure
-        
         waituntil.looted_amulet:
           looted: ~dmnq_amulet
           ".editor":
-            pos: [ 1029.0, 562.0 ]
+            pos: [ 936.0, 709.0 ]
             in: [ In ]
             out: [ Out ]
           next:
-            - addfact.fact_fight_fin
+            - addfact.fact_fight_fin1
             - objective.loot_merchant: Success
         
-        waituntil.merchant_dead:
-          factdb: [ DMNQ_merchant_dead, ">=", 1 ]
+        waituntil.outside_merchant_area:
+          outside: [ novigrad/entermerchantarea, PLAYER ]
           ".editor":
-            pos: [ 754.0, 561.0 ]
+            pos: [ 249.0, 736.0 ]
             in: [ In ]
             out: [ Out ]
           next:
-            - addfact.fact_fight_loot
-            - objective.fight_merchant: Success
+            - script.stop_fistfight_player
         
         waituntil.pause1:
           factdb: [ DMNQ_started_with, ">=", 1 ]
           ".editor":
-            pos: [ 609.0, 333.0 ]
+            pos: [ 57.0, 354.0 ]
             in: [ In ]
             out: [ Out ]
           next:
-            - waituntil.branchknown_for_normal
+            - waituntil.known_merchant2_peace
             - journal.qjournal_merchant_alive: Activate
         
         waituntil.pause2:
           factdb: [ DMNQ_started_with, ">=", 1 ]
           ".editor":
-            pos: [ 1437.0, 403.0 ]
+            pos: [ 1452.0, 520.0 ]
             in: [ In ]
             out: [ Out ]
           next:
-            - waituntil.branchknown2
+            - waituntil.known_merchant4
             - objective.bringback_amulet: Activate
             - interaction.s4_demons_2nd_task: Input
             - addfact.fact_took_amulet
         
         waituntil.took_amulet:
           ".editor":
-            pos: [ 1861.0, 620.0 ]
+            pos: [ 1852.0, 541.0 ]
             hint: named
             in: [ In ]
             out: [ "false", "true" ]
@@ -228,19 +262,83 @@ structure:
             "false":
               factdb: [ DMNQ_took_amulet, "=", 0 ]
           next.false:
-            - waituntil.fight_progress
             - objective.bringback_lies_success: Success
+            - objective.bringback_amulet: Deactivate
           next.true:
             - objective.bringback_amulet: Success
         
-        waituntil.while_s4_open:
-          factdb: [ dmnq_s4_done, "!=", 1 ]
+        script.merchant_friendly:
           ".editor":
-            pos: [ 393.0, 339.0 ]
+            pos: [ 424.0, 736.0 ]
             in: [ In ]
             out: [ Out ]
+          function: DMNQ_TuneNPC
+          parameter:
+            - tag: cname_dmnq_merchant
+            - level: 800
+            - attitude: Friendly
+          next: ".done"
+        
+        script.merchant_hostile:
+          ".editor":
+            pos: [ 65.0, 738.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: DMNQ_TuneNPC
+          parameter:
+            - tag: cname_dmnq_merchant
+            - level: 800
+            - attitude: Hostile
+          next: ".done"
+        
+        script.start_fistfight_npc:
+          ".editor":
+            pos: [ 66.0, 683.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: DMNQ_FistfightNPC
+          parameter:
+            - tag: cname_dmnq_merchant
+            - activate: true
           next:
-            - interaction.s3_amulet_from_merchant: Input
+            - script.merchant_hostile
+        
+        script.start_fistfight_player:
+          ".editor":
+            pos: [ 66.0, 628.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: DMNQ_FistfightPlayer
+          parameter:
+            - activate: true
+            - healthMultiplier: 20.0
+            - toDeath: true
+            - endsWithBS: false
+          next:
+            - script.start_fistfight_npc
+        
+        script.stop_fistfight_npc:
+          ".editor":
+            pos: [ 423.0, 682.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: DMNQ_FistfightNPC
+          parameter:
+            - tag: cname_dmnq_merchant
+            - activate: false
+          next:
+            - script.merchant_friendly
+        
+        script.stop_fistfight_player:
+          ".editor":
+            pos: [ 423.0, 628.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: DMNQ_FistfightPlayer
+          parameter:
+            - activate: false
+          next:
+            - script.stop_fistfight_npc
         
         changelayers.hide_merchant_layer:
           ".editor":
@@ -268,14 +366,14 @@ structure:
             - changelayers.hide_merchant_layer
         
         journal.qjournal_merchant_alive:
-          ".editor": [ 1303.0, 333.0 ]
+          ".editor": [ 1304.0, 352.0 ]
           entry: quests/trial8/2b_merchant_alive
           notify: true
           next:
             - waituntil.pause2
         
         journal.qjournal_merchant_dead:
-          ".editor": [ 1305.0, 559.0 ]
+          ".editor": [ 1313.0, 708.0 ]
           entry: quests/trial8/2a_merchant_dead
           notify: true
           next:
@@ -289,29 +387,30 @@ structure:
           next: ".done"
         
         objective.bringback_lies:
-          ".editor": [ 266.0, 338.0 ]
-          objective: trial8/get_amulet/bringback_lies
-          notify: true
-          track: true
-          next:
-            - waituntil.while_s4_open
-        
-        objective.bringback_lies_success:
-          ".editor": [ 2106.0, 499.0 ]
+          ".editor": [ -238.0, 208.0 ]
           objective: trial8/get_amulet/bringback_lies
           notify: true
           track: false
-          next: ".done"
+          next:
+            - waituntil.chatty_merchant_conditions
+        
+        objective.bringback_lies_success:
+          ".editor": [ 1989.0, 541.0 ]
+          objective: trial8/get_amulet/bringback_lies
+          notify: true
+          track: false
+          next:
+            - waituntil.fight_progress
         
         objective.fight_merchant:
-          ".editor": [ 758.0, 618.0 ]
+          ".editor": [ 691.0, 524.0 ]
           objective: trial8/get_amulet/fight_merchant
           notify: true
           track: true
           next: ".done"
         
-        objective.fight_merchant_fail:
-          ".editor": [ 2284.0, 606.0 ]
+        objective.fight_merchant_deact:
+          ".editor": [ 2225.0, 567.0 ]
           objective: trial8/get_amulet/fight_merchant
           notify: true
           track: false
@@ -339,60 +438,68 @@ structure:
           next:
             - despawn.merchant_despawn
         
-        objective.loot_amulet_fail:
-          ".editor": [ 2283.0, 544.0 ]
+        objective.loot_amulet_deact:
+          ".editor": [ 2224.0, 512.0 ]
           objective: trial8/get_amulet/loot_amulet
           notify: true
           track: false
           next: ".done"
         
         objective.loot_merchant:
-          ".editor": [ 1031.0, 625.0 ]
+          ".editor": [ 1071.0, 671.0 ]
           objective: trial8/get_amulet/loot_amulet
           notify: true
           track: true
           next: ".done"
         
         objective.useforce_merchant_known:
-          ".editor": [ 987.0, 469.0 ]
+          ".editor": [ 317.0, 453.0 ]
           objective: trial8/get_amulet/use_force_merchant_known
           notify: true
           track: false
           next: ".done"
         
         objective.useforce_merchant_unknown:
-          ".editor": [ 984.0, 390.0 ]
+          ".editor": [ 317.0, 395.0 ]
           objective: trial8/get_amulet/use_force_merchant_unknown
           notify: true
           track: false
           next: ".done"
         
         addfact.fact_bringback_lies:
-          ".editor": [ 149.0, 339.0 ]
+          ".editor": [ -377.0, 244.0 ]
           value: [ dmnq_bringback_lies_active, 1 ]
           next:
             - objective.bringback_lies: Activate
         
-        addfact.fact_fight_fin:
-          ".editor": [ 1166.0, 561.0 ]
+        addfact.fact_fight_fin1:
+          ".editor": [ 1190.0, 708.0 ]
           value: [ DMNQ_fight_progress, 1 ]
           next:
             - journal.qjournal_merchant_dead: Activate
         
+        addfact.fact_fight_fin2:
+          ".editor": [ 812.0, 570.0 ]
+          value: [ DMNQ_fight_progress, 2 ]
+          next:
+            - journal.qjournal_merchant_alive: Activate
+        
         addfact.fact_fight_loot:
-          ".editor": [ 898.0, 563.0 ]
+          ".editor": [ 809.0, 709.0 ]
           value: [ DMNQ_fight_progress, 1 ]
           next:
             - objective.loot_merchant: Activate
             - waituntil.looted_amulet
         
         addfact.fact_fight_start:
-          ".editor": [ 614.0, 562.0 ]
+          ".editor": [ 64.0, 572.0 ]
           value: [ DMNQ_fight_progress, 1 ]
           next:
-            - waituntil.merchant_dead
+            - waituntil.fistfight_fin
             - objective.fight_merchant: Activate
-            - waituntil.branchknown_for_fight
+            - waituntil.known_merchant3_fight
+            - script.start_fistfight_player
+            - waituntil.outside_merchant_area
         
         addfact.fact_s4_done:
           ".editor": [ 1972.0, 770.0 ]
@@ -405,13 +512,13 @@ structure:
           value: [ DMNQ_took_amulet, 1 ]
           next: ".done"
         
-        reward.reward_2XP:
-          ".editor": [ 87.0, 661.0 ]
+        reward.reward_2XP_amulet:
+          ".editor": [ -584.0, 681.0 ]
           reward: dmnq_reward_stub_2xp
           next: ".done"
         
-        reward.reward_5xp:
-          ".editor": [ 89.0, 724.0 ]
+        reward.reward_5xp_amulet:
+          ".editor": [ -583.0, 737.0 ]
           reward: dmnq_reward_stub_5xp
           next: ".done"
         

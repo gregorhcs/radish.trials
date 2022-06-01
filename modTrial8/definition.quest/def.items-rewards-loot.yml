@@ -1,0 +1,52 @@
+# this is replaced during the build process by 
+# additional.dlc.post-cook/data/gameplay/items/def_item_quest.xml
+
+# it is here to function as stub for the stub reward
+
+items:
+
+  notices:
+
+      dmnq_item_notice_stub:
+        name: "post-cook reward XML not used"
+        description: ""
+        text: "Should this happen, please message the mod author."
+
+
+# these are replaced during the build process by 
+# additional.dlc.post-cook/data/gameplay/rewards/def_rewards_quest.xml
+
+# they are here in order to be able to use the "Reward" quest graph block
+
+rewards:
+  dmnq_reward_stub_2xp:
+    - notices/dmnq_item_notice_stub
+
+  dmnq_reward_stub_5xp:
+    - notices/dmnq_item_notice_stub
+
+  dmnq_reward_stub_spell:
+    - notices/dmnq_item_notice_stub
+
+  dmnq_reward_stub_66xp:
+    - notices/dmnq_item_notice_stub
+
+  dmnq_reward_stub_66xp_sword:
+    - notices/dmnq_item_notice_stub
+
+  dmnq_reward_stub_merchant_alive:
+    - notices/dmnq_item_notice_stub
+
+  dmnq_reward_stub_translation:
+    - notices/dmnq_item_notice_stub
+
+
+# these are replaced during the build process by 
+# additional.dlc.post-cook/data/gameplay/items/def_loot_quest.xml
+
+loot:
+  dmnq_loot_merchant_inv:
+    - notices/dmnq_item_notice_stub
+
+  dmnq_loot_pebble:
+    - notices/dmnq_item_notice_stub

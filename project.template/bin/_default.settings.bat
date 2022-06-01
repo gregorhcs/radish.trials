@@ -4,6 +4,19 @@ rem --- the following settings do not need to be adjusted
 rem --------------------------------------------------------------------------------------------------------------
 rem --------------------------------------------------------------------------------------------------------------
 
+rem --- remove trailing slash
+IF %DIR_PROJECT_BASE:~-1%==\ SET DIR_PROJECT_BASE=%DIR_PROJECT_BASE:~0,-1%
+
+rem --- default sub dir values -----------------------------------------------------------------------------------
+
+IF "%DIR_DLC_SCENES%"=="" SET DIR_DLC_SCENES=scenes
+IF "%DIR_DLC_ENVS%"=="" SET DIR_DLC_ENVS=envs
+IF "%DIR_DLC_MESHES%"=="" SET DIR_DLC_MESHES=entities\meshes
+IF "%DIR_DLC_REDFUR%"=="" SET DIR_DLC_REDFUR=entities\meshes
+
+rem --------------------------------------------------------------------------------------------------------------
+rem --------------------------------------------------------------------------------------------------------------
+
 rem --- settings for modkit
 set DIR_MODKIT_BIN=%DIR_MODKIT%\bin\x64
 set DIR_MODKIT_DEPOT=%DIR_MODKIT%\r4data
@@ -37,15 +50,15 @@ rem --- output directories
 
 rem --- encode -> uncooked -[cook]-> cooked -[pack]-> dlc
 
-rem tmp directory for seed files, cook db etc. will be deleted and recreated on cleanup
+rem tmp directory for seed files, cook db etc. will be deleted and recreated on
+rem cleanup
 set DIR_TMP=%DIR_PROJECT_BASE%\_tmp
+rem tmp directory for all files required for generating the texture cache. will
+rem be deleted and recreated on cleanup
+set DIR_TMP_TEXTURE_CACHE=%DIR_PROJECT_BASE%\_tmp.texture.cache
 
 rem target root directory for all encoded files to be cooked
 set DIR_UNCOOKED=%DIR_PROJECT_BASE%\uncooked
-
-rem target root directory for imported textures. imported textures are uncooked
-rem kept separate from uncooked directory so creation of texturecache is easier
-set DIR_UNCOOKED_TEXTURES=%DIR_PROJECT_BASE%\uncooked.textures
 
 rem target root directory for all encoded mod files
 set DIR_COOKED_MOD=%dir_resources%\mod%MODNAME_LC%\files
@@ -75,19 +88,19 @@ rem target directory for encoded quest file
 set DIR_OUTPUT_QUEST=%DIR_UNCOOKED%
 
 rem target directory for encoded w2scene file
-set DIR_OUTPUT_SCENES=%DIR_UNCOOKED%\%DIR_DLC_GAMEPATH%\data\scenes
+set DIR_OUTPUT_SCENES=%DIR_UNCOOKED%\%DIR_DLC_GAMEPATH%\data\%DIR_DLC_SCENES%
 
 rem target directory for encoded w2scene file
-set DIR_OUTPUT_WORLD=%DIR_UNCOOKED%\%DIR_DLC_GAMEPATH%\levels
+set DIR_OUTPUT_WORLD=%DIR_UNCOOKED%\%DIR_DLC_GAMEPATH%\data\levels
 
 rem target directory for encoded env files
-set DIR_OUTPUT_ENVS=%DIR_UNCOOKED%\%DIR_DLC_GAMEPATH%\data\envs
+set DIR_OUTPUT_ENVS=%DIR_UNCOOKED%\%DIR_DLC_GAMEPATH%\data\%DIR_DLC_ENVS%
 
 rem target directory for imported models
-SET DIR_OUTPUT_MESHES=%DIR_UNCOOKED%\%DIR_DLC_GAMEPATH%\data\entities\meshes
+SET DIR_OUTPUT_MESHES=%DIR_UNCOOKED%\%DIR_DLC_GAMEPATH%\data\%DIR_DLC_MESHES%
 
 rem target directory for imported apx files
-SET DIR_OUTPUT_REDFUR=%DIR_UNCOOKED%\%DIR_DLC_GAMEPATH%\data\entities\meshes
+SET DIR_OUTPUT_REDFUR=%DIR_UNCOOKED%\%DIR_DLC_GAMEPATH%\data\%DIR_DLC_REDFUR%
 
 rem path of final dlc mod
 set DIR_DLC=%DIR_W3%\dlc\dlc%MODNAME%
@@ -144,6 +157,10 @@ set DIR_DEF_QUEST=%DIR_PROJECT_BASE%\definition.quest
 rem prefix for seed files
 set SEEDFILE_PREFIX=seed.
 
+rem additionally generated files that need to be processed for texture cache
+rem generation
+set ADDITIONAL_TEXTURE_CACHE_FILES=*.texarray
+
 rem ---------------------------------------------------
 rem --- w3speech settings
 
@@ -181,6 +198,18 @@ rem prefix used to autodetect fur definitions
 set FUR_DEF_PREFIX=fur.
 
 rem ---------------------------------------------------
+rem --- shadercache settings
+
+rem dir with shadercache definitions
+set DIR_DEF_SHADERCACHE=%DIR_PROJECT_BASE%\definition.shaders
+
+rem dir with compiled shaders
+set DIR_DEF_SHADERCACHE_FILES=%DIR_DEF_SHADERCACHE%\compiled
+
+rem file with definition of shaders to be included into new shader cache
+set SHADERCACHE_REGISTRY=materialgraph-registry.yml
+
+rem ---------------------------------------------------
 rem --- model import settings
 
 rem dir with fbx models
@@ -198,13 +227,17 @@ set DIR_TEXTURE_IMPORT=%DIR_PROJECT_BASE%\textures.import
 rem command to import "one" texture
 SET BIN_IMPORT_TEXTURE=call "%DIR_PROJECT_BIN%\_wcc.import.texture.bat"
 
+rem target root directory for imported textures. imported textures are uncooked
+rem kept separate from uncooked directory so creation of texturecache is easier
+set DIR_UNCOOKED_TEXTURES=%DIR_PROJECT_BASE%\textures.uncooked
+
 rem ---------------------------------------------------
 rem ---------------------------------------------------
 rem set WCC_LITE="%DIR_MODKIT_BIN%\wcc_lite.exe"
 set WCC_LITE=call "%DIR_PROJECT_BIN%\wcc_lite.bat"
 
 rem game relative path to worlds for scanning depot
-set DIR_WCC_DEPOT_WORLDS=%DIR_DLC_GAMEPATH%\levels
+set DIR_WCC_DEPOT_WORLDS=%DIR_DLC_GAMEPATH%\data\levels
 rem ---------------------------------------------------
 rem --- default flags for build steps: do nothing
 SET PATCH_MODE=1
@@ -218,6 +251,7 @@ SET ENCODE_SHADOWMESHES=0
 SET ENCODE_STRINGS=0
 SET ENCODE_SPEECH=0
 SET ENCODE_HAIRWORKS=0
+SET GENERATE_SHADERCACHE=0
 SET WCC_IMPORT_MODELS=0
 SET WCC_IMPORT_TEXTURES=0
 SET WCC_SEEDFILES=

@@ -1,7 +1,7 @@
 #
 # quest structure root segment
 # 
-# (version: 97, saved: 2022-05-18 00:15:07)
+# (version: 113, saved: 2022-06-02 01:03:21)
 #
 ---
 structure:
@@ -10,7 +10,7 @@ structure:
       start:
         ".editor": [ 100.0, 250.0 ]
         next:
-          - subsegment.wait_start_conditions
+          - changelayers.show_fight_layer
       
       subsegment.ending_and_epilogue:
         ".editor":
@@ -152,6 +152,19 @@ structure:
           - msg: translation
         next:
           - reward.translation
+      
+      changelayers.show_fight_layer:
+        ".editor":
+          pos: [ 256.0, 358.0 ]
+          hint: show-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: novigrad
+        show:
+          - fightlayer
+        next: ".done"
       
       reward.amulet:
         ".editor": [ 296.0, -59.0 ]

@@ -1,0 +1,18 @@
+;
+; definition of materialgraphs to be extracted from games shader caches
+;
+; Note 1: only the shader data for these materialgraphs will be extracted.
+; Note 2: do NOT change anything in auto generated materialgraph registry unless
+;         you know EXACTLY what the values do
+;
+; first column
+;     is absolute path to materialgraph to be extracted from shadercache
+;
+; second column
+;     defines the new path/name for materialgraph. the path *MUST* be valid and
+;     point to a materialgraph in the current dlc
+;
+; example (map vanila prolog terrain materials to custom hubtest materialgraph):
+;
+;levels/prolog_village/terrain_material.w2mg;dlc/dlchubtest/data/levels/hubtest/terrain_material.w2mg
+;

@@ -1,0 +1,20 @@
+#
+# production settings
+#
+# (version: 1, saved: 2019-05-14 15:08:40)
+#
+---
+production:
+  settings:
+    id: ProjectTemplateTest
+    caption: New Quest Project
+    menuvisibile: true
+    enabled: true
+    storesdata: true
+    "strings-idspace": 9999
+    "strings-idstart": 0
+    directories:
+      scenes: scenes
+      spawnsets: spawnsets
+      entities: entities
+    version: 1

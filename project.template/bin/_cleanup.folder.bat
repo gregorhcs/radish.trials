@@ -52,6 +52,12 @@ if exist "%DIR_TMP%" (
 )
 if not exist "%DIR_TMP%" mkdir "%DIR_TMP%"
 
+if exist "%DIR_TMP_TEXTURE_CACHE%" (
+  echo ^>^> deleting: "%DIR_TMP_TEXTURE_CACHE%"
+  rd %RD_OPTIONS% "%DIR_TMP_TEXTURE_CACHE%"
+)
+if not exist "%DIR_TMP_TEXTURE_CACHE%" mkdir "%DIR_TMP_TEXTURE_CACHE%"
+
 ::TODO clear csv snippet files in strings folder
 
 EXIT /B %ERRORLEVEL%

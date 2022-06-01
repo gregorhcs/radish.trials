@@ -32,6 +32,8 @@ IF %FULL_REBUILD% EQU 1 (
   SET WCC_REPACK_MOD=1
   SET WCC_IMPORT_MODELS=1
   SET WCC_IMPORT_TEXTURES=1
+  SET WCC_TEXTURECACHE=1
+  SET GENERATE_SHADERCACHE=1
 )
 
 rem ---------------------------------------------------
@@ -42,10 +44,10 @@ IF %ERRORLEVEL% NEQ 0 GOTO SomeError
 
 rem ---------------------------------------------------
 rem -- CLEAR WCC LOG
-IF EXIST "%DIR_PROJECT_BASE%/wcc.log" (
+IF EXIST "%DIR_PROJECT_BASE%\wcc.log" (
   echo.
   echo ^>^> deleting: previous wcc.log
-  del "%DIR_PROJECT_BASE%/wcc.log"
+  del "%DIR_PROJECT_BASE%\wcc.log"
 )
 
 rem ---------------------------------------------------
@@ -137,7 +139,7 @@ IF %ERRORLEVEL% NEQ 0 GOTO SomeError
 rem ---------------------------------------------------
 rem -- WCC_LITE: COOK TEXTURES
 
-IF %WCC_TEXTURECACHE% EQU 1 CALL:wccCookTextures
+IF %WCC_TEXTURECACHE% EQU 1 CALL "%DIR_PROJECT_BIN%\_wcc.cook.textures.bat"
 IF %ERRORLEVEL% NEQ 0 GOTO SomeError
 
 rem ---------------------------------------------------
@@ -183,6 +185,12 @@ rem ---------------------------------------------------
 rem -- WCC_LITE: GENERATE COLLISION CACHE
 
 IF %WCC_COLLISIONCACHE% EQU 1 CALL:wccGenerateCollisionCache
+IF %ERRORLEVEL% NEQ 0 GOTO SomeError
+
+rem ---------------------------------------------------
+rem -- GENERATE SHADER CACHE
+
+IF %GENERATE_SHADERCACHE% EQU 1 CALL "%DIR_PROJECT_BIN%\_generate.shaders.bat"
 IF %ERRORLEVEL% NEQ 0 GOTO SomeError
 
 rem ---------------------------------------------------
@@ -254,26 +262,6 @@ PUSHD "%DIR_MODKIT_BIN%"
 %WCC_LITE% pathlib -rootSearchDir %DIR_WCC_DEPOT_WORLDS%\ *.w2w
 POPD
 IF %INTERACTIVE_BUILD% EQU 1 PAUSE
-
-EXIT /B %ERRORLEVEL%
-
-rem ---------------------------------------------------------------------------
-rem -- WCC_LITE: COOK TEXTURES
-rem ---------------------------------------------------------------------------
-:wccCookTextures
-
-call :printHeader WCC_LITE: COOK TEXTURES
-PUSHD "%DIR_MODKIT_BIN%"
-
-if not EXIST "%DIR_UNCOOKED_TEXTURES%\%DIR_DLC_GAMEPATH%" (
-  echo WARN: no textures found in "%DIR_UNCOOKED_TEXTURES%\%DIR_DLC_GAMEPATH%"
-  EXIT /B 0
-)
-
-if EXIST "%DIR_COOKED_TEXTURES_DB%" del "%DIR_COOKED_TEXTURES_DB%"
-%WCC_LITE% cook -platform=pc -mod="%DIR_UNCOOKED_TEXTURES%" -basedir="%DIR_UNCOOKED_TEXTURES%" -outdir="%DIR_COOKED_DLC%"
-:: move so it is separated from "normal" files cook.db
-if EXIST "%DIR_COOKED_DLC%\cook.db" move "%DIR_COOKED_DLC%\cook.db" "%DIR_COOKED_TEXTURES_DB%"
 
 EXIT /B %ERRORLEVEL%
 
@@ -353,12 +341,12 @@ rem ---------------------------------------------------------------------------
 call :printHeader WCC_LITE: GENERATE TEXTURE CACHE
 PUSHD "%DIR_MODKIT_BIN%"
 
-if not EXIST "%DIR_UNCOOKED_TEXTURES%\%DIR_DLC_GAMEPATH%" (
-  echo WARN: no textures found in "%DIR_UNCOOKED_TEXTURES%\%DIR_DLC_GAMEPATH%"
+if not EXIST "%DIR_TMP_TEXTURE_CACHE%\%DIR_DLC_GAMEPATH%" (
+  echo WARN: no files found in "%DIR_TMP_TEXTURE_CACHE%\%DIR_DLC_GAMEPATH%"
   EXIT /B 0
 )
 
-%WCC_LITE% buildcache textures -db="%DIR_COOKED_TEXTURES_DB%" -basedir="%DIR_UNCOOKED_TEXTURES%" -out="%DIR_DLC_CONTENT%\texture.cache" -platform=pc
+%WCC_LITE% buildcache textures -db="%DIR_COOKED_TEXTURES_DB%" -basedir="%DIR_TMP_TEXTURE_CACHE%" -out="%DIR_DLC_CONTENT%\texture.cache" -platform=pc
 POPD
 IF %INTERACTIVE_BUILD% EQU 1 PAUSE
 

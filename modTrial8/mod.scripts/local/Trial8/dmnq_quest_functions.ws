@@ -26,6 +26,7 @@ quest function DMNQ_GiveRewardToPlayer( rewardName : CName )
 }
 
 
+// Credits: by nikich340
 quest function DMNQ_TuneNPC( tag : name, level : int, attitude : string, mortality : string )
 {
   var NPCs : array <CNewNPC>;
@@ -92,6 +93,36 @@ quest function DMNQ_TuneNPC( tag : name, level : int, attitude : string, mortali
         break;
     }
   }
+}
+
+
+quest function DMNQ_FistfightNPC(tag : name, activate : bool) {
+    var NPCs : array <CNewNPC>;
+    var i      : int;
+    
+    theGame.GetNPCsByTag(tag, NPCs);
+    for (i = 0; i < NPCs.Size(); i += 1 )
+    {   
+        if (activate) {
+            NPCs[i].OnStartFistfightMinigame();
+        } else {
+            NPCs[i].OnEndFistfightMinigame();
+        }
+    }
+}
+
+quest function DMNQ_FistfightPlayer(activate : bool, optional healthMultiplier : float, optional toDeath : bool, optional endsWithBS : bool) {
+    if (activate) {
+        if (!toDeath && !endsWithBS)
+            thePlayer.SetFistFightParams(toDeath, endsWithBS);
+        thePlayer.OnStartFistfightMinigame();
+        if (healthMultiplier) {
+            thePlayer.ClampGeraltMaxHealth( thePlayer.GetStatMax(BCS_Vitality) * healthMultiplier );
+            thePlayer.SetHealthPerc( 100 );
+        }
+    } else {
+        thePlayer.OnEndFistfightMinigame();
+    }
 }
 
 

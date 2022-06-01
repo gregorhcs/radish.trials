@@ -81,7 +81,7 @@ journals:
                 - [fightareapin, 24]
 
           - prepare_ritual_stones:
-              caption: "Collect five ... ."
+              caption: "Collect five grieving stones and place them on the altar."
               mappins: 
                 - fightareapin # pins to 5 ...
 

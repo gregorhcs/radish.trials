@@ -2,13 +2,14 @@
 rem ---------------------------------------------------
 rem --- settings
 rem ---------------------------------------------------
-call _settings_.bat
+call ../_settings_.bat
 
 rem ---------------------------------------------------
 
-SET INTERACTIVE_BUILD=0
-SET PATCH_MODE=0
-SET FULL_REBUILD=1
-SET START_GAME=0
+:: auto execution of every step that is needed (strings, etc)
+SET PATCH_MODE=1
+
+SET GENERATE_SHADERCACHE=1
+SET START_GAME=1
 
 call "%DIR_PROJECT_BIN%\build.bat"

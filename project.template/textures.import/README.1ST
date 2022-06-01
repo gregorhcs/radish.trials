@@ -15,8 +15,9 @@ data, meaning:
 
 Imported textures are always "uncooked" and will be placed into subfolders of
 
-  <projectdir>/uncooked.textures/
+  <projectdir>/textures.uncooked/
 
+A copy of this folder will be used as a source directory for texture generation.
 
 Adding new Texture to be Imported
 ---------------------------------
@@ -31,13 +32,13 @@ Example:
 
 %BIN_IMPORT_TEXTURE% data/entities/meshes/ciri_hw_density.png data/entities/meshes/ciri_hw_density.xbm
 
-The subfolder structure in uncooked.textures will reflect the subfolders of
+The subfolder structure in textures.uncooked will reflect the subfolders of
 texture.import but will prepend to dlc paths "dlc/dlc<modid>/". So the above
 imported "ciri_hw_density.png" will be placed in
 
-  <projectdir>/uncooked.textures/dlc/dlc<modid>/data/entities/meshes/ciri_hw_density.xbm
+  <projectdir>/textures.uncooked/dlc/dlc<modid>/data/entities/meshes/ciri_hw_density.xbm
 
-The project build pipeline ensures that all textures in the uncooked.textures
+The project build pipeline ensures that all textures in the textures.uncooked
 directory will be cooked automatically. Also the texture cache will be generated
 automatically and placed into the final dlc folder of the game installation.
 
@@ -56,14 +57,24 @@ Adding Textures that do NOT need be imported
 
 Some textures (e.g. icons, maps, minimaps, ...) do not need to be converted to
 xbm and can be used in the jpg/png formats. Nevertheless the texture cache needs
-to contains the data. These textures can be directly put into the appropriate
-subfolders of
+to contains the data. These textures can be put into the appropriate subfolders
+of
 
-  <projectdir>/uncooked.textures/dlc/dlc<modid>/
+  <projectdir>/textures.uncooked/dlc/dlc<modid>/
 
 e.g.
 
-  <projectdir>/uncooked.textures/dlc/dlchubtest/data/gameplay/gui_new/minimaps/hubtest/tile3x3.jpg
+  <projectdir>/textures.uncooked/dlc/dlchubtest/data/gameplay/gui_new/minimaps/hubtest/tile3x3.jpg
+
+In addition any uncooked xbm from the modkit depot that is referenced in new
+files and is required in the texture cache needs to be put into the appropriate
+subfolders of
+
+  <projectdir>/textures.uncooked/
+
+e.g.
+
+  <projectdir>/textures.uncooked/environment/textures_tileable/soil/beach_wet.xbm
 
 Note: some textures require additional mounter definitions, e.g.
 CR4ScaleformContentDLCMounter for minimap textures.

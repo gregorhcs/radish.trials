@@ -5,7 +5,9 @@ DMNQ_started_with
 
 DMNQ_violence_chosen
 
-DMNQ_merchant_dead
+DMNQ_fistfight_result
+	=> 1 -> lose / merchant alive
+	   2 -> won / merchant dead
 
 DMNQ_took_amulet
 

@@ -1,16 +1,22 @@
 #
 # production settings
 # 
-# (version: 97, saved: 2022-05-18 00:15:07)
+# (version: 113, saved: 2022-06-02 01:03:21)
 #
 ---
 production:
   settings:
     id: trial8
     caption: "Demon's Souls"
+    description: "This mod provides you with a new side quest, a small adventure happening after the events of Scenes of a Marriage in Hearts of Stone when Geralt has not taken Iris' rose. In it, Geralt is confronted with some unusual events..."
     menuvisibile: true
     enabled: true
     storesdata: true
     strings-idspace: 1410
     strings-idstart: 0
-    version: 97
+    version: 113
+    mounters:
+      - ".type": CR4DefinitionsDLCMounter
+        definitionXmlFilePath: dlc/dlctrial8/data/gameplay/abilities/
+      - ".type": CR4DefinitionsNGPlusDLCMounter
+        definitionXmlFilePath: dlc/dlctrial8/data/gameplay/abilities_plus/
