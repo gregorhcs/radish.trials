@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: find_iris_wraiths
 # 
-# (version: 113, saved: 2022-06-02 01:03:21)
+# (version: 129, saved: 2022-06-07 00:53:49)
 #
 ---
 structure:
@@ -9,13 +9,13 @@ structure:
     find_iris_wraiths:
       blocks:
         in:
-          ".editor": [ 100.0, 150.0 ]
+          ".editor": [ -977.0, 164.0 ]
           next:
-            - scene.s5_ritual: Input
+            - waituntil.entered_fight_area
         
         scene.s5_ritual:
           ".editor":
-            pos: [ 300.0, 150.0 ]
+            pos: [ 10.0, 145.0 ]
             in: [ Input ]
             out: [ Output ]
           scene: s5_ritual.yml
@@ -23,11 +23,13 @@ structure:
           interruptable: true
           _fadein: false
           next.Output:
-            - scene.s6_unhappy: Input
+            - objective.wait_till_midnight: Activate
+            - addfact.set_in_fight_area
+            - waituntil.midnight
         
         scene.s6_unhappy:
           ".editor":
-            pos: [ 500.0, 150.0 ]
+            pos: [ 503.0, 138.0 ]
             in: [ Input ]
             out: [ Output ]
           scene: s6_unhappy_awakening.yml
@@ -35,16 +37,338 @@ structure:
           interruptable: true
           _fadein: false
           next.Output:
+            - addfact.fact_seen_wraiths
+            - objective.kill_wraiths: Activate
+            - waituntil.took_amulet2
+            - waituntil.wraiths_dead
+        
+        scene.scene_hmm:
+          ".editor":
+            pos: [ -285.0, -85.0 ]
+            in: [ Input ]
+            out: [ Output ]
+          scene: s5.2_pebble_interesting.yml
+          placement: novigrad/sp_ritual
+          interruptable: true
+          _fadein: false
+          next.Output:
+            - waituntil.time_elapse2
+        
+        scene.scene_interesting:
+          ".editor":
+            pos: [ -470.0, -76.0 ]
+            in: [ Input ]
+            out: [ Output ]
+          scene: s5.1_pebble_hmm.yml
+          placement: novigrad/sp_ritual
+          interruptable: true
+          _fadein: false
+          next.Output:
+            - waituntil.time_elapse1
+        
+        waituntil.deposited_all_pebbles1:
+          factdb: [ DMNQ_deposited_pebbles, ">=", 5 ]
+          ".editor":
+            pos: [ -631.0, 369.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - objective.prepare_stones: Success
+        
+        waituntil.deposited_all_pebbles2:
+          factdb: [ DMNQ_deposited_pebbles, ">=", 5 ]
+          ".editor":
+            pos: [ -334.0, 114.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - scene.s5_ritual: Input
+        
+        waituntil.deposited_amulet:
+          factdb: [ DMNQ_deposited_amulet, ">=", 1 ]
+          ".editor":
+            pos: [ -534.0, 539.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - objective.prepare_amulet: Success
+        
+        waituntil.deposited_pebbles_amulet:
+          all:
+            - factdb: [ DMNQ_deposited_pebbles, ">=", 5 ]
+            - factdb: [ DMNQ_deposited_amulet, ">=", 1 ]
+          ".editor":
+            pos: [ -334.0, 204.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - scene.s5_ritual: Input
+        
+        waituntil.entered_fight_area:
+          entered: [ novigrad/enterfightarea, PLAYER ]
+          ".editor":
+            pos: [ -822.0, 162.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - waituntil.looted_1st_pebble
+            - objective.fin_goto_place: Success
+            - waituntil.took_amulet
+            - waituntil.deposited_all_pebbles1
+            - objective.prepare_stones: Activate
+            - waituntil.took_amulet1
+        
+        waituntil.entered_fight_area1:
+          entered: [ novigrad/enterfightarea, PLAYER ]
+          ".editor":
+            pos: [ -159.0, 319.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - waituntil.s6_didnot_happen
+        
+        waituntil.in_fightarea:
+          factdb: [ DMNQ_in_fight_area, ">=", 1 ]
+          ".editor":
+            pos: [ 237.0, 61.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - waituntil.midnight
+        
+        waituntil.left_fight_area1:
+          left: [ novigrad/enterfightarea, PLAYER ]
+          ".editor":
+            pos: [ -157.0, 425.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - addfact.set_out_fight_area
+        
+        waituntil.looted_1st_pebble:
+          factdb: [ DMNQ_looted_pebbles, ">=", 1 ]
+          ".editor":
+            pos: [ -471.0, -16.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - scene.scene_interesting: Input
+        
+        waituntil.looted_3rd_pebble:
+          factdb: [ DMNQ_looted_pebbles, ">=", 3 ]
+          ".editor":
+            pos: [ -294.0, -25.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - scene.scene_hmm: Input
+        
+        waituntil.midnight:
+          time: [ "00:00", "02:00" ]
+          ".editor":
+            pos: [ 170.0, 142.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - waituntil.test_if_in_fightarea
+        
+        waituntil.s6_didnot_happen:
+          factdb: [ DMNQ_seen_wraiths, "=", 0 ]
+          ".editor":
+            pos: [ -32.0, 319.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - addfact.set_in_fight_area
+        
+        waituntil.test_if_in_fightarea:
+          ".editor":
+            pos: [ 298.0, 148.0 ]
+            hint: named
+            in: [ In ]
+            out: [ "false", "true" ]
+          conditions:
+            "true":
+              factdb: [ DMNQ_in_fight_area, ">=", 1 ]
+            "false":
+              factdb: [ DMNQ_in_fight_area, "=", 0 ]
+          next.false:
+            - waituntil.in_fightarea
+          next.true:
+            - scene.s6_unhappy: Input
+            - objective.wait_till_midnight: Success
+        
+        waituntil.time_elapse1:
+          elapsed: "00:00:15"
+          ".editor":
+            pos: [ -467.0, -137.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - waituntil.looted_3rd_pebble
+        
+        waituntil.time_elapse2:
+          elapsed: "00:00:10"
+          ".editor":
+            pos: [ -280.0, -144.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next: ".done"
+        
+        waituntil.took_amulet:
+          ".editor":
+            pos: [ -491.0, 173.0 ]
+            hint: named
+            in: [ In ]
+            out: [ "false", "true" ]
+          conditions:
+            "false":
+              factdb: [ DMNQ_took_amulet, "=", 0 ]
+            "true":
+              factdb: [ DMNQ_took_amulet, ">=", 1 ]
+          next.false:
+            - waituntil.deposited_all_pebbles2
+          next.true:
+            - waituntil.deposited_pebbles_amulet
+        
+        waituntil.took_amulet1:
+          factdb: [ DMNQ_took_amulet, ">=", 1 ]
+          ".editor":
+            pos: [ -666.0, 560.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - waituntil.deposited_amulet
+            - objective.prepare_amulet: Activate
+        
+        waituntil.took_amulet2:
+          ".editor":
+            pos: [ 645.0, -62.0 ]
+            hint: named
+            in: [ In ]
+            out: [ "false", "true" ]
+          conditions:
+            "true":
+              factdb: [ DMNQ_took_amulet, "=", 1 ]
+            "false":
+              factdb: [ DMNQ_took_amulet, "=", 0 ]
+          next.false:
+            - addfact.few_iris_wraiths
+          next.true:
+            - addfact.lots_iris_wraiths
+        
+        waituntil.wraiths_dead:
+          factdb: [ DMNQ_living_wraiths, "=", 0 ]
+          ".editor":
+            pos: [ 542.0, 303.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - objective.kill_wraiths: Success
+        
+        spawn.wraiths_base_spawn:
+          ".editor":
+            pos: [ 775.0, 137.0 ]
+            hint: spawn-only
+            in: []
+            out: []
+          phase: default
+          spawnsets:
+            - wraith_community_base
+          next:
             - journal.iris_shadow_bestiary: Activate
         
+        spawn.wraiths_extra_spawn:
+          ".editor":
+            pos: [ 913.0, -19.0 ]
+            hint: spawn-only
+            in: []
+            out: []
+          phase: default
+          spawnsets:
+            - wraith_community_extra
+          next: ".done"
+        
         journal.iris_shadow_bestiary:
-          ".editor": [ 700.0, 150.0 ]
+          ".editor": [ 913.0, 137.0 ]
           entry: creatures/iris_shadow_wraith/shadow_found
           notify: true
           next:
+            - objective.confront_demons: Activate
+        
+        objective.confront_demons:
+          ".editor": [ 1034.0, 137.0 ]
+          objective: trial8/epilogue/confront_demons
+          notify: true
+          track: true
+          next:
             - out
         
+        objective.fin_goto_place:
+          ".editor": [ -820.0, 225.0 ]
+          objective: trial8/find_iris_wraiths/go_to_ritual_place
+          notify: true
+          track: false
+          next: ".done"
+        
+        objective.kill_wraiths:
+          ".editor": [ 662.0, 301.0 ]
+          objective: trial8/find_iris_wraiths/kill_wraiths
+          notify: true
+          track: false
+          next: ".done"
+        
+        objective.prepare_amulet:
+          ".editor": [ -532.0, 599.0 ]
+          objective: trial8/find_iris_wraiths/prepare_ritual_amulet
+          notify: true
+          track: false
+          next: ".done"
+        
+        objective.prepare_stones:
+          ".editor": [ -629.0, 430.0 ]
+          objective: trial8/find_iris_wraiths/prepare_ritual_stones
+          notify: true
+          track: false
+          next: ".done"
+        
+        objective.wait_till_midnight:
+          ".editor": [ 299.0, 234.0 ]
+          objective: trial8/find_iris_wraiths/wait_till_midnight
+          notify: true
+          track: true
+          next: ".done"
+        
+        addfact.fact_seen_wraiths:
+          ".editor": [ 639.0, 139.0 ]
+          value: [ DMNQ_seen_wraiths, 1 ]
+          next:
+            - spawn.wraiths_base_spawn
+        
+        addfact.few_iris_wraiths:
+          ".editor": [ 785.0, -90.0 ]
+          value: [ DMNQ_living_wraiths, 2 ]
+          next: ".done"
+        
+        addfact.lots_iris_wraiths:
+          ".editor": [ 784.0, -20.0 ]
+          value: [ DMNQ_living_wraiths, 5 ]
+          next:
+            - spawn.wraiths_extra_spawn
+        
+        addfact.set_in_fight_area:
+          ".editor": [ 87.0, 318.0 ]
+          value: [ DMNQ_in_fight_area, 1 ]
+          next:
+            - waituntil.left_fight_area1
+        
+        addfact.set_out_fight_area:
+          ".editor": [ 90.0, 425.0 ]
+          value: [ DMNQ_in_fight_area, -1 ]
+          next:
+            - waituntil.entered_fight_area1
+        
         out:
-          ".editor": [ 900.0, 150.0 ]
+          ".editor": [ 1158.0, 136.0 ]
           next: ".done"
         

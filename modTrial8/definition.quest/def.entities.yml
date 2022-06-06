@@ -1,6 +1,12 @@
 entities:
 
+  # -------------------- NPCs ---------------------------
+  # -----------------------------------------------------
+
+  # ------------- merchant --------------
+
   DMNQ_merchant_ofir:
+
     includes:
       - dlc/ep1/data/characters/npc_entities/secondary_npc/ofir_merchant_mq6001.w2ent
 
@@ -29,13 +35,8 @@ entities:
               .type: CInventoryInitializerUniform
               itemName: "dmnq_notices_book_on_amulets"
 
-  # do we need this?
-  DMNQ_useless_sword:
-    includes:
-      - "items/weapons/swords/nomansland_swords/nomansland_sword_rusty.w2ent"
-    entityObject:
-      ".type": CWitcherSword
-      tags: [dmnq_useless_sword]
+
+  # -------- Iris shadow wraith ---------
 
   DMNQ_iris_shadow_wraith:
     includes:
@@ -44,41 +45,31 @@ entities:
       .type: "CNewNPC"
       level: 1
 
+
+
+  # -------------- Items & Objects ----------------------
+  # -----------------------------------------------------
+
+  # ---------- grieving stone -----------
+
   DMNQ_grieving_stone:
 
     includes:
-      - gameplay/containers/container_template.w2ent  # required instead of interaction component, so "loot" action is removed after looting
-      - environment/decorations/ships/basic/geralt_boat/decoration_boat/decoration_boat_base.w2ent
+      - gameplay/containers/container_template.w2ent  
+      - items/quest_items/q310/q310_item__regular_stone.w2ent
+      # required instead of interaction component, so "loot" action is removed after looting
     
     entityObject:
-
-      .type: W3AnimatedContainer
+      .type: C_DMNQ_Pebble:W3AnimatedContainer
       streamingDistance: 2
-
+      tags: [dmnq_pebble]
+      isDynamic: true # makes the container disappear when looted
+      focusModeVisibility: FMV_Clue
+      # doesn't work here, set with quest function 
+      # FocusSetHighlight(tag: name, highlightType: EFocusModeVisibility, optional overrideCustomLogic: bool)
       components:
-
-        CAppearanceComponent0:
-          ".type": CAppearanceComponent
-          forcedAppearance: 1_full
-
         container:
           ".type": CInventoryComponent
-          
-        examine:
-          .type: CInteractionComponent
-          actionName: Examine
-          rangeMin: 0.0
-          rangeMax: 3.0
-          isEnabled: true
-          reportToScript: true
-
-    appearances:
-      1_full:
-        ".type": CEntityAppearance
-        includedTemplates:
-          - "gameplay/abilities/sorceresses/sorceress_stone_proj.w2ent"
-      2_empty:
-        ".type": CEntityAppearance
 
     templateParams:
       - ".type": CR4LootParam
@@ -89,33 +80,23 @@ entities:
             respawnTime: 0
 
 
-  clue_on_road:
-    
+  # ---------- ritual bowl -----------
+
+  DMNQ_ritual_bowl:
+
     includes:
-      - W3MonsterClue:quests/prologue/quest_files/living_world/entities/clues/blood/lw_clue_blood_splat_big.w2ent
-
+      - dlc/bob/data/environment/decorations/gameplay/generic/stone/stone_ornaments/gen_stone_planter_ground_a.w2ent
+    
     entityObject:
-      .type: W3MonsterClue
-      testLineOfSight: true
+      .type: C_DMNQ_RitualBowl:W3AnimatedContainer
+      streamingDistance: 2
+      tags: [dmnq_altar]
+      focusModeVisibility: FMV_Clue
       components:
-        examine:
-          .type: CInteractionComponent
-          actionName: Examine
-          rangeMin: 0.0
-          rangeMax: 3.0
-          isEnabled: true
-          reportToScript: true
-
-    templateParams:
-      - ".type": CR4LootParam
-        name: "loot"
-        containers:
-          dmnq_loot_pebble:
-            chance: 100.0
-            respawnTime: 0
-
-
-
-
+        InteractiveClue:
+          ".type": CInteractionComponent
+          transform:
+            pos: [ 0.0, 0.0, 0.15 ]
+          actionName: Use
 
 

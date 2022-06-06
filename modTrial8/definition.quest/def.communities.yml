@@ -1,5 +1,8 @@
 communities:
 
+  # ------------- merchant community---------------------
+  # -----------------------------------------------------
+
   merchant_community:
 
     actors:
@@ -33,6 +36,8 @@ communities:
             "00:00": novigrad/horse_eating_grass
 
 
+  # --------------- demon community----------------------
+  # -----------------------------------------------------
 
   demon_community:
 
@@ -66,8 +71,11 @@ communities:
           actionpoints:
             "00:00": novigrad/black_dog_sits
 
+
+  # -------------- wraith communities----------------------
+  # -----------------------------------------------------
         
-  wraith_community:
+  wraith_community_base:
 
     actors:
 
@@ -78,10 +86,6 @@ communities:
       wraith2:
         template: CNewNPC:DMNQ_iris_shadow_wraith
         tags: [dmnq_wraith2]
-
-      wraith3:
-        template: CNewNPC:DMNQ_iris_shadow_wraith
-        tags: [dmnq_wraith3]
 
     phases:
 
@@ -95,15 +99,28 @@ communities:
           actionpoints:
             "00:00": novigrad/wraith1
 
-        wraith1:
+        wraith2:
           use_last_ap: false
           start_in_ap: true
           attitude: monsters
           guard: [ novigrad/enterfightarea, 20.0 ]
           actionpoints:
             "00:00": novigrad/wraith2
+        
 
-        wraith1:
+  wraith_community_extra:
+
+    actors:
+
+      wraith3:
+        template: CNewNPC:DMNQ_iris_shadow_wraith
+        tags: [dmnq_wraith3]
+
+    phases:
+
+      default:
+
+        wraith3:
           use_last_ap: false
           start_in_ap: true
           attitude: monsters

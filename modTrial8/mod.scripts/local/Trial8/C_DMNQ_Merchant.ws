@@ -1,5 +1,5 @@
-class C_DMNQ_Merchant extends CNewNPC {
-
+class C_DMNQ_Merchant extends CNewNPC 
+{
 	protected function Attack(
 		hitTarget : CGameplayEntity, 
 		animData : CPreAttackEventData, 
@@ -15,5 +15,4 @@ class C_DMNQ_Merchant extends CNewNPC {
     		FactsAdd("DMNQ_fistfight_result");
     	}
     }
-
 }

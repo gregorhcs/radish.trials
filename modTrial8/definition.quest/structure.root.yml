@@ -1,16 +1,16 @@
 #
 # quest structure root segment
 # 
-# (version: 113, saved: 2022-06-02 01:03:21)
+# (version: 129, saved: 2022-06-07 00:53:49)
 #
 ---
 structure:
   quest:
     blocks:
       start:
-        ".editor": [ 100.0, 250.0 ]
+        ".editor": [ -87.0, 253.0 ]
         next:
-          - changelayers.show_fight_layer
+          - subsegment.init
       
       subsegment.ending_and_epilogue:
         ".editor":
@@ -47,6 +47,15 @@ structure:
         segment: quest_hook
         next:
           - subsegment.fetching_the_amulet
+      
+      subsegment.init:
+        ".editor":
+          pos: [ 66.0, 253.0 ]
+          in: [ In ]
+          out: [ Out ]
+        segment: init
+        next:
+          - changelayers.show_fight_layer
       
       subsegment.wait_start_conditions:
         ".editor":
@@ -155,7 +164,7 @@ structure:
       
       changelayers.show_fight_layer:
         ".editor":
-          pos: [ 256.0, 358.0 ]
+          pos: [ 507.0, 417.0 ]
           hint: show-only
           in: []
           out: []
@@ -164,7 +173,8 @@ structure:
         world: novigrad
         show:
           - fightlayer
-        next: ".done"
+        next:
+          - subsegment.find_iris_wraiths
       
       reward.amulet:
         ".editor": [ 296.0, -59.0 ]

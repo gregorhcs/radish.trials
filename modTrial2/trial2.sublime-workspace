@@ -117,13 +117,29 @@
 			{
 				"buffer_size": 537,
 				"line_ending": "Windows"
-			}
+			},
+			"undo_stack":
+			[
+			]
 		},
 		{
 			"contents": "layers: \n  layertrig: \n    world: \"prologue\"\n    #context: \"\"\n\n    areas: \n      trigarea: \n        #height: 2.0\n        borderpoints: \n          - [ 341.2445373535, -62.8860359192, 2.1593785286 ]\n          - [ 338.4806213379, -59.0818099976, 2.1593785286 ]\n          - [ 334.0084533691, -60.5348930359, 2.1593785286 ]\n          - [ 334.0084533691, -65.2371749878, 2.1593785286 ]\n          - [ 338.4806213379, -66.6902542114, 2.1593785286 ]\n\n  layerboat: \n    world: \"prologue\"\n    #context: \"\"\n\n    areas: \n      boatarea: \n        #height: 2.0\n        borderpoints: \n          - [ 347.1289978027, -47.0545768738, 3.0153927803 ]\n          - [ 342.9831237793, -41.3482398987, 3.0153927803 ]\n          - [ 336.2748718262, -43.5278701782, 3.0153927803 ]\n          - [ 336.2748718262, -50.5812835693, 3.0153927803 ]\n          - [ 342.9831237793, -52.7609100342, 3.0153927803 ]\n\n    interactiveEntities: \n      skelligeboat: \n        pos: [ 341.2789001465, -46.8529167175, 3.0153927803 ]\n        rot: [ 0.0, 0.0, 0.0 ]\n        valid_interactions: [Loot]\n        template: CEntity:trial2_boat\n\n    mappins:\n      weather_area_pin: [ 338.2445373535, -55.3860359192, 2.1593785286 ]\n      skelligeboat_pin: [ 341.2789001465, -46.8529167175, 4.5161523819 ]",
 			"file": "definition.quest/layers.prologue.yml",
 			"file_size": 1247,
 			"file_write_time": 132627874642461287,
+			"redo_stack":
+			[
+				[
+					22,
+					1,
+					"insert",
+					{
+						"characters": "c"
+					},
+					"AgAAANgDAAAAAAAA9wMAAAAAAAAAAAAA1wMAAAAAAADXAwAAAAAAAAEAAABj",
+					"AQAAAAAAAAABAAAA2AMAAAAAAADYAwAAAAAAAAAAAAAAAPC/"
+				]
+			],
 			"settings":
 			{
 				"buffer_size": 1247,
@@ -137,7 +153,7 @@
 					"cut",
 					null,
 					"AQAAABwEAAAAAAAAHAQAAAAAAAAjAAAACiAgICAgICAgdmFsaWRfaW50ZXJhY3Rpb25zOiBbTG9vdF0",
-					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAD8EAAAAAAAAHAQAAAAAAAAAAAAAAADwvw"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAPwQAAAAAAAAcBAAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					16,
@@ -145,7 +161,7 @@
 					"paste",
 					null,
 					"AQAAAJkDAAAAAAAAvAMAAAAAAAAAAAAA",
-					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAJkDAAAAAAAAmQMAAAAAAAAAAAAAAADwvw"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAmQMAAAAAAACZAwAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					19,
@@ -153,7 +169,7 @@
 					"cut",
 					null,
 					"AQAAAOIDAAAAAAAA4gMAAAAAAABdAAAACiAgICAgICAgcG9zOiBbIDM0MS4yNzg5MDAxNDY1LCAtNDYuODUyOTE2NzE3NSwgMy4wMTUzOTI3ODAzIF0KICAgICAgICByb3Q6IFsgMC4wLCAwLjAsIDAuMCBd",
-					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAD8EAAAAAAAA4gMAAAAAAAAAAAAAAADwvw"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAPwQAAAAAAADiAwAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					24,
@@ -161,20 +177,39 @@
 					"paste",
 					null,
 					"AQAAAJkDAAAAAAAA9gMAAAAAAAAAAAAA",
-					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAJkDAAAAAAAAmQMAAAAAAAAAAAAAAADwvw"
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAmQMAAAAAAACZAwAAAAAAAAAAAAAAAPC/"
 				]
 			]
 		},
 		{
-			"file": "definition.quest/def.journal.yml",
+			"file": "/E/W3Modding/downloads/modHubTest/definition.quest/layers.prologue.yml",
 			"settings":
 			{
-				"buffer_size": 1079,
+				"buffer_size": 5960,
 				"line_ending": "Windows"
 			},
 			"undo_stack":
 			[
 			]
+		},
+		{
+			"file": "/E/W3Modding/downloads/modHubTest/definition.quest/def.entities.yml",
+			"settings":
+			{
+				"buffer_size": 1391,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+			]
+		},
+		{
+			"file": "definition.quest/prod.quest-Trial2.yml",
+			"settings":
+			{
+				"buffer_size": 270,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -269,6 +304,13 @@
 	],
 	"file_history":
 	[
+		"/E/W3Modding/downloads/A-Night-to-Remember-master/definition.quest/layers.river.yml",
+		"/E/W3Modding/_projects/modTrial2/definition.quest/def.journal.yml",
+		"/E/W3Modding/downloads/A-Night-to-Remember-master/definition.quest/def.entities-interactive.yml",
+		"/E/W3Modding/downloads/modHubTest/definition.quest/def.entities.yml",
+		"/E/W3Modding/downloads/A-Night-to-Remember-master/definition.quest/layers.bob.yml",
+		"/E/W3Modding/downloads/A-Night-to-Remember-master/definition.quest/layers.town.yml",
+		"/C/Users/grego/Downloads/settings_.bat",
 		"/E/W3Modding/_projects/modTrial8/_settings_.bat",
 		"/F/scripts/engine/entity.ws",
 		"/F/scripts/game/gameplayEntity.ws",
@@ -316,11 +358,11 @@
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 29.0
 	},
 	"find_in_files":
 	{
-		"height": 103.0,
+		"height": 107.0,
 		"where_history":
 		[
 		]
@@ -364,12 +406,13 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								536,
+								38
 							]
 						],
 						"settings":
 						{
+							"lsp_uri": "file:///E:/W3Modding/_projects/modTrial2/definition.quest/def.entities.yml",
 							"syntax": "Packages/YAML/YAML.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -378,7 +421,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"stack_multiselect": false,
 					"type": "text"
 				},
@@ -395,12 +438,77 @@
 						"selection":
 						[
 							[
-								1088,
-								1088
+								1014,
+								983
 							]
 						],
 						"settings":
 						{
+							"lsp_uri": "file:///E:/W3Modding/_projects/modTrial2/definition.quest/layers.prologue.yml",
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/E/W3Modding/downloads/modHubTest/definition.quest/layers.prologue.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5960,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2802,
+								1248
+							]
+						],
+						"settings":
+						{
+							"lsp_uri": "file:///E:/W3Modding/downloads/modHubTest/definition.quest/layers.prologue.yml",
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 300.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/E/W3Modding/downloads/modHubTest/definition.quest/def.entities.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1391,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								552,
+								506
+							]
+						],
+						"settings":
+						{
+							"lsp_uri": "file:///E:/W3Modding/downloads/modHubTest/definition.quest/def.entities.yml",
 							"syntax": "Packages/YAML/YAML.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -414,25 +522,26 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "definition.quest/def.journal.yml",
+					"buffer": 4,
+					"file": "definition.quest/prod.quest-Trial2.yml",
 					"selected": true,
-					"semi_transient": false,
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1079,
+						"buffer_size": 270,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								716,
-								716
+								0,
+								0
 							]
 						],
 						"settings":
 						{
+							"lsp_uri": "file:///E:/W3Modding/_projects/modTrial2/definition.quest/prod.quest-Trial2.yml",
 							"syntax": "Packages/YAML/YAML.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -450,7 +559,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 37.0
+		"height": 29.0
 	},
 	"input":
 	{
@@ -479,7 +588,15 @@
 		]
 	},
 	"menu_visible": true,
+	"output.diagnostics":
+	{
+		"height": 0.0
+	},
 	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
 	{
 		"height": 0.0
 	},
@@ -487,7 +604,7 @@
 	"project": "trial2.sublime-project",
 	"replace":
 	{
-		"height": 70.0
+		"height": 54.0
 	},
 	"save_all_on_build": true,
 	"select_file":

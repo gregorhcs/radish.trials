@@ -17,6 +17,21 @@ DMNQ_fight_progress
 	   2 -> loot
 	   3 -> finished
 
+DMNQ_looted_pebbles
+	=> = 0 -> None
+	   > 0 -> Collected Some
+
+DMNQ_deposited_pebbles
+	=> = 0 -> None
+	   > 0 -> Deposited Some
+
+DMNQ_deposited_amulet
+
+DMNQ_in_fight_area
+
+DMNQ_seen_wraiths
+
+DMNQ_living_wraiths
 
 ----------
 
@@ -29,3 +44,7 @@ dmnq_black_dog
 dmnq_wraith1
 dmnq_wraith2
 dmnq_wraith3
+
+dmnq_pebble
+dmnq_amulet
+dmnq_altar

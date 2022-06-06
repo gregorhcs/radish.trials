@@ -1,0 +1,32 @@
+#
+# quest structure subsegment: init
+# 
+# (version: 129, saved: 2022-06-07 00:53:49)
+#
+---
+structure:
+  segments:
+    init:
+      blocks:
+        in:
+          ".editor": [ 100.0, 150.0 ]
+          next:
+            - script.highlight_pebbles
+        
+        script.highlight_pebbles:
+          ".editor":
+            pos: [ 300.0, 150.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: DMNQ_FocusSetHighlight
+          parameter:
+            - tag: cname_dmnq_pebble
+            - highlightType: FMV_Clue
+            - overrideCustomLogic: false
+          next:
+            - out
+        
+        out:
+          ".editor": [ 500.0, 150.0 ]
+          next: ".done"
+        

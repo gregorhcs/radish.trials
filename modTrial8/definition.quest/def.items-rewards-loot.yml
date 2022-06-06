@@ -1,7 +1,18 @@
-# this is replaced during the build process by 
-# additional.dlc.post-cook/data/gameplay/items/def_item_quest.xml
+# since the radish encoders don't provide enough functionality
+# in their case, all items/rewards/loots defined here are 
+# replaced during the build process by 
+#
+# additional.dlc.post-cook/data/gameplay/DIR/def_NAME_quest.xml
+#
+# with DIR = items|rewards
+# and NAME = item|rewards|loot
+#
+# this must be done, since other radish definitions cannot be 
+# defined without having their references present:
+# see "Reward" questgraph block or entity loot.
 
-# it is here to function as stub for the stub reward
+# -------------------- items --------------------------
+# -----------------------------------------------------
 
 items:
 
@@ -13,10 +24,8 @@ items:
         text: "Should this happen, please message the mod author."
 
 
-# these are replaced during the build process by 
-# additional.dlc.post-cook/data/gameplay/rewards/def_rewards_quest.xml
-
-# they are here in order to be able to use the "Reward" quest graph block
+# ------------------- rewards -------------------------
+# -----------------------------------------------------
 
 rewards:
   dmnq_reward_stub_2xp:
@@ -41,8 +50,8 @@ rewards:
     - notices/dmnq_item_notice_stub
 
 
-# these are replaced during the build process by 
-# additional.dlc.post-cook/data/gameplay/items/def_loot_quest.xml
+# --------------------- loot --------------------------
+# -----------------------------------------------------
 
 loot:
   dmnq_loot_merchant_inv:

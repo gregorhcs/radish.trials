@@ -1,4 +1,8 @@
 layers: 
+
+  # ----------------- scenelayer-------------------------
+  # -----------------------------------------------------
+
   scenelayer: 
     world: "novigrad"
     #context: ""
@@ -7,6 +11,10 @@ layers:
       sp_merchant1: [ 2217.8913574219, 1832.5705566406, 45.0325851440, 0.0 ]
       sp_demons: [ 2251.6440429688, 1853.2855224609, 47.7039108276, 0.0 ]
       sp_ritual: [ 2146.6936035156, 2146.4365234375, 41.7903671265, 0.0 ]
+
+
+  # --------------- merchantlayer------------------------
+  # -----------------------------------------------------
 
   merchantlayer: 
     world: "novigrad"
@@ -25,20 +33,22 @@ layers:
           - [ 2216.3491210938, 1830.8873291016, 44.3469886780 ]
 
     mappins: 
-      merchantpin: 
+      merchantpin: [ 2227.1176757813, 1825.5039062500, 44.2777328491 ]
         #radius for quest instructions: 20
-        pos: [ 2227.1176757813, 1825.5039062500, 44.2777328491 ]
 
     actionpoints: 
-      horse_eating_grass: [ 2224.9260253906, 1831.7814941406, 44.9611892700, -59.6000404358, "horse/horse_parking" ]
-
+      horse_eating_grass:          [ 2224.9260253906, 1831.7814941406, 44.9611892700, -59.6000404358, "horse/horse_parking" ]
       merchant_concerned_kneeling: [ 2218.4033203125, 1833.1195068359, 45.0476951599, -192.6000061035, "work_man/mq7004_jt_kneeling_concerned" ]
 
     statics: 
       wagon: 
-        template: "CEntity:environment\\decorations\\trade\\goods_carriage\\goods_carriage_appearance_closed.w2ent"
+        template: "CEntity:environment/decorations/trade/goods_carriage/goods_carriage_appearance_closed.w2ent"
         pos: [ 2217.2231445313, 1830.7016601563, 44.8939361572 ]
         rot: [ 0.0, 0.0, -30.9999866486 ]
+
+
+  # ----------------- demonlayer-------------------------
+  # -----------------------------------------------------
 
   demonlayer: 
     world: "novigrad"
@@ -55,18 +65,18 @@ layers:
           - [ 2222.6159667969, 2010.0434570313, 39.2603988647 ]
 
     mappins: 
-      catpin: [ 2217.4873046875, 2014.3637695313, 40.1105117798 ]
-
-      demonpin: 
+      catpin:   [ 2217.4873046875, 2014.3637695313, 40.1105117798 ]
+      demonpin: [ 2219.6894531250, 2014.6069335938, 39.2740859985 ]
         #radius for quest instructions: 4
-        pos: [ 2219.6894531250, 2014.6069335938, 39.2740859985 ]
-
-      dogpin: [ 2217.8640136719, 2015.2016601563, 39.3682556152 ]
+      dogpin:   [ 2217.8640136719, 2015.2016601563, 39.3682556152 ]
 
     actionpoints: 
       black_cat_sits: [ 2217.4367675781, 2014.3289794922, 40.1140937805, -85.4000473022, "ep1_cat/q604_cat_sit" ]
-
       black_dog_sits: [ 2217.9008789063, 2015.2095947266, 39.3666381836, -84.8000411987, "ep1_dog/q604_dog_sit" ]
+
+
+  # ---------------- generallayer -----------------------
+  # -----------------------------------------------------
 
   generallayer: 
     world: "novigrad"
@@ -97,19 +107,58 @@ layers:
           - [ 2237.1125488281, 2150.8354492188, 36.4002265930 ]
           - [ 2238.9130859375, 2151.9721679688, 36.4002265930 ]
 
+
+  # ----------------- fightlayer-------------------------
+  # -----------------------------------------------------
+
   fightlayer: 
     world: "novigrad"
     #context: ""
 
     areas: 
       enterfightarea: 
-        height: 7.0
+        height: 20.0
         borderpoints: 
-          - [ 2155.7446289063, 2149.2539062500, 39.4747123718 ]
-          - [ 2150.0146484375, 2154.8615722656, 39.4747123718 ]
-          - [ 2139.2033691406, 2149.0468750000, 39.4747123718 ]
-          - [ 2141.0927734375, 2136.0803222656, 39.4747123718 ]
-          - [ 2154.0510253906, 2138.1992187500, 39.4747123718 ]
+          - [ 2171.3281250000, 2154.4218750000, 35.1547508240 ]
+          - [ 2154.7324218750, 2179.0380859375, 35.1547508240 ]
+          - [ 2098.2983398438, 2146.4973144531, 35.1547508240 ]
+          - [ 2148.1245117188, 2106.9321289063, 35.1547508240 ]
+          - [ 2158.1323242188, 2135.8437500000, 35.1547508240 ]
+
+    areas.sound: 
+      fightarea: 
+        .type: "CEntity"
+        transform: 
+          pos: [ 2148.0212402344, 2160.5070800781, 34.8216018677 ]
+          scale: [ 1.0, 1.0, 1.0 ]
+        streamingDistance: 0
+        components: 
+          soundarea: 
+            .debug: 
+              soundEvent: "mus_ep1_poi_horror"
+              #reverbName: ""
+              #paramName: ""
+            .type: "CSoundAmbientAreaComponent"
+            soundEvents: "mus_ep1_poi_horror"
+            #reverb: "<SReverbDefinition>"
+            #maxDistance: 0.0
+            #maxDistanceVertical: 0.0
+            #parameterEnteringTime: 0.0
+            #parameterExitingTime: 0.0
+            #parameters: "<SSoundGameParameterValue[]>"
+            banksDependency: [ "music_nomansgrad.bnk" ]
+            triggerPriority: 2
+            priorityParameterMusic: true
+            height: 20.0
+            localPoints: 
+              - [ 27.9584960938, 0.1621093750, 0.0, 1.0 ]
+              - [ 27.1315917969, 8.6755371094, 0.0, 1.0 ]
+              - [ 19.2617187500, 16.2011718750, 0.0, 1.0 ]
+              - [ 11.9440917969, 34.1215820313, 0.0, 1.0 ]
+              - [ -73.8823242188, -14.5664062500, 0.0, 1.0 ]
+              - [ 5.6977539063, -68.2446289063, 0.0, 1.0 ]
+              - [ 0.5546875000, -52.6108398438, 0.0, 1.0 ]
+              - [ 9.7021484375, -26.0500488281, 0.0, 1.0 ]
 
     mappins: 
       fightareapin: 
@@ -117,43 +166,68 @@ layers:
         pos: [ 2147.8608398438, 2144.1389160156, 41.7558288574 ]
 
     interactiveEntities:
-      pebble1:
-        .preset: .MonsterClue
-        template: W3MonsterClue:DMNQ_grieving_stone # CEntity
-        pos: [ 2155.7446289063, 2149.2539062500, 39.8747123718 ]
-        rot: [ 0.0, 0.0, 0.0 ]
-        valid_interactions: [Loot, examine]
-        settings:
-          anim: InspectLow
-          duration: 2.0
-          # valid commentary (case insensitieve):
-            # InvestigateArea
-            # HideoutFound
-            # GenericRemarks
-          commentary: InvestigateArea
-          enabled: true
-          noweapon: true
-          factsonfound:
-            - found_corpse
 
+      pebble1:
+        template: C_DMNQ_Pebble:DMNQ_grieving_stone
+        pos: [ 2155.1279296875, 2148.9492187500, 40.9935607910 ]
+        valid_interactions: [Loot]
 
       pebble2:
-        .preset: .MonsterClue
-        template: W3MonsterClue:clue_on_road
-        pos: [ 2150.0146484375, 2154.8615722656, 39.4747123718 ]
-        valid_interactions: [Loot, examine]
-        settings:
-          anim: InspectLow
-          duration: 2.0
-          commentary: HideoutFound
-          enabled: true
-          noweapon: true
-          factsonfound:
-            - found_corpse
+        template: C_DMNQ_Pebble:DMNQ_grieving_stone
+        pos: [ 2150.3476562500, 2154.6372070313, 40.1446151733 ]
+        valid_interactions: [Loot]
+
+      pebble3:
+        template: C_DMNQ_Pebble:DMNQ_grieving_stone
+        pos: [ 2139.6252441406, 2149.2634277344, 41.1906890869 ]
+        valid_interactions: [Loot]
+      
+      pebble4:
+        template: C_DMNQ_Pebble:DMNQ_grieving_stone
+        pos: [ 2140.9040527344, 2136.9841308594, 43.1112518311 ]
+        valid_interactions: [Loot]
+      
+      pebble5:
+        template: C_DMNQ_Pebble:DMNQ_grieving_stone
+        pos: [ 2147.8476562500, 2138.8144531250, 43.5018234253 ]
+        valid_interactions: [Loot]
+
+      altar: 
+        # .preset: .Entitys
+        template: C_DMNQ_RitualBowl:DMNQ_ritual_bowl
+        pos: [ 2147.9611816406, 2160.4770507813, 39.0991859436 ]
+        rot: [ 6.0, 4.0, 16.6000003815 ]
+        valid_interactions: [Use]
+
 
     actionpoints: 
       wraith1: [ 2148.6386718750, 2149.1008300781, 41.2017364502, 0.0, "noonwraith/noonwraith_spin_jt" ]
-
       wraith2: [ 2138.2321777344, 2152.4755859375, 40.3596572876, 0.0, "noonwraith/noonwraith_spin_jt" ]
-
       wraith3: [ 2140.2199707031, 2141.6013183594, 42.8847351074, 0.0, "noonwraith/noonwraith_spin_jt" ]
+
+    statics:
+      ritual_music_area:
+        ".type": CEntity
+        transform:       ### Define sound.area in RadUI and paste it's pos and rot here
+          pos: [ 2147.9611816406, 2160.4770507813, 39.0991859436 ]
+          scale: [ 1.0, 1.0, 1.0 ]
+        streamingDistance: 0
+        components:
+          Main:
+            ".type": CSoundAmbientAreaComponent
+            height: 5.0   ### Define sound.area in RadUI and paste it's height here
+            localPoints:  ### Define sound.area in RadUI and paste it's localPoints here
+              - [ 10.0, 0.0, 0.0, 1.0 ]
+              - [ 5.0003051758, 8.6596679688, 0.0, 1.0 ]
+              - [ -5.0003051758, 8.6596679688, 0.0, 1.0 ]
+              - [ -10.0, 0.0, 0.0, 1.0 ]
+              - [ -5.0003051758, -8.6596679688, 0.0, 1.0 ]
+              - [ 5.0003051758, -8.6596679688, 0.0, 1.0 ]
+            triggerPriority: 1   ### 1, 2, 3 in vanilla usually
+            banksDependency:     ### Define banks where from you use music (use soundbanksinfo.xml)
+              - music_toussaint.bnk
+            soundEventsOnEnter:  ### Define sound events on entering area
+              - mus_mq7017_ambient_dark
+            soundEventsOnExit:   ### Define sound events on exiting area
+              - mus_loc_toussaint_general_cs_to_gmpl ### (note: _cs_to_gmpl music has higher priority then usual, use it onExit)
+            priorityParameterMusic: true  ### Define if you use music events, otherwise set if false

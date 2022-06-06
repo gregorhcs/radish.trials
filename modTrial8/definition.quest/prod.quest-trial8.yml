@@ -1,7 +1,7 @@
 #
 # production settings
 # 
-# (version: 113, saved: 2022-06-02 01:03:21)
+# (version: 129, saved: 2022-06-07 00:53:49)
 #
 ---
 production:
@@ -14,7 +14,7 @@ production:
     storesdata: true
     strings-idspace: 1410
     strings-idstart: 0
-    version: 113
+    version: 129
     mounters:
       - ".type": CR4DefinitionsDLCMounter
         definitionXmlFilePath: dlc/dlctrial8/data/gameplay/abilities/
