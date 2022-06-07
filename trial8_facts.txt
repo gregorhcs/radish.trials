@@ -27,7 +27,7 @@ DMNQ_deposited_pebbles
 
 DMNQ_deposited_amulet
 
-DMNQ_in_fight_area
+DMNQ_in_area_ritual
 
 DMNQ_seen_wraiths
 
@@ -40,6 +40,8 @@ dmnq_horse
 
 dmnq_black_cat
 dmnq_black_dog
+
+dmnq_wraith
 
 dmnq_wraith1
 dmnq_wraith2

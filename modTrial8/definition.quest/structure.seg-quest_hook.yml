@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: quest_hook
 # 
-# (version: 129, saved: 2022-06-07 00:53:49)
+# (version: 131, saved: 2022-06-07 23:33:40)
 #
 ---
 structure:
@@ -29,7 +29,7 @@ structure:
             in: [ Input ]
             out: [ Output ]
           scene: s1_start_merchant.yml
-          placement: novigrad/sp_merchant1
+          placement: novigrad/sp_merchant
           interruptable: true
           _fadein: false
           next.Output:
@@ -48,7 +48,7 @@ structure:
             - subsegment.demons_glossary_no1
         
         waituntil.approached_demons:
-          entered: [ novigrad/aproachdemons, PLAYER ]
+          entered: [ novigrad/area_demons, PLAYER ]
           ".editor":
             pos: [ 1300.0, 200.0 ]
             in: [ In ]
@@ -59,7 +59,7 @@ structure:
             - waituntil.not_started_with_demons
         
         waituntil.approached_merchant:
-          entered: [ novigrad/entermerchantarea, PLAYER ]
+          entered: [ novigrad/area_merchant, PLAYER ]
           ".editor":
             pos: [ 300.0, 100.0 ]
             in: [ In ]

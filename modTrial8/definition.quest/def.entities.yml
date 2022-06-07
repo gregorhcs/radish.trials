@@ -39,12 +39,24 @@ entities:
   # -------- Iris shadow wraith ---------
 
   DMNQ_iris_shadow_wraith:
+
     includes:
       - dlc/ep1/data/characters/npc_entities/monsters/nightwraith_iris.w2ent
-    entityObject:
-      .type: "CNewNPC"
-      level: 1
 
+    entityObject:
+      .type: "C_DMNQ_IrisWraith:W3NightWraithIris"
+      tags: [dmnq_wraith]
+      displayName: "Iris Shadow Wraith"
+      level: 25
+      currentLevel: 25
+
+    usedAppearances:
+      - nightwraith_01
+
+    #coloringEntries:
+    #  - appearance: iris_shadow_wraith
+    #    componentName: nightwraith_iris
+    #    colorShift1: [-25, -25, -25]
 
 
   # -------------- Items & Objects ----------------------
@@ -57,7 +69,6 @@ entities:
     includes:
       - gameplay/containers/container_template.w2ent  
       - items/quest_items/q310/q310_item__regular_stone.w2ent
-      # required instead of interaction component, so "loot" action is removed after looting
     
     entityObject:
       .type: C_DMNQ_Pebble:W3AnimatedContainer
@@ -82,7 +93,7 @@ entities:
 
   # ---------- ritual bowl -----------
 
-  DMNQ_ritual_bowl:
+  DMNQ_ritual_bowl_use:
 
     includes:
       - dlc/bob/data/environment/decorations/gameplay/generic/stone/stone_ornaments/gen_stone_planter_ground_a.w2ent
@@ -90,7 +101,7 @@ entities:
     entityObject:
       .type: C_DMNQ_RitualBowl:W3AnimatedContainer
       streamingDistance: 2
-      tags: [dmnq_altar]
+      tags: [dmnq_altar_nofight, dmnq_altar]
       focusModeVisibility: FMV_Clue
       components:
         InteractiveClue:
@@ -98,5 +109,16 @@ entities:
           transform:
             pos: [ 0.0, 0.0, 0.15 ]
           actionName: Use
+
+  DMNQ_ritual_bowl_fight:
+
+    includes:
+      - dlc/bob/data/environment/decorations/gameplay/generic/stone/stone_ornaments/gen_stone_planter_ground_a.w2ent
+    
+    entityObject:
+      .type: W3IrisPainting
+      streamingDistance: 2
+      tags: [dmnq_altar_fight, dmnq_altar]
+      focusModeVisibility: FMV_Clue
 
 

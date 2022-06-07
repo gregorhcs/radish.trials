@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: find_iris_wraiths
 # 
-# (version: 129, saved: 2022-06-07 00:53:49)
+# (version: 131, saved: 2022-06-07 23:33:40)
 #
 ---
 structure:
@@ -11,7 +11,7 @@ structure:
         in:
           ".editor": [ -977.0, 164.0 ]
           next:
-            - waituntil.entered_fight_area
+            - waituntil.entered_area_ritual
         
         scene.s5_ritual:
           ".editor":
@@ -24,7 +24,7 @@ structure:
           _fadein: false
           next.Output:
             - objective.wait_till_midnight: Activate
-            - addfact.set_in_fight_area
+            - addfact.set_in_area_ritual
             - waituntil.midnight
         
         scene.s6_unhappy:
@@ -104,8 +104,8 @@ structure:
           next:
             - scene.s5_ritual: Input
         
-        waituntil.entered_fight_area:
-          entered: [ novigrad/enterfightarea, PLAYER ]
+        waituntil.entered_area_ritual:
+          entered: [ novigrad/area_ritual, PLAYER ]
           ".editor":
             pos: [ -822.0, 162.0 ]
             in: [ In ]
@@ -118,8 +118,8 @@ structure:
             - objective.prepare_stones: Activate
             - waituntil.took_amulet1
         
-        waituntil.entered_fight_area1:
-          entered: [ novigrad/enterfightarea, PLAYER ]
+        waituntil.entered_area_ritual1:
+          entered: [ novigrad/area_ritual, PLAYER ]
           ".editor":
             pos: [ -159.0, 319.0 ]
             in: [ In ]
@@ -127,8 +127,8 @@ structure:
           next:
             - waituntil.s6_didnot_happen
         
-        waituntil.in_fightarea:
-          factdb: [ DMNQ_in_fight_area, ">=", 1 ]
+        waituntil.in_arearitual:
+          factdb: [ DMNQ_in_area_ritual, ">=", 1 ]
           ".editor":
             pos: [ 237.0, 61.0 ]
             in: [ In ]
@@ -136,14 +136,14 @@ structure:
           next:
             - waituntil.midnight
         
-        waituntil.left_fight_area1:
-          left: [ novigrad/enterfightarea, PLAYER ]
+        waituntil.left_area_ritual1:
+          left: [ novigrad/area_ritual, PLAYER ]
           ".editor":
             pos: [ -157.0, 425.0 ]
             in: [ In ]
             out: [ Out ]
           next:
-            - addfact.set_out_fight_area
+            - addfact.set_out_area_ritual
         
         waituntil.looted_1st_pebble:
           factdb: [ DMNQ_looted_pebbles, ">=", 1 ]
@@ -170,7 +170,7 @@ structure:
             in: [ In ]
             out: [ Out ]
           next:
-            - waituntil.test_if_in_fightarea
+            - waituntil.test_if_in_arearitual
         
         waituntil.s6_didnot_happen:
           factdb: [ DMNQ_seen_wraiths, "=", 0 ]
@@ -179,9 +179,9 @@ structure:
             in: [ In ]
             out: [ Out ]
           next:
-            - addfact.set_in_fight_area
+            - addfact.set_in_area_ritual
         
-        waituntil.test_if_in_fightarea:
+        waituntil.test_if_in_arearitual:
           ".editor":
             pos: [ 298.0, 148.0 ]
             hint: named
@@ -189,11 +189,11 @@ structure:
             out: [ "false", "true" ]
           conditions:
             "true":
-              factdb: [ DMNQ_in_fight_area, ">=", 1 ]
+              factdb: [ DMNQ_in_area_ritual, ">=", 1 ]
             "false":
-              factdb: [ DMNQ_in_fight_area, "=", 0 ]
+              factdb: [ DMNQ_in_area_ritual, "=", 0 ]
           next.false:
-            - waituntil.in_fightarea
+            - waituntil.in_arearitual
           next.true:
             - scene.s6_unhappy: Input
             - objective.wait_till_midnight: Success
@@ -356,17 +356,17 @@ structure:
           next:
             - spawn.wraiths_extra_spawn
         
-        addfact.set_in_fight_area:
+        addfact.set_in_area_ritual:
           ".editor": [ 87.0, 318.0 ]
-          value: [ DMNQ_in_fight_area, 1 ]
+          value: [ DMNQ_in_area_ritual, 1 ]
           next:
-            - waituntil.left_fight_area1
+            - waituntil.left_area_ritual1
         
-        addfact.set_out_fight_area:
+        addfact.set_out_area_ritual:
           ".editor": [ 90.0, 425.0 ]
-          value: [ DMNQ_in_fight_area, -1 ]
+          value: [ DMNQ_in_area_ritual, -1 ]
           next:
-            - waituntil.entered_fight_area1
+            - waituntil.entered_area_ritual1
         
         out:
           ".editor": [ 1158.0, 136.0 ]

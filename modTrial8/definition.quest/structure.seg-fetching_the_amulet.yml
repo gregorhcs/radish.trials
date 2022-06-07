@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: fetching_the_amulet
 # 
-# (version: 129, saved: 2022-06-07 00:53:49)
+# (version: 131, saved: 2022-06-07 23:33:40)
 #
 ---
 structure:
@@ -22,7 +22,7 @@ structure:
             in: [ Input ]
             out: [ Output, backoff, fight ]
           scene: s3_amulet_from_merchant.yml
-          placement: novigrad/sp_merchant1
+          placement: novigrad/sp_merchant
           interruptable: true
           _fadein: false
           next.Output:
@@ -38,7 +38,7 @@ structure:
             in: [ Input ]
             out: [ Output, backoff, fight ]
           scene: s3_amulet_from_merchant.yml
-          placement: novigrad/sp_merchant1
+          placement: novigrad/sp_merchant
           interruptable: true
           actor: [ dmnq_merchant ]
           next.Output:
@@ -81,7 +81,7 @@ structure:
         
         waituntil.approached_merchant:
           all:
-            - entered: [ novigrad/entermerchantarea, PLAYER ]
+            - entered: [ novigrad/area_merchant, PLAYER ]
             - factdb: [ dmnq_s4_done, "!=", 1 ]
           ".editor":
             pos: [ -361.0, 567.0 ]
@@ -220,7 +220,7 @@ structure:
             - objective.loot_merchant: Success
         
         waituntil.outside_merchant_area:
-          outside: [ novigrad/entermerchantarea, PLAYER ]
+          outside: [ novigrad/area_merchant, PLAYER ]
           ".editor":
             pos: [ 249.0, 736.0 ]
             in: [ In ]
@@ -350,7 +350,7 @@ structure:
           purge: false
           world: novigrad
           hide:
-            - merchantlayer
+            - layer_merchant
           next:
             - out
         

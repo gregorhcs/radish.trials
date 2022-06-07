@@ -1,7 +1,7 @@
 #
 # quest structure root segment
 # 
-# (version: 129, saved: 2022-06-07 00:53:49)
+# (version: 131, saved: 2022-06-07 23:33:40)
 #
 ---
 structure:
@@ -55,7 +55,7 @@ structure:
           out: [ Out ]
         segment: init
         next:
-          - changelayers.show_fight_layer
+          - changelayers.show_ritual_layer
       
       subsegment.wait_start_conditions:
         ".editor":
@@ -101,6 +101,19 @@ structure:
           out: [ Out ]
         next:
           - script.new_logmsg_4
+      
+      script.highlight_pebbles:
+        ".editor":
+          pos: [ 605.0, 416.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: DMNQ_FocusSetHighlight
+        parameter:
+          - tag: cname_dmnq_pebble
+          - highlightType: FMV_Clue
+          - overrideCustomLogic: false
+        next:
+          - subsegment.find_iris_wraiths
       
       script.new_logmsg:
         ".editor":
@@ -162,19 +175,21 @@ structure:
         next:
           - reward.translation
       
-      changelayers.show_fight_layer:
+      changelayers.show_ritual_layer:
         ".editor":
-          pos: [ 507.0, 417.0 ]
-          hint: show-only
+          pos: [ 444.0, 416.0 ]
+          hint: both
           in: []
           out: []
         sync: true
         purge: false
         world: novigrad
         show:
-          - fightlayer
+          - layer_ritual_yes
+        hide:
+          - layer_ritual_no
         next:
-          - subsegment.find_iris_wraiths
+          - script.highlight_pebbles
       
       reward.amulet:
         ".editor": [ 296.0, -59.0 ]

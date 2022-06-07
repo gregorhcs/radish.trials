@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: init
 # 
-# (version: 129, saved: 2022-06-07 00:53:49)
+# (version: 131, saved: 2022-06-07 23:33:40)
 #
 ---
 structure:
@@ -9,24 +9,44 @@ structure:
     init:
       blocks:
         in:
-          ".editor": [ 100.0, 150.0 ]
+          ".editor": [ 100.0, 100.0 ]
           next:
-            - script.highlight_pebbles
+            - changelayers.setup_layers
         
-        script.highlight_pebbles:
+        changelayers.setup_layers:
           ".editor":
-            pos: [ 300.0, 150.0 ]
-            in: [ In ]
-            out: [ Out ]
-          function: DMNQ_FocusSetHighlight
-          parameter:
-            - tag: cname_dmnq_pebble
-            - highlightType: FMV_Clue
-            - overrideCustomLogic: false
+            pos: [ 300.0, 100.0 ]
+            hint: both
+            in: []
+            out: []
+          sync: true
+          purge: false
+          world: novigrad
+          show:
+            - layer_demons
+            - layer_merchant
+            - layer_ritual
+            - layer_ritual_no
+          hide:
+            - layer_ritual_yes
+          next:
+            - despawn.despawn_all_communities
+        
+        despawn.despawn_all_communities:
+          ".editor":
+            pos: [ 500.0, 100.0 ]
+            hint: despawn-only
+            in: []
+            out: []
+          spawnsets:
+            - demon_community
+            - merchant_community
+            - wraith_community_base
+            - wraith_community_extra
           next:
             - out
         
         out:
-          ".editor": [ 500.0, 150.0 ]
+          ".editor": [ 700.0, 100.0 ]
           next: ".done"
         

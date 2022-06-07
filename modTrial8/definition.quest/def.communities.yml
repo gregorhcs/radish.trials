@@ -26,14 +26,14 @@ communities:
           use_last_ap: false
           attitude: friendly_to_player
           actionpoints:
-            "00:00": novigrad/merchant_concerned_kneeling
+            "00:00": novigrad/ap_merchant_concerned_kneeling
 
         horse:
           start_in_ap: true
           use_last_ap: false
           attitude: friendly_to_player
           actionpoints:
-            "00:00": novigrad/horse_eating_grass
+            "00:00": novigrad/ap_horse_eating_grass
 
 
   # --------------- demon community----------------------
@@ -61,7 +61,7 @@ communities:
           use_last_ap: false
           attitude: friendly_to_player
           actionpoints:
-            "00:00": novigrad/black_cat_sits
+            "00:00": novigrad/ap_black_cat_sits
 
         black_dog:
           appearance: dog_04
@@ -69,7 +69,7 @@ communities:
           use_last_ap: false
           attitude: friendly_to_player
           actionpoints:
-            "00:00": novigrad/black_dog_sits
+            "00:00": novigrad/ap_black_dog_sits
 
 
   # -------------- wraith communities----------------------
@@ -80,11 +80,11 @@ communities:
     actors:
 
       wraith1:
-        template: CNewNPC:DMNQ_iris_shadow_wraith
+        template: C_DMNQ_IrisWraith:DMNQ_iris_shadow_wraith
         tags: [dmnq_wraith1]
 
       wraith2:
-        template: CNewNPC:DMNQ_iris_shadow_wraith
+        template: C_DMNQ_IrisWraith:DMNQ_iris_shadow_wraith
         tags: [dmnq_wraith2]
 
     phases:
@@ -95,17 +95,17 @@ communities:
           use_last_ap: false
           start_in_ap: true
           attitude: monsters
-          guard: [ novigrad/enterfightarea, 20.0 ]
+          guard: [ novigrad/area_ritual, 20.0 ]
           actionpoints:
-            "00:00": novigrad/wraith1
+            "00:00": novigrad/ap_wraith1
 
         wraith2:
           use_last_ap: false
           start_in_ap: true
           attitude: monsters
-          guard: [ novigrad/enterfightarea, 20.0 ]
+          guard: [ novigrad/area_ritual, 20.0 ]
           actionpoints:
-            "00:00": novigrad/wraith2
+            "00:00": novigrad/ap_wraith2
         
 
   wraith_community_extra:
@@ -113,7 +113,7 @@ communities:
     actors:
 
       wraith3:
-        template: CNewNPC:DMNQ_iris_shadow_wraith
+        template: C_DMNQ_IrisWraith:DMNQ_iris_shadow_wraith
         tags: [dmnq_wraith3]
 
     phases:
@@ -124,6 +124,6 @@ communities:
           use_last_ap: false
           start_in_ap: true
           attitude: monsters
-          guard: [ novigrad/enterfightarea, 20.0 ]
+          guard: [ novigrad/area_ritual, 20.0 ]
           actionpoints:
-            "00:00": novigrad/wraith3
+            "00:00": novigrad/ap_wraith3

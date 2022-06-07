@@ -30,14 +30,14 @@ journals:
           - investigate_mansion_front:
               caption: "Find out what's going on at the von Everec mansion."
               mappins:
-                - [demonpin, 24]
+                - [pin_demons, 24]
 
         get_amulet:
 
           - get_amulet_merchant_unknown:
               caption: "Get the demonic amulet from the merchant."
               mappins:
-                - [merchantpin, 24]
+                - [pin_merchant, 24]
 
           - get_amulet_merchant_known:
               caption: "Get the demonic amulet from the merchant."
@@ -46,7 +46,7 @@ journals:
           - use_force_merchant_unknown:
               caption: "(Optional) Use force."
               mappins:
-                - [merchantpin, 24] 
+                - [pin_merchant, 24] 
 
           - use_force_merchant_known:
               caption: "(Optional) Use force."
@@ -66,28 +66,28 @@ journals:
           - bringback_amulet:
               caption: "Get back to the Black Cat and Dog to deliver the amulet."
               mappins: 
-                - demonpin
+                - pin_demons
 
           - bringback_lies:
               caption: "(Optional) Lie about the amulet."
               mappins: 
-                - demonpin
+                - pin_demons
 
         find_iris_wraiths:
 
           - go_to_ritual_place:
               caption: "Go to the place near the mansion to perform the ritual."
               mappins:
-                - [fightareapin, 24]
+                - [pin_ritual, 24]
 
           - prepare_ritual_stones:
               caption: "Collect five grieving stones and place them on the altar."
               mappins: 
-                - fightareapin # pins to 5 ...
+                - pin_ritual # pins to 5 ...
 
           - prepare_ritual_amulet:
               caption: "(Optional) Place the amulet on the altar."
-              mappins: fightareapin # pin to altar
+              mappins: pin_ritual # pin to altar
 
           - wait_till_midnight:
               caption: "Wait until midnight."
@@ -95,14 +95,14 @@ journals:
           - kill_wraiths:
               caption: "(Optional) Kill the Iris von Everec-Wraiths."
               mappins: 
-                - fightareapin # tags of 3 wraiths
+                - pin_ritual # tags of 3 wraiths
 
         epilogue:
 
           - confront_demons:
               caption: "Go back to the Black Cat and Dog to confront them."
               mappins: 
-                - demonpin
+                - pin_demons
 
   characters:
 

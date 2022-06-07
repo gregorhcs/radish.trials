@@ -1,6 +1,13 @@
 {
     "files": [
         {
+            "path": "dlc\\bob\\data\\environment\\decorations\\gameplay\\generic\\stone\\stone_ornaments\\gen_stone_planter_ground_a.w2ent",
+            "level": 2,
+            "additional": 1,
+            "id": "37187070-6F36F7EA-AC96930A-E9220E93",
+            "hardImports": 2
+        },
+        {
             "path": "dlc\\dlctrial8\\data\\demons_glossary1.w2phase",
             "level": 2,
             "class": "CQuestPhase",
@@ -18,7 +25,7 @@
             "class": "CCommunity",
             "seed": 1,
             "id": "18B19BE4-39E0D41C-76EB9081-607ED3C1",
-            "diskSize": 3254,
+            "diskSize": 3262,
             "hardImports": 1,
             "softImports": 1,
             "soft": [
@@ -32,7 +39,7 @@
             "class": "CCommunity",
             "seed": 1,
             "id": "91176833-6CF76717-423D2601-751D88E7",
-            "diskSize": 3404,
+            "diskSize": 3411,
             "hardImports": 1,
             "softImports": 1,
             "soft": [
@@ -41,17 +48,44 @@
             ]
         },
         {
-            "path": "dlc\\dlctrial8\\data\\spawnsets\\wraith_community.w2comm",
+            "path": "dlc\\dlctrial8\\data\\spawnsets\\wraith_community_base.w2comm",
             "level": 2,
             "class": "CCommunity",
             "seed": 1,
-            "id": "885CEBFE-1BBCE2D0-851F4D40-2B16E093",
-            "diskSize": 2779,
+            "id": "EA19EE35-4DC41394-DBC6ADF2-8657AC2E",
+            "diskSize": 3163,
             "hardImports": 1,
             "softImports": 1,
             "soft": [
                 "30EDA1E5-28B066DF-90B5C7A9-B96749F9"
             ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\spawnsets\\wraith_community_extra.w2comm",
+            "level": 2,
+            "class": "CCommunity",
+            "seed": 1,
+            "id": "8067B1AC-8B14C76C-CB75136D-8AF055B8",
+            "diskSize": 2505,
+            "hardImports": 1,
+            "softImports": 1,
+            "soft": [
+                "30EDA1E5-28B066DF-90B5C7A9-B96749F9"
+            ]
+        },
+        {
+            "path": "gameplay\\containers\\container_template.w2ent",
+            "level": 2,
+            "additional": 1,
+            "id": "67CDBA09-C59CF118-A1ADB8EC-A9B52461",
+            "hardImports": 1
+        },
+        {
+            "path": "items\\quest_items\\q310\\q310_item__regular_stone.w2ent",
+            "level": 2,
+            "additional": 1,
+            "id": "45C204E3-A102623D-81B8E182-A802074B",
+            "hardImports": 1
         },
         {
             "path": "animations\\constraints\\constraints.w2beh",
@@ -684,30 +718,71 @@
             "hardImports": 1
         },
         {
+            "path": "dlc\\dlctrial8\\data\\entities\\dmnq_grieving_stone.w2ent",
+            "level": 1,
+            "class": "CEntityTemplate",
+            "seed": 1,
+            "id": "999F140F-AA40F21D-034436C2-9B380906",
+            "diskSize": 2215,
+            "hardImports": 1,
+            "hard": [
+                "67CDBA09-C59CF118-A1ADB8EC-A9B52461",
+                "45C204E3-A102623D-81B8E182-A802074B"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\entities\\dmnq_ritual_bowl_fight.w2ent",
+            "level": 1,
+            "class": "CEntityTemplate",
+            "seed": 1,
+            "id": "564525DC-17E31C93-6D4090B2-FE24BD8C",
+            "diskSize": 1436,
+            "hardImports": 1,
+            "hard": [
+                "37187070-6F36F7EA-AC96930A-E9220E93"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\entities\\dmnq_ritual_bowl_use.w2ent",
+            "level": 1,
+            "class": "CEntityTemplate",
+            "seed": 1,
+            "id": "56EEF4B1-331928A6-0465C9C6-04B06E58",
+            "diskSize": 1978,
+            "hardImports": 1,
+            "hard": [
+                "37187070-6F36F7EA-AC96930A-E9220E93"
+            ]
+        },
+        {
             "path": "dlc\\dlctrial8\\data\\trial8.w2quest",
             "level": 1,
             "class": "CQuest",
             "seed": 1,
             "id": "7A67E6B7-F3E52C95-7F500C7C-43CDE036",
-            "diskSize": 41139,
+            "diskSize": 55048,
             "hardImports": 1,
             "hard": [
                 "BD86773F-84CE8999-6359AD7C-066A5F8B",
                 "18B19BE4-39E0D41C-76EB9081-607ED3C1",
                 "91176833-6CF76717-423D2601-751D88E7",
-                "885CEBFE-1BBCE2D0-851F4D40-2B16E093"
+                "EA19EE35-4DC41394-DBC6ADF2-8657AC2E",
+                "8067B1AC-8B14C76C-CB75136D-8AF055B8"
             ],
             "soft": [
                 "1F4F4861-08ED1754-E84569FC-E0D64D42",
                 "B79962A2-87176FEA-47E188A1-85DA5143",
                 "F57725A4-A574DA82-DE22BE5C-5E0C65E5",
                 "9C476B58-0C738C57-3D3D9D27-9F065559",
+                "3A79A893-102806AE-EDDF5BC7-D3E425CC",
+                "512503B8-95234DA9-7AE185FD-DDC07924",
                 "5D8AF7FC-4D206E1C-7F6CFCF8-6BD3A4CD",
                 "6D966CF4-0253ED9F-D3C1C3BA-8B327A9B",
                 "A5CE06A1-BB613701-58DD9BF3-EE9C155B",
                 "18B19BE4-39E0D41C-76EB9081-607ED3C1",
                 "91176833-6CF76717-423D2601-751D88E7",
-                "885CEBFE-1BBCE2D0-851F4D40-2B16E093",
+                "EA19EE35-4DC41394-DBC6ADF2-8657AC2E",
+                "8067B1AC-8B14C76C-CB75136D-8AF055B8",
                 "FA044B86-A027D292-68BEA2A3-1213711C",
                 "440DC069-8119341F-7AFF4C71-C3E82C59"
             ]
@@ -1182,13 +1257,6 @@
             "hardImports": 1
         },
         {
-            "path": "items\\weapons\\swords\\nomansland_swords\\nomansland_sword_rusty.w2ent",
-            "level": 1,
-            "additional": 1,
-            "id": "7F1FFF39-AF25353F-E641ABF8-988D8F9B",
-            "hardImports": 1
-        },
-        {
             "path": "characters\\npc_entities\\animals\\horse\\horse_background_no_saddle.w2ent",
             "level": 0,
             "additional": 1,
@@ -1201,8 +1269,8 @@
             "class": "CEntityTemplate",
             "seed": 1,
             "id": "30EDA1E5-28B066DF-90B5C7A9-B96749F9",
-            "diskSize": 86785,
-            "softImports": 1,
+            "diskSize": 87207,
+            "softImports": 2,
             "hard": [
                 "FCB7C4D6-14B5AE22-932765E1-203EFD69",
                 "E4CC4DB9-3661C894-A92D6DEE-BB9464CF",
@@ -1239,7 +1307,7 @@
             "class": "CEntityTemplate",
             "seed": 1,
             "id": "EC4A34E1-CF818A4C-C7A857D7-266D3C42",
-            "diskSize": 119009,
+            "diskSize": 118868,
             "softImports": 1,
             "hard": [
                 "F48764A3-D860DC48-53175D59-4919F8DA",
@@ -1379,36 +1447,25 @@
             ]
         },
         {
-            "path": "dlc\\dlctrial8\\data\\entities\\dmnq_useless_sword.w2ent",
-            "level": 0,
-            "class": "CEntityTemplate",
-            "seed": 1,
-            "id": "10B8A9C4-431D7890-A89DBB3A-07CDEE2E",
-            "diskSize": 1478,
-            "hard": [
-                "7F1FFF39-AF25353F-E641ABF8-988D8F9B"
-            ]
-        },
-        {
             "path": "dlc\\dlctrial8\\data\\gameplay\\items\\def_item_quest.xml",
             "level": 0,
             "seed": 1,
             "id": "E2F3A6B2-D5B2D065-26C2803C-1BE22063",
-            "diskSize": 1928
+            "diskSize": 1106
         },
         {
             "path": "dlc\\dlctrial8\\data\\gameplay\\items\\def_loot_quest.xml",
             "level": 0,
             "seed": 1,
             "id": "61608878-8F1FBEC9-22C6F645-B4641535",
-            "diskSize": 862
+            "diskSize": 1492
         },
         {
             "path": "dlc\\dlctrial8\\data\\gameplay\\rewards\\def_reward_quest.xml",
             "level": 0,
             "seed": 1,
             "id": "AF6E58CA-8AF2E40A-01DC4B1D-041170EA",
-            "diskSize": 2894
+            "diskSize": 2950
         },
         {
             "path": "dlc\\dlctrial8\\data\\quest_levels.csv",
@@ -1472,6 +1529,30 @@
             ]
         },
         {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s5.1_pebble_hmm.w2scene",
+            "level": 0,
+            "class": "CStoryScene",
+            "seed": 1,
+            "id": "3A79A893-102806AE-EDDF5BC7-D3E425CC",
+            "diskSize": 2577,
+            "softImports": 1,
+            "soft": [
+                "90DB9D66-1F7513D5-96AB23A4-766415AB"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s5.2_pebble_interesting.w2scene",
+            "level": 0,
+            "class": "CStoryScene",
+            "seed": 1,
+            "id": "512503B8-95234DA9-7AE185FD-DDC07924",
+            "diskSize": 2577,
+            "softImports": 1,
+            "soft": [
+                "90DB9D66-1F7513D5-96AB23A4-766415AB"
+            ]
+        },
+        {
             "path": "dlc\\dlctrial8\\data\\scenes\\s5_ritual.w2scene",
             "level": 0,
             "class": "CStoryScene",
@@ -1515,7 +1596,7 @@
             "class": "CDLCDefinition",
             "seed": 1,
             "id": "AA467A61-1AC2688C-D61C1847-4A7F322D",
-            "diskSize": 1447,
+            "diskSize": 1664,
             "hard": [
                 "7A67E6B7-F3E52C95-7F500C7C-43CDE036"
             ]
@@ -1552,107 +1633,88 @@
             "class": "CJournalResource",
             "seed": 1,
             "id": "440DC069-8119341F-7AFF4C71-C3E82C59",
-            "diskSize": 7496,
+            "diskSize": 7499,
             "softImports": 1
         },
         {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\demonlayer\\actionpoints.w2l",
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_demons\\actionpoints.w2l",
             "level": 0,
             "class": "CLayer",
             "seed": 1,
-            "id": "28126CD1-0C67A7F4-DDBA77DA-361817B4",
-            "diskSize": 1893,
+            "id": "7777929F-3CA8CBF8-7504D8E6-D62653A6",
+            "diskSize": 1911,
             "hard": [
                 "B3709861-363867F5-0EEF9C7D-966BB9DC",
                 "82DBC743-0A14CD12-535B2666-7D86A1FA"
             ]
         },
         {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\demonlayer\\areas.w2l",
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_demons\\areas.w2l",
             "level": 0,
             "class": "CLayer",
             "seed": 1,
-            "id": "2F6B37BC-46849F0B-B7CA9001-51B73259",
-            "diskSize": 1880
+            "id": "67C44814-EB05113B-43AA64BD-F8469F4C",
+            "diskSize": 1878
         },
         {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\demonlayer\\mappins.w2l",
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_demons\\mappins.w2l",
             "level": 0,
             "class": "CLayer",
             "seed": 1,
-            "id": "C18A5DBA-9961DEE2-381679E7-D59835A2",
-            "diskSize": 1837
+            "id": "678ED618-A597B3F2-C5C86222-E5A1F0EC",
+            "diskSize": 1857
         },
         {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\fightlayer\\actionpoints.w2l",
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_demons\\scenepoints.w2l",
             "level": 0,
             "class": "CLayer",
             "seed": 1,
-            "id": "247687CF-31891E6A-AAF42BAE-3390E4E5",
-            "diskSize": 2295,
-            "hard": [
-                "5088897F-39E5E86A-E1787716-8697682D"
-            ]
+            "id": "E9BCAB42-9F32782F-CA0434FB-3B0F21A6",
+            "diskSize": 1001
         },
         {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\fightlayer\\areas.w2l",
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_merchant\\actionpoints.w2l",
             "level": 0,
             "class": "CLayer",
             "seed": 1,
-            "id": "35A094CB-C864A25C-71FFC027-D289502D",
-            "diskSize": 1883
-        },
-        {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\fightlayer\\mappins.w2l",
-            "level": 0,
-            "class": "CLayer",
-            "seed": 1,
-            "id": "32D3D6E3-FDAD1F65-5EBD1F21-ACC68ACA",
-            "diskSize": 1053
-        },
-        {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\generallayer\\areas.w2l",
-            "level": 0,
-            "class": "CLayer",
-            "seed": 1,
-            "id": "29AF7555-D2DFB6BE-4DFF2A26-FC5EC27A",
-            "diskSize": 3551
-        },
-        {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\merchantlayer\\actionpoints.w2l",
-            "level": 0,
-            "class": "CLayer",
-            "seed": 1,
-            "id": "66C95381-65FE63E7-0608EF53-1A59DC93",
-            "diskSize": 1990,
+            "id": "F53F04DE-D30A125A-77C987C9-E3C257E5",
+            "diskSize": 2005,
             "hard": [
                 "9A1412B4-21852AD4-9486CB69-10B2304D",
                 "BD50B936-27079185-7E5012A4-567A25DD"
             ]
         },
         {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\merchantlayer\\areas.w2l",
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_merchant\\areas.w2l",
             "level": 0,
             "class": "CLayer",
             "seed": 1,
-            "id": "E94BE63E-A5F37602-73413238-0D15EAB4",
-            "diskSize": 2102
+            "id": "8DE81D7E-4229422D-5CAB1B1D-D4AB0C75",
+            "diskSize": 2092
         },
         {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\merchantlayer\\mappins.w2l",
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_merchant\\mappins.w2l",
             "level": 0,
             "class": "CLayer",
             "seed": 1,
-            "id": "8F02E009-9CDE303E-7C34EFAF-B2FC167E",
-            "diskSize": 1056
+            "id": "02BBC3D5-739B5003-B3E6AB5A-3CD34476",
+            "diskSize": 1061
         },
         {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\merchantlayer\\static.w2l",
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_merchant\\scenepoints.w2l",
             "level": 0,
             "class": "CLayer",
             "seed": 1,
-            "id": "8B47F795-C19D009E-EA0C60B3-EAEF2C46",
-            "diskSize": 1938,
+            "id": "EA43C095-78DD5128-02F37B6C-A503368F",
+            "diskSize": 1011
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_merchant\\static.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "6D6CE3EE-2E3FE968-6C1D7B5A-46B3E033",
+            "diskSize": 1940,
             "hard": [
                 "D8A703CA-CE4CCAA3-A12342A7-B49D69B7"
             ],
@@ -1661,20 +1723,78 @@
             ]
         },
         {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual\\actionpoints.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "7258EB3A-34EED265-9EEB649F-C26FADDD",
+            "diskSize": 2321,
+            "hard": [
+                "5088897F-39E5E86A-E1787716-8697682D"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual\\areas.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "1E2DF0C1-E617EE83-3546C5A6-AB25F01B",
+            "diskSize": 1878
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual\\areas_sound.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "C2209275-B1FF156A-985C04BE-B4CBEB92",
+            "diskSize": 1900
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual\\mappins.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "9C65D4F3-B4EC400F-56451C99-7D9E11BC",
+            "diskSize": 1051
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual\\scenepoints.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "F6B6C97E-82C0C1C8-9E771C60-495A7053",
+            "diskSize": 1001
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual_no\\interactive_entities.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "A3CA6F47-410BBB2C-13544A7E-115409C9",
+            "diskSize": 1215,
+            "hard": [
+                "564525DC-17E31C93-6D4090B2-FE24BD8C"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual_yes\\interactive_entities.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "6EB1A686-29B40C0F-791818BB-D07C0610",
+            "diskSize": 3896,
+            "hard": [
+                "999F140F-AA40F21D-034436C2-9B380906",
+                "56EEF4B1-331928A6-0465C9C6-04B06E58"
+            ]
+        },
+        {
             "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\radish_dbg\\radish_dbginfo.w2l",
             "level": 0,
             "class": "CLayer",
             "seed": 1,
             "id": "0C202CFE-F7586583-6EDEA2AD-8B59DB9F",
-            "diskSize": 6194
-        },
-        {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\scenelayer\\scenepoints.w2l",
-            "level": 0,
-            "class": "CLayer",
-            "seed": 1,
-            "id": "A9862F64-FA487745-7692D8B3-5A1D8176",
-            "diskSize": 1778
+            "diskSize": 7408
         },
         {
             "path": "dlc\\ep1\\data\\characters\\npc_entities\\animals\\demonic_cat.w2ent",
@@ -1737,7 +1857,7 @@
             "level": 0,
             "additional": 1,
             "id": "90DB9D66-1F7513D5-96AB23A4-766415AB",
-            "softImports": 7
+            "softImports": 9
         }
     ]
 }

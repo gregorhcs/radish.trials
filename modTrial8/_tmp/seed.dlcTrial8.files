@@ -1,6 +1,10 @@
 {
     "files": [
         {
+            "path": "dlc\\dlctrial8\\data\\entities\\dmnq_grieving_stone.w2ent",
+            "bundle": "blob"
+        },
+        {
             "path": "dlc\\dlctrial8\\data\\entities\\dmnq_iris_shadow_wraith.w2ent",
             "bundle": "blob"
         },
@@ -9,7 +13,11 @@
             "bundle": "blob"
         },
         {
-            "path": "dlc\\dlctrial8\\data\\entities\\dmnq_useless_sword.w2ent",
+            "path": "dlc\\dlctrial8\\data\\entities\\dmnq_ritual_bowl_fight.w2ent",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\entities\\dmnq_ritual_bowl_use.w2ent",
             "bundle": "blob"
         },
         {
@@ -48,6 +56,14 @@
             "bundle": "blob"
         },
         {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s5.1_pebble_hmm.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s5.2_pebble_interesting.w2scene",
+            "bundle": "blob"
+        },
+        {
             "path": "dlc\\dlctrial8\\data\\scenes\\s5_ritual.w2scene",
             "bundle": "blob"
         },
@@ -68,7 +84,11 @@
             "bundle": "blob"
         },
         {
-            "path": "dlc\\dlctrial8\\data\\spawnsets\\wraith_community.w2comm",
+            "path": "dlc\\dlctrial8\\data\\spawnsets\\wraith_community_base.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\spawnsets\\wraith_community_extra.w2comm",
             "bundle": "blob"
         },
         {
@@ -95,55 +115,71 @@
             "bundle": "blob"
         },
         {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\demonlayer\\actionpoints.w2l",
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_demons\\actionpoints.w2l",
             "bundle": "blob"
         },
         {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\demonlayer\\areas.w2l",
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_demons\\areas.w2l",
             "bundle": "blob"
         },
         {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\demonlayer\\mappins.w2l",
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_demons\\mappins.w2l",
             "bundle": "blob"
         },
         {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\fightlayer\\actionpoints.w2l",
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_demons\\scenepoints.w2l",
             "bundle": "blob"
         },
         {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\fightlayer\\areas.w2l",
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_merchant\\actionpoints.w2l",
             "bundle": "blob"
         },
         {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\fightlayer\\mappins.w2l",
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_merchant\\areas.w2l",
             "bundle": "blob"
         },
         {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\generallayer\\areas.w2l",
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_merchant\\mappins.w2l",
             "bundle": "blob"
         },
         {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\merchantlayer\\actionpoints.w2l",
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_merchant\\scenepoints.w2l",
             "bundle": "blob"
         },
         {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\merchantlayer\\areas.w2l",
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_merchant\\static.w2l",
             "bundle": "blob"
         },
         {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\merchantlayer\\mappins.w2l",
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual\\actionpoints.w2l",
             "bundle": "blob"
         },
         {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\merchantlayer\\static.w2l",
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual\\areas_sound.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual\\mappins.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual\\scenepoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual_no\\interactive_entities.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual_yes\\interactive_entities.w2l",
             "bundle": "blob"
         },
         {
             "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\radish_dbg\\radish_dbginfo.w2l",
-            "bundle": "blob"
-        },
-        {
-            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\scenelayer\\scenepoints.w2l",
             "bundle": "blob"
         }
     ]

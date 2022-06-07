@@ -1,27 +1,14 @@
 layers: 
 
-  # ----------------- scenelayer-------------------------
+  # --------------- layer_merchant------------------------
   # -----------------------------------------------------
 
-  scenelayer: 
-    world: "novigrad"
-    #context: ""
-
-    scenepoints: 
-      sp_merchant1: [ 2217.8913574219, 1832.5705566406, 45.0325851440, 0.0 ]
-      sp_demons: [ 2251.6440429688, 1853.2855224609, 47.7039108276, 0.0 ]
-      sp_ritual: [ 2146.6936035156, 2146.4365234375, 41.7903671265, 0.0 ]
-
-
-  # --------------- merchantlayer------------------------
-  # -----------------------------------------------------
-
-  merchantlayer: 
+  layer_merchant: 
     world: "novigrad"
     #context: ""
 
     areas: 
-      entermerchantarea: 
+      area_merchant: 
         height: 4.0
         borderpoints: 
           - [ 2218.5151367188, 1830.0994873047, 44.3469886780 ]
@@ -33,12 +20,12 @@ layers:
           - [ 2216.3491210938, 1830.8873291016, 44.3469886780 ]
 
     mappins: 
-      merchantpin: [ 2227.1176757813, 1825.5039062500, 44.2777328491 ]
+      pin_merchant: [ 2227.1176757813, 1825.5039062500, 44.2777328491 ]
         #radius for quest instructions: 20
 
     actionpoints: 
-      horse_eating_grass:          [ 2224.9260253906, 1831.7814941406, 44.9611892700, -59.6000404358, "horse/horse_parking" ]
-      merchant_concerned_kneeling: [ 2218.4033203125, 1833.1195068359, 45.0476951599, -192.6000061035, "work_man/mq7004_jt_kneeling_concerned" ]
+      ap_horse_eating_grass:          [ 2224.9260253906, 1831.7814941406, 44.9611892700, -59.6000404358, "horse/horse_parking" ]
+      ap_merchant_concerned_kneeling: [ 2218.4033203125, 1833.1195068359, 45.0476951599, -192.6000061035, "work_man/mq7004_jt_kneeling_concerned" ]
 
     statics: 
       wagon: 
@@ -46,16 +33,19 @@ layers:
         pos: [ 2217.2231445313, 1830.7016601563, 44.8939361572 ]
         rot: [ 0.0, 0.0, -30.9999866486 ]
 
+    scenepoints: 
+      sp_merchant: [ 2217.8913574219, 1832.5705566406, 45.0325851440, 0.0 ]
+
 
   # ----------------- demonlayer-------------------------
   # -----------------------------------------------------
 
-  demonlayer: 
+  layer_demons: 
     world: "novigrad"
     #context: ""
 
     areas: 
-      aproachdemons: 
+      area_demons: 
         height: 3.0
         borderpoints: 
           - [ 2225.1245117188, 2015.3248291016, 39.2603988647 ]
@@ -65,58 +55,27 @@ layers:
           - [ 2222.6159667969, 2010.0434570313, 39.2603988647 ]
 
     mappins: 
-      catpin:   [ 2217.4873046875, 2014.3637695313, 40.1105117798 ]
-      demonpin: [ 2219.6894531250, 2014.6069335938, 39.2740859985 ]
+      pin_cat:   [ 2217.4873046875, 2014.3637695313, 40.1105117798 ]
+      pin_dog:   [ 2217.8640136719, 2015.2016601563, 39.3682556152 ]
+      pin_demons: [ 2219.6894531250, 2014.6069335938, 39.2740859985 ]
         #radius for quest instructions: 4
-      dogpin:   [ 2217.8640136719, 2015.2016601563, 39.3682556152 ]
 
     actionpoints: 
-      black_cat_sits: [ 2217.4367675781, 2014.3289794922, 40.1140937805, -85.4000473022, "ep1_cat/q604_cat_sit" ]
-      black_dog_sits: [ 2217.9008789063, 2015.2095947266, 39.3666381836, -84.8000411987, "ep1_dog/q604_dog_sit" ]
+      ap_black_cat_sits: [ 2217.4367675781, 2014.3289794922, 40.1140937805, -85.4000473022, "ep1_cat/q604_cat_sit" ]
+      ap_black_dog_sits: [ 2217.9008789063, 2015.2095947266, 39.3666381836, -84.8000411987, "ep1_dog/q604_dog_sit" ]
 
+    scenepoints: 
+      sp_demons: [ 2251.6440429688, 1853.2855224609, 47.7039108276, 0.0 ]
 
-  # ---------------- generallayer -----------------------
+  # ---------------- ritual area ------------------------
   # -----------------------------------------------------
 
-  generallayer: 
+  layer_ritual: 
     world: "novigrad"
     #context: ""
 
     areas: 
-      startinner: 
-        height: 7.0
-        borderpoints: 
-          - [ 2236.2497558594, 2153.0874023438, 36.9442901611 ]
-          - [ 2233.4597167969, 2157.7263183594, 36.9442901611 ]
-          - [ 2230.6882324219, 2159.2819824219, 36.9442901611 ]
-          - [ 2227.5356445313, 2160.4777832031, 36.9442901611 ]
-          - [ 2226.7292480469, 2158.4560546875, 36.9442901611 ]
-          - [ 2230.0256347656, 2157.1149902344, 36.9442901611 ]
-          - [ 2232.0292968750, 2156.0180664063, 36.9442901611 ]
-          - [ 2233.7729492188, 2151.5354003906, 36.9442901611 ]
-
-      startouter: 
-        height: 7.0
-        borderpoints: 
-          - [ 2234.8994140625, 2159.8366699219, 36.4002265930 ]
-          - [ 2231.3413085938, 2162.2402343750, 36.4002265930 ]
-          - [ 2226.8312988281, 2163.6286621094, 36.4002265930 ]
-          - [ 2226.1206054688, 2161.9650878906, 36.4002265930 ]
-          - [ 2230.2189941406, 2160.2790527344, 36.4002265930 ]
-          - [ 2233.6960449219, 2158.0317382813, 36.4002265930 ]
-          - [ 2237.1125488281, 2150.8354492188, 36.4002265930 ]
-          - [ 2238.9130859375, 2151.9721679688, 36.4002265930 ]
-
-
-  # ----------------- fightlayer-------------------------
-  # -----------------------------------------------------
-
-  fightlayer: 
-    world: "novigrad"
-    #context: ""
-
-    areas: 
-      enterfightarea: 
+      area_ritual: 
         height: 20.0
         borderpoints: 
           - [ 2171.3281250000, 2154.4218750000, 35.1547508240 ]
@@ -126,7 +85,7 @@ layers:
           - [ 2158.1323242188, 2135.8437500000, 35.1547508240 ]
 
     areas.sound: 
-      fightarea: 
+      sa_ritual: 
         .type: "CEntity"
         transform: 
           pos: [ 2148.0212402344, 2160.5070800781, 34.8216018677 ]
@@ -136,18 +95,10 @@ layers:
           soundarea: 
             .debug: 
               soundEvent: "mus_ep1_poi_horror"
-              #reverbName: ""
-              #paramName: ""
             .type: "CSoundAmbientAreaComponent"
             soundEvents: "mus_ep1_poi_horror"
-            #reverb: "<SReverbDefinition>"
-            #maxDistance: 0.0
-            #maxDistanceVertical: 0.0
-            #parameterEnteringTime: 0.0
-            #parameterExitingTime: 0.0
-            #parameters: "<SSoundGameParameterValue[]>"
             banksDependency: [ "music_nomansgrad.bnk" ]
-            triggerPriority: 2
+            triggerPriority: 1
             priorityParameterMusic: true
             height: 20.0
             localPoints: 
@@ -161,9 +112,22 @@ layers:
               - [ 9.7021484375, -26.0500488281, 0.0, 1.0 ]
 
     mappins: 
-      fightareapin: 
+      pin_ritual: 
         #radius for quest instructions: 9
         pos: [ 2147.8608398438, 2144.1389160156, 41.7558288574 ]
+
+    actionpoints: 
+      ap_wraith1: [ 2148.6386718750, 2149.1008300781, 41.2017364502, 0.0, "noonwraith/noonwraith_spin_jt" ]
+      ap_wraith2: [ 2138.2321777344, 2152.4755859375, 40.3596572876, 0.0, "noonwraith/noonwraith_spin_jt" ]
+      ap_wraith3: [ 2140.2199707031, 2141.6013183594, 42.8847351074, 0.0, "noonwraith/noonwraith_spin_jt" ]
+
+    scenepoints: 
+      sp_ritual: [ 2146.6936035156, 2146.4365234375, 41.7903671265, 0.0 ]
+
+
+  layer_ritual_yes: 
+    world: "novigrad"
+    #context: ""
 
     interactiveEntities:
 
@@ -192,42 +156,19 @@ layers:
         pos: [ 2147.8476562500, 2138.8144531250, 43.5018234253 ]
         valid_interactions: [Loot]
 
-      altar: 
-        # .preset: .Entitys
-        template: C_DMNQ_RitualBowl:DMNQ_ritual_bowl
+      ritual_bowl: 
+        template: C_DMNQ_RitualBowl:DMNQ_ritual_bowl_use
         pos: [ 2147.9611816406, 2160.4770507813, 39.0991859436 ]
         rot: [ 6.0, 4.0, 16.6000003815 ]
         valid_interactions: [Use]
 
+  layer_ritual_no: 
+    world: "novigrad"
+    #context: ""
 
-    actionpoints: 
-      wraith1: [ 2148.6386718750, 2149.1008300781, 41.2017364502, 0.0, "noonwraith/noonwraith_spin_jt" ]
-      wraith2: [ 2138.2321777344, 2152.4755859375, 40.3596572876, 0.0, "noonwraith/noonwraith_spin_jt" ]
-      wraith3: [ 2140.2199707031, 2141.6013183594, 42.8847351074, 0.0, "noonwraith/noonwraith_spin_jt" ]
-
-    statics:
-      ritual_music_area:
-        ".type": CEntity
-        transform:       ### Define sound.area in RadUI and paste it's pos and rot here
-          pos: [ 2147.9611816406, 2160.4770507813, 39.0991859436 ]
-          scale: [ 1.0, 1.0, 1.0 ]
-        streamingDistance: 0
-        components:
-          Main:
-            ".type": CSoundAmbientAreaComponent
-            height: 5.0   ### Define sound.area in RadUI and paste it's height here
-            localPoints:  ### Define sound.area in RadUI and paste it's localPoints here
-              - [ 10.0, 0.0, 0.0, 1.0 ]
-              - [ 5.0003051758, 8.6596679688, 0.0, 1.0 ]
-              - [ -5.0003051758, 8.6596679688, 0.0, 1.0 ]
-              - [ -10.0, 0.0, 0.0, 1.0 ]
-              - [ -5.0003051758, -8.6596679688, 0.0, 1.0 ]
-              - [ 5.0003051758, -8.6596679688, 0.0, 1.0 ]
-            triggerPriority: 1   ### 1, 2, 3 in vanilla usually
-            banksDependency:     ### Define banks where from you use music (use soundbanksinfo.xml)
-              - music_toussaint.bnk
-            soundEventsOnEnter:  ### Define sound events on entering area
-              - mus_mq7017_ambient_dark
-            soundEventsOnExit:   ### Define sound events on exiting area
-              - mus_loc_toussaint_general_cs_to_gmpl ### (note: _cs_to_gmpl music has higher priority then usual, use it onExit)
-            priorityParameterMusic: true  ### Define if you use music events, otherwise set if false
+    interactiveEntities:
+      ritual_bowl: 
+        template: W3IrisPainting:DMNQ_ritual_bowl_fight
+        pos: [ 2147.9611816406, 2160.4770507813, 39.0991859436 ]
+        rot: [ 6.0, 4.0, 16.6000003815 ]
+        valid_interactions: [Use]
