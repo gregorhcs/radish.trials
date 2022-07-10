@@ -169,6 +169,15 @@ quest function DMNQ_FocusSetHighlight(tag : name, highlightType : string, option
 }
 
 
+quest function DMNQ_ToggleVanillaLayer(layerName : string, hide : bool) {
+    if (hide) {
+        theGame.GetWorld().HideLayerGroup(layerName);
+    } else {
+        theGame.GetWorld().ShowLayerGroup(layerName);
+    }
+}
+
+
 //quest function DMNQ_DynamicMappin(tag : name, optional enable : bool) {
 //    EnableDynamicMappin(name, enable, EDM_EP1QuestAvailable);
 //}

@@ -1,3 +1,5 @@
+DMNQ_seen_noticeboard
+
 DMNQ_started_with
 	=> 0 -> not started
 	   1 -> merchant
@@ -6,8 +8,8 @@ DMNQ_started_with
 DMNQ_violence_chosen
 
 DMNQ_fistfight_result
-	=> 1 -> lose / merchant alive
-	   2 -> won / merchant dead
+	=> 0 -> lose / merchant alive
+	   1 -> won / merchant dead
 
 DMNQ_took_amulet
 
@@ -50,3 +52,5 @@ dmnq_wraith3
 dmnq_pebble
 dmnq_amulet
 dmnq_altar
+
+dmnq_selling_merchant_ap

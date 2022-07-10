@@ -10,7 +10,6 @@ class C_DMNQ_IrisWraith extends W3NightWraithIris
     {
         //damageAction.AddDamage(dmgType : name, dmgVal : float);
         damageAction.SetInstantKill();
-        //damageAction.SetWasKilledBySingleHit();
         super.OnDeath(damageAction);
     }
 }

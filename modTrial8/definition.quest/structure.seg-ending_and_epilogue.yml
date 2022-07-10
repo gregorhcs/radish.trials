@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: ending_and_epilogue
 # 
-# (version: 131, saved: 2022-06-07 23:33:40)
+# (version: 147, saved: 2022-07-10 14:47:09)
 #
 ---
 structure:
@@ -13,6 +13,32 @@ structure:
           next:
             - interaction.s7_geralt_confronts: Input
         
+        in.merchant_actionseq_test:
+          ".editor": [ 1446.0, 437.0 ]
+          next:
+            - changelayers.show_merchant_reunited
+        
+        subsegment.demons_glossary2:
+          ".editor":
+            pos: [ 1300.0, 200.0 ]
+            in: [ In ]
+            out: [ Out ]
+          segment: demons_glossary2
+          next:
+            - waituntil.merchant_alive_branch
+        
+        scene.merchants_greeting_each_other:
+          ".editor":
+            pos: [ 2300.0, 200.0 ]
+            in: [ Input ]
+            out: [ Output ]
+          scene: s8_merchant_reunited.yml
+          placement: novigrad/sp_merchant
+          interruptable: true
+          _fadein: false
+          next.Output:
+            - spawn.merchant_walks_back
+        
         interaction.s7_geralt_confronts:
           ".editor":
             pos: [ 300.0, 150.0 ]
@@ -23,9 +49,169 @@ structure:
           interruptable: true
           actor: [ dmnq_black_cat, dmnq_black_dog ]
           next.Output:
-            - out
+            - objective.confronted_the_demons: Success
         
-        out:
+        interaction.talk_and_buy:
+          ".editor":
+            pos: [ 3100.0, 200.0 ]
+            in: [ Input ]
+            out: [ Output ]
+          scene: s9_merchant_selling.yml
+          interruptable: true
+          actor: [ dmnq_merchant ]
+          next.Output:
+            - reward.merchant_thanks_reward
+        
+        waituntil.arrived_at_base_ap:
+          entered: [ novigrad/area_merchant_selling, dmnq_merchant ]
+          ".editor":
+            pos: [ 2700.0, 200.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - spawn.selling_schedule
+        
+        waituntil.entered_reunited_area:
+          entered: [ novigrad/area_merchant_reunited, PLAYER ]
+          ".editor":
+            pos: [ 2100.0, 250.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - scene.merchants_greeting_each_other: Input
+            - journal.merchant_alive: Activate
+        
+        waituntil.merchant_alive_branch:
+          ".editor":
+            pos: [ 1500.0, 200.0 ]
+            hint: named
+            in: [ In ]
+            out: [ "false", "true" ]
+          conditions:
+            "true":
+              factdb: [ DMNQ_fistfight_result, "=", 0 ]
+            "false":
+              factdb: [ DMNQ_fistfight_result, "=", 1 ]
+          next.false:
+            - out.Out1
+          next.true:
+            - changelayers.show_merchant_reunited
+        
+        changelayers.show_merchant_reunited:
+          ".editor":
+            pos: [ 1700.0, 250.0 ]
+            hint: show-only
+            in: []
+            out: []
+          sync: true
+          purge: false
+          world: novigrad
+          show:
+            - layer_merchant_reunited
+          next:
+            - spawn.spawn_merchant_reunited_wait
+        
+        spawn.merchant_walks_back:
+          ".editor":
+            pos: [ 2500.0, 200.0 ]
+            hint: spawn-only
+            in: []
+            out: []
+          phase: reunited_greet_phase
+          spawnsets:
+            - merchant_community
+          next:
+            - waituntil.arrived_at_base_ap
+        
+        spawn.selling_schedule:
+          ".editor":
+            pos: [ 2900.0, 200.0 ]
+            hint: spawn-only
+            in: []
+            out: []
+          phase: reunited_selling_phase
+          spawnsets:
+            - merchant_community
+          next:
+            - interaction.talk_and_buy: Input
+        
+        spawn.spawn_merchant_reunited_wait:
+          ".editor":
+            pos: [ 1900.0, 250.0 ]
+            hint: spawn-only
+            in: []
+            out: []
+          phase: reunited_waiting_phase
+          spawnsets:
+            - merchant_community
+          next:
+            - waituntil.entered_reunited_area
+        
+        journal.finale_with_amulet:
+          ".editor": [ 700.0, 100.0 ]
+          entry: quests/trial8/5_demons_finale_with_amulet
+          notify: true
+          next:
+            - reward.xp_and_useless_sword
+        
+        journal.finale_without_amulet:
+          ".editor": [ 700.0, 200.0 ]
+          entry: quests/trial8/5_demons_finale_without_amulet
+          notify: true
+          next:
+            - reward.just_xp
+        
+        journal.merchant_alive:
+          ".editor": [ 2300.0, 300.0 ]
+          entry: quests/trial8/6_merchant_alive_and_found
+          notify: true
+          next: ".done"
+        
+        objective.confronted_the_demons:
           ".editor": [ 500.0, 150.0 ]
+          objective: trial8/epilogue/confront_demons
+          notify: true
+          track: false
+          next:
+            - journal.finale_with_amulet: Activate
+            - journal.finale_without_amulet: Activate
+        
+        questoutcome.quest_outcome:
+          ".editor": [ 1100.0, 200.0 ]
+          quest: trial8
+          notify: true
+          next:
+            - subsegment.demons_glossary2
+        
+        reward.just_xp:
+          ".editor": [ 900.0, 200.0 ]
+          reward: dmnq_reward_stub_66xp
+          next:
+            - questoutcome.quest_outcome: Success
+        
+        reward.merchant_thanks_reward:
+          ".editor": [ 3300.0, 200.0 ]
+          reward: dmnq_reward_stub_merchant_alive
+          next:
+            - reward.spell_translation
+        
+        reward.spell_translation:
+          ".editor": [ 3500.0, 200.0 ]
+          reward: dmnq_reward_stub_translation
+          next:
+            - out.Out2
+        
+        reward.xp_and_useless_sword:
+          ".editor": [ 900.0, 100.0 ]
+          reward: dmnq_reward_stub_66xp_sword
+          next:
+            - questoutcome.quest_outcome: Success
+        
+        out.Out1:
+          ".editor": [ 1700.0, 150.0 ]
+          next: ".done"
+        
+        out.Out2:
+          ".editor": [ 3700.0, 200.0 ]
           next: ".done"
         

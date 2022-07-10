@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: init
 # 
-# (version: 131, saved: 2022-06-07 23:33:40)
+# (version: 147, saved: 2022-07-10 14:47:09)
 #
 ---
 structure:
@@ -29,6 +29,7 @@ structure:
             - layer_ritual_no
           hide:
             - layer_ritual_yes
+            - layer_merchant_reunited
           next:
             - despawn.despawn_all_communities
         

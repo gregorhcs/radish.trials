@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: fetching_the_amulet
 # 
-# (version: 131, saved: 2022-06-07 23:33:40)
+# (version: 147, saved: 2022-07-10 14:47:09)
 #
 ---
 structure:
@@ -103,7 +103,7 @@ structure:
         
         waituntil.fight_progress:
           ".editor":
-            pos: [ 2107.0, 541.0 ]
+            pos: [ 2361.0, 427.0 ]
             hint: named
             in: [ In ]
             out: [ loot, start ]
@@ -262,10 +262,11 @@ structure:
             "false":
               factdb: [ DMNQ_took_amulet, "=", 0 ]
           next.false:
-            - objective.bringback_lies_success: Success
             - objective.bringback_amulet: Deactivate
+            - journal.broughtnot_amulet: Activate
           next.true:
             - objective.bringback_amulet: Success
+            - journal.brought_amulet: Activate
         
         script.merchant_friendly:
           ".editor":
@@ -365,6 +366,19 @@ structure:
           next:
             - changelayers.hide_merchant_layer
         
+        journal.brought_amulet:
+          ".editor": [ 2080.0, 553.0 ]
+          entry: quests/trial8/3_demons_task2_with_amulet
+          notify: true
+          next: ".done"
+        
+        journal.broughtnot_amulet:
+          ".editor": [ 2079.0, 493.0 ]
+          entry: quests/trial8/5_demons_finale_without_amulet
+          notify: true
+          next:
+            - objective.bringback_lies_success: Success
+        
         journal.qjournal_merchant_alive:
           ".editor": [ 1304.0, 352.0 ]
           entry: quests/trial8/2b_merchant_alive
@@ -395,7 +409,7 @@ structure:
             - waituntil.chatty_merchant_conditions
         
         objective.bringback_lies_success:
-          ".editor": [ 1989.0, 541.0 ]
+          ".editor": [ 2236.0, 426.0 ]
           objective: trial8/get_amulet/bringback_lies
           notify: true
           track: false
@@ -410,7 +424,7 @@ structure:
           next: ".done"
         
         objective.fight_merchant_deact:
-          ".editor": [ 2225.0, 567.0 ]
+          ".editor": [ 2494.0, 465.0 ]
           objective: trial8/get_amulet/fight_merchant
           notify: true
           track: false
@@ -439,7 +453,7 @@ structure:
             - despawn.merchant_despawn
         
         objective.loot_amulet_deact:
-          ".editor": [ 2224.0, 512.0 ]
+          ".editor": [ 2493.0, 397.0 ]
           objective: trial8/get_amulet/loot_amulet
           notify: true
           track: false

@@ -1,0 +1,61 @@
+Scene 1
+-------
+
+Geralt: determined high
+Merchant: high
+
+shot_01_geralt_entering_1_enter
+	from merchant perspective
+	merchant kneeling
+
+shot_02_merchant_standing_up
+	from geralt perspective
+
+shot_03_merchant_greeting
+
+shot_04_geralt_headshake_whatsup
+
+shot_05_merchant_lengthy_self_intro_a (nod)
+shot_05_merchant_lengthy_self_intro_b ()
+shot_05_merchant_lengthy_self_intro_c
+shot_05_merchant_lengthy_self_intro_d
+shot_05_merchant_lengthy_self_intro_e
+	explaining
+	looking around
+	smiling nervously
+	gesture towards wagon
+	proud
+
+shot_06_geralt_look_at_wagon
+
+shot_07_merchant_chuckle
+
+shot_08_geralt_stick_to_point
+	breaks off with hand
+	annoyed
+
+shot_09_merchant_drawn_to_villa
+	nervous chuckle
+	avoiding eyes
+	nervous hand gesture
+	catastrophe theatralic
+
+silence
+
+shot_10_what_holds_you
+	nothing good gesture
+
+shot_11_merchant_want_vanilla_loot
+	calmer
+	smiling
+	small laugh
+	suggestive
+
+shot_12_geralt_will_look_into
+	to himself
+	gesture with hand
+
+shot_13_both_inhabitants
+	noret: numb, confused look.
+	geralt: shakes his head
+

@@ -1,7 +1,7 @@
 #
 # quest structure root segment
 # 
-# (version: 131, saved: 2022-06-07 23:33:40)
+# (version: 147, saved: 2022-07-10 14:47:09)
 #
 ---
 structure:
@@ -15,10 +15,10 @@ structure:
       subsegment.ending_and_epilogue:
         ".editor":
           pos: [ 1100.0, 250.0 ]
-          in: [ In ]
-          out: [ Out ]
+          in: [ In, merchant_actionseq_test ]
+          out: [ Out1, Out2 ]
         segment: ending_and_epilogue
-        next:
+        next.Out2:
           - end
       
       subsegment.fetching_the_amulet:
@@ -55,7 +55,7 @@ structure:
           out: [ Out ]
         segment: init
         next:
-          - changelayers.show_ritual_layer
+          - spawn.spawn_merchant
       
       subsegment.wait_start_conditions:
         ".editor":
@@ -104,16 +104,17 @@ structure:
       
       script.highlight_pebbles:
         ".editor":
-          pos: [ 605.0, 416.0 ]
+          pos: [ 552.0, 513.0 ]
           in: [ In ]
           out: [ Out ]
         function: DMNQ_FocusSetHighlight
         parameter:
           - tag: cname_dmnq_pebble
           - highlightType: FMV_Clue
-          - overrideCustomLogic: false
+          - overrideCustomLogic: true
         next:
           - subsegment.find_iris_wraiths
+          - subsegment.ending_and_epilogue: merchant_actionseq_test
       
       script.new_logmsg:
         ".editor":
@@ -177,7 +178,7 @@ structure:
       
       changelayers.show_ritual_layer:
         ".editor":
-          pos: [ 444.0, 416.0 ]
+          pos: [ 408.0, 515.0 ]
           hint: both
           in: []
           out: []
@@ -190,6 +191,43 @@ structure:
           - layer_ritual_no
         next:
           - script.highlight_pebbles
+      
+      changelayers.show_test_layer:
+        ".editor":
+          pos: [ 208.0, 619.0 ]
+          hint: show-only
+          in: []
+          out: []
+        sync: true
+        purge: false
+        world: novigrad
+        show:
+          - layer_test
+        next:
+          - spawn.test_community_spawn
+      
+      spawn.spawn_merchant:
+        ".editor":
+          pos: [ 261.7937011719, 381.6825256348 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: devastated_at_roadside_phase
+        spawnsets:
+          - merchant_community
+        next:
+          - subsegment.hook_and_task1
+      
+      spawn.test_community_spawn:
+        ".editor":
+          pos: [ 339.0, 620.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: phase1
+        spawnsets:
+          - test_community
+        next: ".done"
       
       reward.amulet:
         ".editor": [ 296.0, -59.0 ]

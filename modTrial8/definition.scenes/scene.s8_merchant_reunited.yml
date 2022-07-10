@@ -1,0 +1,47 @@
+repository:
+  actors:
+    merchant:
+      template: "dlc/ep1/data/characters/npc_entities/secondary_npc/ofir_merchant_mq6001.w2ent"
+      appearance:
+        - "t2i_01_ma__merchant"
+
+  actor.poses:
+    pose_0_high_standing_determined_idle:
+      idle_anim: "high_standing_determined_idle"
+
+production:
+  settings:
+    sceneid: 1
+    strings-idspace: 1410
+    strings-idstart: 750
+
+  gameplay: true
+
+  assets:
+    actors:
+      geralt:
+        repo: "geralt"
+        by_voicetag: true
+        tags: [ "PLAYER" ]
+
+      merchant:
+        repo: "merchant"
+        by_voicetag: false
+        tags: [ "dmnq_merchant" ]
+
+dialogscript:
+  player: "geralt"
+  actors: [ "geralt", "merchant" ]
+
+  section_start:
+    - PAUSE: 0.0
+    - NEXT: section_storyboard_ui
+
+  section_storyboard_ui:
+    - merchant: "What a joy to be back!"
+    - PAUSE: 5.0
+    - merchant: "I really should enjoy life more, see the world, dive into adventures!"
+    - NEXT: section_exit
+
+  section_exit:
+    - EXIT

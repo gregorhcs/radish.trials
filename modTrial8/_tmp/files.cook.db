@@ -1,6 +1,48 @@
 {
     "files": [
         {
+            "path": "gameplay\\trees\\scripted_actions\\action_sequence.w2behtree",
+            "level": 3,
+            "additional": 1,
+            "id": "3C103E22-977AC89C-8AB8A7AF-94492721",
+            "hardImports": 2
+        },
+        {
+            "path": "gameplay\\trees\\scripted_actions\\hands_behind_back_overlay.w2behtree",
+            "level": 3,
+            "additional": 1,
+            "id": "2C059015-17A98410-2DFD476B-EA07E64A",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\scripted_actions\\loop.w2behtree",
+            "level": 3,
+            "additional": 1,
+            "id": "75691157-ACEAD8AF-D9F7489C-02B4C8BE",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\scripted_actions\\move_to.w2behtree",
+            "level": 3,
+            "additional": 1,
+            "id": "CF903034-DB7716AB-737EE18A-A343EBD1",
+            "hardImports": 2
+        },
+        {
+            "path": "gameplay\\trees\\scripted_actions\\play_voice_set.w2behtree",
+            "level": 3,
+            "additional": 1,
+            "id": "9CA707CD-8AC97101-9FA3D35F-DA491050",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\trees\\scripted_actions\\rotate_towards.w2behtree",
+            "level": 3,
+            "additional": 1,
+            "id": "36E3B9FF-52EA4012-724D4AD0-65BC5E2D",
+            "hardImports": 2
+        },
+        {
             "path": "dlc\\bob\\data\\environment\\decorations\\gameplay\\generic\\stone\\stone_ornaments\\gen_stone_planter_ground_a.w2ent",
             "level": 2,
             "additional": 1,
@@ -13,6 +55,18 @@
             "class": "CQuestPhase",
             "seed": 1,
             "id": "BD86773F-84CE8999-6359AD7C-066A5F8B",
+            "diskSize": 1466,
+            "hardImports": 1,
+            "soft": [
+                "91D24564-DB7B4303-DFB47966-17C2AE53"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\demons_glossary2.w2phase",
+            "level": 2,
+            "class": "CQuestPhase",
+            "seed": 1,
+            "id": "D8189596-6A91BEA2-968AAF20-85A434CD",
             "diskSize": 1466,
             "hardImports": 1,
             "soft": [
@@ -39,12 +93,38 @@
             "class": "CCommunity",
             "seed": 1,
             "id": "91176833-6CF76717-423D2601-751D88E7",
-            "diskSize": 3411,
+            "diskSize": 7505,
             "hardImports": 1,
             "softImports": 1,
+            "hard": [
+                "3C103E22-977AC89C-8AB8A7AF-94492721",
+                "CF903034-DB7716AB-737EE18A-A343EBD1",
+                "36E3B9FF-52EA4012-724D4AD0-65BC5E2D"
+            ],
             "soft": [
                 "A478D60A-0BB71B86-CDF31877-1752C35E",
                 "EC4A34E1-CF818A4C-C7A857D7-266D3C42"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\spawnsets\\test_community.w2comm",
+            "level": 2,
+            "class": "CCommunity",
+            "seed": 1,
+            "id": "10C8E8B1-F8DF2732-73D81B75-E0BBEDD5",
+            "diskSize": 3506,
+            "hardImports": 1,
+            "softImports": 1,
+            "hard": [
+                "3C103E22-977AC89C-8AB8A7AF-94492721",
+                "2C059015-17A98410-2DFD476B-EA07E64A",
+                "75691157-ACEAD8AF-D9F7489C-02B4C8BE",
+                "CF903034-DB7716AB-737EE18A-A343EBD1",
+                "9CA707CD-8AC97101-9FA3D35F-DA491050",
+                "36E3B9FF-52EA4012-724D4AD0-65BC5E2D"
+            ],
+            "soft": [
+                "999D60E4-658F85C2-4428542F-E6FE3267"
             ]
         },
         {
@@ -53,7 +133,7 @@
             "class": "CCommunity",
             "seed": 1,
             "id": "EA19EE35-4DC41394-DBC6ADF2-8657AC2E",
-            "diskSize": 3163,
+            "diskSize": 3851,
             "hardImports": 1,
             "softImports": 1,
             "soft": [
@@ -66,7 +146,7 @@
             "class": "CCommunity",
             "seed": 1,
             "id": "8067B1AC-8B14C76C-CB75136D-8AF055B8",
-            "diskSize": 2505,
+            "diskSize": 3205,
             "hardImports": 1,
             "softImports": 1,
             "soft": [
@@ -760,12 +840,14 @@
             "class": "CQuest",
             "seed": 1,
             "id": "7A67E6B7-F3E52C95-7F500C7C-43CDE036",
-            "diskSize": 55048,
+            "diskSize": 67270,
             "hardImports": 1,
             "hard": [
                 "BD86773F-84CE8999-6359AD7C-066A5F8B",
+                "D8189596-6A91BEA2-968AAF20-85A434CD",
                 "18B19BE4-39E0D41C-76EB9081-607ED3C1",
                 "91176833-6CF76717-423D2601-751D88E7",
+                "10C8E8B1-F8DF2732-73D81B75-E0BBEDD5",
                 "EA19EE35-4DC41394-DBC6ADF2-8657AC2E",
                 "8067B1AC-8B14C76C-CB75136D-8AF055B8"
             ],
@@ -779,8 +861,11 @@
                 "5D8AF7FC-4D206E1C-7F6CFCF8-6BD3A4CD",
                 "6D966CF4-0253ED9F-D3C1C3BA-8B327A9B",
                 "A5CE06A1-BB613701-58DD9BF3-EE9C155B",
+                "23CA7F89-06BBFE99-EF50D06A-1E31263F",
+                "0427810F-4D907DA7-4824EB14-F8F06CF7",
                 "18B19BE4-39E0D41C-76EB9081-607ED3C1",
                 "91176833-6CF76717-423D2601-751D88E7",
+                "10C8E8B1-F8DF2732-73D81B75-E0BBEDD5",
                 "EA19EE35-4DC41394-DBC6ADF2-8657AC2E",
                 "8067B1AC-8B14C76C-CB75136D-8AF055B8",
                 "FA044B86-A027D292-68BEA2A3-1213711C",
@@ -841,7 +926,8 @@
             "level": 1,
             "additional": 1,
             "id": "D08434E4-977A2FAB-6B2D0F90-FA0DD91A",
-            "hardImports": 1
+            "hardImports": 1,
+            "softImports": 2
         },
         {
             "path": "dlc\\ep1\\data\\gameplay\\behaviors\\npc\\behaviorgraph\\monster_iris_combat.w2beh",
@@ -883,6 +969,13 @@
             "level": 1,
             "additional": 1,
             "id": "F8CD09F8-13DFB2AC-740BCB8E-CA877748",
+            "hardImports": 1
+        },
+        {
+            "path": "environment\\decorations\\decoration_sets\\ornaments\\decoration_set_ornamets_skull_b.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "FF72EF8E-DCA358BF-F9E268BF-566DC2E0",
             "hardImports": 1
         },
         {
@@ -1002,13 +1095,34 @@
             "level": 1,
             "additional": 1,
             "id": "BD50B936-27079185-7E5012A4-567A25DD",
-            "hardImports": 1
+            "hardImports": 2
         },
         {
             "path": "gameplay\\community\\actionpoints\\monsters\\noonwraith_spin_jt.w2job",
             "level": 1,
             "additional": 1,
             "id": "5088897F-39E5E86A-E1787716-8697682D",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\quest\\q505_emhyr_lost_in_thoughts.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "13CCE9FE-A4D3F043-6764B056-EFA76537",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\resting\\sit_m_meditate_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "F2C0809C-5810CAB6-CEAA97D5-68890B19",
+            "hardImports": 1
+        },
+        {
+            "path": "gameplay\\community\\actionpoints\\work\\kneel_md_hammering_jt.w2job",
+            "level": 1,
+            "additional": 1,
+            "id": "8E0548F2-49235E11-D5AAAF99-4018047E",
             "hardImports": 1
         },
         {
@@ -1257,10 +1371,24 @@
             "hardImports": 1
         },
         {
+            "path": "living_world\\custom_events\\nml\\greyrocks\\gr29_pontar_bridge\\cont_lw_gr29_sack.w2ent",
+            "level": 1,
+            "additional": 1,
+            "id": "F2B61FA5-601E0D7D-719BF8AD-D44883F0",
+            "hardImports": 1
+        },
+        {
             "path": "characters\\npc_entities\\animals\\horse\\horse_background_no_saddle.w2ent",
             "level": 0,
             "additional": 1,
             "id": "A478D60A-0BB71B86-CDF31877-1752C35E",
+            "softImports": 1
+        },
+        {
+            "path": "characters\\npc_entities\\main_npc\\vesemir.w2ent",
+            "level": 0,
+            "additional": 1,
+            "id": "999D60E4-658F85C2-4428542F-E6FE3267",
             "softImports": 1
         },
         {
@@ -1307,7 +1435,7 @@
             "class": "CEntityTemplate",
             "seed": 1,
             "id": "EC4A34E1-CF818A4C-C7A857D7-266D3C42",
-            "diskSize": 118868,
+            "diskSize": 118906,
             "softImports": 1,
             "hard": [
                 "F48764A3-D860DC48-53175D59-4919F8DA",
@@ -1480,10 +1608,10 @@
             "class": "CStoryScene",
             "seed": 1,
             "id": "1F4F4861-08ED1754-E84569FC-E0D64D42",
-            "diskSize": 7262,
+            "diskSize": 26208,
             "softImports": 1,
             "soft": [
-                "8DF8C190-D644D1A3-7EA50454-DD2E8EB3",
+                "D08434E4-977A2FAB-6B2D0F90-FA0DD91A",
                 "90DB9D66-1F7513D5-96AB23A4-766415AB"
             ]
         },
@@ -1591,6 +1719,32 @@
             ]
         },
         {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s8_merchant_reunited.w2scene",
+            "level": 0,
+            "class": "CStoryScene",
+            "seed": 1,
+            "id": "23CA7F89-06BBFE99-EF50D06A-1E31263F",
+            "diskSize": 3103,
+            "softImports": 1,
+            "soft": [
+                "D08434E4-977A2FAB-6B2D0F90-FA0DD91A",
+                "90DB9D66-1F7513D5-96AB23A4-766415AB"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s9_merchant_selling.w2scene",
+            "level": 0,
+            "class": "CStoryScene",
+            "seed": 1,
+            "id": "0427810F-4D907DA7-4824EB14-F8F06CF7",
+            "diskSize": 7262,
+            "softImports": 1,
+            "soft": [
+                "8DF8C190-D644D1A3-7EA50454-DD2E8EB3",
+                "90DB9D66-1F7513D5-96AB23A4-766415AB"
+            ]
+        },
+        {
             "path": "dlc\\dlctrial8\\dlctrial8.reddlc",
             "level": 0,
             "class": "CDLCDefinition",
@@ -1617,7 +1771,7 @@
             "seed": 1,
             "id": "91D24564-DB7B4303-DFB47966-17C2AE53",
             "diskSize": 1082,
-            "softImports": 1
+            "softImports": 2
         },
         {
             "path": "dlc\\dlctrial8\\journal\\quests\\questgroup_trial8.journal",
@@ -1723,12 +1877,40 @@
             ]
         },
         {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_merchant_reunited\\actionpoints.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "CB5E526A-4E8712F1-C714CD79-6D02B051",
+            "diskSize": 2560,
+            "hard": [
+                "BD50B936-27079185-7E5012A4-567A25DD",
+                "13CCE9FE-A4D3F043-6764B056-EFA76537"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_merchant_reunited\\areas.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "DE304FC0-0A12EDD4-19DD05FE-6F2BB880",
+            "diskSize": 3449
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_merchant_reunited\\waypoints.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "75587859-C102668A-14296D84-ADC82448",
+            "diskSize": 1053
+        },
+        {
             "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual\\actionpoints.w2l",
             "level": 0,
             "class": "CLayer",
             "seed": 1,
             "id": "7258EB3A-34EED265-9EEB649F-C26FADDD",
-            "diskSize": 2321,
+            "diskSize": 3437,
             "hard": [
                 "5088897F-39E5E86A-E1787716-8697682D"
             ]
@@ -1763,7 +1945,23 @@
             "class": "CLayer",
             "seed": 1,
             "id": "F6B6C97E-82C0C1C8-9E771C60-495A7053",
-            "diskSize": 1001
+            "diskSize": 1013
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual\\static.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "785D7BF6-253DC200-C55A24B5-4C77FB10",
+            "diskSize": 3300,
+            "hard": [
+                "FF72EF8E-DCA358BF-F9E268BF-566DC2E0",
+                "F2B61FA5-601E0D7D-719BF8AD-D44883F0"
+            ],
+            "soft": [
+                "19B6D918-A6421F91-8C73D7DE-1ADB16C4",
+                "7E238805-2959523C-12EB1EAF-D1DD701A"
+            ]
         },
         {
             "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual_no\\interactive_entities.w2l",
@@ -1789,12 +1987,32 @@
             ]
         },
         {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_test\\actionpoints.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "698C218C-5ECE0DD0-0683377B-421E5AE9",
+            "diskSize": 1875,
+            "hard": [
+                "F2C0809C-5810CAB6-CEAA97D5-68890B19",
+                "8E0548F2-49235E11-D5AAAF99-4018047E"
+            ]
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_test\\waypoints.w2l",
+            "level": 0,
+            "class": "CLayer",
+            "seed": 1,
+            "id": "8AF7DE84-BAF9A271-7DE67BB0-FC4424A0",
+            "diskSize": 1357
+        },
+        {
             "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\radish_dbg\\radish_dbginfo.w2l",
             "level": 0,
             "class": "CLayer",
             "seed": 1,
             "id": "0C202CFE-F7586583-6EDEA2AD-8B59DB9F",
-            "diskSize": 7408
+            "diskSize": 13625
         },
         {
             "path": "dlc\\ep1\\data\\characters\\npc_entities\\animals\\demonic_cat.w2ent",
@@ -1818,10 +2036,24 @@
             "softImports": 2
         },
         {
+            "path": "environment\\decorations\\corpses\\dear_skull\\dear_skull.w2mesh",
+            "level": 0,
+            "additional": 1,
+            "id": "19B6D918-A6421F91-8C73D7DE-1ADB16C4",
+            "softImports": 1
+        },
+        {
             "path": "environment\\decorations\\trade\\goods_carriage\\goods_carriage_closed.w2mesh",
             "level": 0,
             "additional": 1,
             "id": "30A8838D-9FEDAA63-E5364C83-57AD84BE",
+            "softImports": 1
+        },
+        {
+            "path": "environment\\decorations\\votive\\hanging_skulls\\trophy_shield.w2mesh",
+            "level": 0,
+            "additional": 1,
+            "id": "7E238805-2959523C-12EB1EAF-D1DD701A",
             "softImports": 1
         },
         {
@@ -1857,7 +2089,7 @@
             "level": 0,
             "additional": 1,
             "id": "90DB9D66-1F7513D5-96AB23A4-766415AB",
-            "softImports": 9
+            "softImports": 11
         }
     ]
 }

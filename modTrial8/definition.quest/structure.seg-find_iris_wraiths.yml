@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: find_iris_wraiths
 # 
-# (version: 131, saved: 2022-06-07 23:33:40)
+# (version: 147, saved: 2022-07-10 14:47:09)
 #
 ---
 structure:
@@ -260,10 +260,11 @@ structure:
         waituntil.wraiths_dead:
           factdb: [ DMNQ_living_wraiths, "=", 0 ]
           ".editor":
-            pos: [ 542.0, 303.0 ]
+            pos: [ 519.0, 312.0 ]
             in: [ In ]
             out: [ Out ]
           next:
+            - reward.wraiths_dead_reward
             - objective.kill_wraiths: Success
         
         spawn.wraiths_base_spawn:
@@ -294,10 +295,17 @@ structure:
           entry: creatures/iris_shadow_wraith/shadow_found
           notify: true
           next:
+            - journal.what_this_place_is: Activate
+        
+        journal.what_this_place_is:
+          ".editor": [ 1063.0, 135.0 ]
+          entry: quests/trial8/4_solved_magic_place
+          notify: true
+          next:
             - objective.confront_demons: Activate
         
         objective.confront_demons:
-          ".editor": [ 1034.0, 137.0 ]
+          ".editor": [ 1197.0, 138.0 ]
           objective: trial8/epilogue/confront_demons
           notify: true
           track: true
@@ -312,7 +320,7 @@ structure:
           next: ".done"
         
         objective.kill_wraiths:
-          ".editor": [ 662.0, 301.0 ]
+          ".editor": [ 678.0, 303.0 ]
           objective: trial8/find_iris_wraiths/kill_wraiths
           notify: true
           track: false
@@ -368,7 +376,12 @@ structure:
           next:
             - waituntil.entered_area_ritual1
         
+        reward.wraiths_dead_reward:
+          ".editor": [ 519.0, 369.0 ]
+          reward: dmnq_reward_stub_5xp
+          next: ".done"
+        
         out:
-          ".editor": [ 1158.0, 136.0 ]
+          ".editor": [ 1354.0, 135.0 ]
           next: ".done"
         

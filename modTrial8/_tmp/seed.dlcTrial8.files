@@ -76,11 +76,23 @@
             "bundle": "blob"
         },
         {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s8_merchant_reunited.w2scene",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\scenes\\s9_merchant_selling.w2scene",
+            "bundle": "blob"
+        },
+        {
             "path": "dlc\\dlctrial8\\data\\spawnsets\\demon_community.w2comm",
             "bundle": "blob"
         },
         {
             "path": "dlc\\dlctrial8\\data\\spawnsets\\merchant_community.w2comm",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\data\\spawnsets\\test_community.w2comm",
             "bundle": "blob"
         },
         {
@@ -151,6 +163,18 @@
             "bundle": "blob"
         },
         {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_merchant_reunited\\actionpoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_merchant_reunited\\areas.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_merchant_reunited\\waypoints.w2l",
+            "bundle": "blob"
+        },
+        {
             "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual\\actionpoints.w2l",
             "bundle": "blob"
         },
@@ -171,11 +195,23 @@
             "bundle": "blob"
         },
         {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual\\static.w2l",
+            "bundle": "blob"
+        },
+        {
             "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual_no\\interactive_entities.w2l",
             "bundle": "blob"
         },
         {
             "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_ritual_yes\\interactive_entities.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_test\\actionpoints.w2l",
+            "bundle": "blob"
+        },
+        {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_test\\waypoints.w2l",
             "bundle": "blob"
         },
         {

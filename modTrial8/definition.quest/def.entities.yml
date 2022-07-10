@@ -15,6 +15,13 @@ entities:
       displayName: "Ofieri Merchant"
       tags: [dmnq_merchant]
       level: 1
+      #components:
+      #  - ".type": CStorySceneComponent
+      #    name: "voiceset_dmnq_merchant"
+      #    storyScene: dlc/dlctrial8/data/scenes/geralt_vset.w2scene
+
+    usedAppearances:
+      - t2i_01_ma__merchant
 
     templateParams:  
       - ".type": CInventoryDefinition

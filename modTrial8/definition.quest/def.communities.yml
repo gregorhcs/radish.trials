@@ -13,7 +13,7 @@ communities:
 
       horse:
         template: characters/npc_entities/animals/horse/horse_background_no_saddle.w2ent
-        appearances: [horse_background_01,horse_background_02,horse_background_03,horse_background_04]
+        appearances: [horse_background_03]
         tags: [dmnq_horse]
 
     phases:
@@ -35,6 +35,73 @@ communities:
           actionpoints:
             "00:00": novigrad/ap_horse_eating_grass
 
+      reunited_waiting_phase:
+
+        merchant:
+          appearance: ofir_merchant_mq6001
+          start_in_ap: true
+          use_last_ap: false
+          attitude: friendly_to_player
+          actionpoints:
+            "00:00": novigrad/ap_merchant_talking_to_other
+
+        horse:
+          start_in_ap: true
+          use_last_ap: false
+          attitude: friendly_to_player
+          actionpoints:
+            "00:00": novigrad/ap_horse_eating_grass_camp
+
+      reunited_greet_phase:
+
+        merchant:
+          appearance: ofir_merchant_mq6001
+          start_in_ap: false
+          use_last_ap: false
+          attitude: friendly_to_player
+          actionpoints:
+            "00:00": novigrad/ap_merchant_talking_to_other
+
+          idleAI:
+            class: CSpawnTreeInitializerStartingBehavior
+            idletree:
+              .type: CAIActionSequence
+              actions:
+                #- .type: CAIHandsBehindBackOverlayActionTree  # T-Pose, probably entity-specific
+                #  duration: 7.5
+                - .type: CAIMoveToAction
+                  params:
+                      .type: CAIMoveToParams
+                      targetTag: novigrad/wp_merchant_selling
+                      rotateAfterwards: true
+                - .type: CAIRotateToAction
+                  targetTag: PLAYER
+                  keepRotating: true
+
+        horse:
+          start_in_ap: false
+          use_last_ap: false
+          attitude: friendly_to_player
+          actionpoints:
+            "00:00": novigrad/ap_horse_eating_grass_camp
+
+
+      reunited_selling_phase:
+
+        merchant:
+          appearance: ofir_merchant_mq6001
+          start_in_ap: false
+          use_last_ap: false
+          attitude: friendly_to_player
+          actionpoints:
+            "00:00": novigrad/ap_merchant_selling
+
+        horse:
+          start_in_ap: false
+          use_last_ap: false
+          attitude: friendly_to_player
+          actionpoints:
+            "00:00": novigrad/ap_horse_eating_grass_camp
 
   # --------------- demon community----------------------
   # -----------------------------------------------------
@@ -81,11 +148,15 @@ communities:
 
       wraith1:
         template: C_DMNQ_IrisWraith:DMNQ_iris_shadow_wraith
-        tags: [dmnq_wraith1]
+        tags: [dmnq_wraith1, dmnq_wraith]
 
       wraith2:
         template: C_DMNQ_IrisWraith:DMNQ_iris_shadow_wraith
-        tags: [dmnq_wraith2]
+        tags: [dmnq_wraith2, dmnq_wraith]
+
+      wraith3:
+        template: C_DMNQ_IrisWraith:DMNQ_iris_shadow_wraith
+        tags: [dmnq_wraith3, dmnq_wraith]
 
     phases:
 
@@ -106,19 +177,6 @@ communities:
           guard: [ novigrad/area_ritual, 20.0 ]
           actionpoints:
             "00:00": novigrad/ap_wraith2
-        
-
-  wraith_community_extra:
-
-    actors:
-
-      wraith3:
-        template: C_DMNQ_IrisWraith:DMNQ_iris_shadow_wraith
-        tags: [dmnq_wraith3]
-
-    phases:
-
-      default:
 
         wraith3:
           use_last_ap: false
@@ -127,3 +185,103 @@ communities:
           guard: [ novigrad/area_ritual, 20.0 ]
           actionpoints:
             "00:00": novigrad/ap_wraith3
+        
+
+  wraith_community_extra:
+
+    actors:
+
+      wraith4:
+        template: C_DMNQ_IrisWraith:DMNQ_iris_shadow_wraith
+        tags: [dmnq_wraith4, dmnq_wraith]
+
+      wraith5:
+        template: C_DMNQ_IrisWraith:DMNQ_iris_shadow_wraith
+        tags: [dmnq_wraith5, dmnq_wraith]
+
+    phases:
+
+      default:
+
+        wraith4:
+          use_last_ap: false
+          start_in_ap: true
+          attitude: monsters
+          guard: [ novigrad/area_ritual, 20.0 ]
+          actionpoints:
+            "00:00": novigrad/ap_wraith_extra1
+
+        wraith5:
+          use_last_ap: false
+          start_in_ap: true
+          attitude: monsters
+          guard: [ novigrad/area_ritual, 20.0 ]
+          actionpoints:
+            "00:00": novigrad/ap_wraith_extra2
+
+
+  # ----------------- test community---------------------
+  # -----------------------------------------------------
+
+  test_community:
+
+    actors:
+
+      testor:
+        template: characters/npc_entities/main_npc/vesemir.w2ent
+        tags: [testor]
+
+    phases:
+
+      phase1:
+
+      #  testor:
+      #    start_in_ap: true
+      #    use_last_ap: false
+      #    attitude: friendly_to_player
+      #    actionpoints:
+      #      "00:00": novigrad/ap1
+
+      #phase2:
+
+        testor:
+          start_in_ap: false
+          use_last_ap: false
+          attitude: friendly_to_player
+          idleAI:
+            class: CSpawnTreeInitializerStartingBehavior
+            idletree:
+              .type: CAIActionSequence
+              actions:
+                - .type: CAIHandsBehindBackOverlayActionTree  # T-Pose, probably entity-specific
+                  duration: 7.5
+                - .type: CAIMoveToAction
+                  params:
+                      .type: CAIMoveToParams
+                      moveType: run
+                      targetTag: novigrad/wp1
+                      rotateAfterwards: true
+                - .type: CAIActionLoop
+                  loopCount: 3
+                  loopedAction:
+                    .type: CAIPlayVoiceSetAction
+                    voiceSet: warning
+                - .type: CAIMoveToAction
+                  params:
+                      .type: CAIMoveToParams
+                      moveType: run
+                      targetTag: novigrad/wp2
+                      rotateAfterwards: true
+                - .type: CAIRotateToAction
+                  targetTag: PLAYER
+                  keepRotating: true
+
+
+      #phase3:
+
+      #  testor:
+      #    start_in_ap: false
+      #    use_last_ap: false
+      #    attitude: friendly_to_player
+      #    actionpoints:
+      #      "00:00": novigrad/ap2

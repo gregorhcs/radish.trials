@@ -1,31 +1,167 @@
 repository:
+
   actors:
     geralt:
       template: "gameplay\\templates\\characters\\player\\player.w2ent"
 
-    ofir_enchanter:
-      template: "dlc\\ep1\\data\\characters\\npc_entities\\crowd_npc\\ofir_enchanter\\ofir_enchanter.w2ent"
-      appearance: [ "ofir_enchanter" ]
+    ofir_merchant_mq6001:
+      template: "dlc\\ep1\\data\\characters\\npc_entities\\secondary_npc\\ofir_merchant_mq6001.w2ent"
+      appearance: [ "ofir_merchant_mq6001" ]
 
   animations:
     anim_6970_high_standing_determined_calm_enter_frontal:
       animation: "high_standing_determined_calm_enter_frontal"
       frames: 253
 
-    anim_7420_low_kneeling_determined_idle:
-      animation: "low_kneeling_determined_idle"
-      frames: 542
+    anim_8889_man_work_crouch_02:
+      animation: "man_work_crouch_02"
+      frames: 150
+
+    anim_7025_high_standing_determined_gesture_greeting_geralt_02:
+      animation: "high_standing_determined_gesture_greeting_geralt_02"
+      frames: 90
+
+    anim_9111_man_work_sew_sails_standup:
+      animation: "man_work_sew_sails_standup"
+      frames: 112
+
+    anim_7027_high_standing_determined_gesture_greeting_geralt_04:
+      animation: "high_standing_determined_gesture_greeting_geralt_04"
+      frames: 91
+
+    anim_6735_add_reaction_shake_head_01:
+      animation: "add_reaction_shake_head_01"
+      frames: 110
+
+    anim_6730_add_reaction_agreeing_nod_01:
+      animation: "add_reaction_agreeing_nod_01"
+      frames: 92
+
+    anim_7318_high_standing_sad_to_high_standing_happy:
+      animation: "high_standing_sad_to_high_standing_happy"
+      frames: 131
+
+    anim_7181_high_standing_happy_gesture_explain_06:
+      animation: "high_standing_happy_gesture_explain_06"
+      frames: 142
+
+    anim_7174_high_standing_happy_gesture_acknowledge:
+      animation: "high_standing_happy_gesture_acknowledge"
+      frames: 72
+
+    anim_7149_high_standing_determined2_to_high_standing_determined:
+      animation: "high_standing_determined2_to_high_standing_determined"
+      frames: 95
+
+    anim_7185_high_standing_happy_gesture_point_left:
+      animation: "high_standing_happy_gesture_point_left"
+      frames: 154
+
+    anim_7067_high_standing_determined_gesture_shrug:
+      animation: "high_standing_determined_gesture_shrug"
+      frames: 83
+
+    anim_7197_high_standing_happy_to_high_standing_proud:
+      animation: "high_standing_happy_to_high_standing_proud"
+      frames: 120
+
+    anim_7238_high_standing_proud_gesture_question_02:
+      animation: "high_standing_proud_gesture_question_02"
+      frames: 119
+
+    anim_7011_high_standing_determined_gesture_do_it:
+      animation: "high_standing_determined_gesture_do_it"
+      frames: 95
+
+    anim_7119_high_standing_determined_to_high_standing_determined2:
+      animation: "high_standing_determined_to_high_standing_determined2"
+      frames: 111
+
+    anim_4111_high_standing_proud_to_high_standing_sad:
+      animation: "high_standing_proud_to_high_standing_sad"
+      frames: 265
+
+    anim_7303_high_standing_sad_gesture_describing_1:
+      animation: "high_standing_sad_gesture_describing_1"
+      frames: 140
+
+    anim_6702_add_gesture_explain_13:
+      animation: "add_gesture_explain_13"
+      frames: 183
+
+    anim_7308_high_standing_sad_gesture_headscratch:
+      animation: "high_standing_sad_gesture_headscratch"
+      frames: 211
+
+    anim_6737_add_reaction_sigh_01:
+      animation: "add_reaction_sigh_01"
+      frames: 83
+
+    anim_6727_add_reaction_afraid_01:
+      animation: "add_reaction_afraid_01"
+      frames: 109
+
+  animations.mimic:
+    mimicsanim_112_geralt_happiness_gesture_smile_face:
+      animation: "geralt_happiness_gesture_smile_face"
+      frames: 66
+
+    mimicsanim_165_geralt_reaction_irritation_face:
+      animation: "geralt_reaction_irritation_face"
+      frames: 200
+
+    mimicsanim_145_geralt_neutral_yes_long_face:
+      animation: "geralt_neutral_yes_long_face"
+      frames: 90
+
+    mimicsanim_129_geralt_neutral_gesture_sceptical_remark_face:
+      animation: "geralt_neutral_gesture_sceptical_remark_face"
+      frames: 110
+
+    mimicsanim_119_geralt_neutral_gesture_brows_up_face_nrml:
+      animation: "geralt_neutral_gesture_brows_up_face_nrml"
+      frames: 90
 
   actor.poses:
     pose_0_high_standing_determined_idle:
       idle_anim: "high_standing_determined_idle"
 
+    pose_2128_High_Standing2_Determined:
+      name: "Standing2"
+      emotional_state: "Determined"
+      status: "High"
+      idle_anim: "high_standing_determined2_idle"
+
+    pose_2127_High_Standing_Determined:
+      name: "Standing"
+      emotional_state: "Determined"
+      status: "High"
+      idle_anim: "high_standing_determined_idle"
+
+    pose_2140_High_Standing_Sad:
+      name: "Standing"
+      emotional_state: "Sad"
+      status: "High"
+      idle_anim: "high_standing_sad_idle"
+
+    pose_2138_High_Standing_Happy:
+      name: "Standing"
+      emotional_state: "Happy"
+      status: "High"
+      idle_anim: "high_standing_happy_idle"
+
+    pose_2139_High_Standing_Proud:
+      name: "Standing"
+      emotional_state: "Proud"
+      status: "High"
+      idle_anim: "high_standing_proud_idle"
+
   cameras:
-    cam_1_merchant:
+    cam_1_s1_01_geralt_entering_1_enter:
       fov: 40.0
       transform:
-        pos: [ 4.6649646759, -0.3455352783, 2.0862884521 ]
-        rot: [ 0.0, 341.3999938965, 94.2999267578 ]
+        pos: [ 0.5686035156, -1.2152099609, 0.4556198120 ]
+        rot: [ 0.0, 4.9999756813, 41.4422302246 ]
       zoom: 0.0
       dof:
         aperture: [ 28.2495002747, 1.2700699568 ]
@@ -36,13 +172,196 @@ repository:
         plane: "Medium"
         tags: [ "ext" ]
 
+    cam_3_s1_02_merchant_standing_up:
+      fov: 40.0
+      transform:
+        pos: [ -0.1735839844, 2.7485351563, 1.6806297302 ]
+        rot: [ 0.0, 356.0249328613, 170.3429565430 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_4_s1_03_merchant_greeting:
+      fov: 40.0
+      transform:
+        pos: [ 1.1496582031, 2.6336669922, 1.0806388855 ]
+        rot: [ 0.0, 6.1499295235, 134.6425628662 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_5_s1_04_geralt_headshake_whatsup:
+      fov: 40.0
+      transform:
+        pos: [ 1.0244140625, -0.2628173828, 1.5306282043 ]
+        rot: [ 0.0, 357.2749328613, 58.2673339844 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_6_s1_05_merchant_lengthy_self_intro_1_nod:
+      fov: 40.0
+      transform:
+        pos: [ -0.6972656250, 2.9439697266, 2.0806617737 ]
+        rot: [ 0.0, 344.9249267578, 178.9674072266 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_9_s1_05_merchant_lengthy_self_intro_2_looknervous:
+      fov: 40.0
+      transform:
+        pos: [ 0.0637207031, 1.1489257813, 1.6306800842 ]
+        rot: [ 0.0, 357.9249267578, 174.7675170898 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_10_s1_05_merchant_lengthy_self_intro_2_point:
+      fov: 40.0
+      transform:
+        pos: [ 0.4140625000, 2.7716064453, 1.7806663513 ]
+        rot: [ 0.0, 354.1748962402, 148.7924652100 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_12_s1_07_merchant_chuckle_1_toproud:
+      fov: 40.0
+      transform:
+        pos: [ -0.0358886719, 0.7821044922, 1.7556648254 ]
+        rot: [ 0.0, 346.0748901367, 173.6424102783 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_14_s1_08_geralt_stick_to_point:
+      fov: 40.0
+      transform:
+        pos: [ -0.2529296875, 0.8894042969, 1.7556648254 ]
+        rot: [ 0.0, 353.1249084473, 37.5925903320 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_15_s1_09_merchant_drawn_to_villa_1_poschange:
+      fov: 40.0
+      transform:
+        pos: [ 3.6450195313, 2.7836914063, 1.1556739807 ]
+        rot: [ 0.0, 359.4248962402, 114.5926208496 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_18_s1_11_merchant_want_vanilla_loot:
+      fov: 40.0
+      transform:
+        pos: [ -0.5590820313, 2.7614746094, 1.7056770325 ]
+        rot: [ 0.0, 351.1748962402, 176.4925994873 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_19_s1_12_geralt_will_look_into_1_sigh:
+      fov: 40.0
+      transform:
+        pos: [ 0.8330078125, -0.0266113281, 1.4806098938 ]
+        rot: [ 0.0, 352.4249267578, 64.5678710938 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_21_s1_13_both_inhabitants:
+      fov: 40.0
+      transform:
+        pos: [ -0.5104980469, 2.9074707031, 1.7056159973 ]
+        rot: [ 0.0, 352.1499023438, 175.6934204102 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+
+
 production:
+
   settings:
     sceneid: 1
     strings-idspace: 1410
     strings-idstart: 100
 
-  placement: "ofir enchanter"
+  placement: "trial8_novigrad_sp_merchant_sp"
     # INFO: world coordinates of used origin:
       #pos: [ 2217.8913574219, 1832.5705566406, 45.0325851440 ]
       #rot: [ 0.0, 135.4102935791, 0.0 ]
@@ -54,15 +373,51 @@ production:
         by_voicetag: true
         tags: [ "PLAYER" ]
 
-      ofir_enchanter:
-        repo: "ofir_enchanter"
+      ofir_merchant_mq6001:
+        repo: "ofir_merchant_mq6001"
         #by_voicetag: true
-        appearance: "ofir_enchanter"
-        tags: [ "ofir_enchanter" ]
+        appearance: "ofir_merchant_mq6001"
+        tags: [ "ofir_merchant_mq6001" ]
 
     cameras:
-      cam_1_merchant:
-        repo: "cam_1_merchant"
+      cam_1_s1_01_geralt_entering_1_enter:
+        repo: "cam_1_s1_01_geralt_entering_1_enter"
+
+      cam_3_s1_02_merchant_standing_up:
+        repo: "cam_3_s1_02_merchant_standing_up"
+
+      cam_4_s1_03_merchant_greeting:
+        repo: "cam_4_s1_03_merchant_greeting"
+
+      cam_5_s1_04_geralt_headshake_whatsup:
+        repo: "cam_5_s1_04_geralt_headshake_whatsup"
+
+      cam_6_s1_05_merchant_lengthy_self_intro_1_nod:
+        repo: "cam_6_s1_05_merchant_lengthy_self_intro_1_nod"
+
+      cam_9_s1_05_merchant_lengthy_self_intro_2_looknervous:
+        repo: "cam_9_s1_05_merchant_lengthy_self_intro_2_looknervous"
+
+      cam_10_s1_05_merchant_lengthy_self_intro_2_point:
+        repo: "cam_10_s1_05_merchant_lengthy_self_intro_2_point"
+
+      cam_12_s1_07_merchant_chuckle_1_toproud:
+        repo: "cam_12_s1_07_merchant_chuckle_1_toproud"
+
+      cam_14_s1_08_geralt_stick_to_point:
+        repo: "cam_14_s1_08_geralt_stick_to_point"
+
+      cam_15_s1_09_merchant_drawn_to_villa_1_poschange:
+        repo: "cam_15_s1_09_merchant_drawn_to_villa_1_poschange"
+
+      cam_18_s1_11_merchant_want_vanilla_loot:
+        repo: "cam_18_s1_11_merchant_want_vanilla_loot"
+
+      cam_19_s1_12_geralt_will_look_into_1_sigh:
+        repo: "cam_19_s1_12_geralt_will_look_into_1_sigh"
+
+      cam_21_s1_13_both_inhabitants:
+        repo: "cam_21_s1_13_both_inhabitants"
 
     animations:
       geralt_high_standing_determined_calm_enter_frontal:
@@ -76,10 +431,10 @@ production:
         blendin: 0.0
         blendout: 0.0
 
-      ofir_enchanter_low_kneeling_determined_idle:
-        actor: "ofir_enchanter"
-        repo: "anim_7420_low_kneeling_determined_idle"
-        #duration: 18.0666675568
+      ofir_merchant_mq6001_man_work_crouch_02:
+        actor: "ofir_merchant_mq6001"
+        repo: "anim_8889_man_work_crouch_02"
+        #duration: 5.0
         #weight: 0.6000000238
         #clipfront: 0.0
         #clipend: 99.0
@@ -87,51 +442,901 @@ production:
         blendin: 0.0
         blendout: 0.0
 
+      geralt_high_standing_determined_gesture_greeting_geralt_02:
+        actor: "geralt"
+        repo: "anim_7025_high_standing_determined_gesture_greeting_geralt_02"
+        #duration: 3.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      ofir_merchant_mq6001_man_work_sew_sails_standup:
+        actor: "ofir_merchant_mq6001"
+        repo: "anim_9111_man_work_sew_sails_standup"
+        #duration: 3.7333333492
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      ofir_merchant_mq6001_high_standing_determined_gesture_greeting_geralt_04:
+        actor: "ofir_merchant_mq6001"
+        repo: "anim_7027_high_standing_determined_gesture_greeting_geralt_04"
+        #duration: 3.0333333015
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_add_reaction_shake_head_01:
+        actor: "geralt"
+        repo: "anim_6735_add_reaction_shake_head_01"
+        #duration: 3.6666667461
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      ofir_merchant_mq6001_add_reaction_agreeing_nod_01:
+        actor: "ofir_merchant_mq6001"
+        repo: "anim_6730_add_reaction_agreeing_nod_01"
+        #duration: 3.0666666031
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      ofir_merchant_mq6001_high_standing_sad_to_high_standing_happy:
+        actor: "ofir_merchant_mq6001"
+        repo: "anim_7318_high_standing_sad_to_high_standing_happy"
+        #duration: 4.3666667938
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      ofir_merchant_mq6001_high_standing_happy_gesture_explain_06:
+        actor: "ofir_merchant_mq6001"
+        repo: "anim_7181_high_standing_happy_gesture_explain_06"
+        #duration: 4.7333331108
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      ofir_merchant_mq6001_high_standing_happy_gesture_acknowledge:
+        actor: "ofir_merchant_mq6001"
+        repo: "anim_7174_high_standing_happy_gesture_acknowledge"
+        #duration: 2.4000000954
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined2_to_high_standing_determined:
+        actor: "geralt"
+        repo: "anim_7149_high_standing_determined2_to_high_standing_determined"
+        #duration: 3.1666667461
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      ofir_merchant_mq6001_high_standing_happy_gesture_point_left:
+        actor: "ofir_merchant_mq6001"
+        repo: "anim_7185_high_standing_happy_gesture_point_left"
+        #duration: 5.1333332062
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined_gesture_shrug:
+        actor: "geralt"
+        repo: "anim_7067_high_standing_determined_gesture_shrug"
+        #duration: 2.7666666508
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      ofir_merchant_mq6001_high_standing_happy_to_high_standing_proud:
+        actor: "ofir_merchant_mq6001"
+        repo: "anim_7197_high_standing_happy_to_high_standing_proud"
+        #duration: 4.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      ofir_merchant_mq6001_high_standing_proud_gesture_question_02:
+        actor: "ofir_merchant_mq6001"
+        repo: "anim_7238_high_standing_proud_gesture_question_02"
+        #duration: 3.9666666985
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined_gesture_do_it:
+        actor: "geralt"
+        repo: "anim_7011_high_standing_determined_gesture_do_it"
+        #duration: 3.1666667461
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_high_standing_determined_to_high_standing_determined2:
+        actor: "geralt"
+        repo: "anim_7119_high_standing_determined_to_high_standing_determined2"
+        #duration: 3.7000000477
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      ofir_merchant_mq6001_high_standing_proud_to_high_standing_sad:
+        actor: "ofir_merchant_mq6001"
+        repo: "anim_4111_high_standing_proud_to_high_standing_sad"
+        #duration: 8.8333330154
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      ofir_merchant_mq6001_high_standing_sad_gesture_describing_1:
+        actor: "ofir_merchant_mq6001"
+        repo: "anim_7303_high_standing_sad_gesture_describing_1"
+        #duration: 4.6666665077
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_add_gesture_explain_13:
+        actor: "geralt"
+        repo: "anim_6702_add_gesture_explain_13"
+        #duration: 6.0999999046
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      ofir_merchant_mq6001_high_standing_sad_gesture_headscratch:
+        actor: "ofir_merchant_mq6001"
+        repo: "anim_7308_high_standing_sad_gesture_headscratch"
+        #duration: 7.0333333015
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      geralt_add_reaction_sigh_01:
+        actor: "geralt"
+        repo: "anim_6737_add_reaction_sigh_01"
+        #duration: 2.7666666508
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      ofir_merchant_mq6001_add_reaction_afraid_01:
+        actor: "ofir_merchant_mq6001"
+        repo: "anim_6727_add_reaction_afraid_01"
+        #duration: 3.6333334446
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+    animations.mimic:
+      ofir_merchant_mq6001_geralt_happiness_gesture_smile_face:
+        actor: "ofir_merchant_mq6001"
+        repo: "mimicsanim_112_geralt_happiness_gesture_smile_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      ofir_merchant_mq6001_geralt_reaction_irritation_face:
+        actor: "ofir_merchant_mq6001"
+        repo: "mimicsanim_165_geralt_reaction_irritation_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_yes_long_face:
+        actor: "geralt"
+        repo: "mimicsanim_145_geralt_neutral_yes_long_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      geralt_geralt_neutral_gesture_sceptical_remark_face:
+        actor: "geralt"
+        repo: "mimicsanim_129_geralt_neutral_gesture_sceptical_remark_face"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
+      ofir_merchant_mq6001_geralt_neutral_gesture_brows_up_face_nrml:
+        actor: "ofir_merchant_mq6001"
+        repo: "mimicsanim_119_geralt_neutral_gesture_brows_up_face_nrml"
+        #duration: 0.0
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.5000000000
+        blendout: 0.5000000000
+
     actor.poses:
       geralt_high_standing_determined_idle:
         actor: "geralt"
         repo: "pose_0_high_standing_determined_idle"
 
-      ofir_enchanter_high_standing_determined_idle:
-        actor: "ofir_enchanter"
+      ofir_merchant_mq6001_high_standing_determined_idle:
+        actor: "ofir_merchant_mq6001"
         repo: "pose_0_high_standing_determined_idle"
+
+      geralt_High_Standing2_Determined:
+        actor: "geralt"
+        repo: "pose_2128_High_Standing2_Determined"
+
+      ofir_merchant_mq6001_High_Standing_Determined:
+        actor: "ofir_merchant_mq6001"
+        repo: "pose_2127_High_Standing_Determined"
+
+      ofir_merchant_mq6001_High_Standing_Sad:
+        actor: "ofir_merchant_mq6001"
+        repo: "pose_2140_High_Standing_Sad"
+
+      ofir_merchant_mq6001_High_Standing_Happy:
+        actor: "ofir_merchant_mq6001"
+        repo: "pose_2138_High_Standing_Happy"
+
+      geralt_High_Standing_Determined:
+        actor: "geralt"
+        repo: "pose_2127_High_Standing_Determined"
+
+      ofir_merchant_mq6001_High_Standing_Proud:
+        actor: "ofir_merchant_mq6001"
+        repo: "pose_2139_High_Standing_Proud"
+
+
+
 
 storyboard:
   #defaults:
     #placement:
-      #geralt: [[ 2.5696241856, -1.0132269859, -0.0138854980 ], [ 0.0, 0.0, 52.9996032715 ]]
-      #ofir_enchanter: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      #geralt: [[ -0.9113769531, 1.8897705078, 0.0628662109 ], [ 0.0, 0.0, 185.0419006348 ]]
+      #ofir_merchant_mq6001: [[ -0.0419921875, -0.1771240234, -0.2502059937 ], [ 0.0, 0.0, 152.5000152588 ]]
 
     #actor.pose:
       #geralt: geralt_high_standing_determined_idle
-      #ofir_enchanter: ofir_enchanter_high_standing_determined_idle
+      #ofir_merchant_mq6001: ofir_merchant_mq6001_high_standing_determined_idle
 
-  section_storyboard_ui:
-    # shot merchant
-    shot_1:
-      - actor.placement: [0.0, geralt, [ 2.5696241856, -1.0132269859, -0.0138854980 ], [ 0.0, 0.0, 52.9996032715 ]]
-      - actor.placement: [0.0, ofir_enchanter, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
-      - actor.pose: [0.0, geralt_high_standing_determined_idle]
-      - actor.pose: [0.0, ofir_enchanter_high_standing_determined_idle]
-      - cam: [0.0, cam_1_merchant]
-      - actor.anim: [0.0, geralt_high_standing_determined_calm_enter_frontal]
-      - actor.anim: [0.0, ofir_enchanter_low_kneeling_determined_idle]
-
-dialogscript:
-  player: "geralt"
-  actors: [ "geralt", "ofir_enchanter" ]
+  # --------------------------------- SECTION START --------------------------------------------------------------------------------------
 
   section_start:
+
+    shot_01_geralt_entering_1_enter:
+
+      - actor.placement: [0.0, geralt, [ -0.9145507813, 1.8966064453, -0.0971260071 ], [ 0.0, 0.0, 185.0419006348 ]]
+      - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0419921875, -0.1771240234, -0.2502059937 ], [ 0.0, 0.0, 152.5000152588 ]]
+
+      - actor.pose: [0.0, geralt_high_standing_determined_idle]
+      - actor.pose: [0.0, ofir_merchant_mq6001_high_standing_determined_idle]
+
+      - cam: [0.0, cam_1_s1_01_geralt_entering_1_enter]
+
+      - actor.anim:
+            .@pos: [0.0, geralt_high_standing_determined_calm_enter_frontal]
+            clipfront: 0.5
+            clipend: 5.5
+      - actor.anim: 
+            .@pos: [0.0, ofir_merchant_mq6001_man_work_crouch_02]
+
+      - actor.lookat: [0.0, ofir_merchant_mq6001, [ -0.1066820920, 0.8513463736, 1.2229957581 ]]
+      - actor.lookat: [0.5, ofir_merchant_mq6001, geralt]
+
+
+  # --------------------------------- SECTION CONTRACT NOTICE NOT SEEN --------------------------------------------------------------------------------------
+
+  section_contract_notice_not_seen:
+
+    shot_02_merchant_standing_up:
+
+      - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 32.8999938965 ]]
+
+      - cam: [0.0, cam_3_s1_02_merchant_standing_up]
+
+      - actor.anim: 
+            .@pos: [0.0, ofir_merchant_mq6001_man_work_sew_sails_standup]
+            blendin: 0.3
+            blendout: 0.3
+      - actor.anim: 
+            .@pos: [0.5, geralt_high_standing_determined_gesture_greeting_geralt_02]
+            blendin: 0.3
+            blendout: 0.3
+
+    shot_03_merchant_greeting:
+
+      - cam: [0.0, cam_4_s1_03_merchant_greeting]
+
+      - actor.anim: 
+            .@pos: [0.3, ofir_merchant_mq6001_high_standing_determined_gesture_greeting_geralt_04]
+            blendin: 0.3
+            blendout: 0.3
+
+    shot_04_geralt_headshake_whatsup:
+
+      - cam: [0.0, cam_5_s1_04_geralt_headshake_whatsup]
+
+      - actor.anim.additive: 
+            .@pos: [0.0, geralt_add_reaction_shake_head_01]
+            blendin: 0.3
+            blendout: 0.3
+
+
+  # --------------------------------- SECTION CONTRACT NOTICE SEEN --------------------------------------------------------------------------------------
+
+  section_contract_notice_seen:
+
+    shot_02_merchant_standing_up:
+
+      - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 32.8999938965 ]]
+
+      - cam: [0.0, cam_3_s1_02_merchant_standing_up]
+
+      - actor.anim: 
+            .@pos: [0.0, ofir_merchant_mq6001_man_work_sew_sails_standup]
+            blendin: 0.3
+            blendout: 0.3
+      - actor.anim: 
+            .@pos: [0.5, geralt_high_standing_determined_gesture_greeting_geralt_02]
+            blendin: 0.3
+            blendout: 0.3
+
+    shot_03_merchant_greeting:
+
+      - cam: [0.0, cam_4_s1_03_merchant_greeting]
+
+      - actor.anim: 
+            .@pos: [0.3, ofir_merchant_mq6001_high_standing_determined_gesture_greeting_geralt_04]
+            blendin: 0.3
+            blendout: 0.3
+
+    shot_04_geralt_headshake_whatsup:
+
+      - cam: [0.0, cam_5_s1_04_geralt_headshake_whatsup]
+
+      - actor.anim.additive: 
+            .@pos: [0.0, geralt_add_reaction_shake_head_01]
+            blendin: 0.3
+            blendout: 0.3
+
+
+  # --------------------------------- SECTION WHAT HELD YOU UP --------------------------------------------------------------------------------------   
+
+  section_what_held_you_up:
+
+    shot_05_merchant_lengthy_self_intro_a:
+
+      - actor.pose: [0.0, ofir_merchant_mq6001_High_Standing_Sad]
+
+      - cam: [0.0, cam_6_s1_05_merchant_lengthy_self_intro_1_nod]
+
+      - actor.anim.additive: 
+            .@pos: [0.0, ofir_merchant_mq6001_add_reaction_agreeing_nod_01]
+            blendin: 0.3
+            blendout: 0.3
+
+    shot_05_merchant_lengthy_self_intro_b:
+
+      - actor.anim: 
+            .@pos: [0.0, ofir_merchant_mq6001_high_standing_sad_to_high_standing_happy]
+            blendin: 0.3
+            blendout: 0.3
+
+    shot_05_merchant_lengthy_self_intro_c:
+
+      - actor.pose: [0.57083333, ofir_merchant_mq6001_High_Standing_Happy]
+
+      - actor.anim: 
+            .@pos: [0.1, ofir_merchant_mq6001_high_standing_happy_gesture_explain_06]
+            blendin: 0.3
+            blendout: 0.3
+
+    shot_05_merchant_lengthy_self_intro_d:
+
+      - cam: [0.0, cam_9_s1_05_merchant_lengthy_self_intro_2_looknervous]
+
+      - actor.anim: 
+            .@pos: [0.0, ofir_merchant_mq6001_high_standing_happy_gesture_acknowledge]
+            blendin: 0.3
+            blendout: 0.3
+      - actor.anim.mimic: 
+            .@pos: [0.0, ofir_merchant_mq6001_geralt_happiness_gesture_smile_face]
+            blendin: 0.3
+            blendout: 0.3
+
+      - actor.lookat: [0.0, ofir_merchant_mq6001, [ 0.5385847092, 0.7943203449, 1.9162330627 ]]
+
+    shot_05_merchant_lengthy_self_intro_e:
+
+      - cam: [0.0, cam_10_s1_05_merchant_lengthy_self_intro_2_point]
+
+      - actor.anim: 
+            .@pos: [0.0, geralt_high_standing_determined2_to_high_standing_determined]
+            blendin: 0.3
+            blendout: 0.3
+      - actor.anim: 
+            .@pos: [0.0, ofir_merchant_mq6001_high_standing_happy_gesture_point_left]
+            blendin: 0.3
+            blendout: 0.3
+
+      - actor.lookat: [0.0, ofir_merchant_mq6001, geralt]
+
+    shot_06_geralt_look_at_wagon:
+
+      - actor.anim: 
+            .@pos: [0.0, geralt_high_standing_determined_gesture_shrug]
+            blendin: 0.3
+            blendout: 0.3
+
+      - actor.lookat: [0.0, geralt, [ 0.1774593890, 0.9585721493, 1.7000389099 ]]
+
+    shot_07_merchant_chuckle:
+
+      - cam: [0.0, cam_12_s1_07_merchant_chuckle_1_toproud]
+
+      - actor.anim: 
+            .@pos: [0.0, ofir_merchant_mq6001_high_standing_happy_to_high_standing_proud]
+            blendin: 0.3
+            blendout: 0.3
+
+      - actor.pose: [0.5, ofir_merchant_mq6001_High_Standing_Proud]
+
+      - actor.anim: 
+            .@pos: [0.8, ofir_merchant_mq6001_high_standing_proud_gesture_question_02]
+            blendin: 0.3
+            blendout: 0.3
+      - actor.anim.mimic: 
+            .@pos: [0.8, ofir_merchant_mq6001_geralt_reaction_irritation_face]
+            blendin: 0.3
+            blendout: 0.3
+
+      - actor.lookat: [0.0, geralt, ofir_merchant_mq6001]
+
+
+
+  # --------------------------------- SECTION WHY THE VILLA SHORT --------------------------------------------------------------------------------------   
+
+  section_why_the_villa_short:
+
+    shot_08_geralt_stick_to_point:
+
+      - cam: [0.0, cam_14_s1_08_geralt_stick_to_point]
+
+      - actor.anim: 
+            .@pos: [0.0, geralt_high_standing_determined_gesture_do_it]
+            blendin: 0.3
+            blendout: 0.3
+      - actor.anim.mimic: 
+            .@pos: [0.0, geralt_geralt_neutral_yes_long_face]
+            blendin: 0.3
+            blendout: 0.3
+
+    shot_09_merchant_drawn_to_villa:
+
+      - cam: [0.0, cam_15_s1_09_merchant_drawn_to_villa_1_poschange]
+
+      - actor.anim: 
+            .@pos: [0.0, geralt_high_standing_determined_to_high_standing_determined2]
+            blendin: 0.3
+            blendout: 0.3
+      - actor.anim: 
+            .@pos: [0.0, ofir_merchant_mq6001_high_standing_proud_to_high_standing_sad]
+            blendin: 0.3
+            blendout: 0.3
+
+      - actor.pose: [0.8, geralt_High_Standing2_Determined]
+      - actor.pose: [0.8, ofir_merchant_mq6001_High_Standing_Sad]
+
+      - actor.anim: 
+            .@pos: [0.9, ofir_merchant_mq6001_high_standing_sad_gesture_describing_1]
+            blendin: 0.3
+            blendout: 0.3
+
+
+
+  # --------------------------------- SECTION WHY THE VILLA LONG --------------------------------------------------------------------------------------   
+
+  section_why_the_villa_long:
+
+    shot_08_geralt_stick_to_point:
+
+      - cam: [0.0, cam_14_s1_08_geralt_stick_to_point]
+
+      - actor.anim: 
+            .@pos: [0.0, geralt_high_standing_determined_gesture_do_it]
+            blendin: 0.3
+            blendout: 0.3
+      - actor.anim.mimic: 
+            .@pos: [0.0, geralt_geralt_neutral_yes_long_face]
+            blendin: 0.3
+            blendout: 0.3
+
+    shot_09_merchant_drawn_to_villa:
+
+      - cam: [0.0, cam_15_s1_09_merchant_drawn_to_villa_1_poschange]
+
+      - actor.anim: 
+            .@pos: [0.0, geralt_high_standing_determined_to_high_standing_determined2]
+            blendin: 0.3
+            blendout: 0.3
+      - actor.anim: 
+            .@pos: [0.0, ofir_merchant_mq6001_high_standing_proud_to_high_standing_sad]
+            blendin: 0.3
+            blendout: 0.3
+
+      - actor.pose: [0.8, geralt_High_Standing2_Determined]
+      - actor.pose: [0.8, ofir_merchant_mq6001_High_Standing_Sad]
+
+      - actor.anim: 
+            .@pos: [0.9, ofir_merchant_mq6001_high_standing_sad_gesture_describing_1]
+            blendin: 0.3
+            blendout: 0.3
+
+
+  # --------------------------------- SECTION WHY NOT RETURN --------------------------------------------------------------------------------------   
+
+  section_why_not_return:
+
+    shot_10_what_holds_you:
+
+      - actor.anim.additive: 
+            .@pos: [0.0, geralt_add_gesture_explain_13]
+            blendin: 0.3
+            blendout: 0.3
+
+    shot_11_merchant_want_vanilla_loot:
+
+      - cam: [0.0, cam_18_s1_11_merchant_want_vanilla_loot]
+
+      - actor.anim: 
+            .@pos: [0.0, ofir_merchant_mq6001_high_standing_sad_gesture_headscratch]
+            blendin: 0.3
+            blendout: 0.3
+
+
+
+  # --------------------------------- SECTION EXIT TOOK JOB --------------------------------------------------------------------------------------   
+  
+  section_took_job:
+
+    shot_12_geralt_will_look_into:
+
+      - cam: [0.0, cam_19_s1_12_geralt_will_look_into_1_sigh]
+
+      - actor.anim.additive: 
+            .@pos: [0.0, geralt_add_reaction_sigh_01]
+            blendin: 0.3
+            blendout: 0.3
+      - actor.anim.mimic: 
+            .@pos: [0.0, geralt_geralt_neutral_gesture_sceptical_remark_face]
+            blendin: 0.3
+            blendout: 0.3
+
+      - actor.lookat: [0.5, geralt, [ 0.2806803584, 0.7228806615, 1.1059112549 ]]
+
+    shot_13_both_inhabitants:
+
+      - cam: [0.0, cam_21_s1_13_both_inhabitants]
+
+      - actor.anim.additive: 
+            .@pos: [0.0, ofir_merchant_mq6001_add_reaction_afraid_01]
+            blendin: 0.3
+            blendout: 0.3
+      - actor.anim.mimic: 
+            .@pos: [0.0, ofir_merchant_mq6001_geralt_neutral_gesture_brows_up_face_nrml]
+            blendin: 0.3
+            blendout: 0.3
+
+      - actor.lookat: [0.0, geralt, ofir_merchant_mq6001]
+
+
+
+  # --------------------------------- SECTION DECLINED JOB --------------------------------------------------------------------------------------   
+  
+  section_declined_job:
+
+    shot_12_geralt_will_look_into:
+
+      - cam: [0.0, cam_19_s1_12_geralt_will_look_into_1_sigh]
+
+      - actor.anim.additive: 
+            .@pos: [0.0, geralt_add_reaction_sigh_01]
+            blendin: 0.3
+            blendout: 0.3
+      - actor.anim.mimic: 
+            .@pos: [0.0, geralt_geralt_neutral_gesture_sceptical_remark_face]
+            blendin: 0.3
+            blendout: 0.3
+
+      - actor.lookat: [0.5, geralt, [ 0.2806803584, 0.7228806615, 1.1059112549 ]]
+
+
+
+
+dialogscript:
+
+  player: "geralt"
+  actors: [ "geralt", "ofir_merchant_mq6001" ]
+
+
+  section_start:
+
     - PAUSE: 0.0
-    - NEXT: section_storyboard_ui
 
-  section_storyboard_ui:
-    # shot merchant
-    - CUE: shot_1
-    # (longest) anim: low_kneeling_determined_idle
-    - PAUSE: 18.0666675568
-    - NEXT: section_exit
+    - CUE: shot_01_geralt_entering_1_enter
+    - PAUSE: 5.0
 
-  section_exit:
+    - NEXT:
+        condition: [ DMNQ_seen_noticeboard, "=", 1 ]
+        on_true: section_contract_notice_seen
+        on_false: section_contract_notice_not_seen
+
+
+  section_contract_notice_not_seen:
+
+    - CUE: shot_02_merchant_standing_up
+    - geralt: "Greetings, good man. An ophirian merchant, if I’m not mistaken?"
+
+    - CUE: shot_03_merchant_greeting
+    - ofir_merchant_mq6001: "I greet you, I greet you! May I introduce myself: Noret Fahleri, indeed coming from afar. Did you come to me to buy?"
+
+    - CUE: shot_04_geralt_headshake_whatsup
+    - geralt: "Not right now. But you seem like you’ve lost your company. Care to explain what held you up?"
+
+    - NEXT: section_what_held_you_up
+
+  section_contract_notice_seen:
+
+    - CUE: shot_02_merchant_standing_up
+    - geralt: "Are you Noret Fahleri, ophirian merchant?"
+
+    - CUE: shot_03_merchant_greeting
+    - ofir_merchant_mq6001: "I greet you, I greet you! Is it possible my name has reached local ears already? Did you come to me to buy?"
+
+    - CUE: shot_04_geralt_headshake_whatsup
+    - geralt: "Not right now. Your comrades at the camp are looking for you. Care to explain what held you up?"
+
+    - NEXT: section_what_held_you_up
+
+
+  section_what_held_you_up:
+
+    - CUE: shot_05_merchant_lengthy_self_intro_a
+    - ofir_merchant_mq6001: "Yes yes, of course, certainly."
+
+    - CUE: shot_05_merchant_lengthy_self_intro_b
+    - PAUSE: 3.0
+
+    - CUE: shot_05_merchant_lengthy_self_intro_c
+    - ofir_merchant_mq6001: "Dulla, Tollin and I came to this beautiful country to explore it, to trade in it, to enrichen it with our goods."
+
+    - CUE: shot_05_merchant_lengthy_self_intro_d
+    - ofir_merchant_mq6001: "Usually, we stick together, yes, but... a villa not far from here piqued my interest, it seems."
+
+    - CUE: shot_05_merchant_lengthy_self_intro_e
+    - ofir_merchant_mq6001: "You must understand, I always look for ways to increase my collection of artifacts and amulets, may it be the proudest in the world already."
+
+    - CUE: shot_06_geralt_look_at_wagon
+    - PAUSE: 3.0
+
+    - CUE: shot_07_merchant_chuckle
+    - PAUSE: 4.0
+
+    - NEXT: section_choice_stick_to_point
+
+  section_choice_stick_to_point:
+
+    - CHOICE:
+        - choice: [ "Stick to the point.", section_why_the_villa_short]
+          emphasize: true
+        - choice: [ "Why this villa?", section_why_the_villa_long ]
+          emphasize: true
+
+
+  section_why_the_villa_short:
+
+    - CUE: shot_08_geralt_stick_to_point
+    - geralt: "Stick to the point. Why does a villa in the middle of nowhere draw your attention?"
+
+    - CUE: shot_09_merchant_drawn_to_villa
+    - ofir_merchant_mq6001: "Two voices led me there - yet, upon arriving at the villa, all magic aura recipients catastrophed."
+    - ofir_merchant_mq6001: "Disturbing sounds escaped the building and I am no fool. I fled in a hurry."
+
+    - NEXT: section_why_not_return
+
+  section_why_the_villa_long:
+
+    - CUE: shot_08_geralt_stick_to_point
+    - geralt: "Stick to the point. Why does a villa in the middle of nowhere draw your attention? No better place around to sell?"
+
+    - CUE: shot_09_merchant_drawn_to_villa
+    - ofir_merchant_mq6001: "Certainly, yes, that’s where we will be. But, you see, two voices led me there, and they spoke of rich and undiscovered artifacts, useful only to those with the knowledge."
+    - ofir_merchant_mq6001: "Yet, upon arriving at the villa, all magic aura recipients catastrophed. Disturbing sounds escaped the building and I am no fool. I fled in a hurry."
+    
+    - NEXT: section_why_not_return
+
+
+  section_why_not_return:
+
+    - CUE: shot_10_what_holds_you
+    - geralt: "You still didn’t return, so what’s holding you? I can ensure you, there’s nothing good waiting in this place for you."
+
+    - CUE: shot_11_merchant_want_vanilla_loot
+    - ofir_merchant_mq6001: "I am un-sure what to do. There is my pride as a collector, but then - those obvious dangers. And honestly, the fog has me a bit lost."
+    - ofir_merchant_mq6001: "Would like to know what's going on in the villa, and you look more the type for bravery than me. If you would go there and see what’s going on, part of the profits would certainly be yours!"
+
+    - NEXT: section_choice_take_job
+
+  section_choice_take_job:
+
+    - CHOICE:
+
+        - choice: [ "Don't expect any miracles.", section_took_job ]
+          emphasize: true
+
+        - choice: [ "Taking a look will have a price.", script_negotiate, betting ]
+          single_use: true
+          emphasize: true
+
+        - choice: [ "There's nothing to find there.", section_declined_job, exit ]
+
+
+# ------------------------ agree -----------------------------
+
+  section_took_job:
+
+    - CUE: shot_12_geralt_will_look_into
+    - geralt: "Can take a look as to what’s going on, but don’t expect me to come back with treasures on my back."
+
+    - CUE: shot_13_both_inhabitants
+    - ofir_merchant_mq6001: "... inhabitants?"
+    - PAUSE: 3.5
+
+    - NEXT: section_exit_took_job
+
+  section_exit_took_job:
+
     - CAMERA_BLEND: 2.0
+    - OUTPUT: took_job
+    - EXIT
+
+# ------------------------ haggle -----------------------------
+
+  script_negotiate:
+        - SCRIPT:
+            function: DMNQ_NegotiateMonsterHunt_S
+            parameter:
+                - resultFact: CNAME_DMNQ_scenefact_negotiate_result
+                - rewardName: CNAME_trial8_dmnq_reward_stub_merchant_alive
+                - alwaysSuccessful: false
+                - isItemReward: false
+        - NEXT: section_negotiate_branch1
+
+  section_negotiate_branch1:
+    - NEXT:
+        condition: [ DMNQ_scenefact_negotiate_result, "=", 1 ]
+        on_true: section_negotiate_toomuch
+        on_false: section_negotiate_branch2
+
+  section_negotiate_branch2:
+    - NEXT:
+        condition: [ DMNQ_scenefact_negotiate_result, "=", 2 ]
+        on_true: section_negotiate_prettyclose
+        on_false: section_negotiate_branch3
+
+  section_negotiate_branch3:
+    - NEXT:
+        condition: [ DMNQ_scenefact_negotiate_result, "=", 3 ]
+        on_true: section_negotiate_ok
+        on_false: section_negotiate_lost
+
+  section_negotiate_toomuch:
+    - ofir_merchant_mq6001: "I wouldn't pay so much even if you were King Radovid."
+    - NEXT: script_negotiate
+
+  section_negotiate_prettyclose:
+    - ofir_merchant_mq6001: "That's just a bit high, witcher."
+    - NEXT: script_negotiate
+
+  section_negotiate_ok:
+    - ofir_merchant_mq6001: "Fine."
+    - NEXT: section_exit_took_job
+
+  section_negotiate_lost:
+    - ofir_merchant_mq6001: "My patience ended! We're done blatherin', you'll take the offer!"
+    - NEXT: section_exit_took_job_not
+
+# ------------------------ exit manually -----------------------------
+
+  section_declined_job:
+
+    - CUE: shot_12_geralt_will_look_into
+    - geralt: "Told you there’s nothing but misery there, I know the inhabitants of this place far too well."
+
+    - NEXT: section_exit_took_job_not
+
+
+
+# ------------------------ catch-all exit -----------------------------
+
+  section_exit_took_job_not:
+
+    - CAMERA_BLEND: 2.0
+    - OUTPUT: took_job_not
     - EXIT

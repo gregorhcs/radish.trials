@@ -12,7 +12,7 @@ class C_DMNQ_Merchant extends CNewNPC
 		weaponEntity : CItemEntity)
     {
     	if (thePlayer.GetHealth() < 1.0) {
-    		FactsAdd("DMNQ_fistfight_result");
+    		FactsAdd("DMNQ_fistfight_result", 1, -1);
     	}
     }
 }
