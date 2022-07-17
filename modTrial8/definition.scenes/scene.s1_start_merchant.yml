@@ -361,10 +361,10 @@ production:
     strings-idspace: 1410
     strings-idstart: 100
 
-  placement: "trial8_novigrad_sp_merchant_sp"
+  placement: "trial8_novigrad_sp_merchant_sp" # trial8_novigrad_sp_merchant_sp
     # INFO: world coordinates of used origin:
       #pos: [ 2217.8913574219, 1832.5705566406, 45.0325851440 ]
-      #rot: [ 0.0, 135.4102935791, 0.0 ]
+      #rot: [ 0.0, 0.0, 0.0 ] 2nd: 135.4102935791
 
   assets:
     actors:
@@ -766,14 +766,15 @@ production:
 
 
 storyboard:
-  #defaults:
-    #placement:
-      #geralt: [[ -0.9113769531, 1.8897705078, 0.0628662109 ], [ 0.0, 0.0, 185.0419006348 ]]
-      #ofir_merchant_mq6001: [[ -0.0419921875, -0.1771240234, -0.2502059937 ], [ 0.0, 0.0, 152.5000152588 ]]
 
-    #actor.pose:
-      #geralt: geralt_high_standing_determined_idle
-      #ofir_merchant_mq6001: ofir_merchant_mq6001_high_standing_determined_idle
+  defaults:
+    placement:
+      geralt: [[ -0.9113769531, 1.8897705078, 0.0628662109 ], [ 0.0, 0.0, 185.0419006348 ]]
+      ofir_merchant_mq6001: [[ -0.0419921875, -0.1771240234, -0.2502059937 ], [ 0.0, 0.0, 152.5000152588 ]]
+
+    actor.pose:
+      geralt: geralt_high_standing_determined_idle
+      ofir_merchant_mq6001: ofir_merchant_mq6001_high_standing_determined_idle
 
   # --------------------------------- SECTION START --------------------------------------------------------------------------------------
 
@@ -781,7 +782,7 @@ storyboard:
 
     shot_01_geralt_entering_1_enter:
 
-      - actor.placement: [0.0, geralt, [ -0.9145507813, 1.8966064453, -0.0971260071 ], [ 0.0, 0.0, 185.0419006348 ]]
+      - actor.placement: [0.0, geralt, [ -0.9113769531, 1.8897705078, 0.0628662109 ], [ 0.0, 0.0, 185.0419006348 ]]
       - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0419921875, -0.1771240234, -0.2502059937 ], [ 0.0, 0.0, 152.5000152588 ]]
 
       - actor.pose: [0.0, geralt_high_standing_determined_idle]
@@ -796,7 +797,7 @@ storyboard:
       - actor.anim: 
             .@pos: [0.0, ofir_merchant_mq6001_man_work_crouch_02]
 
-      - actor.lookat: [0.0, ofir_merchant_mq6001, [ -0.1066820920, 0.8513463736, 1.2229957581 ]]
+      - actor.lookat: [0.0, ofir_merchant_mq6001, [ 0.8270030022, 0.5289082527, 0.6259689331 ]]
       - actor.lookat: [0.5, ofir_merchant_mq6001, geralt]
 
 
@@ -806,7 +807,7 @@ storyboard:
 
     shot_02_merchant_standing_up:
 
-      - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 32.8999938965 ]]
+      - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 55.0 ]]
 
       - cam: [0.0, cam_3_s1_02_merchant_standing_up]
 
@@ -844,7 +845,7 @@ storyboard:
 
     shot_02_merchant_standing_up:
 
-      - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 32.8999938965 ]]
+      - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 55.0 ]]
 
       - cam: [0.0, cam_3_s1_02_merchant_standing_up]
 
@@ -881,6 +882,8 @@ storyboard:
   section_what_held_you_up:
 
     shot_05_merchant_lengthy_self_intro_a:
+
+      - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 55.0 ]]
 
       - actor.pose: [0.0, ofir_merchant_mq6001_High_Standing_Sad]
 
@@ -976,6 +979,8 @@ storyboard:
 
     shot_08_geralt_stick_to_point:
 
+      - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 55.0 ]]
+
       - cam: [0.0, cam_14_s1_08_geralt_stick_to_point]
 
       - actor.anim: 
@@ -1016,6 +1021,8 @@ storyboard:
 
     shot_08_geralt_stick_to_point:
 
+      - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 55.0 ]]
+
       - cam: [0.0, cam_14_s1_08_geralt_stick_to_point]
 
       - actor.anim: 
@@ -1055,6 +1062,8 @@ storyboard:
 
     shot_10_what_holds_you:
 
+      - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 55.0 ]]
+
       - actor.anim.additive: 
             .@pos: [0.0, geralt_add_gesture_explain_13]
             blendin: 0.3
@@ -1076,6 +1085,8 @@ storyboard:
   section_took_job:
 
     shot_12_geralt_will_look_into:
+
+      - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 55.0 ]]
 
       - cam: [0.0, cam_19_s1_12_geralt_will_look_into_1_sigh]
 
@@ -1112,6 +1123,8 @@ storyboard:
   section_declined_job:
 
     shot_12_geralt_will_look_into:
+
+      - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 55.0 ]]
 
       - cam: [0.0, cam_19_s1_12_geralt_will_look_into_1_sigh]
 
