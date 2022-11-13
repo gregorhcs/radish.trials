@@ -1368,30 +1368,27 @@ dialogscript:
         - SCRIPT:
             function: DMNQ_NegotiateMonsterHunt_S
             parameter:
-                - resultFact: CNAME_DMNQ_scenefact_negotiate_result
+                - resultFact: CNAME_trial8_dmnq_negotiate_result
                 - rewardName: CNAME_trial8_dmnq_reward_stub_merchant_alive
                 - alwaysSuccessful: false
                 - isItemReward: false
         - NEXT: section_negotiate_branch1
 
   section_negotiate_branch1:
-    #- CUE: shot_negotiate_branch1
     - NEXT:
-        condition: [ DMNQ_scenefact_negotiate_result, "=", 1 ]
+        condition: [ trial8_dmnq_negotiate_result, "=", 1 ]
         on_true: section_negotiate_toomuch
         on_false: section_negotiate_branch2
 
   section_negotiate_branch2:
-    #- CUE: shot_negotiate_branch2
     - NEXT:
-        condition: [ DMNQ_scenefact_negotiate_result, "=", 2 ]
+        condition: [ trial8_dmnq_negotiate_result, "=", 2 ]
         on_true: section_negotiate_prettyclose
         on_false: section_negotiate_branch3
 
   section_negotiate_branch3:
-    #- CUE: shot_negotiate_branch3
     - NEXT:
-        condition: [ DMNQ_scenefact_negotiate_result, "=", 3 ]
+        condition: [ trial8_dmnq_negotiate_result, "=", 3 ]
         on_true: section_negotiate_ok
         on_false: section_negotiate_lost
 
@@ -1408,12 +1405,12 @@ dialogscript:
   section_negotiate_ok:
     - CUE: shot_negotiate_ok
     - ofir_merchant_mq6001: "Fine."
-    - NEXT: section_exit_took_job
+    - NEXT: section_choice_take_job
 
   section_negotiate_lost:
     - CUE: shot_negotiate_lost
     - ofir_merchant_mq6001: "My patience ended! We're done blatherin', you'll take the offer!"
-    - NEXT: section_exit_took_job_not
+    - NEXT: section_choice_take_job
 
 # ------------------------ exit manually -----------------------------
 
