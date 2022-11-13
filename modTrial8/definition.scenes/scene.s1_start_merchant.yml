@@ -770,7 +770,7 @@ storyboard:
   defaults:
     placement:
       geralt: [[ -0.9113769531, 1.8897705078, 0.0628662109 ], [ 0.0, 0.0, 185.0419006348 ]]
-      ofir_merchant_mq6001: [[ -0.0419921875, -0.1771240234, -0.2502059937 ], [ 0.0, 0.0, 152.5000152588 ]]
+      ofir_merchant_mq6001: [[ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 55.0 ]]
 
     actor.pose:
       geralt: geralt_high_standing_determined_idle
@@ -782,8 +782,7 @@ storyboard:
 
     shot_01_geralt_entering_1_enter:
 
-      - actor.placement: [0.0, geralt, [ -0.9113769531, 1.8897705078, 0.0628662109 ], [ 0.0, 0.0, 185.0419006348 ]]
-      #- actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 55.0 ]]
+      - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0419921875, -0.1771240234, -0.2502059937 ], [ 0.0, 0.0, 152.5000152588 ]]
 
       - actor.pose: [0.0, geralt_high_standing_determined_idle]
       - actor.pose: [0.0, ofir_merchant_mq6001_high_standing_determined_idle]
@@ -889,8 +888,6 @@ storyboard:
 
     shot_05_merchant_lengthy_self_intro_a:
 
-      - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 55.0 ]]
-
       - actor.pose: [0.0, ofir_merchant_mq6001_High_Standing_Sad]
 
       - cam: [0.0, cam_6_s1_05_merchant_lengthy_self_intro_1_nod]
@@ -992,7 +989,7 @@ storyboard:
 
     shot_choice_stick_to_point:
 
-      - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 55.0 ]]
+      - actor.lookat: [0.0, geralt, ofir_merchant_mq6001]
 
 
 
@@ -1001,8 +998,6 @@ storyboard:
   section_why_the_villa_short:
 
     shot_08_geralt_stick_to_point:
-
-      - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 55.0 ]]
 
       - cam: [0.0, cam_14_s1_08_geralt_stick_to_point]
 
@@ -1037,8 +1032,6 @@ storyboard:
   section_why_the_villa_long:
 
     shot_08_geralt_stick_to_point:
-
-      - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 55.0 ]]
 
       - cam: [0.0, cam_14_s1_08_geralt_stick_to_point]
 
@@ -1079,8 +1072,6 @@ storyboard:
 
     shot_10_what_holds_you:
 
-      - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 55.0 ]]
-
       - actor.anim.additive: 
             .@pos: [0.0, geralt_add_gesture_explain_13]
             blendin: 0.3
@@ -1096,14 +1087,66 @@ storyboard:
             blendout: 0.3
 
 
-  # --------------------------------- SECTION CHOICE TAKE JOB --------------------------------------------------------------------------------------   
 
-  section_choice_take_job:
+  # --------------------------------- SECTION NEGOTIATE TOO MUCH--------------------------------------------------------------------------------------   
 
-    shot_choice_take_job:
+  section_negotiate_toomuch:
+
+    shot_negotiate_toomuch:
+
+      - cam: [0.0, cam_10_s1_05_merchant_lengthy_self_intro_2_point]
+
+  # --------------------------------- SECTION NEGOTIATE PRETTY CLOSE--------------------------------------------------------------------------------------   
+
+  section_negotiate_prettyclose:
+
+    shot_negotiate_prettyclose:
+
+      - cam: [0.0, cam_10_s1_05_merchant_lengthy_self_intro_2_point]
+
+  # --------------------------------- SECTION NEGOTIATE OK --------------------------------------------------------------------------------------   
+
+  section_negotiate_ok:
+
+    shot_negotiate_ok:
+
+      - cam: [0.0, cam_10_s1_05_merchant_lengthy_self_intro_2_point]
+
+  # --------------------------------- SECTION NEGOTIATE LOST --------------------------------------------------------------------------------------   
+
+  section_negotiate_lost:
+
+    shot_negotiate_lost:
+
+      - cam: [0.0, cam_10_s1_05_merchant_lengthy_self_intro_2_point]
+
+
+
+
+  # --------------------------------- SECTION WHY THE VILLA LONG --------------------------------------------------------------------------------------   
+
+  section_why_the_villa_long:
+
+    shot_08_geralt_stick_to_point:
 
       - actor.placement: [0.0, ofir_merchant_mq6001, [ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 55.0 ]]
 
+      - cam: [0.0, cam_14_s1_08_geralt_stick_to_point]
+
+      - actor.pose: [0.5305215, ofir_merchant_mq6001_High_Standing_Sad]
+
+      - actor.anim: 
+            .@pos: [0.0, ofir_merchant_mq6001_high_standing_proud_to_high_standing_sad]
+            blendin: 0.3
+            blendout: 0.3
+      - actor.anim: 
+            .@pos: [0.0, geralt_high_standing_determined_gesture_do_it]
+            blendin: 0.3
+            blendout: 0.3
+      - actor.anim.mimic: 
+            .@pos: [0.0, geralt_geralt_neutral_yes_long_face]
+            blendin: 0.3
+            blendout: 0.3
 
 
   # --------------------------------- SECTION EXIT TOOK JOB --------------------------------------------------------------------------------------   
@@ -1164,6 +1207,10 @@ storyboard:
             blendout: 0.3
 
       - actor.lookat: [0.5, geralt, [ 0.2806803584, 0.7228806615, 1.1059112549 ]]
+
+
+
+
 
 
 
@@ -1328,36 +1375,43 @@ dialogscript:
         - NEXT: section_negotiate_branch1
 
   section_negotiate_branch1:
+    #- CUE: shot_negotiate_branch1
     - NEXT:
         condition: [ DMNQ_scenefact_negotiate_result, "=", 1 ]
         on_true: section_negotiate_toomuch
         on_false: section_negotiate_branch2
 
   section_negotiate_branch2:
+    #- CUE: shot_negotiate_branch2
     - NEXT:
         condition: [ DMNQ_scenefact_negotiate_result, "=", 2 ]
         on_true: section_negotiate_prettyclose
         on_false: section_negotiate_branch3
 
   section_negotiate_branch3:
+    #- CUE: shot_negotiate_branch3
     - NEXT:
         condition: [ DMNQ_scenefact_negotiate_result, "=", 3 ]
         on_true: section_negotiate_ok
         on_false: section_negotiate_lost
 
   section_negotiate_toomuch:
+    - CUE: shot_negotiate_toomuch
     - ofir_merchant_mq6001: "I wouldn't pay so much even if you were King Radovid."
     - NEXT: script_negotiate
 
   section_negotiate_prettyclose:
+    - CUE: shot_negotiate_prettyclose
     - ofir_merchant_mq6001: "That's just a bit high, witcher."
     - NEXT: script_negotiate
 
   section_negotiate_ok:
+    - CUE: shot_negotiate_ok
     - ofir_merchant_mq6001: "Fine."
     - NEXT: section_exit_took_job
 
   section_negotiate_lost:
+    - CUE: shot_negotiate_lost
     - ofir_merchant_mq6001: "My patience ended! We're done blatherin', you'll take the offer!"
     - NEXT: section_exit_took_job_not
 
