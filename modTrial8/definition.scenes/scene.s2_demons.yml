@@ -25,11 +25,14 @@ repository:
       frames: 278
 
   actor.poses:
-    pose_0_high_standing_determined_idle:
-      idle_anim: "high_standing_determined_idle"
+    pose_high_standing_determined_idle:
+      idle_anim: "high_standing_determined2_idle"
 
-    pose_0_idle01:
-      idle_anim: "idle01"
+    pose_ep1_demon_cat_sitting_idle:
+      idle_anim: "ep1_demon_cat_sitting_idle"
+
+    pose_ep1_demon_dog_sitting_idle:
+      idle_anim: "ep1_demon_dog_sitting_idle"
 
   cameras:
     cam_1_shot_onto_animals:
@@ -62,16 +65,123 @@ repository:
         plane: "Medium"
         tags: [ "ext" ]
 
+
+
+    cam_1_shottowardsmansion:
+      fov: 40.0
+      transform:
+        pos: [ 1.6391196251, 0.1415010691, 0.2143554688 ]
+        rot: [ 0.0, 3.5750033855, 65.9999771118 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_2_shotgeraltinbetween:
+      fov: 40.0
+      transform:
+        pos: [ -0.2101490498, -1.0314564705, 0.2143554688 ]
+        rot: [ 0.0, 6.0250048637, 8.5499801636 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_3_shottowardsdemons:
+      fov: 40.0
+      transform:
+        pos: [ -2.0532245636, 3.4780621529, 1.0144042969 ]
+        rot: [ 0.0, 348.9750061035, 214.9002990723 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_4_shottowardsgeralt:
+      fov: 40.0
+      transform:
+        pos: [ 0.7797373533, -1.0218546391, 0.3893661499 ]
+        rot: [ 0.0, 0.3249824345, 27.0756225586 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_5_shottowardsgeralt2:
+      fov: 40.0
+      transform:
+        pos: [ 0.4617116451, -0.4545375705, 0.5143737793 ]
+        rot: [ 0.0, 0.3249824345, 27.1005859375 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_6_shotcloseupgeralt:
+      fov: 40.0
+      transform:
+        pos: [ -0.4021100104, 1.6461435556, 0.9894027710 ]
+        rot: [ 0.0, 356.3749694824, 18.7506713867 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_7_shotcloseupgeratmansion:
+      fov: 40.0
+      transform:
+        pos: [ 0.4092671573, 2.0312013626, 0.7643890381 ]
+        rot: [ 0.0, 6.3999867439, 73.6260986328 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+
+
+
 production:
   settings:
     sceneid: 1
     strings-idspace: 1410
     strings-idstart: 200
 
-  placement: "demonic cat"
-    # INFO: world coordinates of used origin:
-      #pos: [ 2251.8034667969, 1866.6925048828, 37.6211853027 ]
-      #rot: [ 0.0, -382.8609008789, 0.0 ]
+  placement: "trial8_novigrad_sp_demons_sp"
 
   assets:
     actors:
@@ -94,9 +204,24 @@ production:
 
     cameras:
       cam_1_shot_onto_animals:
-        repo: "cam_1_shot_onto_animals"
+        repo: "cam_1_shottowardsmansion" #"cam_1_shot_onto_animals"
       cam_2_shot_onto_geralt:
-        repo: "cam_2_shot_onto_geralt"
+        repo: "cam_4_shottowardsgeralt" #"cam_2_shot_onto_geralt"
+
+      cam_1_shottowardsmansion:
+        repo: "cam_1_shottowardsmansion"
+      cam_2_shotgeralinbetween:
+        repo: "cam_2_shotgeralinbetween"
+      cam_3_shotontodemons:
+        repo: "cam_3_shottowardsdemons"
+      cam_4_shotontogeralt:
+        repo: "cam_4_shottowardsgeralt"
+      cam_5_shotontogeralt2:
+        repo: "cam_5_shottowardsgeralt2"
+      cam_6_shotcloseupgeralt:
+        repo: "cam_6_shotcloseupgeralt"
+      cam_7_shotcloseupgeratmansion:
+        repo: "cam_7_shotcloseupgeratmansion"
 
     animations:
       demonic_cat_ep1_demon_cat_enter_front:
@@ -135,66 +260,340 @@ production:
     actor.poses:
       geralt_high_standing_determined_idle:
         actor: "geralt"
-        repo: "pose_0_high_standing_determined_idle"
+        repo: "pose_high_standing_determined_idle"
 
       demonic_cat_idle01:
         actor: "demonic_cat"
-        repo: "pose_0_idle01"
+        repo: "pose_ep1_demon_cat_sitting_idle"
 
       demonic_dog_idle01:
         actor: "demonic_dog"
-        repo: "pose_0_idle01"
+        repo: "pose_ep1_demon_dog_sitting_idle"
+
+
+
+
 
 storyboard:
-  #defaults:
-    #placement:
-      #geralt: [[ -0.2874438763, 5.6004590988, 0.3016967773 ], [ 0.0, 0.0, 205.6997985840 ]]
-      #demonic_cat: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
-      #demonic_dog: [[ 0.3944978118, 0.0779637992, -0.0194587708 ], [ 0.0, 0.0, 0.0 ]]
 
-    #actor.pose:
-      #geralt: geralt_high_standing_determined_idle
-      #demonic_cat: demonic_cat_idle01
-      #demonic_dog: demonic_dog_idle01
+  defaults:
+    placement:
+      geralt: [[ -0.6877486706, 2.5804734230, -0.7323188782 ], [ 0.0, 0.0, 186.9999389648 ]]
+      demonic_cat: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      demonic_dog: [[ -0.9471762776, 0.5129384398, -0.6932258606 ], [ 0.0, 0.0, 350.0999755859 ]]
 
-  section_storyboard_ui:
-    # shot Shot (empty)
-    shot_1:
-      - actor.placement: [0.0, geralt, [ -0.2874438763, 5.6004590988, 0.3016967773 ], [ 0.0, 0.0, 205.6997985840 ]]
-      - actor.placement: [0.0, demonic_cat, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
-      - actor.placement: [0.0, demonic_dog, [ 0.3944978118, 0.0779637992, -0.0194587708 ], [ 0.0, 0.0, 0.0 ]]
-      - actor.pose: [0.0, geralt_high_standing_determined_idle]
-      - actor.pose: [0.0, demonic_cat_idle01]
-      - actor.pose: [0.0, demonic_dog_idle01]
+    actor.pose:
+      geralt: geralt_high_standing_determined_idle
+      demonic_cat: demonic_cat_idle01
+      demonic_dog: demonic_dog_idle01
+
+  section_start:
+
+    shot_01_geralt_enter:
       - cam: [0.0, cam_2_shot_onto_geralt]
       - actor.anim: [0.0, demonic_cat_ep1_demon_cat_enter_front]
-      - actor.anim: [0.0, demonic_dog_ep1_demon_dog_sitting_idle]
 
-    shot_2:
+
+  section_demons_are_back:
+
+    shot_02_geralt:
+      - cam: [0.0, cam_2_shot_onto_geralt]
+
+    shot_03_demons:
       - cam: [0.0, cam_1_shot_onto_animals]
-      - actor.anim: [0.0, demonic_cat_ep1_demon_cat_sitting_idle]
+
+    shot_04_geralt:
+      - cam: [0.0, cam_2_shot_onto_geralt]
+
+    shot_05_demons:
+      - cam: [0.0, cam_1_shot_onto_animals]
+
+    shot_06_geralt:
+      - cam: [0.0, cam_2_shot_onto_geralt]
+
+    shot_07_demons:
+      - cam: [0.0, cam_1_shot_onto_animals]
+
+    shot_08_geralt:
+      - cam: [0.0, cam_2_shot_onto_geralt]
+
+    shot_09_demons:
+      - cam: [0.0, cam_1_shot_onto_animals]
+
+    shot_10_geralt:
+      - cam: [0.0, cam_2_shot_onto_geralt]
+
+    shot_11_demons:
+      - cam: [0.0, cam_1_shot_onto_animals]
+
+    shot_12_geralt:
+      - cam: [0.0, cam_2_shot_onto_geralt]
+
+    shot_13_demons:
+      - cam: [0.0, cam_1_shot_onto_animals]
+
+    shot_14_geralt:
+      - cam: [0.0, cam_2_shot_onto_geralt]
+
+    shot_15_demons:
+      - cam: [0.0, cam_1_shot_onto_animals]
+
+    shot_16_geralt:
+      - cam: [0.0, cam_2_shot_onto_geralt]
+
+    shot_17_demons:
+      - cam: [0.0, cam_1_shot_onto_animals]
+
+    shot_18_geralt:
+      - cam: [0.0, cam_2_shot_onto_geralt]
+
+    shot_19_demons:
+      - cam: [0.0, cam_1_shot_onto_animals]
+
+
+  section_choice_info_gathering:
+
+    shot_choice_info_gathering:
+      - cam: [0.0, cam_1_shot_onto_animals]
+
+
+  section_what_to_do:
+
+    shot_20_geralt:
+      - cam: [0.0, cam_2_shot_onto_geralt]
+
+    shot_21_demons:
+      - cam: [0.0, cam_1_shot_onto_animals]
+
+    shot_22_geralt:
+      - cam: [0.0, cam_2_shot_onto_geralt]
+
+    shot_23_demons:
+      - cam: [0.0, cam_1_shot_onto_animals]
+
+    shot_24_geralt:
+      - cam: [0.0, cam_2_shot_onto_geralt]
+
+    shot_25_demons:
+      - cam: [0.0, cam_1_shot_onto_animals]
+
+
+  section_about_the_spell:
+
+    shot_26_geralt:
+      - cam: [0.0, cam_2_shot_onto_geralt]
+
+    shot_27_demons:
+      - cam: [0.0, cam_1_shot_onto_animals]
+
+    shot_28_geralt:
+      - cam: [0.0, cam_2_shot_onto_geralt]
+
+    shot_29_demons:
+      - cam: [0.0, cam_1_shot_onto_animals]
+
+
+  section_demons_future:
+
+    shot_30_geralt:
+      - cam: [0.0, cam_2_shot_onto_geralt]
+
+    shot_31_demons:
+      - cam: [0.0, cam_1_shot_onto_animals]
+
+    shot_32_geralt:
+      - cam: [0.0, cam_2_shot_onto_geralt]
+
+    shot_33_demons:
+      - cam: [0.0, cam_1_shot_onto_animals]
+
+
+  section_decline:
+
+    shot_34_geralt:
+      - cam: [0.0, cam_2_shot_onto_geralt]
+
+    shot_35_demons:
+      - cam: [0.0, cam_1_shot_onto_animals]
+
+
+
+
+
+
 
 dialogscript:
   player: "geralt"
   actors: [ "geralt", "demonic_cat", "demonic_dog" ]
 
   section_start:
+    - CUE: shot_01_geralt_enter
     - PAUSE: 0.0
-    - NEXT: section_storyboard_ui
+    - NEXT: section_demons_are_back
 
-  section_storyboard_ui:
+  section_demons_are_back:
 
-    - CUE: shot_1
-    # (longest) anim: ep1_demon_dog_sitting_idle
-    - PAUSE: 9.2666664124
+    - CUE: shot_02_geralt
+    - geralt: "So you’re still here, huh?"
 
-    - CUE: shot_2
-    - demonic_cat: "Hello there, Witcher. Again."
-    # (longest) anim: ep1_demon_cat_sitting_idle
-    - PAUSE: 13.3333330154
-    - NEXT: section_exit
+    - CUE: shot_03_demons
+    - demonic_dog: "There are not many places for us to go, as you’re well aware."
 
-  section_exit:
+    - CUE: shot_04_geralt
+    - PAUSE: 5.0
+
+    - CUE: shot_05_demons
+    - demonic_cat: "Is there any particular reason for your second visit?"
+
+    - CUE: shot_06_geralt
+    - geralt: "There’s a flustered merchant not far from here, lured to this villa by mysterious voices."
+    - geralt: "You wouldn’t happen to know anything about it?"
+
+    - CUE: shot_07_demons
+    - demonic_cat: "Yes. That was us."
+    - PAUSE: 2.5
+
+    - CUE: shot_08_geralt
+    - PAUSE: 2.5
+
+    - CUE: shot_09_demons
+    - PAUSE: 2.5
+
+    - CUE: shot_10_geralt
+    - geralt: "I take it you’ll explain your reasons any second now?"
+
+    - CUE: shot_11_demons
+    - demonic_dog: "The same reasons for everything we do nowadays. Iris is suffering, every moment in this world an ordeal for her. We expect not for it to move you. You’re a witcher."
+    - demonic_cat: "Not that it tears our hearts apart."
+    - PAUSE: 1.0
+
+    - CUE: shot_12_geralt
+    - geralt: "I get it. It was a hard decision to make and it’s not like I’m not sorry for how it turned out for the three of you. Don‘t get what it has to do with the merchant, though. "
+
+    - CUE: shot_13_demons
+    - demonic_dog: "He trades in amulets. One of those happens to own a powerful demonic signature we perceived."
+    - demonic_cat: "We mused it over. We need it. Combined with an old spell of our knowledge, it can free us from this curse, replacing our roles here with artifical substitutes."
+    - demonic_dog: "Unfortunately, he proved himself a coward. And would it be different, he would still not help us as we are."
+
+    - CUE: shot_14_geralt
+    - geralt: "I hope you don’t remember me as more likely to help you."
+
+    - CUE: shot_15_demons
+    - demonic_dog: "No. We remember you as more likely to help Iris."
+
+    - CUE: shot_16_geralt
+    - PAUSE: 2.5
+
+    - CUE: shot_17_demons
+    - demonic_dog: "Help with this spell to free us, so we can use our means to break this curse of mere human nature. Iris will be free."
+
+    - CUE: shot_18_geralt
+    - geralt: "That sounds awfully generous from two demons. Really expect me to believe that?"
+
+    - CUE: shot_19_demons
+    - demonic_cat: "As you said, we are demons. Bound by contract and always true to our word. And there is no reason for us not to help Iris."
+    - demonic_dog: "We share her tedium. We will end it, if you let us."
+
+    - NEXT: section_choice_info_gathering
+
+  section_choice_info_gathering:
+
+    - CHOICE:
+        - choice: [ "I’m listening.", section_what_to_do]
+          emphasize: true
+        - choice: [ "Tell me more about this spell.", section_about_the_spell]
+          emphasize: false
+        - choice: [ "What will you do when you’re free?", section_demons_future ]
+          emphasize: false
+        - choice: [ "Sorry, I cannot trust you.", section_decline, exit ]
+          emphasize: false
+
+  section_what_to_do:
+
+    - CUE: shot_20_geralt
+    - geralt: "Rescuing demons sure is a bit unusual for my profession. But go on, what needs to be done?"
+
+    - CUE: shot_21_demons
+    - demonic_dog: "We need the earthly power connected to the curse of this place. You’ll find it in five grieving stones not far from here, where Olgierd tested his spells."
+    - demonic_cat: "It might be possible to break the curse without the amulet. But it is far more dangerous to our existence, so we never dared trying."
+    - demonic_dog: "Retrieve the amulet from the merchant. It has black and red gems in it and particularly refined carvings. We will instruct you further once you bring it back."
+
+    - CUE: shot_22_geralt
+    - geralt: "And surely you have a proposal as to how to get the amulet, right?"
+
+    - CUE: shot_23_demons
+    - demonic_cat: "Don’t draw attention. Do it peacefully."
+    - demonic_dog: "Don’t waste time. Do it forcefully."
+
+    - CUE: shot_24_geralt
+    - geralt: "Thanks for the advice."
+
+    - CUE: shot_25_demons
+    - demonic_cat: "You’re the witcher. You’ll figure it out."
+    - demonic_dog: "As you always do."
+
+    - NEXT: section_exit_accepted
+
+  section_about_the_spell:
+
+    - CUE: shot_26_geralt
+    - geralt: "Can you tell me anything more about this curse-breaking spell of yours?"
+
+    - CUE: shot_27_demons
+    - demonic_cat: "It’s ancient, as are we. Useful, if done right."
+    - demonic_dog: "Never tested by us. It certainly has worked with others of our kind."
+
+    - CUE: shot_28_geralt
+    - geralt: "Any examples you want to share?"
+
+    - CUE: shot_29_demons
+    - PAUSE: 2.0
+    - demonic_cat: "None you would have ever heard of."
+
+    - NEXT: section_choice_info_gathering
+
+  section_demons_future:
+
+    - CUE: shot_30_geralt
+    - geralt: "And if you’re free, what will you do then?"
+
+    - CUE: shot_31_demons
+    - demonic_cat: "Go back."
+    - PAUSE: 2.0
+    - demonic_dog: "Where we came from."
+    - PAUSE: 2.0
+
+    - CUE: shot_32_geralt
+    - PAUSE: 2.0
+    - geralt: "Some kind of demon realm?"
+
+    - CUE: shot_33_demons
+    - demonic_cat: "It’s ancient, as are we. Useful, if done right."
+    - demonic_dog: "Never tested by us. It certainly has worked with others of our kind."
+
+    - NEXT: section_choice_info_gathering
+
+  section_decline:
+
+    - CUE: shot_34_geralt
+    - geralt: "I cannot accept this task. You two are way too suspicious to be trusted."
+
+    - CUE: shot_35_demons
+    - demonic_cat: "As you wish."
+    - demonic_dog: "We will be here for eternity, as you well know."
+
+    - NEXT: section_exit_declined
+
+# ------------------------ exits -----------------------------
+
+  section_exit_accepted:
+
     - CAMERA_BLEND: 2.0
+    - OUTPUT: accepted
     - EXIT
 
+  section_exit_declined:
+
+    - CAMERA_BLEND: 2.0
+    - OUTPUT: declined_help
+    - EXIT

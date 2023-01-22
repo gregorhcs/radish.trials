@@ -1,0 +1,9 @@
+section_start
+section_intro
+section_choice_info_gathering
+section_what_to_do
+section_about_the_spell
+section_demons_future
+section_decline
+section_exit_accepted
+section_exit_declined

@@ -989,6 +989,8 @@ storyboard:
 
     shot_choice_stick_to_point:
 
+      - actor.pose: [0.0, ofir_merchant_mq6001_High_Standing_Proud]
+
       - actor.lookat: [0.0, geralt, ofir_merchant_mq6001]
 
 
@@ -1325,7 +1327,7 @@ dialogscript:
 
     - CUE: shot_11_merchant_want_vanilla_loot
     - ofir_merchant_mq6001: "I am un-sure what to do. There is my pride as a collector, but then - those obvious dangers. And honestly, the fog has me a bit lost."
-    - ofir_merchant_mq6001: "Would like to know what's going on in the villa, and you look more the type for bravery than me. If you would go there and see what’s going on, part of the profits would certainly be yours!"
+    - ofir_merchant_mq6001: "Would like to know what’s going on in the villa, and you look more the type for bravery than me. If you would go there and see what’s going on, part of the profits would certainly be yours!"
 
     - NEXT: section_choice_take_job
 
@@ -1333,14 +1335,14 @@ dialogscript:
 
     - CHOICE:
 
-        - choice: [ "Don't expect any miracles.", section_took_job ]
+        - choice: [ "Don’t expect any miracles.", section_took_job ]
           emphasize: true
 
         - choice: [ "Taking a look will have a price.", script_negotiate, betting ]
           single_use: true
           emphasize: true
 
-        - choice: [ "There's nothing to find there.", section_declined_job, exit ]
+        - choice: [ "There’s nothing to find there.", section_declined_job, exit ]
 
 
 # ------------------------ agree -----------------------------
@@ -1394,12 +1396,12 @@ dialogscript:
 
   section_negotiate_toomuch:
     - CUE: shot_negotiate_toomuch
-    - ofir_merchant_mq6001: "I wouldn't pay so much even if you were King Radovid."
+    - ofir_merchant_mq6001: "I wouldn’t pay so much even if you were King Radovid."
     - NEXT: script_negotiate
 
   section_negotiate_prettyclose:
     - CUE: shot_negotiate_prettyclose
-    - ofir_merchant_mq6001: "That's just a bit high, witcher."
+    - ofir_merchant_mq6001: "That’s just a bit high, witcher."
     - NEXT: script_negotiate
 
   section_negotiate_ok:
@@ -1409,7 +1411,7 @@ dialogscript:
 
   section_negotiate_lost:
     - CUE: shot_negotiate_lost
-    - ofir_merchant_mq6001: "My patience ended! We're done blatherin', you'll take the offer!"
+    - ofir_merchant_mq6001: "My patience ended! We’re done blatherin’, you’ll take the offer!"
     - NEXT: section_choice_take_job
 
 # ------------------------ exit manually -----------------------------
