@@ -1,7 +1,7 @@
 #
 # quest structure root segment
 # 
-# (version: 149, saved: 2022-11-13 16:56:53)
+# (version: 181, saved: 2023-01-29 19:00:56)
 #
 ---
 structure:
@@ -11,6 +11,7 @@ structure:
         ".editor": [ -87.0, 253.0 ]
         next:
           - subsegment.init
+          - spawn.spawn_merchant
       
       subsegment.ending_and_epilogue:
         ".editor":
@@ -42,7 +43,7 @@ structure:
       subsegment.hook_and_task1:
         ".editor":
           pos: [ 500.0, 250.0 ]
-          in: [ In ]
+          in: [ In, test_s2 ]
           out: [ Out ]
         segment: quest_hook
         next:
@@ -55,7 +56,7 @@ structure:
           out: [ Out ]
         segment: init
         next:
-          - spawn.spawn_merchant
+          - subsegment.wait_start_conditions
       
       subsegment.wait_start_conditions:
         ".editor":
@@ -208,7 +209,7 @@ structure:
       
       spawn.spawn_merchant:
         ".editor":
-          pos: [ 261.7937011719, 381.6825256348 ]
+          pos: [ 331.0, 386.0 ]
           hint: spawn-only
           in: []
           out: []
@@ -216,7 +217,7 @@ structure:
         spawnsets:
           - merchant_community
         next:
-          - subsegment.hook_and_task1
+          - subsegment.fetching_the_amulet
       
       spawn.test_community_spawn:
         ".editor":

@@ -5,6 +5,8 @@ DMNQ_started_with
 	   1 -> merchant
 	   2 -> demons
 
+DMNQ_persuaded_noret
+
 DMNQ_violence_chosen
 
 DMNQ_fistfight_result

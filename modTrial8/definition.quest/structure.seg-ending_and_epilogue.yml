@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: ending_and_epilogue
 # 
-# (version: 149, saved: 2022-11-13 16:56:53)
+# (version: 181, saved: 2023-01-29 19:00:56)
 #
 ---
 structure:
@@ -20,12 +20,11 @@ structure:
         
         subsegment.demons_glossary2:
           ".editor":
-            pos: [ 1300.0, 200.0 ]
+            pos: [ 1312.0, 142.0 ]
             in: [ In ]
             out: [ Out ]
           segment: demons_glossary2
-          next:
-            - waituntil.merchant_alive_branch
+          next: ".done"
         
         scene.merchants_greeting_each_other:
           ".editor":
@@ -182,6 +181,7 @@ structure:
           notify: true
           next:
             - subsegment.demons_glossary2
+            - waituntil.merchant_alive_branch
         
         reward.just_xp:
           ".editor": [ 900.0, 200.0 ]

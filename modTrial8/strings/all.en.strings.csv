@@ -89,32 +89,35 @@
 2111410102|00000000||Don’t expect any miracles.
 2111410103|00000000||Taking a look will have a price.
 2111410104|00000000||There’s nothing to find there.
-2111410105|00000000||Greetings, good man. An ophirian merchant, if I’m not mistaken?
-2111410106|00000000||I greet you, I greet you! May I introduce myself: Noret Fahleri, indeed coming from afar. Did you come to me to buy?
-2111410107|00000000||Not right now. But you seem like you’ve lost your company. Care to explain what held you up?
-2111410108|00000000||Are you Noret Fahleri, ophirian merchant?
-2111410109|00000000||I greet you, I greet you! Is it possible my name has reached local ears already? Did you come to me to buy?
-2111410110|00000000||Not right now. Your comrades at the camp are looking for you. Care to explain what held you up?
-2111410111|00000000||Yes yes, of course, certainly.
-2111410112|00000000||Dulla, Tollin and I came to this beautiful country to explore it, to trade in it, to enrichen it with our goods.
-2111410113|00000000||Usually, we stick together, yes, but... a villa not far from here piqued my interest.
-2111410114|00000000||You must understand, I always look for ways to increase my collection of artifacts and amulets, may it be the proudest in the world already.
-2111410115|00000000||Stick to the point. Why does a villa in the middle of nowhere draw your attention?
-2111410116|00000000||Two voices led me there - yet, upon arriving at the villa, all magic aura recipients catastrophed.
-2111410117|00000000||Disturbing sounds escaped the building and I am no fool. I fled in a hurry.
-2111410118|00000000||Stick to the point. Why does a villa in the middle of nowhere draw your attention? No better place around to sell?
-2111410119|00000000||Certainly, yes, that’s where we will be. But, you see, two voices led me there, and they spoke of rich and undiscovered artifacts, useful only to those with the knowledge.
-2111410120|00000000||Yet, upon arriving at the villa, all magic aura recipients catastrophed. Disturbing sounds escaped the building and I am no fool. I fled in a hurry.
-2111410121|00000000||You still didn’t return, so what’s holding you? I can ensure you, there’s nothing good waiting in this place for you.
-2111410122|00000000||I am un-sure what to do. There is my pride as a collector, but then - those obvious dangers. And honestly, the fog has me a bit lost.
-2111410123|00000000||Would like to know what’s going on in the villa, and you look more the type for bravery than me. If you would go there and see what’s going on, part of the profits would certainly be yours!
-2111410124|00000000||Can take a look as to what’s going on, but don’t expect me to come back with treasures on my back.
-2111410125|00000000||... inhabitants?
-2111410126|00000000||I wouldn’t pay so much even if you were King Radovid.
-2111410127|00000000||That’s just a bit high, witcher.
-2111410128|00000000||Fine.
-2111410129|00000000||My patience ended! We’re done blatherin’, you’ll take the offer!
-2111410130|00000000||Told you there’s nothing but misery there, I know the inhabitants of this place far too well.
+2111410105|00000000||You still didn’t return, so what’s holding you? I can ensure you, there’s nothing good waiting in this place for you.
+2111410106|00000000||I am un-sure what to do. There is my pride as a collector, but then - those obvious dangers. And honestly, the fog has me a bit lost.
+2111410107|00000000||Would like to know what’s going on in the villa, and you look more the type for bravery than me. If you would go there and see what’s going on, part of the profits would certainly be yours!
+2111410108|00000000||Greetings, good man. An ophirian merchant, if I’m not mistaken?
+2111410109|00000000||I greet you, I greet you! May I introduce myself: Noret Fahleri, indeed coming from afar. Did you come to me to buy?
+2111410110|00000000||Not right now. But you seem like you’ve lost your company. Care to explain what held you up?
+2111410111|00000000||Are you Noret Fahleri, ophirian merchant?
+2111410112|00000000||I greet you, I greet you! Is it possible my name has reached local ears already? Did you come to me to buy?
+2111410113|00000000||Not right now. Your comrades at the camp are looking for you. Care to explain what held you up?
+2111410114|00000000||Yes yes, of course, certainly.
+2111410115|00000000||Dulla, Tollin and I came to this beautiful country to explore it, to trade in it, to enrichen it with our goods.
+2111410116|00000000||Usually, we stick together, yes, but... a villa not far from here piqued my interest.
+2111410117|00000000||You must understand, I always look for ways to increase my collection of artifacts and amulets, may it be the proudest in the world already.
+2111410118|00000000||Stick to the point. Why does a villa in the middle of nowhere draw your attention?
+2111410119|00000000||Two voices led me there - yet, upon arriving at the villa, all magic aura recipients catastrophed.
+2111410120|00000000||Disturbing sounds escaped the building and I am no fool. I fled in a hurry.
+2111410121|00000000||Stick to the point. Why does a villa in the middle of nowhere draw your attention? No better place around to sell?
+2111410122|00000000||Certainly, yes, that’s where we will be. But, you see, two voices led me there, and they spoke of rich and undiscovered artifacts, useful only to those with the knowledge.
+2111410123|00000000||Yet, upon arriving at the villa, all magic aura recipients catastrophed. Disturbing sounds escaped the building and I am no fool. I fled in a hurry.
+2111410124|00000000||You still didn’t return, so what’s holding you? I can ensure you, there’s nothing good waiting in this place for you.
+2111410125|00000000||I am un-sure what to do. There is my pride as a collector, but then - those obvious dangers. And honestly, the fog has me a bit lost.
+2111410126|00000000||Would like to know what’s going on in the villa, and you look more the type for bravery than me. If you would go there and see what’s going on, part of the profits would certainly be yours!
+2111410127|00000000||Can take a look as to what’s going on, but don’t expect me to come back with treasures on my back.
+2111410128|00000000||... inhabitants?
+2111410129|00000000||I wouldn’t pay so much even if you were King Radovid.
+2111410130|00000000||That’s just a bit high, witcher.
+2111410131|00000000||Fine.
+2111410132|00000000||My patience ended! We’re done blatherin’, you’ll take the offer!
+2111410133|00000000||Told you there’s nothing but misery there, I know the inhabitants of this place far too well.
 ; 
 ;meta[language=en]
 ; id      |key(hex)|key(str)| text
@@ -168,16 +171,88 @@
 ; 
 ;meta[language=en]
 ; id      |key(hex)|key(str)| text
-2111410300|00000000||No easy way out here.
+2111410300|00000000||You're wasting my time.
 2111410301|00000000||[Use Axii]
 2111410302|00000000||Can I interest you in some money?
-2111410303|00000000||How did you come by it, anyway?
-2111410304|00000000||I don't want to do this...
-2111410305|00000000||This ends in a fight, I know it.
-2111410306|00000000||Axii used right here.
-2111410307|00000000||Can I interest you in some money?
-2111410308|00000000||Intricate to convince you I guess
-2111410309|00000000||I don't want to do this.
+2111410303|00000000||Few things you might want to consider.
+2111410304|00000000||I’ll be fine without it.
+2111410305|00000000||[buy the amulet]
+2111410306|00000000||[don't buy it]
+2111410307|00000000||[buy the amulet]
+2111410308|00000000||[don't buy it]
+2111410309|00000000||... looks mighty cursed to me.
+2111410310|00000000||... doesn’t seem as powerful as you describe it.
+2111410311|00000000||... is clearly a counterfeit.
+2111410312|00000000||... let a sorceress take a look at it.
+2111410313|00000000||... destroy it not far from here.
+2111410314|00000000||... let it help me end the strange events at the mansion for good.
+2111410315|00000000||... will be free thanks to you.
+2111410316|00000000||... could come for you out of revenge.
+2111410317|00000000||... will terrorize other travelers.
+2111410318|00000000||Welcome back, friend. So good to see you’re safe and sound. Have you found any valuable or particular artifacts?
+2111410319|00000000||Hardly. Found other particular things though. There are souls trapped in the villa. Need to release ‘em to give the place some peace.
+2111410320|00000000||Of course I had my experiences with spirits and such too in my career. Why did these particular spirits call upon me though? Do they have a need for amulets of the highest quality sort?
+2111410321|00000000||You’re actually close to the truth. These you could help by providing an amulet with black and red gems, refined gravings. Ring a bell? 
+2111410322|00000000||This is the piece you’re looking for. Although, I’m not entirely certain how it will be of use to you.
+2111410323|00000000||Don't worry. Thanks for your help.
+2111410324|00000000||Ah! But of course I need to humbly ask how those spirits intend to pay me once they receive the ware?
+2111410325|00000000||Given it works, the villa is all yours to explore. Though I doubt it’s a nice place to be.
+2111410326|00000000||Ah, as much as I treasure my art, I do treasure my life more. And as much as I’d like to help, I can't give such a valuable piece away for free, friend.
+2111410327|00000000||You're wasting my time.
+2111410328|00000000||W-What are you saying, friend? There's no need for aggression!
+2111410329|00000000||Feels more like I’ve regained my senses.
+2111410330|00000000||You’re generous today and don’t expect a reward. you choose to go back to your comrades and not enter the dangerous villa.
+2111410331|00000000||I’ll be fine without it.
+2111410332|00000000||Oh, sure. As you wish, friend. I’m sure you’ll still free those poor spirits without any problems.
+2111410333|00000000||I will. you should take your leave now.
+2111410334|00000000||And leave I will. Time to return back to my comrades until the events at the villa have been dealt with. I would be overjoyed if you’d pay me a visit afterwards, friend!
+2111410335|00000000||We’ll see. Take care.
+2111410336|00000000||How much would it cost me to take this amulet off your hands?
+2111410337|00000000||A very good question, of course it has its price, which is far from cheap as it is one of the finest-
+2111410338|00000000||... but since we already spoke about my role in saving those spirits, money shan’t be an issue! Could we settle for 400 coins?
+2111410339|00000000||Still not cheap, but I assume you won’t go lower.
+2111410340|00000000||Even if I wanted to, friend, I couldn’t.
+2111410341|00000000||... but since I know it’s for a good purpose, I’ll give you a great discount! How do 2000 coins sound to you?
+2111410342|00000000||Like burglary. How do you plan to sleep tonight with a conscience that cloudy?
+2111410343|00000000||Friend, my consciousness is clear as the jewels in this amulet – I am inclined to help, but we all need to live... or not. 
+2111410344|00000000||Few things you might want to consider. The amulet...
+2111410345|00000000||Seen enough magical artifacts to know when one is cursed. This one fits this feeling.
+2111410346|00000000||You confuse me, dear friend... cursed, my amulet?
+2111410347|00000000||It’s my daily business. I could still use it for the spirits, but selling it to human beings? Recipe for disaster.
+2111410348|00000000||Hm..
+2111410349|00000000||Gets me thinking if it really is of help and worth as much as you claim.
+2111410350|00000000||Be not afraid, every single piece here is powerful, each in its own way. I’m not entirely sure what you intend to do with this one, but it will serve its purpose, you have my word. And so, everything that’s needed to silence the cries of anguish, are a mere few coins. 
+2111410351|00000000||... it is clearly a counterfeit.
+2111410352|00000000||You jest, dear friend! You must know I am the most-famous and esteemed amulet-trader of Ofir, if not the known world. Every single piece of this collection is handpicked and of highest quality, astounding even to those who live beyond.
+2111410353|00000000||Got a few contacts among the society of sorceresses. Maybe they can fix it.
+2111410354|00000000||Ah, so you know a sorceress who knows her ways with fine amulets like mine? Could she lift the curse?
+2111410355|00000000||Got a few contacts among the society of sorceresses. Maybe they can fix it.
+2111410356|00000000||Ah, so you know a sorceress who knows her ways with fine amulets like mine? Could she lift the curse?
+2111410357|00000000||Actually, I’m pretty close to one. One of the most powerful. Ever heard of Triss Merigold of Maribor?
+2111410358|00000000||Actually, I’m pretty close to one. One of the most powerful. Ever heard of Yennefer of Vengerberg?
+2111410359|00000000||Can't say I did. I’m sure she’s a great sorceress but I’m pretty sure she hasn’t seen or worn anything of this quality yet. I’d rather not confuse the poor thing with this amulet.
+2111410360|00000000||She'd probably break your nose for just those words alone.
+2111410361|00000000||She'd probably annihilate you just for those words alone.
+2111410362|00000000||I could use it for those spirits and then destroy it. No danger for you or your profits.
+2111410363|00000000||Destroy!? Cursed or not, even the notion of one of my beloved pieces being destroyed is... No. No! They’re like my children. Nothing in the world could get me to let them get destroyed.
+2111410364|00000000||Nothing?
+2111410365|00000000||Unless someone bids an amount high enough to ease my pain.
+2111410366|00000000||... let it help me end the strange events at the mansion for good.
+2111410367|00000000||Yes, of course, you already mentioned that...
+2111410368|00000000||Yes. Though, if you fear the curse of the villa, the amulet could help me make it safe for good. I’ve been there before, there were a few extremely rare treasures and artifacts waiting to be found.
+2111410369|00000000||So far no one was brave and knowledgeable enough, but if those spirits are freed, you could be the one returning to your comrades in glory. 
+2111410370|00000000||That would be fitting for a refined collector such as me...
+2111410371|00000000||No telling how they will show their gratitude to you. Heard numerous stories of spirits presenting men with riches to no end.
+2111410372|00000000||Peaceful spirits don't fill my belly at night, and I can’t count on their appreciation. I do hope that you will make the right choice in order to help those poor souls. Then we both might get the gratitude of whatever roams the halls of the villa.
+2111410373|00000000||You probably would have gotten something entirely different from them if I wouldn’t have turned up.
+2111410374|00000000||Trust me, spiteful spirits are nothing you want to come close to. Wraiths are among the least-harmful of them, and even they are terrifying in groups.
+2111410375|00000000||They could get away from the villa? I’d reckon they should be bound to the place.
+2111410376|00000000||I will free those spirits, and when they ask me what took me so long, I’d have to tell them who prioritized a few more coins over the salvation of their unspeakable pain. Wouldn’t want to switch shoes with one who denied helping them to peace. 
+2111410377|00000000||Not necessary, friend, as I’m entirely on your side! My only priority when coming to this country was the urge to help poor souls, after all! How about a phenomenal discount?
+2111410378|00000000||They won’t stop with you or me. They’ll lure countless people from everywhere towards them, granting them an ugly fate.
+2111410379|00000000||While this is a pity, I’m neither a witcher nor a guard, and thereby not in the position to protect all poor people of this region. You, however, could actually do that.
+2111410380|00000000||Especially with a few coins diverted to my purse instead of investing into the next, third-rate silver sword. No offense, friend.
+2111410381|00000000||Would love to show you what my third-rate swords are capable of...
 ; 
 ;meta[language=en]
 ; id      |key(hex)|key(str)| text

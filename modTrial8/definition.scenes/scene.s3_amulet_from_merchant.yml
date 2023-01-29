@@ -21,7 +21,23 @@ repository:
       idle_anim: "high_standing_determined_idle"
 
   cameras:
+
     cam_1_merchant:
+      fov: 40.0
+      transform:
+        pos: [ 4.6649646759, -0.3455352783, 2.0862884521 ]
+        rot: [ 0.0, 341.3999938965, 94.2999267578 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_2_geralt:
       fov: 40.0
       transform:
         pos: [ 4.6649646759, -0.3455352783, 2.0862884521 ]
@@ -63,6 +79,8 @@ production:
     cameras:
       cam_1_merchant:
         repo: "cam_1_merchant"
+      cam_2_geralt:
+        repo: "cam_2_geralt"
 
     animations:
       geralt_high_standing_determined_calm_enter_frontal:
@@ -97,79 +115,802 @@ production:
         repo: "pose_0_high_standing_determined_idle"
 
 storyboard:
-  #defaults:
+
+  defaults:
     #placement:
       #geralt: [[ 2.5696241856, -1.0132269859, -0.0138854980 ], [ 0.0, 0.0, 52.9996032715 ]]
       #ofir_enchanter: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
 
-    #actor.pose:
-      #geralt: geralt_high_standing_determined_idle
-      #ofir_enchanter: ofir_enchanter_high_standing_determined_idle
+    actor.pose:
+      geralt: geralt_high_standing_determined_idle
+      ofir_enchanter: ofir_enchanter_high_standing_determined_idle
 
-  section_storyboard_ui:
-    # shot merchant
-    shot_1:
+  section_start:
+
+    shot_01_geralt_enter:
       - actor.placement: [0.0, geralt, [ 2.5696241856, -1.0132269859, -0.0138854980 ], [ 0.0, 0.0, 52.9996032715 ]]
       - actor.placement: [0.0, ofir_enchanter, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
       - actor.pose: [0.0, geralt_high_standing_determined_idle]
       - actor.pose: [0.0, ofir_enchanter_high_standing_determined_idle]
-      - cam: [0.0, cam_1_merchant]
+      - cam: [0.0, cam_2_geralt]
       - actor.anim: [0.0, geralt_high_standing_determined_calm_enter_frontal]
       - actor.anim: [0.0, ofir_enchanter_low_kneeling_determined_idle]
 
+
+  section_tell_request:
+
+    shot_02_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_03_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_04_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_05_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_06_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_07_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_08_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_09_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_10_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_11_noret:
+      - cam: [0.0, cam_1_merchant]
+
+
+  section_choice_howto:
+
+    shot_cA:
+      - cam: [0.0, cam_1_merchant]
+
+
+  section_fight:
+
+    shot_12_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_13_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_14_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_axii:
+
+    shot_100_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_101_noret:
+      - cam: [0.0, cam_1_merchant]
+
+
+  section_backoff:
+
+    shot_102_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_103_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_104_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_105_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_106_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_buy:
+
+    shot_15_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_16_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_17_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_buy_persuaded:
+
+    shot_18_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_19_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_20_noret:
+      - cam: [0.0, cam_1_merchant]
+
+
+  section_choice_buy_persuaded:
+
+    shot_cBuyPers:
+      - cam: [0.0, cam_1_merchant]
+
+
+  section_buy_persuaded_done:
+
+    shot_21_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_buy_not_persuaded:
+
+    shot_22_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_23_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_24_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_25_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_choice_buy_not_persuaded:
+
+    shot_cBuyNotPers:
+      - cam: [0.0, cam_1_merchant]
+
+
+  section_buy_not_persuaded_done:
+
+    shot_26_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_convince:
+
+    shot_27_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_choice_convince_b:
+
+    shot_cB:
+      - cam: [0.0, cam_1_merchant]
+
+
+  section_convince_b1:
+
+    shot_28_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_29_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_30_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_31_noret:
+      - cam: [0.0, cam_1_merchant]
+
+
+  section_convince_b2:
+
+    shot_32_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_33_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_34_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_convince_b3:
+
+    shot_35_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_36_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_37_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_choice_convince_c:
+
+    shot_cC:
+      - cam: [0.0, cam_1_merchant]
+
+
+  section_convince_c1:
+
+    shot_38_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_39_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_40_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_41_noret:
+      - cam: [0.0, cam_1_merchant]
+
+
+  section_convince_c1_trissA:
+
+    shot_42_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_convince_c1_yenA:
+
+    shot_43_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_convince_c1_cont:
+
+    shot_44_noret:
+      - cam: [0.0, cam_1_merchant]
+
+
+  section_convince_c1_trissB:
+
+    shot_45_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_convince_c1_yenB:
+
+    shot_46_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_convince_c2:
+
+    shot_47_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_48_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_49_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_50_noret:
+      - cam: [0.0, cam_1_merchant]
+
+
+  section_convince_c3:
+
+    shot_51_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_52_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_53_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_54_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_55_noret:
+      - cam: [0.0, cam_1_merchant]
+
+
+  section_choice_convince_d:
+
+    shot_cD:
+      - cam: [0.0, cam_1_merchant]
+
+
+  section_convince_d1:
+
+    shot_56_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_57_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_58_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_convince_d2:
+
+    shot_59_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_60_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_61_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_62_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_63_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_convince_d3:
+
+    shot_64_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_65_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_66_noret:
+      - cam: [0.0, cam_1_merchant]
+
+    shot_67_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+
+
 dialogscript:
+
   player: "geralt"
   actors: [ "geralt", "ofir_enchanter" ]
 
   section_start:
+    - CUE: shot_01_geralt_enter
     - PAUSE: 0.0
-    - NEXT: section_storyboard_ui
+    - NEXT: section_tell_request
 
-  section_storyboard_ui:
-    # shot merchant
-    - CUE: shot_1
-    # (longest) anim: low_kneeling_determined_idle
-    - PAUSE: 18.0666675568
+  section_tell_request:
+
+    - CUE: shot_02_noret
+    - ofir_enchanter: "Welcome back, friend. So good to see you’re safe and sound. Have you found any valuable or particular artifacts?"
+
+    - CUE: shot_03_geralt
+    - geralt: "Hardly. Found other particular things though. There are souls trapped in the villa. Need to release ‘em to give the place some peace."
+
+    - CUE: shot_04_noret
+    - ofir_enchanter: "Of course I had my experiences with spirits and such too in my career. Why did these particular spirits call upon me though? Do they have a need for amulets of the highest quality sort?"
+
+    - CUE: shot_05_geralt
+    - geralt: "You’re actually close to the truth. These you could help by providing an amulet with black and red gems, refined gravings. Ring a bell? "
+
+    - CUE: shot_06_noret # brings out artifact
+    - PAUSE: 5.0
+
+    - CUE: shot_07_noret
+    - ofir_enchanter: "This is the piece you’re looking for. Although, I’m not entirely certain how it will be of use to you."
+
+    - CUE: shot_08_geralt
+    - geralt: "Don't worry. Thanks for your help."
+
+    - CUE: shot_09_noret
+    - ofir_enchanter: "Ah! But of course I need to humbly ask how those spirits intend to pay me once they receive the ware?"
+
+    - CUE: shot_10_geralt
+    - geralt: "Given it works, the villa is all yours to explore. Though I doubt it’s a nice place to be."
+
+    - CUE: shot_11_noret
+    - ofir_enchanter: "Ah, as much as I treasure my art, I do treasure my life more. And as much as I’d like to help, I can't give such a valuable piece away for free, friend."
+
     - NEXT: section_choice_howto
     
   section_choice_howto:
         
     - CHOICE:
 
-        - choice: ["No easy way out here.", section_fight]
+        - choice: ["You're wasting my time.", section_fight]
           emphasize: true
 
-        - choice: ["[Use Axii]", section_axii]
+        - choice: ["[Use Axii]", section_axii, axii, 15] # level required
           emphasize: true
 
         - choice: ["Can I interest you in some money?", section_buy]
           emphasize: true
 
-        - choice: ["How did you come by it, anyway?", section_convince]
+        - choice: ["Few things you might want to consider.", section_convince]
+          emphasize: false
+          single_use: true
+
+        - choice: ["I’ll be fine without it.", section_backoff, exit]
           emphasize: false
 
-        - choice: ["I don't want to do this...", section_backoff]
-          emphasize: false
+# ------------------------ fight -----------------------------
 
   section_fight:
-    - geralt: "This ends in a fight, I know it."
+
+    - CUE: shot_12_geralt
+    - geralt: "You're wasting my time."
+
+    - CUE: shot_13_noret
+    - ofir_enchanter: "W-What are you saying, friend? There's no need for aggression!"
+
+    - CUE: shot_14_geralt
+    - geralt: "Feels more like I’ve regained my senses."
+
     - NEXT: section_exit_fight
 
+# ------------------------ axii -----------------------------
+
   section_axii:
-    - geralt: "Axii used right here."
+
+    - CUE: shot_100_geralt
+    - geralt: "You’re generous today and don’t expect a reward. you choose to go back to your comrades and not enter the dangerous villa."
+
+    - CUE: shot_101_noret
+    - PAUSE: 5.0
+
     - NEXT: script_2xp
 
-  section_buy:
-    - geralt: "Can I interest you in some money?"
-    - NEXT: script_2xp
-
-  section_convince:
-    - geralt: "Intricate to convince you I guess"
-    - NEXT: script_5xp
+# ------------------------ backoff -----------------------------
 
   section_backoff:
-    - geralt: "I don't want to do this."
+
+    - CUE: shot_102_geralt
+    - geralt: "I’ll be fine without it."
+
+    - CUE: shot_103_noret
+    - ofir_enchanter: "Oh, sure. As you wish, friend. I’m sure you’ll still free those poor spirits without any problems."
+
+    - CUE: shot_104_geralt
+    - geralt: "I will. you should take your leave now."
+
+    - CUE: shot_105_noret
+    - ofir_enchanter: "And leave I will. Time to return back to my comrades until the events at the villa have been dealt with. I would be overjoyed if you’d pay me a visit afterwards, friend!"
+
+    - CUE: shot_106_geralt
+    - geralt: "We’ll see. Take care."
+
     - NEXT: section_exit_backoff
+
+# ------------------------ buy -----------------------------
+
+  section_buy:
+
+    - CUE: shot_15_geralt
+    - geralt: "How much would it cost me to take this amulet off your hands?"
+
+    - CUE: shot_16_noret
+    - ofir_enchanter: "A very good question, of course it has its price, which is far from cheap as it is one of the finest-"
+
+    - CUE: shot_17_geralt
+    - PAUSE: 3.0
+
+    - NEXT:
+        condition: [ DMNQ_persuaded_noret, "=", 1 ]
+        on_true: section_buy_persuaded
+        on_false: section_buy_not_persuaded
+
+  section_buy_persuaded:
+
+    - CUE: shot_18_noret
+    - ofir_enchanter: "... but since we already spoke about my role in saving those spirits, money shan’t be an issue! Could we settle for 400 coins?"
+
+    - CUE: shot_19_geralt
+    - geralt: "Still not cheap, but I assume you won’t go lower."
+
+    - CUE: shot_20_noret
+    - ofir_enchanter: "Even if I wanted to, friend, I couldn’t."
+
+    - NEXT: section_choice_buy_persuaded
+
+  section_choice_buy_persuaded:
+        
+    - CHOICE:
+
+        - choice: ["[buy the amulet]", section_buy_persuaded_done, pay, 400]
+          emphasize: true
+
+        - choice: ["[don't buy it]", section_choice_howto]
+          emphasize: false
+
+  section_buy_persuaded_done:
+
+    - CUE: shot_21_geralt
+    - PAUSE: 3.0
+
+    - NEXT: script_5xp
+
+
+  section_buy_not_persuaded:
+
+    - CUE: shot_22_noret
+    - ofir_enchanter: "... but since I know it’s for a good purpose, I’ll give you a great discount! How do 2000 coins sound to you?"
+
+    - CUE: shot_23_geralt
+    - geralt: "Like burglary. How do you plan to sleep tonight with a conscience that cloudy?"
+
+    - CUE: shot_24_noret
+    - ofir_enchanter: "Friend, my consciousness is clear as the jewels in this amulet – I am inclined to help, but we all need to live... or not. "
+
+    - CUE: shot_25_geralt
+    - PAUSE: 3.0
+
+    - NEXT: section_choice_buy_not_persuaded
+
+  section_choice_buy_not_persuaded:
+        
+    - CHOICE:
+
+        - choice: ["[buy the amulet]", section_buy_not_persuaded_done, pay, 2000]
+          emphasize: true
+
+        - choice: ["[don't buy it]", section_choice_howto]
+          emphasize: false
+
+  section_buy_not_persuaded_done:
+
+    - CUE: shot_26_geralt
+    - PAUSE: 3.0
+
+    - NEXT: script_2xp
+
+# ------------------------ convince -----------------------------
+
+  section_convince:
+
+    - CUE: shot_27_geralt
+    - geralt: "Few things you might want to consider. The amulet..."
+
+    - NEXT: section_choice_convince_b
+
+  # convince B
+
+  section_choice_convince_b:
+
+    - CHOICE:
+
+        - choice: ["... looks mighty cursed to me.", section_convince_b1] # correct
+          emphasize: true
+
+        - choice: ["... doesn’t seem as powerful as you describe it.", section_convince_b2]
+          emphasize: true
+
+        - choice: ["... is clearly a counterfeit.", section_convince_b3]
+          emphasize: true
+
+  section_convince_b1: # correct
+
+    - CUE: shot_28_geralt
+    - geralt: "Seen enough magical artifacts to know when one is cursed. This one fits this feeling."
+
+    - CUE: shot_29_noret
+    - PAUSE: 2.0
+    - ofir_enchanter: "You confuse me, dear friend... cursed, my amulet?"
+
+    - CUE: shot_30_geralt
+    - geralt: "It’s my daily business. I could still use it for the spirits, but selling it to human beings? Recipe for disaster."
+
+    - CUE: shot_31_noret
+    - ofir_enchanter: "Hm.."
+
+    - NEXT: section_choice_convince_c
+
+  section_convince_b2:
+
+    - CUE: shot_32_geralt
+    - geralt: "Gets me thinking if it really is of help and worth as much as you claim."
+
+    - CUE: shot_33_noret
+    - ofir_enchanter: "Be not afraid, every single piece here is powerful, each in its own way. I’m not entirely sure what you intend to do with this one, but it will serve its purpose, you have my word. And so, everything that’s needed to silence the cries of anguish, are a mere few coins. "
+
+    - CUE: shot_34_geralt
+    - PAUSE: 2.0
+
+    - NEXT: section_choice_howto
+
+  section_convince_b3:
+
+    - CUE: shot_35_geralt
+    - geralt: "... it is clearly a counterfeit."
+
+    - CUE: shot_36_noret
+    - ofir_enchanter: "You jest, dear friend! You must know I am the most-famous and esteemed amulet-trader of Ofir, if not the known world. Every single piece of this collection is handpicked and of highest quality, astounding even to those who live beyond."
+
+    - CUE: shot_37_geralt
+    - PAUSE: 2.0
+
+    - NEXT: section_choice_howto
+
+  # convince C
+
+  section_choice_convince_c:
+
+    - CHOICE:
+
+        - choice: ["... let a sorceress take a look at it.", section_convince_c1]
+          emphasize: true
+
+        - choice: ["... destroy it not far from here.", section_convince_c2]
+          emphasize: true
+
+        - choice: ["... let it help me end the strange events at the mansion for good.", section_convince_c3] # correct
+          emphasize: true
+
+  section_convince_c1:
+
+    - CUE: shot_38_geralt
+    - geralt: "Got a few contacts among the society of sorceresses. Maybe they can fix it."
+
+    - CUE: shot_39_noret
+    - ofir_enchanter: "Ah, so you know a sorceress who knows her ways with fine amulets like mine? Could she lift the curse?"
+
+    - CUE: shot_40_geralt
+    - geralt: "Got a few contacts among the society of sorceresses. Maybe they can fix it."
+
+    - CUE: shot_41_noret
+    - ofir_enchanter: "Ah, so you know a sorceress who knows her ways with fine amulets like mine? Could she lift the curse?"
+
+    - NEXT:
+        condition: [ q309_triss_lover, "=", 1 ]
+        on_true: section_convince_c1_trissA
+        on_false: section_convince_c1_yenA
+
+  section_convince_c1_trissA:
+
+    - CUE: shot_42_geralt
+    - geralt: "Actually, I’m pretty close to one. One of the most powerful. Ever heard of Triss Merigold of Maribor?"
+
+    - NEXT: section_convince_c1_cont
+
+  section_convince_c1_yenA:
+
+    - CUE: shot_43_geralt
+    - geralt: "Actually, I’m pretty close to one. One of the most powerful. Ever heard of Yennefer of Vengerberg?"
+
+    - NEXT: section_convince_c1_cont
+
+  section_convince_c1_cont:
+
+    - CUE: shot_44_noret
+    - ofir_enchanter: "Can't say I did. I’m sure she’s a great sorceress but I’m pretty sure she hasn’t seen or worn anything of this quality yet. I’d rather not confuse the poor thing with this amulet."
+
+    - NEXT:
+        condition: [ q309_triss_lover, "=", 1 ]
+        on_true: section_convince_c1_trissB
+        on_false: section_convince_c1_yenB
+
+  section_convince_c1_trissB:
+
+    - CUE: shot_45_geralt
+    - geralt: "She'd probably break your nose for just those words alone."
+
+    - NEXT: section_choice_howto
+
+  section_convince_c1_yenB:
+
+    - CUE: shot_46_geralt
+    - geralt: "She'd probably annihilate you just for those words alone."
+
+    - NEXT: section_choice_howto
+
+
+  section_convince_c2:
+
+    - CUE: shot_47_geralt
+    - geralt: "I could use it for those spirits and then destroy it. No danger for you or your profits."
+
+    - CUE: shot_48_noret
+    - ofir_enchanter: "Destroy!? Cursed or not, even the notion of one of my beloved pieces being destroyed is... No. No! They’re like my children. Nothing in the world could get me to let them get destroyed."
+
+    - CUE: shot_49_geralt
+    - geralt: "Nothing?"
+
+    - CUE: shot_50_noret
+    - ofir_enchanter: "Unless someone bids an amount high enough to ease my pain."
+
+    - NEXT: section_choice_howto
+
+
+  section_convince_c3: # correct
+
+    - CUE: shot_51_geralt
+    - geralt: "... let it help me end the strange events at the mansion for good."
+
+    - CUE: shot_52_noret
+    - ofir_enchanter: "Yes, of course, you already mentioned that..."
+
+    - CUE: shot_53_geralt
+    - geralt: "Yes. Though, if you fear the curse of the villa, the amulet could help me make it safe for good. I’ve been there before, there were a few extremely rare treasures and artifacts waiting to be found."
+
+    - CUE: shot_54_geralt
+    - geralt: "So far no one was brave and knowledgeable enough, but if those spirits are freed, you could be the one returning to your comrades in glory. "
+
+    - CUE: shot_55_noret
+    - ofir_enchanter: "That would be fitting for a refined collector such as me..."
+
+    - NEXT: section_choice_convince_d
+
+  # convince D
+
+  section_choice_convince_d:
+
+    - CHOICE:
+
+        - choice: ["The spirits will be free thanks to you.", section_convince_d1]
+          emphasize: true
+
+        - choice: ["The spirits could come for you out of revenge.", section_convince_d2] # correct
+          emphasize: true
+
+        - choice: ["The spirits will terrorize other travelers.", section_convince_d3]
+          emphasize: true
+
+  section_convince_d1:
+
+    - CUE: shot_56_geralt
+    - geralt: "No telling how they will show their gratitude to you. Heard numerous stories of spirits presenting men with riches to no end."
+
+    - CUE: shot_57_noret
+    - ofir_enchanter: "Peaceful spirits don't fill my belly at night, and I can’t count on their appreciation. I do hope that you will make the right choice in order to help those poor souls. Then we both might get the gratitude of whatever roams the halls of the villa."
+
+    - CUE: shot_58_geralt
+    - geralt: "You probably would have gotten something entirely different from them if I wouldn’t have turned up."
+
+    - NEXT: section_choice_howto
+
+  section_convince_d2: # correct
+
+    - CUE: shot_59_geralt
+    - geralt: "Trust me, spiteful spirits are nothing you want to come close to. Wraiths are among the least-harmful of them, and even they are terrifying in groups."
+
+    - CUE: shot_60_noret
+    - ofir_enchanter: "They could get away from the villa? I’d reckon they should be bound to the place."
+
+    - CUE: shot_61_geralt
+    - geralt: "I will free those spirits, and when they ask me what took me so long, I’d have to tell them who prioritized a few more coins over the salvation of their unspeakable pain. Wouldn’t want to switch shoes with one who denied helping them to peace. "
+
+    - CUE: shot_62_noret
+    - ofir_enchanter: "Not necessary, friend, as I’m entirely on your side! My only priority when coming to this country was the urge to help poor souls, after all! How about a phenomenal discount?"
+
+    - CUE: shot_63_geralt # content
+    - PAUSE: 3.0
+
+    - NEXT: script_fact_persuaded_noret
+
+  section_convince_d3:
+
+    - CUE: shot_64_geralt
+    - geralt: "They won’t stop with you or me. They’ll lure countless people from everywhere towards them, granting them an ugly fate."
+
+    - CUE: shot_65_noret
+    - ofir_enchanter: "While this is a pity, I’m neither a witcher nor a guard, and thereby not in the position to protect all poor people of this region. You, however, could actually do that."
+
+    - CUE: shot_66_noret
+    - ofir_enchanter: "Especially with a few coins diverted to my purse instead of investing into the next, third-rate silver sword. No offense, friend."
+
+    - CUE: shot_67_geralt
+    - geralt: "Would love to show you what my third-rate swords are capable of..."
+
+    - NEXT: section_choice_howto
+
+  script_fact_persuaded_noret:
+
+    - SCRIPT:
+        function: AddFact_S
+        parameter: 
+            - factName: "DMNQ_persuaded_noret"
+            - value: 1
+            - validFor: 0
+
+    - NEXT: section_choice_howto
+
+# ------------------------ exits -----------------------------
 
   script_2xp:
 

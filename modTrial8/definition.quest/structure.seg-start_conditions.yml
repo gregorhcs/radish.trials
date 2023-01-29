@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: start_conditions
 # 
-# (version: 149, saved: 2022-11-13 16:56:53)
+# (version: 181, saved: 2023-01-29 19:00:56)
 #
 ---
 structure:
@@ -93,23 +93,11 @@ structure:
             - newQuestFact: dmnsq_contract_taken
             - addedItemName: cname_x
           next:
-            - script.enable_exclamation_mappin_blackcat
-        
-        script.enable_exclamation_mappin_blackcat:
-          ".editor":
-            pos: [ 2500.0, 150.0 ]
-            in: [ In ]
-            out: [ Out ]
-          function: EnableDynamicMappin
-          parameter:
-            - tag: cname_dmnq_black_cat
-            - enable: true
-          next:
             - script.enable_exclamation_mappin_merchant
         
         script.enable_exclamation_mappin_merchant:
           ".editor":
-            pos: [ 2700.0, 150.0 ]
+            pos: [ 2475.0, 148.0 ]
             in: [ In ]
             out: [ Out ]
           function: EnableDynamicMappin
@@ -203,6 +191,6 @@ structure:
             - script.add_contract_noticeboard
         
         out:
-          ".editor": [ 2900.0, 150.0 ]
+          ".editor": [ 2634.0, 147.0 ]
           next: ".done"
         

@@ -1,5 +1,5 @@
 section_start
-section_intro
+section_demons_are_back
 section_choice_info_gathering
 section_what_to_do
 section_about_the_spell

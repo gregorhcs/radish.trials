@@ -778,7 +778,7 @@ storyboard:
 
   # --------------------------------- SECTION START --------------------------------------------------------------------------------------
 
-  section_start:
+  section_start_first_time:
 
     shot_01_geralt_entering_1_enter:
 
@@ -798,6 +798,26 @@ storyboard:
 
       - actor.lookat: [0.0, ofir_merchant_mq6001, [ 0.8270030022, 0.5289082527, 0.6259689331 ]]
       - actor.lookat: [0.5, ofir_merchant_mq6001, geralt]
+
+  # --------------------------------- SECTION START --------------------------------------------------------------------------------------
+
+  section_start_subsequent_times:
+
+    shot_101_what_holds_you:
+
+      - cam: [0.0, cam_18_s1_11_merchant_want_vanilla_loot]
+
+      - actor.anim.additive: 
+            .@pos: [0.0, geralt_add_gesture_explain_13]
+            blendin: 0.3
+            blendout: 0.3
+
+    shot_102_merchant_want_vanilla_loot:
+
+      - actor.anim: 
+            .@pos: [0.0, ofir_merchant_mq6001_high_standing_sad_gesture_headscratch]
+            blendin: 0.3
+            blendout: 0.3
 
 
   # --------------------------------- SECTION CONTRACT NOTICE NOT SEEN --------------------------------------------------------------------------------------
@@ -1223,7 +1243,7 @@ dialogscript:
   actors: [ "geralt", "ofir_merchant_mq6001" ]
 
 
-  section_start:
+  section_start_first_time:
 
     - PAUSE: 0.0
 
@@ -1234,6 +1254,21 @@ dialogscript:
         condition: [ DMNQ_seen_noticeboard, "=", 1 ]
         on_true: section_contract_notice_seen
         on_false: section_contract_notice_not_seen
+
+
+  section_start_subsequent_times:
+
+    - PAUSE: 0.0
+
+    - CUE: shot_101_what_holds_you
+    - geralt: "You still didn’t return, so what’s holding you? I can ensure you, there’s nothing good waiting in this place for you."
+
+    - CUE: shot_102_merchant_want_vanilla_loot
+    - ofir_merchant_mq6001: "I am un-sure what to do. There is my pride as a collector, but then - those obvious dangers. And honestly, the fog has me a bit lost."
+    - ofir_merchant_mq6001: "Would like to know what’s going on in the villa, and you look more the type for bravery than me. If you would go there and see what’s going on, part of the profits would certainly be yours!"
+
+    - NEXT: section_choice_take_job
+
 
 
   section_contract_notice_not_seen:

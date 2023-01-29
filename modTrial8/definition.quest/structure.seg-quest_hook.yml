@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: quest_hook
 # 
-# (version: 149, saved: 2022-11-13 16:56:53)
+# (version: 181, saved: 2023-01-29 19:00:56)
 #
 ---
 structure:
@@ -9,150 +9,178 @@ structure:
     quest_hook:
       blocks:
         in:
-          ".editor": [ 76.0, 206.0 ]
+          ".editor": [ 242.0, 98.0 ]
           next:
-            - waituntil.approached_demons
             - waituntil.approached_merchant
+        
+        in.test_s2:
+          ".editor": [ 799.0, 240.0 ]
+          next:
+            - changelayers.show_demon_layer
         
         subsegment.demons_glossary_no1:
           ".editor":
-            pos: [ 1700.0, 175.0 ]
+            pos: [ 2030.0, 92.0 ]
             in: [ In ]
             out: [ Out ]
           segment: demons_glossary1
-          next:
-            - waituntil.met_merchant
+          next: ".done"
         
         scene.s1_start_merchant:
           ".editor":
-            pos: [ 900.0, 100.0 ]
-            in: [ Input ]
-            out: [ Output ]
+            pos: [ 540.0, 100.0 ]
+            in: [ first_time ]
+            out: [ took_job, took_job_not ]
           scene: s1_start_merchant.yml
           placement: novigrad/sp_merchant
           interruptable: true
           _fadein: false
-          next.Output:
+          next.took_job:
             - journal.qjournal_found_merchant: Activate
+          next.took_job_not:
+            - interaction.s1_start_merchant: subsequent_times
         
         scene.s2_demons:
           ".editor":
-            pos: [ 1500.0, 175.0 ]
+            pos: [ 1682.0, 172.0 ]
             in: [ Input ]
-            out: [ Output ]
+            out: [ accepted, declined_help ]
           scene: s2_demons.yml
           placement: novigrad/sp_demons
           interruptable: true
           _fadein: false
-          next.Output:
-            - subsegment.demons_glossary_no1
+          next.accepted:
+            - objective.get_amulet: Activate
+          next.declined_help:
+            - interaction.s2_demons: Input
+        
+        interaction.s1_start_merchant:
+          ".editor":
+            pos: [ 544.0, 41.0 ]
+            in: [ subsequent_times ]
+            out: [ took_job, took_job_not ]
+          scene: s1_start_merchant.yml
+          placement: novigrad/sp_merchant
+          interruptable: true
+          actor: [ dmnq_merchant ]
+          next.took_job:
+            - journal.qjournal_found_merchant: Activate
+          next.took_job_not:
+            - waituntil.pass
+        
+        interaction.s2_demons:
+          ".editor":
+            pos: [ 1682.0, 109.0 ]
+            in: [ Input ]
+            out: [ accepted, declined_help ]
+          scene: s2_demons.yml
+          placement: novigrad/sp_demons
+          interruptable: true
+          actor: [ dmnq_black_cat, dmnq_black_dog ]
+          next.accepted:
+            - objective.get_amulet: Activate
+          next.declined_help:
+            - waituntil.pass2
         
         waituntil.approached_demons:
           entered: [ novigrad/area_demons, PLAYER ]
           ".editor":
-            pos: [ 1300.0, 200.0 ]
+            pos: [ 1340.0, 174.0 ]
             in: [ In ]
             out: [ Out ]
           next:
             - objective.investigate_mansion: Success
-            - scene.s2_demons: Input
-            - waituntil.not_started_with_demons
+            - journal.qjournal_found_demons: Activate
         
         waituntil.approached_merchant:
           entered: [ novigrad/area_merchant, PLAYER ]
           ".editor":
-            pos: [ 300.0, 100.0 ]
+            pos: [ 369.0, 99.0 ]
             in: [ In ]
             out: [ Out ]
           next:
-            - waituntil.not_started_with_merchant
+            - scene.s1_start_merchant: first_time
         
-        waituntil.met_merchant:
+        waituntil.pass:
+          elapsed: "00:00:00"
           ".editor":
-            pos: [ 1900.0, 175.0 ]
-            hint: named
-            in: [ In ]
-            out: [ "false", "true" ]
-          conditions:
-            "true":
-              factdb: [ DMNQ_started_with, "=", 1 ]
-            "false":
-              factdb: [ DMNQ_started_with, "=", 2 ]
-          next.false:
-            - objective.getamulat_merchant_unknown: Activate
-          next.true:
-            - objective.getamulat_merchant_known: Activate
-        
-        waituntil.not_started_with_demons:
-          factdb: [ DMNQ_started_with, "=", 0 ]
-          ".editor":
-            pos: [ 1502.0, 325.0 ]
+            pos: [ 545.0, -22.0 ]
             in: [ In ]
             out: [ Out ]
           next:
-            - addfact.fact_started_with_demons
+            - interaction.s1_start_merchant: subsequent_times
         
-        waituntil.not_started_with_merchant:
-          factdb: [ DMNQ_started_with, "=", 0 ]
+        waituntil.pass2:
+          elapsed: "00:00:00"
           ".editor":
-            pos: [ 500.0, 100.0 ]
+            pos: [ 1681.0, 52.0 ]
             in: [ In ]
             out: [ Out ]
           next:
-            - addfact.fact_started_with_merchant
-        
-        script.disable_exclamation_mappin_blackcat:
-          ".editor":
-            pos: [ 1292.0, 550.0 ]
-            in: [ In ]
-            out: [ Out ]
-          function: EnableDynamicMappin
-          parameter:
-            - tag: cname_dmnq_black_cat
-            - enable: false
-          next:
-            - script.disable_exclamation_mappin_merchant
+            - interaction.s2_demons: Input
         
         script.disable_exclamation_mappin_merchant:
           ".editor":
-            pos: [ 1426.0, 551.0 ]
+            pos: [ 875.0, 96.0 ]
             in: [ In ]
             out: [ Out ]
           function: EnableDynamicMappin
           parameter:
             - tag: cname_dmnq_merchant
             - enable: false
-          next: ".done"
+          next:
+            - changelayers.show_demon_layer
+        
+        changelayers.show_demon_layer:
+          ".editor":
+            pos: [ 1042.0, 97.0 ]
+            hint: show-only
+            in: []
+            out: []
+          sync: true
+          purge: false
+          world: novigrad
+          show:
+            - layer_demons
+          next:
+            - spawn.spawn_demons
+        
+        spawn.spawn_demons:
+          ".editor":
+            pos: [ 1197.0, 100.0 ]
+            hint: spawn-only
+            in: []
+            out: []
+          phase: sitting_at_roadside_phase
+          spawnsets:
+            - demon_community
+          next:
+            - objective.investigate_mansion: Activate
+            - waituntil.approached_demons
         
         journal.qjournal_found_demons:
-          ".editor": [ 1902.0, 327.0 ]
+          ".editor": [ 1498.0, 172.0 ]
           entry: quests/trial8/0_start_demons
           notify: false
-          next: ".done"
+          next:
+            - scene.s2_demons: Input
         
         journal.qjournal_found_merchant:
-          ".editor": [ 1100.0, 100.0 ]
+          ".editor": [ 725.0, 95.0 ]
           entry: quests/trial8/0_start_merchant
           notify: true
+          activate_root: true
           next:
-            - waituntil.approached_demons
-            - objective.investigate_mansion: Activate
+            - script.disable_exclamation_mappin_merchant
         
-        objective.getamulat_merchant_known:
-          ".editor": [ 2101.0, 195.0 ]
+        objective.get_amulet:
+          ".editor": [ 1868.0, 177.0 ]
           objective: trial8/get_amulet/get_amulet_merchant_known
           notify: true
-          track: false
+          track: true
           next:
-            - objective.useforce_merchant_known: Activate
-        
-        objective.getamulat_merchant_unknown:
-          ".editor": [ 2100.0, 125.0 ]
-          objective: trial8/get_amulet/get_amulet_merchant_unknown
-          notify: true
-          track: false
-          next:
-            - objective.useforce_merchant_unknown: Activate
+            - objective.use_force: Activate
+            - subsegment.demons_glossary_no1
         
         objective.investigate_mansion:
           ".editor": [ 1500.0, 75.0 ]
@@ -161,37 +189,15 @@ structure:
           track: true
           next: ".done"
         
-        objective.useforce_merchant_known:
-          ".editor": [ 2302.0, 210.0 ]
+        objective.use_force:
+          ".editor": [ 2030.0, 179.0 ]
           objective: trial8/get_amulet/use_force_merchant_known
-          notify: false
+          notify: true
           track: false
           next:
             - out
-        
-        objective.useforce_merchant_unknown:
-          ".editor": [ 2300.0, 141.0 ]
-          objective: trial8/get_amulet/use_force_merchant_unknown
-          notify: false
-          track: false
-          next:
-            - out
-        
-        addfact.fact_started_with_demons:
-          ".editor": [ 1700.0, 325.0 ]
-          value: [ DMNQ_started_with, 2 ]
-          next:
-            - journal.qjournal_found_demons: Activate
-            - script.disable_exclamation_mappin_blackcat
-        
-        addfact.fact_started_with_merchant:
-          ".editor": [ 700.0, 100.0 ]
-          value: [ DMNQ_started_with, 1 ]
-          next:
-            - scene.s1_start_merchant: Input
-            - script.disable_exclamation_mappin_blackcat
         
         out:
-          ".editor": [ 2477.0, 177.0 ]
+          ".editor": [ 2159.0, 180.0 ]
           next: ".done"
         
