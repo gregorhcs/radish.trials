@@ -76,6 +76,10 @@ layers:
       ap_merchant_selling:          [ 2507.5998535156, 2417.9182128906, 3.5792922974, -119.2000350952, "quest_man/q505_emhyr_lost_in_thoughts" ]
       ap_merchant_talking_to_other: [ 2516.6245117188, 2419.1062011719, 4.2764663696,  -77.5999832153, "quest_man/q505_emhyr_lost_in_thoughts" ]
 
+    scenepoints: 
+      
+      sp_merchant_selling: [ 2507.5998535156, 2417.9182128906, 3.5792922974, -119.2000350952 ]
+
     waypoints: 
       
       wp_merchant_selling:

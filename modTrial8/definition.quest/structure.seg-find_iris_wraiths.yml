@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: find_iris_wraiths
 # 
-# (version: 181, saved: 2023-01-29 19:00:56)
+# (version: 197, saved: 2023-01-30 02:30:28)
 #
 ---
 structure:
@@ -66,6 +66,15 @@ structure:
           next.Output:
             - waituntil.time_elapse1
         
+        waituntil.3rd_correct_choice:
+          factdb: [ DMNQ_correct_chants, ">=", 3 ]
+          ".editor":
+            pos: [ 8.0, 78.0 ]
+            in: [ In ]
+            out: [ Out ]
+          next:
+            - addfact.fact_followed_demongoals
+        
         waituntil.deposited_all_pebbles1:
           factdb: [ DMNQ_deposited_pebbles, ">=", 5 ]
           ".editor":
@@ -83,6 +92,7 @@ structure:
             out: [ Out ]
           next:
             - scene.s5_ritual: Input
+            - waituntil.3rd_correct_choice
         
         waituntil.deposited_amulet:
           factdb: [ DMNQ_deposited_amulet, ">=", 1 ]
@@ -103,6 +113,7 @@ structure:
             out: [ Out ]
           next:
             - scene.s5_ritual: Input
+            - waituntil.3rd_correct_choice
         
         waituntil.entered_area_ritual:
           entered: [ novigrad/area_ritual, PLAYER ]
@@ -111,7 +122,7 @@ structure:
             in: [ In ]
             out: [ Out ]
           next:
-            - waituntil.looted_1st_pebble
+            - waituntil.looted_2nd_pebble
             - objective.fin_goto_place: Success
             - waituntil.took_amulet
             - waituntil.deposited_all_pebbles1
@@ -145,8 +156,8 @@ structure:
           next:
             - addfact.set_out_area_ritual
         
-        waituntil.looted_1st_pebble:
-          factdb: [ DMNQ_looted_pebbles, ">=", 1 ]
+        waituntil.looted_2nd_pebble:
+          factdb: [ DMNQ_looted_pebbles, ">=", 2 ]
           ".editor":
             pos: [ -471.0, -16.0 ]
             in: [ In ]
@@ -154,8 +165,8 @@ structure:
           next:
             - scene.scene_interesting: Input
         
-        waituntil.looted_3rd_pebble:
-          factdb: [ DMNQ_looted_pebbles, ">=", 3 ]
+        waituntil.looted_4th_pebble:
+          factdb: [ DMNQ_looted_pebbles, ">=", 4 ]
           ".editor":
             pos: [ -294.0, -25.0 ]
             in: [ In ]
@@ -205,7 +216,7 @@ structure:
             in: [ In ]
             out: [ Out ]
           next:
-            - waituntil.looted_3rd_pebble
+            - waituntil.looted_4th_pebble
         
         waituntil.time_elapse2:
           elapsed: "00:00:10"
@@ -345,6 +356,11 @@ structure:
           objective: trial8/find_iris_wraiths/wait_till_midnight
           notify: true
           track: true
+          next: ".done"
+        
+        addfact.fact_followed_demongoals:
+          ".editor": [ 10.0, 21.0 ]
+          value: [ DMNQ_followed_demons_objectives, 1 ]
           next: ".done"
         
         addfact.fact_seen_wraiths:

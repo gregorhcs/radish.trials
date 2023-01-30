@@ -186,9 +186,9 @@
 2111410312|00000000||... let a sorceress take a look at it.
 2111410313|00000000||... destroy it not far from here.
 2111410314|00000000||... let it help me end the strange events at the mansion for good.
-2111410315|00000000||... will be free thanks to you.
-2111410316|00000000||... could come for you out of revenge.
-2111410317|00000000||... will terrorize other travelers.
+2111410315|00000000||The spirits will be free thanks to you.
+2111410316|00000000||The spirits could come for you out of revenge.
+2111410317|00000000||The spirits will terrorize other travelers.
 2111410318|00000000||Welcome back, friend. So good to see you’re safe and sound. Have you found any valuable or particular artifacts?
 2111410319|00000000||Hardly. Found other particular things though. There are souls trapped in the villa. Need to release ‘em to give the place some peace.
 2111410320|00000000||Of course I had my experiences with spirits and such too in my career. Why did these particular spirits call upon me though? Do they have a need for amulets of the highest quality sort?
@@ -256,34 +256,119 @@
 ; 
 ;meta[language=en]
 ; id      |key(hex)|key(str)| text
-2111410400|00000000||Hello there, Witcher. Again. ONE MORE TASK FOR YOU
-2111410401|00000000||*heavy sigh*
+2111410400|00000000||Tell me about the spell.
+2111410401|00000000||Experimental area?
+2111410402|00000000||Grieving stones?
+2111410403|00000000||How exactly does this spell work?
+2111410404|00000000||What exactly is gonna happen when you’re free?
+2111410405|00000000||Godspeed.
+2111410406|00000000||Got the amulet. Better be damn worth it.
+2111410407|00000000||That’s entirely up to you - again.
+2111410408|00000000||Not far from here lies Olgierd’s experimental area, where he was schooling himself in The Ways, to try to lift Iris’ and his own curse.
+2111410409|00000000||He didn’t succeed. Yet, everything there still has a deep connection to the villa. For the spell to work, the amulet has to be brought together with five grieving stones left there by Olgierd.
+2111410410|00000000||What experimental area?
+2111410411|00000000||One of Olgierd's many fruitless attempts of ending what he had no authority over. A few steps to the north. He spent a great deal of time there.
+2111410412|00000000||He should have spent it with Iris instead.
+2111410413|00000000||Know anything about those grieving stones?
+2111410414|00000000||A fitting name, given by Olgierd.
+2111410415|00000000||Once mere pebbles, they possess the signature of Olgierd, Iris, the villa and its curse.
+2111410416|00000000||What exactly are they needed for?
+2111410417|00000000||They serve as anchors to the curse.
+2111410418|00000000||Understand them as the spell's eyes, which we need to deceive.
+2111410419|00000000||How exactly is the spell performed? Hopefully no blood sacrifices involved? 
+2111410420|00000000||Not this time. Collect the stones and place them in a bowl, together with the amulet.
+2111410421|00000000||Speak these lines afterwards.
+2111410422|00000000||Then, wait until midnight.
+2111410423|00000000||If you make no mistake, our curse will be broken, and Iris will be free.
+2111410424|00000000||How exactly does this spell work?
+2111410425|00000000||In the play of this curse, our roles will be replaced by... substitutes.
+2111410426|00000000||We will not bother explaining it further. It would be a futile attempt to someone so... human.
+2111410427|00000000||What exactly is gonna happen when you’re free?
+2111410428|00000000||We’ll wait for your return in order to fulfill our end of the contract.
+2111410429|00000000||As promised, we’ll show you the outcome of your efforts.
+2111410430|00000000||I won’t hold my breath.
+2111410431|00000000||Neither does Iris.
+2111410432|00000000||On my way.
 ; 
 ;meta[language=en]
 ; id      |key(hex)|key(str)| text
-;    577752|00000000||Hmm.
+2111410590|00000000||Looks like ordinary pebbles to me. Wonder what Olgierd used them for.
 ; 
 ;meta[language=en]
 ; id      |key(hex)|key(str)| text
-;    376165|00000000||Interesting.
+2111410595|00000000||How are they supposed to work with the amulet? Is it some kind of catalyst, perhaps?
+2111410596|00000000||Hope those so-called grieving stones are enough on their own, without the amulet.
 ; 
 ;meta[language=en]
 ; id      |key(hex)|key(str)| text
-2111410500|00000000||Abra Kadabra Ritual Much
+2111410500|00000000||Wúrh ywo Rr Ouwh, Viló ráz yw perúe.
+2111410501|00000000||Rr ywo Wúrh Ouwhz, Viló ráz yw perúe.
+2111410502|00000000||Wúrh ywo Rr Ouwh, ra Viló ráz yw perúe.
+2111410503|00000000||Cariei fra wú summrle, Cariei fra yw igre.
+2111410504|00000000||Cariei fra lé summrle, Cariei fra yw igre.
+2111410505|00000000||Cariei fra lé summrle, Cariei fra Rr igre.
+2111410506|00000000||sme-ril shró Tórmlor, fel hme-ril shré Káéhl.
+2111410507|00000000||hme-ril Viló Tórmlor, fel sme-ril Viló Káéhl.
+2111410508|00000000||hme-ril shré Tórmlor, fel sme-ril shró Káéhl.
+2111410509|00000000||Spell’s written in demonic language. Should be able to recite it well enough, though...
+2111410510|00000000||Segoríi dol, zolob fel ainóm</br>Shren Wamoló fra coqihlan, telesh miró.</br>Munó Sznué lé Grierezeh, wú Ara carépt.
+2111410511|00000000||Wúrh ywo Rr Ouwh, Viló ráz yw perúe.
+2111410512|00000000||Rr ywo Wúrh Ouwhz, Viló ráz yw perúe.
+2111410513|00000000||Wúrh ywo Rr Ouwh, ra Viló ráz yw perúe.
+2111410514|00000000||Munó glamóh shrén Munó lelahr, skeksi déf amóss.</br>Wúrh spebéhl rwlé dorshlégrie, yw Stabeh ril táet.
+2111410515|00000000||Cariei fra wú summrle, Cariei fra yw igre.
+2111410516|00000000||Cariei fra lé summrle, Cariei fra yw igre.
+2111410517|00000000||Cariei fra lé summrle, Cariei fra Rr igre.
+2111410518|00000000||Dárh muoímmué ghy demmoi-ré, bell shrén coléc.</br>Kílmu twrý dol asglu, dóshrén yv Thet, 
+2111410519|00000000||sme-ril shró Tórmlor, fel hme-ril shré Káéhl.
+2111410520|00000000||hme-ril Viló Tórmlor, fel sme-ril Viló Káéhl.
+2111410521|00000000||hme-ril shré Tórmlor, fel sme-ril shró Káéhl.
+2111410522|00000000||I should prepare and wait until midnight.
 ; 
 ;meta[language=en]
 ; id      |key(hex)|key(str)| text
-2111410600|00000000||Hmmm... didn't expect this Iris inquisition.
+2111410600|00000000||Midnight...
+2111410601|00000000||What the hell...
+2111410602|00000000||Cursed demons... what did I expect? Playing the fool for their entertainment. Bring it on...
 ; 
 ;meta[language=en]
 ; id      |key(hex)|key(str)| text
-2111410700|00000000||We feel very much confronted.
-2111410701|00000000||Rightly so!
+2111410700|00000000||The always-helpful witcher returns.
+2111410701|00000000||The shame of betrayal all over his face.
+2111410702|00000000||Should’ve followed my instincts. Of course there’s no trusting two wretched demons.
+2111410703|00000000||Yet, we told no lie.
+2111410704|00000000||We never said you could succeed. You did what we told you, and you received a free Iris in return - multiple, in fact.
+2111410705|00000000||So this little game of yours was about getting your revenge on me for me not freeing you? I feel sorry for Iris. Not so much for you.
+2111410706|00000000||Revenge had no part in it. Merely a small stage play to kill the overwhelming time in our eternal prison of drabness and repetition.
+2111410707|00000000||Starring a witcher who once again achieved exactly as much as the last time he tried. A tragedy, truly, but not without irony.
+2111410708|00000000||Honestly tried to help you again, and you threw it in the wind. Iris would have deserved help as she had a soul, you however, are empty and hollow, like evil.
+2111410709|00000000||If it’s of any comfort to you, you will be able to walk away from here now, forgetting about us and moving on with your honorable existence. We will stay:
+2111410710|00000000||In this mansion, in this misery
+2111410711|00000000||..in all ways, for always.
+2111410712|00000000||Anyway, we will fulfill our duty of presenting a reward for your troubles. You got the amulet and perfectly recited the words we gave you, useless as they may have been. There, look at your feet. Regard it as our last parting gift. 
+2111410713|00000000||Don’t expect me to shower you with gratitude.
+2111410714|00000000||Don’t worry about that. The sword is more burden than pleasure, as is our continued stay in the mansion of Von Everec.
+2111410715|00000000||We will take our leave now, as much as we hate to part with you.
+2111410716|00000000||We will tell Iris you came to visit. She shall be pleased.
+2111410717|00000000||Go to hell.
+2111410718|00000000||If only we could.
 ; 
 ;meta[language=en]
 ; id      |key(hex)|key(str)| text
-2111410750|00000000||What a joy to be back!
-2111410751|00000000||I really should enjoy life more, see the world, dive into adventures!
+2111410750|00000000||What in all the god’s names was going on in this mansion...?
+2111410751|00000000||Nothing worth your time.
+2111410752|00000000||I greet you, I greet you! Were you able to help those poor spirits, friend?
+2111410753|00000000||Can’t say I was. Demons still roam the place, so you better stay as far away as you can.
+2111410754|00000000||What a pity, all the opportunities left there. I may, however, praise my famous intuition, leaving as soon as I could. Oh, and the poor spirits, no doubt. Shame, that. 
+2111410755|00000000||Why on earth didn’t you tell me the amulet was a magical catalyst?
+2111410756|00000000||Aren’t you the witcher with famous sorceress-friends? I assumed you knew what it was and did, paying all those coins for it. 
+2111410757|00000000||Arrgh.. I’m on the verge of doing things I would later regret. Better don’t say no more, or there might be one more spirit in the not-so-far future.
+2111410758|00000000||Now, now. If there's anything I can do to save our valuable Seller-Customer-Relationship as well as my good name in this new country, go ahead. 
+2111410759|00000000||Actually, there might be something. These words mean anything to you?
+2111410760|00000000||Yees, I'm beginning to remember... a very old, very rare language... of demonic origins, no less... did you get this from the spirits?
+2111410761|00000000||Be that as it may, have once again my gratitude for advising me back there, dear witcher! As a sign of gratitude and closure, I'll translate those words for you. Wait but a moment.
+2111410762|00000000||Quite an interesting poem, no doubt - although rather nonsensical if you know the language. No demon would ever use it seriously. Maybe it's different for... 'spirits' of your country?
+2111410763|00000000||Rather wouldn't wish to cross words with those spirits ever again. Farewell.
 ; 
 ;meta[language=en]
 ; id      |key(hex)|key(str)| text

@@ -235,14 +235,14 @@ communities:
 
       phase1:
 
-      #  testor:
-      #    start_in_ap: true
-      #    use_last_ap: false
-      #    attitude: friendly_to_player
-      #    actionpoints:
-      #      "00:00": novigrad/ap1
+        testor:
+          start_in_ap: true
+          use_last_ap: false
+          attitude: friendly_to_player
+          actionpoints:
+            "00:00": novigrad/ap1
 
-      #phase2:
+      phase2:
 
         testor:
           start_in_ap: false
@@ -253,8 +253,6 @@ communities:
             idletree:
               .type: CAIActionSequence
               actions:
-                - .type: CAIHandsBehindBackOverlayActionTree  # T-Pose, probably entity-specific
-                  duration: 7.5
                 - .type: CAIMoveToAction
                   params:
                       .type: CAIMoveToParams
@@ -275,13 +273,15 @@ communities:
                 - .type: CAIRotateToAction
                   targetTag: PLAYER
                   keepRotating: true
+                - .type: CAIHandsBehindBackOverlayActionTree  # T-Pose, probably entity-specific
+                  duration: 7.5
 
 
-      #phase3:
+      phase3:
 
-      #  testor:
-      #    start_in_ap: false
-      #    use_last_ap: false
-      #    attitude: friendly_to_player
-      #    actionpoints:
-      #      "00:00": novigrad/ap2
+        testor:
+          start_in_ap: false
+          use_last_ap: false
+          attitude: friendly_to_player
+          actionpoints:
+            "00:00": novigrad/ap2

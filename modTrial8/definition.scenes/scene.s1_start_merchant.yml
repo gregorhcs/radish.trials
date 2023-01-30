@@ -361,7 +361,7 @@ production:
     strings-idspace: 1410
     strings-idstart: 100
 
-  placement: "trial8_novigrad_sp_merchant_sp" # trial8_novigrad_sp_merchant_sp
+  placement: "trial8_novigrad_sp_merchant_sp"
     # INFO: world coordinates of used origin:
       #pos: [ 2217.8913574219, 1832.5705566406, 45.0325851440 ]
       #rot: [ 0.0, 0.0, 0.0 ] 2nd: 135.4102935791

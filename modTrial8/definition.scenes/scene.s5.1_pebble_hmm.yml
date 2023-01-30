@@ -19,11 +19,11 @@ dialogscript:
   actors: [ "geralt" ]
 
   section_start:
-    - PAUSE: 1.0
-    - NEXT: section_1
 
-  section_1:
-    - geralt: "[1.0076226]0000577752|Hmm."
+    - PAUSE: 0.0
+
+    - geralt: "Looks like ordinary pebbles to me. Wonder what Olgierd used them for."
+    
     - NEXT: section_exit
 
   section_exit:

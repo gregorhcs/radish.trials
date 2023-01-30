@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: fetching_the_amulet
 # 
-# (version: 181, saved: 2023-01-29 19:00:56)
+# (version: 197, saved: 2023-01-30 02:30:28)
 #
 ---
 structure:
@@ -12,13 +12,12 @@ structure:
           ".editor": [ -459.0, 766.0 ]
           next:
             - interaction.s3_amulet_from_merchant: Input
-            - interaction.s4_demons_2nd_task: Input
             - waituntil.2XP_requested
             - waituntil.5XP_requested
         
         interaction.s3_amulet_from_merchant:
           ".editor":
-            pos: [ -226.0, 456.0 ]
+            pos: [ -174.0, 593.0 ]
             in: [ Input ]
             out: [ Output, backoff, fight ]
           scene: s3_amulet_from_merchant.yml
@@ -28,13 +27,13 @@ structure:
           next.Output:
             - waituntil.pause1
           next.backoff:
-            - addfact.fact_bringback_lies
+            - objective.bringback_lies: Activate
           next.fight:
             - addfact.fact_fight_start
         
         interaction.s4_demons_2nd_task:
           ".editor":
-            pos: [ 1701.0, 769.0 ]
+            pos: [ 1942.0, 772.0 ]
             in: [ Input ]
             out: [ Output ]
           scene: s4_demons_2nd_task.yml
@@ -46,18 +45,18 @@ structure:
             - reward.reward_spell_notice
         
         waituntil.2XP_requested:
-          factdb: [ dmnq_2xp, ">=", 1 ]
+          factdb: [ DMNQ_amulet_2xp, ">=", 1 ]
           ".editor":
-            pos: [ -239.0, 582.0 ]
+            pos: [ -241.0, 417.0 ]
             in: [ In ]
             out: [ Out ]
           next:
             - reward.reward_2XP_amulet
         
         waituntil.5XP_requested:
-          factdb: [ dmnq_5xp, ">=", 1 ]
+          factdb: [ DMNQ_amulet_5xp, ">=", 1 ]
           ".editor":
-            pos: [ -240.0, 646.0 ]
+            pos: [ -240.0, 471.0 ]
             in: [ In ]
             out: [ Out ]
           next:
@@ -68,7 +67,7 @@ structure:
             - factdb: [ DMNQ_s4_done, "!=", 1 ]
             - factdb: [ DMNQ_fistfight_result, "<", 2 ]
           ".editor":
-            pos: [ -231.0, 282.0 ]
+            pos: [ -180.0, 837.0 ]
             in: [ In ]
             out: [ Out ]
           next:
@@ -76,7 +75,7 @@ structure:
         
         waituntil.fight_progress:
           ".editor":
-            pos: [ 2361.0, 427.0 ]
+            pos: [ 2524.0, 505.0 ]
             hint: named
             in: [ In ]
             out: [ loot, start ]
@@ -150,17 +149,15 @@ structure:
         waituntil.pause2:
           elapsed: "00:00:00"
           ".editor":
-            pos: [ 1481.0, 537.0 ]
+            pos: [ 1501.0, 547.0 ]
             in: [ In ]
             out: [ Out ]
           next:
-            - interaction.s4_demons_2nd_task: Input
-            - objective.bringback_amulet: Activate
             - addfact.fact_took_amulet
         
         waituntil.took_amulet:
           ".editor":
-            pos: [ 1852.0, 541.0 ]
+            pos: [ 2099.0, 541.0 ]
             hint: named
             in: [ In ]
             out: [ "false", "true" ]
@@ -251,7 +248,7 @@ structure:
         
         changelayers.hide_merchant_layer:
           ".editor":
-            pos: [ 2480.0, 772.0 ]
+            pos: [ 2647.0, 767.0 ]
             hint: hide-only
             in: []
             out: []
@@ -265,7 +262,7 @@ structure:
         
         despawn.merchant_despawn:
           ".editor":
-            pos: [ 2346.0, 773.0 ]
+            pos: [ 2515.0, 770.0 ]
             hint: despawn-only
             in: []
             out: []
@@ -275,13 +272,14 @@ structure:
             - changelayers.hide_merchant_layer
         
         journal.brought_amulet:
-          ".editor": [ 2080.0, 553.0 ]
+          ".editor": [ 2276.0, 561.0 ]
           entry: quests/trial8/3_demons_task2_with_amulet
           notify: true
-          next: ".done"
+          next:
+            - objective.bringback_lies_success: Deactivate
         
         journal.broughtnot_amulet:
-          ".editor": [ 2079.0, 493.0 ]
+          ".editor": [ 2279.0, 503.0 ]
           entry: quests/trial8/5_demons_finale_without_amulet
           notify: true
           next:
@@ -302,22 +300,23 @@ structure:
             - waituntil.pause2
         
         objective.bringback_amulet:
-          ".editor": [ 1714.0, 282.0 ]
+          ".editor": [ 2277.0, 437.0 ]
           objective: trial8/get_amulet/bringback_amulet
           notify: true
           track: true
           next: ".done"
         
         objective.bringback_lies:
-          ".editor": [ -228.0, 340.0 ]
+          ".editor": [ -179.0, 782.0 ]
           objective: trial8/get_amulet/bringback_lies
           notify: true
           track: false
           next:
             - waituntil.chatty_merchant_conditions
+            - interaction.s4_demons_2nd_task: Input
         
         objective.bringback_lies_success:
-          ".editor": [ 2236.0, 426.0 ]
+          ".editor": [ 2404.0, 505.0 ]
           objective: trial8/get_amulet/bringback_lies
           notify: true
           track: false
@@ -332,21 +331,23 @@ structure:
           next: ".done"
         
         objective.fight_merchant_deact:
-          ".editor": [ 2494.0, 465.0 ]
+          ".editor": [ 2652.0, 529.0 ]
           objective: trial8/get_amulet/fight_merchant
           notify: true
           track: false
           next: ".done"
         
         objective.get_amulet_success:
-          ".editor": [ 1839.0, 209.0 ]
+          ".editor": [ 1764.0, 546.0 ]
           objective: trial8/get_amulet/get_amulet_merchant_known
           notify: true
           track: false
-          next: ".done"
+          next:
+            - objective.bringback_amulet: Activate
+            - interaction.s4_demons_2nd_task: Input
         
         objective.goto_ritual_place:
-          ".editor": [ 2152.0, 772.0 ]
+          ".editor": [ 2380.0, 767.0 ]
           objective: trial8/find_iris_wraiths/go_to_ritual_place
           notify: true
           track: true
@@ -354,7 +355,7 @@ structure:
             - despawn.merchant_despawn
         
         objective.loot_amulet_deact:
-          ".editor": [ 2493.0, 397.0 ]
+          ".editor": [ 2653.0, 469.0 ]
           objective: trial8/get_amulet/loot_amulet
           notify: true
           track: false
@@ -373,12 +374,6 @@ structure:
           notify: true
           track: false
           next: ".done"
-        
-        addfact.fact_bringback_lies:
-          ".editor": [ -229.0, 399.0 ]
-          value: [ dmnq_bringback_lies_active, 1 ]
-          next:
-            - objective.bringback_lies: Activate
         
         addfact.fact_fight_fin1:
           ".editor": [ 1190.0, 708.0 ]
@@ -410,34 +405,34 @@ structure:
             - waituntil.outside_merchant_area
         
         addfact.fact_s4_done:
-          ".editor": [ 1972.0, 770.0 ]
-          value: [ dmnq_s4_done, 1 ]
+          ".editor": [ 2236.0, 770.0 ]
+          value: [ DMNQ_s4_done, 1 ]
           next:
             - objective.goto_ritual_place: Activate
         
         addfact.fact_took_amulet:
-          ".editor": [ 1712.0, 208.0 ]
+          ".editor": [ 1631.0, 549.0 ]
           value: [ DMNQ_took_amulet, 1 ]
           next:
             - objective.get_amulet_success: Success
         
         reward.reward_2XP_amulet:
-          ".editor": [ -124.0, 585.0 ]
+          ".editor": [ -118.0, 418.0 ]
           reward: dmnq_reward_stub_2xp
           next: ".done"
         
         reward.reward_5xp_amulet:
-          ".editor": [ -122.0, 651.0 ]
+          ".editor": [ -116.0, 472.0 ]
           reward: dmnq_reward_stub_5xp
           next: ".done"
         
         reward.reward_spell_notice:
-          ".editor": [ 1841.0, 770.0 ]
+          ".editor": [ 2094.0, 770.0 ]
           reward: dmnq_reward_stub_spell
           next:
             - addfact.fact_s4_done
         
         out:
-          ".editor": [ 2660.0, 772.0 ]
+          ".editor": [ 2792.0, 769.0 ]
           next: ".done"
         

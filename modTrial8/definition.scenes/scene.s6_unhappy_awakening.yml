@@ -39,10 +39,7 @@ production:
     strings-idspace: 1410
     strings-idstart: 600
 
-  placement: "NonPlayerActorNotFound"
-    # INFO: world coordinates of used origin:
-      #pos: [ 2146.6936035156, 2146.4365234375, 41.7903671265 ]
-      #rot: [ 0.0, 157.6667327881, 0.0 ]
+  placement: "trial8_novigrad_sp_ritual_sp"
 
   assets:
     actors:
@@ -85,40 +82,66 @@ production:
         repo: "pose_0_high_standing_determined_idle"
 
 storyboard:
-  #defaults:
-    #placement:
-      #geralt: [[ 0.0, 0.0, -0.0070266724 ], [ 0.0, 0.0, 0.0 ]]
 
-    #actor.pose:
-      #geralt: geralt_high_standing_determined_idle
+  defaults:
 
-  section_storyboard_ui:
-    # shot ritual
-    shot_1:
-      - actor.placement: [0.0, geralt, [ 0.0, 0.0, -0.0070266724 ], [ 0.0, 0.0, 0.0 ]]
-      - actor.pose: [0.0, geralt_high_standing_determined_idle]
-      - actor.effect.start: [0.0, geralt, quen_lasting_shield]
-      - actor.effect.stop: [1.0, geralt, quen_lasting_shield]
+    placement:
+      geralt: [[ 0.0, 0.0, -0.0070266724 ], [ 0.0, 0.0, 0.0 ]]
+
+    actor.pose:
+      geralt: geralt_high_standing_determined_idle
+
+  section_results:
+
+    shot_01_geralt:
       - cam: [0.0, cam_1_ritual]
-      - actor.anim: [0.0, geralt_geralt_reading_book_loop_01]
-      - actor.anim.mimic: [0.0, geralt_geralt_pose_neutral_listening_face]
+    
+    shot_02_geralt:
+      - cam: [0.0, cam_1_ritual]
+    
+    shot_03_geralt:
+      - cam: [0.0, cam_1_ritual]
+    
+    shot_04_geralt:
+      - cam: [0.0, cam_1_ritual]
+    
+    shot_05_geralt:
+      - cam: [0.0, cam_1_ritual]
+
+
+
+
 
 dialogscript:
+
   player: "geralt"
   actors: [ "geralt" ]
 
   section_start:
     - PAUSE: 0.0
-    - NEXT: section_storyboard_ui
+    - NEXT: section_results
 
-  section_storyboard_ui:
-    # shot ritual
-    - CUE: shot_1
-    - geralt: "Hmmm... didn't expect this Iris inquisition." # 2.6753091812
-    # (longest) anim: geralt_pose_neutral_listening_face: 20.000000
+  section_results:
+
+    - CUE: shot_01_geralt
+    - geralt: "Midnight..."
+
+    - CUE: shot_02_geralt
+    - PAUSE: 3.0
+
+    - CUE: shot_03_geralt
+    - geralt: "What the hell..."
+
+    - CUE: shot_04_geralt
+    - PAUSE: 3.0
+
+    - CUE: shot_05_geralt
+    - geralt: "Cursed demons... what did I expect? Playing the fool for their entertainment. Bring it on..."
+
     - NEXT: section_exit
 
   section_exit:
+
     - CAMERA_BLEND: 2.0
     - EXIT
 

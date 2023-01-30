@@ -19,11 +19,24 @@ dialogscript:
   actors: [ "geralt" ]
 
   section_start:
-    - PAUSE: 1.0
-    - NEXT: section_1
 
-  section_1:
-    - geralt: "[1.14531]0000376165|Interesting."
+    - PAUSE: 0.0
+
+    - NEXT:
+        condition: [ DMNQ_took_amulet, "=", 1 ]
+        on_true: section_has_amulet
+        on_false: section_has_amulet_not
+
+  section_has_amulet:
+
+    - geralt: "How are they supposed to work with the amulet? Is it some kind of catalyst, perhaps?"
+
+    - NEXT: section_exit
+
+  section_has_amulet_not:
+
+    - geralt: "Hope those so-called grieving stones are enough on their own, without the amulet."
+
     - NEXT: section_exit
 
   section_exit:

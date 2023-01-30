@@ -1,11 +1,12 @@
 repository:
+
   actors:
     geralt:
       template: "gameplay\\templates\\characters\\player\\player.w2ent"
 
-    ofir_enchanter:
-      template: "dlc\\ep1\\data\\characters\\npc_entities\\crowd_npc\\ofir_enchanter\\ofir_enchanter.w2ent"
-      appearance: [ "ofir_enchanter" ]
+    ofir_merchant_mq6001:
+      template: "dlc\\ep1\\data\\characters\\npc_entities\\secondary_npc\\ofir_merchant_mq6001.w2ent"
+      appearance: [ "ofir_merchant_mq6001" ]
 
   animations:
     anim_6970_high_standing_determined_calm_enter_frontal:
@@ -42,10 +43,7 @@ production:
     strings-idspace: 1410
     strings-idstart: 800
 
-  placement: "ofir enchanter"
-    # INFO: world coordinates of used origin:
-      #pos: [ 2217.8913574219, 1832.5705566406, 45.0325851440 ]
-      #rot: [ 0.0, 135.4102935791, 0.0 ]
+  placement: "trial8_novigrad_sp_merchant_selling_sp"
 
   assets:
     actors:
@@ -54,11 +52,11 @@ production:
         by_voicetag: true
         tags: [ "PLAYER" ]
 
-      ofir_enchanter:
-        repo: "ofir_enchanter"
+      ofir_merchant_mq6001:
+        repo: "ofir_merchant_mq6001"
         #by_voicetag: true
-        appearance: "ofir_enchanter"
-        tags: [ "ofir_enchanter" ]
+        appearance: "ofir_merchant_mq6001"
+        tags: [ "ofir_merchant_mq6001" ]
 
     cameras:
       cam_1_merchant:
@@ -76,8 +74,8 @@ production:
         blendin: 0.0
         blendout: 0.0
 
-      ofir_enchanter_low_kneeling_determined_idle:
-        actor: "ofir_enchanter"
+      ofir_merchant_mq6001_low_kneeling_determined_idle:
+        actor: "ofir_merchant_mq6001"
         repo: "anim_7420_low_kneeling_determined_idle"
         #duration: 18.0666675568
         #weight: 0.6000000238
@@ -92,34 +90,31 @@ production:
         actor: "geralt"
         repo: "pose_0_high_standing_determined_idle"
 
-      ofir_enchanter_high_standing_determined_idle:
-        actor: "ofir_enchanter"
+      ofir_merchant_mq6001_high_standing_determined_idle:
+        actor: "ofir_merchant_mq6001"
         repo: "pose_0_high_standing_determined_idle"
 
 storyboard:
-  #defaults:
-    #placement:
-      #geralt: [[ 2.5696241856, -1.0132269859, -0.0138854980 ], [ 0.0, 0.0, 52.9996032715 ]]
-      #ofir_enchanter: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
 
-    #actor.pose:
-      #geralt: geralt_high_standing_determined_idle
-      #ofir_enchanter: ofir_enchanter_high_standing_determined_idle
+  defaults:
+    placement:
+      geralt: [[ 2.5696241856, -1.0132269859, -0.0138854980 ], [ 0.0, 0.0, 52.9996032715 ]]
+      ofir_merchant_mq6001: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+
+    actor.pose:
+      geralt: geralt_high_standing_determined_idle
+      ofir_merchant_mq6001: ofir_merchant_mq6001_high_standing_determined_idle
 
   section_storyboard_ui:
     # shot merchant
     shot_1:
-      - actor.placement: [0.0, geralt, [ 2.5696241856, -1.0132269859, -0.0138854980 ], [ 0.0, 0.0, 52.9996032715 ]]
-      - actor.placement: [0.0, ofir_enchanter, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
-      - actor.pose: [0.0, geralt_high_standing_determined_idle]
-      - actor.pose: [0.0, ofir_enchanter_high_standing_determined_idle]
       - cam: [0.0, cam_1_merchant]
       - actor.anim: [0.0, geralt_high_standing_determined_calm_enter_frontal]
-      - actor.anim: [0.0, ofir_enchanter_low_kneeling_determined_idle]
+      - actor.anim: [0.0, ofir_merchant_mq6001_low_kneeling_determined_idle]
 
 dialogscript:
   player: "geralt"
-  actors: [ "geralt", "ofir_enchanter" ]
+  actors: [ "geralt", "ofir_merchant_mq6001" ]
 
   section_start:
     - PAUSE: 0.0

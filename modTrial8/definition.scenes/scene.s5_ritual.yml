@@ -18,7 +18,7 @@ repository:
       idle_anim: "high_standing_determined_idle"
 
   cameras:
-    cam_1_ritual:
+    cam_2_geralt:
       fov: 40.0
       transform:
         pos: [ -3.6974482536, 1.9851100445, 1.0000114441 ]
@@ -39,10 +39,7 @@ production:
     strings-idspace: 1410
     strings-idstart: 500
 
-  placement: "NonPlayerActorNotFound"
-    # INFO: world coordinates of used origin:
-      #pos: [ 2146.6936035156, 2146.4365234375, 41.7903671265 ]
-      #rot: [ 0.0, 157.6667327881, 0.0 ]
+  placement: "trial8_novigrad_sp_ritual_sp"
 
   assets:
     actors:
@@ -52,8 +49,8 @@ production:
         tags: [ "PLAYER" ]
 
     cameras:
-      cam_1_ritual:
-        repo: "cam_1_ritual"
+      cam_2_geralt:
+        repo: "cam_2_geralt"
 
     animations:
       geralt_geralt_reading_book_loop_01:
@@ -84,41 +81,286 @@ production:
         actor: "geralt"
         repo: "pose_0_high_standing_determined_idle"
 
+
+
+
+
 storyboard:
-  #defaults:
-    #placement:
-      #geralt: [[ 0.0, 0.0, -0.0070266724 ], [ 0.0, 0.0, 0.0 ]]
 
-    #actor.pose:
-      #geralt: geralt_high_standing_determined_idle
+  defaults:
 
-  section_storyboard_ui:
-    # shot ritual
-    shot_1:
-      - actor.placement: [0.0, geralt, [ 0.0, 0.0, -0.0070266724 ], [ 0.0, 0.0, 0.0 ]]
-      - actor.pose: [0.0, geralt_high_standing_determined_idle]
-      - actor.effect.start: [0.0, geralt, quen_lasting_shield]
-      - actor.effect.stop: [1.0, geralt, quen_lasting_shield]
-      - cam: [0.0, cam_1_ritual]
-      - actor.anim: [0.0, geralt_geralt_reading_book_loop_01]
-      - actor.anim.mimic: [0.0, geralt_geralt_pose_neutral_listening_face]
+    placement:
+      geralt: [[ 0.0, 0.0, -0.0070266724 ], [ 0.0, 0.0, 0.0 ]]
+
+    actor.pose:
+      geralt: geralt_high_standing_determined_idle
+
+
+  #section_start:
+
+
+  section_chant_1:
+
+    shot_01_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_02_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_choice_a:
+
+    shot_choice_a:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_chant_a1:
+
+    shot_03_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_chant_a2:
+
+    shot_04_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_chant_a3:
+
+    shot_05_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_chant_2:
+
+    shot_06_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_choice_b:
+
+    shot_choice_b:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_chant_b1:
+
+    shot_07_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_chant_b2:
+
+    shot_08_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_chant_b3:
+
+    shot_09_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_chant_3:
+
+    shot_10_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_choice_c:
+
+    shot_choice_c:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_chant_c1:
+
+    shot_11_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_chant_c2:
+
+    shot_12_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_chant_c3:
+
+    shot_13_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_prepare:
+
+    shot_14_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_15_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  #section_exit:
+
+
+
+
+
+
 
 dialogscript:
+
   player: "geralt"
   actors: [ "geralt" ]
 
   section_start:
-    - PAUSE: 0.0
-    - NEXT: section_storyboard_ui
 
-  section_storyboard_ui:
-    # shot ritual
-    - CUE: shot_1
-    - geralt: "Abra Kadabra Ritual Much" # 2.6753091812
-    # (longest) anim: geralt_pose_neutral_listening_face: 20.000000
+    - PAUSE: 0.0
+
+    - NEXT: section_chant_1
+
+  section_chant_1:
+
+    - CUE: shot_01_geralt
+    - geralt: "Spell’s written in demonic language. Should be able to recite it well enough, though..."
+
+    - CUE: shot_02_geralt
+    - geralt: "Segoríi dol, zolob fel ainóm</br>Shren Wamoló fra coqihlan, telesh miró.</br>Munó Sznué lé Grierezeh, wú Ara carépt."
+
+    - NEXT: section_choice_a
+
+  section_choice_a:
+
+    - CHOICE:
+        - choice: [ "Wúrh ywo Rr Ouwh, Viló ráz yw perúe.", section_chant_a1]
+          emphasize: true
+          scriptAction:
+            .class: CFactAddStorySceneChoiceAction
+            factName: "DMNQ_correct_chants"
+        - choice: [ "Rr ywo Wúrh Ouwhz, Viló ráz yw perúe.", section_chant_a2]
+          emphasize: true
+        - choice: [ "Wúrh ywo Rr Ouwh, ra Viló ráz yw perúe.", section_chant_a3]
+          emphasize: true
+        - TIME_LIMIT: 4.0
+
+  section_chant_a1:
+
+    - CUE: shot_03_geralt
+    - geralt: "Wúrh ywo Rr Ouwh, Viló ráz yw perúe."
+
+    - NEXT: section_chant_2
+
+  section_chant_a2:
+
+    - CUE: shot_04_geralt
+    - geralt: "Rr ywo Wúrh Ouwhz, Viló ráz yw perúe."
+
+    - NEXT: section_chant_2
+
+  section_chant_a3:
+
+    - CUE: shot_05_geralt
+    - geralt: "Wúrh ywo Rr Ouwh, ra Viló ráz yw perúe."
+
+    - NEXT: section_chant_2
+
+  section_chant_2:
+
+    - CUE: shot_06_geralt
+    - geralt: "Munó glamóh shrén Munó lelahr, skeksi déf amóss.</br>Wúrh spebéhl rwlé dorshlégrie, yw Stabeh ril táet."
+
+    - NEXT: section_choice_b
+
+  section_choice_b:
+
+    - CHOICE:
+        - choice: [ "Cariei fra wú summrle, Cariei fra yw igre.", section_chant_b1]
+          emphasize: true
+        - choice: [ "Cariei fra lé summrle, Cariei fra yw igre.", section_chant_b2]
+          emphasize: true
+          scriptAction:
+            .class: CFactAddStorySceneChoiceAction
+            factName: "DMNQ_correct_chants"
+        - choice: [ "Cariei fra lé summrle, Cariei fra Rr igre.", section_chant_b3]
+          emphasize: true
+        - TIME_LIMIT: 3.5
+
+  section_chant_b1:
+
+    - CUE: shot_07_geralt
+    - geralt: "Cariei fra wú summrle, Cariei fra yw igre."
+
+    - NEXT: section_chant_3
+
+  section_chant_b2:
+
+    - CUE: shot_08_geralt
+    - geralt: "Cariei fra lé summrle, Cariei fra yw igre."
+
+    - NEXT: section_chant_3
+
+  section_chant_b3:
+
+    - CUE: shot_09_geralt
+    - geralt: "Cariei fra lé summrle, Cariei fra Rr igre."
+
+    - NEXT: section_chant_3
+
+  section_chant_3:
+
+    - CUE: shot_10_geralt
+    - geralt: "Dárh muoímmué ghy demmoi-ré, bell shrén coléc.</br>Kílmu twrý dol asglu, dóshrén yv Thet, "
+
+    - NEXT: section_choice_c
+
+  section_choice_c:
+
+    - CHOICE:
+        - choice: [ "sme-ril shró Tórmlor, fel hme-ril shré Káéhl.", section_chant_c1]
+          emphasize: true
+        - choice: [ "hme-ril Viló Tórmlor, fel sme-ril Viló Káéhl.", section_chant_c2]
+          emphasize: true
+        - choice: [ "hme-ril shré Tórmlor, fel sme-ril shró Káéhl.", section_chant_c3]
+          emphasize: true
+          scriptAction:
+            .class: CFactAddStorySceneChoiceAction
+            factName: "DMNQ_correct_chants"
+        - TIME_LIMIT: 3.0
+
+  section_chant_c1:
+
+    - CUE: shot_11_geralt
+    - geralt: "sme-ril shró Tórmlor, fel hme-ril shré Káéhl."
+
+    - NEXT: section_prepare
+
+  section_chant_c2:
+
+    - CUE: shot_12_geralt
+    - geralt: "hme-ril Viló Tórmlor, fel sme-ril Viló Káéhl."
+
+    - NEXT: section_prepare
+
+  section_chant_c3:
+
+    - CUE: shot_13_geralt
+    - geralt: "hme-ril shré Tórmlor, fel sme-ril shró Káéhl."
+
+    - NEXT: section_prepare
+
+  section_prepare:
+
+    - CUE: shot_14_geralt
+    - PAUSE: 3.0
+
+    - CUE: shot_15_geralt
+    - geralt: "I should prepare and wait until midnight."
+
     - NEXT: section_exit
 
   section_exit:
+
     - CAMERA_BLEND: 2.0
     - EXIT
 

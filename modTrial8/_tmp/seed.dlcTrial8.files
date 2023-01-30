@@ -171,6 +171,10 @@
             "bundle": "blob"
         },
         {
+            "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_merchant_reunited\\scenepoints.w2l",
+            "bundle": "blob"
+        },
+        {
             "path": "dlc\\dlctrial8\\levels\\novigrad\\trial8\\layer_merchant_reunited\\waypoints.w2l",
             "bundle": "blob"
         },

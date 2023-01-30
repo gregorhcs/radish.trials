@@ -1,7 +1,7 @@
 #
 # quest structure root segment
 # 
-# (version: 181, saved: 2023-01-29 19:00:56)
+# (version: 197, saved: 2023-01-30 02:30:28)
 #
 ---
 structure:
@@ -11,7 +11,7 @@ structure:
         ".editor": [ -87.0, 253.0 ]
         next:
           - subsegment.init
-          - spawn.spawn_merchant
+          - changelayers.show_test_layer
       
       subsegment.ending_and_epilogue:
         ".editor":
@@ -103,6 +103,15 @@ structure:
         next:
           - script.new_logmsg_4
       
+      waituntil.pause:
+        elapsed: "00:00:20"
+        ".editor":
+          pos: [ 467.0, 620.0 ]
+          in: [ In ]
+          out: [ Out ]
+        next:
+          - script.log
+      
       script.highlight_pebbles:
         ".editor":
           pos: [ 552.0, 513.0 ]
@@ -116,6 +125,18 @@ structure:
         next:
           - subsegment.find_iris_wraiths
           - subsegment.ending_and_epilogue: merchant_actionseq_test
+      
+      script.log:
+        ".editor":
+          pos: [ 600.0, 620.0 ]
+          in: [ In ]
+          out: [ Out ]
+        function: radLog
+        parameter:
+          - logChannel: cname_TRIAL8
+          - msg: phase change
+        next:
+          - spawn.test_community_phase_2
       
       script.new_logmsg:
         ".editor":
@@ -216,8 +237,18 @@ structure:
         phase: devastated_at_roadside_phase
         spawnsets:
           - merchant_community
-        next:
-          - subsegment.fetching_the_amulet
+        next: ".done"
+      
+      spawn.test_community_phase_2:
+        ".editor":
+          pos: [ 726.0, 620.0 ]
+          hint: spawn-only
+          in: []
+          out: []
+        phase: phase2
+        spawnsets:
+          - test_community
+        next: ".done"
       
       spawn.test_community_spawn:
         ".editor":
@@ -228,7 +259,8 @@ structure:
         phase: phase1
         spawnsets:
           - test_community
-        next: ".done"
+        next:
+          - waituntil.pause
       
       reward.amulet:
         ".editor": [ 296.0, -59.0 ]

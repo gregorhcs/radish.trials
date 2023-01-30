@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: ending_and_epilogue
 # 
-# (version: 181, saved: 2023-01-29 19:00:56)
+# (version: 197, saved: 2023-01-30 02:30:28)
 #
 ---
 structure:
@@ -37,6 +37,7 @@ structure:
           _fadein: false
           next.Output:
             - spawn.merchant_walks_back
+            - reward.merchant_thanks_reward
         
         interaction.s7_geralt_confronts:
           ".editor":
@@ -58,8 +59,7 @@ structure:
           scene: s9_merchant_selling.yml
           interruptable: true
           actor: [ dmnq_merchant ]
-          next.Output:
-            - reward.merchant_thanks_reward
+          next: ".done"
         
         waituntil.arrived_at_base_ap:
           entered: [ novigrad/area_merchant_selling, dmnq_merchant ]
@@ -190,13 +190,13 @@ structure:
             - questoutcome.quest_outcome: Success
         
         reward.merchant_thanks_reward:
-          ".editor": [ 3300.0, 200.0 ]
+          ".editor": [ 2581.0, 335.0 ]
           reward: dmnq_reward_stub_merchant_alive
           next:
             - reward.spell_translation
         
         reward.spell_translation:
-          ".editor": [ 3500.0, 200.0 ]
+          ".editor": [ 3561.0, 196.0 ]
           reward: dmnq_reward_stub_translation
           next:
             - out.Out2

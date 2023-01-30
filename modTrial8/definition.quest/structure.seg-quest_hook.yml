@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: quest_hook
 # 
-# (version: 181, saved: 2023-01-29 19:00:56)
+# (version: 197, saved: 2023-01-30 02:30:28)
 #
 ---
 structure:
@@ -66,7 +66,7 @@ structure:
           next.took_job:
             - journal.qjournal_found_merchant: Activate
           next.took_job_not:
-            - waituntil.pass
+            - waituntil.pause1
         
         interaction.s2_demons:
           ".editor":
@@ -80,7 +80,7 @@ structure:
           next.accepted:
             - objective.get_amulet: Activate
           next.declined_help:
-            - waituntil.pass2
+            - waituntil.pause2
         
         waituntil.approached_demons:
           entered: [ novigrad/area_demons, PLAYER ]
@@ -101,7 +101,7 @@ structure:
           next:
             - scene.s1_start_merchant: first_time
         
-        waituntil.pass:
+        waituntil.pause1:
           elapsed: "00:00:00"
           ".editor":
             pos: [ 545.0, -22.0 ]
@@ -110,7 +110,7 @@ structure:
           next:
             - interaction.s1_start_merchant: subsequent_times
         
-        waituntil.pass2:
+        waituntil.pause2:
           elapsed: "00:00:00"
           ".editor":
             pos: [ 1681.0, 52.0 ]

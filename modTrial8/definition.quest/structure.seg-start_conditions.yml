@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: start_conditions
 # 
-# (version: 181, saved: 2023-01-29 19:00:56)
+# (version: 197, saved: 2023-01-30 02:30:28)
 #
 ---
 structure:
@@ -16,7 +16,7 @@ structure:
         waituntil.delay_for_logging_1:
           elapsed: "00:00:15"
           ".editor":
-            pos: [ 700.0, 200.0 ]
+            pos: [ 500.0, 225.0 ]
             in: [ In ]
             out: [ Out ]
           next:
@@ -25,7 +25,7 @@ structure:
         waituntil.delay_for_logging_2:
           elapsed: "00:00:15"
           ".editor":
-            pos: [ 1700.0, 150.0 ]
+            pos: [ 1100.0, 225.0 ]
             in: [ In ]
             out: [ Out ]
           next:
@@ -34,7 +34,7 @@ structure:
         waituntil.delay_until_demons_appear:
           elapsed: "00:30:00"
           ".editor":
-            pos: [ 1100.0, 100.0 ]
+            pos: [ 700.0, 125.0 ]
             in: [ In ]
             out: [ Out ]
           next:
@@ -42,7 +42,7 @@ structure:
         
         waituntil.is_soam_done:
           ".editor":
-            pos: [ 300.0, 150.0 ]
+            pos: [ 251.0, 150.0 ]
             hint: named
             in: [ In ]
             out: [ "false", "true" ]
@@ -53,12 +53,14 @@ structure:
               factdb: [ q604_fdb_quest_completed, ">=", 1 ]
           next.false:
             - script.soam_not_done
+            - waituntil.wait_until_soam_done
           next.true:
             - script.soam_fin_already
+            - waituntil.delay_for_logging_1
         
         waituntil.took_the_rose:
           ".editor":
-            pos: [ 1300.0, 200.0 ]
+            pos: [ 900.0, 225.0 ]
             hint: named
             in: [ In ]
             out: [ "false", "true" ]
@@ -69,21 +71,23 @@ structure:
               factdb: [ q604_fdb_rose_taken, ">=", 1 ]
           next.false:
             - script.rose_not_taken
+            - waituntil.delay_for_logging_2
           next.true:
             - script.rose_taken
         
         waituntil.wait_until_soam_done:
           factdb: [ q604_fdb_quest_completed, ">=", 1 ]
           ".editor":
-            pos: [ 700.0, 100.0 ]
+            pos: [ 500.0, 75.0 ]
             in: [ In ]
             out: [ Out ]
           next:
             - script.soam_fin_by_playthrough
+            - waituntil.delay_until_demons_appear
         
         script.add_contract_noticeboard:
           ".editor":
-            pos: [ 2300.0, 150.0 ]
+            pos: [ 1700.0, 225.0 ]
             in: [ In ]
             out: [ Out ]
           function: Trial8_AddContractToNoticeBoard
@@ -97,7 +101,7 @@ structure:
         
         script.enable_exclamation_mappin_merchant:
           ".editor":
-            pos: [ 2475.0, 148.0 ]
+            pos: [ 1900.0, 225.0 ]
             in: [ In ]
             out: [ Out ]
           function: EnableDynamicMappin
@@ -109,19 +113,18 @@ structure:
         
         script.rose_not_taken:
           ".editor":
-            pos: [ 1500.0, 150.0 ]
+            pos: [ 1100.0, 125.0 ]
             in: [ In ]
             out: [ Out ]
           function: radLog
           parameter:
             - logChannel: cname_TRIAL8
             - msg: Rose was not taken
-          next:
-            - waituntil.delay_for_logging_2
+          next: ".done"
         
         script.rose_taken:
           ".editor":
-            pos: [ 1500.0, 250.0 ]
+            pos: [ 1100.0, 325.0 ]
             in: [ In ]
             out: [ Out ]
           function: radLog
@@ -132,43 +135,40 @@ structure:
         
         script.soam_fin_already:
           ".editor":
-            pos: [ 500.0, 200.0 ]
+            pos: [ 500.0, 325.0 ]
             in: [ In ]
             out: [ Out ]
           function: radLog
           parameter:
             - logChannel: cname_TRIAL8
             - msg: "P2: Scenes of a Marriage Done!"
-          next:
-            - waituntil.delay_for_logging_1
+          next: ".done"
         
         script.soam_fin_by_playthrough:
           ".editor":
-            pos: [ 900.0, 100.0 ]
+            pos: [ 700.0, 25.0 ]
             in: [ In ]
             out: [ Out ]
           function: radLog
           parameter:
             - logChannel: cname_TRIAL8
             - msg: "P1: Scenes of a Marriage Done!"
-          next:
-            - waituntil.delay_until_demons_appear
+          next: ".done"
         
         script.soam_not_done:
           ".editor":
-            pos: [ 500.0, 100.0 ]
+            pos: [ 500.0, -25.0 ]
             in: [ In ]
             out: [ Out ]
           function: radLog
           parameter:
             - logChannel: cname_TRIAL8
             - msg: Scenes of a Marriage not finished yet
-          next:
-            - waituntil.wait_until_soam_done
+          next: ".done"
         
         spawn.demon_community_spawn:
           ".editor":
-            pos: [ 1900.0, 150.0 ]
+            pos: [ 1300.0, 225.0 ]
             hint: spawn-only
             in: []
             out: []
@@ -180,7 +180,7 @@ structure:
         
         spawn.merchant_community_spawn:
           ".editor":
-            pos: [ 2100.0, 150.0 ]
+            pos: [ 1500.0, 225.0 ]
             hint: spawn-only
             in: []
             out: []
@@ -191,6 +191,6 @@ structure:
             - script.add_contract_noticeboard
         
         out:
-          ".editor": [ 2634.0, 147.0 ]
+          ".editor": [ 2100.0, 225.0 ]
           next: ".done"
         

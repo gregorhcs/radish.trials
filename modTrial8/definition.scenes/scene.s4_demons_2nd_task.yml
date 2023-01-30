@@ -32,7 +32,7 @@ repository:
       idle_anim: "idle01"
 
   cameras:
-    cam_1_shot_onto_animals:
+    cam_1_demons:
       fov: 40.0
       transform:
         pos: [ 0.1009235382, 6.2918524742, 2.3105239868 ]
@@ -47,7 +47,7 @@ repository:
         plane: "Medium"
         tags: [ "ext" ]
 
-    cam_2_shot_onto_geralt:
+    cam_2_geralt:
       fov: 40.0
       transform:
         pos: [ 1.6498546600, -1.8085981607, 0.8105468750 ]
@@ -68,10 +68,7 @@ production:
     strings-idspace: 1410
     strings-idstart: 400
 
-  placement: "demonic cat"
-    # INFO: world coordinates of used origin:
-      #pos: [ 2251.8034667969, 1866.6925048828, 37.6211853027 ]
-      #rot: [ 0.0, -382.8609008789, 0.0 ]
+  placement: "trial8_novigrad_sp_demons_sp"
 
   assets:
     actors:
@@ -93,10 +90,10 @@ production:
         tags: [ "demonic_dog" ]
 
     cameras:
-      cam_1_shot_onto_animals:
-        repo: "cam_1_shot_onto_animals"
-      cam_2_shot_onto_geralt:
-        repo: "cam_2_shot_onto_geralt"
+      cam_1_demons:
+        repo: "cam_1_demons"
+      cam_2_geralt:
+        repo: "cam_2_geralt"
 
     animations:
       demonic_cat_ep1_demon_cat_enter_front:
@@ -145,57 +142,297 @@ production:
         actor: "demonic_dog"
         repo: "pose_0_idle01"
 
+
+
+
+
+
 storyboard:
-  #defaults:
-    #placement:
-      #geralt: [[ -0.2874438763, 5.6004590988, 0.3016967773 ], [ 0.0, 0.0, 205.6997985840 ]]
-      #demonic_cat: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
-      #demonic_dog: [[ 0.3944978118, 0.0779637992, -0.0194587708 ], [ 0.0, 0.0, 0.0 ]]
 
-    #actor.pose:
-      #geralt: geralt_high_standing_determined_idle
-      #demonic_cat: demonic_cat_idle01
-      #demonic_dog: demonic_dog_idle01
+  defaults:
 
-  section_storyboard_ui:
-    # shot Shot (empty)
-    shot_1:
-      - actor.placement: [0.0, geralt, [ -0.2874438763, 5.6004590988, 0.3016967773 ], [ 0.0, 0.0, 205.6997985840 ]]
-      - actor.placement: [0.0, demonic_cat, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
-      - actor.placement: [0.0, demonic_dog, [ 0.3944978118, 0.0779637992, -0.0194587708 ], [ 0.0, 0.0, 0.0 ]]
-      - actor.pose: [0.0, geralt_high_standing_determined_idle]
-      - actor.pose: [0.0, demonic_cat_idle01]
-      - actor.pose: [0.0, demonic_dog_idle01]
-      - cam: [0.0, cam_2_shot_onto_geralt]
-      - actor.anim: [0.0, demonic_cat_ep1_demon_cat_enter_front]
-      - actor.anim: [0.0, demonic_dog_ep1_demon_dog_sitting_idle]
+    placement:
+      geralt: [[ -0.2874438763, 5.6004590988, 0.3016967773 ], [ 0.0, 0.0, 205.6997985840 ]]
+      demonic_cat: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+      demonic_dog: [[ 0.3944978118, 0.0779637992, -0.0194587708 ], [ 0.0, 0.0, 0.0 ]]
 
-    shot_2:
-      - cam: [0.0, cam_1_shot_onto_animals]
-      - actor.anim: [0.0, demonic_cat_ep1_demon_cat_sitting_idle]
+    actor.pose:
+      geralt: geralt_high_standing_determined_idle
+      demonic_cat: demonic_cat_idle01
+      demonic_dog: demonic_dog_idle01
+
+  #section_start:
+
+
+  section_give_amulet:
+
+    shot_01_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_02_demons:
+      - cam: [0.0, cam_1_demons]
+
+    shot_03_demons:
+      - cam: [0.0, cam_1_demons]
+
+    shot_04_demons:
+      - cam: [0.0, cam_1_demons]
+
+
+  section_choice_A:
+
+    shot_choiceA:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_about_area:
+
+    shot_05_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_06_demons:
+      - cam: [0.0, cam_1_demons]
+
+    shot_07_demons:
+      - cam: [0.0, cam_1_demons]
+
+
+  section_about_stones:
+
+    shot_08_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_09_demons:
+      - cam: [0.0, cam_1_demons]
+
+    shot_10_demons:
+      - cam: [0.0, cam_1_demons]
+
+    shot_11_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_12_demons:
+      - cam: [0.0, cam_1_demons]
+
+    shot_13_demons:
+      - cam: [0.0, cam_1_demons]
+
+
+  section_the_spell:
+
+    shot_14_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_15_demons:
+      - cam: [0.0, cam_1_demons]
+
+    shot_16_demons:
+      - cam: [0.0, cam_1_demons]
+
+    shot_17_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_18_demons:
+      - cam: [0.0, cam_1_demons]
+
+    shot_19_demons:
+      - cam: [0.0, cam_1_demons]
+
+
+  section_choice_B:
+
+    shot_choiceB:
+      - cam: [0.0, cam_2_geralt]
+
+
+  section_how_spell_works:
+
+    shot_20_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_21_demons:
+      - cam: [0.0, cam_1_demons]
+
+    shot_22_demons:
+      - cam: [0.0, cam_1_demons]
+
+
+  section_what_when_you_free:
+
+    shot_23_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_24_demons:
+      - cam: [0.0, cam_1_demons]
+
+    shot_25_demons:
+      - cam: [0.0, cam_1_demons]
+
+    shot_26_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+    shot_27_demons:
+      - cam: [0.0, cam_1_demons]
+
+
+  section_leave:
+
+    shot_28_geralt:
+      - cam: [0.0, cam_2_geralt]
+
+
+  #section_exit:
+
+
+
+
+
+
+
 
 dialogscript:
+
   player: "geralt"
   actors: [ "geralt", "demonic_cat", "demonic_dog" ]
 
   section_start:
     - PAUSE: 0.0
-    - NEXT: section_storyboard_ui
+    - NEXT: section_give_amulet
 
-  section_storyboard_ui:
+  section_give_amulet:
 
-    - CUE: shot_1
-    # (longest) anim: ep1_demon_dog_sitting_idle
-    - PAUSE: 9.2666664124
+    - CUE: shot_01_geralt
+    - geralt: "Got the amulet. Better be damn worth it."
 
-    - CUE: shot_2
-    - demonic_cat: "Hello there, Witcher. Again. ONE MORE TASK FOR YOU"
-    - geralt: "*heavy sigh*"
-    # (longest) anim: ep1_demon_cat_sitting_idle
-    - PAUSE: 13.3333330154
+    - CUE: shot_02_demons
+    - demonic_dog: "That’s entirely up to you - again."
+
+    - CUE: shot_03_demons
+    - demonic_cat: "Not far from here lies Olgierd’s experimental area, where he was schooling himself in The Ways, to try to lift Iris’ and his own curse."
+
+    - CUE: shot_04_demons
+    - demonic_dog: "He didn’t succeed. Yet, everything there still has a deep connection to the villa. For the spell to work, the amulet has to be brought together with five grieving stones left there by Olgierd."
+
+    - NEXT: section_choice_A
+
+  section_choice_A:
+
+    - CHOICE:
+        - choice: [ "Tell me about the spell.", section_the_spell]
+          emphasize: true
+        - choice: [ "Experimental area?", section_about_area]
+          emphasize: false
+        - choice: [ "Grieving stones?", section_about_stones ]
+          emphasize: false
+
+  section_about_area:
+
+    - CUE: shot_05_geralt
+    - geralt: "What experimental area?"
+
+    - CUE: shot_06_demons
+    - demonic_dog: "One of Olgierd's many fruitless attempts of ending what he had no authority over. A few steps to the north. He spent a great deal of time there."
+
+    - CUE: shot_07_demons
+    - demonic_cat: "He should have spent it with Iris instead."
+
+    - NEXT: section_choice_A
+
+  section_about_stones:
+
+    - CUE: shot_08_geralt
+    - geralt: "Know anything about those grieving stones?"
+
+    - CUE: shot_09_demons
+    - demonic_dog: "A fitting name, given by Olgierd."
+
+    - CUE: shot_10_demons
+    - demonic_cat: "Once mere pebbles, they possess the signature of Olgierd, Iris, the villa and its curse."
+
+    - CUE: shot_11_geralt
+    - geralt: "What exactly are they needed for?"
+
+    - CUE: shot_12_demons
+    - demonic_dog: "They serve as anchors to the curse."
+
+    - CUE: shot_13_demons
+    - demonic_cat: "Understand them as the spell's eyes, which we need to deceive."
+
+    - NEXT: section_choice_A
+
+  section_the_spell:
+
+    - CUE: shot_14_geralt
+    - geralt: "How exactly is the spell performed? Hopefully no blood sacrifices involved? "
+
+    - CUE: shot_15_demons
+    - demonic_dog: "Not this time. Collect the stones and place them in a bowl, together with the amulet."
+
+    - CUE: shot_16_demons
+    - demonic_cat: "Speak these lines afterwards."
+
+    - CUE: shot_17_geralt
+    - PAUSE: 3.0
+
+    - CUE: shot_18_demons
+    - demonic_dog: "Then, wait until midnight."
+
+    - CUE: shot_19_demons
+    - demonic_cat: "If you make no mistake, our curse will be broken, and Iris will be free."
+
+    - NEXT: section_choice_B
+
+  section_choice_B:
+
+    - CHOICE:
+        - choice: [ "How exactly does this spell work?", section_how_spell_works]
+          emphasize: false
+        - choice: [ "What exactly is gonna happen when you’re free?", section_what_when_you_free]
+          emphasize: false
+        - choice: [ "Godspeed.", section_leave ]
+          emphasize: false
+
+  section_how_spell_works:
+
+    - CUE: shot_20_geralt
+    - geralt: "How exactly does this spell work?"
+
+    - CUE: shot_21_demons
+    - demonic_dog: "In the play of this curse, our roles will be replaced by... substitutes."
+
+    - CUE: shot_22_demons
+    - demonic_cat: "We will not bother explaining it further. It would be a futile attempt to someone so... human."
+
+    - NEXT: section_choice_B
+
+  section_what_when_you_free:
+
+    - CUE: shot_23_geralt
+    - geralt: "What exactly is gonna happen when you’re free?"
+
+    - CUE: shot_24_demons
+    - demonic_dog: "We’ll wait for your return in order to fulfill our end of the contract."
+
+    - CUE: shot_25_demons
+    - demonic_cat: "As promised, we’ll show you the outcome of your efforts."
+
+    - CUE: shot_26_geralt
+    - geralt: "I won’t hold my breath."
+
+    - CUE: shot_27_demons
+    - demonic_cat: "Neither does Iris."
+
+    - NEXT: section_choice_B
+
+  section_leave:
+
+    - CUE: shot_28_geralt
+    - geralt: "On my way."
+
     - NEXT: section_exit
 
   section_exit:
+
     - CAMERA_BLEND: 2.0
     - EXIT
 

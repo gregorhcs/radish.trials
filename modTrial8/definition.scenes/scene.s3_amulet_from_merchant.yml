@@ -1,11 +1,12 @@
 repository:
+
   actors:
     geralt:
       template: "gameplay\\templates\\characters\\player\\player.w2ent"
 
-    ofir_enchanter:
-      template: "dlc\\ep1\\data\\characters\\npc_entities\\crowd_npc\\ofir_enchanter\\ofir_enchanter.w2ent"
-      appearance: [ "ofir_enchanter" ]
+    ofir_merchant_mq6001:
+      template: "dlc\\ep1\\data\\characters\\npc_entities\\secondary_npc\\ofir_merchant_mq6001.w2ent"
+      appearance: [ "ofir_merchant_mq6001" ]
 
   animations:
     anim_6970_high_standing_determined_calm_enter_frontal:
@@ -58,10 +59,10 @@ production:
     strings-idspace: 1410
     strings-idstart: 300
 
-  placement: "ofir enchanter"
+  placement: "trial8_novigrad_sp_merchant_sp"
     # INFO: world coordinates of used origin:
       #pos: [ 2217.8913574219, 1832.5705566406, 45.0325851440 ]
-      #rot: [ 0.0, 135.4102935791, 0.0 ]
+      #rot: [ 0.0, 0.0, 0.0 ] 2nd: 135.4102935791
 
   assets:
     actors:
@@ -70,12 +71,12 @@ production:
         by_voicetag: true
         tags: [ "PLAYER" ]
 
-      ofir_enchanter:
-        repo: "ofir_enchanter"
+      ofir_merchant_mq6001:
+        repo: "ofir_merchant_mq6001"
         #by_voicetag: true
-        appearance: "ofir_enchanter"
-        tags: [ "ofir_enchanter" ]
-
+        appearance: "ofir_merchant_mq6001"
+        tags: [ "ofir_merchant_mq6001" ]
+        
     cameras:
       cam_1_merchant:
         repo: "cam_1_merchant"
@@ -94,8 +95,8 @@ production:
         blendin: 0.0
         blendout: 0.0
 
-      ofir_enchanter_low_kneeling_determined_idle:
-        actor: "ofir_enchanter"
+      ofir_merchant_mq6001_low_kneeling_determined_idle:
+        actor: "ofir_merchant_mq6001"
         repo: "anim_7420_low_kneeling_determined_idle"
         #duration: 18.0666675568
         #weight: 0.6000000238
@@ -110,31 +111,29 @@ production:
         actor: "geralt"
         repo: "pose_0_high_standing_determined_idle"
 
-      ofir_enchanter_high_standing_determined_idle:
-        actor: "ofir_enchanter"
+      ofir_merchant_mq6001_high_standing_determined_idle:
+        actor: "ofir_merchant_mq6001"
         repo: "pose_0_high_standing_determined_idle"
 
 storyboard:
 
   defaults:
-    #placement:
-      #geralt: [[ 2.5696241856, -1.0132269859, -0.0138854980 ], [ 0.0, 0.0, 52.9996032715 ]]
-      #ofir_enchanter: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
+    placement:
+      geralt: [[ 2.5696241856, -1.0132269859, -0.0138854980 ], [ 0.0, 0.0, 52.9996032715 ]]
+      ofir_merchant_mq6001: [[ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
 
     actor.pose:
       geralt: geralt_high_standing_determined_idle
-      ofir_enchanter: ofir_enchanter_high_standing_determined_idle
+      ofir_merchant_mq6001: ofir_merchant_mq6001_high_standing_determined_idle
 
   section_start:
 
     shot_01_geralt_enter:
-      - actor.placement: [0.0, geralt, [ 2.5696241856, -1.0132269859, -0.0138854980 ], [ 0.0, 0.0, 52.9996032715 ]]
-      - actor.placement: [0.0, ofir_enchanter, [ 0.0, 0.0, 0.0 ], [ 0.0, 0.0, 0.0 ]]
       - actor.pose: [0.0, geralt_high_standing_determined_idle]
-      - actor.pose: [0.0, ofir_enchanter_high_standing_determined_idle]
+      - actor.pose: [0.0, ofir_merchant_mq6001_high_standing_determined_idle]
       - cam: [0.0, cam_2_geralt]
       - actor.anim: [0.0, geralt_high_standing_determined_calm_enter_frontal]
-      - actor.anim: [0.0, ofir_enchanter_low_kneeling_determined_idle]
+      - actor.anim: [0.0, ofir_merchant_mq6001_low_kneeling_determined_idle]
 
 
   section_tell_request:
@@ -469,7 +468,7 @@ storyboard:
 dialogscript:
 
   player: "geralt"
-  actors: [ "geralt", "ofir_enchanter" ]
+  actors: [ "geralt", "ofir_merchant_mq6001" ]
 
   section_start:
     - CUE: shot_01_geralt_enter
@@ -479,13 +478,13 @@ dialogscript:
   section_tell_request:
 
     - CUE: shot_02_noret
-    - ofir_enchanter: "Welcome back, friend. So good to see you’re safe and sound. Have you found any valuable or particular artifacts?"
+    - ofir_merchant_mq6001: "Welcome back, friend. So good to see you’re safe and sound. Have you found any valuable or particular artifacts?"
 
     - CUE: shot_03_geralt
     - geralt: "Hardly. Found other particular things though. There are souls trapped in the villa. Need to release ‘em to give the place some peace."
 
     - CUE: shot_04_noret
-    - ofir_enchanter: "Of course I had my experiences with spirits and such too in my career. Why did these particular spirits call upon me though? Do they have a need for amulets of the highest quality sort?"
+    - ofir_merchant_mq6001: "Of course I had my experiences with spirits and such too in my career. Why did these particular spirits call upon me though? Do they have a need for amulets of the highest quality sort?"
 
     - CUE: shot_05_geralt
     - geralt: "You’re actually close to the truth. These you could help by providing an amulet with black and red gems, refined gravings. Ring a bell? "
@@ -494,19 +493,19 @@ dialogscript:
     - PAUSE: 5.0
 
     - CUE: shot_07_noret
-    - ofir_enchanter: "This is the piece you’re looking for. Although, I’m not entirely certain how it will be of use to you."
+    - ofir_merchant_mq6001: "This is the piece you’re looking for. Although, I’m not entirely certain how it will be of use to you."
 
     - CUE: shot_08_geralt
     - geralt: "Don't worry. Thanks for your help."
 
     - CUE: shot_09_noret
-    - ofir_enchanter: "Ah! But of course I need to humbly ask how those spirits intend to pay me once they receive the ware?"
+    - ofir_merchant_mq6001: "Ah! But of course I need to humbly ask how those spirits intend to pay me once they receive the ware?"
 
     - CUE: shot_10_geralt
     - geralt: "Given it works, the villa is all yours to explore. Though I doubt it’s a nice place to be."
 
     - CUE: shot_11_noret
-    - ofir_enchanter: "Ah, as much as I treasure my art, I do treasure my life more. And as much as I’d like to help, I can't give such a valuable piece away for free, friend."
+    - ofir_merchant_mq6001: "Ah, as much as I treasure my art, I do treasure my life more. And as much as I’d like to help, I can't give such a valuable piece away for free, friend."
 
     - NEXT: section_choice_howto
     
@@ -516,9 +515,16 @@ dialogscript:
 
         - choice: ["You're wasting my time.", section_fight]
           emphasize: true
+          scriptAction:
+            .class: CFactAddStorySceneChoiceAction
+            factName: "DMNQ_violence_chosen"
 
-        - choice: ["[Use Axii]", section_axii, axii, 15] # level required
+        - choice: ["[Use Axii]", section_axii]
           emphasize: true
+          scriptAction:
+            .class: CAxiiFactAddStorySceneChoiceAction
+            level: 15
+            factName: "DMNQ_axii_chosen"
 
         - choice: ["Can I interest you in some money?", section_buy]
           emphasize: true
@@ -538,7 +544,7 @@ dialogscript:
     - geralt: "You're wasting my time."
 
     - CUE: shot_13_noret
-    - ofir_enchanter: "W-What are you saying, friend? There's no need for aggression!"
+    - ofir_merchant_mq6001: "W-What are you saying, friend? There's no need for aggression!"
 
     - CUE: shot_14_geralt
     - geralt: "Feels more like I’ve regained my senses."
@@ -555,7 +561,7 @@ dialogscript:
     - CUE: shot_101_noret
     - PAUSE: 5.0
 
-    - NEXT: script_2xp
+    - NEXT: script_amulet_2xp
 
 # ------------------------ backoff -----------------------------
 
@@ -565,13 +571,13 @@ dialogscript:
     - geralt: "I’ll be fine without it."
 
     - CUE: shot_103_noret
-    - ofir_enchanter: "Oh, sure. As you wish, friend. I’m sure you’ll still free those poor spirits without any problems."
+    - ofir_merchant_mq6001: "Oh, sure. As you wish, friend. I’m sure you’ll still free those poor spirits without any problems."
 
     - CUE: shot_104_geralt
     - geralt: "I will. you should take your leave now."
 
     - CUE: shot_105_noret
-    - ofir_enchanter: "And leave I will. Time to return back to my comrades until the events at the villa have been dealt with. I would be overjoyed if you’d pay me a visit afterwards, friend!"
+    - ofir_merchant_mq6001: "And leave I will. Time to return back to my comrades until the events at the villa have been dealt with. I would be overjoyed if you’d pay me a visit afterwards, friend!"
 
     - CUE: shot_106_geralt
     - geralt: "We’ll see. Take care."
@@ -586,7 +592,7 @@ dialogscript:
     - geralt: "How much would it cost me to take this amulet off your hands?"
 
     - CUE: shot_16_noret
-    - ofir_enchanter: "A very good question, of course it has its price, which is far from cheap as it is one of the finest-"
+    - ofir_merchant_mq6001: "A very good question, of course it has its price, which is far from cheap as it is one of the finest-"
 
     - CUE: shot_17_geralt
     - PAUSE: 3.0
@@ -599,13 +605,13 @@ dialogscript:
   section_buy_persuaded:
 
     - CUE: shot_18_noret
-    - ofir_enchanter: "... but since we already spoke about my role in saving those spirits, money shan’t be an issue! Could we settle for 400 coins?"
+    - ofir_merchant_mq6001: "... but since we already spoke about my role in saving those spirits, money shan’t be an issue! Could we settle for 400 coins?"
 
     - CUE: shot_19_geralt
     - geralt: "Still not cheap, but I assume you won’t go lower."
 
     - CUE: shot_20_noret
-    - ofir_enchanter: "Even if I wanted to, friend, I couldn’t."
+    - ofir_merchant_mq6001: "Even if I wanted to, friend, I couldn’t."
 
     - NEXT: section_choice_buy_persuaded
 
@@ -613,8 +619,12 @@ dialogscript:
         
     - CHOICE:
 
-        - choice: ["[buy the amulet]", section_buy_persuaded_done, pay, 400]
+        - choice: ["[buy the amulet]", section_buy_persuaded_done]
           emphasize: true
+          scriptAction:
+            .class: CPayFactAddStorySceneChoiceAction
+            money: 400
+            factName: "DMNQ_money_chosen"
 
         - choice: ["[don't buy it]", section_choice_howto]
           emphasize: false
@@ -624,19 +634,19 @@ dialogscript:
     - CUE: shot_21_geralt
     - PAUSE: 3.0
 
-    - NEXT: script_5xp
+    - NEXT: script_amulet_5xp
 
 
   section_buy_not_persuaded:
 
     - CUE: shot_22_noret
-    - ofir_enchanter: "... but since I know it’s for a good purpose, I’ll give you a great discount! How do 2000 coins sound to you?"
+    - ofir_merchant_mq6001: "... but since I know it’s for a good purpose, I’ll give you a great discount! How do 2000 coins sound to you?"
 
     - CUE: shot_23_geralt
     - geralt: "Like burglary. How do you plan to sleep tonight with a conscience that cloudy?"
 
     - CUE: shot_24_noret
-    - ofir_enchanter: "Friend, my consciousness is clear as the jewels in this amulet – I am inclined to help, but we all need to live... or not. "
+    - ofir_merchant_mq6001: "Friend, my consciousness is clear as the jewels in this amulet – I am inclined to help, but we all need to live... or not. "
 
     - CUE: shot_25_geralt
     - PAUSE: 3.0
@@ -647,8 +657,12 @@ dialogscript:
         
     - CHOICE:
 
-        - choice: ["[buy the amulet]", section_buy_not_persuaded_done, pay, 2000]
+        - choice: ["[buy the amulet]", section_buy_not_persuaded_done]
           emphasize: true
+          scriptAction:
+            .class: CPayFactAddStorySceneChoiceAction
+            money: 2000
+            factName: "DMNQ_money_chosen"
 
         - choice: ["[don't buy it]", section_choice_howto]
           emphasize: false
@@ -658,7 +672,7 @@ dialogscript:
     - CUE: shot_26_geralt
     - PAUSE: 3.0
 
-    - NEXT: script_2xp
+    - NEXT: script_amulet_2xp
 
 # ------------------------ convince -----------------------------
 
@@ -691,13 +705,13 @@ dialogscript:
 
     - CUE: shot_29_noret
     - PAUSE: 2.0
-    - ofir_enchanter: "You confuse me, dear friend... cursed, my amulet?"
+    - ofir_merchant_mq6001: "You confuse me, dear friend... cursed, my amulet?"
 
     - CUE: shot_30_geralt
     - geralt: "It’s my daily business. I could still use it for the spirits, but selling it to human beings? Recipe for disaster."
 
     - CUE: shot_31_noret
-    - ofir_enchanter: "Hm.."
+    - ofir_merchant_mq6001: "Hm.."
 
     - NEXT: section_choice_convince_c
 
@@ -707,7 +721,7 @@ dialogscript:
     - geralt: "Gets me thinking if it really is of help and worth as much as you claim."
 
     - CUE: shot_33_noret
-    - ofir_enchanter: "Be not afraid, every single piece here is powerful, each in its own way. I’m not entirely sure what you intend to do with this one, but it will serve its purpose, you have my word. And so, everything that’s needed to silence the cries of anguish, are a mere few coins. "
+    - ofir_merchant_mq6001: "Be not afraid, every single piece here is powerful, each in its own way. I’m not entirely sure what you intend to do with this one, but it will serve its purpose, you have my word. And so, everything that’s needed to silence the cries of anguish, are a mere few coins. "
 
     - CUE: shot_34_geralt
     - PAUSE: 2.0
@@ -720,7 +734,7 @@ dialogscript:
     - geralt: "... it is clearly a counterfeit."
 
     - CUE: shot_36_noret
-    - ofir_enchanter: "You jest, dear friend! You must know I am the most-famous and esteemed amulet-trader of Ofir, if not the known world. Every single piece of this collection is handpicked and of highest quality, astounding even to those who live beyond."
+    - ofir_merchant_mq6001: "You jest, dear friend! You must know I am the most-famous and esteemed amulet-trader of Ofir, if not the known world. Every single piece of this collection is handpicked and of highest quality, astounding even to those who live beyond."
 
     - CUE: shot_37_geralt
     - PAUSE: 2.0
@@ -748,13 +762,13 @@ dialogscript:
     - geralt: "Got a few contacts among the society of sorceresses. Maybe they can fix it."
 
     - CUE: shot_39_noret
-    - ofir_enchanter: "Ah, so you know a sorceress who knows her ways with fine amulets like mine? Could she lift the curse?"
+    - ofir_merchant_mq6001: "Ah, so you know a sorceress who knows her ways with fine amulets like mine? Could she lift the curse?"
 
     - CUE: shot_40_geralt
     - geralt: "Got a few contacts among the society of sorceresses. Maybe they can fix it."
 
     - CUE: shot_41_noret
-    - ofir_enchanter: "Ah, so you know a sorceress who knows her ways with fine amulets like mine? Could she lift the curse?"
+    - ofir_merchant_mq6001: "Ah, so you know a sorceress who knows her ways with fine amulets like mine? Could she lift the curse?"
 
     - NEXT:
         condition: [ q309_triss_lover, "=", 1 ]
@@ -778,7 +792,7 @@ dialogscript:
   section_convince_c1_cont:
 
     - CUE: shot_44_noret
-    - ofir_enchanter: "Can't say I did. I’m sure she’s a great sorceress but I’m pretty sure she hasn’t seen or worn anything of this quality yet. I’d rather not confuse the poor thing with this amulet."
+    - ofir_merchant_mq6001: "Can't say I did. I’m sure she’s a great sorceress but I’m pretty sure she hasn’t seen or worn anything of this quality yet. I’d rather not confuse the poor thing with this amulet."
 
     - NEXT:
         condition: [ q309_triss_lover, "=", 1 ]
@@ -806,13 +820,13 @@ dialogscript:
     - geralt: "I could use it for those spirits and then destroy it. No danger for you or your profits."
 
     - CUE: shot_48_noret
-    - ofir_enchanter: "Destroy!? Cursed or not, even the notion of one of my beloved pieces being destroyed is... No. No! They’re like my children. Nothing in the world could get me to let them get destroyed."
+    - ofir_merchant_mq6001: "Destroy!? Cursed or not, even the notion of one of my beloved pieces being destroyed is... No. No! They’re like my children. Nothing in the world could get me to let them get destroyed."
 
     - CUE: shot_49_geralt
     - geralt: "Nothing?"
 
     - CUE: shot_50_noret
-    - ofir_enchanter: "Unless someone bids an amount high enough to ease my pain."
+    - ofir_merchant_mq6001: "Unless someone bids an amount high enough to ease my pain."
 
     - NEXT: section_choice_howto
 
@@ -823,7 +837,7 @@ dialogscript:
     - geralt: "... let it help me end the strange events at the mansion for good."
 
     - CUE: shot_52_noret
-    - ofir_enchanter: "Yes, of course, you already mentioned that..."
+    - ofir_merchant_mq6001: "Yes, of course, you already mentioned that..."
 
     - CUE: shot_53_geralt
     - geralt: "Yes. Though, if you fear the curse of the villa, the amulet could help me make it safe for good. I’ve been there before, there were a few extremely rare treasures and artifacts waiting to be found."
@@ -832,7 +846,7 @@ dialogscript:
     - geralt: "So far no one was brave and knowledgeable enough, but if those spirits are freed, you could be the one returning to your comrades in glory. "
 
     - CUE: shot_55_noret
-    - ofir_enchanter: "That would be fitting for a refined collector such as me..."
+    - ofir_merchant_mq6001: "That would be fitting for a refined collector such as me..."
 
     - NEXT: section_choice_convince_d
 
@@ -847,6 +861,9 @@ dialogscript:
 
         - choice: ["The spirits could come for you out of revenge.", section_convince_d2] # correct
           emphasize: true
+          scriptAction:
+            .class: CFactAddStorySceneChoiceAction
+            factName: "DMNQ_persuaded_noret"
 
         - choice: ["The spirits will terrorize other travelers.", section_convince_d3]
           emphasize: true
@@ -857,7 +874,7 @@ dialogscript:
     - geralt: "No telling how they will show their gratitude to you. Heard numerous stories of spirits presenting men with riches to no end."
 
     - CUE: shot_57_noret
-    - ofir_enchanter: "Peaceful spirits don't fill my belly at night, and I can’t count on their appreciation. I do hope that you will make the right choice in order to help those poor souls. Then we both might get the gratitude of whatever roams the halls of the villa."
+    - ofir_merchant_mq6001: "Peaceful spirits don't fill my belly at night, and I can’t count on their appreciation. I do hope that you will make the right choice in order to help those poor souls. Then we both might get the gratitude of whatever roams the halls of the villa."
 
     - CUE: shot_58_geralt
     - geralt: "You probably would have gotten something entirely different from them if I wouldn’t have turned up."
@@ -870,18 +887,18 @@ dialogscript:
     - geralt: "Trust me, spiteful spirits are nothing you want to come close to. Wraiths are among the least-harmful of them, and even they are terrifying in groups."
 
     - CUE: shot_60_noret
-    - ofir_enchanter: "They could get away from the villa? I’d reckon they should be bound to the place."
+    - ofir_merchant_mq6001: "They could get away from the villa? I’d reckon they should be bound to the place."
 
     - CUE: shot_61_geralt
     - geralt: "I will free those spirits, and when they ask me what took me so long, I’d have to tell them who prioritized a few more coins over the salvation of their unspeakable pain. Wouldn’t want to switch shoes with one who denied helping them to peace. "
 
     - CUE: shot_62_noret
-    - ofir_enchanter: "Not necessary, friend, as I’m entirely on your side! My only priority when coming to this country was the urge to help poor souls, after all! How about a phenomenal discount?"
+    - ofir_merchant_mq6001: "Not necessary, friend, as I’m entirely on your side! My only priority when coming to this country was the urge to help poor souls, after all! How about a phenomenal discount?"
 
     - CUE: shot_63_geralt # content
     - PAUSE: 3.0
 
-    - NEXT: script_fact_persuaded_noret
+    - NEXT: section_choice_howto
 
   section_convince_d3:
 
@@ -889,59 +906,39 @@ dialogscript:
     - geralt: "They won’t stop with you or me. They’ll lure countless people from everywhere towards them, granting them an ugly fate."
 
     - CUE: shot_65_noret
-    - ofir_enchanter: "While this is a pity, I’m neither a witcher nor a guard, and thereby not in the position to protect all poor people of this region. You, however, could actually do that."
+    - ofir_merchant_mq6001: "While this is a pity, I’m neither a witcher nor a guard, and thereby not in the position to protect all poor people of this region. You, however, could actually do that."
 
     - CUE: shot_66_noret
-    - ofir_enchanter: "Especially with a few coins diverted to my purse instead of investing into the next, third-rate silver sword. No offense, friend."
+    - ofir_merchant_mq6001: "Especially with a few coins diverted to my purse instead of investing into the next, third-rate silver sword. No offense, friend."
 
     - CUE: shot_67_geralt
     - geralt: "Would love to show you what my third-rate swords are capable of..."
 
     - NEXT: section_choice_howto
 
-  script_fact_persuaded_noret:
+# ------------------------ endings -----------------------------
+
+  script_amulet_2xp:
 
     - SCRIPT:
         function: AddFact_S
         parameter: 
-            - factName: "DMNQ_persuaded_noret"
-            - value: 1
-            - validFor: 0
-
-    - NEXT: section_choice_howto
-
-# ------------------------ exits -----------------------------
-
-  script_2xp:
-
-    - SCRIPT:
-        function: AddFact_S
-        parameter: 
-            - factName: "dmnq_2xp"
+            - factName: "DMNQ_amulet_2xp"
             - value: 1
             - validFor: 0
 
     - NEXT: section_exit_normal
 
-  script_5xp:
+  script_amulet_5xp:
 
     - SCRIPT:
         function: AddFact_S
         parameter: 
-            - factName: "dmnq_5xp"
+            - factName: "DMNQ_amulet_5xp"
             - value: 1
             - validFor: 0
 
     - NEXT: section_exit_normal
-
-  #script_amulet:
-
-  #  - SCRIPT:
-  #      function: GiveRewardToPlayer
-  #      parameter: 
-  #          - rewardName: "dmnq_reward_amulet"
-
-  #  - NEXT: section_exit_normal
 
   section_exit_fight:
     - CAMERA_BLEND: 2.0

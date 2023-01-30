@@ -23,6 +23,8 @@ for sectionName in dialogscript.keys():
             storyboardStructure += '\n\t' + sectionElement['CUE'] + ':\n'
             if 'noret' in sectionElement['CUE']:
                 storyboardStructure += '\t\t- cam: [0.0, cam_1_merchant]\n'
+            if 'demons' in sectionElement['CUE']:
+                storyboardStructure += '\t\t- cam: [0.0, cam_1_demons]\n'
             if 'geralt' in sectionElement['CUE']:
                 storyboardStructure += '\t\t- cam: [0.0, cam_2_geralt]\n'
 

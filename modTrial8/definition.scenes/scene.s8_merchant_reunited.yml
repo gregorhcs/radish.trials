@@ -1,21 +1,66 @@
 repository:
+  
   actors:
-    merchant:
-      template: "dlc/ep1/data/characters/npc_entities/secondary_npc/ofir_merchant_mq6001.w2ent"
-      appearance:
-        - "t2i_01_ma__merchant"
+    geralt:
+      template: "gameplay\\templates\\characters\\player\\player.w2ent"
+
+    ofir_merchant_mq6001:
+      template: "dlc\\ep1\\data\\characters\\npc_entities\\secondary_npc\\ofir_merchant_mq6001.w2ent"
+      appearance: [ "ofir_merchant_mq6001" ]
+
+  animations:
+    anim_6970_high_standing_determined_calm_enter_frontal:
+      animation: "high_standing_determined_calm_enter_frontal"
+      frames: 253
+
+    anim_7420_low_kneeling_determined_idle:
+      animation: "low_kneeling_determined_idle"
+      frames: 542
 
   actor.poses:
     pose_0_high_standing_determined_idle:
       idle_anim: "high_standing_determined_idle"
 
+  cameras:
+
+    cam_1_merchant:
+      fov: 40.0
+      transform:
+        pos: [ 4.6649646759, -0.3455352783, 2.0862884521 ]
+        rot: [ 0.0, 341.3999938965, 94.2999267578 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
+    cam_2_geralt:
+      fov: 40.0
+      transform:
+        pos: [ 4.6649646759, -0.3455352783, 2.0862884521 ]
+        rot: [ 0.0, 341.3999938965, 94.2999267578 ]
+      zoom: 0.0
+      dof:
+        aperture: [ 28.2495002747, 1.2700699568 ]
+        blur: [ 1.0, 5.0 ]
+        focus: [ 1.0, 5.0 ]
+        intensity: 0.2500000000
+      event_generator:
+        plane: "Medium"
+        tags: [ "ext" ]
+
 production:
+
   settings:
     sceneid: 1
     strings-idspace: 1410
     strings-idstart: 750
 
-  gameplay: true
+  placement: "trial8_novigrad_sp_merchant_selling_sp"
 
   assets:
     actors:
@@ -24,24 +69,145 @@ production:
         by_voicetag: true
         tags: [ "PLAYER" ]
 
-      merchant:
-        repo: "merchant"
-        by_voicetag: false
-        tags: [ "dmnq_merchant" ]
+      ofir_merchant_mq6001:
+        repo: "ofir_merchant_mq6001"
+        #by_voicetag: true
+        appearance: "ofir_merchant_mq6001"
+        tags: [ "ofir_merchant_mq6001" ]
+
+    cameras:
+      cam_1_merchant:
+        repo: "cam_1_merchant"
+      cam_2_geralt:
+        repo: "cam_2_geralt"
+
+    animations:
+      geralt_high_standing_determined_calm_enter_frontal:
+        actor: "geralt"
+        repo: "anim_6970_high_standing_determined_calm_enter_frontal"
+        #duration: 8.4333333969
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+      ofir_merchant_mq6001_low_kneeling_determined_idle:
+        actor: "ofir_merchant_mq6001"
+        repo: "anim_7420_low_kneeling_determined_idle"
+        #duration: 18.0666675568
+        #weight: 0.6000000238
+        #clipfront: 0.0
+        #clipend: 99.0
+        #stretch: 1.0
+        blendin: 0.0
+        blendout: 0.0
+
+    actor.poses:
+      geralt_high_standing_determined_idle:
+        actor: "geralt"
+        repo: "pose_0_high_standing_determined_idle"
+
+      ofir_merchant_mq6001_high_standing_determined_idle:
+        actor: "ofir_merchant_mq6001"
+        repo: "pose_0_high_standing_determined_idle"
+
+
+
+storyboard:
+
+  defaults:
+    placement:
+      geralt: [[ -0.9113769531, 1.8897705078, 0.0628662109 ], [ 0.0, 0.0, 185.0419006348 ]]
+      ofir_merchant_mq6001: [[ -0.0305175781, -0.1894531250, -0.1002120972 ], [ 0.0, 0.0, 55.0 ]]
+
+    actor.pose:
+      geralt: geralt_high_standing_determined_idle
+      ofir_merchant_mq6001: ofir_merchant_mq6001_high_standing_determined_idle
+
+
+
 
 dialogscript:
+
   player: "geralt"
-  actors: [ "geralt", "merchant" ]
+  actors: [ "geralt", "ofir_merchant_mq6001" ]
 
   section_start:
-    - PAUSE: 0.0
-    - NEXT: section_storyboard_ui
 
-  section_storyboard_ui:
-    - merchant: "What a joy to be back!"
+    - PAUSE: 0.0
+
+    - NEXT:
+        condition: [ DMNQ_axii_chosen, "=", 1 ]
+        on_true: section_axii_chosen
+        on_false: section_pay_chosen
+
+  section_axii_chosen:
+
+    - CUE: shot_01_merchant
+    - ofir_merchant_mq6001: "What in all the god’s names was going on in this mansion...?"
+
+    - CUE: shot_02_geralt
+    - geralt: "Nothing worth your time."
+
+    - CUE: shot_03_merchant
+    - PAUSE: 3.0
+
+    - NEXT: section_exit
+
+  section_pay_chosen:
+
+    - CUE: shot_04_merchant
+    - ofir_merchant_mq6001: "I greet you, I greet you! Were you able to help those poor spirits, friend?"
+
+    - CUE: shot_05_geralt
+    - geralt: "Can’t say I was. Demons still roam the place, so you better stay as far away as you can."
+
+    - CUE: shot_06_merchant
+    - ofir_merchant_mq6001: "What a pity, all the opportunities left there. I may, however, praise my famous intuition, leaving as soon as I could. Oh, and the poor spirits, no doubt. Shame, that. "
+
+    - CUE: shot_07_geralt
+    - geralt: "Why on earth didn’t you tell me the amulet was a magical catalyst?"
+
+    - CUE: shot_08_merchant
+    - ofir_merchant_mq6001: "Aren’t you the witcher with famous sorceress-friends? I assumed you knew what it was and did, paying all those coins for it. "
+
+    - CUE: shot_09_geralt
+    - geralt: "Arrgh.. I’m on the verge of doing things I would later regret. Better don’t say no more, or there might be one more spirit in the not-so-far future."
+
+    - CUE: shot_10_merchant
+    - ofir_merchant_mq6001: "Now, now. If there's anything I can do to save our valuable Seller-Customer-Relationship as well as my good name in this new country, go ahead. "
+
+    - CUE: shot_12_geralt
+    - geralt: "Actually, there might be something. These words mean anything to you?"
+
+    - CUE: shot_13_merchant
+    - ofir_merchant_mq6001: "Yees, I'm beginning to remember... a very old, very rare language... of demonic origins, no less... did you get this from the spirits?"
+
+    - CUE: shot_14_geralt
+    - PAUSE: 3.0
+
+    - CUE: shot_15_merchant
+    - ofir_merchant_mq6001: "Be that as it may, have once again my gratitude for advising me back there, dear witcher! As a sign of gratitude and closure, I'll translate those words for you. Wait but a moment."
+
+    - CUE: shot_16_geralt_fade_out
     - PAUSE: 5.0
-    - merchant: "I really should enjoy life more, see the world, dive into adventures!"
+
+    - CUE: shot_17_geralt_fade_in
+    - PAUSE: 3.0
+
+    - CUE: shot_18_merchant
+    - ofir_merchant_mq6001: "Quite an interesting poem, no doubt - although rather nonsensical if you know the language. No demon would ever use it seriously. Maybe it's different for... 'spirits' of your country?"
+
+    - CUE: shot_19_geralt
+    - PAUSE: 3.0
+
+    - CUE: shot_20_geralt
+    - geralt: "Rather wouldn't wish to cross words with those spirits ever again. Farewell."
+
     - NEXT: section_exit
 
   section_exit:
+
     - EXIT
