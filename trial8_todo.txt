@@ -1,0 +1,11 @@
+missing scenes:
+s3 after killed
+s5 first line on enter area
+s6 line after killing ghosts
+s8 merchant line if spoken to after
+
+demons interactive scenes not working
+
+iris wraith one hit
+
+merchant fistfight -1 & ending not working
