@@ -1,7 +1,7 @@
 #
 # quest structure root segment
 # 
-# (version: 197, saved: 2023-01-30 02:30:28)
+# (version: 204, saved: 2023-02-22 15:07:43)
 #
 ---
 structure:
@@ -11,7 +11,6 @@ structure:
         ".editor": [ -87.0, 253.0 ]
         next:
           - subsegment.init
-          - changelayers.show_test_layer
       
       subsegment.ending_and_epilogue:
         ".editor":
@@ -213,20 +212,6 @@ structure:
           - layer_ritual_no
         next:
           - script.highlight_pebbles
-      
-      changelayers.show_test_layer:
-        ".editor":
-          pos: [ 208.0, 619.0 ]
-          hint: show-only
-          in: []
-          out: []
-        sync: true
-        purge: false
-        world: novigrad
-        show:
-          - layer_test
-        next:
-          - spawn.test_community_spawn
       
       spawn.spawn_merchant:
         ".editor":
