@@ -389,7 +389,7 @@ dialogscript:
           emphasize: false
         - choice: [ "What exactly is gonna happen when you’re free?", section_what_when_you_free]
           emphasize: false
-        - choice: [ "Godspeed.", section_leave ]
+        - choice: [ "Godspeed.", section_leave, exit ]
           emphasize: false
 
   section_how_spell_works:
