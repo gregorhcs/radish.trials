@@ -3,6 +3,56 @@ entities:
   # -------------------- NPCs ---------------------------
   # -----------------------------------------------------
 
+  # ------------ demonic dog ------------
+
+  DMNQ_demonic_dog:
+
+    includes:
+      - dlc/ep1/data/characters/npc_entities/animals/demonic_dog.w2ent
+
+    entityObject:
+      .type: "CNewNPC"
+      displayName: "Dog"
+      tags: [dmnq_black_dog]
+      components:
+        talk:
+          ".type": CInteractionComponent
+          height: 6.0
+          lineOfSightOffset: [ 0.0, 0.0, 0.5, 0.0 ]
+          performScriptedTest: true
+          actionName: "Talk"
+          reportToScript: true
+          transform:
+            pos: [ 0.0, 0.0, 0.15 ]
+
+    usedAppearances:
+      - dog_04
+
+  # ------------ demonic cat ------------
+
+  DMNQ_demonic_cat:
+
+    includes:
+      - dlc/ep1/data/characters/npc_entities/animals/demonic_cat.w2ent
+
+    entityObject:
+      .type: "CNewNPC"
+      displayName: "Cat"
+      tags: [dmnq_black_cat]
+      components:
+        talk:
+          ".type": CInteractionComponent
+          height: 6.0
+          lineOfSightOffset: [ 0.0, 0.0, 0.5, 0.0 ]
+          performScriptedTest: true
+          actionName: "Talk"
+          reportToScript: true
+          transform:
+            pos: [ 0.0, 0.0, 0.15 ]
+
+    usedAppearances:
+      - cat_01
+
   # ------------- merchant --------------
 
   DMNQ_merchant_ofir:
@@ -11,7 +61,7 @@ entities:
       - dlc/ep1/data/characters/npc_entities/secondary_npc/ofir_merchant_mq6001.w2ent
 
     entityObject:
-      .type: "CNewNPC"
+      .type: "C_DMNQ_Merchant:CNewNPC"
       displayName: "Ofieri Merchant"
       tags: [dmnq_merchant]
       level: 1

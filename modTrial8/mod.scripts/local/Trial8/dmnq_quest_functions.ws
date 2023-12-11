@@ -1,3 +1,10 @@
+quest function IsActive() {
+    if (theGame.IsActive()) {
+        theGame.GetGuiManager()
+               .ShowNotification("Game is active!");
+    }
+}
+
 quest function DMNQ_AddContractToNoticeBoard( 
 
   boardTag : CName, 

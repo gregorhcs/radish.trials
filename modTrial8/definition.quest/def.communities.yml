@@ -8,7 +8,7 @@ communities:
     actors:
 
       merchant:
-        template: CNewNPC:DMNQ_merchant_ofir
+        template: C_DMNQ_Merchant:DMNQ_merchant_ofir
         tags: [dmnq_merchant]
 
       horse:
@@ -111,11 +111,11 @@ communities:
     actors:
 
       black_cat:
-        template: dlc/ep1/data/characters/npc_entities/animals/demonic_cat.w2ent
+        template: CNewNPC:DMNQ_demonic_cat
         tags: [dmnq_black_cat]
 
       black_dog:
-        template: dlc/ep1/data/characters/npc_entities/animals/demonic_dog.w2ent
+        template: CNewNPC:DMNQ_demonic_dog
         tags: [dmnq_black_dog]
 
     phases:

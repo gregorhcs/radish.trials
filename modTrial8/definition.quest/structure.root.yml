@@ -1,7 +1,7 @@
 #
 # quest structure root segment
 # 
-# (version: 204, saved: 2023-02-22 15:07:43)
+# (version: 207, saved: 2023-12-11 19:45:43)
 #
 ---
 structure:
@@ -23,8 +23,8 @@ structure:
       
       subsegment.fetching_the_amulet:
         ".editor":
-          pos: [ 700.0, 250.0 ]
-          in: [ In ]
+          pos: [ 681.0, 252.0 ]
+          in: [ DBG_Demons_Scene_Interaction, In ]
           out: [ Out ]
         segment: fetching_the_amulet
         next:
@@ -41,7 +41,7 @@ structure:
       
       subsegment.hook_and_task1:
         ".editor":
-          pos: [ 500.0, 250.0 ]
+          pos: [ 415.0, 256.0 ]
           in: [ In, test_s2 ]
           out: [ Out ]
         segment: quest_hook
@@ -50,7 +50,7 @@ structure:
       
       subsegment.init:
         ".editor":
-          pos: [ 66.0, 253.0 ]
+          pos: [ 70.0, 249.0 ]
           in: [ In ]
           out: [ Out ]
         segment: init
@@ -59,7 +59,7 @@ structure:
       
       subsegment.wait_start_conditions:
         ".editor":
-          pos: [ 300.0, 250.0 ]
+          pos: [ 240.0, 251.0 ]
           in: [ In ]
           out: [ Out ]
         segment: start_conditions

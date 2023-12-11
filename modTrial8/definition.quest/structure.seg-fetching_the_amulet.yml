@@ -1,13 +1,18 @@
 #
 # quest structure subsegment: fetching_the_amulet
 # 
-# (version: 197, saved: 2023-01-30 02:30:28)
+# (version: 207, saved: 2023-12-11 19:45:43)
 #
 ---
 structure:
   segments:
     fetching_the_amulet:
       blocks:
+        in.DBG_Demons_Scene_Interaction:
+          ".editor": [ 1449.0, 1035.0 ]
+          next:
+            - script.new_logmsg
+        
         in:
           ".editor": [ -459.0, 766.0 ]
           next:
@@ -67,7 +72,7 @@ structure:
             - factdb: [ DMNQ_s4_done, "!=", 1 ]
             - factdb: [ DMNQ_fistfight_result, "<", 2 ]
           ".editor":
-            pos: [ -180.0, 837.0 ]
+            pos: [ -127.0, 729.0 ]
             in: [ In ]
             out: [ Out ]
           next:
@@ -197,6 +202,18 @@ structure:
             - attitude: Hostile
           next: ".done"
         
+        script.new_logmsg:
+          ".editor":
+            pos: [ 1575.0, 1031.0 ]
+            in: [ In ]
+            out: [ Out ]
+          function: radLog
+          parameter:
+            - logChannel: cname_TRIAL8
+            - msg: test2
+          next:
+            - changelayers.new_show_layers
+        
         script.start_fistfight_npc:
           ".editor":
             pos: [ 66.0, 683.0 ]
@@ -259,6 +276,32 @@ structure:
             - layer_merchant
           next:
             - out
+        
+        changelayers.new_show_layers:
+          ".editor":
+            pos: [ 1704.0, 1028.0 ]
+            hint: show-only
+            in: []
+            out: []
+          sync: true
+          purge: false
+          world: novigrad
+          show:
+            - layer_demons
+          next:
+            - spawn.new_community_spawn
+        
+        spawn.new_community_spawn:
+          ".editor":
+            pos: [ 1836.0, 1025.0 ]
+            hint: spawn-only
+            in: []
+            out: []
+          phase: sitting_at_roadside_phase
+          spawnsets:
+            - demon_community
+          next:
+            - interaction.s4_demons_2nd_task: Input
         
         despawn.merchant_despawn:
           ".editor":
