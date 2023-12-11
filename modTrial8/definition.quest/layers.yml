@@ -192,12 +192,23 @@ layers:
         rot: [ 3.0, 3.0, 17.6000003815 ]
 
 
-  layer_ritual_yes: 
+  layer_ritual_regular_bowl: 
     world: "novigrad"
     #context: ""
 
     interactiveEntities:
+      ritual_bowl: 
+        template: W3IrisPainting:DMNQ_ritual_bowl_fight
+        pos: [ 2147.0229492188, 2148.2475585938, 41.2292289734 ]
+        rot: [ 6.0, 4.0, 16.6000003815 ]
+        valid_interactions: []
 
+
+  layer_ritual_interactives: 
+    world: "novigrad"
+    #context: ""
+
+    interactiveEntities:
       pebble1:
         template: C_DMNQ_Pebble:DMNQ_grieving_stone
         pos: [ 2155.1279296875, 2148.9492187500, 40.9935607910 ]
@@ -229,16 +240,6 @@ layers:
         rot: [ 6.0, 4.0, 16.6000003815 ]
         valid_interactions: [Use]
 
-  layer_ritual_no: 
-    world: "novigrad"
-    #context: ""
-
-    interactiveEntities:
-      ritual_bowl: 
-        template: W3IrisPainting:DMNQ_ritual_bowl_fight
-        pos: [ 2147.0229492188, 2148.2475585938, 41.2292289734 ]
-        rot: [ 6.0, 4.0, 16.6000003815 ]
-        valid_interactions: [Use]
 
 
   # ----------------- layer test ------------------------

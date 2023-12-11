@@ -1,7 +1,7 @@
 #
 # quest structure subsegment: find_iris_wraiths
 # 
-# (version: 207, saved: 2023-12-11 19:45:43)
+# (version: 221, saved: 2023-12-11 21:45:56)
 #
 ---
 structure:
@@ -9,9 +9,9 @@ structure:
     find_iris_wraiths:
       blocks:
         in:
-          ".editor": [ -977.0, 164.0 ]
+          ".editor": [ -1179.0, 158.0 ]
           next:
-            - waituntil.entered_area_ritual
+            - changelayers.show_ritual_interactives
         
         scene.s5_ritual:
           ".editor":
@@ -26,6 +26,7 @@ structure:
             - objective.wait_till_midnight: Activate
             - addfact.set_in_area_ritual
             - waituntil.midnight
+            - changelayers.show_regular_ritual_bowl
         
         scene.s6_unhappy:
           ".editor":
@@ -97,7 +98,7 @@ structure:
         waituntil.deposited_amulet:
           factdb: [ DMNQ_deposited_amulet, ">=", 1 ]
           ".editor":
-            pos: [ -534.0, 539.0 ]
+            pos: [ -528.0, 647.0 ]
             in: [ In ]
             out: [ Out ]
           next:
@@ -245,7 +246,7 @@ structure:
         waituntil.took_amulet1:
           factdb: [ DMNQ_took_amulet, ">=", 1 ]
           ".editor":
-            pos: [ -666.0, 560.0 ]
+            pos: [ -674.0, 607.0 ]
             in: [ In ]
             out: [ Out ]
           next:
@@ -277,6 +278,37 @@ structure:
           next:
             - reward.wraiths_dead_reward
             - objective.kill_wraiths: Success
+        
+        changelayers.show_regular_ritual_bowl:
+          ".editor":
+            pos: [ 218.0, -64.0 ]
+            hint: both
+            in: []
+            out: []
+          sync: true
+          purge: false
+          world: novigrad
+          show:
+            - layer_ritual_regular_bowl
+          hide:
+            - layer_ritual_interactives
+          next: ".done"
+        
+        changelayers.show_ritual_interactives:
+          ".editor":
+            pos: [ -1007.0, 160.0 ]
+            hint: both
+            in: []
+            out: []
+          sync: true
+          purge: false
+          world: novigrad
+          show:
+            - layer_ritual_interactives
+          hide:
+            - layer_ritual_regular_bowl
+          next:
+            - waituntil.entered_area_ritual
         
         spawn.wraiths_base_spawn:
           ".editor":
@@ -338,7 +370,7 @@ structure:
           next: ".done"
         
         objective.prepare_amulet:
-          ".editor": [ -532.0, 599.0 ]
+          ".editor": [ -392.0, 620.0 ]
           objective: trial8/find_iris_wraiths/prepare_ritual_amulet
           notify: true
           track: false
@@ -398,6 +430,6 @@ structure:
           next: ".done"
         
         out:
-          ".editor": [ 1354.0, 135.0 ]
+          ".editor": [ 1356.0, 138.0 ]
           next: ".done"
         

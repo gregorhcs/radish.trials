@@ -1,7 +1,7 @@
 #
 # quest structure root segment
 # 
-# (version: 207, saved: 2023-12-11 19:45:43)
+# (version: 221, saved: 2023-12-11 21:45:56)
 #
 ---
 structure:
@@ -113,7 +113,7 @@ structure:
       
       script.highlight_pebbles:
         ".editor":
-          pos: [ 552.0, 513.0 ]
+          pos: [ 554.0, 462.0 ]
           in: [ In ]
           out: [ Out ]
         function: DMNQ_FocusSetHighlight
@@ -123,7 +123,6 @@ structure:
           - overrideCustomLogic: true
         next:
           - subsegment.find_iris_wraiths
-          - subsegment.ending_and_epilogue: merchant_actionseq_test
       
       script.log:
         ".editor":
@@ -199,29 +198,16 @@ structure:
       
       changelayers.show_ritual_layer:
         ".editor":
-          pos: [ 408.0, 515.0 ]
-          hint: both
+          pos: [ 349.0, 541.0 ]
+          hint: show-only
           in: []
           out: []
         sync: true
         purge: false
         world: novigrad
         show:
-          - layer_ritual_yes
-        hide:
-          - layer_ritual_no
-        next:
-          - script.highlight_pebbles
-      
-      spawn.spawn_merchant:
-        ".editor":
-          pos: [ 331.0, 386.0 ]
-          hint: spawn-only
-          in: []
-          out: []
-        phase: devastated_at_roadside_phase
-        spawnsets:
-          - merchant_community
+          - layer_ritual
+          - layer_ritual_interactives
         next: ".done"
       
       spawn.test_community_phase_2:
